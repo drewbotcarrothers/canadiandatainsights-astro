@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>The gap between the top earners and the lowest deciles is widening in cities like Toronto and Vancouver, where high housing costs erode the purchasing power of even median-income households.</p>
       
-      <p>Understanding these disparities is the first step toward targeted economic intervention. You can explore these metrics side-by-side using our <a href="/compare">Comparison Tool</a>.</p>
+      <p>Understanding these disparities is the first step toward targeted economic intervention. You can explore these metrics side-by-side using our <a href="/compare/">Comparison Tool</a>.</p>
     `,
   },
   {

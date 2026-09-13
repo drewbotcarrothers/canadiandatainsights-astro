@@ -27,3 +27,8 @@ export function pct(part: number | null | undefined, total: number | null | unde
   if (part == null || !total || total === 0) return '—';
   return ((part / total) * 100).toFixed(1) + '%';
 }
+
+/** Simple className join (clsx-style) */
+export function cn(...inputs: Array<string | false | null | undefined>): string {
+  return inputs.filter(Boolean).join(' ');
+}

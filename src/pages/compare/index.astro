@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ComparisonInterface from '../../components/compare/ComparisonInterface';
+---
+
+<Layout
+  title="Location Comparison"
+  description="Side-by-side demographic analysis for Canadian provinces, cities, and regional districts. Select two locations of the same level to begin."
+  canonicalPath="/compare/"
+>
+  <section class="bg-background py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 sm:mb-16">
+        <h1 class="font-heading text-4xl font-bold text-primary sm:text-5xl">
+          Location <span class="text-tertiary">Comparison</span>
+        </h1>
+        <p class="mt-4 max-w-2xl font-sans text-lg leading-relaxed text-on-surface-variant">
+          Side-by-side demographic analysis for Canadian provinces, cities,
+          and regional districts. Select two locations of the same level to begin.
+        </p>
+      </div>
+
+      <ComparisonInterface client:load />
+    </div>
+  </section>
+</Layout>

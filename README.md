@@ -5,7 +5,7 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 ## Stack
 
 - Astro (latest stable) + TypeScript
-- React islands via `@astrojs/react` (Interactive Atlas map, blog charts via `recharts`)
+- React islands via `@astrojs/react` (Interactive Atlas map, compare tool, blog charts via `recharts`)
 - `react-simple-maps` for Canada geography + city markers
 - Tailwind CSS v4 via `@tailwindcss/vite`
 - Papa Parse for census CSV at build time
@@ -33,8 +33,10 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 - Profile sections: Population, Households, Incomes, Employment/Labour, Languages, Dwellings
 - `/about/`, `/sources/`, `/privacy/`, `/terms/`
 - **Blog** at `/blog/` + `/blog/[slug]/` (3 posts with hero images + recharts islands)
-- Shared Header + Footer (Blog in nav)
-- `public/robots.txt`, `src/pages/sitemap.xml.ts` (includes location + blog URLs)
+- **Location Comparison** at `/compare/` — React island that fetches slim census JSON
+- Shared Header + Footer (Comparisons + Blog in nav)
+- `public/robots.txt`, `src/pages/sitemap.xml.ts` (includes location + blog + compare URLs)
+- Build-time endpoint `src/pages/data/compare-locations.json.ts` → `dist/data/compare-locations.json`
 - GA placeholder (`G-VQKEMEP3K9`) and GSC meta verification in layout
 
 ## Data requirement
@@ -58,8 +60,8 @@ Without the CSV, location pages and homepage province/city lists will fail at bu
 
 ## What this slice excludes
 
-- Compare tool / interactive comparisons
 - AdSense
+- Shareable `/compare/{a}-vs-{b}` URLs (client-only select UI, matching current Next.js)
 - New blog posts beyond the 3 ported from the Next.js site
 
 ## Develop
@@ -80,6 +82,13 @@ Deploy the contents of **`dist/`** to Hostinger via FTP (static hosting). No Nod
 
 Expect `dist/location/*/index.html` for every geography in the CSV (plus static pages).
 
+## Compare tool notes
+
+- Page: `src/pages/compare/index.astro`
+- Island: `src/components/compare/ComparisonInterface.tsx` (`client:load`)
+- Slim records (~46 fields) are written at build to `/data/compare-locations.json` and fetched client-side (avoids huge HTML props)
+- Select geo level + two same-level locations for side-by-side population, household, income, employment, and language stats
+
 ## Blog notes
 
 - Content + chart data: `src/lib/blog-data.ts`
@@ -89,7 +98,8 @@ Expect `dist/location/*/index.html` for every geography in the CSV (plus static 
 
 ## Next slices (planned)
 
-1. Compare island (client-side)
+1. AdSense (optional)
+2. Shareable compare deep-links (optional)
 
 ## Scripts
 
