@@ -1,7 +1,8 @@
 import type { APIRoute } from 'astro';
 import { getAllLocations, generateSlug } from '../lib/locations';
+import { blogPosts } from '../lib/blog-data';
 
-const staticPages = ['/', '/about/', '/sources/', '/privacy/', '/terms/'];
+const staticPages = ['/', '/about/', '/sources/', '/privacy/', '/terms/', '/blog/'];
 
 export const GET: APIRoute = async () => {
   const site = 'https://canadiandatainsights.com';
@@ -17,7 +18,9 @@ export const GET: APIRoute = async () => {
     locationPaths.push(path);
   }
 
-  const urls = [...staticPages, ...locationPaths]
+  const blogPaths = blogPosts.map((post) => `/blog/${post.slug}/`);
+
+  const urls = [...staticPages, ...blogPaths, ...locationPaths]
     .map(
       (path) => `  <url>
     <loc>${site}${path}</loc>

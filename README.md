@@ -5,7 +5,7 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 ## Stack
 
 - Astro (latest stable) + TypeScript
-- React islands via `@astrojs/react` (Interactive Atlas map)
+- React islands via `@astrojs/react` (Interactive Atlas map, blog charts via `recharts`)
 - `react-simple-maps` for Canada geography + city markers
 - Tailwind CSS v4 via `@tailwindcss/vite`
 - Papa Parse for census CSV at build time
@@ -32,8 +32,9 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 - **~702 location profile pages** at `/location/[slug]/` generated at build from census CSV
 - Profile sections: Population, Households, Incomes, Employment/Labour, Languages, Dwellings
 - `/about/`, `/sources/`, `/privacy/`, `/terms/`
-- Shared Header + Footer
-- `public/robots.txt`, `src/pages/sitemap.xml.ts` (includes all location URLs)
+- **Blog** at `/blog/` + `/blog/[slug]/` (3 posts with hero images + recharts islands)
+- Shared Header + Footer (Blog in nav)
+- `public/robots.txt`, `src/pages/sitemap.xml.ts` (includes location + blog URLs)
 - GA placeholder (`G-VQKEMEP3K9`) and GSC meta verification in layout
 
 ## Data requirement
@@ -58,9 +59,8 @@ Without the CSV, location pages and homepage province/city lists will fail at bu
 ## What this slice excludes
 
 - Compare tool / interactive comparisons
-- Blog
 - AdSense
-- React chart islands (recharts) — distribution bars are static HTML
+- New blog posts beyond the 3 ported from the Next.js site
 
 ## Develop
 
@@ -80,10 +80,16 @@ Deploy the contents of **`dist/`** to Hostinger via FTP (static hosting). No Nod
 
 Expect `dist/location/*/index.html` for every geography in the CSV (plus static pages).
 
+## Blog notes
+
+- Content + chart data: `src/lib/blog-data.ts`
+- Chart island: `src/components/blog/BlogVisualization.tsx` (`client:visible`, `recharts`)
+- Hero images: `public/images/blog/`
+- Slugs match the live Next.js site
+
 ## Next slices (planned)
 
 1. Compare island (client-side)
-2. Blog
 
 ## Scripts
 
