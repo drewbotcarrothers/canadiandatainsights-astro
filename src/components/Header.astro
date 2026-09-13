@@ -1,0 +1,67 @@
+---
+const pathname = Astro.url.pathname;
+
+const links = [
+  { href: '/', label: 'Dashboard' },
+  { href: '/sources/', label: 'Sources' },
+  { href: '/about/', label: 'About' },
+];
+
+function isActive(href: string) {
+  if (href === '/') return pathname === '/';
+  return pathname === href || pathname.startsWith(href);
+}
+---
+
+<header class="sticky top-0 z-40 border-b border-border/40 bg-surface/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <a href="/" class="group flex items-baseline gap-1 no-underline">
+      <span class="font-heading text-lg font-bold tracking-tight text-primary sm:text-xl">
+        Canadian
+      </span>
+      <span class="font-heading text-lg font-bold tracking-tight text-on-surface sm:text-xl">
+        Data
+      </span>
+      <span class="font-heading text-lg font-bold tracking-tight text-tertiary sm:text-xl">
+        Insights
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-1 sm:flex" aria-label="Primary">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            'rounded-md px-3 py-2 text-sm font-medium no-underline transition-colors',
+            isActive(link.href)
+              ? 'bg-primary/10 text-primary'
+              : 'text-on-surface-variant hover:bg-surface-soft hover:text-primary',
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <details class="relative sm:hidden">
+      <summary class="cursor-pointer list-none rounded-md border border-border px-3 py-2 text-sm font-medium text-on-surface">
+        Menu
+      </summary>
+      <div class="absolute right-0 mt-2 w-48 rounded-lg border border-border bg-surface p-2 shadow-lg">
+        {links.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              'block rounded-md px-3 py-2 text-sm no-underline',
+              isActive(link.href)
+                ? 'bg-primary/10 text-primary'
+                : 'text-on-surface-variant hover:bg-surface-soft',
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </details>
+  </div>
+</header>

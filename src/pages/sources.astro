@@ -1,0 +1,124 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Census Methodology & Sources"
+  description="How Canadian Data Insights sources, processes, and presents Statistics Canada 2021 Census data under the Open Government Licence - Canada."
+  canonicalPath="/sources/"
+>
+  <section class="bg-background py-16 sm:py-20">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <h1 class="font-heading text-4xl font-bold text-primary sm:text-5xl">
+          Census <span class="text-tertiary">Methodology</span>
+        </h1>
+        <p class="mt-4 max-w-2xl font-sans text-lg leading-relaxed text-on-surface-variant">
+          Where our numbers come from, how we process them, and how we attribute Statistics
+          Canada data.
+        </p>
+      </div>
+
+      <div class="space-y-8 font-sans leading-relaxed text-on-surface">
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Primary source</h2>
+          <p class="mb-4">
+            Canadian Data Insights is built from the official{' '}
+            <strong>Statistics Canada Census of Population, 2021</strong>. We do not invent
+            estimates or mix in third-party extrapolations for the demographic figures shown
+            on location profiles.
+          </p>
+          <p>
+            Profiles cover provinces, territories, and municipalities with a population of at
+            least 5,000, drawn from census geography identifiers and published characteristic
+            tables.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">What we process</h2>
+          <p class="mb-4">
+            Raw census extracts are cleaned and reshaped into location-level profiles. For
+            each place we surface categories such as population and growth, households,
+            income, languages, education, labour and industry, dwelling types, and related
+            rankings within the same geography level.
+          </p>
+          <p>
+            Charts, comparisons, and rankings on this site are derived from those processed
+            tables. Presentation choices (layout, labels, rankings) are ours; the underlying
+            counts and rates remain Statistics Canada's published census data.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">
+            Open Government Licence - Canada
+          </h2>
+          <p class="mb-4">
+            Statistics Canada data is used under the{' '}
+            <a
+              href="https://open.canada.ca/en/open-government-licence-canada"
+              class="text-primary underline underline-offset-2 hover:text-tertiary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Government Licence - Canada
+            </a>
+            . That licence lets anyone copy, modify, publish, translate, adapt, and distribute
+            the information, provided Statistics Canada is acknowledged as the source and the
+            licence terms are followed.
+          </p>
+          <p class="mb-4">Suggested attribution for reuse of figures shown here:</p>
+          <blockquote class="border-l-4 border-primary/20 pl-4 italic text-on-surface-variant">
+            Adapted from Statistics Canada, Census of Population, 2021. This does not
+            constitute an endorsement by Statistics Canada of this product.
+          </blockquote>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">
+            Accuracy and limitations
+          </h2>
+          <p class="mb-4">
+            Census values can be affected by suppression, rounding, and geography definitions.
+            We aim for faithful parsing and clear visualization, but we do not warrant
+            absolute completeness for every derived chart or ranking.
+          </p>
+          <p>
+            For official definitions, methodology notes, and downloads, visit{' '}
+            <a
+              href="https://www.statcan.gc.ca/"
+              class="text-primary underline underline-offset-2 hover:text-tertiary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Statistics Canada
+            </a>
+            .
+          </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Related policies</h2>
+          <p>
+            See our{' '}
+            <a
+              href="/privacy/"
+              class="text-primary underline underline-offset-2 hover:text-tertiary"
+            >
+              Privacy Policy
+            </a>{' '}
+            and{' '}
+            <a
+              href="/terms/"
+              class="text-primary underline underline-offset-2 hover:text-tertiary"
+            >
+              Terms of Service
+            </a>{' '}
+            for how we handle site analytics and use of this platform.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

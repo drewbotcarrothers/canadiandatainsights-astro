@@ -1,0 +1,56 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-20 w-full border-t border-border/40 bg-surface-soft px-4 py-12 sm:px-8">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 md:flex-row">
+    <div class="flex flex-col items-center gap-2 md:items-start">
+      <a href="/" class="font-heading text-xl font-bold tracking-tighter text-primary no-underline">
+        Canadian Data Insights
+      </a>
+      <p class="font-sans text-[10px] font-medium uppercase tracking-widest text-on-surface-variant">
+        &copy; {year} Canadian Data Insights. Site design and presentation.
+      </p>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-6 sm:gap-8" aria-label="Footer">
+      <a
+        href="/sources/"
+        class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant no-underline transition-colors hover:text-primary"
+      >
+        Census Methodology
+      </a>
+      <a
+        href="/privacy/"
+        class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant no-underline transition-colors hover:text-primary"
+      >
+        Privacy
+      </a>
+      <a
+        href="/terms/"
+        class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant no-underline transition-colors hover:text-primary"
+      >
+        Terms
+      </a>
+      <a
+        href="/sources/"
+        class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant no-underline transition-colors hover:text-primary"
+      >
+        Open Data &amp; Sources
+      </a>
+    </nav>
+  </div>
+  <div class="mx-auto mt-8 max-w-6xl text-center md:text-left">
+    <p class="max-w-2xl text-[10px] leading-relaxed text-on-surface-variant/70">
+      Adapted from Statistics Canada, Census of Population, 2021, used under the{' '}
+      <a
+        href="https://open.canada.ca/en/open-government-licence-canada"
+        class="underline underline-offset-2 hover:text-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Government Licence - Canada
+      </a>
+      . This does not constitute an endorsement by Statistics Canada of this product.
+    </p>
+  </div>
+</footer>

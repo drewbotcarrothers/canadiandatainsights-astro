@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const kpis = [
+  { label: 'Population', value: '36,991,981', hint: 'Canada, Census 2021' },
+  { label: 'Growth', value: '1.8% Annual', hint: 'Intercensal growth' },
+  { label: 'Median income', value: '$84,000', hint: 'Household median' },
+];
+---
+
+<Layout
+  title="Canadian Data Insights | Interactive Statistics Canada census insights"
+  description="Interactive Statistics Canada census insights — population, growth, income, and demographics for Canadian communities."
+  canonicalPath="/"
+>
+  <div class="border-b border-primary/10 bg-primary/5 px-4 py-2 text-center">
+    <p class="text-xs text-on-surface-variant sm:text-sm">
+      Location atlas and compare tools arrive in a later migration slice.
+    </p>
+  </div>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+    <div class="mb-12 max-w-2xl">
+      <h1 class="font-heading text-4xl font-bold text-primary sm:text-5xl">
+        Canadian <span class="text-tertiary">Data Insights</span>
+      </h1>
+      <p class="mt-4 font-sans text-lg leading-relaxed text-on-surface-variant">
+        Interactive Statistics Canada census insights
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a
+          href="/sources/"
+          class="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-primary/90"
+        >
+          Sources
+        </a>
+        <a
+          href="/about/"
+          class="inline-flex items-center rounded-md border border-primary/30 bg-surface px-5 py-2.5 text-sm font-semibold text-primary no-underline transition-colors hover:bg-primary/5"
+        >
+          About
+        </a>
+      </div>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-3">
+      {kpis.map((kpi) => (
+        <article class="rounded-xl border border-border/50 bg-surface p-6 shadow-sm">
+          <p class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant">
+            {kpi.label}
+          </p>
+          <p class="mt-2 font-heading text-3xl font-bold text-primary">{kpi.value}</p>
+          <p class="mt-1 text-xs text-on-surface-variant">{kpi.hint}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="About Us"
+  description="Mission, data integrity, and contact information for Canadian Data Insights."
+  canonicalPath="/about/"
+>
+  <section class="bg-background py-16 sm:py-20">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <h1 class="font-heading text-4xl font-bold text-primary sm:text-5xl">
+          About <span class="text-tertiary">Us</span>
+        </h1>
+        <p class="mt-4 max-w-2xl font-sans text-lg leading-relaxed text-on-surface-variant">
+          Understanding the mission behind Canadian Data Insights.
+        </p>
+      </div>
+
+      <div class="space-y-8 font-sans leading-relaxed text-on-surface">
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Our Mission</h2>
+          <p>
+            Canadian Data Insights acts as a vital bridge between the extensive datasets of
+            Statistics Canada and the everyday needs of researchers, policymakers, business
+            owners, and inquisitive citizens. We transform complex official records into
+            accessible, beautifully visualized profiles for every province, city, and town
+            across the country.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Data Integrity</h2>
+          <p class="mb-4">
+            Our platform relies strictly on the official 2021 Canadian Census. By avoiding
+            estimations and third-party extrapolations, we maintain a high standard of
+            accuracy.
+          </p>
+          <p>
+            We process hundreds of distinct demographic variables ranging from granular
+            income brackets and shifting age demographics, to language prevalence and
+            household compositions in order to compute dynamic rankings across thousands of
+            municipalities.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Contact Us</h2>
+          <p class="mb-4">
+            If you have any questions regarding the application of this data, or require
+            bespoke analysis capabilities, please reach out directly to our administration
+            team.
+          </p>
+          <p>
+            Email:{' '}
+            <a
+              href="mailto:hello@canadiandatainsights.com"
+              class="text-primary underline underline-offset-2 hover:text-tertiary"
+            >
+              hello@canadiandatainsights.com
+            </a>
+          </p>
+          <p class="mt-4 text-on-surface-variant">
+            For how we source and attribute census data, see{' '}
+            <a
+              href="/sources/"
+              class="text-primary underline underline-offset-2 hover:text-tertiary"
+            >
+              Census Methodology
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
