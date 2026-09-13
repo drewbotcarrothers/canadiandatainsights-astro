@@ -48,13 +48,13 @@ export default function CanadaMap({ cities }: { cities: MapCity[] }) {
   return (
     <div className="group flex h-full w-full flex-col overflow-hidden bg-surface-soft md:flex-row">
       {/* Map */}
-      <div className="relative min-h-[400px] flex-1">
+      <div className="relative min-h-[520px] flex-1 md:min-h-full">
         <ComposableMap
           projection="geoAzimuthalEqualArea"
           projectionConfig={{
             rotate: [96, -60, 0],
-            center: [5, 2],
-            scale: 750,
+            center: [4, 1],
+            scale: 950,
           }}
           className="absolute inset-0 h-full w-full"
         >

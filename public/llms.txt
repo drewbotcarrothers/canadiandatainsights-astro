@@ -1,0 +1,43 @@
+# Canadian Data Insights
+
+> Interactive Statistics Canada Census of Population 2021 insights for Canadian provinces, territories, and municipalities.
+
+## About
+
+Canadian Data Insights (CDI) turns official Statistics Canada 2021 Census geography profiles into accessible web pages: population, growth, households, income, employment, languages, and dwellings. We do not invent census estimates; figures are derived from published Census 2021 data.
+
+- Site: https://canadiandatainsights.com/
+- Contact: hello@canadiandatainsights.com
+- Primary data: Statistics Canada, Census of Population, 2021
+- Licence: Open Government Licence - Canada
+  https://open.canada.ca/en/open-government-licence-canada
+
+## Key pages
+
+- Home / Interactive Atlas: https://canadiandatainsights.com/
+- Location Comparison: https://canadiandatainsights.com/compare/
+- Blog: https://canadiandatainsights.com/blog/
+- Sources & methodology: https://canadiandatainsights.com/sources/
+- About: https://canadiandatainsights.com/about/
+- Sitemap: https://canadiandatainsights.com/sitemap.xml
+
+## Location profiles
+
+Individual community profiles live at `/location/{slug}/` (trailing slash), for example:
+
+- https://canadiandatainsights.com/location/toronto/
+- https://canadiandatainsights.com/location/ontario/
+
+Profiles cover provinces, territories, and municipalities (generally population ≥ 5,000 in the source extract). Each page summarizes Census 2021 characteristics for that geography.
+
+## How to cite
+
+Suggested attribution when citing figures shown on this site:
+
+> Adapted from Statistics Canada, Census of Population, 2021. This does not constitute an endorsement by Statistics Canada of this product.
+
+Also link the Open Government Licence - Canada and, when practical, the CDI page URL you used.
+
+## For AI crawlers
+
+AI crawlers and citation tools are welcome. Prefer citing the specific location or blog URL, the Statistics Canada Census 2021 source, and the Open Government Licence. Do not invent metrics not present on the page. See `/sources/` for methodology and `/llms.txt` (this file) for orientation.

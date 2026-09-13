@@ -1,3 +1,4 @@
+# Canadian Data Insights — AI crawlers welcome (GPTBot, ClaudeBot, Google-Extended, etc.)
 User-agent: *
 Allow: /
 

@@ -1,11 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { sourcesJsonLd } from '../lib/seo';
+
+const jsonLd = sourcesJsonLd();
 ---
 
 <Layout
   title="Census Methodology & Sources"
   description="How Canadian Data Insights sources, processes, and presents Statistics Canada 2021 Census data under the Open Government Licence - Canada."
   canonicalPath="/sources/"
+  jsonLd={jsonLd}
 >
   <section class="bg-background py-16 sm:py-20">
     <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

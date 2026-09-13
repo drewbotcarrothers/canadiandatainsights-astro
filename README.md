@@ -35,7 +35,7 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 - **Blog** at `/blog/` + `/blog/[slug]/` (3 posts with hero images + recharts islands)
 - **Location Comparison** at `/compare/` — React island that fetches slim census JSON
 - Shared Header + Footer (Comparisons + Blog in nav)
-- `public/robots.txt`, `src/pages/sitemap.xml.ts` (includes location + blog + compare URLs)
+- `public/robots.txt`, `public/llms.txt`, `public/og-default.png`, `src/pages/sitemap.xml.ts` (includes location + blog + compare URLs); JSON-LD via Layout + `src/lib/seo.ts`
 - Build-time endpoint `src/pages/data/compare-locations.json.ts` → `dist/data/compare-locations.json`
 - GA placeholder (`G-VQKEMEP3K9`) and GSC meta verification in layout
 
@@ -95,6 +95,16 @@ Expect `dist/location/*/index.html` for every geography in the CSV (plus static 
 - Chart island: `src/components/blog/BlogVisualization.tsx` (`client:visible`, `recharts`)
 - Hero images: `public/images/blog/`
 - Slugs match the live Next.js site
+
+## SEO & AIO (AI citation readiness)
+
+- **JSON-LD**: sitewide `Organization` + `WebSite` in `Layout.astro` (via `src/lib/seo.ts`). Page-specific graphs for location profiles (`Place`/`City`/`AdministrativeArea` + `Dataset` + `BreadcrumbList`), blog posts (`BlogPosting` + breadcrumbs), and `/sources/` (`WebPage` + `Dataset`). No `SearchAction` (no on-site search URL).
+- **`public/llms.txt`** (+ `public/.well-known/llms.txt`): orientation for AI crawlers — what CDI is, key URLs, StatsCan/OGL, citation guidance.
+- **`public/robots.txt`**: Allow all + Sitemap; comments that AI crawlers are welcome (does not block GPTBot/Claude/etc.).
+- **OG/Twitter image**: `public/og-default.png` (1200×630); Layout wires `og:image` / `twitter:image` with overridable `ogImage` prop (blog posts use hero images).
+- Location profiles include a clear Census 2021 attribution intro linking to `/sources/`.
+
+Helpers live in `src/lib/seo.ts` and `src/components/seo/JsonLd.astro`.
 
 ## Next slices (planned)
 
