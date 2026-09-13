@@ -1,11 +1,12 @@
 # Canadian Data Insights (Astro)
 
-Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadiandatainsights.com). This is the **first slice** of a Next.js → Astro migration — not a clone of the existing app.
+Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadiandatainsights.com). This is a Next.js → Astro migration — not a clone of the existing app.
 
 ## Stack
 
 - Astro (latest stable) + TypeScript
 - Tailwind CSS v4 via `@tailwindcss/vite`
+- Papa Parse for census CSV at build time
 - Static output (`dist/`) for Hostinger FTP
 - `trailingSlash: 'always'`
 - `site: https://canadiandatainsights.com`
@@ -23,24 +24,32 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 
 ## What this slice includes
 
-- Homepage shell with brand, pitch, KPI placeholders, links to Sources / About
-- `/about/` — mission, data integrity, contact (`mailto:hello@canadiandatainsights.com`)
-- `/sources/` — Census Methodology (StatsCan 2021, OGL, attribution, limitations)
-- `/privacy/` — Privacy Policy (last updated September 2026)
-- `/terms/` — Terms of Service (acceptance, data limitations, IP, OGL)
-- Shared Header + Footer (no Comparisons / Blog links — avoids 404s)
-- `public/robots.txt`, `src/pages/sitemap.xml.ts`
+- Homepage with national KPIs, **provinces/territories**, and **top cities** linked to profiles
+- **~702 location profile pages** at `/location/[slug]/` generated at build from census CSV
+- Profile sections: Population, Households, Incomes, Employment/Labour, Languages, Dwellings
+- `/about/`, `/sources/`, `/privacy/`, `/terms/`
+- Shared Header + Footer
+- `public/robots.txt`, `src/pages/sitemap.xml.ts` (includes all location URLs)
 - GA placeholder (`G-VQKEMEP3K9`) and GSC meta verification in layout
 
-Subtle homepage banner notes that **location atlas / compare** come in a later slice.
+## Data requirement
+
+**`Data/locations.csv` is required for `npm run build`.**
+
+- Path: project-root `Data/locations.csv` (same layout as the Next.js site)
+- ~702 rows of Statistics Canada 2021 Census geography profiles
+- Committed in this repo (not gitignored)
+- Slugs are generated with the same `generateSlug` rules as Next.js so URLs like `/location/toronto/` stay stable
+
+Without the CSV, location pages and homepage province/city lists will fail at build.
 
 ## What this slice excludes
 
-- Location / atlas pages from CSV
-- Compare island / interactive comparisons
+- Compare tool / interactive comparisons
 - Blog
-- Map
-- Cloning or porting the full Next.js app
+- Map atlas
+- AdSense
+- React chart islands (recharts) — distribution bars are static HTML
 
 ## Develop
 
@@ -58,12 +67,13 @@ npm run build
 
 Deploy the contents of **`dist/`** to Hostinger via FTP (static hosting). No Node server required.
 
+Expect `dist/location/*/index.html` for every geography in the CSV (plus static pages).
+
 ## Next slices (planned)
 
-1. Location pages generated from census CSV
-2. Compare island (client-side)
-3. Blog
-4. Map
+1. Compare island (client-side)
+2. Blog
+3. Map atlas
 
 ## Scripts
 

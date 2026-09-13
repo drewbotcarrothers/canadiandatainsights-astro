@@ -1,0 +1,25 @@
+---
+interface Props {
+  label: string;
+  value: string | number | null | undefined;
+  sub?: string;
+}
+
+const { label, value, sub } = Astro.props;
+---
+
+{
+  value != null && value !== '' ? (
+    <div class="flex items-baseline justify-between border-b border-border/20 py-2.5 last:border-0">
+      <span class="font-sans text-base text-on-surface-variant">{label}</span>
+      <div class="text-right">
+        <span class="font-heading text-base font-bold text-primary">{value}</span>
+        {sub && (
+          <span class="mt-0.5 block font-sans text-xs uppercase tracking-wider text-on-surface-variant">
+            {sub}
+          </span>
+        )}
+      </div>
+    </div>
+  ) : null
+}

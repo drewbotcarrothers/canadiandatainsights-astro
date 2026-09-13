@@ -1,0 +1,679 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StatRow from '../../components/location/StatRow.astro';
+import DistributionBar from '../../components/location/DistributionBar.astro';
+import SectionHeader from '../../components/location/SectionHeader.astro';
+import {
+  getAllLocations,
+  getLocationBySlug,
+  generateSlug,
+  getLocationsByProvince,
+  displayName as toDisplayName,
+  type LocationData,
+} from '../../lib/locations';
+import { formatNumber, formatPercent, formatCurrency, pct } from '../../lib/utils';
+
+export async function getStaticPaths() {
+  const locations = await getAllLocations();
+  const seen = new Set<string>();
+  const paths: { params: { slug: string } }[] = [];
+  for (const loc of locations) {
+    const slug = generateSlug(loc.GEO_NAME);
+    if (seen.has(slug)) continue;
+    seen.add(slug);
+    paths.push({ params: { slug } });
+  }
+  return paths;
+}
+
+const { slug } = Astro.params;
+const location = await getLocationBySlug(slug!);
+
+if (!location) {
+  throw new Error(`Location not found for slug: ${slug}`);
+}
+
+const d = location as LocationData;
+const isProvince = d.GEO_LEVEL === 'Province' || d.GEO_LEVEL === 'Territory';
+const provinceKey = (d.PROVINCE as string) || d.GEO_NAME.split(',')[0];
+const provinceCities = isProvince ? await getLocationsByProvince(provinceKey) : [];
+const name = toDisplayName(d.GEO_NAME);
+
+const ageBrackets = [
+  { label: '0–4', value: d.POP_AGE_0_4 as number },
+  { label: '5–9', value: d.POP_AGE_5_9 as number },
+  { label: '10–14', value: d.POP_AGE_10_14 as number },
+  { label: '15–19', value: d.POP_AGE_15_19 as number },
+  { label: '20–24', value: d.POP_AGE_20_24 as number },
+  { label: '25–29', value: d.POP_AGE_25_29 as number },
+  { label: '30–34', value: d.POP_AGE_30_34 as number },
+  { label: '35–39', value: d.POP_AGE_35_39 as number },
+  { label: '40–44', value: d.POP_AGE_40_44 as number },
+  { label: '45–49', value: d.POP_AGE_45_49 as number },
+  { label: '50–54', value: d.POP_AGE_50_54 as number },
+  { label: '55–59', value: d.POP_AGE_55_59 as number },
+  { label: '60–64', value: d.POP_AGE_60_64 as number },
+  { label: '65–69', value: d.POP_AGE_65_69 as number },
+  { label: '70–74', value: d.POP_AGE_70_74 as number },
+  { label: '75–79', value: d.POP_AGE_75_79 as number },
+  { label: '80–84', value: d.POP_AGE_80_84 as number },
+  { label: '85+', value: d.POP_AGE_85_PLUS as number },
+].filter((b) => b.value != null);
+const maxAgeBracket = Math.max(...ageBrackets.map((b) => b.value || 0), 0);
+
+const hhTotal = (d.HH_SIZE_TOTAL as number) || (d.HH_TYPE_TOTAL as number) || 1;
+const hhTypes = [
+  { label: 'Couples with children', value: d.HH_TYPE_COUPLE_WITH_CHILDREN as number },
+  { label: 'Couples without children', value: d.HH_TYPE_COUPLE_WITHOUT_CHILDREN as number },
+  { label: 'One-parent families', value: d.HH_TYPE_ONE_PARENT as number },
+  { label: 'One-person households', value: d.HH_TYPE_ONE_PERSON as number },
+  { label: 'Multigenerational', value: d.HH_TYPE_MULTIGENERATIONAL as number },
+  { label: 'Multiple-family', value: d.HH_TYPE_MULTIPLE_FAMILY as number },
+].filter((h) => h.value != null && h.value > 0);
+
+const incomeDistBrackets = [
+  { label: 'Under $10k', value: d.INCOME_DIST_UNDER_10K as number },
+  { label: '$10k–$20k', value: d.INCOME_DIST_10K_20K as number },
+  { label: '$20k–$30k', value: d.INCOME_DIST_20K_30K as number },
+  { label: '$30k–$40k', value: d.INCOME_DIST_30K_40K as number },
+  { label: '$40k–$50k', value: d.INCOME_DIST_40K_50K as number },
+  { label: '$50k–$60k', value: d.INCOME_DIST_50K_60K as number },
+  { label: '$60k–$70k', value: d.INCOME_DIST_60K_70K as number },
+  { label: '$70k–$80k', value: d.INCOME_DIST_70K_80K as number },
+  { label: '$80k–$90k', value: d.INCOME_DIST_80K_90K as number },
+  { label: '$90k–$100k', value: d.INCOME_DIST_90K_100K as number },
+  { label: '$100k+', value: d.INCOME_DIST_100K_PLUS as number },
+].filter((b) => b.value != null);
+const incomeDistTotal = incomeDistBrackets.reduce((acc, b) => acc + (b.value || 0), 0);
+const maxIncomeBracket = Math.max(...incomeDistBrackets.map((b) => b.value || 0), 0);
+
+const langTotal = (d.LANG_KNOWLEDGE_TOTAL as number) || 1;
+const motherTongueTotal = (d.MOTHER_TONGUE_TOTAL as number) || 1;
+
+const langBreakdown = [
+  { label: 'English', value: d.MOTHER_TONGUE_EN as number },
+  { label: 'French', value: d.MOTHER_TONGUE_FR as number },
+  { label: 'Arabic', value: d.LANG_ARABIC as number },
+  { label: 'Tagalog', value: d.LANG_TAGALOG as number },
+  { label: 'Mandarin', value: d.LANG_MANDARIN as number },
+  { label: 'Cantonese', value: d.LANG_CANTONESE as number },
+  { label: 'Punjabi', value: d.LANG_PUNJABI as number },
+  { label: 'Spanish', value: d.LANG_SPANISH as number },
+  { label: 'Italian', value: d.LANG_ITALIAN as number },
+  { label: 'Hindi', value: d.LANG_HINDI as number },
+  { label: 'Urdu', value: d.LANG_URDU as number },
+  { label: 'Portuguese', value: d.LANG_PORTUGUESE as number },
+  { label: 'Polish', value: d.LANG_POLISH as number },
+  { label: 'German', value: d.LANG_GERMAN as number },
+  { label: 'Vietnamese', value: d.LANG_VIETNAMESE as number },
+  { label: 'Korean', value: d.LANG_KOREAN as number },
+  { label: 'Tamil', value: d.LANG_TAMIL as number },
+  { label: 'Greek', value: d.LANG_GREEK as number },
+  { label: 'Russian', value: d.LANG_RUSSIAN as number },
+  { label: 'Gujarati', value: d.LANG_GUJARATI as number },
+  { label: 'Persian', value: d.LANG_PERSIAN as number },
+  { label: 'Bengali', value: d.LANG_BENGALI as number },
+]
+  .filter((l) => l.value != null && l.value > 0)
+  .sort((a, b) => (b.value || 0) - (a.value || 0))
+  .slice(0, 10);
+const maxLang = Math.max(...langBreakdown.map((l) => l.value || 0), 1);
+
+const dwellingTotal = (d.DWELLING_TOTAL as number) || 1;
+const dwellingTypes = [
+  { label: 'Single-detached', value: d.DWELLING_SINGLE_DETACHED as number },
+  { label: 'Semi-detached', value: d.DWELLING_SEMI_DETACHED as number },
+  { label: 'Row house', value: d.DWELLING_ROW_HOUSE as number },
+  { label: 'Duplex', value: d.DWELLING_DUPLEX as number },
+  { label: 'Apt. < 5 storeys', value: d.DWELLING_APT_LT5_STOREYS as number },
+  { label: 'Apt. ≥ 5 storeys', value: d.DWELLING_APT_GTE5_STOREYS as number },
+  { label: 'Other attached', value: d.DWELLING_OTHER_ATTACHED as number },
+  { label: 'Movable', value: d.DWELLING_MOVABLE as number },
+].filter((x) => x.value != null && x.value > 0);
+const maxDwelling = Math.max(...dwellingTypes.map((x) => x.value || 0), 1);
+
+const pageTitle = `${name} Census Profile`;
+const description = `${name} census profile from the 2021 Statistics Canada Census — population, households, income, employment, and languages.`;
+const mapQuery = encodeURIComponent(`${name}, ${(d.PROVINCE as string) || 'Canada'}`);
+const mapZoom = isProvince ? 4 : 10;
+---
+
+<Layout title={pageTitle} description={description} canonicalPath={`/location/${slug}/`}>
+  <!-- Hero -->
+  <section class="bg-surface-soft py-12 sm:py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav class="mb-6 flex items-center gap-2 font-sans text-[10px] uppercase tracking-widest text-on-surface-variant">
+        <a href="/" class="no-underline transition-colors hover:text-primary">Canada</a>
+        <span class="opacity-30">/</span>
+        <span class="font-bold text-primary">{name}</span>
+      </nav>
+
+      <div class="flex flex-col items-start justify-between gap-10 lg:flex-row lg:gap-12">
+        <div class="max-w-2xl">
+          <h1 class="mb-4 font-heading text-4xl font-bold leading-tight text-primary sm:text-5xl">
+            {name} <span class="text-tertiary">Profile</span>
+          </h1>
+          <p class="mb-8 font-sans text-lg leading-relaxed text-on-surface-variant">
+            A comprehensive demographic breakdown using data from the 2021 Statistics Canada Census.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <div class="rounded-md border border-border/40 bg-surface/80 px-4 py-2 shadow-sm backdrop-blur">
+              <span class="mr-2 font-sans text-[10px] font-bold uppercase text-on-surface-variant">National Rank:</span>
+              <span class="font-heading text-sm font-bold text-primary">
+                {d.RANK_POPULATION} of {d.RANK_TOTAL_IN_GEO_LEVEL}
+              </span>
+            </div>
+            <div class="rounded-md border border-border/40 bg-surface/80 px-4 py-2 shadow-sm">
+              <span class="mr-2 font-sans text-[10px] font-bold uppercase text-on-surface-variant">Level:</span>
+              <span class="font-heading text-sm font-bold text-primary">{d.GEO_LEVEL}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-surface-soft shadow-md lg:w-1/2">
+          <iframe
+            title={`Map of ${name}, Canada`}
+            class="absolute inset-0 h-full w-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${mapQuery}&zoom=${mapZoom}`}
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Population -->
+  <section class="bg-background py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <SectionHeader title={`${name} Population`} id="population" />
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+        <div class="rounded-xl border border-border/30 bg-surface p-6 lg:col-span-1">
+          <StatRow label="Total Population (2021)" value={formatNumber(d.POP_2021)} />
+          <StatRow label="Total Population (2016)" value={formatNumber(d.POP_2016)} />
+          <StatRow
+            label="Population Growth"
+            value={`${formatPercent(d.POP_CHANGE_PCT)} (${(d.POP_CHANGE_ABS as number) > 0 ? '+' : ''}${formatNumber(d.POP_CHANGE_ABS as number)})`}
+          />
+          <StatRow
+            label="Growth Rank"
+            value={d.RANK_POP_GROWTH ? `#${d.RANK_POP_GROWTH} of ${d.RANK_TOTAL_IN_GEO_LEVEL}` : null}
+            sub="Same geo level"
+          />
+          <div class="my-3 h-px bg-border/30"></div>
+          <StatRow
+            label="Male"
+            value={d.POP_MALE_PCT != null ? `${(d.POP_MALE_PCT as number).toFixed(1)}%` : null}
+            sub={d.POP_MALE ? formatNumber(d.POP_MALE as number) : undefined}
+          />
+          <StatRow
+            label="Female"
+            value={d.POP_FEMALE_PCT != null ? `${(d.POP_FEMALE_PCT as number).toFixed(1)}%` : null}
+            sub={d.POP_FEMALE ? formatNumber(d.POP_FEMALE as number) : undefined}
+          />
+          <StatRow
+            label="Male-to-Female Ratio"
+            value={d.POP_MALE_TO_FEMALE_RATIO != null ? (d.POP_MALE_TO_FEMALE_RATIO as number).toFixed(3) : null}
+          />
+          <div class="my-3 h-px bg-border/30"></div>
+          <StatRow label="Average Age" value={d.POP_AVG_AGE} />
+          <StatRow label="Median Age" value={d.POP_MEDIAN_AGE as number} />
+          <StatRow
+            label="Age Rank"
+            value={d.RANK_AVG_AGE ? `#${d.RANK_AVG_AGE} of ${d.RANK_TOTAL_IN_GEO_LEVEL}` : null}
+            sub="Same geo level"
+          />
+        </div>
+
+        <div class="lg:col-span-2">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Population Age Distribution</h3>
+          {
+            ageBrackets.length > 0 ? (
+              <div class="rounded-xl border border-border/30 bg-surface p-6">
+                {ageBrackets.map((b) => (
+                  <DistributionBar
+                    label={b.label}
+                    value={b.value}
+                    max={maxAgeBracket}
+                    total={d.POP_2021}
+                  />
+                ))}
+              </div>
+            ) : (
+              <p class="font-sans text-sm italic text-on-surface-variant">Age distribution data not available.</p>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Households -->
+  <section class="bg-surface-soft py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <SectionHeader title={`${name} Households`} id="households" />
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Household Size</h3>
+          <StatRow
+            label="Average Household Size"
+            value={d.HH_AVG_SIZE != null ? (d.HH_AVG_SIZE as number).toFixed(1) : null}
+          />
+          <StatRow
+            label="Total Private Dwellings"
+            value={d.TOTAL_PRIVATE_DWELLINGS ? formatNumber(d.TOTAL_PRIVATE_DWELLINGS as number) : null}
+          />
+          <StatRow
+            label="Occupied Private Dwellings"
+            value={d.OCCUPIED_PRIVATE_DWELLINGS ? formatNumber(d.OCCUPIED_PRIVATE_DWELLINGS as number) : null}
+          />
+          {
+            d.HH_SIZE_TOTAL ? (
+              <>
+                <div class="my-4 h-px bg-border/30" />
+                <h4 class="mb-3 font-sans text-xs font-bold uppercase tracking-wider text-on-surface-variant">
+                  Size Distribution
+                </h4>
+                <StatRow
+                  label="1 Person"
+                  value={
+                    d.HH_SIZE_1_PERSON
+                      ? `${formatNumber(d.HH_SIZE_1_PERSON as number)} (${pct(d.HH_SIZE_1_PERSON as number, d.HH_SIZE_TOTAL as number)})`
+                      : null
+                  }
+                />
+                <StatRow
+                  label="2 Persons"
+                  value={
+                    d.HH_SIZE_2_PERSONS
+                      ? `${formatNumber(d.HH_SIZE_2_PERSONS as number)} (${pct(d.HH_SIZE_2_PERSONS as number, d.HH_SIZE_TOTAL as number)})`
+                      : null
+                  }
+                />
+                <StatRow
+                  label="3 Persons"
+                  value={
+                    d.HH_SIZE_3_PERSONS
+                      ? `${formatNumber(d.HH_SIZE_3_PERSONS as number)} (${pct(d.HH_SIZE_3_PERSONS as number, d.HH_SIZE_TOTAL as number)})`
+                      : null
+                  }
+                />
+                <StatRow
+                  label="4 Persons"
+                  value={
+                    d.HH_SIZE_4_PERSONS
+                      ? `${formatNumber(d.HH_SIZE_4_PERSONS as number)} (${pct(d.HH_SIZE_4_PERSONS as number, d.HH_SIZE_TOTAL as number)})`
+                      : null
+                  }
+                />
+                <StatRow
+                  label="5+ Persons"
+                  value={
+                    d.HH_SIZE_5_PLUS_PERSONS
+                      ? `${formatNumber(d.HH_SIZE_5_PLUS_PERSONS as number)} (${pct(d.HH_SIZE_5_PLUS_PERSONS as number, d.HH_SIZE_TOTAL as number)})`
+                      : null
+                  }
+                />
+              </>
+            ) : null
+          }
+        </div>
+
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Household Composition</h3>
+          {
+            hhTypes.length > 0 ? (
+              <div>
+                {hhTypes.map((h) => (
+                  <div class="flex items-center justify-between border-b border-border/20 py-2.5 last:border-0">
+                    <span class="font-sans text-base text-on-surface-variant">{h.label}</span>
+                    <div class="text-right">
+                      <span class="font-heading text-base font-bold text-primary">{formatNumber(h.value)}</span>
+                      <span class="ml-2 font-sans text-xs text-on-surface-variant">({pct(h.value, hhTotal)})</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p class="font-sans text-sm italic text-on-surface-variant">Household composition data not available.</p>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Incomes -->
+  <section class="bg-background py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <SectionHeader title={`${name} Incomes`} id="incomes" />
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Summary</h3>
+          <StatRow
+            label="Avg. Household Income"
+            value={d.HH_INCOME_AVG_AFTER_TAX ? formatCurrency(d.HH_INCOME_AVG_AFTER_TAX) : null}
+            sub="After tax"
+          />
+          <StatRow
+            label="Median Household Income"
+            value={d.HH_INCOME_MEDIAN_AFTER_TAX ? formatCurrency(d.HH_INCOME_MEDIAN_AFTER_TAX) : null}
+            sub="After tax"
+          />
+          <StatRow
+            label="Avg. Individual Income"
+            value={d.INCOME_AVG_AFTER_TAX ? formatCurrency(d.INCOME_AVG_AFTER_TAX as number) : null}
+            sub="After tax"
+          />
+          <StatRow
+            label="Median Individual Income"
+            value={d.INCOME_MEDIAN_AFTER_TAX ? formatCurrency(d.INCOME_MEDIAN_AFTER_TAX as number) : null}
+            sub="After tax"
+          />
+          <StatRow
+            label="Income Rank"
+            value={d.RANK_HH_INCOME ? `#${d.RANK_HH_INCOME} of ${d.RANK_TOTAL_IN_GEO_LEVEL}` : null}
+            sub="Same geo level"
+          />
+          <div class="my-4 h-px bg-border/30"></div>
+          <h4 class="mb-3 font-sans text-xs font-bold uppercase tracking-wider text-on-surface-variant">
+            Income Composition
+          </h4>
+          <StatRow
+            label="Market Income"
+            value={d.INCOME_COMP_MARKET_PCT != null ? `${(d.INCOME_COMP_MARKET_PCT as number).toFixed(1)}%` : null}
+          />
+          <StatRow
+            label="Employment Income"
+            value={
+              d.INCOME_COMP_EMPLOYMENT_PCT != null
+                ? `${(d.INCOME_COMP_EMPLOYMENT_PCT as number).toFixed(1)}%`
+                : null
+            }
+          />
+          <StatRow
+            label="Government Transfers"
+            value={
+              d.INCOME_COMP_GOVT_TRANSFERS_PCT != null
+                ? `${(d.INCOME_COMP_GOVT_TRANSFERS_PCT as number).toFixed(1)}%`
+                : null
+            }
+          />
+        </div>
+
+        <div class="lg:col-span-2">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Individual Income Distribution</h3>
+          {
+            incomeDistBrackets.length > 0 ? (
+              <div class="rounded-xl border border-border/30 bg-surface p-6">
+                {incomeDistBrackets.map((b) => (
+                  <DistributionBar
+                    label={b.label}
+                    value={b.value}
+                    max={maxIncomeBracket}
+                    total={incomeDistTotal}
+                    colorClass="bg-tertiary"
+                  />
+                ))}
+              </div>
+            ) : (
+              <p class="font-sans text-sm italic text-on-surface-variant">Income distribution data not available.</p>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Employment -->
+  <section class="bg-surface-soft py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <SectionHeader title={`${name} Employment`} id="employment" />
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Labour Force</h3>
+          <StatRow
+            label="Employment Rate"
+            value={d.LABOUR_EMPLOYMENT_RATE != null ? `${(d.LABOUR_EMPLOYMENT_RATE as number).toFixed(1)}%` : null}
+          />
+          <StatRow
+            label="Unemployment Rate"
+            value={
+              d.LABOUR_UNEMPLOYMENT_RATE != null ? `${(d.LABOUR_UNEMPLOYMENT_RATE as number).toFixed(1)}%` : null
+            }
+          />
+          <StatRow
+            label="Total Labour Force"
+            value={d.LABOUR_IN_FORCE ? formatNumber(d.LABOUR_IN_FORCE as number) : null}
+          />
+          <StatRow label="Employed" value={d.LABOUR_EMPLOYED ? formatNumber(d.LABOUR_EMPLOYED as number) : null} />
+          <StatRow
+            label="Unemployed"
+            value={d.LABOUR_UNEMPLOYED ? formatNumber(d.LABOUR_UNEMPLOYED as number) : null}
+          />
+          <StatRow
+            label="Not in Labour Force"
+            value={d.LABOUR_NOT_IN_FORCE ? formatNumber(d.LABOUR_NOT_IN_FORCE as number) : null}
+          />
+        </div>
+
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Low Income Prevalence</h3>
+          <StatRow
+            label="Overall Low-Income Rate"
+            value={d.LOW_INCOME_PCT != null ? `${(d.LOW_INCOME_PCT as number).toFixed(1)}%` : null}
+          />
+          <StatRow
+            label="Children (0–17)"
+            value={d.LOW_INCOME_0_17_PCT != null ? `${(d.LOW_INCOME_0_17_PCT as number).toFixed(1)}%` : null}
+          />
+          <StatRow
+            label="Adults (18–64)"
+            value={d.LOW_INCOME_18_64_PCT != null ? `${(d.LOW_INCOME_18_64_PCT as number).toFixed(1)}%` : null}
+          />
+          <StatRow
+            label="Seniors (65+)"
+            value={d.LOW_INCOME_65_PLUS_PCT != null ? `${(d.LOW_INCOME_65_PLUS_PCT as number).toFixed(1)}%` : null}
+          />
+          <div class="my-4 h-px bg-border/30"></div>
+          <StatRow
+            label="Gini Coefficient (Total)"
+            value={d.GINI_TOTAL_INCOME != null ? (d.GINI_TOTAL_INCOME as number).toFixed(3) : null}
+            sub="0 = perfect equality"
+          />
+          <StatRow
+            label="Gini Coefficient (After-Tax)"
+            value={d.GINI_AFTER_TAX_INCOME != null ? (d.GINI_AFTER_TAX_INCOME as number).toFixed(3) : null}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="bg-background py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <SectionHeader title={`${name} Languages`} id="languages" />
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Language Knowledge</h3>
+          <StatRow
+            label="English Only"
+            value={
+              d.LANG_KNOWLEDGE_EN_ONLY
+                ? `${formatNumber(d.LANG_KNOWLEDGE_EN_ONLY as number)} (${pct(d.LANG_KNOWLEDGE_EN_ONLY as number, langTotal)})`
+                : null
+            }
+          />
+          <StatRow
+            label="French Only"
+            value={
+              d.LANG_KNOWLEDGE_FR_ONLY
+                ? `${formatNumber(d.LANG_KNOWLEDGE_FR_ONLY as number)} (${pct(d.LANG_KNOWLEDGE_FR_ONLY as number, langTotal)})`
+                : null
+            }
+          />
+          <StatRow
+            label="English & French"
+            value={
+              d.LANG_KNOWLEDGE_EN_AND_FR
+                ? `${formatNumber(d.LANG_KNOWLEDGE_EN_AND_FR as number)} (${pct(d.LANG_KNOWLEDGE_EN_AND_FR as number, langTotal)})`
+                : null
+            }
+          />
+          <StatRow
+            label="Neither"
+            value={
+              d.LANG_KNOWLEDGE_NEITHER
+                ? `${formatNumber(d.LANG_KNOWLEDGE_NEITHER as number)} (${pct(d.LANG_KNOWLEDGE_NEITHER as number, langTotal)})`
+                : null
+            }
+          />
+          <div class="my-4 h-px bg-border/30"></div>
+          <h4 class="mb-3 font-sans text-xs font-bold uppercase tracking-wider text-on-surface-variant">
+            Mother Tongue
+          </h4>
+          <StatRow
+            label="English"
+            value={
+              d.MOTHER_TONGUE_EN
+                ? `${formatNumber(d.MOTHER_TONGUE_EN as number)} (${pct(d.MOTHER_TONGUE_EN as number, motherTongueTotal)})`
+                : null
+            }
+          />
+          <StatRow
+            label="French"
+            value={
+              d.MOTHER_TONGUE_FR
+                ? `${formatNumber(d.MOTHER_TONGUE_FR as number)} (${pct(d.MOTHER_TONGUE_FR as number, motherTongueTotal)})`
+                : null
+            }
+          />
+          <StatRow
+            label="Non-official languages"
+            value={
+              d.MOTHER_TONGUE_NON_OFFICIAL
+                ? `${formatNumber(d.MOTHER_TONGUE_NON_OFFICIAL as number)} (${pct(d.MOTHER_TONGUE_NON_OFFICIAL as number, motherTongueTotal)})`
+                : null
+            }
+          />
+        </div>
+
+        <div class="lg:col-span-2">
+          <h3 class="mb-6 font-heading text-lg font-bold text-primary">Top Mother Tongue Languages</h3>
+          {
+            langBreakdown.length > 0 ? (
+              <div class="rounded-xl border border-border/30 bg-surface p-6">
+                {langBreakdown.map((l) => (
+                  <DistributionBar
+                    label={l.label}
+                    value={l.value}
+                    max={maxLang}
+                    total={motherTongueTotal}
+                    colorClass="bg-primary/60"
+                  />
+                ))}
+              </div>
+            ) : (
+              <p class="font-sans text-sm italic text-on-surface-variant">Language breakdown data not available.</p>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dwellings -->
+  {
+    dwellingTypes.length > 0 && (
+      <section class="bg-surface-soft py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeader title={`${name} Dwellings`} id="dwellings" />
+          <div class="rounded-xl border border-border/30 bg-surface p-6">
+            <h3 class="mb-6 font-heading text-lg font-bold text-primary">Dwelling Type</h3>
+            {dwellingTypes.map((x) => (
+              <DistributionBar
+                label={x.label}
+                value={x.value}
+                max={maxDwelling}
+                total={dwellingTotal}
+                colorClass="bg-primary"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <!-- Province cities -->
+  {
+    isProvince && provinceCities.length > 0 && (
+      <section class="bg-background py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeader title={`Cities & towns in ${name}`} id="cities" />
+          <div class="overflow-x-auto rounded-xl border border-border/30 bg-surface">
+            <table class="w-full min-w-[640px] text-left text-sm">
+              <thead class="border-b border-border/40 bg-surface-soft">
+                <tr>
+                  <th class="px-4 py-3 font-heading font-bold text-primary">Location</th>
+                  <th class="px-4 py-3 font-heading font-bold text-primary">Population</th>
+                  <th class="px-4 py-3 font-heading font-bold text-primary">Growth</th>
+                  <th class="px-4 py-3 font-heading font-bold text-primary">Avg Age</th>
+                  <th class="px-4 py-3 font-heading font-bold text-primary">Median HH Income</th>
+                  <th class="px-4 py-3 font-heading font-bold text-primary">Employment</th>
+                </tr>
+              </thead>
+              <tbody>
+                {provinceCities.slice(0, 50).map((c) => (
+                  <tr class="border-b border-border/20 last:border-0 hover:bg-surface-soft/60">
+                    <td class="px-4 py-3">
+                      <a
+                        href={`/location/${generateSlug(c.GEO_NAME)}/`}
+                        class="font-medium text-primary no-underline hover:underline"
+                      >
+                        {toDisplayName(c.GEO_NAME)}
+                      </a>
+                    </td>
+                    <td class="px-4 py-3 text-on-surface-variant">{formatNumber(c.POP_2021)}</td>
+                    <td class="px-4 py-3 text-on-surface-variant">{formatPercent(c.POP_CHANGE_PCT)}</td>
+                    <td class="px-4 py-3 text-on-surface-variant">{c.POP_AVG_AGE ?? '—'}</td>
+                    <td class="px-4 py-3 text-on-surface-variant">
+                      {c.HH_INCOME_MEDIAN_AFTER_TAX ? formatCurrency(c.HH_INCOME_MEDIAN_AFTER_TAX) : '—'}
+                    </td>
+                    <td class="px-4 py-3 text-on-surface-variant">
+                      {c.LABOUR_EMPLOYMENT_RATE != null
+                        ? `${(c.LABOUR_EMPLOYMENT_RATE as number).toFixed(1)}%`
+                        : '—'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {provinceCities.length > 50 && (
+            <p class="mt-4 font-sans text-sm text-on-surface-variant">
+              Showing top 50 of {provinceCities.length} census subdivisions by population.
+            </p>
+          )}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- CTA -->
+  <section class="bg-surface-soft py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+      <h2 class="mb-6 font-heading text-2xl font-bold text-primary sm:text-3xl">Discover More Insights</h2>
+      <p class="mx-auto mb-8 max-w-xl font-sans text-sm text-on-surface-variant">
+        Compare {name} with other Canadian locations — comparison tools arrive in a later migration slice.
+      </p>
+      <a
+        href="/"
+        class="inline-flex rounded-md bg-primary px-8 py-3 font-heading font-bold text-white no-underline shadow-md transition-colors hover:bg-primary/90"
+      >
+        Browse locations
+      </a>
+    </div>
+  </section>
+</Layout>

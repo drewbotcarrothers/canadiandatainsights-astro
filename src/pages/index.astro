@@ -1,10 +1,44 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {
+  getAllLocations,
+  getProvinces,
+  getTopCities,
+  generateSlug,
+  displayName,
+} from '../lib/locations';
+import { formatNumber, formatCurrency } from '../lib/utils';
+
+const provinces = await getProvinces();
+provinces.sort((a, b) => a.GEO_NAME.localeCompare(b.GEO_NAME));
+const topCities = await getTopCities(12);
+
+const all = await getAllLocations();
+const canadaRow = all.find(
+  (l) => l.GEO_LEVEL === 'Country' || l.GEO_NAME === 'Canada'
+);
 
 const kpis = [
-  { label: 'Population', value: '36,991,981', hint: 'Canada, Census 2021' },
-  { label: 'Growth', value: '1.8% Annual', hint: 'Intercensal growth' },
-  { label: 'Median income', value: '$84,000', hint: 'Household median' },
+  {
+    label: 'Population',
+    value: canadaRow?.POP_2021 ? formatNumber(canadaRow.POP_2021) : '36,991,981',
+    hint: 'Canada, Census 2021',
+  },
+  {
+    label: 'Growth',
+    value:
+      canadaRow?.POP_CHANGE_PCT != null
+        ? `${Number(canadaRow.POP_CHANGE_PCT).toFixed(1)}%`
+        : '5.2%',
+    hint: '2016–2021 population change',
+  },
+  {
+    label: 'Median income',
+    value: canadaRow?.HH_INCOME_MEDIAN_AFTER_TAX
+      ? formatCurrency(canadaRow.HH_INCOME_MEDIAN_AFTER_TAX)
+      : '$84,000',
+    hint: 'Household median (after tax)',
+  },
 ];
 ---
 
@@ -15,7 +49,7 @@ const kpis = [
 >
   <div class="border-b border-primary/10 bg-primary/5 px-4 py-2 text-center">
     <p class="text-xs text-on-surface-variant sm:text-sm">
-      Location atlas and compare tools arrive in a later migration slice.
+      Location profiles are live. Interactive compare and map atlas arrive in a later migration slice.
     </p>
   </div>
 
@@ -25,7 +59,7 @@ const kpis = [
         Canadian <span class="text-tertiary">Data Insights</span>
       </h1>
       <p class="mt-4 font-sans text-lg leading-relaxed text-on-surface-variant">
-        Interactive Statistics Canada census insights
+        Interactive Statistics Canada census insights — explore provinces, territories, and cities from the 2021 Census.
       </p>
       <div class="mt-8 flex flex-wrap gap-4">
         <a
@@ -44,15 +78,66 @@ const kpis = [
     </div>
 
     <div class="grid gap-4 sm:grid-cols-3">
-      {kpis.map((kpi) => (
-        <article class="rounded-xl border border-border/50 bg-surface p-6 shadow-sm">
-          <p class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant">
-            {kpi.label}
-          </p>
-          <p class="mt-2 font-heading text-3xl font-bold text-primary">{kpi.value}</p>
-          <p class="mt-1 text-xs text-on-surface-variant">{kpi.hint}</p>
-        </article>
-      ))}
+      {
+        kpis.map((kpi) => (
+          <article class="rounded-xl border border-border/50 bg-surface p-6 shadow-sm">
+            <p class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant">
+              {kpi.label}
+            </p>
+            <p class="mt-2 font-heading text-3xl font-bold text-primary">{kpi.value}</p>
+            <p class="mt-1 text-xs text-on-surface-variant">{kpi.hint}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="border-t border-border/30 bg-surface-soft py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h2 class="mb-2 font-heading text-2xl font-bold text-primary">Provinces &amp; territories</h2>
+      <p class="mb-8 font-sans text-sm text-on-surface-variant">
+        Census profiles for every province and territory.
+      </p>
+      <div class="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {
+          provinces.map((p) => (
+            <a
+              href={`/location/${generateSlug(p.GEO_NAME)}/`}
+              class="rounded-lg border border-border/40 bg-surface px-4 py-3 font-medium text-primary no-underline shadow-sm transition-colors hover:border-primary/40 hover:bg-primary/5"
+            >
+              <span class="font-heading font-bold">{displayName(p.GEO_NAME)}</span>
+              <span class="mt-1 block text-xs font-normal text-on-surface-variant">
+                Pop. {formatNumber(p.POP_2021)}
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h2 class="mb-2 font-heading text-2xl font-bold text-primary">Largest cities</h2>
+      <p class="mb-8 font-sans text-sm text-on-surface-variant">
+        Top census subdivisions by 2021 population.
+      </p>
+      <div class="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {
+          topCities.map((c) => (
+            <a
+              href={`/location/${generateSlug(c.GEO_NAME)}/`}
+              class="rounded-lg border border-border/40 bg-surface px-4 py-3 font-medium text-primary no-underline shadow-sm transition-colors hover:border-primary/40 hover:bg-primary/5"
+            >
+              <span class="font-heading font-bold">{displayName(c.GEO_NAME)}</span>
+              <span class="mt-1 block text-xs font-normal text-on-surface-variant">
+                Pop. {formatNumber(c.POP_2021)}
+                {c.PROVINCE ? ` · ${c.PROVINCE}` : ''}
+              </span>
+            </a>
+          ))
+        }
+      </div>
     </div>
   </section>
 </Layout>

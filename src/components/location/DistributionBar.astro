@@ -1,0 +1,32 @@
+---
+import { formatNumber } from '../../lib/utils';
+
+interface Props {
+  label: string;
+  value: number;
+  max: number;
+  total?: number;
+  colorClass?: string;
+}
+
+const { label, value, max, total, colorClass = 'bg-primary' } = Astro.props;
+const barPct = max > 0 ? (value / max) * 100 : 0;
+const totalPct = total && total > 0 ? (value / total) * 100 : null;
+---
+
+<div class="flex items-center gap-3 py-1.5">
+  <span class="w-24 shrink-0 text-right font-sans text-sm text-on-surface-variant">{label}</span>
+  <div class="h-5 flex-grow overflow-hidden rounded-sm bg-surface-soft">
+    <div class={`h-full rounded-sm ${colorClass}`} style={`width: ${Math.max(barPct, 1)}%`}></div>
+  </div>
+  <div class="flex w-36 shrink-0 items-center justify-end gap-2">
+    <span class="text-right font-sans text-sm font-bold text-primary">{formatNumber(value)}</span>
+    {
+      totalPct !== null && (
+        <span class="w-14 text-right font-sans text-xs text-on-surface-variant opacity-60">
+          ({totalPct.toFixed(1)}%)
+        </span>
+      )
+    }
+  </div>
+</div>
