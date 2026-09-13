@@ -13,12 +13,19 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^6.0.5",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.2",
     "papaparse": "^5.7.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-simple-maps": "^5.0.5",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@types/papaparse": "^5.5.2"
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/react-simple-maps": "^3.0.6"
   }
 }

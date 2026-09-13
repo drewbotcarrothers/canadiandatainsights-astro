@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import CanadaMap from '../components/home/CanadaMap';
 import {
   getAllLocations,
   getProvinces,
@@ -7,11 +8,49 @@ import {
   generateSlug,
   displayName,
 } from '../lib/locations';
+import { CITY_COORDINATES } from '../lib/city-coordinates';
 import { formatNumber, formatCurrency } from '../lib/utils';
+import type { MapCity } from '../components/home/CanadaMap';
+
+const TOP_15 = new Set([
+  'Toronto',
+  'Montréal',
+  'Montreal',
+  'Calgary',
+  'Ottawa',
+  'Edmonton',
+  'Winnipeg',
+  'Vancouver',
+  'Mississauga',
+  'Brampton',
+  'Hamilton',
+  'Surrey',
+  'Québec',
+  'Quebec City',
+  'Halifax',
+]);
 
 const provinces = await getProvinces();
 provinces.sort((a, b) => a.GEO_NAME.localeCompare(b.GEO_NAME));
 const topCities = await getTopCities(12);
+const mapSourceCities = await getTopCities(32);
+
+const mapCities: MapCity[] = mapSourceCities
+  .map((c) => {
+    const name = displayName(c.GEO_NAME);
+    if (!TOP_15.has(name)) return null;
+    const coords = CITY_COORDINATES[name];
+    if (!coords) return null;
+    return {
+      name,
+      pop: c.POP_2021 ?? 0,
+      age: c.POP_AVG_AGE ?? 0,
+      income: c.HH_INCOME_MEDIAN_AFTER_TAX || null,
+      slug: generateSlug(c.GEO_NAME),
+      coords,
+    } satisfies MapCity;
+  })
+  .filter((c): c is MapCity => c != null);
 
 const all = await getAllLocations();
 const canadaRow = all.find(
@@ -49,7 +88,7 @@ const kpis = [
 >
   <div class="border-b border-primary/10 bg-primary/5 px-4 py-2 text-center">
     <p class="text-xs text-on-surface-variant sm:text-sm">
-      Location profiles are live. Interactive compare and map atlas arrive in a later migration slice.
+      Location profiles and Interactive Atlas are live. Compare tool arrives in a later migration slice.
     </p>
   </div>
 
@@ -92,7 +131,24 @@ const kpis = [
     </div>
   </section>
 
-  <section class="border-t border-border/30 bg-surface-soft py-16">
+  <!-- Interactive Atlas -->
+  <section class="border-t border-border/30 bg-surface-soft py-12" aria-labelledby="atlas-heading">
+    <div class="mx-auto max-w-screen-2xl px-4 sm:px-6">
+      <div class="mb-6 max-w-2xl">
+        <h2 id="atlas-heading" class="font-heading text-2xl font-bold text-primary sm:text-3xl">
+          Interactive Atlas
+        </h2>
+        <p class="mt-2 font-sans text-sm text-on-surface-variant">
+          Hover city markers for census snapshots. Click through to full location profiles.
+        </p>
+      </div>
+      <div class="relative min-h-[600px] overflow-hidden rounded-xl border border-border/40 bg-surface-soft shadow-sm">
+        <CanadaMap client:load cities={mapCities} />
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-border/30 py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <h2 class="mb-2 font-heading text-2xl font-bold text-primary">Provinces &amp; territories</h2>
       <p class="mb-8 font-sans text-sm text-on-surface-variant">
@@ -116,7 +172,7 @@ const kpis = [
     </div>
   </section>
 
-  <section class="py-16">
+  <section class="border-t border-border/30 bg-surface-soft py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <h2 class="mb-2 font-heading text-2xl font-bold text-primary">Largest cities</h2>
       <p class="mb-8 font-sans text-sm text-on-surface-variant">

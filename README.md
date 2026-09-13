@@ -5,6 +5,8 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 ## Stack
 
 - Astro (latest stable) + TypeScript
+- React islands via `@astrojs/react` (Interactive Atlas map)
+- `react-simple-maps` for Canada geography + city markers
 - Tailwind CSS v4 via `@tailwindcss/vite`
 - Papa Parse for census CSV at build time
 - Static output (`dist/`) for Hostinger FTP
@@ -24,7 +26,9 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 
 ## What this slice includes
 
-- Homepage with national KPIs, **provinces/territories**, and **top cities** linked to profiles
+- Homepage with national KPIs, **Interactive Atlas** (React island), **provinces/territories**, and **top cities** linked to profiles
+- Atlas map: `react-simple-maps` + top-15 city markers, hover panel, click-through to `/location/{slug}/`
+- Canada outlines load client-side from GeoJSON (CDN); the island hydrates with `client:load`
 - **~702 location profile pages** at `/location/[slug]/` generated at build from census CSV
 - Profile sections: Population, Households, Incomes, Employment/Labour, Languages, Dwellings
 - `/about/`, `/sources/`, `/privacy/`, `/terms/`
@@ -43,11 +47,18 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 
 Without the CSV, location pages and homepage province/city lists will fail at build.
 
+## Interactive Atlas notes
+
+- Component: `src/components/home/CanadaMap.tsx` (React island)
+- City coordinates: `src/lib/city-coordinates.ts`
+- Geography URL (runtime CDN dependency):
+  `https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/canada.geojson`
+- Marker navigation uses `window.location` to `/location/{slug}/` (trailing slash)
+
 ## What this slice excludes
 
 - Compare tool / interactive comparisons
 - Blog
-- Map atlas
 - AdSense
 - React chart islands (recharts) — distribution bars are static HTML
 
@@ -73,7 +84,6 @@ Expect `dist/location/*/index.html` for every geography in the CSV (plus static 
 
 1. Compare island (client-side)
 2. Blog
-3. Map atlas
 
 ## Scripts
 
