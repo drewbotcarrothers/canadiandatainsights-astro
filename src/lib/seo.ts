@@ -6,6 +6,8 @@ export const CONTACT_EMAIL = 'hello@canadiandatainsights.com';
 export const OGL_LICENSE_URL =
   'https://open.canada.ca/en/open-government-licence-canada';
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.png`;
+export const YOUTUBE_URL =
+  'https://www.youtube.com/channel/UCkKDB5U853YVBnfAPIlPHTw';
 
 export const organization = {
   '@type': 'Organization',
@@ -17,6 +19,7 @@ export const organization = {
     '@type': 'ImageObject',
     url: `${SITE_URL}/favicon.svg`,
   },
+  sameAs: [YOUTUBE_URL],
 };
 
 export const website = {

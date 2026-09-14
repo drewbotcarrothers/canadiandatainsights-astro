@@ -8,6 +8,7 @@ Canadian Data Insights (CDI) turns official Statistics Canada 2021 Census geogra
 
 - Site: https://canadiandatainsights.com/
 - Contact: hello@canadiandatainsights.com
+- YouTube: https://www.youtube.com/channel/UCkKDB5U853YVBnfAPIlPHTw
 - Primary data: Statistics Canada, Census of Population, 2021
 - Licence: Open Government Licence - Canada
   https://open.canada.ca/en/open-government-licence-canada
