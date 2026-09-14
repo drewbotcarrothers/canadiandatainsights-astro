@@ -20,6 +20,59 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "Toronto vs Calgary: 2021 Census Population & Income Compared",
+    slug: "toronto-vs-calgary-2021-census",
+    date: "September 14, 2026",
+    category: "Economy",
+    readTime: "6 min read",
+    heroImage: "/images/blog/income-disparity.png",
+    chartType: 'bar',
+    chartTitle: "Toronto vs Calgary — Key 2021 Census Metrics",
+    chartData: [
+      { name: "Toronto pop. (M)", value: 2.79 },
+      { name: "Calgary pop. (M)", value: 1.31 },
+      { name: "Toronto growth %", value: 2.3 },
+      { name: "Calgary growth %", value: 5.5 },
+      { name: "Toronto med. HH $k", value: 74 },
+      { name: "Calgary med. HH $k", value: 85 },
+    ],
+    excerpt: "Side-by-side 2021 Census figures for Canada's largest city and Alberta's largest: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    content: `
+      <p>Toronto and Calgary sit at opposite ends of a familiar Canadian trade-off: sheer scale versus growth and household income. Using Statistics Canada Census of Population 2021 data for each city (census subdivision), here is a clear head-to-head.</p>
+
+      <h2>Population &amp; growth</h2>
+      <p><a href="/location/toronto/"><strong>Toronto</strong></a> counted <strong>2,794,356</strong> residents in 2021 — more than double Calgary's <strong>1,306,784</strong>. Size, however, is not the same as momentum. Toronto's population rose <strong>2.3%</strong> from 2016 to 2021, while <a href="/location/calgary/"><strong>Calgary</strong></a> grew <strong>5.5%</strong> over the same period.</p>
+
+      <p>In short: Toronto remains the country's largest municipal population; Calgary added people faster during the last census cycle.</p>
+
+      <h2>Income</h2>
+      <p>Median after-tax household income tells a different story. Calgary households sat at <strong>$85,000</strong> (median after tax), versus <strong>$74,000</strong> in Toronto. That gap matters for cost-of-living conversations: Toronto's larger labour market does not automatically translate into higher typical household take-home pay in the census snapshot.</p>
+
+      <h2>Age profile</h2>
+      <p>Average age was <strong>41.5</strong> years in Toronto and <strong>38.8</strong> in Calgary. Calgary's younger profile lines up with faster growth and a labour market historically tied to energy and professional services migration.</p>
+
+      <h2>Quick comparison table</h2>
+      <ul>
+        <li><strong>Population (2021):</strong> Toronto 2,794,356 · Calgary 1,306,784</li>
+        <li><strong>Growth 2016–2021:</strong> Toronto 2.3% · Calgary 5.5%</li>
+        <li><strong>Median HH income (after tax):</strong> Toronto $74,000 · Calgary $85,000</li>
+        <li><strong>Average age:</strong> Toronto 41.5 · Calgary 38.8</li>
+      </ul>
+
+      <blockquote>Toronto wins on scale; Calgary leads on recent growth, median household income, and a younger average age — all from the same 2021 Census release.</blockquote>
+
+      <h2>Explore the full datasets</h2>
+      <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
+      <ul>
+        <li><a href="/location/toronto/">Toronto 2021 census profile</a></li>
+        <li><a href="/location/calgary/">Calgary 2021 census profile</a></li>
+        <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Toronto and Calgary</li>
+      </ul>
+
+      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
+    `,
+  },
+  {
     title: "Canada's Shift to Secondary Cities: 2021 Census Trends",
     slug: "canada-shift-to-secondary-cities",
     date: "September 25, 2025",

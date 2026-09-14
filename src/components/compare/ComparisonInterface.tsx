@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { CompareLocation } from '../../lib/locations';
 import { formatNumber, formatCurrency, cn } from '../../lib/utils';
+import { trackEvent } from '../../lib/analytics';
 
 export default function ComparisonInterface() {
   const [locations, setLocations] = useState<CompareLocation[]>([]);
@@ -9,6 +10,8 @@ export default function ComparisonInterface() {
   const [geoLevel, setGeoLevel] = useState<string>('Province');
   const [locA, setLocA] = useState<CompareLocation | null>(null);
   const [locB, setLocB] = useState<CompareLocation | null>(null);
+  const [compareStartSent, setCompareStartSent] = useState(false);
+  const [compareCompleteSent, setCompareCompleteSent] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -36,11 +39,59 @@ export default function ComparisonInterface() {
   const filteredLocations = locations.filter((loc) => loc.GEO_LEVEL === geoLevel);
   const geoLevels = Array.from(new Set(locations.map((loc) => loc.GEO_LEVEL)));
 
+  const fireCompareStart = (detail: Record<string, string | number | boolean | undefined>) => {
+    if (compareStartSent) return;
+    setCompareStartSent(true);
+    trackEvent('compare_start', {
+      page_path: '/compare/',
+      ...detail,
+    });
+  };
+
   const handleGeoLevelChange = (level: string) => {
     setGeoLevel(level);
     setLocA(null);
     setLocB(null);
+    setCompareCompleteSent(false);
+    fireCompareStart({ geo_level: level, step: 'geo_level' });
   };
+
+  const selectLocA = (code: string) => {
+    const next = filteredLocations.find((l) => String(l.ALT_GEO_CODE) === code) || null;
+    setLocA(next);
+    setCompareCompleteSent(false);
+    if (next) {
+      fireCompareStart({
+        geo_level: geoLevel,
+        step: 'location_a',
+        location_a: next.GEO_NAME,
+      });
+    }
+  };
+
+  const selectLocB = (code: string) => {
+    const next = filteredLocations.find((l) => String(l.ALT_GEO_CODE) === code) || null;
+    setLocB(next);
+    setCompareCompleteSent(false);
+    if (next) {
+      fireCompareStart({
+        geo_level: geoLevel,
+        step: 'location_b',
+        location_b: next.GEO_NAME,
+      });
+    }
+  };
+
+  useEffect(() => {
+    if (!locA || !locB || compareCompleteSent) return;
+    setCompareCompleteSent(true);
+    trackEvent('compare_complete', {
+      page_path: '/compare/',
+      geo_level: geoLevel,
+      location_a: locA.GEO_NAME,
+      location_b: locB.GEO_NAME,
+    });
+  }, [locA, locB, geoLevel, compareCompleteSent]);
 
   const renderDataRow = (
     label: string,
@@ -146,14 +197,14 @@ export default function ComparisonInterface() {
   return (
     <div className="space-y-12">
       {/* Selector Interface */}
-      <div className="rounded-md border border-border/40 bg-surface p-6 shadow-sm sm:p-8">
+      <div className="rounded-md border border-border/40 bg-surface p-4 shadow-sm sm:p-6 md:p-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="flex flex-col gap-2">
             <label className="font-heading text-xs font-bold uppercase tracking-widest text-primary">
               Select Level
             </label>
             <select
-              className="rounded-md border-none bg-surface-soft p-3 font-sans text-sm outline-none ring-1 ring-border/40 focus:ring-primary/40"
+              className="w-full min-h-[44px] rounded-md border-none bg-surface-soft p-3 font-sans text-base outline-none ring-1 ring-border/40 focus:ring-primary/40"
               value={geoLevel}
               onChange={(e) => handleGeoLevelChange(e.target.value)}
             >
@@ -170,13 +221,9 @@ export default function ComparisonInterface() {
               Location A
             </label>
             <select
-              className="rounded-md border-none bg-surface-soft p-3 font-sans text-sm outline-none ring-1 ring-border/40 focus:ring-primary/40"
+              className="w-full min-h-[44px] rounded-md border-none bg-surface-soft p-3 font-sans text-base outline-none ring-1 ring-border/40 focus:ring-primary/40"
               value={locA?.ALT_GEO_CODE ?? ''}
-              onChange={(e) =>
-                setLocA(
-                  filteredLocations.find((l) => String(l.ALT_GEO_CODE) === e.target.value) || null
-                )
-              }
+              onChange={(e) => selectLocA(e.target.value)}
             >
               <option value="">Select Location...</option>
               {filteredLocations.map((loc) => (
@@ -192,13 +239,9 @@ export default function ComparisonInterface() {
               Location B
             </label>
             <select
-              className="rounded-md border-none bg-surface-soft p-3 font-sans text-sm outline-none ring-1 ring-border/40 focus:ring-primary/40"
+              className="w-full min-h-[44px] rounded-md border-none bg-surface-soft p-3 font-sans text-base outline-none ring-1 ring-border/40 focus:ring-primary/40"
               value={locB?.ALT_GEO_CODE ?? ''}
-              onChange={(e) =>
-                setLocB(
-                  filteredLocations.find((l) => String(l.ALT_GEO_CODE) === e.target.value) || null
-                )
-              }
+              onChange={(e) => selectLocB(e.target.value)}
             >
               <option value="">Select Location...</option>
               {filteredLocations.map((loc) => (
@@ -214,7 +257,7 @@ export default function ComparisonInterface() {
       {/* Comparison Results */}
       {locA && locB ? (
         <div className="space-y-16">
-          <div className="sticky top-16 z-10 flex items-end justify-between border-b-2 border-primary/20 bg-background/95 pb-4 pt-4 backdrop-blur-sm">
+          <div className="sticky top-14 z-10 flex items-end justify-between gap-2 border-b-2 border-primary/20 bg-background/95 py-3 backdrop-blur-sm sm:top-16 sm:gap-0 sm:pb-4 sm:pt-4">
             <div className="flex flex-1 flex-col">
               <span className="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
                 Primary Context
@@ -223,7 +266,7 @@ export default function ComparisonInterface() {
                 {locA.GEO_NAME.split(',')[0]}
               </h2>
             </div>
-            <div className="shrink-0 rounded-full bg-surface-soft px-4 py-1 font-heading text-xs font-bold uppercase tracking-widest text-primary">
+            <div className="shrink-0 rounded-full bg-surface-soft px-2 py-1 font-heading text-[10px] font-bold uppercase tracking-widest text-primary sm:px-4 sm:text-xs">
               VS
             </div>
             <div className="flex flex-1 flex-col items-end text-right">

@@ -100,16 +100,28 @@ const kpis = [
       <p class="mt-4 font-sans text-lg leading-relaxed text-on-surface-variant">
         Interactive Statistics Canada census insights — explore provinces, territories, and cities from the 2021 Census.
       </p>
-      <div class="mt-8 flex flex-wrap gap-4">
+      <div class="mt-8 flex flex-wrap gap-3 sm:gap-4">
+        <a
+          href="/compare/"
+          class="inline-flex min-h-[44px] items-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-primary/90"
+        >
+          Compare locations
+        </a>
+        <a
+          href="#largest-cities"
+          class="inline-flex min-h-[44px] items-center rounded-md border border-primary/30 bg-surface px-5 py-2.5 text-sm font-semibold text-primary no-underline transition-colors hover:bg-primary/5"
+        >
+          Explore cities
+        </a>
         <a
           href="/sources/"
-          class="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-primary/90"
+          class="inline-flex min-h-[44px] items-center rounded-md border border-primary/20 bg-surface px-5 py-2.5 text-sm font-semibold text-on-surface-variant no-underline transition-colors hover:bg-primary/5 hover:text-primary"
         >
           Sources
         </a>
         <a
           href="/about/"
-          class="inline-flex items-center rounded-md border border-primary/30 bg-surface px-5 py-2.5 text-sm font-semibold text-primary no-underline transition-colors hover:bg-primary/5"
+          class="inline-flex min-h-[44px] items-center rounded-md border border-primary/20 bg-surface px-5 py-2.5 text-sm font-semibold text-on-surface-variant no-underline transition-colors hover:bg-primary/5 hover:text-primary"
         >
           About
         </a>
@@ -139,10 +151,10 @@ const kpis = [
           Interactive Atlas
         </h2>
         <p class="mt-2 font-sans text-sm text-on-surface-variant">
-          Hover city markers for census snapshots. Click through to full location profiles.
+          Tap or hover city markers for census snapshots. Click through to full location profiles.
         </p>
       </div>
-      <div class="relative min-h-[70vh] h-[70vh] overflow-hidden rounded-xl border border-border/40 bg-surface-soft shadow-sm md:min-h-[720px] md:h-[720px] lg:min-h-[800px] lg:h-[800px]">
+      <div class="relative h-[55vh] max-h-[520px] min-h-[420px] overflow-hidden rounded-xl border border-border/40 bg-surface-soft shadow-sm md:h-[720px] md:max-h-none md:min-h-[720px] lg:h-[800px] lg:min-h-[800px]">
         <CanadaMap client:load cities={mapCities} />
       </div>
     </div>
@@ -172,7 +184,7 @@ const kpis = [
     </div>
   </section>
 
-  <section class="border-t border-border/30 bg-surface-soft py-16">
+  <section id="largest-cities" class="scroll-mt-20 border-t border-border/30 bg-surface-soft py-16">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <h2 class="mb-2 font-heading text-2xl font-bold text-primary">Largest cities</h2>
       <p class="mb-8 font-sans text-sm text-on-surface-variant">

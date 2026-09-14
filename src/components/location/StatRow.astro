@@ -10,10 +10,10 @@ const { label, value, sub } = Astro.props;
 
 {
   value != null && value !== '' ? (
-    <div class="flex items-baseline justify-between border-b border-border/20 py-2.5 last:border-0">
-      <span class="font-sans text-base text-on-surface-variant">{label}</span>
-      <div class="text-right">
-        <span class="font-heading text-base font-bold text-primary">{value}</span>
+    <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-border/20 py-2.5 last:border-0">
+      <span class="min-w-0 flex-1 font-sans text-sm text-on-surface-variant sm:text-base">{label}</span>
+      <div class="max-w-full shrink-0 text-right sm:max-w-[60%]">
+        <span class="break-words font-heading text-sm font-bold text-primary sm:text-base">{value}</span>
         {sub && (
           <span class="mt-0.5 block font-sans text-xs uppercase tracking-wider text-on-surface-variant">
             {sub}

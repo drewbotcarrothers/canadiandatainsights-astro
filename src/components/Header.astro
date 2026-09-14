@@ -45,25 +45,60 @@ function isActive(href: string) {
       ))}
     </nav>
 
-    <details class="relative sm:hidden">
-      <summary class="cursor-pointer list-none rounded-md border border-border px-3 py-2 text-sm font-medium text-on-surface">
+    <details class="relative sm:hidden" id="mobile-nav">
+      <summary
+        class="flex min-h-[44px] min-w-[44px] cursor-pointer list-none items-center justify-center rounded-md border border-border px-3 py-2 text-sm font-medium text-on-surface"
+        aria-label="Open navigation menu"
+        aria-controls="mobile-nav-panel"
+      >
         Menu
       </summary>
-      <div class="absolute right-0 mt-2 w-48 rounded-lg border border-border bg-surface p-2 shadow-lg">
+      <div
+        id="mobile-nav-panel"
+        class="absolute right-0 z-50 mt-2 w-56 rounded-lg border border-border bg-surface p-2 shadow-lg"
+        role="navigation"
+        aria-label="Mobile"
+      >
         {links.map((link) => (
           <a
             href={link.href}
             class:list={[
-              'block rounded-md px-3 py-2 text-sm no-underline',
+              'flex min-h-[44px] items-center rounded-md px-3 py-2 text-base no-underline',
               isActive(link.href)
                 ? 'bg-primary/10 text-primary'
                 : 'text-on-surface-variant hover:bg-surface-soft',
             ]}
+            data-mobile-nav-link
           >
             {link.label}
           </a>
         ))}
+        <button
+          type="button"
+          class="mt-1 flex min-h-[44px] w-full items-center rounded-md px-3 py-2 text-left text-sm text-on-surface-variant hover:bg-surface-soft"
+          data-mobile-nav-close
+        >
+          Close menu
+        </button>
       </div>
     </details>
   </div>
 </header>
+
+<script is:inline>
+  (function () {
+    var root = document.getElementById('mobile-nav');
+    if (!root) return;
+    root.querySelectorAll('[data-mobile-nav-link]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        root.removeAttribute('open');
+      });
+    });
+    var closeBtn = root.querySelector('[data-mobile-nav-close]');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        root.removeAttribute('open');
+      });
+    }
+  })();
+</script>

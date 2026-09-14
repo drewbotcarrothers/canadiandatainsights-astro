@@ -32,7 +32,7 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 - **~702 location profile pages** at `/location/[slug]/` generated at build from census CSV
 - Profile sections: Population, Households, Incomes, Employment/Labour, Languages, Dwellings
 - `/about/`, `/sources/`, `/privacy/`, `/terms/`
-- **Blog** at `/blog/` + `/blog/[slug]/` (3 posts with hero images + recharts islands)
+- **Blog** at `/blog/` + `/blog/[slug]/` (posts with hero images + recharts islands)
 - **Location Comparison** at `/compare/` — React island that fetches slim census JSON
 - Shared Header + Footer (Comparisons + Blog in nav)
 - `public/robots.txt`, `public/llms.txt`, `public/og-default.png`, `src/pages/sitemap.xml.ts` (includes location + blog + compare URLs); JSON-LD via Layout + `src/lib/seo.ts`
@@ -50,6 +50,10 @@ Fresh Astro static-site foundation for [canadiandatainsights.com](https://canadi
 
 Without the CSV, location pages and homepage province/city lists will fail at build.
 
+## Mobile UX notes
+
+Homepage atlas uses a capped viewport height on small screens (`~55vh`, max 520px) so the map does not dominate the page. Header mobile menu uses ≥44px tap targets. Compare selects use `text-base` (16px) to avoid iOS input zoom.
+
 ## Interactive Atlas notes
 
 - Component: `src/components/home/CanadaMap.tsx` (React island)
@@ -62,7 +66,6 @@ Without the CSV, location pages and homepage province/city lists will fail at bu
 
 - AdSense
 - Shareable `/compare/{a}-vs-{b}` URLs (client-only select UI, matching current Next.js)
-- New blog posts beyond the 3 ported from the Next.js site
 
 ## Develop
 
@@ -107,6 +110,22 @@ Expect `dist/location/*/index.html` for every geography in the CSV (plus static 
 - Location profiles include a clear Census 2021 attribution intro linking to `/sources/`. Titles/descriptions use real census population (and income/growth when available) for CTR.
 
 Helpers live in `src/lib/seo.ts` and `src/components/seo/JsonLd.astro`.
+
+
+## Google Analytics 4 (events)
+
+Measurement ID: `G-VQKEMEP3K9` (loaded in `Layout.astro`).
+
+Client helper: `src/lib/analytics.ts` (`trackEvent`). Custom events fire only when `typeof gtag === 'function'` so local builds and ad blockers do not break the site.
+
+| Event | When | Suggested Key event? |
+| --- | --- | --- |
+| `location_engage` | Once after 30s on `/location/*` (`page_path`, `location_slug`) | **Yes** |
+| `compare_start` | First geo-level or location selection on `/compare/` | Optional |
+| `compare_complete` | Both locations selected and results shown | **Yes** |
+| `atlas_city_click` | Atlas marker / “View Full Dataset” navigates to a profile | Optional |
+
+**Action for Andrew:** In GA4 Admin → Events, mark **`location_engage`** and **`compare_complete`** as **Key events** so engagement shows up in reports (helps track mobile quality beyond bounce/session time).
 
 ## Next slices (planned)
 

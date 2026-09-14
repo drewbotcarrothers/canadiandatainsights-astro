@@ -1,0 +1,35 @@
+---
+/**
+ * Fires GA4 `location_engage` once after 30s on location profiles.
+ * Mark as a Key event in GA4 Admin → Events.
+ */
+interface Props {
+  locationSlug: string;
+}
+const { locationSlug } = Astro.props;
+const pagePath = `/location/${locationSlug}/`;
+---
+
+<script define:vars={{ pagePath, locationSlug }}>
+  (function () {
+    if (typeof window === 'undefined') return;
+    var fired = false;
+    var timer = window.setTimeout(function () {
+      if (fired) return;
+      fired = true;
+      if (typeof gtag === 'function') {
+        gtag('event', 'location_engage', {
+          page_path: pagePath,
+          location_slug: locationSlug,
+        });
+      }
+    }, 30000);
+    window.addEventListener(
+      'pagehide',
+      function () {
+        window.clearTimeout(timer);
+      },
+      { once: true }
+    );
+  })();
+</script>
