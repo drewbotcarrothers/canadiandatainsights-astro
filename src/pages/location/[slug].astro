@@ -135,8 +135,8 @@ const dwellingTypes = [
 const maxDwelling = Math.max(...dwellingTypes.map((x) => x.value || 0), 1);
 
 const popFormatted = formatNumber(d.POP_2021);
-const titleWithPop = `${name} Population (${popFormatted}) | 2021 Census Demographics`;
-const titleFallback = `${name} Population & Demographics | 2021 Census`;
+const titleWithPop = `${name} Population (${popFormatted}) | Demographics`;
+const titleFallback = `${name} Population & Demographics`;
 // Prefer query-shaped titles under ~65 chars; Layout appends "| Canadian Data Insights".
 const pageTitle = titleWithPop.length <= 65 ? titleWithPop : titleFallback;
 
@@ -151,7 +151,7 @@ if (d.POP_2021 != null) {
 if (d.HH_INCOME_MEDIAN_AFTER_TAX != null) {
   descBits.push(`Median household income ${formatCurrency(d.HH_INCOME_MEDIAN_AFTER_TAX)}.`);
 }
-descBits.push('Statistics Canada 2021 Census — households, employment, languages, and more.');
+descBits.push('Explore households, employment, languages, and more.');
 const description = descBits.join(' ');
 
 const mapQuery = encodeURIComponent(`${name}, ${(d.PROVINCE as string) || 'Canada'}`);
@@ -183,12 +183,8 @@ const jsonLd = locationJsonLd({
             {name} <span class="text-tertiary">Profile</span>
           </h1>
           <p class="mb-8 font-sans text-lg leading-relaxed text-on-surface-variant">
-            This profile summarizes Statistics Canada Census of Population 2021 data for {name}
-            {' '}— population, households, income, employment, languages, and dwellings. See our{' '}
-            <a href="/sources/" class="font-medium text-primary underline-offset-2 hover:underline">
-              sources &amp; methodology
-            </a>{' '}
-            page for attribution and the Open Government Licence - Canada.
+            Explore population, households, income, employment, languages, and dwellings for {name}.
+            Compare trends since 2016 and dig into the full demographic profile below.
           </p>
           <div class="flex flex-wrap gap-4">
             <div class="rounded-md border border-border/40 bg-surface/80 px-4 py-2 shadow-sm backdrop-blur">
@@ -708,6 +704,15 @@ const jsonLd = locationJsonLd({
       >
         Open comparison tool
       </a>
+    </div>
+  </section>
+  <!-- Data source -->
+  <section class="bg-background py-8 sm:py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <p class="font-sans text-sm text-on-surface-variant">
+        <a href="/sources/" class="font-medium text-primary underline-offset-2 hover:underline">Data source</a>
+        {' '}→ Census methodology &amp; attribution
+      </p>
     </div>
   </section>
   <LocationEngage locationSlug={slug!} />

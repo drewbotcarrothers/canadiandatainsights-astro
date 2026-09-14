@@ -23,9 +23,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Toronto med. HH $k", value: 74 },
       { name: "Montréal med. HH $k", value: 56 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Toronto and Montréal: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Toronto and Montréal: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Toronto and Montréal anchor Canada's two largest municipal populations — one in Ontario, one in Quebec — with very different income and growth profiles in the 2021 Census. Here is a clear head-to-head.</p>
+      <p>Toronto and Montréal anchor Canada's two largest municipal populations — one in Ontario, one in Quebec — with very different income and growth profiles in 2021. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/toronto/"><strong>Toronto</strong></a> counted <strong>2,794,356</strong> residents in 2021, compared with <a href="/location/montr-al/"><strong>Montréal</strong></a> at <strong>1,762,949</strong>. Size, however, is not the same as momentum. Toronto's population rose <strong>2.3%</strong> from 2016 to 2021, while Montréal grew <strong>3.4%</strong> over the same period.</p>
@@ -46,17 +46,15 @@ export const compareBlogPosts: BlogPost[] = [
         <li><strong>Average age:</strong> Toronto 41.5 · Montréal 40.6</li>
       </ul>
 
-      <blockquote>Toronto leads on population and median household income; Montréal grew slightly faster over 2016–2021 and has a modestly younger average age — all from the same 2021 Census release.</blockquote>
+      <blockquote>Toronto leads on population and median household income; Montréal grew slightly faster over 2016–2021 and has a modestly younger average age — all from the same 2021 data release.</blockquote>
 
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/toronto/">Toronto 2021 census profile</a></li>
-        <li><a href="/location/montr-al/">Montréal 2021 census profile</a></li>
+        <li><a href="/location/toronto/">Toronto demographic profile</a></li>
+        <li><a href="/location/montr-al/">Montréal demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Toronto and Montréal</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -76,9 +74,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Vancouver med. HH $k", value: 72 },
       { name: "Calgary med. HH $k", value: 85 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Vancouver and Calgary: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Vancouver and Calgary: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Vancouver and Calgary are West Coast and Prairie powerhouses that often compete for talent and capital. The 2021 Census census-subdivision numbers show a clear scale-versus-income contrast. Here is a clear head-to-head.</p>
+      <p>Vancouver and Calgary are West Coast and Prairie powerhouses that often compete for talent and capital. The 2021 census-subdivision numbers show a clear scale-versus-income contrast. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/vancouver/"><strong>Vancouver</strong></a> counted <strong>662,248</strong> residents in 2021, compared with <a href="/location/calgary/"><strong>Calgary</strong></a> at <strong>1,306,784</strong>. Size, however, is not the same as momentum. Vancouver's population rose <strong>4.9%</strong> from 2016 to 2021, while Calgary grew <strong>5.5%</strong> over the same period.</p>
@@ -104,12 +102,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/vancouver/">Vancouver 2021 census profile</a></li>
-        <li><a href="/location/calgary/">Calgary 2021 census profile</a></li>
+        <li><a href="/location/vancouver/">Vancouver demographic profile</a></li>
+        <li><a href="/location/calgary/">Calgary demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Vancouver and Calgary</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -129,9 +125,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Edmonton med. HH $k", value: 79.5 },
       { name: "Calgary med. HH $k", value: 85 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Edmonton and Calgary: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Edmonton and Calgary: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Alberta's two largest cities are frequent peers in labour-market and housing debates. Using Statistics Canada Census of Population 2021 data for each city (census subdivision), here is a clear head-to-head.</p>
+      <p>Alberta's two largest cities are frequent peers in labour-market and housing debates. Using 2021 census-subdivision data for each city, here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/edmonton/"><strong>Edmonton</strong></a> counted <strong>1,010,899</strong> residents in 2021, compared with <a href="/location/calgary/"><strong>Calgary</strong></a> at <strong>1,306,784</strong>. Size, however, is not the same as momentum. Edmonton's population rose <strong>8.3%</strong> from 2016 to 2021, while Calgary grew <strong>5.5%</strong> over the same period.</p>
@@ -152,17 +148,15 @@ export const compareBlogPosts: BlogPost[] = [
         <li><strong>Average age:</strong> Edmonton 38.4 · Calgary 38.8</li>
       </ul>
 
-      <blockquote>Calgary remains larger with higher median household income; Edmonton posted stronger 2016–2021 growth and a slightly younger average age — all from the same 2021 Census release.</blockquote>
+      <blockquote>Calgary remains larger with higher median household income; Edmonton posted stronger 2016–2021 growth and a slightly younger average age — all from the same 2021 data release.</blockquote>
 
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/edmonton/">Edmonton 2021 census profile</a></li>
-        <li><a href="/location/calgary/">Calgary 2021 census profile</a></li>
+        <li><a href="/location/edmonton/">Edmonton demographic profile</a></li>
+        <li><a href="/location/calgary/">Calgary demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Edmonton and Calgary</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -182,7 +176,7 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Ottawa med. HH $k", value: 88 },
       { name: "Gatineau med. HH $k", value: 69.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Ottawa and Gatineau: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Ottawa and Gatineau: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
       <p>Ottawa and Gatineau form one of Canada's most integrated cross-provincial urban regions. Census subdivision figures for 2021 separate the Ontario and Quebec sides of the National Capital Region. Here is a clear head-to-head.</p>
 
@@ -205,17 +199,15 @@ export const compareBlogPosts: BlogPost[] = [
         <li><strong>Average age:</strong> Ottawa 40.7 · Gatineau 40.3</li>
       </ul>
 
-      <blockquote>Ottawa dominates on population, growth, and median household income; Gatineau is smaller with a similar average age — a classic capital-region scale gap in the 2021 Census.</blockquote>
+      <blockquote>Ottawa dominates on population, growth, and median household income; Gatineau is smaller with a similar average age — a classic capital-region scale gap in the 2021 data.</blockquote>
 
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/ottawa/">Ottawa 2021 census profile</a></li>
-        <li><a href="/location/gatineau/">Gatineau 2021 census profile</a></li>
+        <li><a href="/location/ottawa/">Ottawa demographic profile</a></li>
+        <li><a href="/location/gatineau/">Gatineau demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Ottawa and Gatineau</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -235,9 +227,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Mississauga med. HH $k", value: 89 },
       { name: "Brampton med. HH $k", value: 98 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Mississauga and Brampton: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Mississauga and Brampton: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Mississauga and Brampton are neighbouring Peel Region giants that often move in opposite directions on growth. The 2021 Census snapshot captures that divergence clearly. Here is a clear head-to-head.</p>
+      <p>Mississauga and Brampton are neighbouring Peel Region giants that often move in opposite directions on growth. The 2021 snapshot captures that divergence clearly. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/mississauga/"><strong>Mississauga</strong></a> counted <strong>717,961</strong> residents in 2021, compared with <a href="/location/brampton/"><strong>Brampton</strong></a> at <strong>656,480</strong>. Size, however, is not the same as momentum. Mississauga's population changed by <strong>-0.5%</strong> from 2016 to 2021, while Brampton grew <strong>10.6%</strong> over the same period.</p>
@@ -263,12 +255,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/mississauga/">Mississauga 2021 census profile</a></li>
-        <li><a href="/location/brampton/">Brampton 2021 census profile</a></li>
+        <li><a href="/location/mississauga/">Mississauga demographic profile</a></li>
+        <li><a href="/location/brampton/">Brampton demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Mississauga and Brampton</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -288,9 +278,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Hamilton med. HH $k", value: 75.5 },
       { name: "Burlington med. HH $k", value: 94 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Hamilton and Burlington: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Hamilton and Burlington: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Hamilton and Burlington sit on the western edge of the Greater Toronto and Hamilton Area — one a major industrial city, the other a smaller, higher-income neighbour. Using Statistics Canada Census of Population 2021 data for each city (census subdivision), here is a clear head-to-head.</p>
+      <p>Hamilton and Burlington sit on the western edge of the Greater Toronto and Hamilton Area — one a major industrial city, the other a smaller, higher-income neighbour. Using 2021 census-subdivision data for each city, here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/hamilton/"><strong>Hamilton</strong></a> counted <strong>569,353</strong> residents in 2021, compared with <a href="/location/burlington/"><strong>Burlington</strong></a> at <strong>186,948</strong>. Size, however, is not the same as momentum. Hamilton's population rose <strong>6%</strong> from 2016 to 2021, while Burlington grew <strong>2%</strong> over the same period.</p>
@@ -311,17 +301,15 @@ export const compareBlogPosts: BlogPost[] = [
         <li><strong>Average age:</strong> Hamilton 41.5 · Burlington 43.3</li>
       </ul>
 
-      <blockquote>Hamilton leads on population and recent growth; Burlington posts substantially higher median household income and an older average age — all from the same 2021 Census release.</blockquote>
+      <blockquote>Hamilton leads on population and recent growth; Burlington posts substantially higher median household income and an older average age — all from the same 2021 data release.</blockquote>
 
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/hamilton/">Hamilton 2021 census profile</a></li>
-        <li><a href="/location/burlington/">Burlington 2021 census profile</a></li>
+        <li><a href="/location/hamilton/">Hamilton demographic profile</a></li>
+        <li><a href="/location/burlington/">Burlington demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Hamilton and Burlington</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -341,9 +329,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Winnipeg med. HH $k", value: 69.5 },
       { name: "Saskatoon med. HH $k", value: 74.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Winnipeg and Saskatoon: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Winnipeg and Saskatoon: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Winnipeg and Saskatoon are Prairie anchors — Manitoba's largest city and Saskatchewan's largest. Side-by-side 2021 Census figures highlight scale, growth, and income differences. Here is a clear head-to-head.</p>
+      <p>Winnipeg and Saskatoon are Prairie anchors — Manitoba's largest city and Saskatchewan's largest. Side-by-side 2021 figures highlight scale, growth, and income differences. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/winnipeg/"><strong>Winnipeg</strong></a> counted <strong>749,607</strong> residents in 2021, compared with <a href="/location/saskatoon/"><strong>Saskatoon</strong></a> at <strong>266,141</strong>. Size, however, is not the same as momentum. Winnipeg's population rose <strong>6.3%</strong> from 2016 to 2021, while Saskatoon grew <strong>7.7%</strong> over the same period.</p>
@@ -364,17 +352,15 @@ export const compareBlogPosts: BlogPost[] = [
         <li><strong>Average age:</strong> Winnipeg 40.3 · Saskatoon 38.8</li>
       </ul>
 
-      <blockquote>Winnipeg is nearly three times Saskatoon's size; Saskatoon grew faster, has higher median household income, and a younger average age in the 2021 Census.</blockquote>
+      <blockquote>Winnipeg is nearly three times Saskatoon's size; Saskatoon grew faster, has higher median household income, and a younger average age in 2021.</blockquote>
 
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/winnipeg/">Winnipeg 2021 census profile</a></li>
-        <li><a href="/location/saskatoon/">Saskatoon 2021 census profile</a></li>
+        <li><a href="/location/winnipeg/">Winnipeg demographic profile</a></li>
+        <li><a href="/location/saskatoon/">Saskatoon demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Winnipeg and Saskatoon</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -394,7 +380,7 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Halifax med. HH $k", value: 69.5 },
       { name: "Québec med. HH $k", value: 60.8 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Halifax and Québec: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Halifax and Québec: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
       <p>Halifax and Québec are major Atlantic and Quebec City hubs often compared for livability and public-sector employment. Census subdivision data for 2021 puts population, growth, and income side by side. Here is a clear head-to-head.</p>
 
@@ -422,12 +408,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/halifax-regional-municipality-rgm/">Halifax 2021 census profile</a></li>
-        <li><a href="/location/qu-bec/">Québec 2021 census profile</a></li>
+        <li><a href="/location/halifax-regional-municipality-rgm/">Halifax demographic profile</a></li>
+        <li><a href="/location/qu-bec/">Québec demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Halifax and Québec</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -447,9 +431,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Surrey med. HH $k", value: 87 },
       { name: "Burnaby med. HH $k", value: 73.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Surrey and Burnaby: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Surrey and Burnaby: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Surrey and Burnaby are two of Metro Vancouver's largest municipalities outside the City of Vancouver itself. The 2021 Census shows Surrey pulling ahead on growth and income. Here is a clear head-to-head.</p>
+      <p>Surrey and Burnaby are two of Metro Vancouver's largest municipalities outside the City of Vancouver itself. Figures for 2021 show Surrey pulling ahead on growth and income. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/surrey/"><strong>Surrey</strong></a> counted <strong>568,322</strong> residents in 2021, compared with <a href="/location/burnaby/"><strong>Burnaby</strong></a> at <strong>249,125</strong>. Size, however, is not the same as momentum. Surrey's population rose <strong>9.7%</strong> from 2016 to 2021, while Burnaby grew <strong>7%</strong> over the same period.</p>
@@ -470,17 +454,15 @@ export const compareBlogPosts: BlogPost[] = [
         <li><strong>Average age:</strong> Surrey 39.5 · Burnaby 42</li>
       </ul>
 
-      <blockquote>Surrey is more than twice Burnaby's population, grew faster, and has higher median household income plus a younger average age — all from the same 2021 Census release.</blockquote>
+      <blockquote>Surrey is more than twice Burnaby's population, grew faster, and has higher median household income plus a younger average age — all from the same 2021 data release.</blockquote>
 
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/surrey/">Surrey 2021 census profile</a></li>
-        <li><a href="/location/burnaby/">Burnaby 2021 census profile</a></li>
+        <li><a href="/location/surrey/">Surrey demographic profile</a></li>
+        <li><a href="/location/burnaby/">Burnaby demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Surrey and Burnaby</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -500,9 +482,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "London med. HH $k", value: 68.5 },
       { name: "Kitchener med. HH $k", value: 76.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for London and Kitchener: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for London and Kitchener: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>London and Kitchener are southwestern Ontario mid-sized cities that both posted double-digit growth in the last census cycle. Using Statistics Canada Census of Population 2021 data for each city (census subdivision), here is a clear head-to-head.</p>
+      <p>London and Kitchener are southwestern Ontario mid-sized cities that both posted double-digit growth in the last census cycle. Using 2021 census-subdivision data for each city, here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/london/"><strong>London</strong></a> counted <strong>422,324</strong> residents in 2021, compared with <a href="/location/kitchener/"><strong>Kitchener</strong></a> at <strong>256,885</strong>. Size, however, is not the same as momentum. London's population rose <strong>10%</strong> from 2016 to 2021, while Kitchener grew <strong>10.1%</strong> over the same period.</p>
@@ -528,12 +510,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/london/">London 2021 census profile</a></li>
-        <li><a href="/location/kitchener/">Kitchener 2021 census profile</a></li>
+        <li><a href="/location/london/">London demographic profile</a></li>
+        <li><a href="/location/kitchener/">Kitchener demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then London and Kitchener</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -553,9 +533,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Regina med. HH $k", value: 76.5 },
       { name: "Saskatoon med. HH $k", value: 74.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Regina and Saskatoon: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Regina and Saskatoon: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Regina and Saskatoon are Saskatchewan's two dominant cities. The 2021 Census census-subdivision numbers show Saskatoon ahead on size and growth, with incomes and ages nearly tied. Here is a clear head-to-head.</p>
+      <p>Regina and Saskatoon are Saskatchewan's two dominant cities. The 2021 census-subdivision numbers show Saskatoon ahead on size and growth, with incomes and ages nearly tied. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/regina/"><strong>Regina</strong></a> counted <strong>226,404</strong> residents in 2021, compared with <a href="/location/saskatoon/"><strong>Saskatoon</strong></a> at <strong>266,141</strong>. Size, however, is not the same as momentum. Regina's population rose <strong>5.3%</strong> from 2016 to 2021, while Saskatoon grew <strong>7.7%</strong> over the same period.</p>
@@ -581,12 +561,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/regina/">Regina 2021 census profile</a></li>
-        <li><a href="/location/saskatoon/">Saskatoon 2021 census profile</a></li>
+        <li><a href="/location/regina/">Regina demographic profile</a></li>
+        <li><a href="/location/saskatoon/">Saskatoon demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Regina and Saskatoon</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -606,9 +584,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Vaughan med. HH $k", value: 107 },
       { name: "Markham med. HH $k", value: 92 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Vaughan and Markham: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Vaughan and Markham: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Vaughan and Markham are York Region neighbours known for rapid suburban growth and high household incomes. The 2021 Census puts their populations and paycheques in context. Here is a clear head-to-head.</p>
+      <p>Vaughan and Markham are York Region neighbours known for rapid suburban growth and high household incomes. 2021 figures put their populations and paycheques in context. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/vaughan/"><strong>Vaughan</strong></a> counted <strong>323,103</strong> residents in 2021, compared with <a href="/location/markham/"><strong>Markham</strong></a> at <strong>338,503</strong>. Size, however, is not the same as momentum. Vaughan's population rose <strong>5.5%</strong> from 2016 to 2021, while Markham grew <strong>2.9%</strong> over the same period.</p>
@@ -634,12 +612,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/vaughan/">Vaughan 2021 census profile</a></li>
-        <li><a href="/location/markham/">Markham 2021 census profile</a></li>
+        <li><a href="/location/vaughan/">Vaughan demographic profile</a></li>
+        <li><a href="/location/markham/">Markham demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Vaughan and Markham</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -659,9 +635,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Toronto med. HH $k", value: 74 },
       { name: "Vancouver med. HH $k", value: 72 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Toronto and Vancouver: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Toronto and Vancouver: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Toronto and Vancouver are frequently compared across Canada's largest metros. The 2021 Census census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
+      <p>Toronto and Vancouver are frequently compared across Canada's largest metros. The 2021 census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/toronto/"><strong>Toronto</strong></a> counted <strong>2,794,356</strong> residents in 2021, compared with <a href="/location/vancouver/"><strong>Vancouver</strong></a> at <strong>662,248</strong>. Size, however, is not the same as momentum. Toronto's population rose <strong>2.3%</strong> from 2016 to 2021, while Vancouver grew <strong>4.9%</strong> over the same period.</p>
@@ -687,12 +663,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/toronto/">Toronto 2021 census profile</a></li>
-        <li><a href="/location/vancouver/">Vancouver 2021 census profile</a></li>
+        <li><a href="/location/toronto/">Toronto demographic profile</a></li>
+        <li><a href="/location/vancouver/">Vancouver demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Toronto and Vancouver</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -712,9 +686,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Montréal med. HH $k", value: 56 },
       { name: "Québec med. HH $k", value: 60.8 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Montréal and Québec: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Montréal and Québec: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Montréal and Québec sit in Quebec and often compete for talent and investment. Census 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
+      <p>Montréal and Québec sit in Quebec and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/montr-al/"><strong>Montréal</strong></a> counted <strong>1,762,949</strong> residents in 2021, compared with <a href="/location/qu-bec/"><strong>Québec</strong></a> at <strong>549,459</strong>. Size, however, is not the same as momentum. Montréal's population rose <strong>3.4%</strong> from 2016 to 2021, while Québec grew <strong>3.3%</strong> over the same period.</p>
@@ -740,12 +714,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/montr-al/">Montréal 2021 census profile</a></li>
-        <li><a href="/location/qu-bec/">Québec 2021 census profile</a></li>
+        <li><a href="/location/montr-al/">Montréal demographic profile</a></li>
+        <li><a href="/location/qu-bec/">Québec demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Montréal and Québec</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -765,9 +737,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Ottawa med. HH $k", value: 88 },
       { name: "Hamilton med. HH $k", value: 75.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Ottawa and Hamilton: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Ottawa and Hamilton: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Choosing between Ottawa and Hamilton in Ontario? These 2021 Census subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
+      <p>Choosing between Ottawa and Hamilton in Ontario? These 2021 census-subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/ottawa/"><strong>Ottawa</strong></a> counted <strong>1,017,449</strong> residents in 2021, compared with <a href="/location/hamilton/"><strong>Hamilton</strong></a> at <strong>569,353</strong>. Size, however, is not the same as momentum. Ottawa's population rose <strong>8.9%</strong> from 2016 to 2021, while Hamilton grew <strong>6%</strong> over the same period.</p>
@@ -793,12 +765,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/ottawa/">Ottawa 2021 census profile</a></li>
-        <li><a href="/location/hamilton/">Hamilton 2021 census profile</a></li>
+        <li><a href="/location/ottawa/">Ottawa demographic profile</a></li>
+        <li><a href="/location/hamilton/">Hamilton demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Ottawa and Hamilton</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -818,9 +788,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Edmonton med. HH $k", value: 79.5 },
       { name: "Winnipeg med. HH $k", value: 69.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Edmonton and Winnipeg: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Edmonton and Winnipeg: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Edmonton and Winnipeg are frequently compared across the Prairies. The 2021 Census census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
+      <p>Edmonton and Winnipeg are frequently compared across the Prairies. The 2021 census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/edmonton/"><strong>Edmonton</strong></a> counted <strong>1,010,899</strong> residents in 2021, compared with <a href="/location/winnipeg/"><strong>Winnipeg</strong></a> at <strong>749,607</strong>. Size, however, is not the same as momentum. Edmonton's population rose <strong>8.3%</strong> from 2016 to 2021, while Winnipeg grew <strong>6.3%</strong> over the same period.</p>
@@ -846,12 +816,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/edmonton/">Edmonton 2021 census profile</a></li>
-        <li><a href="/location/winnipeg/">Winnipeg 2021 census profile</a></li>
+        <li><a href="/location/edmonton/">Edmonton demographic profile</a></li>
+        <li><a href="/location/winnipeg/">Winnipeg demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Edmonton and Winnipeg</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -871,9 +839,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Brampton med. HH $k", value: 98 },
       { name: "Surrey med. HH $k", value: 87 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Brampton and Surrey: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Brampton and Surrey: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Brampton and Surrey sit in fast-growing suburban Canada and often compete for talent and investment. Census 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
+      <p>Brampton and Surrey sit in fast-growing suburban Canada and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/brampton/"><strong>Brampton</strong></a> counted <strong>656,480</strong> residents in 2021, compared with <a href="/location/surrey/"><strong>Surrey</strong></a> at <strong>568,322</strong>. Size, however, is not the same as momentum. Brampton's population rose <strong>10.6%</strong> from 2016 to 2021, while Surrey grew <strong>9.7%</strong> over the same period.</p>
@@ -899,12 +867,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/brampton/">Brampton 2021 census profile</a></li>
-        <li><a href="/location/surrey/">Surrey 2021 census profile</a></li>
+        <li><a href="/location/brampton/">Brampton demographic profile</a></li>
+        <li><a href="/location/surrey/">Surrey demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Brampton and Surrey</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -924,9 +890,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Mississauga med. HH $k", value: 89 },
       { name: "Vaughan med. HH $k", value: 107 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Mississauga and Vaughan: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Mississauga and Vaughan: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Choosing between Mississauga and Vaughan in the Greater Toronto Area? These 2021 Census subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
+      <p>Choosing between Mississauga and Vaughan in the Greater Toronto Area? These 2021 census-subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/mississauga/"><strong>Mississauga</strong></a> counted <strong>717,961</strong> residents in 2021, compared with <a href="/location/vaughan/"><strong>Vaughan</strong></a> at <strong>323,103</strong>. Size, however, is not the same as momentum. Mississauga's population changed by <strong>-0.5%</strong> from 2016 to 2021, while Vaughan grew <strong>5.5%</strong> over the same period.</p>
@@ -952,12 +918,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/mississauga/">Mississauga 2021 census profile</a></li>
-        <li><a href="/location/vaughan/">Vaughan 2021 census profile</a></li>
+        <li><a href="/location/mississauga/">Mississauga demographic profile</a></li>
+        <li><a href="/location/vaughan/">Vaughan demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Mississauga and Vaughan</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -977,9 +941,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Winnipeg med. HH $k", value: 69.5 },
       { name: "Regina med. HH $k", value: 76.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Winnipeg and Regina: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Winnipeg and Regina: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Winnipeg and Regina are frequently compared across Prairie Canada. The 2021 Census census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
+      <p>Winnipeg and Regina are frequently compared across Prairie Canada. The 2021 census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/winnipeg/"><strong>Winnipeg</strong></a> counted <strong>749,607</strong> residents in 2021, compared with <a href="/location/regina/"><strong>Regina</strong></a> at <strong>226,404</strong>. Size, however, is not the same as momentum. Winnipeg's population rose <strong>6.3%</strong> from 2016 to 2021, while Regina grew <strong>5.3%</strong> over the same period.</p>
@@ -1005,12 +969,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/winnipeg/">Winnipeg 2021 census profile</a></li>
-        <li><a href="/location/regina/">Regina 2021 census profile</a></li>
+        <li><a href="/location/winnipeg/">Winnipeg demographic profile</a></li>
+        <li><a href="/location/regina/">Regina demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Winnipeg and Regina</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -1030,9 +992,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "London med. HH $k", value: 68.5 },
       { name: "Windsor med. HH $k", value: 63.6 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for London and Windsor: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for London and Windsor: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>London and Windsor sit in southwestern Ontario and often compete for talent and investment. Census 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
+      <p>London and Windsor sit in southwestern Ontario and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/london/"><strong>London</strong></a> counted <strong>422,324</strong> residents in 2021, compared with <a href="/location/windsor/"><strong>Windsor</strong></a> at <strong>229,660</strong>. Size, however, is not the same as momentum. London's population rose <strong>10%</strong> from 2016 to 2021, while Windsor grew <strong>5.7%</strong> over the same period.</p>
@@ -1058,12 +1020,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/london/">London 2021 census profile</a></li>
-        <li><a href="/location/windsor/">Windsor 2021 census profile</a></li>
+        <li><a href="/location/london/">London demographic profile</a></li>
+        <li><a href="/location/windsor/">Windsor demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then London and Windsor</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -1083,9 +1043,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Kelowna med. HH $k", value: 73.5 },
       { name: "Nanaimo med. HH $k", value: 68.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Kelowna and Nanaimo: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Kelowna and Nanaimo: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Choosing between Kelowna and Nanaimo in British Columbia? These 2021 Census subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
+      <p>Choosing between Kelowna and Nanaimo in British Columbia? These 2021 census-subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/kelowna/"><strong>Kelowna</strong></a> counted <strong>144,576</strong> residents in 2021, compared with <a href="/location/nanaimo/"><strong>Nanaimo</strong></a> at <strong>99,863</strong>. Size, however, is not the same as momentum. Kelowna's population rose <strong>13.5%</strong> from 2016 to 2021, while Nanaimo grew <strong>10.3%</strong> over the same period.</p>
@@ -1111,12 +1071,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/kelowna/">Kelowna 2021 census profile</a></li>
-        <li><a href="/location/nanaimo/">Nanaimo 2021 census profile</a></li>
+        <li><a href="/location/kelowna/">Kelowna demographic profile</a></li>
+        <li><a href="/location/nanaimo/">Nanaimo demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Kelowna and Nanaimo</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -1136,9 +1094,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Barrie med. HH $k", value: 82 },
       { name: "Oshawa med. HH $k", value: 76 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Barrie and Oshawa: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Barrie and Oshawa: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Barrie and Oshawa are frequently compared across central and eastern Ontario. The 2021 Census census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
+      <p>Barrie and Oshawa are frequently compared across central and eastern Ontario. The 2021 census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/barrie/"><strong>Barrie</strong></a> counted <strong>147,829</strong> residents in 2021, compared with <a href="/location/oshawa/"><strong>Oshawa</strong></a> at <strong>175,383</strong>. Size, however, is not the same as momentum. Barrie's population rose <strong>4.5%</strong> from 2016 to 2021, while Oshawa grew <strong>10%</strong> over the same period.</p>
@@ -1164,12 +1122,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/barrie/">Barrie 2021 census profile</a></li>
-        <li><a href="/location/oshawa/">Oshawa 2021 census profile</a></li>
+        <li><a href="/location/barrie/">Barrie demographic profile</a></li>
+        <li><a href="/location/oshawa/">Oshawa demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Barrie and Oshawa</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -1189,9 +1145,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Guelph med. HH $k", value: 82 },
       { name: "Kitchener med. HH $k", value: 76.5 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Guelph and Kitchener: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Guelph and Kitchener: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Guelph and Kitchener sit in southwestern Ontario and often compete for talent and investment. Census 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
+      <p>Guelph and Kitchener sit in southwestern Ontario and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/guelph/"><strong>Guelph</strong></a> counted <strong>143,740</strong> residents in 2021, compared with <a href="/location/kitchener/"><strong>Kitchener</strong></a> at <strong>256,885</strong>. Size, however, is not the same as momentum. Guelph's population rose <strong>9.1%</strong> from 2016 to 2021, while Kitchener grew <strong>10.1%</strong> over the same period.</p>
@@ -1217,12 +1173,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/guelph/">Guelph 2021 census profile</a></li>
-        <li><a href="/location/kitchener/">Kitchener 2021 census profile</a></li>
+        <li><a href="/location/guelph/">Guelph demographic profile</a></li>
+        <li><a href="/location/kitchener/">Kitchener demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Guelph and Kitchener</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -1242,9 +1196,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Laval med. HH $k", value: 73.5 },
       { name: "Longueuil med. HH $k", value: 62 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Laval and Longueuil: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Laval and Longueuil: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Choosing between Laval and Longueuil in the Montréal census metro area? These 2021 Census subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
+      <p>Choosing between Laval and Longueuil in the Montréal census metro area? These 2021 census-subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/laval/"><strong>Laval</strong></a> counted <strong>438,366</strong> residents in 2021, compared with <a href="/location/longueuil/"><strong>Longueuil</strong></a> at <strong>254,483</strong>. Size, however, is not the same as momentum. Laval's population rose <strong>3.6%</strong> from 2016 to 2021, while Longueuil grew <strong>6.1%</strong> over the same period.</p>
@@ -1270,12 +1224,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/laval/">Laval 2021 census profile</a></li>
-        <li><a href="/location/longueuil/">Longueuil 2021 census profile</a></li>
+        <li><a href="/location/laval/">Laval demographic profile</a></li>
+        <li><a href="/location/longueuil/">Longueuil demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Laval and Longueuil</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -1295,9 +1247,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Burnaby med. HH $k", value: 73.5 },
       { name: "Coquitlam med. HH $k", value: 82 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Burnaby and Coquitlam: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Burnaby and Coquitlam: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Burnaby and Coquitlam are frequently compared across Metro Vancouver. The 2021 Census census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
+      <p>Burnaby and Coquitlam are frequently compared across Metro Vancouver. The 2021 census-subdivision numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/burnaby/"><strong>Burnaby</strong></a> counted <strong>249,125</strong> residents in 2021, compared with <a href="/location/coquitlam/"><strong>Coquitlam</strong></a> at <strong>148,625</strong>. Size, however, is not the same as momentum. Burnaby's population rose <strong>7%</strong> from 2016 to 2021, while Coquitlam grew <strong>6.7%</strong> over the same period.</p>
@@ -1323,12 +1275,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/burnaby/">Burnaby 2021 census profile</a></li>
-        <li><a href="/location/coquitlam/">Coquitlam 2021 census profile</a></li>
+        <li><a href="/location/burnaby/">Burnaby demographic profile</a></li>
+        <li><a href="/location/coquitlam/">Coquitlam demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Burnaby and Coquitlam</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -1348,9 +1298,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Sherbrooke med. HH $k", value: 55.2 },
       { name: "Trois-Rivières med. HH $k", value: 53.6 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Sherbrooke and Trois-Rivières: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Sherbrooke and Trois-Rivières: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Sherbrooke and Trois-Rivières sit in Quebec outside Montréal and often compete for talent and investment. Census 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
+      <p>Sherbrooke and Trois-Rivières sit in Quebec outside Montréal and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/sherbrooke/"><strong>Sherbrooke</strong></a> counted <strong>172,950</strong> residents in 2021, compared with <a href="/location/trois-rivi-res/"><strong>Trois-Rivières</strong></a> at <strong>139,163</strong>. Size, however, is not the same as momentum. Sherbrooke's population rose <strong>7.2%</strong> from 2016 to 2021, while Trois-Rivières grew <strong>3.5%</strong> over the same period.</p>
@@ -1376,12 +1326,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/sherbrooke/">Sherbrooke 2021 census profile</a></li>
-        <li><a href="/location/trois-rivi-res/">Trois-Rivières 2021 census profile</a></li>
+        <li><a href="/location/sherbrooke/">Sherbrooke demographic profile</a></li>
+        <li><a href="/location/trois-rivi-res/">Trois-Rivières demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Sherbrooke and Trois-Rivières</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
@@ -1401,9 +1349,9 @@ export const compareBlogPosts: BlogPost[] = [
       { name: "Oakville med. HH $k", value: 108 },
       { name: "Burlington med. HH $k", value: 94 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Oakville and Burlington: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Oakville and Burlington: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Choosing between Oakville and Burlington in the western GTA / Halton corridor? These 2021 Census subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
+      <p>Choosing between Oakville and Burlington in the western GTA / Halton corridor? These 2021 census-subdivision metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/oakville-town-t/"><strong>Oakville</strong></a> counted <strong>213,759</strong> residents in 2021, compared with <a href="/location/burlington/"><strong>Burlington</strong></a> at <strong>186,948</strong>. Size, however, is not the same as momentum. Oakville's population rose <strong>10.3%</strong> from 2016 to 2021, while Burlington grew <strong>2%</strong> over the same period.</p>
@@ -1429,12 +1377,10 @@ export const compareBlogPosts: BlogPost[] = [
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/oakville-town-t/">Oakville 2021 census profile</a></li>
-        <li><a href="/location/burlington/">Burlington 2021 census profile</a></li>
+        <li><a href="/location/oakville-town-t/">Oakville demographic profile</a></li>
+        <li><a href="/location/burlington/">Burlington demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Oakville and Burlington</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   }
 ];

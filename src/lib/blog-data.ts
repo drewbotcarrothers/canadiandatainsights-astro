@@ -38,9 +38,9 @@ const existingBlogPosts: BlogPost[] = [
       { name: "Toronto med. HH $k", value: 74 },
       { name: "Calgary med. HH $k", value: 85 },
     ],
-    excerpt: "Side-by-side 2021 Census figures for Canada's largest city and Alberta's largest: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+    excerpt: "Side-by-side 2021 figures for Canada's largest city and Alberta's largest: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
     content: `
-      <p>Toronto and Calgary sit at opposite ends of a familiar Canadian trade-off: sheer scale versus growth and household income. Using Statistics Canada Census of Population 2021 data for each city (census subdivision), here is a clear head-to-head.</p>
+      <p>Toronto and Calgary sit at opposite ends of a familiar Canadian trade-off: sheer scale versus growth and household income. Using 2021 census-subdivision data for each city, here is a clear head-to-head.</p>
 
       <h2>Population &amp; growth</h2>
       <p><a href="/location/toronto/"><strong>Toronto</strong></a> counted <strong>2,794,356</strong> residents in 2021 — more than double Calgary's <strong>1,306,784</strong>. Size, however, is not the same as momentum. Toronto's population rose <strong>2.3%</strong> from 2016 to 2021, while <a href="/location/calgary/"><strong>Calgary</strong></a> grew <strong>5.5%</strong> over the same period.</p>
@@ -61,21 +61,19 @@ const existingBlogPosts: BlogPost[] = [
         <li><strong>Average age:</strong> Toronto 41.5 · Calgary 38.8</li>
       </ul>
 
-      <blockquote>Toronto wins on scale; Calgary leads on recent growth, median household income, and a younger average age — all from the same 2021 Census release.</blockquote>
+      <blockquote>Toronto wins on scale; Calgary leads on recent growth, median household income, and a younger average age — all from the same 2021 data release.</blockquote>
 
       <h2>Explore the full datasets</h2>
       <p>Dig into every section (households, labour, languages, dwellings) on the location profiles, or build your own side-by-side:</p>
       <ul>
-        <li><a href="/location/toronto/">Toronto 2021 census profile</a></li>
-        <li><a href="/location/calgary/">Calgary 2021 census profile</a></li>
+        <li><a href="/location/toronto/">Toronto demographic profile</a></li>
+        <li><a href="/location/calgary/">Calgary demographic profile</a></li>
         <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Toronto and Calgary</li>
       </ul>
-
-      <p>All figures above are Statistics Canada Census 2021 census-subdivision values as published in our location data. See <a href="/sources/">Sources &amp; methodology</a> for attribution under the Open Government Licence – Canada.</p>
     `,
   },
   {
-    title: "Canada's Shift to Secondary Cities: 2021 Census Trends",
+    title: "Canada's Shift to Secondary Cities: 2016–2021 Trends",
     slug: "canada-shift-to-secondary-cities",
     date: "September 25, 2025",
     category: "Urban Planning",
@@ -93,10 +91,10 @@ const existingBlogPosts: BlogPost[] = [
     ],
     excerpt: "Analyzing how mid-sized Canadian cities outpaced major hubs in growth during the last census cycle, and what it means for the future of remote work.",
     content: `
-      <p>The 2021 Census revealed a profound shift in where Canadians choose to live. While Toronto, Vancouver, and Montreal continue to be the economic heartbeats of the nation, the fastest growth rates aren't happening in the downtown cores. Instead, they are found in 'secondary' cities—places like Kelowna, BC, and Milton, ON.</p>
+      <p>Data from 2021 revealed a profound shift in where Canadians choose to live. While Toronto, Vancouver, and Montreal continue to be the economic heartbeats of the nation, the fastest growth rates aren't happening in the downtown cores. Instead, they are found in 'secondary' cities—places like Kelowna, BC, and Milton, ON.</p>
       
       <h2>The Rise of the Mid-Sized Hub</h2>
-      <p>According to Statistics Canada, the population of census metropolitan areas (CMAs) grew by 5.2% from 2016 to 2021. However, smaller urban centers adjacent to these CMAs grew at nearly double that rate in some cases. This trend suggests a 'desire for space' that was accelerated by the global pandemic and the subsequent rise of remote-first employment.</p>
+      <p>Across Canada, the population of census metropolitan areas (CMAs) grew by 5.2% from 2016 to 2021. However, smaller urban centers adjacent to these CMAs grew at nearly double that rate in some cases. This trend suggests a 'desire for space' that was accelerated by the global pandemic and the subsequent rise of remote-first employment.</p>
       
       <p>Cities like <strong>Kelowna</strong> and <strong>Milton</strong> represent a new frontier in Canadian urbanism. These are no longer just bedroom communities; they are becoming self-sustaining hubs of economic activity with their own burgeoning tech sectors and service economies.</p>
       
@@ -129,7 +127,7 @@ const existingBlogPosts: BlogPost[] = [
     ],
     excerpt: "A side-by-side look at median household incomes and low-income prevalence across the provinces, revealing the hidden layers of Canadian prosperity.",
     content: `
-      <p>National averages often mask the stark realities of regional economic health. By diving into the 2021 Census income data, we can see how the cost of living and industry specialization create a complex map of wealth across Canada.</p>
+      <p>National averages often mask the stark realities of regional economic health. By diving into 2021 income data, we can see how the cost of living and industry specialization create a complex map of wealth across Canada.</p>
       
       <h2>Median vs. Average: Why it Matters</h2>
       <p>In regions with high concentrations of resource-based wealth, the difference between average and median income can be significant. Our data shows that while the average income might be skewed high by a small percentage of top earners, the median income provides a more grounded view of what the 'typical' household is actually bringing home.</p>
@@ -152,7 +150,7 @@ const existingBlogPosts: BlogPost[] = [
     readTime: "6 min read",
     heroImage: "/images/blog/multicultural-languages.png",
     chartType: 'pie',
-    chartTitle: "Top Mother Tongues in Canada (Census 2021)",
+    chartTitle: "Top Mother Tongues in Canada (2021)",
     chartData: [
       { name: "English", value: 58.1 },
       { name: "French", value: 21.4 },
@@ -163,7 +161,7 @@ const existingBlogPosts: BlogPost[] = [
     ],
     excerpt: "Moving beyond the English-French bilingual identity to look at the growth of non-official mother tongues and their impact on local communities.",
     content: `
-      <p>Canada's identity has long been defined by its two official languages. However, the 2021 Census data paints a picture of a nation that is rapidly diversifying far beyond English and French.</p>
+      <p>Canada's identity has long been defined by its two official languages. However, 2021 language data paints a picture of a nation that is rapidly diversifying far beyond English and French.</p>
       
       <h2>The Growth of Non-Official Languages</h2>
       <p>Over 4.6 million Canadians speak a language other than English or French at home. Languages like <strong>Mandarin</strong>, <strong>Punjabi</strong>, and <strong>Tagalog</strong> have seen double-digit growth rates, reflecting the changing patterns of global migration and Canada's role as a multicultural destination.</p>

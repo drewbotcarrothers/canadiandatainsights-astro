@@ -108,21 +108,16 @@ export function locationJsonLd(opts: {
   const dataset: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
-    name: `${opts.name} — Census of Population 2021 profile`,
+    name: `${opts.name} — population & demographics profile`,
     description: opts.description,
     url: pageUrl,
     license: OGL_LICENSE_URL,
-    creator: {
-      '@type': 'Organization',
-      name: 'Statistics Canada',
-      url: 'https://www.statcan.gc.ca/',
-    },
+    creator: { '@id': `${SITE_URL}/#organization` },
     publisher: { '@id': `${SITE_URL}/#organization` },
     isBasedOn: {
-      '@type': 'CreativeWork',
-      name: 'Census of Population, 2021',
-      creator: { '@type': 'Organization', name: 'Statistics Canada' },
-      url: 'https://www12.statcan.gc.ca/census-recensement/index-eng.cfm',
+      '@type': 'WebPage',
+      name: 'Sources & methodology',
+      url: `${SITE_URL}/sources/`,
     },
     temporalCoverage: '2021',
     spatialCoverage: {
