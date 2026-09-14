@@ -28,7 +28,7 @@ export const website = {
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    'Interactive Statistics Canada census insights — population, growth, income, and demographics for Canadian communities.',
+    'Interactive Canadian demographic insights — population, growth, income, and community profiles.',
   publisher: { '@id': `${SITE_URL}/#organization` },
   inLanguage: 'en-CA',
 };
