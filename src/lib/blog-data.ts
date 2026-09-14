@@ -1,3 +1,5 @@
+import { compareBlogPosts } from './blog-compare-posts';
+
 export interface ChartDataPoint {
   name: string;
   value: number;
@@ -18,7 +20,7 @@ export interface BlogPost {
   chartTitle?: string;
 }
 
-export const blogPosts: BlogPost[] = [
+const existingBlogPosts: BlogPost[] = [
   {
     title: "Toronto vs Calgary: 2021 Census Population & Income Compared",
     slug: "toronto-vs-calgary-2021-census",
@@ -177,3 +179,7 @@ export const blogPosts: BlogPost[] = [
     `,
   },
 ];
+
+/** All blog posts (compare SEO posts + existing editorial posts). */
+export const blogPosts: BlogPost[] = [...compareBlogPosts, ...existingBlogPosts];
+
