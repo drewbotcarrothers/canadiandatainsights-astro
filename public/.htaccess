@@ -1,0 +1,22 @@
+# Hostinger Apache — 301 aliases for GSC 404 cleanup.
+# Site uses Astro trailingSlash: 'always'; bare paths like /about → /about/
+# are expected Hostinger/Astro redirects (do not disable trailing slash).
+
+RewriteEngine On
+
+# Lévis (accentless / alternate spellings)
+RewriteRule ^location/levis/?$ /location/l-vis/ [R=301,L]
+
+# Québec City (not the province /location/quebec/)
+RewriteRule ^location/quebec-city/?$ /location/qu-bec/ [R=301,L]
+
+# Trois-Rivières (accentless + truncated GSC variant)
+RewriteRule ^location/trois-rivieres/?$ /location/trois-rivi-res/ [R=301,L]
+RewriteRule ^location/trois-rivires/?$ /location/trois-rivi-res/ [R=301,L]
+
+# Town (T) CSDs: short aliases → canonical Town slugs
+RewriteRule ^location/whitby/?$ /location/whitby-town-t/ [R=301,L]
+RewriteRule ^location/oakville/?$ /location/oakville-town-t/ [R=301,L]
+
+# Legacy /data path → Sources
+RewriteRule ^data/?$ /sources/ [R=301,L]

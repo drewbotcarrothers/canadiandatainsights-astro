@@ -133,8 +133,26 @@ const dwellingTypes = [
 ].filter((x) => x.value != null && x.value > 0);
 const maxDwelling = Math.max(...dwellingTypes.map((x) => x.value || 0), 1);
 
-const pageTitle = `${name} Census Profile`;
-const description = `${name} census profile from the 2021 Statistics Canada Census — population, households, income, employment, and languages.`;
+const popFormatted = formatNumber(d.POP_2021);
+const titleWithPop = `${name} Population (${popFormatted}) | 2021 Census Demographics`;
+const titleFallback = `${name} Population & Demographics | 2021 Census`;
+// Prefer query-shaped titles under ~65 chars; Layout appends "| Canadian Data Insights".
+const pageTitle = titleWithPop.length <= 65 ? titleWithPop : titleFallback;
+
+const descBits: string[] = [];
+if (d.POP_2021 != null) {
+  let popBit = `${name} population was ${popFormatted} in 2021`;
+  if (d.POP_CHANGE_PCT != null && !Number.isNaN(d.POP_CHANGE_PCT as number)) {
+    popBit += ` (${formatPercent(d.POP_CHANGE_PCT)} since 2016)`;
+  }
+  descBits.push(`${popBit}.`);
+}
+if (d.HH_INCOME_MEDIAN_AFTER_TAX != null) {
+  descBits.push(`Median household income ${formatCurrency(d.HH_INCOME_MEDIAN_AFTER_TAX)}.`);
+}
+descBits.push('Statistics Canada 2021 Census — households, employment, languages, and more.');
+const description = descBits.join(' ');
+
 const mapQuery = encodeURIComponent(`${name}, ${(d.PROVINCE as string) || 'Canada'}`);
 const mapZoom = isProvince ? 4 : 10;
 const jsonLd = locationJsonLd({

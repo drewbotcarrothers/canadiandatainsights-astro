@@ -100,9 +100,11 @@ Expect `dist/location/*/index.html` for every geography in the CSV (plus static 
 
 - **JSON-LD**: sitewide `Organization` + `WebSite` in `Layout.astro` (via `src/lib/seo.ts`). Page-specific graphs for location profiles (`Place`/`City`/`AdministrativeArea` + `Dataset` + `BreadcrumbList`), blog posts (`BlogPosting` + breadcrumbs), and `/sources/` (`WebPage` + `Dataset`). No `SearchAction` (no on-site search URL).
 - **`public/llms.txt`** (+ `public/.well-known/llms.txt`): orientation for AI crawlers — what CDI is, key URLs, StatsCan/OGL, citation guidance.
-- **`public/robots.txt`**: Allow all + Sitemap; comments that AI crawlers are welcome (does not block GPTBot/Claude/etc.).
+- **`public/robots.txt`**: Allow all + Sitemap; `Disallow: /_next/` so Google stops crawling leftover Next.js font/asset URLs; comments that AI crawlers are welcome (does not block GPTBot/Claude/etc.).
+- **`public/.htaccess`**: Hostinger Apache 301s for accentless/alias location URLs (e.g. `/location/levis/` → `/location/l-vis/`, `/location/quebec-city/` → `/location/qu-bec/`, Whitby/Oakville short paths → `-town-t` slugs) and `/data` → `/sources/`. Deploy `dist/` (or `public/.htaccess` with it) so Hostinger picks this up.
+- Trailing-slash redirects (`/about` → `/about/`, etc.) are expected from Astro `trailingSlash: 'always'` + Hostinger — do not disable.
 - **OG/Twitter image**: `public/og-default.png` (1200×630); Layout wires `og:image` / `twitter:image` with overridable `ogImage` prop (blog posts use hero images).
-- Location profiles include a clear Census 2021 attribution intro linking to `/sources/`.
+- Location profiles include a clear Census 2021 attribution intro linking to `/sources/`. Titles/descriptions use real census population (and income/growth when available) for CTR.
 
 Helpers live in `src/lib/seo.ts` and `src/components/seo/JsonLd.astro`.
 
