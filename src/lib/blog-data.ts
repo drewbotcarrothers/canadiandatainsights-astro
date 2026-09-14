@@ -25,7 +25,7 @@ const existingBlogPosts: BlogPost[] = [
  title: "Toronto vs Calgary: Population & Income Compared",
  slug: "toronto-vs-calgary-2021-census",
  date: "September 14, 2026",
- category: "Economy",
+ category: "Comparisons",
  readTime: "6 min read",
  heroImage: "/images/blog/compare/toronto-vs-calgary-2021-census.png",
  chartType: 'bar',
