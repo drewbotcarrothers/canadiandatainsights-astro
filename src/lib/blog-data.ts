@@ -22,14 +22,14 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
   {
-    title: "Toronto vs Calgary: 2021 Census Population & Income Compared",
+    title: "Toronto vs Calgary: Population & Income Compared",
     slug: "toronto-vs-calgary-2021-census",
     date: "September 14, 2026",
     category: "Economy",
     readTime: "6 min read",
-    heroImage: "/images/blog/income-disparity.png",
+    heroImage: "/images/blog/compare/toronto-vs-calgary-2021-census.png",
     chartType: 'bar',
-    chartTitle: "Toronto vs Calgary — Key 2021 Census Metrics",
+    chartTitle: "Toronto vs Calgary — Key Metrics",
     chartData: [
       { name: "Toronto pop. (M)", value: 2.79 },
       { name: "Calgary pop. (M)", value: 1.31 },
