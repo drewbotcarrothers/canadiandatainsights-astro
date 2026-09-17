@@ -1,0 +1,33 @@
+{
+  "about": "Huntsville is a town in Muskoka District, Ontario, at the north end of the lake district where Highway 11 meets cottage-country corridors. Lakes, downtown shops, and resort amenities make it a year-round gateway to Algonquin approaches and Muskoka’s northern lakes. About 21,000 people live in Huntsville.",
+  "seoSummary": "Northern Muskoka town and cottage-country gateway on Highway 11 toward Algonquin.",
+  "knownFor": [
+    "Northern Muskoka cottage-country hub",
+    "Gateway toward Algonquin Provincial Park approaches",
+    "Downtown on the Muskoka River / Fairy Lake area",
+    "Year-round tourism and resort amenities",
+    "Highway 11 service centre for the district"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Huntsville",
+      "why": "Shops, restaurants, and riverfront streets."
+    },
+    {
+      "name": "Muskoka Heritage Place",
+      "why": "Pioneer village, museum, and narrow-gauge railway."
+    },
+    {
+      "name": "Fairy Lake / Avery Beach area",
+      "why": "Town lake swimming and shoreline parks."
+    },
+    {
+      "name": "Arrowhead Provincial Park (nearby)",
+      "why": "Trails, beach, and winter recreation just north of town."
+    },
+    {
+      "name": "Lookout Trail / local viewpoints",
+      "why": "Hilltop views over the lakes and downtown."
+    }
+  ]
+}

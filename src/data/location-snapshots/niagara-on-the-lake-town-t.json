@@ -1,0 +1,33 @@
+{
+  "about": "Niagara-on-the-Lake is a town at the mouth of the Niagara River on Lake Ontario, in Niagara Region, Ontario. Colonial streetscapes, wineries, and the Shaw Festival make it one of Canada’s best-known heritage and tourism towns, distinct from the Falls corridor to the south. About 19,000 people live in Niagara-on-the-Lake.",
+  "seoSummary": "Niagara heritage town at the Niagara River mouth—Shaw Festival, wineries, and colonial Old Town, not Niagara Falls.",
+  "knownFor": [
+    "Historic Old Town at the Niagara River and Lake Ontario",
+    "Shaw Festival theatre destination",
+    "Niagara wine country and estate tasting rooms",
+    "Colonial streetscapes and Fort George heritage",
+    "Distinct from the City of Niagara Falls to the south"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Old Town / Queen Street",
+      "why": "Heritage shops, inns, and festival theatres."
+    },
+    {
+      "name": "Fort George National Historic Site",
+      "why": "War of 1812 fort and living-history programs."
+    },
+    {
+      "name": "Niagara River / Lake Ontario waterfront",
+      "why": "Parks and views where the river meets the lake."
+    },
+    {
+      "name": "Local winery trail",
+      "why": "Estate tasting rooms across the town’s rural wards."
+    },
+    {
+      "name": "Shaw Festival theatres",
+      "why": "Live drama drawing audiences through the season."
+    }
+  ]
+}

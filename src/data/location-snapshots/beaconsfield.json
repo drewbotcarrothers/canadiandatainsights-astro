@@ -1,0 +1,33 @@
+{
+  "about": "Beaconsfield is a city on Montreal’s West Island in Quebec, on Lake Saint-Louis between Pointe-Claire and Baie-D’Urfé. Tree-lined residential streets, shore parks, and a suburban commercial strip along Highway 20 characterize a quieter on-island community. About 19,000 people live in Beaconsfield.",
+  "seoSummary": "Quiet West Island city on Lake Saint-Louis—tree-lined streets and shore parks between Pointe-Claire and Baie-D’Urfé.",
+  "knownFor": [
+    "West Island residential city on Lake Saint-Louis",
+    "Tree-lined neighbourhoods and shore parks",
+    "Highway 20 corridor between Pointe-Claire and Baie-D’Urfé",
+    "Family-oriented on-island suburb",
+    "Waterfront recreation on the lake"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Beaconsfield waterfront parks",
+      "why": "Lake Saint-Louis swimming and picnic areas."
+    },
+    {
+      "name": "Local marina / yacht club approaches",
+      "why": "Boating culture along the city’s shore."
+    },
+    {
+      "name": "Neighbourhood trail and park network",
+      "why": "Walking routes through residential sectors."
+    },
+    {
+      "name": "Highway 20 commercial services",
+      "why": "Everyday shops for West Island residents."
+    },
+    {
+      "name": "Centennial Hall / civic recreation",
+      "why": "Community programming and events."
+    }
+  ]
+}

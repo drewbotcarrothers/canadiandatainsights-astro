@@ -1,0 +1,33 @@
+{
+  "about": "Salmon Arm is a city on the shore of Shuswap Lake in British Columbia’s Interior, at the head of Salmon Arm bay. Agriculture, tourism, and Highway 1 services shape a lakeside centre known for beaches, foreshore walks, and surrounding orchard and dairy country. About 19,000 people live in Salmon Arm.",
+  "seoSummary": "Shuswap Lake city on Highway 1—beaches, foreshore walks, and Interior orchard country.",
+  "knownFor": [
+    "City on Shuswap Lake’s Salmon Arm bay",
+    "Lakeside beaches and foreshore recreation",
+    "Highway 1 service centre in the Shuswap",
+    "Surrounding orchard, dairy, and farm country",
+    "Summer tourism and waterfront festivals"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Marine Peace Park / foreshore",
+      "why": "Waterfront walks and lake views in the city."
+    },
+    {
+      "name": "Sunnybrae / local beach areas",
+      "why": "Swimming and summer lake recreation."
+    },
+    {
+      "name": "Downtown Salmon Arm",
+      "why": "Shops and cafés near the waterfront."
+    },
+    {
+      "name": "Salmon Arm wharf / marina district",
+      "why": "Boat access and bay scenery."
+    },
+    {
+      "name": "RJ Haney Heritage Village",
+      "why": "Local history village and museum on the hill above town."
+    }
+  ]
+}

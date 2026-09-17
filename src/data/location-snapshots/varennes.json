@@ -1,0 +1,33 @@
+{
+  "about": "Varennes is a city on Montreal’s South Shore in Montérégie, Quebec, on the St. Lawrence River east of Boucherville. A historic riverside core sits beside suburban neighbourhoods and industrial land toward the Contrecoeur corridor. It balances heritage streets with commuting links into Greater Montreal. About 21,000 people live in Varennes.",
+  "seoSummary": "South Shore city on the St. Lawrence east of Boucherville—heritage riverfront and Montreal suburb.",
+  "knownFor": [
+    "St. Lawrence South Shore city east of Montreal",
+    "Historic riverside core and parish heritage",
+    "Suburban residential growth linked to Greater Montreal",
+    "Industrial and port-corridor edge toward Contrecoeur",
+    "River views and waterfront parks"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Vieux-Varennes / riverfront",
+      "why": "Historic streets and St. Lawrence shore walks."
+    },
+    {
+      "name": "Parc de la Commune",
+      "why": "Waterfront park with river views."
+    },
+    {
+      "name": "Église Sainte-Anne",
+      "why": "Landmark parish church in the old core."
+    },
+    {
+      "name": "Local bike paths along the shore",
+      "why": "Cycling links toward neighbouring South Shore cities."
+    },
+    {
+      "name": "Downtown shops and cafés",
+      "why": "Neighbourhood commercial streets near the river."
+    }
+  ]
+}

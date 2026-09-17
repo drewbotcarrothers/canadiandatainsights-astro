@@ -1,0 +1,33 @@
+{
+  "about": "Pitt Meadows is a city in Metro Vancouver’s Fraser Valley, at the confluence of the Pitt and Fraser rivers east of Port Coquitlam. Dykeland farms, suburban neighbourhoods, and mountain views toward Golden Ears shape a compact riverside municipality on Highway 7. About 19,000 people live in Pitt Meadows.",
+  "seoSummary": "Fraser Valley city at the Pitt and Fraser rivers—dykeland farms, suburbs, and Golden Ears views.",
+  "knownFor": [
+    "City at the Pitt–Fraser river confluence",
+    "Dykeland agriculture beside suburban neighbourhoods",
+    "Views toward Golden Ears and the North Shore mountains",
+    "Highway 7 corridor in Metro Vancouver’s east",
+    "River and trail recreation on the Pitt River edge"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Pitt River Greenway / dikes",
+      "why": "Walking and cycling on river dykes with mountain views."
+    },
+    {
+      "name": "Hoffmann Park / local green space",
+      "why": "Community parks in the residential core."
+    },
+    {
+      "name": "Downtown Pitt Meadows",
+      "why": "Shops and civic buildings near the highway."
+    },
+    {
+      "name": "Farm-country roads on the flats",
+      "why": "Remaining agriculture inside city limits."
+    },
+    {
+      "name": "Nearby Golden Ears / Pitt Lake approaches",
+      "why": "Outdoor recreation just beyond the urban edge."
+    }
+  ]
+}

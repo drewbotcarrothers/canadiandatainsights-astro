@@ -1,0 +1,33 @@
+{
+  "about": "Cobourg is a town on Lake Ontario in Northumberland County, Ontario, east of Toronto along the Highway 401 and lakeshore corridor. A sandy beach, Victorian downtown, and marina define a classic small lakeside centre that also serves surrounding rural townships. About 20,000 people live in Cobourg.",
+  "seoSummary": "Lake Ontario town in Northumberland County—sandy beach, Victorian downtown, and marina east of Toronto.",
+  "knownFor": [
+    "Lake Ontario beach and waterfront town",
+    "Victorian downtown heritage streetscape",
+    "Marina and harbour recreation",
+    "Service centre for Northumberland County",
+    "Highway 401 / lakeshore corridor location east of the GTA"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Cobourg Beach / waterfront",
+      "why": "Sandy public beach and boardwalk on Lake Ontario."
+    },
+    {
+      "name": "Downtown Cobourg",
+      "why": "Heritage main street with shops and cafés."
+    },
+    {
+      "name": "Victoria Hall",
+      "why": "Landmark civic building and concert hall."
+    },
+    {
+      "name": "Cobourg Marina / harbour",
+      "why": "Boat slips and harbourfront walks."
+    },
+    {
+      "name": "Victoria Park",
+      "why": "Waterfront park beside the beach and bandshell."
+    }
+  ]
+}

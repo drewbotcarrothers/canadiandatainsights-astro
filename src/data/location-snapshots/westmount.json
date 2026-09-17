@@ -1,0 +1,33 @@
+{
+  "about": "Westmount is a city on Montreal Island, Quebec, on the southwestern slopes of Mount Royal, enclosed by the City of Montreal but remaining a separate municipality. Victorian and early-20th-century homes, a walkable commercial street, and parks below the mountain give it a distinct on-island identity. About 20,000 people live in Westmount.",
+  "seoSummary": "Separate on-island city on Mount Royal’s southwest slope—heritage homes and parks enclosed by Montreal.",
+  "knownFor": [
+    "Independent city enclosed by Montreal on the island",
+    "Heritage residential streets on Mount Royal’s slope",
+    "Walkable Greene Avenue and Sherbrooke commercial life",
+    "Parks and paths toward the mountain",
+    "On-island municipality with its own civic identity"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Westmount Park / Westmount Public Library",
+      "why": "Central park, conservatory, and landmark library."
+    },
+    {
+      "name": "Greene Avenue",
+      "why": "Boutique commercial street in the city’s heart."
+    },
+    {
+      "name": "Summit Lookout / mountain approaches",
+      "why": "Views from the upper Westmount streets toward the river."
+    },
+    {
+      "name": "Sherbrooke Street West shops",
+      "why": "Cafés and stores along the main through street."
+    },
+    {
+      "name": "Westmount Athletic Grounds",
+      "why": "Community sports fields and recreation."
+    }
+  ]
+}
