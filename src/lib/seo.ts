@@ -64,6 +64,11 @@ export function locationJsonLd(opts: {
   population?: number | null;
   medianIncome?: number | null;
   description: string;
+  /** Optional editorial snapshot — uses real schema.org types only. */
+  snapshot?: {
+    about: string;
+    seeAndDo?: { name: string; why: string }[];
+  } | null;
 }): Record<string, unknown>[] {
   const pageUrl = `${SITE_URL}/location/${opts.slug}/`;
   const placeType =
@@ -95,7 +100,7 @@ export function locationJsonLd(opts: {
     '@type': placeType,
     name: opts.name,
     url: pageUrl,
-    description: opts.description,
+    description: opts.snapshot?.about?.trim() || opts.description,
     containedInPlace:
       opts.province && opts.geoLevel !== 'Province' && opts.geoLevel !== 'Territory'
         ? { '@type': 'AdministrativeArea', name: opts.province }
@@ -103,6 +108,17 @@ export function locationJsonLd(opts: {
   };
   if (additionalProperty.length) {
     place.additionalProperty = additionalProperty;
+  }
+
+  const attractions = (opts.snapshot?.seeAndDo ?? []).filter(
+    (placeItem) => placeItem.name?.trim() && placeItem.why?.trim()
+  );
+  if (attractions.length) {
+    place.containsPlace = attractions.map((attraction) => ({
+      '@type': 'TouristAttraction',
+      name: attraction.name,
+      description: attraction.why,
+    }));
   }
 
   const dataset: Record<string, unknown> = {

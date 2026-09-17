@@ -1,0 +1,33 @@
+{
+  "about": "Toronto is Canada’s largest city, on the northwestern shore of Lake Ontario in Ontario. It sits at the centre of the Greater Toronto Area and is the country’s main financial centre and a major cultural hub. The city mixes a dense downtown and waterfront with distinct neighbourhoods across the former boroughs. About 2.8 million people live in the city proper, with several million more in the surrounding region.",
+  "seoSummary": "Canada’s largest city, a financial and cultural hub on Lake Ontario.",
+  "knownFor": [
+    "The CN Tower and downtown lakefront skyline",
+    "Immigrant neighbourhoods and a wide range of regional cuisines",
+    "The TTC subway, streetcar, and bus network",
+    "Bay Street banking and corporate head offices",
+    "Film and television production, including the Toronto International Film Festival (TIFF)"
+  ],
+  "seeAndDo": [
+    {
+      "name": "CN Tower",
+      "why": "Observation decks overlooking downtown and Lake Ontario."
+    },
+    {
+      "name": "Royal Ontario Museum",
+      "why": "World cultures and natural history at Bloor Street and Queen’s Park."
+    },
+    {
+      "name": "St. Lawrence Market",
+      "why": "Historic market hall for produce, meat, and prepared food."
+    },
+    {
+      "name": "Toronto Islands",
+      "why": "Harbour parks and beaches, reached by ferry from the waterfront."
+    },
+    {
+      "name": "High Park",
+      "why": "Large west-end park with trails, sports fields, and a small zoo."
+    }
+  ]
+}
