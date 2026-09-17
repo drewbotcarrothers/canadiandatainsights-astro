@@ -1,0 +1,33 @@
+{
+  "about": "Prince Albert is Saskatchewan’s third-largest city, on the North Saskatchewan River at the edge of the boreal forest. It bills itself as the Gateway to the North: prairie grain country lies south of the river, while lakes and forest stretch toward Prince Albert National Park. A downtown on the riverbank, provincial correctional and service offices, and a large Indigenous population shape the city. About 38,000 people live in Prince Albert.",
+  "seoSummary": "Saskatchewan’s northernmost city of this size, a Gateway to the North on the North Saskatchewan River.",
+  "knownFor": [
+    "Gateway to the North at the prairie–boreal edge",
+    "North Saskatchewan River downtown",
+    "Service centre for northern Saskatchewan",
+    "Little Red River Park in the river valley",
+    "Jumping-off point for Prince Albert National Park"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Little Red River Park",
+      "why": "River-valley park of trails, ski paths, and forest inside the city."
+    },
+    {
+      "name": "Prince Albert Arts Centre",
+      "why": "Historic fire hall converted to galleries and performance space downtown."
+    },
+    {
+      "name": "Rotary Trail",
+      "why": "Riverbank path through the downtown waterfront."
+    },
+    {
+      "name": "Historical Museum",
+      "why": "Local history in a former fire hall and police station."
+    },
+    {
+      "name": "Kinsmen Park",
+      "why": "Central park, playgrounds, and the civic recreation grounds."
+    }
+  ]
+}

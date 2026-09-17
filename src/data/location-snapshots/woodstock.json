@@ -1,0 +1,33 @@
+{
+  "about": "Woodstock is the county seat of Oxford County in southwestern Ontario, on the Thames River between London and Kitchener. It is a manufacturing and service city with a courthouse square, a reservoir conservation area, and a large Toyota assembly plant on the edge of town. Highway 401 runs along the south side. About 47,000 people live in Woodstock.",
+  "seoSummary": "Oxford County seat on the Thames River, a manufacturing city between London and Kitchener.",
+  "knownFor": [
+    "County seat of Oxford County",
+    "Toyota assembly plant and a manufacturing base",
+    "Museum Square and a limestone courthouse",
+    "Pittock Conservation Area reservoir",
+    "Highway 401 service city in southwestern Ontario"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Museum Square",
+      "why": "Courthouse square, gardens, and civic buildings in the city centre."
+    },
+    {
+      "name": "Pittock Conservation Area",
+      "why": "Reservoir, trails, and a beach on the Thames north of downtown."
+    },
+    {
+      "name": "Downtown Dundas Street",
+      "why": "Historic commercial street toward the square."
+    },
+    {
+      "name": "Woodstock Museum National Historic Site",
+      "why": "Local history in the old town hall on the square."
+    },
+    {
+      "name": "Southside Park",
+      "why": "Large city park with a lake, trails, and sports fields."
+    }
+  ]
+}

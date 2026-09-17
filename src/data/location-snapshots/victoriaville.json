@@ -1,0 +1,33 @@
+{
+  "about": "Victoriaville is the principal city of the Bois-Francs in Centre-du-Québec, inland from the St. Lawrence between Montréal and Québec City. It grew around furniture and woodworking and now includes the former town of Arthabaska. A compact downtown, exhibition grounds, and a well-known experimental-music festival shape civic life. About 48,000 people live in Victoriaville.",
+  "seoSummary": "Bois-Francs city in Centre-du-Québec, known for furniture-making and the FIMAV music festival.",
+  "knownFor": [
+    "Regional centre of the Bois-Francs",
+    "Furniture and woodworking industry",
+    "Festival International de Musique Actuelle de Victoriaville",
+    "Amalgamated Arthabaska, including Musée Laurier",
+    "Carré 150 cultural complex downtown"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Musée Laurier",
+      "why": "Wilfrid Laurier’s house museum in the Arthabaska sector."
+    },
+    {
+      "name": "Le Carré 150",
+      "why": "Arts centre, galleries, and performance halls downtown."
+    },
+    {
+      "name": "Parc Terre-des-Jeunes",
+      "why": "Central park, pond, and trails beside the civic core."
+    },
+    {
+      "name": "Musée de l’hôtel des Postes",
+      "why": "Local history in the former post office."
+    },
+    {
+      "name": "Centre de foires de Victoriaville",
+      "why": "Regional exhibition grounds and event site."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Shawinigan is in Mauricie, on the rivière Saint-Maurice north of Trois-Rivières. It grew as a hydroelectric and aluminum city at a set of falls and remains a regional centre for the middle Saint-Maurice valley. The amalgamated city includes Shawinigan-Sud and riverside neighbourhoods facing the gorge. About 50,000 people live in Shawinigan.",
+  "seoSummary": "Mauricie hydroelectric city on the rivière Saint-Maurice, known for La Cité de l’énergie.",
+  "knownFor": [
+    "Hydroelectric falls on the Saint-Maurice",
+    "La Cité de l’énergie science site and tower",
+    "Former aluminum and chemical-industry town",
+    "Shawinigan Cataractes junior hockey",
+    "Parc de l’Île Melville on an island in the river"
+  ],
+  "seeAndDo": [
+    {
+      "name": "La Cité de l’énergie",
+      "why": "Science museum, historic generating station, and a tall observation tower."
+    },
+    {
+      "name": "Parc de l’Île Melville",
+      "why": "River island park with beaches, trails, and a seasonal water park."
+    },
+    {
+      "name": "Chutes de Shawinigan",
+      "why": "Falls and gorge that first drew hydroelectric development to the site."
+    },
+    {
+      "name": "Centre des arts de Shawinigan",
+      "why": "Performing-arts centre downtown."
+    },
+    {
+      "name": "Centre Gervais Auto",
+      "why": "Arena home of the Shawinigan Cataractes."
+    }
+  ]
+}

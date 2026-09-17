@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Eustache is a Laurentides city on the rivière des Mille Îles, on Montréal’s North Shore west of Laval. It is best known as a Patriote town of 1837, when fighting centred on the parish church, and it still has a stone village core beside the river. Moulin Légaré continues to mill grain by water power. About 45,000 people live in Saint-Eustache.",
+  "seoSummary": "Laurentides Patriote town on the rivière des Mille Îles, known for its 1837 church and Moulin Légaré.",
+  "knownFor": [
+    "1837 Patriote battle at the parish church",
+    "Moulin Légaré, a working historic water mill",
+    "Vieux-Saint-Eustache on the rivière des Mille Îles",
+    "North Shore city west of Laval",
+    "Église de Saint-Eustache and its battle scars"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Église de Saint-Eustache",
+      "why": "Parish church that was the site of the 1837 battle, still marked by cannon fire."
+    },
+    {
+      "name": "Moulin Légaré",
+      "why": "Water mill in continuous use, among the oldest of its kind in North America."
+    },
+    {
+      "name": "Vieux-Saint-Eustache",
+      "why": "Stone village streets, shops, and riverfront beside the church."
+    },
+    {
+      "name": "Maison de la culture et du patrimoine",
+      "why": "Local museum and cultural centre interpreting the Patriote period."
+    },
+    {
+      "name": "Parc de la rivière des Mille Îles access",
+      "why": "River parks and boat access on the city’s south shore."
+    }
+  ]
+}

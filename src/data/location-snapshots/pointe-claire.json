@@ -1,0 +1,33 @@
+{
+  "about": "Pointe-Claire is an independent West Island city on Lac Saint-Louis, on the Island of Montréal—not a borough of the city of Montréal. A stone windmill and a lakeside village mark the old point; post-war streets, Highway 20, and Fairview shopping fill the inland side. Stewart Hall and the municipal aquatic centre sit on the shore. About 33,000 people live in Pointe-Claire.",
+  "seoSummary": "Independent West Island city on Lac Saint-Louis, known for its village, windmill, and lakeshore—not a Montréal borough.",
+  "knownFor": [
+    "Demerged West Island city, separate from Montréal",
+    "Historic village and windmill on Lac Saint-Louis",
+    "Stewart Hall cultural centre on the lakeshore",
+    "Fairview Pointe-Claire shopping centre",
+    "Bilingual residential city on Highway 20"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Pointe-Claire Village",
+      "why": "Lakeside village streets, shops, and the historic point."
+    },
+    {
+      "name": "Pointe-Claire Windmill",
+      "why": "Eighteenth-century stone mill on the lakeshore."
+    },
+    {
+      "name": "Stewart Hall",
+      "why": "Cultural centre and gallery in a lakeside mansion."
+    },
+    {
+      "name": "Pointe-Claire Aquatic Centre",
+      "why": "Municipal indoor and outdoor pools on the shore."
+    },
+    {
+      "name": "Lac Saint-Louis waterfront",
+      "why": "Parks and boat clubs along the lake toward Beaconsfield."
+    }
+  ]
+}

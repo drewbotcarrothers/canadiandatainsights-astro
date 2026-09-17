@@ -1,0 +1,33 @@
+{
+  "about": "Innisfil is a town in Simcoe County on the south shore of Lake Simcoe, immediately south of Barrie. Alcona is the main lakeside community; Lefroy, Belle Ewart, Cookstown, and Stroud sit among farms and new subdivisions. Friday Harbour and a long municipal beach shape the waterfront. About 43,000 people live in Innisfil.",
+  "seoSummary": "Simcoe County town on Lake Simcoe south of Barrie, with Alcona’s beach and Friday Harbour.",
+  "knownFor": [
+    "Lake Simcoe shoreline south of Barrie",
+    "Alcona as the main urban lakeside community",
+    "Friday Harbour resort village",
+    "Rapid residential growth and the planned Orbit community",
+    "Cookstown and remaining farm hamlets inland"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Innisfil Beach Park",
+      "why": "Main municipal beach, pier, and park at Alcona."
+    },
+    {
+      "name": "Friday Harbour",
+      "why": "Marina village, boardwalk, and resort on the Lake Simcoe shore."
+    },
+    {
+      "name": "Cookstown",
+      "why": "Crossroads village and outlet mall at the town’s southwest corner."
+    },
+    {
+      "name": "Nantyr Park",
+      "why": "Waterfront park and boat access near Lefroy."
+    },
+    {
+      "name": "Innisfil Recreation Centre",
+      "why": "Municipal pools, ice, and community rooms serving the growing town."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Leduc is a city immediately south of Edmonton, beside Edmonton International Airport and the Nisku industrial park. The 1947 Leduc No. 1 oil well, just west of town, set off Alberta’s modern oil boom and still shapes local identity. Telford Lake and a compact downtown sit among neighbourhoods that have grown with the airport and energy economy. About 34,000 people live in Leduc.",
+  "seoSummary": "City south of Edmonton beside the international airport, tied to the Leduc No. 1 oil discovery.",
+  "knownFor": [
+    "Leduc No. 1 oil discovery of 1947",
+    "Neighbour to Edmonton International Airport and Nisku",
+    "Telford Lake in the centre of the city",
+    "Energy-service and logistics economy",
+    "Queen Elizabeth II Highway commuter city south of Edmonton"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Telford Lake and William F. Lede Park",
+      "why": "Urban lake, boardwalk, and trails through the heart of the city."
+    },
+    {
+      "name": "Leduc Recreation Centre",
+      "why": "Municipal aquatics, ice, and fitness complex."
+    },
+    {
+      "name": "Downtown 50th Street",
+      "why": "Older commercial street and civic buildings."
+    },
+    {
+      "name": "Leduc #1 Energy Discovery Centre",
+      "why": "Oil-well interpretation centre just west of the city, marking the 1947 discovery."
+    },
+    {
+      "name": "Leduc Railway Station and museum",
+      "why": "Heritage station interpreting the town’s railway origins."
+    }
+  ]
+}

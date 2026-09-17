@@ -1,0 +1,33 @@
+{
+  "about": "Boucherville is a South Shore city in Montérégie, on the St. Lawrence immediately northeast of Longueuil. It grew from a seigneurial village into an affluent suburban city facing the Îles-de-Boucherville. The old village, a long riverfront, and the national park on the islands remain the public heart of the place. About 42,000 people live in Boucherville.",
+  "seoSummary": "Affluent South Shore city facing the Îles-de-Boucherville, with a seigneurial village core.",
+  "knownFor": [
+    "Parc national des Îles-de-Boucherville in the St. Lawrence",
+    "Vieux-Boucherville seigneurial village",
+    "Affluent South Shore suburb of Greater Montréal",
+    "Riverfront parks along the channel",
+    "Industrial parks along Highway 20 inland from the village"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc national des Îles-de-Boucherville",
+      "why": "Island park of wetlands, trails, and boat channels in the St. Lawrence."
+    },
+    {
+      "name": "Vieux-Boucherville",
+      "why": "Stone church, seigneurial streets, and shops in the old village."
+    },
+    {
+      "name": "Promenade de la rivière",
+      "why": "Riverfront walk facing the islands."
+    },
+    {
+      "name": "Parc de la Frayère",
+      "why": "Shore park and fish-spawning shallows on the channel."
+    },
+    {
+      "name": "Maison Louis-Hippolyte-La Fontaine",
+      "why": "Historic house museum in the old village."
+    }
+  ]
+}

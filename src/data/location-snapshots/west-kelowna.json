@@ -1,0 +1,33 @@
+{
+  "about": "West Kelowna is a city on the west side of Okanagan Lake, opposite Kelowna and linked to it by the William R. Bennett Bridge. It was incorporated from the former Westside district and remains a separate municipality of benches, wineries, and suburban neighbourhoods around Mount Boucherie. Gellatly Bay is the main public waterfront. About 36,000 people live in West Kelowna.",
+  "seoSummary": "Separate city on Okanagan Lake’s west benches, opposite Kelowna, known for Mount Boucherie and Mission Hill.",
+  "knownFor": [
+    "West side of Okanagan Lake, distinct from the City of Kelowna",
+    "Mount Boucherie above the benches",
+    "Mission Hill and other west-side wineries",
+    "Gellatly Bay waterfront",
+    "William R. Bennett Bridge commute into Kelowna"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Mission Hill Family Estate",
+      "why": "Landmark winery, amphitheatre, and lookout on the west bench."
+    },
+    {
+      "name": "Gellatly Bay",
+      "why": "Public waterfront, boardwalk, and the old Gellatly nut farm site."
+    },
+    {
+      "name": "Mount Boucherie",
+      "why": "Extinct volcanic hill with trails and views over the lake."
+    },
+    {
+      "name": "Quails’ Gate Winery",
+      "why": "Lakeside estate vineyard on the Boucherie bench."
+    },
+    {
+      "name": "West Kelowna waterfront parks",
+      "why": "Beaches and boat access along the west shore toward the bridge."
+    }
+  ]
+}

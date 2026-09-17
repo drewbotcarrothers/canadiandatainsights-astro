@@ -1,0 +1,33 @@
+{
+  "about": "Penticton sits on the bench between Okanagan Lake and Skaha Lake in British Columbia’s southern Interior. A channel and parkway join the two lakes through the centre of town, with beaches at both ends and vineyards on the surrounding benches. The city is a wine, fruit, and summer-festival centre for the south Okanagan. About 37,000 people live in Penticton.",
+  "seoSummary": "South Okanagan city on the channel between Okanagan Lake and Skaha Lake, known for beaches and wine.",
+  "knownFor": [
+    "Beaches on both Okanagan and Skaha lakes",
+    "Channel Parkway through the centre of town",
+    "South Okanagan wine and fruit country",
+    "SS Sicamous sternwheeler on the waterfront",
+    "Peach Festival and a long summer-visitor season"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Okanagan Lake Beach",
+      "why": "Main city beach, pier, and the lakeshore promenade at the north end."
+    },
+    {
+      "name": "SS Sicamous",
+      "why": "Beached Okanagan sternwheeler museum on the channel."
+    },
+    {
+      "name": "Skaha Lake Beach",
+      "why": "South-end beach, park, and the cliffs used by climbers and paragliders."
+    },
+    {
+      "name": "Kettle Valley Rail Trail",
+      "why": "Trestle trail climbing from town toward the Naramata Bench."
+    },
+    {
+      "name": "Munson Mountain",
+      "why": "Lookout over both lakes and the channel that joins them."
+    }
+  ]
+}

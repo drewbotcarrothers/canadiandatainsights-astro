@@ -1,0 +1,33 @@
+{
+  "about": "Quinte West is an amalgamated city on the Bay of Quinte in eastern Ontario, combining Trenton, Frankford, Sidney, and Murray rather than a single historic core. Trenton is the main urban centre and the home of 8 Wing, a major Royal Canadian Air Force base. The Trent River meets the bay here, with Highway 401 inland. About 47,000 people live in Quinte West.",
+  "seoSummary": "Amalgamated Bay of Quinte city around Trenton, home to 8 Wing and the national air-force museum.",
+  "knownFor": [
+    "Amalgamated city of Trenton, Frankford, Sidney, and Murray",
+    "8 Wing Trenton, a major RCAF base",
+    "National Air Force Museum of Canada",
+    "Trent River mouth on the Bay of Quinte",
+    "Highway 401 service centre west of Belleville"
+  ],
+  "seeAndDo": [
+    {
+      "name": "National Air Force Museum of Canada",
+      "why": "Aircraft collection and RCAF history beside 8 Wing Trenton."
+    },
+    {
+      "name": "Centennial Park",
+      "why": "Bay of Quinte waterfront park and marina in Trenton."
+    },
+    {
+      "name": "Trent River at Frankford",
+      "why": "Falls, dam, and village core on the river north of Trenton."
+    },
+    {
+      "name": "Downtown Trenton",
+      "why": "Dundas Street shops and the river crossing at the heart of the city."
+    },
+    {
+      "name": "Bay of Quinte shoreline",
+      "why": "Parks and boat launches along the amalgamated waterfront."
+    }
+  ]
+}

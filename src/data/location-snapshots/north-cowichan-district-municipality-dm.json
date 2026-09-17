@@ -1,0 +1,33 @@
+{
+  "about": "North Cowichan is a district municipality in the Cowichan Valley on Vancouver Island, wrapping around the separate City of Duncan rather than forming a city of its own. Chemainus, Crofton, Maple Bay, and Westholme sit among farms, forested hills, and the Cowichan River. Chemainus is known for outdoor murals and a theatre festival. About 32,000 people live in North Cowichan.",
+  "seoSummary": "Cowichan Valley district municipality around Duncan, including Chemainus murals, Crofton, and Maple Bay.",
+  "knownFor": [
+    "District municipality, not a city, surrounding Duncan",
+    "Chemainus murals and the Chemainus Theatre Festival",
+    "Crofton ferry to Salt Spring Island",
+    "Maple Bay and the Cowichan River",
+    "Cowichan Valley farms and forested hills"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Chemainus murals",
+      "why": "Outdoor mural walk through the former mill town."
+    },
+    {
+      "name": "Chemainus Theatre Festival",
+      "why": "Year-round professional theatre in Chemainus."
+    },
+    {
+      "name": "Maple Bay",
+      "why": "Harbour village, waterfront, and trails on the east side of the district."
+    },
+    {
+      "name": "Crofton",
+      "why": "Mill town and BC Ferries terminal for Salt Spring Island."
+    },
+    {
+      "name": "Cowichan River",
+      "why": "River parks and trails through the valley floor of the district."
+    }
+  ]
+}

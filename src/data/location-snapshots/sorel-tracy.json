@@ -1,0 +1,33 @@
+{
+  "about": "Sorel-Tracy is a Montérégie city at the confluence of the Richelieu and the St. Lawrence, northeast of Montréal. It joined the old shipbuilding town of Sorel with the steel town of Tracy and remains an industrial harbour facing the Sorel Islands. A stone parish core, a deep-water waterfront, and the river’s widening toward Lac Saint-Pierre define the site. About 35,000 people live in Sorel-Tracy.",
+  "seoSummary": "Montérégie harbour city at the Richelieu–St. Lawrence confluence, facing the Îles de Sorel.",
+  "knownFor": [
+    "Confluence of the Richelieu and the St. Lawrence",
+    "Shipbuilding and steel-making harbour",
+    "Îles de Sorel in the river archipelago",
+    "Amalgamated Sorel and Tracy",
+    "Gateway to Lac Saint-Pierre"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Biophare",
+      "why": "Lac Saint-Pierre biosphere interpretation centre on the waterfront."
+    },
+    {
+      "name": "Vieux-Sorel",
+      "why": "Parish streets, Carré Royal, and stone buildings near the harbour."
+    },
+    {
+      "name": "Promenade du Vieux-Quai",
+      "why": "Harbourfront walk facing the islands and the river traffic."
+    },
+    {
+      "name": "Îles de Sorel",
+      "why": "River archipelago reached by boat from the city docks."
+    },
+    {
+      "name": "Maison des Gouverneurs",
+      "why": "Historic stone house and exhibition site downtown."
+    }
+  ]
+}

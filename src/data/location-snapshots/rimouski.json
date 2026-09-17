@@ -1,0 +1,33 @@
+{
+  "about": "Rimouski is the principal city of the Bas-Saint-Laurent, on the south shore of the St. Lawrence estuary. It is a university and regional-service centre—home to Université du Québec à Rimouski—with a deep-water harbour and a long shoreline toward Le Bic. Maritime research, a compact downtown, and the Pointe-au-Père lighthouse mark the city. About 49,000 people live in Rimouski.",
+  "seoSummary": "Bas-Saint-Laurent regional city on the St. Lawrence estuary, home to UQAR and Pointe-au-Père.",
+  "knownFor": [
+    "Regional capital of the Bas-Saint-Laurent",
+    "Université du Québec à Rimouski",
+    "Pointe-au-Père lighthouse and the Empress of Ireland wreck site",
+    "Parc national du Bic on the amalgamated shoreline",
+    "Maritime and marine-science research"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Site historique maritime de la Pointe-au-Père",
+      "why": "Lighthouse, submarine Onondaga, and Empress of Ireland museum on the estuary."
+    },
+    {
+      "name": "Parc national du Bic",
+      "why": "Sea cliffs, coves, and trails on the amalgamated Le Bic shoreline west of downtown."
+    },
+    {
+      "name": "Musée régional de Rimouski",
+      "why": "Regional museum in a former cathedral downtown."
+    },
+    {
+      "name": "Rimouski harbourfront",
+      "why": "Marina, promenade, and views across the St. Lawrence."
+    },
+    {
+      "name": "Université du Québec à Rimouski",
+      "why": "Campus and marine-science cluster that anchors the city’s public life."
+    }
+  ]
+}

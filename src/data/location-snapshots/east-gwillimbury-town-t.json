@@ -1,0 +1,33 @@
+{
+  "about": "East Gwillimbury is a town in York Region north of Newmarket, covering Holland Landing, Sharon, Queensville, and Mount Albert rather than one downtown. It sits on the Holland River and the Oak Ridges Moraine and has been among the fastest-growing municipalities in the region. GO Transit’s East Gwillimbury station and Highway 404 feed new housing around the older villages. About 35,000 people live in East Gwillimbury.",
+  "seoSummary": "Fast-growing York Region town of Holland Landing, Sharon, Queensville, and Mount Albert.",
+  "knownFor": [
+    "Amalgamated villages rather than a single urban core",
+    "Sharon Temple National Historic Site",
+    "Holland River and the Nokiidaa Trail",
+    "Rapid housing growth along Highway 404",
+    "East Gwillimbury GO station north of Newmarket"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Sharon Temple National Historic Site",
+      "why": "Unique wooden temple built by the Children of Peace in Sharon."
+    },
+    {
+      "name": "Holland Landing",
+      "why": "Historic village, landing, and the south end of the Holland River corridor."
+    },
+    {
+      "name": "Nokiidaa Trail",
+      "why": "River trail linking East Gwillimbury with Newmarket and Aurora."
+    },
+    {
+      "name": "Mount Albert",
+      "why": "Village core on the Oak Ridges Moraine in the east of the town."
+    },
+    {
+      "name": "Queensville",
+      "why": "Crossroads village now absorbing much of the town’s new housing."
+    }
+  ]
+}

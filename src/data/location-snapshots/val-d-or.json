@@ -1,0 +1,33 @@
+{
+  "about": "Val-d’Or is a gold-mining city on the Abitibi clay belt in northwestern Québec, on Lac Blouin. It grew from the Bourlamaque mining camp and still offers underground mine tours in the former Lamaque workings. A downtown on the highway, a large regional airport, and boreal lakes surround the urban grid. About 33,000 people live in Val-d’Or.",
+  "seoSummary": "Abitibi gold-mining city on Lac Blouin, home to Cité de l’Or and the Bourlamaque log-cabin village.",
+  "knownFor": [
+    "Gold mining and the former Lamaque mine",
+    "Cité de l’Or underground tours",
+    "Village minier de Bourlamaque log-cabin camp",
+    "Regional airport and a service hub for eastern Abitibi",
+    "Lac Blouin and boreal lakes at the edge of town"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Cité de l’Or",
+      "why": "Underground tour of the former Lamaque gold mine."
+    },
+    {
+      "name": "Village minier de Bourlamaque",
+      "why": "Preserved log-cabin mining village, a national historic site."
+    },
+    {
+      "name": "Lac Blouin waterfront",
+      "why": "Urban lake, beach, and the path around the shore."
+    },
+    {
+      "name": "Downtown 3e Avenue",
+      "why": "Commercial main street of the mining city."
+    },
+    {
+      "name": "Festival d’été de Val-d’Or site",
+      "why": "Summer festival grounds and civic gathering place."
+    }
+  ]
+}

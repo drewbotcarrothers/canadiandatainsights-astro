@@ -1,0 +1,33 @@
+{
+  "about": "Vaudreuil-Dorion is a bilingual Montérégie city at the confluence of the Ottawa River and Lac des Deux Montagnes, immediately west of the Island of Montréal. It sits at the junction of Highways 20 and 40 and has grown quickly from seigneurial villages into an off-island suburb. Vieux-Vaudreuil still faces the lake. About 43,000 people live in Vaudreuil-Dorion.",
+  "seoSummary": "Bilingual off-island suburb at the Ottawa River and Lac des Deux Montagnes, west of Montréal.",
+  "knownFor": [
+    "Off-island West Island gateway at Highways 20 and 40",
+    "Confluence of the Ottawa River and Lac des Deux Montagnes",
+    "Bilingual Vaudreuil-Soulanges suburb",
+    "Vieux-Vaudreuil lakeshore village",
+    "Exo Vaudreuil commuter train into Montréal"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Vieux-Vaudreuil",
+      "why": "Historic village streets and stone houses facing the lake."
+    },
+    {
+      "name": "Maison Trestler",
+      "why": "Eighteenth-century stone house and cultural site on the lakeshore."
+    },
+    {
+      "name": "Musée régional de Vaudreuil-Soulanges",
+      "why": "Regional museum in a former school in the old town."
+    },
+    {
+      "name": "Parc des Ancres",
+      "why": "Waterfront park and marina at the old harbour."
+    },
+    {
+      "name": "Gare de Vaudreuil",
+      "why": "Commuter-train station and the civic plaza beside it."
+    }
+  ]
+}
