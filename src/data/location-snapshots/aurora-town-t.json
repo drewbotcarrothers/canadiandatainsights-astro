@@ -1,0 +1,33 @@
+{
+  "about": "Aurora is a town in York Region, on Yonge Street north of Richmond Hill and south of Newmarket. It has a preserved 19th-century downtown, GO Transit service, and suburban neighbourhoods that filled in around the historic core. Sheppard’s Bush and other conservation pockets sit among the streets. About 62,000 people live in Aurora.",
+  "seoSummary": "York Region town on Yonge Street, with a historic downtown between Richmond Hill and Newmarket.",
+  "knownFor": [
+    "Historic Yonge Street downtown",
+    "York Region commuter town on GO Transit",
+    "Sheppard’s Bush conservation area",
+    "Hillary House and Victorian streetscapes",
+    "Suburban growth around a 19th-century core"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Historic downtown Aurora",
+      "why": "Yonge Street shops, the cultural centre, and Hillary House."
+    },
+    {
+      "name": "Sheppard’s Bush Conservation Area",
+      "why": "Woodland and creek trails near the town centre."
+    },
+    {
+      "name": "Aurora Community Arboretum",
+      "why": "Planted woodland and paths along a former rail and creek corridor."
+    },
+    {
+      "name": "Town Park",
+      "why": "Central park and bandshell off Yonge Street."
+    },
+    {
+      "name": "Aurora Cultural Centre",
+      "why": "Gallery and performance space in a former school downtown."
+    }
+  ]
+}

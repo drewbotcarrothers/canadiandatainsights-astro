@@ -1,0 +1,33 @@
+{
+  "about": "Brantford is on the Grand River in southwestern Ontario, between Hamilton and London. It grew as a canal and manufacturing town and is often called the Telephone City for Alexander Graham Bell’s early work here. Six Nations of the Grand River lies immediately to the south. About 105,000 people live in Brantford.",
+  "seoSummary": "Grand River city in southwestern Ontario, known as the Telephone City.",
+  "knownFor": [
+    "Alexander Graham Bell and the Telephone City name",
+    "Grand River and the former canal corridor",
+    "Proximity to Six Nations of the Grand River",
+    "Harmony Square and a rebuilt downtown core",
+    "Manufacturing and distribution on the 403 corridor"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Bell Homestead National Historic Site",
+      "why": "The Bell family’s Tutela Heights home and early telephone workshop."
+    },
+    {
+      "name": "Harmony Square",
+      "why": "Civic plaza at the centre of downtown."
+    },
+    {
+      "name": "Glenhyrst Art Gallery of Brant",
+      "why": "Gallery and gardens on the Grand River."
+    },
+    {
+      "name": "Her Majesty’s Royal Chapel of the Mohawks",
+      "why": "Historic chapel on the river, among the oldest Protestant churches in Ontario."
+    },
+    {
+      "name": "Sanderson Centre for the Performing Arts",
+      "why": "Restored downtown theatre."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Granby is in the Eastern Townships (Estrie), east of Montréal in the Yamaska River valley. It is a bilingual regional town known across Québec for the Zoo de Granby and for a compact downtown under the Yamaska hills. Lakes, ski country, and farmland surround the city. About 69,000 people live in Granby.",
+  "seoSummary": "Eastern Townships city in the Yamaska valley, known for the Zoo de Granby.",
+  "knownFor": [
+    "Zoo de Granby, among Québec’s best-known zoos",
+    "Eastern Townships (Estrie) regional centre",
+    "Lac Boivin and the Yamaska valley",
+    "Compact downtown under the hills",
+    "Gateway to Township lakes and ski country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Zoo de Granby",
+      "why": "Large zoo and adjoining water park on the edge of the city."
+    },
+    {
+      "name": "Lac Boivin and Parc Daniel-Johnson",
+      "why": "Urban lake, marshes, and a path around the shore."
+    },
+    {
+      "name": "Rue Principale downtown",
+      "why": "Shops and cafés in the older town centre."
+    },
+    {
+      "name": "Centre de la Nature",
+      "why": "Hilltop park with views over the city and valley."
+    },
+    {
+      "name": "Parc national de la Yamaska",
+      "why": "Reservoir beaches and trails just west of Granby."
+    }
+  ]
+}

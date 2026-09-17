@@ -1,0 +1,33 @@
+{
+  "about": "Chilliwack is in the Fraser Valley east of Abbotsford, between the Fraser River and the Cascade and Coast mountains. It is an agricultural and service city with a historic downtown and newer neighbourhoods toward the Vedder River. Canadian Forces Base Chilliwack’s former site and surrounding farms still shape the valley floor. About 93,000 people live in Chilliwack.",
+  "seoSummary": "Fraser Valley city between river farmland and mountain walls, east of Abbotsford.",
+  "knownFor": [
+    "Fraser Valley farms under mountain walls",
+    "Vedder River recreation corridor",
+    "Historic downtown Chilliwack",
+    "Former CFB Chilliwack lands",
+    "Gateway toward Harrison Lake and the canyon"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Vedder River Rotary Trail",
+      "why": "Dyke path along the Vedder toward Cultus Lake country."
+    },
+    {
+      "name": "Downtown Chilliwack",
+      "why": "Historic Five Corners and the old city-centre blocks."
+    },
+    {
+      "name": "Bridal Veil Falls Provincial Park",
+      "why": "Roadside waterfall at the east end of the city area."
+    },
+    {
+      "name": "Great Blue Heron Nature Reserve",
+      "why": "Wetland and nesting colony on the Fraser floodplain."
+    },
+    {
+      "name": "Cheam Lake Wetlands",
+      "why": "Restored quarry wetlands with boardwalks near Bridal Falls."
+    }
+  ]
+}

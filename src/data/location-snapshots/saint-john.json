@@ -1,0 +1,33 @@
+{
+  "about": "Saint John is on the Bay of Fundy in southern New Brunswick, at the mouth of the Saint John River. It is Canada’s oldest incorporated city, a deep-water ice-free port, and an industrial centre long associated with shipbuilding and the Irving companies. Uptown brick streets sit above Reversing Falls, where the river meets the world’s highest tides. About 70,000 people live in Saint John.",
+  "seoSummary": "Bay of Fundy port, Canada’s oldest incorporated city, at the Saint John River’s reversing falls.",
+  "knownFor": [
+    "Oldest incorporated city in Canada",
+    "Reversing Falls at the river’s mouth",
+    "Ice-free Bay of Fundy port and Irving industry",
+    "Uptown Loyalist brick streets and City Market",
+    "Fog, tides, and a working harbour"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Reversing Falls",
+      "why": "Gorge where the Fundy tide pushes the Saint John River backward."
+    },
+    {
+      "name": "Saint John City Market",
+      "why": "Nineteenth-century market hall in the uptown."
+    },
+    {
+      "name": "Market Square and the uptown",
+      "why": "Harbourfront brick streets, museums, and the New Brunswick Museum."
+    },
+    {
+      "name": "Irving Nature Park",
+      "why": "Coastal peninsula of trails and Bay of Fundy shoreline."
+    },
+    {
+      "name": "Carleton Martello Tower",
+      "why": "War of 1812 tower overlooking the harbour."
+    }
+  ]
+}

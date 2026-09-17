@@ -1,0 +1,33 @@
+{
+  "about": "Blainville is a suburban city in the Laurentides on Montréal’s North Shore, along Autoroute 15 between Sainte-Thérèse and Mirabel. It grew quickly from a seigneurial parish into a family-oriented commuter city of parks, sports facilities, and residential neighbourhoods. The old village and the Curé-Labelle corridor still mark the historic spine. About 60,000 people live in Blainville.",
+  "seoSummary": "North Shore Laurentides suburb on Autoroute 15, a commuter city of parks and sports facilities.",
+  "knownFor": [
+    "North Shore commuter suburb of Greater Montréal",
+    "Parc équestre and a strong sports-recreation profile",
+    "Rapid residential growth along Autoroute 15",
+    "Old village and Boulevard du Curé-Labelle",
+    "Fontainebleau ravine trails"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc équestre de Blainville",
+      "why": "Municipal equestrian park used for events and public grounds."
+    },
+    {
+      "name": "Parc du Domaine Vert",
+      "why": "Urban forest park with trails, swimming, and winter sports."
+    },
+    {
+      "name": "Sentiers des ravins de Fontainebleau",
+      "why": "Ravine walking trails in the Fontainebleau neighbourhood."
+    },
+    {
+      "name": "Centre d’excellence Sports Rousseau",
+      "why": "Arena and sports complex for hockey and community events."
+    },
+    {
+      "name": "Old village / Curé-Labelle",
+      "why": "Historic parish spine and civic corridor."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Mirabel is a large municipality in the Laurentides, northwest of Montréal, stitched together from former parishes around a vast airport site. Montréal–Mirabel International Airport is now mainly cargo and aerospace rather than a passenger gateway; farms, hamlets such as Saint-Janvier and Saint-Canut, and new housing fill the rest. Autoroute 15 and the industrial airport lands give the city a spread-out, partly rural character. About 61,000 people live in Mirabel.",
+  "seoSummary": "Sprawling Laurentides municipality around the Mirabel airport lands, farms, and Saint-Janvier.",
+  "knownFor": [
+    "Montréal–Mirabel airport, now cargo and aerospace",
+    "Amalgamated rural parishes and hamlets",
+    "U-pick farms and Laurentides countryside",
+    "Complexe ICAR motorsport on the former airfield",
+    "Rapid housing growth along Autoroute 15"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc régional Bois de Belle-Rivière",
+      "why": "Year-round nature park with trails, swimming, and winter sliding."
+    },
+    {
+      "name": "Complexe ICAR",
+      "why": "Motorsport circuit on the former airport site."
+    },
+    {
+      "name": "Saint-Janvier",
+      "why": "One of the municipality’s main village cores, with shops and civic buildings."
+    },
+    {
+      "name": "Mirabel airport observation areas",
+      "why": "Views of the cargo and aerospace field that still defines the map."
+    },
+    {
+      "name": "Local farm stands and U-pick",
+      "why": "Seasonal agriculture across the former parish countryside."
+    }
+  ]
+}

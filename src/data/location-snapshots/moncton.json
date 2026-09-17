@@ -1,0 +1,33 @@
+{
+  "about": "Moncton sits on a bend of the Petitcodiac River in southeastern New Brunswick. It is the province’s largest urban centre, a bilingual transportation and retail hub for the Maritimes, and the urban core of a three-city area with Dieppe and Riverview. The river’s tidal bore and Magnetic Hill are long-standing visitor draws. About 79,000 people live in Moncton.",
+  "seoSummary": "Southeastern New Brunswick hub on the Petitcodiac River, known for Magnetic Hill and the tidal bore.",
+  "knownFor": [
+    "Bilingual transportation and retail hub",
+    "Petitcodiac River tidal bore",
+    "Magnetic Hill and the nearby amusement area",
+    "Université de Moncton",
+    "Downtown core of Greater Moncton with Dieppe and Riverview"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Magnetic Hill",
+      "why": "Optical-illusion grade, with the adjoining zoo and water park."
+    },
+    {
+      "name": "Bore Park",
+      "why": "Downtown viewing site for the Petitcodiac tidal bore."
+    },
+    {
+      "name": "Resurgo Place",
+      "why": "Moncton Museum and transportation discovery centre downtown."
+    },
+    {
+      "name": "Centennial Park",
+      "why": "Large urban park with trails, a beach, and a military aircraft display."
+    },
+    {
+      "name": "Downtown Main Street",
+      "why": "Restaurants, shops, and the restored city centre on the river bend."
+    }
+  ]
+}

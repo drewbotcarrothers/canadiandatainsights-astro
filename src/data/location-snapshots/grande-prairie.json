@@ -1,0 +1,33 @@
+{
+  "about": "Grande Prairie is in northwestern Alberta’s Peace Country, a prairie-and-forest service city for oil, gas, and grain country west of the Alberta–British Columbia boundary. It sits on a former lakebed with Muskoseepi Park cutting a green ravine through town. Highways fan toward Dawson Creek, the Peace River, and the northern Rockies. About 64,000 people live in Grande Prairie.",
+  "seoSummary": "Peace Country service city in northwestern Alberta, a hub for energy and grain country.",
+  "knownFor": [
+    "Peace Country oil, gas, and agriculture hub",
+    "Muskoseepi Park ravine through the city",
+    "Northwestern Alberta highway junction",
+    "Fast-growing service centre on a former lakebed",
+    "Gateway toward Dawson Creek and the northern Rockies"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Muskoseepi Park",
+      "why": "Long ravine park with trails, lakes, and the Eastlink Centre nearby."
+    },
+    {
+      "name": "Grande Prairie Museum",
+      "why": "Regional history museum at the park."
+    },
+    {
+      "name": "Crystal Lake",
+      "why": "Urban lake and paths on the east side."
+    },
+    {
+      "name": "Centre 2000",
+      "why": "Visitor centre and local exhibits at the highway entrance."
+    },
+    {
+      "name": "Downtown 100 Avenue",
+      "why": "City-centre street grid and civic buildings."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Nanaimo is a harbour city on the east coast of Vancouver Island, across the Strait of Georgia from Metro Vancouver. It grew around coal mining and a protected harbour and is now a ferry, service, and recreation centre for mid-Island. Departure Bay and Duke Point terminals link the city to the mainland. About 100,000 people live in Nanaimo.",
+  "seoSummary": "Vancouver Island harbour city, a ferry hub across the Strait of Georgia from Metro Vancouver.",
+  "knownFor": [
+    "Protected harbour and the Hudson’s Bay Bastion",
+    "BC Ferries at Departure Bay and Duke Point",
+    "Former coal-mining port",
+    "Saysutshun (Newcastle Island) just offshore",
+    "Gateway to mid-Island beaches and parks"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Nanaimo Bastion",
+      "why": "Hudson’s Bay Company fort tower on the harbour."
+    },
+    {
+      "name": "Maffeo Sutton Park",
+      "why": "Waterfront park, seaplane docks, and the Newcastle Island ferry."
+    },
+    {
+      "name": "Saysutshun (Newcastle Island)",
+      "why": "Marine provincial park a short harbour ferry from downtown."
+    },
+    {
+      "name": "Departure Bay",
+      "why": "Beach, promenade, and the main Island-to-mainland ferry terminal."
+    },
+    {
+      "name": "Buttertubs Marsh",
+      "why": "Urban wetland and bird sanctuary."
+    }
+  ]
+}

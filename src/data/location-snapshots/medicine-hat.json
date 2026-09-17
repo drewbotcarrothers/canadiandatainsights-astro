@@ -1,0 +1,33 @@
+{
+  "about": "Medicine Hat is in southeastern Alberta, in a coulee of the South Saskatchewan River. Natural-gas fields earned it the nickname the Gas City; clay products from the historic Medalta kilns are another local signature. The Saamis Tepee stands near the Trans-Canada Highway. About 63,000 people live in Medicine Hat.",
+  "seoSummary": "Southeastern Alberta Gas City in the South Saskatchewan coulees, known for Medalta clay and the Saamis Tepee.",
+  "knownFor": [
+    "Natural-gas fields and the Gas City name",
+    "South Saskatchewan River coulees",
+    "Historic Clay District and Medalta potteries",
+    "Saamis Tepee beside the Trans-Canada",
+    "Irrigation farmland on the surrounding prairie"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Historic Clay District (Medalta)",
+      "why": "Preserved brick kilns and pottery museum in the river flats."
+    },
+    {
+      "name": "Police Point Park",
+      "why": "Cottonwood river-valley park and nature centre."
+    },
+    {
+      "name": "Saamis Tepee",
+      "why": "Large tepee landmark near the Trans-Canada Highway."
+    },
+    {
+      "name": "Downtown riverside",
+      "why": "City centre above the South Saskatchewan."
+    },
+    {
+      "name": "Echo Dale Regional Park",
+      "why": "Reservoir swimming and trails west of the city."
+    }
+  ]
+}

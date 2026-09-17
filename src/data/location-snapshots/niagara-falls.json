@@ -1,0 +1,33 @@
+{
+  "about": "Niagara Falls is on the Niagara River in Ontario, opposite the American city of the same name. The Horseshoe Falls and a long hydroelectric history underpin a major tourism strip of hotels, parks, and viewpoints. The Niagara Parkway and the Niagara Escarpment wine belt sit immediately beside the built-up core. About 94,000 people live in Niagara Falls.",
+  "seoSummary": "Ontario city at Horseshoe Falls, a hydroelectric and tourism centre on the Niagara River.",
+  "knownFor": [
+    "Horseshoe Falls on the Niagara River",
+    "Clifton Hill and the fallsview hotel strip",
+    "Hydroelectric generating stations",
+    "Niagara Parkway gardens and lookouts",
+    "Gateway to the Niagara wine belt"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Horseshoe Falls and Table Rock",
+      "why": "Main Canadian viewpoint over the brink of the falls."
+    },
+    {
+      "name": "Journey Behind the Falls",
+      "why": "Tunnels and portals in the rock beside the cascade."
+    },
+    {
+      "name": "Niagara Parkway",
+      "why": "Scenic riverside drive, gardens, and the Floral Showhouse."
+    },
+    {
+      "name": "Niagara Parks Power Station",
+      "why": "Former generating hall with a tunnel toward the river."
+    },
+    {
+      "name": "Clifton Hill",
+      "why": "Tourist street of attractions above the American Falls view."
+    }
+  ]
+}

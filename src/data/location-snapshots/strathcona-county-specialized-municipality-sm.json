@@ -1,0 +1,33 @@
+{
+  "about": "Strathcona County is a specialized municipality immediately east of Edmonton, combining the large urban hamlet of Sherwood Park with a wide rural hinterland. It is not a city: county government covers both the suburban hamlet and agricultural and industrial lands toward the Beaver Hills and the Industrial Heartland. Refineries and petrochemical plants sit along the North Saskatchewan River. About 99,000 people live in Strathcona County.",
+  "seoSummary": "Specialized municipality east of Edmonton, anchored by the urban hamlet of Sherwood Park.",
+  "knownFor": [
+    "Sherwood Park as a large urban hamlet, not a separate city",
+    "Rural hamlets and farms in the Beaver Hills",
+    "Industrial Heartland refineries and petrochemical plants",
+    "Festival Place performing-arts centre",
+    "Mix of suburban neighbourhoods and agricultural land"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Festival Place",
+      "why": "Performing-arts venue in Sherwood Park."
+    },
+    {
+      "name": "Strathcona Wilderness Centre",
+      "why": "Year-round trails and outdoor centre near Ardrossan."
+    },
+    {
+      "name": "Broadmoor Lake Park",
+      "why": "Lake and paths in the heart of Sherwood Park."
+    },
+    {
+      "name": "Strathcona County Museum and Archives",
+      "why": "Local history in a former fire hall and RCMP station."
+    },
+    {
+      "name": "Sherwood Park Natural Area",
+      "why": "Wetland and forest reserve on the edge of the hamlet."
+    }
+  ]
+}

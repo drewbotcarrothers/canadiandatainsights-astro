@@ -1,0 +1,33 @@
+{
+  "about": "The City of North Vancouver is a compact waterfront city on Burrard Inlet, distinct from the much larger District of North Vancouver that surrounds it. Lower Lonsdale and the former shipyards form a dense urban core facing downtown Vancouver, with SeaBus service across the harbour. Mountain parks such as Grouse and Lynn Canyon lie in the District, not in this city. About 58,000 people live in the City of North Vancouver.",
+  "seoSummary": "Compact North Shore city on Burrard Inlet, centred on Lonsdale Quay and the shipyards—not the District.",
+  "knownFor": [
+    "Compact harbour city distinct from the District of North Vancouver",
+    "Lonsdale Quay and the SeaBus to downtown Vancouver",
+    "Former Burrard Dry Dock shipyards",
+    "Lower Lonsdale restaurants and galleries",
+    "Steep streets climbing from the inlet"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Lonsdale Quay Market",
+      "why": "Public market and SeaBus terminal on the waterfront."
+    },
+    {
+      "name": "The Shipyards",
+      "why": "Restored Burrard Dry Dock precinct, pier, and public square."
+    },
+    {
+      "name": "Polygon Gallery",
+      "why": "Photography and media-art gallery at the foot of Lonsdale."
+    },
+    {
+      "name": "Waterfront Park",
+      "why": "Harbour park with views across Burrard Inlet to downtown Vancouver."
+    },
+    {
+      "name": "Spirit Trail",
+      "why": "Waterfront walking and cycling route through Lower Lonsdale."
+    }
+  ]
+}

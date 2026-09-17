@@ -1,0 +1,33 @@
+{
+  "about": "Sault Ste. Marie is in northern Ontario, on the St. Marys River opposite its Michigan namesake, where Lake Superior drains toward Lake Huron. The twin cities share a lock system and an international bridge. The Ontario Sault is a steel, forestry, and regional service centre and the starting point for the Agawa Canyon tour train. About 72,000 people live in Sault Ste. Marie.",
+  "seoSummary": "Northern Ontario city on the St. Marys River, twin to Michigan’s Soo at the Superior locks.",
+  "knownFor": [
+    "St. Marys River and the Soo Locks corridor",
+    "International Bridge to Sault Ste. Marie, Michigan",
+    "Algoma steel and a northern service economy",
+    "Agawa Canyon Tour Train",
+    "Canadian Bushplane Heritage Centre"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Canadian Bushplane Heritage Centre",
+      "why": "Aviation museum on the waterfront, focused on forest firefighting aircraft."
+    },
+    {
+      "name": "Ermatinger–Clergue National Historic Site",
+      "why": "Stone house and industrialist’s home from the fur-trade and canal era."
+    },
+    {
+      "name": "Agawa Canyon Tour Train",
+      "why": "Day rail excursion into the Algoma highlands, departing from the Sault."
+    },
+    {
+      "name": "Roberta Bondar Park",
+      "why": "Waterfront pavilion and plaza named for astronaut Roberta Bondar, who was born in the Sault."
+    },
+    {
+      "name": "Art Gallery of Algoma",
+      "why": "Civic gallery on the river."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Belleville is on the Bay of Quinte in eastern Ontario, at the mouth of the Moira River. It is a Loyalist-era city and a service centre for Hastings County, with a downtown along the harbour and Highway 401 on the inland side. The bay, a long-running farmers’ market, and nearby wine country on Prince Edward County shape local life. About 55,000 people live in Belleville.",
+  "seoSummary": "Bay of Quinte city at the Moira River, a Loyalist-era service centre in eastern Ontario.",
+  "knownFor": [
+    "Bay of Quinte harbour and the Moira River",
+    "Loyalist settlement history",
+    "Long-running downtown farmers’ market",
+    "Highway 401 service city for Hastings County",
+    "Gateway to Prince Edward County wine country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Zwicks Park",
+      "why": "Bay of Quinte waterfront park and marina."
+    },
+    {
+      "name": "Downtown Bridge Street",
+      "why": "Historic commercial street toward the harbour."
+    },
+    {
+      "name": "Belleville Farmers’ Market",
+      "why": "Long-established market in the city centre."
+    },
+    {
+      "name": "Glanmore National Historic Site",
+      "why": "Victorian mansion museum."
+    },
+    {
+      "name": "Moira River waterfront",
+      "why": "River path from downtown to the bay."
+    }
+  ]
+}

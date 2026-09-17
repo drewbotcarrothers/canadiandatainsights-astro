@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Jean-sur-Richelieu is in Montérégie, on the Richelieu River southeast of Montréal. It grew as a military and canal town at Fort Saint-Jean and remains a bilingual South Shore city with a large industrial and commuting role. The International Balloon Festival fills the late-summer sky. About 98,000 people live in Saint-Jean-sur-Richelieu.",
+  "seoSummary": "Montérégie city on the Richelieu River, known for Fort Saint-Jean and the balloon festival.",
+  "knownFor": [
+    "Richelieu River and the Chambly Canal",
+    "Fort Saint-Jean and the Royal Military College campus",
+    "International Balloon Festival",
+    "South Shore industrial and commuting city",
+    "Historic rue Richelieu downtown"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Fort Saint-Jean",
+      "why": "Historic fort and museum on the river, with a military-college campus."
+    },
+    {
+      "name": "Chambly Canal",
+      "why": "Towpath and locks linking the city toward Chambly and the St. Lawrence."
+    },
+    {
+      "name": "International Balloon Festival site",
+      "why": "Late-summer launch fields and evening glows over the city."
+    },
+    {
+      "name": "Vieux-Saint-Jean",
+      "why": "Older streets and shops along the Richelieu."
+    },
+    {
+      "name": "Parc du Fort-Saint-Jean",
+      "why": "Riverfront park beside the fortifications."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Newmarket is a town in York Region, on the Holland River north of Toronto. It grew from a mill village into a regional centre for northern York, with a restored Main Street, Fairy Lake, and large retail along Yonge Street. GO Transit and Highway 404 make it a commuting town with its own hospital and civic core. About 88,000 people live in Newmarket.",
+  "seoSummary": "York Region town on the Holland River, with a historic Main Street north of Toronto.",
+  "knownFor": [
+    "Historic Main Street South",
+    "Fairy Lake and the Magical Forest park",
+    "Northern York Region civic and hospital centre",
+    "GO Transit and Highway 404 commuting",
+    "Upper Canada Mall and the Yonge Street corridor"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Historic Main Street",
+      "why": "Nineteenth-century streetscape and Riverwalk Commons."
+    },
+    {
+      "name": "Fairy Lake",
+      "why": "Town park, trails, and the Wesley Brooks Conservation Area."
+    },
+    {
+      "name": "Newmarket Riverwalk Commons",
+      "why": "Civic square and farmers’ market site beside Main Street."
+    },
+    {
+      "name": "Elman W. Campbell Museum",
+      "why": "Local history museum in the old downtown."
+    },
+    {
+      "name": "Upper Canada Mall",
+      "why": "Large regional shopping centre on Yonge Street."
+    }
+  ]
+}

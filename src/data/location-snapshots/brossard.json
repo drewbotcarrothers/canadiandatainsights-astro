@@ -1,0 +1,33 @@
+{
+  "about": "Brossard is on the South Shore of the St. Lawrence, immediately across from the Island of Montréal via the Champlain Bridge. It is a bilingual suburban city with a large immigrant population, including a well-known Chinese commercial strip, and is a major shopping and REM-transit node. Quartier DIX30 is a large outdoor lifestyle centre at the Autoroute 10 interchange. About 92,000 people live in Brossard.",
+  "seoSummary": "Montréal South Shore suburb at the Champlain Bridge, known for Quartier DIX30 and the REM.",
+  "knownFor": [
+    "South Shore gateway at the Champlain Bridge",
+    "Quartier DIX30 lifestyle and shopping district",
+    "REM light-rail link to downtown Montréal",
+    "Taschereau Boulevard commercial corridor",
+    "Diverse suburban neighbourhoods, including a large Chinese community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Quartier DIX30",
+      "why": "Large open-air shopping and entertainment district."
+    },
+    {
+      "name": "Parc de Saint-Laurent",
+      "why": "Riverfront park facing the St. Lawrence and Montréal."
+    },
+    {
+      "name": "Base de plein air de Brossard",
+      "why": "Wooded municipal outdoor centre with trails and winter sports."
+    },
+    {
+      "name": "Taschereau Boulevard",
+      "why": "Main commercial strip, including Chinese restaurants and shops."
+    },
+    {
+      "name": "REM Brossard station precinct",
+      "why": "Terminus area tying the South Shore to downtown Montréal."
+    }
+  ]
+}

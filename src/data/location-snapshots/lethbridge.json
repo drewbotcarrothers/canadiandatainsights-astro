@@ -1,0 +1,33 @@
+{
+  "about": "Lethbridge is in southern Alberta, in a coulee landscape cut by the Oldman River. It is a commercial and university city for irrigation farm country, with frequent chinook winds and views of the Rockies on clear days. A high-level railway trestle spans the river valley above Indian Battle Park. About 98,000 people live in Lethbridge.",
+  "seoSummary": "Southern Alberta city in the Oldman River coulees, a service centre for irrigation country.",
+  "knownFor": [
+    "Oldman River coulees and the High Level Bridge",
+    "University of Lethbridge on the west valley rim",
+    "Irrigation agriculture and a dry prairie climate",
+    "Nikka Yuko Japanese Garden",
+    "Chinook winds and mountain views to the west"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Nikka Yuko Japanese Garden",
+      "why": "Traditional garden in the river valley."
+    },
+    {
+      "name": "High Level Bridge",
+      "why": "Steel railway trestle spanning the Oldman coulees."
+    },
+    {
+      "name": "Indian Battle Park",
+      "why": "Valley park beneath the trestle, with trails and reconstructed Fort Whoop-Up."
+    },
+    {
+      "name": "Galt Museum & Archives",
+      "why": "Regional history museum on a bluff above the river."
+    },
+    {
+      "name": "Henderson Lake",
+      "why": "Urban lake, park, and the Nikka Yuko grounds."
+    }
+  ]
+}
