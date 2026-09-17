@@ -4,6 +4,7 @@ import StatRow from '../../components/location/StatRow.astro';
 import DistributionBar from '../../components/location/DistributionBar.astro';
 import SectionHeader from '../../components/location/SectionHeader.astro';
 import LocationEngage from '../../components/location/LocationEngage.astro';
+import CommunitySnapshot from '../../components/location/CommunitySnapshot.astro';
 import {
   getAllLocations,
   getLocationBySlug,
@@ -12,6 +13,7 @@ import {
   displayName as toDisplayName,
   type LocationData,
 } from '../../lib/locations';
+import { getLocationSnapshot } from '../../data/location-snapshots';
 import { formatNumber, formatPercent, formatCurrency, pct } from '../../lib/utils';
 import { locationJsonLd } from '../../lib/seo';
 
@@ -36,6 +38,7 @@ if (!location) {
 }
 
 const d = location as LocationData;
+const snapshot = getLocationSnapshot(slug!);
 const isProvince = d.GEO_LEVEL === 'Province' || d.GEO_LEVEL === 'Territory';
 const provinceKey = (d.PROVINCE as string) || d.GEO_NAME.split(',')[0];
 const provinceCities = isProvince ? await getLocationsByProvince(provinceKey) : [];
@@ -151,7 +154,11 @@ if (d.POP_2021 != null) {
 if (d.HH_INCOME_MEDIAN_AFTER_TAX != null) {
   descBits.push(`Median household income ${formatCurrency(d.HH_INCOME_MEDIAN_AFTER_TAX)}.`);
 }
-descBits.push('Explore households, employment, languages, and more.');
+if (snapshot?.seoSummary) {
+  descBits.push(snapshot.seoSummary);
+} else {
+  descBits.push('Explore households, employment, languages, and more.');
+}
 const description = descBits.join(' ');
 
 const mapQuery = encodeURIComponent(`${name}, ${(d.PROVINCE as string) || 'Canada'}`);
@@ -164,6 +171,9 @@ const jsonLd = locationJsonLd({
   population: d.POP_2021 ?? null,
   medianIncome: d.HH_INCOME_MEDIAN_AFTER_TAX ?? null,
   description,
+  snapshot: snapshot
+    ? { about: snapshot.about, seeAndDo: snapshot.seeAndDo }
+    : undefined,
 });
 ---
 
@@ -688,6 +698,12 @@ const jsonLd = locationJsonLd({
           )}
         </div>
       </section>
+    )
+  }
+
+  {
+    snapshot && (
+      <CommunitySnapshot name={name} snapshot={snapshot} />
     )
   }
 
