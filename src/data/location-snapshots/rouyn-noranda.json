@@ -1,0 +1,33 @@
+{
+  "about": "Rouyn-Noranda is the principal city of Abitibi-Témiscamingue, on Lac Osisko in northwestern Québec. It joined the twin mining towns of Rouyn and Noranda and remains a copper-smelting and regional-service centre in the boreal shield. A compact downtown, the Horne smelter skyline, and a well-known emerging-music festival define the city. About 42,000 people live in Rouyn-Noranda.",
+  "seoSummary": "Abitibi mining city on Lac Osisko, home to the Horne smelter and the FME music festival.",
+  "knownFor": [
+    "Twin mining towns of Rouyn and Noranda, now one city",
+    "Horne copper smelter on Lac Osisko",
+    "Festival de musique émergente (FME)",
+    "Regional capital of Abitibi-Témiscamingue",
+    "Boreal shield lakes and a downtown on the water"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Promenade du lac Osisko",
+      "why": "Shore path around the lake at the centre of the city."
+    },
+    {
+      "name": "Théâtre du Cuivre",
+      "why": "Regional performing-arts centre downtown."
+    },
+    {
+      "name": "Musée d’art de Rouyn-Noranda (MA)",
+      "why": "Contemporary art museum in the city centre."
+    },
+    {
+      "name": "Gloire de l’eau fountain and the Horne lookout",
+      "why": "Lakefront views of the smelter that still shapes the skyline."
+    },
+    {
+      "name": "Maison Dumulon",
+      "why": "Restored 1920s trading post and house museum on the early townsite."
+    }
+  ]
+}

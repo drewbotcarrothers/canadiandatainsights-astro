@@ -1,0 +1,33 @@
+{
+  "about": "Mission is a district municipality in the Fraser Valley, on the north bank of the Fraser River east of Maple Ridge, not a city. Downtown sits on a terrace above the river; rural benches, lakes, and the Westminster Abbey hill rise behind it. The district mixes a small urban core with acreages toward Stave Lake. About 42,000 people live in Mission.",
+  "seoSummary": "Fraser Valley district municipality on the north bank of the Fraser, below Westminster Abbey.",
+  "knownFor": [
+    "District municipality, not a city, on the Fraser’s north shore",
+    "Westminster Abbey on the hill above town",
+    "Fraser River waterfront and a small downtown terrace",
+    "Stave Lake recreation country inland",
+    "Mission Raceway Park drag strip"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Westminster Abbey",
+      "why": "Benedictine monastery and lookout on the hill above the district."
+    },
+    {
+      "name": "Mission Museum and downtown",
+      "why": "Heritage street and local museum on the river terrace."
+    },
+    {
+      "name": "Fraser River Heritage Park",
+      "why": "Hillside park with a gazebo and Fraser Valley views above downtown."
+    },
+    {
+      "name": "Stave Lake",
+      "why": "Reservoir recreation north of the urban core."
+    },
+    {
+      "name": "Mission Raceway Park",
+      "why": "Drag-racing venue on the river flats."
+    }
+  ]
+}

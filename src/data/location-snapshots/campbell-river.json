@@ -1,0 +1,33 @@
+{
+  "about": "Campbell River is on the east coast of Vancouver Island, where Discovery Passage narrows opposite Quadra Island. It markets itself as the Salmon Capital of the World: a working harbour, the Tyee Club, and a long pier still frame the waterfront. Elk Falls and the Campbell River canyon sit just inland. About 36,000 people live in Campbell River.",
+  "seoSummary": "Vancouver Island harbour city on Discovery Passage, the Salmon Capital opposite Quadra Island.",
+  "knownFor": [
+    "Salmon fishing and the Tyee Club",
+    "Discovery Passage and the Quadra Island ferry",
+    "Elk Falls and the Campbell River canyon",
+    "Working harbour and Discovery Pier",
+    "North Island service and mill-town heritage"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Discovery Pier",
+      "why": "Long public fishing pier on the harbour."
+    },
+    {
+      "name": "Elk Falls Provincial Park",
+      "why": "Canyon, suspension bridge, and waterfall a short drive inland."
+    },
+    {
+      "name": "Museum at Campbell River",
+      "why": "Maritime, First Nations, and fishing history on the waterfront."
+    },
+    {
+      "name": "Maritime Heritage Centre",
+      "why": "Restored seine boat and harbour museum."
+    },
+    {
+      "name": "Quadra Island ferry",
+      "why": "Short crossing from downtown to Quadra’s trails and beaches."
+    }
+  ]
+}

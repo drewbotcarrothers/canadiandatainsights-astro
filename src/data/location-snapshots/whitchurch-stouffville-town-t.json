@@ -1,0 +1,33 @@
+{
+  "about": "Whitchurch-Stouffville is a town in York Region, on the Oak Ridges Moraine northeast of Markham. Stouffville is the main urban centre; hamlets such as Ballantrae, Gormley, and Bloomington sit among farms, kettle lakes, and conservation land. GO Transit and Highway 404 make it a growing commuter town with a still-rural north. About 50,000 people live in Whitchurch-Stouffville.",
+  "seoSummary": "York Region town on the Oak Ridges Moraine, with Stouffville as its main street and station.",
+  "knownFor": [
+    "Oak Ridges Moraine farms, kettle lakes, and conservation land",
+    "Stouffville as the principal urban centre",
+    "GO Transit commuter town northeast of Markham",
+    "Bruce’s Mill and the York-Durham Heritage Railway",
+    "Hamlets such as Ballantrae, Gormley, and Bloomington"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Stouffville",
+      "why": "Main Street shops and the historic village core beside the GO station."
+    },
+    {
+      "name": "Bruce’s Mill Conservation Area",
+      "why": "Moraine forest, mill pond, and trails in the west of the town."
+    },
+    {
+      "name": "York-Durham Heritage Railway",
+      "why": "Seasonal excursion train from the Stouffville station."
+    },
+    {
+      "name": "Musselman’s Lake",
+      "why": "Kettle lake and hamlet on the Oak Ridges Moraine."
+    },
+    {
+      "name": "Willow Springs Winery",
+      "why": "Estate winery in the rural north of the town."
+    }
+  ]
+}

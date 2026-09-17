@@ -1,0 +1,33 @@
+{
+  "about": "Moose Jaw is in southern Saskatchewan, on the Moose Jaw River west of Regina. It is a railway and service city known for underground tunnels tours, a geothermal spa, and 15 Wing—the air base home of the Snowbirds. A brick downtown, Mac the Moose at the highway, and the river valley wrap a compact prairie city. About 34,000 people live in Moose Jaw.",
+  "seoSummary": "Southern Saskatchewan railway city known for its tunnels, Temple Gardens spa, and the Snowbirds.",
+  "knownFor": [
+    "Tunnels of Moose Jaw underground tours",
+    "Temple Gardens Mineral Spa",
+    "15 Wing Moose Jaw and the Snowbirds aerobatic team",
+    "Mac the Moose beside the Trans-Canada Highway",
+    "Wakamow Valley on the Moose Jaw River"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Tunnels of Moose Jaw",
+      "why": "Guided underground tours of the city’s basement passageways."
+    },
+    {
+      "name": "Temple Gardens Hotel & Spa",
+      "why": "Geothermal mineral pool in the downtown core."
+    },
+    {
+      "name": "Wakamow Valley",
+      "why": "River-valley parks, trails, and the path through the city."
+    },
+    {
+      "name": "Western Development Museum",
+      "why": "History of transportation branch, one of four WDM sites in the province."
+    },
+    {
+      "name": "Downtown Main Street",
+      "why": "Heritage commercial blocks and the Mac the Moose highway landmark nearby."
+    }
+  ]
+}

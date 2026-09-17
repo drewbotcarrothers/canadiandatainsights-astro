@@ -1,0 +1,33 @@
+{
+  "about": "West Vancouver is a district municipality on Burrard Inlet’s North Shore, west of the City of North Vancouver, not a city in its own right. It climbs from Ambleside and Dundarave beaches into Cypress Mountain and the Howe Sound lookouts at Horseshoe Bay. Park Royal, the Seawalk, and some of the region’s most expensive hillside neighbourhoods define the district. About 44,000 people live in West Vancouver.",
+  "seoSummary": "North Shore district municipality of Ambleside beaches, Cypress Mountain, and Horseshoe Bay.",
+  "knownFor": [
+    "District municipality, not a city, on the North Shore",
+    "Ambleside and Dundarave waterfront",
+    "Cypress Mountain and Lighthouse Park",
+    "Horseshoe Bay ferry terminal on Howe Sound",
+    "Park Royal, among Canada’s first shopping centres"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Ambleside Beach and the Seawalk",
+      "why": "Foreshore park, pier, and the paved walk to Dundarave."
+    },
+    {
+      "name": "Lighthouse Park",
+      "why": "Old-growth headland and Point Atkinson lighthouse on the inlet."
+    },
+    {
+      "name": "Cypress Provincial Park",
+      "why": "Ski hill and lookouts in the North Shore mountains above the district."
+    },
+    {
+      "name": "Horseshoe Bay",
+      "why": "Village harbour and BC Ferries terminal on Howe Sound."
+    },
+    {
+      "name": "Dundarave Village",
+      "why": "Seaside shops and beach west of Ambleside."
+    }
+  ]
+}

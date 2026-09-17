@@ -1,0 +1,33 @@
+{
+  "about": "Orillia sits at the Narrows between Lake Couchiching and Lake Simcoe in central Ontario, where the Trent–Severn Waterway passes through town. It is a waterfront service city for the northern Simcoe lakes, with a restored opera house, a Stephen Leacock museum on the shore, and Highway 11 on the inland side. About 33,000 people live in Orillia.",
+  "seoSummary": "Central Ontario waterfront city at the Narrows between Lake Couchiching and Lake Simcoe.",
+  "knownFor": [
+    "The Narrows between Lake Couchiching and Lake Simcoe",
+    "Stephen Leacock Museum on Old Brewery Bay",
+    "Orillia Opera House downtown",
+    "Trent–Severn Waterway and a Port of Orillia waterfront",
+    "Highway 11 service city for the northern Simcoe lakes"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Orillia waterfront and Centennial Park",
+      "why": "Lake Couchiching parks, marina, and the Port of Orillia docks."
+    },
+    {
+      "name": "Stephen Leacock Museum National Historic Site",
+      "why": "Author’s house on Old Brewery Bay, the setting of Sunshine Sketches of a Little Town."
+    },
+    {
+      "name": "Orillia Opera House",
+      "why": "Turreted downtown theatre and city hall landmark."
+    },
+    {
+      "name": "Couchiching Beach Park",
+      "why": "City beach and the walking path along the lake."
+    },
+    {
+      "name": "Downtown Mississaga Street",
+      "why": "Main commercial street between the opera house and the water."
+    }
+  ]
+}

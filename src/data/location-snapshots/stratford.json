@@ -1,0 +1,33 @@
+{
+  "about": "Stratford is in Perth County, southwestern Ontario, on the Avon River. It is Canada’s principal classical-theatre city: the Stratford Festival fills purpose-built theatres each season and draws visitors to a walkable downtown of swans, river gardens, and brick shops. It is not Stratford, Prince Edward Island. About 33,000 people live in Stratford.",
+  "seoSummary": "Perth County theatre city on the Avon River, home of the Stratford Festival—not the PEI namesake.",
+  "knownFor": [
+    "Stratford Festival, Canada’s largest classical theatre company",
+    "Avon River, swans, and downtown gardens",
+    "Purpose-built Festival, Tom Patterson, and Studio theatres",
+    "Walkable Perth County county-seat downtown",
+    "Distinct from Stratford, Prince Edward Island"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Stratford Festival theatres",
+      "why": "Festival Theatre, Tom Patterson Theatre, and Studio Theatre productions through the season."
+    },
+    {
+      "name": "Avon River and the swans",
+      "why": "River gardens, the swan population, and the path through downtown."
+    },
+    {
+      "name": "Downtown Ontario Street",
+      "why": "Shops, restaurants, and the walkable core beside the theatres."
+    },
+    {
+      "name": "Gallery Stratford",
+      "why": "Public art gallery in a former pump house."
+    },
+    {
+      "name": "Shakespearean Gardens",
+      "why": "Riverside garden on the site of the old wooden mill dam."
+    }
+  ]
+}

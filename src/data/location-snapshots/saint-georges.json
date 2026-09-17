@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Georges is the principal city of the Beauce, on the rivière Chaudière south of Québec City. It is a regional industrial and service centre for a countryside known for small manufacturers and a strong entrepreneurial culture. A waterfall park, a long main street along the river, and the Beauce hills frame the city. About 33,000 people live in Saint-Georges.",
+  "seoSummary": "Beauce regional city on the rivière Chaudière, known for its falls and a small-manufacturing hinterland.",
+  "knownFor": [
+    "Regional capital of the Beauce",
+    "Rivière Chaudière and the Parc des Chutes",
+    "Small-manufacturing and entrepreneurial Beauce culture",
+    "1re Avenue as a long commercial main street",
+    "Gateway between Québec City and Maine"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc des Chutes",
+      "why": "Waterfall, footbridges, and trails on the Chaudière in the city."
+    },
+    {
+      "name": "Promenade de la rivière Chaudière",
+      "why": "Riverfront walk through the urban core."
+    },
+    {
+      "name": "Centre-ville / 1re Avenue",
+      "why": "Long commercial street and civic buildings of the Beauce city."
+    },
+    {
+      "name": "Centre de congrès de Saint-Georges",
+      "why": "Regional convention and event centre."
+    },
+    {
+      "name": "Pont de l’Amérique-Française",
+      "why": "River crossing and lookout toward the falls and downtown."
+    }
+  ]
+}

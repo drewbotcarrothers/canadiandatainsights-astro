@@ -1,0 +1,33 @@
+{
+  "about": "Cornwall is in eastern Ontario, on the St. Lawrence River at the Seaway International Bridge to New York State. It is a bilingual mill and Seaway city, a service centre for Stormont, Dundas and Glengarry, with a long waterfront park facing the river. Highway 401 and the former canal cut through the older town. About 48,000 people live in Cornwall.",
+  "seoSummary": "Bilingual St. Lawrence Seaway city in eastern Ontario, at the bridge to New York State.",
+  "knownFor": [
+    "St. Lawrence River waterfront and the Seaway",
+    "International bridge to New York opposite Akwesasne",
+    "Bilingual eastern-Ontario mill city",
+    "Lamoureux Park along the former canal",
+    "Service centre for Stormont, Dundas and Glengarry"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Lamoureux Park",
+      "why": "Riverfront park, marina, and the path along the old canal."
+    },
+    {
+      "name": "Inverarden House National Historic Site",
+      "why": "Georgian house museum from the fur-trade and canal era."
+    },
+    {
+      "name": "Cornwall Civic Complex",
+      "why": "Arena and convention centre on the waterfront."
+    },
+    {
+      "name": "St. Lawrence River lookouts",
+      "why": "Views of the Seaway, the international bridge, and the New York shore."
+    },
+    {
+      "name": "Downtown Pitt Street",
+      "why": "Historic commercial street inland from the river."
+    }
+  ]
+}

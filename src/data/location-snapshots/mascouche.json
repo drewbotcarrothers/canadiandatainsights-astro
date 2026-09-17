@@ -1,0 +1,33 @@
+{
+  "about": "Mascouche is a suburban city in Lanaudière on Montréal’s North Shore, along the rivière Mascouche and Autoroute 25. It grew from a seigneurial parish into a commuter municipality of new neighbourhoods, sports parks, and a remaining village core. Exo’s Terrebonne–Mascouche train and Highway 640 tie it to the island. About 51,000 people live in Mascouche.",
+  "seoSummary": "Lanaudière North Shore suburb on the rivière Mascouche, a commuter city east of Terrebonne.",
+  "knownFor": [
+    "North Shore commuter suburb of Greater Montréal",
+    "Parc du Grand-Coteau as the main civic park",
+    "Exo Terrebonne–Mascouche train",
+    "Rivière Mascouche valley and remaining village core",
+    "Rapid residential growth along Autoroute 25"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc du Grand-Coteau",
+      "why": "Large municipal park with trails, ponds, and sports fields on the escarpment."
+    },
+    {
+      "name": "Vieux-Mascouche",
+      "why": "Parish village core and older streets near the river."
+    },
+    {
+      "name": "Rivière Mascouche linear parks",
+      "why": "Greenway walks along the river through the urban area."
+    },
+    {
+      "name": "Centre sportif de Mascouche",
+      "why": "Municipal arena and recreation complex."
+    },
+    {
+      "name": "Gare de Mascouche",
+      "why": "Northern terminus of the exo commuter-train line into Montréal."
+    }
+  ]
+}

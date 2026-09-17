@@ -1,0 +1,33 @@
+{
+  "about": "Langford is a city on Greater Victoria’s West Shore, inland from Esquimalt Harbour at the foot of the Sooke Hills. It has grown rapidly from a rural crossroads into a suburban municipality of new town centres, big-box retail, and hillside housing. Goldstream’s canyon and Bear Mountain sit on the city’s edge. About 47,000 people live in Langford.",
+  "seoSummary": "Fast-growing West Shore city in Greater Victoria, between Goldstream canyon and the Sooke Hills.",
+  "knownFor": [
+    "Rapid West Shore suburban growth",
+    "Goldstream Provincial Park on the city’s northern edge",
+    "Bear Mountain resort and hillside neighbourhoods",
+    "Westhills and the Veterans Memorial Parkway corridor",
+    "Commuter city for downtown Victoria"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Goldstream Provincial Park",
+      "why": "Canyon, salmon run, and forest trails on Langford’s north side."
+    },
+    {
+      "name": "Bear Mountain",
+      "why": "Hilltop golf resort and lookout west of the city centre."
+    },
+    {
+      "name": "City Centre Park",
+      "why": "Sports fields, YMCA, and the main civic recreation campus."
+    },
+    {
+      "name": "Mill Hill Regional Park",
+      "why": "Summit trails with views over the West Shore and harbour."
+    },
+    {
+      "name": "Langford Lake",
+      "why": "Urban lake and walking path in the older part of the city."
+    }
+  ]
+}

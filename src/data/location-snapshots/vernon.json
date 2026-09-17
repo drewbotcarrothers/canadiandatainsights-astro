@@ -1,0 +1,33 @@
+{
+  "about": "Vernon is the principal city of the North Okanagan, between Okanagan Lake and Kalamalka Lake in British Columbia’s Interior. It is a service, orchard, and recreation centre with a compact downtown and beaches on both lakes. Hills, vineyards, and ranch country wrap the city. About 45,000 people live in Vernon.",
+  "seoSummary": "North Okanagan city between Okanagan Lake and turquoise Kalamalka Lake.",
+  "knownFor": [
+    "Kalamalka Lake, the “lake of a thousand colours”",
+    "North Okanagan service and orchard city",
+    "Beaches on both Okanagan and Kalamalka lakes",
+    "Polson Park’s Japanese garden downtown",
+    "Gateway to Predator Ridge and North Okanagan wine country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Kal Beach",
+      "why": "Public beach on Kalamalka Lake at the south end of the city."
+    },
+    {
+      "name": "Polson Park",
+      "why": "Central park with a Japanese garden, creek, and the historic clock tower."
+    },
+    {
+      "name": "Kin Beach",
+      "why": "Okanagan Lake beach and park on the west side of Vernon."
+    },
+    {
+      "name": "Downtown Vernon",
+      "why": "30th Avenue shops, public art, and the civic core."
+    },
+    {
+      "name": "Predator Ridge",
+      "why": "Hilltop golf resort and trails on the city’s southern edge."
+    }
+  ]
+}

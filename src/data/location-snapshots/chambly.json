@@ -1,0 +1,33 @@
+{
+  "about": "Chambly is a Montérégie city on the Richelieu River at the Chambly Basin, on Montréal’s South Shore. A stone fort, canal locks, and a waterside old town recall its role on the Montreal–Lake Champlain military and trade route. Rapid suburban growth now surrounds the historic basin. About 31,000 people live in Chambly.",
+  "seoSummary": "South Shore Richelieu city at the Chambly Basin, known for Fort Chambly and the canal locks.",
+  "knownFor": [
+    "Fort Chambly on the Richelieu rapids",
+    "Chambly Canal locks and towpath",
+    "Bassin de Chambly waterfront old town",
+    "South Shore suburb of Greater Montréal",
+    "Historic Montreal–Lake Champlain corridor"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Fort Chambly National Historic Site",
+      "why": "Restored stone fort at the Richelieu rapids."
+    },
+    {
+      "name": "Chambly Canal",
+      "why": "Locks, towpath, and the channel around the rapids."
+    },
+    {
+      "name": "Bassin de Chambly",
+      "why": "Widened river basin, quays, and the old-town waterfront."
+    },
+    {
+      "name": "Rue Bourgogne",
+      "why": "Restaurant and shop street facing the basin."
+    },
+    {
+      "name": "Parc des Rapides",
+      "why": "Park beside the fort and the river rapids."
+    }
+  ]
+}

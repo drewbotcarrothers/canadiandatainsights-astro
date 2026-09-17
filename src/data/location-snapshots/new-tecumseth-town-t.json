@@ -1,0 +1,33 @@
+{
+  "about": "New Tecumseth is a town in Simcoe County, combining Alliston, Beeton, and Tottenham in the countryside west of Highway 400. Alliston is the main urban centre and the site of Honda’s Canadian assembly plant. Farms, the Nottawasaga River, and three distinct downtowns give the town a spread-out, partly rural character. About 44,000 people live in New Tecumseth.",
+  "seoSummary": "Simcoe County town of Alliston, Beeton, and Tottenham, home to Honda’s Canadian plant.",
+  "knownFor": [
+    "Honda of Canada Manufacturing in Alliston",
+    "Amalgamated Alliston, Beeton, and Tottenham",
+    "Banting homestead, birthplace of Sir Frederick Banting",
+    "Nottawasaga River and remaining farmland",
+    "Commuter town on the south edge of Simcoe County"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Alliston",
+      "why": "Main urban streetscape and civic core of the town."
+    },
+    {
+      "name": "Banting Homestead National Historic Site",
+      "why": "Farm where Sir Frederick Banting was born, south of Alliston."
+    },
+    {
+      "name": "Tottenham Conservation Area",
+      "why": "Reservoir, beach, and trails at the south end of the town."
+    },
+    {
+      "name": "Beeton",
+      "why": "Village main street and the historic Beeton Honey festival grounds."
+    },
+    {
+      "name": "Riverdale Park",
+      "why": "Nottawasaga River parkland in Alliston."
+    }
+  ]
+}

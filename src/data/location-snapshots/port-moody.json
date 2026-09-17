@@ -1,0 +1,33 @@
+{
+  "about": "Port Moody is a city at the eastern end of Burrard Inlet in Metro Vancouver, between Coquitlam and Burnaby Mountain. It grew as a Canadian Pacific railway terminus and mill town and now markets itself as a City of the Arts, with an inlet shoreline, Rocky Point Park, and a row of breweries. Inlet Centre SkyTrain has pulled new housing toward the water. About 34,000 people live in Port Moody.",
+  "seoSummary": "Metro Vancouver inlet city at the east end of Burrard Inlet, a former mill town now known for Rocky Point and breweries.",
+  "knownFor": [
+    "Eastern end of Burrard Inlet",
+    "Rocky Point Park and the shoreline trail",
+    "Brewers Row along Murray Street",
+    "City of the Arts and a historic mill and rail terminus",
+    "Inlet Centre SkyTrain neighbourhood"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Rocky Point Park",
+      "why": "Inlet park, pier, beach, and the start of the shoreline trail."
+    },
+    {
+      "name": "Shoreline Trail",
+      "why": "Boardwalk and forest path along the north shore of the inlet."
+    },
+    {
+      "name": "Brewers Row",
+      "why": "Cluster of craft breweries in former industrial buildings on Murray Street."
+    },
+    {
+      "name": "Port Moody Station Museum",
+      "why": "Railway museum in the old CPR station."
+    },
+    {
+      "name": "Bert Flinn Park",
+      "why": "Forest trails on the former quarry lands above the city."
+    }
+  ]
+}
