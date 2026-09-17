@@ -1,0 +1,33 @@
+{
+  "about": "Sherbrooke is the principal city of the Eastern Townships (Estrie), at the confluence of the Saint-François and Magog rivers in southern Québec. It is a bilingual regional centre with several universities and a downtown in a river valley. Surrounding hills and lakes make it a service hub for a large rural hinterland. About 170,000 people live in Sherbrooke.",
+  "seoSummary": "Eastern Townships university city at the meeting of the Saint-François and Magog rivers.",
+  "knownFor": [
+    "University town, including Université de Sherbrooke",
+    "Eastern Townships regional capital",
+    "River gorges and Mount Bellevue",
+    "Bilingual history in a French-majority city",
+    "Health care and research hospitals"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Lac des Nations",
+      "why": "Downtown lake, promenade, and festival site."
+    },
+    {
+      "name": "Musée des beaux-arts de Sherbrooke",
+      "why": "Regional art museum."
+    },
+    {
+      "name": "Mount Bellevue",
+      "why": "Hilltop park and small ski centre above downtown."
+    },
+    {
+      "name": "Sherbrooke Nature and Science Museum",
+      "why": "Science museum in a former power station."
+    },
+    {
+      "name": "Historic Wellington Street",
+      "why": "Older downtown commercial street in the river valley."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Kingston sits at the eastern end of Lake Ontario, where the St. Lawrence River and the Rideau Canal begin. It is a historic military and university city with limestone buildings and a large penitentiary legacy. Downtown occupies a peninsula between the Cataraqui River and the lake. About 130,000 people live in Kingston.",
+  "seoSummary": "Limestone city at the head of the St. Lawrence, with Fort Henry and Queen’s University.",
+  "knownFor": [
+    "Queen’s University and the Royal Military College",
+    "Limestone historic downtown",
+    "Fort Henry and the Rideau Canal",
+    "A former penitentiary city",
+    "Freshwater sailing at the head of the St. Lawrence"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Fort Henry",
+      "why": "Nineteenth-century British fort above the harbour."
+    },
+    {
+      "name": "Downtown Kingston waterfront",
+      "why": "Limestone streets, market square, and harbour."
+    },
+    {
+      "name": "Canada’s Penitentiary Museum",
+      "why": "Museum at the former Kingston Penitentiary site."
+    },
+    {
+      "name": "Marine Museum of the Great Lakes",
+      "why": "Shipyard museum on the waterfront."
+    },
+    {
+      "name": "Queen’s University campus",
+      "why": "Limestone campus beside City Park."
+    }
+  ]
+}

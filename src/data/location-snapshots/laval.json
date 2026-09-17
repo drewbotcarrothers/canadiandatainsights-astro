@@ -1,0 +1,33 @@
+{
+  "about": "Laval is a suburban city on Île Jésus, immediately north of Montréal in Québec. It is the province’s second-largest city after Montréal and a major residential and commercial part of Greater Montréal. Highways, shopping centres, and a growing Métro line tie it to the island. About 440,000 people live in Laval.",
+  "seoSummary": "Québec’s second-largest city, a north-shore suburb of Montréal on Île Jésus.",
+  "knownFor": [
+    "Montréal’s largest north-shore suburb",
+    "Cosmodôme space museum",
+    "Carrefour Laval and suburban commercial strips",
+    "Rivière des Mille Îles shoreline",
+    "Growing immigrant communities"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Cosmodôme",
+      "why": "Space-science centre and museum."
+    },
+    {
+      "name": "Centre de la nature",
+      "why": "Large park with trails and a small farm."
+    },
+    {
+      "name": "Parc de la Rivière-des-Mille-Îles",
+      "why": "River islands and an interpretation centre."
+    },
+    {
+      "name": "Place Bell",
+      "why": "Arena and concert venue near downtown Laval."
+    },
+    {
+      "name": "Old Sainte-Rose",
+      "why": "Historic village core on the Mille Îles river."
+    }
+  ]
+}

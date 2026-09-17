@@ -1,0 +1,33 @@
+{
+  "about": "Montréal is Québec’s largest city, on an island in the St. Lawrence River. It is Canada’s second-largest municipality and a bilingual cultural, university, and economic centre. A dense historic core and downtown sit beside older neighbourhoods and a large metro area on both shores. About 1.8 million people live in the city proper.",
+  "seoSummary": "Québec’s largest city, a bilingual cultural and economic centre on the St. Lawrence.",
+  "knownFor": [
+    "French-language culture in a bilingual city",
+    "Mount Royal and the downtown skyline",
+    "Universities and a large student population",
+    "Aerospace, AI research, and video-game studios",
+    "Old Montréal and the working port"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Mount Royal Park",
+      "why": "Hilltop park with lookouts over downtown and the river."
+    },
+    {
+      "name": "Old Montréal",
+      "why": "Historic streets, Notre-Dame Basilica, and the Old Port."
+    },
+    {
+      "name": "Jean-Talon Market",
+      "why": "Large public market in Little Italy."
+    },
+    {
+      "name": "Montréal Museum of Fine Arts",
+      "why": "Major art museum on Sherbrooke Street."
+    },
+    {
+      "name": "St. Joseph’s Oratory",
+      "why": "Landmark basilica on the west slope of Mount Royal."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "St. John’s is the capital of Newfoundland and Labrador, on the Avalon Peninsula of the island of Newfoundland. It is one of the oldest European-founded cities in North America, built around a steep-sided Atlantic harbour. Brightly painted row houses, a compact downtown, and nearby headlands define the city. About 110,000 people live in St. John’s.",
+  "seoSummary": "Newfoundland and Labrador’s capital, a historic Atlantic harbour city on the Avalon Peninsula.",
+  "knownFor": [
+    "Atlantic harbour and Signal Hill",
+    "Provincial capital and Memorial University",
+    "Colourful downtown row houses",
+    "Fog, wind, and North Atlantic weather",
+    "Offshore oil administration and a large public sector"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Signal Hill",
+      "why": "Harbour-mouth hill with Cabot Tower and military history."
+    },
+    {
+      "name": "The Rooms",
+      "why": "Provincial museum, art gallery, and archives."
+    },
+    {
+      "name": "George Street",
+      "why": "Compact downtown entertainment street."
+    },
+    {
+      "name": "Cape Spear",
+      "why": "Easternmost point in North America, with a historic lighthouse."
+    },
+    {
+      "name": "Water Street and the harbourfront",
+      "why": "Oldest commercial street, facing the Narrows."
+    }
+  ]
+}

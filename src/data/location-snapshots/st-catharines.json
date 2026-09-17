@@ -1,0 +1,33 @@
+{
+  "about": "St. Catharines is the largest city in the Niagara Region, between Lake Ontario and the Niagara Escarpment. It is a garden city with the Welland Canal running through it and vineyards on the surrounding bench. Brock University sits on the escarpment above the city. About 140,000 people live in St. Catharines.",
+  "seoSummary": "Niagara Region’s largest city, a garden city on the Welland Canal.",
+  "knownFor": [
+    "Garden City parks and the Niagara wine belt",
+    "Welland Canal locks",
+    "Brock University",
+    "Royal Canadian Henley rowing course",
+    "Gateway to Niagara Falls and the peninsula"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Port Dalhousie",
+      "why": "Lakeside village, pier, and Lakeside Park carousel."
+    },
+    {
+      "name": "Welland Canals Centre at Lock 3",
+      "why": "Viewing complex for ships on the canal."
+    },
+    {
+      "name": "Montebello Park",
+      "why": "Downtown park with a rose garden and pavilion."
+    },
+    {
+      "name": "FirstOntario Performing Arts Centre",
+      "why": "Concert and theatre complex downtown."
+    },
+    {
+      "name": "Morningstar Mill",
+      "why": "Historic mill on the Niagara Escarpment."
+    }
+  ]
+}

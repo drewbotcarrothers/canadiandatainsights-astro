@@ -1,0 +1,33 @@
+{
+  "about": "Saskatoon is Saskatchewan’s largest city, on the South Saskatchewan River in the prairie parkland. Bridges, a university, and a compact downtown along the riverbank define its layout. It is a service centre for agriculture, potash, and a growing research sector. About 270,000 people live in Saskatoon.",
+  "seoSummary": "Saskatchewan’s largest city, a prairie university town on the South Saskatchewan River.",
+  "knownFor": [
+    "South Saskatchewan River and its bridges",
+    "University of Saskatchewan",
+    "Potash, agriculture, and prairie research",
+    "Wanuskewin and Northern Plains Indigenous history",
+    "A relatively young Prairie population"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Meewasin Valley Trail",
+      "why": "Riverbank pathway through the city."
+    },
+    {
+      "name": "Remai Modern",
+      "why": "Contemporary art museum downtown on the river."
+    },
+    {
+      "name": "Wanuskewin Heritage Park",
+      "why": "Northern Plains Indigenous cultural site just north of the city."
+    },
+    {
+      "name": "Western Development Museum",
+      "why": "Prairie settlement exhibits and 1910 Boomtown."
+    },
+    {
+      "name": "Forestry Farm Park & Zoo",
+      "why": "Historic nursery site with a zoo and parkland."
+    }
+  ]
+}

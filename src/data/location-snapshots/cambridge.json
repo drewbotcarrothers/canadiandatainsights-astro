@@ -1,0 +1,33 @@
+{
+  "about": "Cambridge is the southern city of Waterloo Region, at the confluence of the Grand and Speed rivers. It was formed by amalgamating Galt, Preston, and Hespeler. Stone mill buildings in Galt and older factory towns still give each former community its own downtown. About 140,000 people live in Cambridge.",
+  "seoSummary": "Waterloo Region river city amalgamated from Galt, Preston, and Hespeler.",
+  "knownFor": [
+    "Amalgamated Galt, Preston, and Hespeler",
+    "Grand River mill-town architecture",
+    "Toyota Motor Manufacturing Canada",
+    "Historic downtown Galt",
+    "River trails along the Grand"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Galt",
+      "why": "Stone buildings along the Grand River."
+    },
+    {
+      "name": "Idea Exchange, Queen’s Square",
+      "why": "Modern library and gallery on the river."
+    },
+    {
+      "name": "Cambridge Butterfly Conservatory",
+      "why": "Indoor tropical butterfly habitat."
+    },
+    {
+      "name": "Linear Park",
+      "why": "Grand River trails through the city."
+    },
+    {
+      "name": "McDougall Cottage",
+      "why": "Historic stone cottage interpreting Scottish settlement."
+    }
+  ]
+}

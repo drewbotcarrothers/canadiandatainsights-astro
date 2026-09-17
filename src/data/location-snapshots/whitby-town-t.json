@@ -1,0 +1,33 @@
+{
+  "about": "Whitby is a lakeshore town in Durham Region, between Ajax and Oshawa on Lake Ontario. It is a growing commuter municipality with a historic downtown inland from the harbour. GO Transit, Highway 401, and Highway 407 run through the town. About 140,000 people live in Whitby.",
+  "seoSummary": "Durham Region lakeshore town between Ajax and Oshawa, with a historic downtown.",
+  "knownFor": [
+    "Durham Region commuter town",
+    "Whitby GO station and Highway 401 corridor",
+    "Historic downtown Brock Street",
+    "Lake Ontario waterfront trail",
+    "Civic and health services for west Durham"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Port Whitby",
+      "why": "Harbour, marina, and waterfront trail."
+    },
+    {
+      "name": "Downtown Brock Street",
+      "why": "Historic main street inland from the lake."
+    },
+    {
+      "name": "Station Gallery",
+      "why": "Art gallery in a former railway station."
+    },
+    {
+      "name": "Heber Down Conservation Area",
+      "why": "Lynde Creek valley trails in the north end."
+    },
+    {
+      "name": "Cullen Central Park",
+      "why": "Large park on the former Cullen Gardens site."
+    }
+  ]
+}

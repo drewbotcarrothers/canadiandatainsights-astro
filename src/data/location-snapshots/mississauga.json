@@ -1,0 +1,33 @@
+{
+  "about": "Mississauga is a large city immediately west of Toronto, on Lake Ontario in the Greater Toronto Area. It grew from several lakeshore towns into a major suburban municipality with its own downtown at Square One. Toronto Pearson International Airport sits on the city’s northeast edge. About 720,000 people live in Mississauga.",
+  "seoSummary": "Large GTA city west of Toronto, home to Pearson Airport and Square One.",
+  "knownFor": [
+    "Toronto Pearson International Airport",
+    "Square One and downtown Mississauga",
+    "Diverse immigrant communities",
+    "Lakeshore neighbourhoods such as Port Credit",
+    "Corporate offices along Highways 401 and 403"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Port Credit",
+      "why": "Lakeshore village with a marina and lighthouse."
+    },
+    {
+      "name": "Riverwood",
+      "why": "Large park and garden along the Credit River."
+    },
+    {
+      "name": "Celebration Square",
+      "why": "Civic plaza beside Mississauga Civic Centre."
+    },
+    {
+      "name": "Kariya Park",
+      "why": "Japanese garden next to the downtown civic precinct."
+    },
+    {
+      "name": "Lakefront Promenade",
+      "why": "Waterfront park in south Mississauga."
+    }
+  ]
+}

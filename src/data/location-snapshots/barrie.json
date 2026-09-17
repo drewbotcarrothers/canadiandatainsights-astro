@@ -1,0 +1,33 @@
+{
+  "about": "Barrie is on the western shore of Lake Simcoe, about an hour north of Toronto. It is a regional centre for Simcoe County and a fast-growing commuter and recreation city. Downtown sits on Kempenfelt Bay, with suburbs climbing the hills around the lake. About 150,000 people live in Barrie.",
+  "seoSummary": "Fast-growing city on Kempenfelt Bay, Lake Simcoe, north of Toronto.",
+  "knownFor": [
+    "Kempenfelt Bay waterfront",
+    "GO Transit commuter link to Toronto",
+    "Rapid population growth",
+    "Gateway to cottage country on Lake Simcoe",
+    "Georgian College"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Barrie Waterfront",
+      "why": "Beach, marina, and Heritage Park on the bay."
+    },
+    {
+      "name": "Spirit Catcher",
+      "why": "Large waterfront sculpture on Kempenfelt Bay."
+    },
+    {
+      "name": "MacLaren Art Centre",
+      "why": "Civic gallery downtown."
+    },
+    {
+      "name": "Downtown Dunlop Street",
+      "why": "Main commercial street above the harbour."
+    },
+    {
+      "name": "Centennial Park",
+      "why": "Lakeside park and waterfront trail."
+    }
+  ]
+}

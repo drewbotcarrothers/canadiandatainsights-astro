@@ -1,0 +1,33 @@
+{
+  "about": "Vancouver is British Columbia’s largest city, on Burrard Inlet between the Pacific and the North Shore mountains. It is a Pacific Rim port with a dense downtown peninsula of apartments, parks, and seawalls. The city proper is relatively small; most of the metro area lies in surrounding municipalities. About 660,000 people live in Vancouver itself.",
+  "seoSummary": "B.C.’s largest city, a Pacific port between mountains and the ocean.",
+  "knownFor": [
+    "Stanley Park and the seawall",
+    "Pacific port and Asia–Pacific trade",
+    "Film and television production",
+    "A mountains-and-ocean setting",
+    "Large East and South Asian communities"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Stanley Park",
+      "why": "Large park with seawall, forest, and the aquarium."
+    },
+    {
+      "name": "Granville Island",
+      "why": "Public market and arts district under the Granville Bridge."
+    },
+    {
+      "name": "Museum of Anthropology at UBC",
+      "why": "Northwest Coast and world collections on Point Grey."
+    },
+    {
+      "name": "Queen Elizabeth Park",
+      "why": "Hilltop gardens and the Bloedel Conservatory dome."
+    },
+    {
+      "name": "Gastown",
+      "why": "Historic neighbourhood with the steam clock and cobbled streets."
+    }
+  ]
+}

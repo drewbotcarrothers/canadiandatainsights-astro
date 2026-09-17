@@ -1,0 +1,33 @@
+{
+  "about": "Saguenay is in the Saguenay–Lac-Saint-Jean region of Québec, along the Saguenay River fjord. The city was created by merging Chicoutimi, Jonquière, La Baie, and surrounding areas. It is a regional service centre with a history of pulp, aluminum, and hydroelectric industry. About 145,000 people live in Saguenay.",
+  "seoSummary": "Regional city on the Saguenay Fjord, amalgamated from Chicoutimi, Jonquière, and La Baie.",
+  "knownFor": [
+    "Saguenay Fjord",
+    "Aluminum smelting and pulp industry",
+    "Distinct French-speaking regional culture",
+    "Heavy snowfall and a winter carnival",
+    "Boroughs of Chicoutimi, Jonquière, and La Baie"
+  ],
+  "seeAndDo": [
+    {
+      "name": "La Pulperie de Chicoutimi",
+      "why": "Regional museum in a former pulp mill."
+    },
+    {
+      "name": "Musée du Fjord",
+      "why": "Fjord science and history museum in La Baie."
+    },
+    {
+      "name": "Pyramide des Ha! Ha!",
+      "why": "Landmark pyramid commemorating the 1996 flood."
+    },
+    {
+      "name": "Vieux-Port de Chicoutimi",
+      "why": "Downtown riverfront and former port on the Saguenay."
+    },
+    {
+      "name": "Parc de la Rivière-du-Moulin",
+      "why": "Urban park along a tributary of the Saguenay."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Saanich is the most populous municipality in Greater Victoria, on the Saanich Peninsula of Vancouver Island. It is a largely residential district wrapping around the City of Victoria, from urban neighbourhoods to farms and rocky coastline. The University of Victoria campus sits on its eastern side. About 120,000 people live in Saanich.",
+  "seoSummary": "Greater Victoria’s largest municipality, from suburban neighbourhoods to peninsula farms.",
+  "knownFor": [
+    "Largest municipality in Greater Victoria",
+    "University of Victoria",
+    "Mix of suburbs, farms, and Gorge Waterway shoreline",
+    "Elk/Beaver Lake regional park",
+    "Gateway to the Saanich Peninsula"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Elk/Beaver Lake Regional Park",
+      "why": "Swimming, trails, and rowing lakes."
+    },
+    {
+      "name": "Mount Douglas Park (PKOLS)",
+      "why": "Summit views over the peninsula and ocean."
+    },
+    {
+      "name": "University of Victoria",
+      "why": "Campus, Finnerty Gardens, and the Legacy Art Gallery satellite."
+    },
+    {
+      "name": "Dominion Astrophysical Observatory",
+      "why": "Historic telescope on Little Saanich Mountain."
+    },
+    {
+      "name": "Gorge Waterway parks",
+      "why": "Shoreline parks along the tidal gorge."
+    }
+  ]
+}

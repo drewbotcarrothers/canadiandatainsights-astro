@@ -1,0 +1,33 @@
+{
+  "about": "Québec is the capital of the province of Québec, on the north shore of the St. Lawrence River. The old fortified city is a UNESCO World Heritage site and a centre of French-language government and culture. Newer boroughs spread along the river and inland from Cap Diamant. About 550,000 people live in the city.",
+  "seoSummary": "Provincial capital with a fortified old city on the St. Lawrence cliffs.",
+  "knownFor": [
+    "Fortified Old Québec (UNESCO)",
+    "National Assembly and provincial government",
+    "Winter Carnival and Château Frontenac",
+    "French as the everyday public language",
+    "A cliff-top site above the St. Lawrence"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Château Frontenac",
+      "why": "Landmark hotel above the Dufferin Terrace."
+    },
+    {
+      "name": "Old Québec",
+      "why": "Walled upper town, Place Royale, and the lower town."
+    },
+    {
+      "name": "Plains of Abraham",
+      "why": "Historic battlefield park on the cliffs."
+    },
+    {
+      "name": "Montmorency Falls",
+      "why": "High waterfall in the Beauport borough, east of downtown."
+    },
+    {
+      "name": "Musée de la civilisation",
+      "why": "Museum of history and society in the Old Port."
+    }
+  ]
+}

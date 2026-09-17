@@ -1,0 +1,33 @@
+{
+  "about": "Terrebonne is a suburban city on the north shore of the Rivière des Mille Îles, northeast of Laval in Lanaudière. It includes the historic Île-des-Moulins and newer residential developments toward Lachenaie and La Plaine. Commuter rail and Highway 640 link it to Montréal. About 120,000 people live in Terrebonne.",
+  "seoSummary": "North-shore suburb of Montréal in Lanaudière, known for historic Île-des-Moulins.",
+  "knownFor": [
+    "Historic Île-des-Moulins",
+    "North-shore suburb of Greater Montréal",
+    "Rapid residential growth",
+    "Rivière des Mille Îles shoreline",
+    "Amalgamated Lachenaie, La Plaine, and Terrebonne"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Île-des-Moulins",
+      "why": "Historic mill island and cultural site."
+    },
+    {
+      "name": "Old Terrebonne",
+      "why": "Riverside streets and stone buildings."
+    },
+    {
+      "name": "Théâtre du Vieux-Terrebonne",
+      "why": "Regional theatre in the old town."
+    },
+    {
+      "name": "Moulin-Neuf sector",
+      "why": "Dam and mill landscape on the river."
+    },
+    {
+      "name": "Parc du Grand-Coteau",
+      "why": "Large park in the Lachenaie sector, with trails and sports fields."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Halifax Regional Municipality covers a large area of central Nova Scotia, from an Atlantic harbour city to surrounding suburbs and coastline. Downtown Halifax sits on a peninsula opposite Dartmouth, with a major port and naval base. The regional municipality was formed by amalgamating several former cities and counties. About 440,000 people live in the municipality.",
+  "seoSummary": "Atlantic Canada’s largest urban centre, a harbour city and regional municipality.",
+  "knownFor": [
+    "Ice-free Atlantic port and naval base",
+    "Citadel Hill and a historic downtown",
+    "Universities including Dalhousie",
+    "Maritime museums and the waterfront boardwalk",
+      "Amalgamated urban, suburban, and coastal communities"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Halifax Citadel",
+      "why": "Hilltop fort overlooking the harbour."
+    },
+    {
+      "name": "Halifax Waterfront",
+      "why": "Boardwalk, piers, and the Maritime Museum of the Atlantic."
+    },
+    {
+      "name": "Point Pleasant Park",
+      "why": "Wooded park at the south end of the peninsula."
+    },
+    {
+      "name": "Pier 21",
+      "why": "Canadian Museum of Immigration in a historic ocean-liner terminal."
+    },
+    {
+      "name": "Halifax Public Gardens",
+      "why": "Victorian garden downtown."
+    }
+  ]
+}

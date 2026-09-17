@@ -1,0 +1,33 @@
+{
+  "about": "Edmonton is Alberta’s capital, on the North Saskatchewan River in the centre of the province. It is a government, university, and energy-services city with one of North America’s largest urban river-valley park systems. Development stretches north–south along the river and includes a large industrial corridor. About 1 million people live in the city.",
+  "seoSummary": "Alberta’s capital on the North Saskatchewan, known for its river-valley parks.",
+  "knownFor": [
+    "Provincial capital and the University of Alberta",
+    "North Saskatchewan River valley parks",
+    "Oil-sands and energy services",
+    "West Edmonton Mall",
+    "A long festival calendar, including Folk Fest"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Alberta Legislature",
+      "why": "Provincial parliament buildings on the riverbank."
+    },
+    {
+      "name": "Muttart Conservatory",
+      "why": "Four glass pyramids of plant collections in the river valley."
+    },
+    {
+      "name": "Royal Alberta Museum",
+      "why": "Provincial museum downtown."
+    },
+    {
+      "name": "Fort Edmonton Park",
+      "why": "Living-history park interpreting the river settlement."
+    },
+    {
+      "name": "West Edmonton Mall",
+      "why": "Large indoor mall with shops and indoor attractions."
+    }
+  ]
+}

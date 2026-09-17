@@ -1,0 +1,33 @@
+{
+  "about": "Richmond is a city on islands in the Fraser River delta, immediately south of Vancouver. It includes Vancouver International Airport on Sea Island and a large Chinese-Canadian population centred on the Golden Village. Much of the city is at or near sea level behind dykes. About 210,000 people live in Richmond.",
+  "seoSummary": "Fraser delta city south of Vancouver, home to YVR and Steveston village.",
+  "knownFor": [
+    "Vancouver International Airport",
+    "Golden Village Asian dining and malls",
+    "Fraser River delta and dyke trails",
+    "Steveston fishing village",
+    "A majority East Asian population"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Steveston",
+      "why": "Historic cannery village, fish market, and Gulf of Georgia Cannery."
+    },
+    {
+      "name": "Richmond Night Market",
+      "why": "Large seasonal outdoor night market."
+    },
+    {
+      "name": "Richmond Olympic Oval",
+      "why": "2010 speed-skating oval, now a community centre."
+    },
+    {
+      "name": "Iona Beach Regional Park",
+      "why": "Jetty and bird habitat beside the airport."
+    },
+    {
+      "name": "Golden Village",
+      "why": "Asian malls and restaurants along No. 3 Road."
+    }
+  ]
+}

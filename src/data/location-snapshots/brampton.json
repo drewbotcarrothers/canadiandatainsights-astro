@@ -1,0 +1,33 @@
+{
+  "about": "Brampton is a large city in the western Greater Toronto Area, north of Mississauga in Peel Region. It has grown quickly as a suburban industrial and residential municipality. South Asian communities are a large part of local shops, places of worship, and festivals. About 660,000 people live in Brampton.",
+  "seoSummary": "Fast-growing Peel Region city in the western GTA, with a large South Asian community.",
+  "knownFor": [
+    "Rapid suburban growth in Peel Region",
+    "Large South Asian population",
+    "Logistics and manufacturing along Highway 410",
+    "Flower City history and Gage Park",
+    "Proximity to Pearson Airport"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Gage Park",
+      "why": "Central park with gardens, bandshell, and winter lights."
+    },
+    {
+      "name": "Downtown Brampton",
+      "why": "Historic main street and the Rose Theatre."
+    },
+    {
+      "name": "Peel Art Gallery, Museum and Archives",
+      "why": "Regional art, history, and archives downtown."
+    },
+    {
+      "name": "Chinguacousy Park",
+      "why": "North-end park with ski hill, greenhouse, and sports fields."
+    },
+    {
+      "name": "Professor’s Lake",
+      "why": "Recreational lake in northeast Brampton."
+    }
+  ]
+}

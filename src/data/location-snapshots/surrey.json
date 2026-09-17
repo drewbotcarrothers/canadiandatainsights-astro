@@ -1,0 +1,33 @@
+{
+  "about": "Surrey is a large municipality in Metro Vancouver, south of the Fraser River toward the U.S. border. It is one of B.C.’s fastest-growing cities, with town centres in City Centre, Guildford, Newton, Cloverdale, and South Surrey. Agriculture still occupies parts of the south and east. About 570,000 people live in Surrey.",
+  "seoSummary": "Fast-growing Metro Vancouver city south of the Fraser, with several town centres.",
+  "knownFor": [
+    "Rapid growth and a SkyTrain city centre",
+    "A large South Asian community",
+    "Fraser Valley agriculture on the city’s edge",
+    "Crescent Beach and the Boundary Bay shore",
+    "Historic Cloverdale and the Cloverdale Rodeo"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Surrey City Centre",
+      "why": "Growing downtown around the SkyTrain station and civic plaza."
+    },
+    {
+      "name": "Crescent Beach",
+      "why": "Low-tide beach community on Boundary Bay."
+    },
+    {
+      "name": "Green Timbers Urban Forest",
+      "why": "Large urban forest park in central Surrey."
+    },
+    {
+      "name": "Museum of Surrey",
+      "why": "Civic museum in Cloverdale."
+    },
+    {
+      "name": "Peace Arch Park",
+      "why": "Border park at the Douglas crossing."
+    }
+  ]
+}

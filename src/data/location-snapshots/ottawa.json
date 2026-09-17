@@ -1,0 +1,33 @@
+{
+  "about": "Ottawa is Canada’s capital, in eastern Ontario on the Ottawa River across from Gatineau, Québec. Federal government, national museums, and bilingual public life shape the city. Neighbourhoods range from Parliament Hill and the ByWard Market to suburban communities along the river. About 1 million people live in the city.",
+  "seoSummary": "Canada’s capital on the Ottawa River, with Parliament Hill and national museums.",
+  "knownFor": [
+    "Parliament Hill and the federal public service",
+    "National museums and the Rideau Canal",
+    "Bilingual English–French daily life",
+    "High-tech firms in Kanata",
+    "Winterlude and canal skating"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parliament Hill",
+      "why": "Peace Tower and the parliamentary precinct above the river."
+    },
+    {
+      "name": "Rideau Canal",
+      "why": "Historic waterway through downtown; skateway in winter."
+    },
+    {
+      "name": "National Gallery of Canada",
+      "why": "National art museum beside the Ottawa River."
+    },
+    {
+      "name": "ByWard Market",
+      "why": "Historic market district east of Parliament."
+    },
+    {
+      "name": "Canadian War Museum",
+      "why": "National military history museum on LeBreton Flats."
+    }
+  ]
+}

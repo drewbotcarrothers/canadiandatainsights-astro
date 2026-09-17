@@ -1,0 +1,33 @@
+{
+  "about": "Lévis sits on the south shore of the St. Lawrence River, directly opposite Québec. It is a suburban and industrial city with ferry and bridge links to the capital, plus a long riverfront of cliffs and parks. The city amalgamated several former South Shore towns. About 150,000 people live in Lévis.",
+  "seoSummary": "South-shore city facing Old Québec, with forts, a ferry, and cliffside terraces.",
+  "knownFor": [
+    "South-shore counterpart to Québec",
+    "Ferry crossing and views of Old Québec",
+    "Desjardins Group head office",
+    "Lévis Forts and nineteenth-century defence works",
+    "Refinery and industrial lands along the river"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Terrasse de Lévis",
+      "why": "Cliffside terrace looking at Château Frontenac."
+    },
+    {
+      "name": "Lévis Forts National Historic Site",
+      "why": "British-era fortification above the river."
+    },
+    {
+      "name": "Québec–Lévis ferry",
+      "why": "Short crossing from Quai Paquet to the Old Port."
+    },
+    {
+      "name": "Maison Alphonse-Desjardins",
+      "why": "House museum on the origins of the caisse populaire."
+    },
+    {
+      "name": "Parc des Chutes-de-la-Chaudière",
+      "why": "Waterfall park on the Chaudière River."
+    }
+  ]
+}

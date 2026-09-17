@@ -1,0 +1,33 @@
+{
+  "about": "Markham is a suburban city in York Region, immediately north of Toronto. It is one of Canada’s most diverse municipalities and a centre for technology and Chinese-Canadian business. Much of the city is post-war subdivision and newer high-rise nodes along Highway 7. About 340,000 people live in Markham.",
+  "seoSummary": "Diverse York Region city north of Toronto, with a large tech and Asian business corridor.",
+  "knownFor": [
+    "High-tech corridor along Highways 404 and 7",
+    "Large Chinese and South Asian communities",
+    "Pacific Mall and other Asian retail centres",
+    "Markham Centre planned downtown",
+    "Household incomes above the Toronto average"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Markham Museum",
+      "why": "Open-air heritage village and civic museum."
+    },
+    {
+      "name": "Pacific Mall",
+      "why": "Large indoor Asian mall in southeast Markham."
+    },
+    {
+      "name": "Historic Main Street Unionville",
+      "why": "Restored nineteenth-century village street."
+    },
+    {
+      "name": "Toogood Pond Park",
+      "why": "Park and pond in Unionville."
+    },
+    {
+      "name": "Downtown Markham",
+      "why": "Civic precinct, theatre, and new high-rise core."
+    }
+  ]
+}

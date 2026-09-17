@@ -1,0 +1,33 @@
+{
+  "about": "Ajax is a lakeshore town in Durham Region, east of Toronto between Pickering and Whitby. It was named for HMS Ajax and grew from a wartime munitions site into a suburban commuter municipality. A long Lake Ontario waterfront trail is the town’s main public landscape. About 130,000 people live in Ajax.",
+  "seoSummary": "Durham lakeshore town named for HMS Ajax, between Pickering and Whitby.",
+  "knownFor": [
+    "Named for HMS Ajax",
+    "Lake Ontario waterfront parks",
+    "Diverse suburban Durham community",
+    "GO Transit and Highway 401 commuter town",
+    "Wartime munitions-plant origins"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Ajax Waterfront",
+      "why": "Parks, Veteran’s Point, and the waterfront trail."
+    },
+    {
+      "name": "Historic Pickering Village",
+      "why": "Nineteenth-century village core that now sits inside Ajax."
+    },
+    {
+      "name": "Greenwood Conservation Area",
+      "why": "Duffins Creek valley trails."
+    },
+    {
+      "name": "Pat Bayly Square",
+      "why": "Civic plaza at the town centre."
+    },
+    {
+      "name": "Carruthers Marsh",
+      "why": "Waterfront marsh and trails at the east end of the shore."
+    }
+  ]
+}

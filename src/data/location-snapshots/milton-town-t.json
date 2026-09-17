@@ -1,0 +1,33 @@
+{
+  "about": "Milton is a fast-growing town in Halton Region, at the foot of the Niagara Escarpment west of Toronto. It has shifted from a small county town to one of Canada’s fastest-growing municipalities, with new subdivisions around a historic downtown. The escarpment and conservation areas sit immediately to the west. About 130,000 people live in Milton.",
+  "seoSummary": "Fast-growing Halton town at the foot of the Niagara Escarpment, west of Toronto.",
+  "knownFor": [
+    "Very rapid population growth",
+    "Niagara Escarpment and Rattlesnake Point",
+    "GO Transit commuter town",
+    "Historic downtown Main Street",
+    "Greenfield suburbs of the 2000s–2020s"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Rattlesnake Point",
+      "why": "Escarpment cliffs, lookouts, and climbing."
+    },
+    {
+      "name": "Kelso Conservation Area",
+      "why": "Lake, trails, and Glen Eden ski hill."
+    },
+    {
+      "name": "Downtown Milton",
+      "why": "Historic Main Street and farmers’ market."
+    },
+    {
+      "name": "Halton County Radial Railway",
+      "why": "Operating streetcar museum west of town."
+    },
+    {
+      "name": "Milton Community Park",
+      "why": "Large sports park in the newer east side."
+    }
+  ]
+}

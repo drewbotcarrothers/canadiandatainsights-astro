@@ -1,0 +1,33 @@
+{
+  "about": "Richmond Hill is a suburban town in York Region, on the Oak Ridges Moraine north of Toronto. It grew from a Yonge Street village into a diverse, largely residential municipality. David Dunlap Observatory and extensive parkland sit among post-war and newer subdivisions. About 200,000 people live in Richmond Hill.",
+  "seoSummary": "York Region town on the Oak Ridges Moraine, along the Yonge Street corridor.",
+  "knownFor": [
+    "Oak Ridges Moraine headwaters and parks",
+    "Diverse East Asian and Middle Eastern communities",
+    "Yonge Street suburban corridor",
+    "David Dunlap Observatory",
+    "Commuter suburb on GO and Viva"
+  ],
+  "seeAndDo": [
+    {
+      "name": "David Dunlap Observatory Park",
+      "why": "Historic telescope and surrounding park."
+    },
+    {
+      "name": "Richmond Green",
+      "why": "Large sports park and theatre."
+    },
+    {
+      "name": "Mill Pond Park",
+      "why": "Pond and trails in the old town."
+    },
+    {
+      "name": "Lake Wilcox",
+      "why": "Kettle lake on the Oak Ridges Moraine."
+    },
+    {
+      "name": "Phyllis Rawlinson Park",
+      "why": "Oak Ridges Moraine park with trails and remnant farmland."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Burnaby sits between Vancouver and the eastern suburbs of Metro Vancouver, from Burrard Inlet south to the Fraser River. It is a densely developed city of high-rises at Metrotown, two SkyTrain lines, and large parks such as Burnaby Mountain. Simon Fraser University occupies the mountain’s peak. About 250,000 people live in Burnaby.",
+  "seoSummary": "Central Metro Vancouver city of SkyTrain high-rises, SFU, and Burnaby Mountain.",
+  "knownFor": [
+    "Metrotown, a large shopping and high-rise node",
+    "Simon Fraser University on Burnaby Mountain",
+    "Expo and Millennium SkyTrain lines",
+    "Burnaby Lake and mountain parks",
+    "Light industry along Still Creek and the Fraser"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Burnaby Mountain Park",
+      "why": "Hilltop park with views over Burrard Inlet."
+    },
+    {
+      "name": "Deer Lake Park",
+      "why": "City park with trails, gardens, and Burnaby Village Museum."
+    },
+    {
+      "name": "Burnaby Village Museum",
+      "why": "Open-air heritage town on Deer Lake."
+    },
+    {
+      "name": "Metrotown",
+      "why": "Major malls and towers at the SkyTrain station."
+    },
+    {
+      "name": "SFU Burnaby campus",
+      "why": "Arthur Erickson-designed campus on the mountain."
+    }
+  ]
+}

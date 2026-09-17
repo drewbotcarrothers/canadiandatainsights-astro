@@ -1,0 +1,33 @@
+{
+  "about": "Hamilton sits at the western end of Lake Ontario, below the Niagara Escarpment in southern Ontario. It is a historic steel city that has diversified into health care, education, and a rebuilding downtown. The harbour, escarpment waterfalls, and older neighbourhoods define its geography. About 570,000 people live in Hamilton.",
+  "seoSummary": "Steel city at the west end of Lake Ontario, below the Niagara Escarpment.",
+  "knownFor": [
+    "Steelmaking and Hamilton Harbour",
+    "Niagara Escarpment waterfalls",
+    "McMaster University and a large hospital sector",
+    "James Street North arts district",
+    "Royal Botanical Gardens on the city’s west edge"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Dundurn Castle",
+      "why": "Nineteenth-century estate overlooking Burlington Bay."
+    },
+    {
+      "name": "Art Gallery of Hamilton",
+      "why": "Major civic gallery downtown."
+    },
+    {
+      "name": "Webster’s Falls",
+      "why": "Escarpment waterfall park in the Dundas area."
+    },
+    {
+      "name": "HMCS Haida",
+      "why": "Historic destroyer at Pier 9 on the harbour."
+    },
+    {
+      "name": "Bayfront Park",
+      "why": "Harbourfront park on Hamilton Harbour."
+    }
+  ]
+}
