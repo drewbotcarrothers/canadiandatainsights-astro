@@ -30,7 +30,7 @@ const people = snapshot.famousPeople?.filter((p) => p.name && p.note) ?? [];
       <div class="mt-8 grid grid-cols-1 gap-8 border-t border-border/30 pt-8 md:grid-cols-2">
         <div>
           <h3 class="mb-4 font-heading text-lg font-bold text-primary">Known for</h3>
-          <ul class="space-y-2.5">
+          <ul class="list-none space-y-2.5 p-0">
             {
               snapshot.knownFor.map((item) => (
                 <li class="flex gap-3 font-sans text-base text-on-surface-variant">
@@ -47,7 +47,7 @@ const people = snapshot.famousPeople?.filter((p) => p.name && p.note) ?? [];
 
         <div>
           <h3 class="mb-4 font-heading text-lg font-bold text-primary">See &amp; do</h3>
-          <ul class="space-y-4">
+          <ul class="list-none space-y-4 p-0">
             {
               snapshot.seeAndDo.map((place) => (
                 <li>
