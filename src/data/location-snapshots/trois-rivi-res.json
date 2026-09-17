@@ -1,0 +1,33 @@
+{
+  "about": "Trois-Rivières sits on the north shore of the St. Lawrence, at the mouth of the Saint-Maurice River, midway between Montréal and Québec. It is one of Canada’s oldest cities and a long-time pulp-and-paper and industrial centre. A compact old town remains along the river. About 140,000 people live in Trois-Rivières.",
+  "seoSummary": "One of Canada’s oldest cities, a St. Lawrence industrial centre at the Saint-Maurice.",
+  "knownFor": [
+    "Founded in 1634, among Canada’s oldest cities",
+    "Pulp, paper, and hydroelectric industry on the Saint-Maurice",
+    "Notre-Dame-du-Cap shrine",
+    "Festival International de la Poésie",
+    "Midpoint city on the Québec–Montréal axis"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Old Trois-Rivières",
+      "why": "Historic streets and the Ursuline Monastery."
+    },
+    {
+      "name": "Boréalis",
+      "why": "Industrial museum in a former paper mill."
+    },
+    {
+      "name": "Musée Pop",
+      "why": "Museum of Québec popular culture."
+    },
+    {
+      "name": "Sanctuaire Notre-Dame-du-Cap",
+      "why": "Major Marian shrine east of downtown."
+    },
+    {
+      "name": "Riverfront promenade",
+      "why": "Walk at the confluence of the Saint-Maurice and St. Lawrence."
+    }
+  ]
+}

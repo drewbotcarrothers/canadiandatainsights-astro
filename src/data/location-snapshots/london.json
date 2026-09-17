@@ -1,0 +1,33 @@
+{
+  "about": "London is in southwestern Ontario, at the forks of the Thames River between Toronto and Windsor. It is a regional health, education, and insurance centre with a compact downtown. The city is often called the Forest City for its tree canopy and parks. About 420,000 people live in London.",
+  "seoSummary": "Southwestern Ontario’s Forest City, a health and university centre on the Thames.",
+  "knownFor": [
+    "Western University and a large hospital network",
+    "Insurance and financial services",
+    "Forks of the Thames downtown",
+    "Forest City parks and tree canopy",
+    "A regional hub for southwestern Ontario"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Covent Garden Market",
+      "why": "Year-round downtown public market."
+    },
+    {
+      "name": "Museum London",
+      "why": "Civic art and history museum at the forks."
+    },
+    {
+      "name": "Springbank Park",
+      "why": "Large Thames-side park with Storybook Gardens."
+    },
+    {
+      "name": "Victoria Park",
+      "why": "Central downtown park used for festivals."
+    },
+    {
+      "name": "Eldon House",
+      "why": "London’s oldest surviving residence, now a museum."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Oakville is a lakeshore town between Toronto and Hamilton, in Halton Region on Lake Ontario. It is an affluent municipality with a preserved downtown, ravines, and a large Ford assembly plant. GO Transit and the QEW tie it to the rest of the Greater Toronto Area. About 210,000 people live in Oakville.",
+  "seoSummary": "Affluent Halton lakeshore town between Toronto and Hamilton, with a harbour downtown.",
+  "knownFor": [
+    "Affluent GTA lakeshore suburb",
+    "Downtown Oakville and harbour",
+    "Ford Oakville Assembly Complex",
+    "Sixteen Mile Creek ravines",
+    "High median incomes relative to Ontario"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Oakville",
+      "why": "Lakeside shops, harbour, and marina."
+    },
+    {
+      "name": "Gairloch Gardens",
+      "why": "Waterfront garden estate."
+    },
+    {
+      "name": "Bronte Harbour",
+      "why": "West-end harbour and heritage waterfront park."
+    },
+    {
+      "name": "Sixteen Mile Creek trails",
+      "why": "Ravine paths through the centre of town."
+    },
+    {
+      "name": "Oakville Museum",
+      "why": "Local history at Erchless Estate by the harbour."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Greater Sudbury is in northeastern Ontario, on the Canadian Shield around a large mining basin. The amalgamated city is one of Ontario’s geographically largest municipalities, built from several former towns. Nickel mining, a university, and hundreds of lakes shape local life. About 170,000 people live in Greater Sudbury.",
+  "seoSummary": "Northeastern Ontario mining city on the Shield, with hundreds of lakes inside city limits.",
+  "knownFor": [
+    "Nickel mining and a reshaped industrial landscape",
+    "Science North and Dynamic Earth",
+    "Hundreds of lakes inside city limits",
+    "Laurentian University",
+    "Regreening of former roast-yard lands"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Science North",
+      "why": "Interactive science centre on Ramsey Lake."
+    },
+    {
+      "name": "Dynamic Earth",
+      "why": "Geology centre and underground mine tour."
+    },
+    {
+      "name": "Big Nickel",
+      "why": "Landmark coin sculpture at Dynamic Earth."
+    },
+    {
+      "name": "Bell Park",
+      "why": "Urban waterfront park on Ramsey Lake."
+    },
+    {
+      "name": "Lake Laurentian Conservation Area",
+      "why": "Trails in the south end of the city."
+    }
+  ]
+}

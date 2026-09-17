@@ -1,0 +1,33 @@
+{
+  "about": "Abbotsford is in the Fraser Valley, east of Metro Vancouver toward the Cascade foothills and the U.S. border. It is among B.C.’s largest communities outside Vancouver’s metro core and a centre for agriculture, especially berries and poultry. Mount Baker is often visible to the south. About 150,000 people live in Abbotsford.",
+  "seoSummary": "Fraser Valley agricultural city east of Vancouver, near the U.S. border.",
+  "knownFor": [
+    "Fraser Valley agriculture and food processing",
+    "Abbotsford International Airport",
+    "Proximity to the U.S. border at Sumas",
+    "A large South Asian farming and business community",
+    "University of the Fraser Valley"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Mill Lake Park",
+      "why": "Central lake and park in the city."
+    },
+    {
+      "name": "The Reach Gallery Museum",
+      "why": "Civic art gallery and museum."
+    },
+    {
+      "name": "Trethewey House Heritage Site",
+      "why": "Local history museum in a 1920s house."
+    },
+    {
+      "name": "Abbotsford Airshow",
+      "why": "Large seasonal airshow at the international airport."
+    },
+    {
+      "name": "Sumas Mountain trails",
+      "why": "Hiking above the Fraser Valley floor."
+    }
+  ]
+}

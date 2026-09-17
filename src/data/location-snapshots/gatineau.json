@@ -1,0 +1,33 @@
+{
+  "about": "Gatineau is in western Québec, on the north shore of the Ottawa River across from Ottawa. It is Québec’s fourth-largest city and part of the National Capital Region. The city was formed by merging Hull, Gatineau, Aylmer, Buckingham, and Masson-Angers. About 290,000 people live in Gatineau.",
+  "seoSummary": "Québec city across the Ottawa River from the capital, home to the Museum of History.",
+  "knownFor": [
+    "National Capital Region twin to Ottawa",
+    "Canadian Museum of History in former Hull",
+    "Gatineau Park on the city’s doorstep",
+    "Federal offices on the Québec side of the river",
+    "French-majority daily life next to bilingual Ottawa"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Canadian Museum of History",
+      "why": "National museum on the Ottawa River facing Parliament."
+    },
+    {
+      "name": "Gatineau Park",
+      "why": "Large federal park with lakes, trails, and ski hills."
+    },
+    {
+      "name": "Casino du Lac-Leamy",
+      "why": "Casino and theatre complex beside the lake."
+    },
+    {
+      "name": "Jacques-Cartier Park",
+      "why": "Riverfront park facing Parliament Hill."
+    },
+    {
+      "name": "Promenade du Portage",
+      "why": "Downtown Hull street of offices, shops, and restaurants."
+    }
+  ]
+}

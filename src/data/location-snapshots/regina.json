@@ -1,0 +1,33 @@
+{
+  "about": "Regina is Saskatchewan’s capital, on the open prairie in the south of the province. Wascana Centre — a large urban park around an artificial lake — occupies much of the city’s core beside the legislature. The city is a government, farm, and energy-services centre. About 230,000 people live in Regina.",
+  "seoSummary": "Saskatchewan’s capital, built around Wascana Lake and the legislative grounds.",
+  "knownFor": [
+    "Provincial capital and the Legislative Building",
+    "Wascana Centre park and lake",
+    "RCMP Academy and Heritage Centre",
+    "A prairie grid of wide streets",
+    "Farm, potash, and oilfield services"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Saskatchewan Legislative Building",
+      "why": "Dome and grounds on Wascana Lake."
+    },
+    {
+      "name": "Royal Saskatchewan Museum",
+      "why": "Natural and First Nations history downtown."
+    },
+    {
+      "name": "RCMP Heritage Centre",
+      "why": "Museum at the national training academy."
+    },
+    {
+      "name": "Wascana Centre",
+      "why": "Large park trails encircling the lake."
+    },
+    {
+      "name": "MacKenzie Art Gallery",
+      "why": "Major prairie art gallery in Wascana Centre."
+    }
+  ]
+}

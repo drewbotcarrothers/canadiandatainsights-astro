@@ -1,0 +1,33 @@
+{
+  "about": "Oshawa is on Lake Ontario east of Toronto, in Durham Region. It is a historic General Motors auto city with a downtown inland from the harbour. Ontario Tech University and Durham College occupy a north-end campus. About 175,000 people live in Oshawa.",
+  "seoSummary": "Durham Region auto city on Lake Ontario, east of Toronto.",
+  "knownFor": [
+    "General Motors assembly and auto-parts history",
+    "Ontario Tech University",
+    "Lake Ontario harbour and waterfront trail",
+    "Canadian Automotive Museum",
+    "Eastern GTA industrial and commuter city"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Canadian Automotive Museum",
+      "why": "Collection of historic cars downtown."
+    },
+    {
+      "name": "Parkwood Estate",
+      "why": "Former McLaughlin family mansion and gardens."
+    },
+    {
+      "name": "Lakeview Park",
+      "why": "Waterfront park on Lake Ontario."
+    },
+    {
+      "name": "The Robert McLaughlin Gallery",
+      "why": "Civic art gallery downtown."
+    },
+    {
+      "name": "Oshawa Valley Botanical Gardens",
+      "why": "Formal gardens in the Oshawa Creek valley."
+    }
+  ]
+}

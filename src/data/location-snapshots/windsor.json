@@ -1,0 +1,33 @@
+{
+  "about": "Windsor is in southwestern Ontario, on the Detroit River across from Detroit, Michigan. It is Canada’s southernmost major city and a historic auto-manufacturing centre with a compact riverside downtown. The Ambassador Bridge and a tunnel carry heavy cross-border traffic. About 230,000 people live in Windsor.",
+  "seoSummary": "Canada’s southernmost major city, an auto centre on the Detroit River.",
+  "knownFor": [
+    "Auto assembly and parts manufacturing",
+    "Border crossing with Detroit",
+    "Canada’s southernmost major city",
+    "Riverside parks facing the Detroit skyline",
+    "A long francophone and immigrant workforce history"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Dieppe Gardens",
+      "why": "Riverfront park looking across at Detroit."
+    },
+    {
+      "name": "Caesars Windsor",
+      "why": "Casino and hotel downtown on the river."
+    },
+    {
+      "name": "Art Gallery of Windsor",
+      "why": "Civic gallery on the riverfront."
+    },
+    {
+      "name": "Jackson Park",
+      "why": "Central park with gardens and a cenotaph replica."
+    },
+    {
+      "name": "Walkerville",
+      "why": "Historic distillery district and planned company town."
+    }
+  ]
+}

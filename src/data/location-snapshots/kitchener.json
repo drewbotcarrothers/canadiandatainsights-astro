@@ -1,0 +1,33 @@
+{
+  "about": "Kitchener is in Waterloo Region, in southwestern Ontario, paired with neighbouring Waterloo and Cambridge. It is a former manufacturing city that has become a centre for insurance, tech, and post-secondary education. Downtown sits along a former industrial corridor now served by ION light rail. About 260,000 people live in Kitchener.",
+  "seoSummary": "Waterloo Region’s largest city, a former factory town now tied to tech and insurance.",
+  "knownFor": [
+    "Tech and insurance alongside older factories",
+    "Oktoberfest, among the largest outside Germany",
+    "ION light rail shared with Waterloo",
+    "A German-settler industrial history",
+    "Grand River conservation lands"
+  ],
+  "seeAndDo": [
+    {
+      "name": "THEMUSEUM",
+      "why": "Downtown science and culture museum."
+    },
+    {
+      "name": "Kitchener Market",
+      "why": "Year-round Saturday market."
+    },
+    {
+      "name": "Victoria Park",
+      "why": "Central park with a lake and clock tower."
+    },
+    {
+      "name": "Centre In The Square",
+      "why": "Concert hall and home of the Kitchener-Waterloo Art Gallery."
+    },
+    {
+      "name": "Huron Natural Area",
+      "why": "Large urban nature reserve in south Kitchener."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Burlington sits at the west end of Lake Ontario, between Hamilton and Oakville in Halton Region. The Niagara Escarpment rises behind a low lakeshore of parks and a downtown pier. It is a largely residential city with a small downtown and industrial lands toward Hamilton. About 190,000 people live in Burlington.",
+  "seoSummary": "Halton lakeshore city at the foot of the Niagara Escarpment, west of Toronto.",
+  "knownFor": [
+    "Lake Ontario waterfront and Spencer Smith Park",
+    "Niagara Escarpment and the Bruce Trail",
+    "Royal Botanical Gardens, shared with Hamilton",
+    "Commuter lakeshore city in the GTA",
+    "Downtown Brant Street and the pier"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Spencer Smith Park",
+      "why": "Waterfront park and the Brant Street Pier."
+    },
+    {
+      "name": "Royal Botanical Gardens",
+      "why": "Cootes Paradise and formal gardens on the city’s west edge."
+    },
+    {
+      "name": "Mount Nemo Conservation Area",
+      "why": "Escarpment lookout and climbing cliffs."
+    },
+    {
+      "name": "Downtown Burlington",
+      "why": "Village Square and Brant Street shops."
+    },
+    {
+      "name": "Ireland House",
+      "why": "Historic house museum at Oakridge Farm."
+    }
+  ]
+}

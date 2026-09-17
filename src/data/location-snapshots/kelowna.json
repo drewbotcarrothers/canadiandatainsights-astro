@@ -1,0 +1,33 @@
+{
+  "about": "Kelowna is the largest city in B.C.’s Okanagan Valley, on the eastern shore of Okanagan Lake. It is a service, tourism, and wine-industry centre in a dry interior climate. Bridges connect to West Kelowna; orchards and vineyards still occupy the benches above the lake. About 145,000 people live in Kelowna.",
+  "seoSummary": "Largest Okanagan city, a lake, wine, and interior service centre.",
+  "knownFor": [
+    "Okanagan Lake and beaches",
+    "Wine and orchard country",
+    "Interior aviation and a growing tech sector",
+    "Hot, dry summers",
+    "Rapid growth and high housing demand"
+  ],
+  "seeAndDo": [
+    {
+      "name": "City Park and waterfront",
+      "why": "Downtown beach, marina, and lakeside path."
+    },
+    {
+      "name": "Knox Mountain Park",
+      "why": "Hilltop views over Okanagan Lake."
+    },
+    {
+      "name": "Kasugai Gardens",
+      "why": "Japanese garden downtown."
+    },
+    {
+      "name": "Okanagan Heritage Museum",
+      "why": "Regional history museum near the waterfront."
+    },
+    {
+      "name": "Myra Canyon trestles",
+      "why": "Historic railway trestles on the Kettle Valley Rail Trail above the city."
+    }
+  ]
+}

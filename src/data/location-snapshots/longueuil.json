@@ -1,0 +1,33 @@
+{
+  "about": "Longueuil is on the South Shore of the St. Lawrence, directly across from Montréal. It is a major suburb linked to the island by bridge, Métro, and the REM. The city includes the former towns of Greenfield Park and Saint-Hubert and the historic Vieux-Longueuil riverside. About 250,000 people live in Longueuil.",
+  "seoSummary": "Montréal’s South Shore hub, with a historic riverfront and Métro links to the island.",
+  "knownFor": [
+    "Montréal South Shore hub",
+    "Historic Vieux-Longueuil on the river",
+    "Saint-Hubert aerospace and the former air base",
+    "Métro and REM connections to Montréal",
+    "Parc Michel-Chartrand and suburban parks"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Vieux-Longueuil",
+      "why": "Riverside old town and the co-cathedral."
+    },
+    {
+      "name": "Parc Michel-Chartrand",
+      "why": "Large park with trails and a lake in Saint-Hubert."
+    },
+    {
+      "name": "Parc Marie-Victorin",
+      "why": "Riverfront park with views of Montréal."
+    },
+    {
+      "name": "Parc de la Cité",
+      "why": "Wooded park and ponds in Saint-Hubert."
+    },
+    {
+      "name": "Place Charles-Le Moyne",
+      "why": "Transit and civic precinct at the Métro terminus."
+    }
+  ]
+}

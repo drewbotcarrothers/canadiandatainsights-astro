@@ -1,0 +1,33 @@
+{
+  "about": "Coquitlam is in Metro Vancouver’s northeast, between Burnaby and the Coast Mountains. Town Centre has grown into a high-rise node on the Millennium SkyTrain line. Parks, lakes, and the Coquitlam River sit against a steep mountain backdrop. About 150,000 people live in Coquitlam.",
+  "seoSummary": "Northeast Metro Vancouver city of Town Centre high-rises, lakes, and mountain parks.",
+  "knownFor": [
+    "Town Centre high-rises and Lafarge Lake",
+    "Westwood Plateau and mountain suburbs",
+    "Eagle Mountain wilderness on the city’s edge",
+    "Evergreen SkyTrain extension",
+    "A large East Asian population"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Lafarge Lake",
+      "why": "Town Centre lake, pier, and festival park."
+    },
+    {
+      "name": "Mundy Park",
+      "why": "Large urban forest in central Coquitlam."
+    },
+    {
+      "name": "Minnekhada Regional Park",
+      "why": "Marsh, trails, and lodge in the northeast."
+    },
+    {
+      "name": "Como Lake Park",
+      "why": "Neighbourhood lake and path loop."
+    },
+    {
+      "name": "Town Centre civic precinct",
+      "why": "Library, city hall, and Coquitlam Centre mall."
+    }
+  ]
+}

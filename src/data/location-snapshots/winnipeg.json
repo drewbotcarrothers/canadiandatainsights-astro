@@ -1,0 +1,33 @@
+{
+  "about": "Winnipeg is Manitoba’s capital, at the confluence of the Red and Assiniboine rivers on the Prairies. It is the province’s main city and a historic railway, grain, and cultural centre. The Forks sits at the core, with distinct districts such as the Exchange and francophone St. Boniface. About 750,000 people live in the city.",
+  "seoSummary": "Manitoba’s capital at The Forks, a Prairie cultural and transport hub.",
+  "knownFor": [
+    "The Forks at the Red and Assiniboine",
+    "French-speaking St. Boniface",
+    "Royal Winnipeg Ballet and a strong arts sector",
+    "Exchange District warehouse architecture",
+    "A central Prairie location and cold winters"
+  ],
+  "seeAndDo": [
+    {
+      "name": "The Forks",
+      "why": "Historic meeting place with a market, trails, and river walks."
+    },
+    {
+      "name": "Canadian Museum for Human Rights",
+      "why": "National museum beside The Forks."
+    },
+    {
+      "name": "Exchange District",
+      "why": "Early-20th-century warehouses and a national historic district."
+    },
+    {
+      "name": "Assiniboine Park",
+      "why": "Large west-end park with zoo and gardens."
+    },
+    {
+      "name": "Saint Boniface Cathedral",
+      "why": "Landmark ruins and basilica in the francophone quarter."
+    }
+  ]
+}

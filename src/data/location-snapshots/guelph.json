@@ -1,0 +1,33 @@
+{
+  "about": "Guelph is in southwestern Ontario, east of Kitchener-Waterloo, on the Speed and Eramosa rivers. It is a planned nineteenth-century town with a limestone downtown and a major agricultural university. Manufacturing, agri-food research, and a compact historic core still shape the city. About 140,000 people live in Guelph.",
+  "seoSummary": "Planned limestone city in southwestern Ontario, home to the University of Guelph.",
+  "knownFor": [
+    "University of Guelph",
+    "Limestone architecture and a planned radial street layout",
+    "Agri-food research and manufacturing",
+    "Downtown Market Square",
+    "River trails on the Speed and Eramosa"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Church of Our Lady Immaculate",
+      "why": "Landmark Gothic Revival church above downtown."
+    },
+    {
+      "name": "University of Guelph Arboretum",
+      "why": "Campus woodlands and gardens."
+    },
+    {
+      "name": "Guelph Civic Museum",
+      "why": "Local history in a former Loretto convent."
+    },
+    {
+      "name": "Riverside Park",
+      "why": "Large park on the Speed River, with a seasonal railway."
+    },
+    {
+      "name": "Guelph Farmers’ Market",
+      "why": "Long-running Saturday market downtown."
+    }
+  ]
+}

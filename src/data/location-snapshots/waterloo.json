@@ -1,0 +1,33 @@
+{
+  "about": "Waterloo is a city in Waterloo Region, immediately north of Kitchener in southwestern Ontario. It is known for the University of Waterloo, Wilfrid Laurier University, and a dense cluster of tech and insurance employers. Uptown Waterloo is a separate commercial core from downtown Kitchener, linked by ION light rail. About 120,000 people live in Waterloo.",
+  "seoSummary": "University and tech city north of Kitchener, home to UW, Laurier, and Uptown.",
+  "knownFor": [
+    "University of Waterloo and the tech sector",
+    "Insurance company head offices",
+    "Wilfrid Laurier University",
+    "Uptown Waterloo",
+    "Perimeter Institute and research spinoffs"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Uptown Waterloo",
+      "why": "Independent shops around Waterloo Public Square."
+    },
+    {
+      "name": "Waterloo Park",
+      "why": "Central park with a lake and small zoo, beside UW."
+    },
+    {
+      "name": "University of Waterloo campus",
+      "why": "Research university at the centre of the local tech cluster."
+    },
+    {
+      "name": "Canadian Clay & Glass Gallery",
+      "why": "National collection of clay, glass, and stained glass."
+    },
+    {
+      "name": "Perimeter Institute",
+      "why": "Theoretical physics centre with a public outreach program."
+    }
+  ]
+}

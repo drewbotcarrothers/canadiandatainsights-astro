@@ -1,0 +1,33 @@
+{
+  "about": "Calgary is Alberta’s largest city, at the confluence of the Bow and Elbow rivers in the Rocky Mountain foothills. It is a major energy and corporate centre with a compact downtown of office towers. Neighbourhoods spread across a large prairie-foothills grid, with the mountains visible to the west. About 1.3 million people live in the city proper.",
+  "seoSummary": "Alberta’s largest city, an energy centre in the Rocky Mountain foothills.",
+  "knownFor": [
+    "The Calgary Stampede",
+    "Energy-sector head offices",
+    "Proximity to Banff and the Rockies",
+    "The Plus 15 downtown skywalk network",
+    "Chinook winds and a relatively dry climate"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Calgary Tower",
+      "why": "Observation deck over downtown and the Bow River."
+    },
+    {
+      "name": "Heritage Park",
+      "why": "Living-history village on Glenmore Reservoir."
+    },
+    {
+      "name": "Calgary Zoo",
+      "why": "Large zoo in Bridgeland, beside the Bow River."
+    },
+    {
+      "name": "Prince’s Island Park",
+      "why": "Downtown river island used for festivals and paths."
+    },
+    {
+      "name": "National Music Centre (Studio Bell)",
+      "why": "Music museum and performance rooms east of downtown."
+    }
+  ]
+}
