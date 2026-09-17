@@ -1,0 +1,33 @@
+{
+  "about": "New Westminster is a compact city on the Fraser River in Metro Vancouver, between Burnaby and Surrey. It was the first capital of the Colony of British Columbia and remains a dense, older urban centre with SkyTrain, a working riverfront, and steep streets above the quay. The city is much smaller in area than its neighbours. About 79,000 people live in New Westminster.",
+  "seoSummary": "Compact Fraser River city, the former colonial capital of British Columbia.",
+  "knownFor": [
+    "First capital of the Colony of British Columbia",
+    "Fraser River quay and a working industrial waterfront",
+    "SkyTrain spine through a dense, walkable core",
+    "Irving House and Victorian-era streets",
+    "Small land area compared with adjoining suburbs"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Westminster Pier Park",
+      "why": "Riverfront park on former industrial piers."
+    },
+    {
+      "name": "River Market at Westminster Quay",
+      "why": "Public market and boardwalk on the Fraser."
+    },
+    {
+      "name": "Irving House",
+      "why": "Victorian mansion, among the oldest intact houses in the Lower Mainland."
+    },
+    {
+      "name": "Anvil Centre",
+      "why": "Museum, theatre, and civic complex downtown."
+    },
+    {
+      "name": "Tipperary Park",
+      "why": "Hilltop park beside the former courthouse and armoury."
+    }
+  ]
+}

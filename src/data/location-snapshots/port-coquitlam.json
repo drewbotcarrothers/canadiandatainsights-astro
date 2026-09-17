@@ -1,0 +1,33 @@
+{
+  "about": "Port Coquitlam is one of Metro Vancouver’s Tri-Cities, at the confluence of the Fraser, Pitt, and Coquitlam rivers. Often called PoCo, it is a more industrial and residential counterpart to neighbouring Coquitlam and Port Moody, with the Traboulay PoCo Trail looping the city. Shaughnessy Street is the traditional downtown. About 61,000 people live in Port Coquitlam.",
+  "seoSummary": "Tri-Cities municipality at the Pitt and Fraser rivers, the PoCo of Metro Vancouver.",
+  "knownFor": [
+    "Tri-Cities member with Coquitlam and Port Moody",
+    "Confluence of the Fraser, Pitt, and Coquitlam rivers",
+    "Traboulay PoCo Trail around the city",
+    "Shaughnessy Street downtown",
+    "Light industry and family neighbourhoods"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Traboulay PoCo Trail",
+      "why": "Circumferential trail along dikes, creeks, and parks."
+    },
+    {
+      "name": "Gates Park",
+      "why": "Large sports park in the west of the city."
+    },
+    {
+      "name": "Downtown Shaughnessy Street",
+      "why": "Traditional town centre and shops."
+    },
+    {
+      "name": "Hyde Creek Recreation Centre and nature area",
+      "why": "Community centre beside creek trails in the north end."
+    },
+    {
+      "name": "Colony Farm Regional Park",
+      "why": "Fraser River fields and trails on the Coquitlam boundary."
+    }
+  ]
+}

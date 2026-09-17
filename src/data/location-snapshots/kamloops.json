@@ -1,0 +1,33 @@
+{
+  "about": "Kamloops sits at the confluence of the North and South Thompson rivers in B.C.’s dry Interior. It is a transportation, health, and tournament-sport hub for a large ranching and forest hinterland, with sage-covered hills and a long, ice-free riverfront. Thompson Rivers University occupies a hillside above the South Thompson. About 98,000 people live in Kamloops.",
+  "seoSummary": "Interior B.C. city at the Thompson rivers, a tournament-sport and regional service hub.",
+  "knownFor": [
+    "Confluence of the North and South Thompson rivers",
+    "Tournament Capital parks and facilities",
+    "Semi-arid hills and ranch country",
+    "Thompson Rivers University",
+    "Highway and rail junction toward the Coast, the north, and the Rockies"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Riverside Park",
+      "why": "Downtown riverfront park at the confluence."
+    },
+    {
+      "name": "Kenna Cartwright Park",
+      "why": "Large hillside park with views over the city and rivers."
+    },
+    {
+      "name": "Secwépemc Museum and Heritage Park",
+      "why": "Secwépemc cultural centre on the North Thompson."
+    },
+    {
+      "name": "Kamloops Museum and Archives",
+      "why": "Local history museum downtown."
+    },
+    {
+      "name": "Tournament Capital Centre",
+      "why": "Major indoor sport complex used for regional events."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Halton Hills is a town in Halton Region, at the Niagara Escarpment northwest of Toronto. Georgetown is the main urban centre; Acton, Glen Williams, and Limehouse sit among remaining farms and the Credit River valley. GO Transit and Highway 401/7 commuting mix with mill-town history and conservation lands. About 63,000 people live in Halton Hills.",
+  "seoSummary": "Halton town of Georgetown and Acton on the Niagara Escarpment and Credit River.",
+  "knownFor": [
+    "Georgetown as the principal town centre",
+    "Acton, a former leather-mill village",
+    "Niagara Escarpment and the Credit River",
+    "Glen Williams and Limehouse hamlets",
+    "GO Transit commuter town on Toronto’s western edge"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Georgetown",
+      "why": "Mill Street shops and the historic town core."
+    },
+    {
+      "name": "Fairy Lake (Acton)",
+      "why": "Village lake and park in Acton."
+    },
+    {
+      "name": "Glen Williams",
+      "why": "Credit River hamlet with a mill, shops, and walking paths."
+    },
+    {
+      "name": "Limehouse Conservation Area",
+      "why": "Escarpment ruins, kilns, and the Bruce Trail."
+    },
+    {
+      "name": "Terra Cotta Conservation Area",
+      "why": "Credit River valley trails on the town’s eastern edge."
+    }
+  ]
+}

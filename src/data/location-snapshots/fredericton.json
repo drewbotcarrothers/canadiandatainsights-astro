@@ -1,0 +1,33 @@
+{
+  "about": "Fredericton is the capital of New Brunswick, on a bend of the Saint John River in the west of the province. It is a government and university city—home to the University of New Brunswick and St. Thomas University—with a compact downtown and a restored garrison district. Tree-lined streets and a riverside green distinguish it from the province’s larger port and retail centres. About 63,000 people live in Fredericton.",
+  "seoSummary": "New Brunswick’s capital on the Saint John River, a government and university city.",
+  "knownFor": [
+    "Provincial capital and legislature",
+    "University of New Brunswick and St. Thomas University",
+    "Historic Garrison District",
+    "Saint John River and the walking bridge",
+    "Beaverbrook Art Gallery"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Historic Garrison District",
+      "why": "Officers’ Square, guardhouses, and the restored military precinct."
+    },
+    {
+      "name": "Beaverbrook Art Gallery",
+      "why": "Provincial art museum on the river."
+    },
+    {
+      "name": "Fredericton Boyce Farmers Market",
+      "why": "Saturday market downtown."
+    },
+    {
+      "name": "Bill Thorpe Walking Bridge",
+      "why": "Converted railway bridge across the Saint John River."
+    },
+    {
+      "name": "Odell Park",
+      "why": "Old-growth urban forest west of downtown."
+    }
+  ]
+}

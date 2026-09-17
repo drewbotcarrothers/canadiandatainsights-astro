@@ -1,0 +1,33 @@
+{
+  "about": "Drummondville is in Centre-du-Québec, on the rivière Saint-François between Montréal and Québec City. It grew around mills and textile plants and is now a regional industrial and service city on Autoroute 20. The Village Québécois d’Antan is the best-known heritage site. About 79,000 people live in Drummondville.",
+  "seoSummary": "Centre-du-Québec city on the rivière Saint-François, home to the Village Québécois d’Antan.",
+  "knownFor": [
+    "Rivière Saint-François crossing on the Montréal–Québec corridor",
+    "Village Québécois d’Antan living-history site",
+    "Former textile-mill town turned regional service centre",
+    "Centrexpo Drummondville events",
+    "French-speaking industrial city in the Centre-du-Québec"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Village Québécois d’Antan",
+      "why": "Living-history village of 19th-century buildings and trades."
+    },
+    {
+      "name": "Maison des Arts Desjardins Drummondville",
+      "why": "Performing-arts centre downtown."
+    },
+    {
+      "name": "Promenade Woodyatt",
+      "why": "Riverfront walk along the Saint-François."
+    },
+    {
+      "name": "Parc des Voltigeurs",
+      "why": "Large park and exhibition grounds beside the village site."
+    },
+    {
+      "name": "Downtown rue Heriot and Marché public",
+      "why": "City-centre streets and public market."
+    }
+  ]
+}

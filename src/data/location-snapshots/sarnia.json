@@ -1,0 +1,33 @@
+{
+  "about": "Sarnia is in southwestern Ontario, where the St. Clair River leaves Lake Huron toward Lake St. Clair. It is a petrochemical and refining city—often called Chemical Valley—linked to Port Huron, Michigan, by the Blue Water Bridge. Beaches, a wide river, and prevailing southwest winds shape the waterfront. About 72,000 people live in Sarnia.",
+  "seoSummary": "St. Clair River city at Lake Huron, a petrochemical centre beside the Blue Water Bridge.",
+  "knownFor": [
+    "Chemical Valley refining and petrochemical plants",
+    "Blue Water Bridge to Port Huron, Michigan",
+    "Lake Huron and St. Clair River waterfront",
+    "Canatara Park and the lake beach",
+    "Southwestern Ontario industrial port"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Canatara Park",
+      "why": "Lake Huron beach, trails, and a small animal farm at the river mouth."
+    },
+    {
+      "name": "Centennial Park",
+      "why": "Downtown riverfront park facing the St. Clair."
+    },
+    {
+      "name": "Blue Water Bridge viewpoint",
+      "why": "Lookout toward the international span and Lake Huron."
+    },
+    {
+      "name": "Germain Park",
+      "why": "Large central park with gardens and sports fields."
+    },
+    {
+      "name": "Sarnia Bay Marina",
+      "why": "Harbour and walk along the river downtown."
+    }
+  ]
+}

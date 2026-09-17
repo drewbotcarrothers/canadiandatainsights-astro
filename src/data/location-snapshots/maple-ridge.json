@@ -1,0 +1,33 @@
+{
+  "about": "Maple Ridge lies on the north shore of the Fraser River in Metro Vancouver’s eastern suburbs, between Pitt Meadows and Mission. The historic town centre of Haney sits above the river, with suburban neighbourhoods climbing toward Golden Ears Provincial Park. Logging, river industry, and commuting into Vancouver all still show in local life. About 91,000 people live in Maple Ridge.",
+  "seoSummary": "Fraser River suburb at the foot of Golden Ears Provincial Park, east of Pitt Meadows.",
+  "knownFor": [
+    "Golden Ears Provincial Park on the city’s north edge",
+    "Historic Haney town centre above the Fraser",
+    "North-shore Fraser River industry and commuting",
+    "Kanaka Creek valley",
+    "Rapid suburban growth toward the mountains"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Golden Ears Provincial Park",
+      "why": "Lakes, trails, and mountain access from the north side of the city."
+    },
+    {
+      "name": "Downtown Haney",
+      "why": "Original town centre, Memorial Peace Park, and river views."
+    },
+    {
+      "name": "Kanaka Creek Regional Park",
+      "why": "Canyon, hatchery, and trails in the creek valley."
+    },
+    {
+      "name": "Fraser River Heritage Walk",
+      "why": "Waterfront path along the dikes at Haney."
+    },
+    {
+      "name": "The ACT Arts Centre",
+      "why": "Theatre and gallery in the town centre."
+    }
+  ]
+}

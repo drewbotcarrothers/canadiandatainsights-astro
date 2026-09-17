@@ -1,0 +1,33 @@
+{
+  "about": "Victoria is the capital of British Columbia, on the southern tip of Vancouver Island at the Inner Harbour. The city proper is compact: the legislature, downtown, and older neighbourhoods sit around the harbour, while most of Greater Victoria lies in adjoining municipalities such as Saanich. Ferries, floatplanes, and a mild coastal climate underpin government, tourism, and retirement life. About 92,000 people live in the City of Victoria.",
+  "seoSummary": "British Columbia’s capital, a compact Inner Harbour city at the south end of Vancouver Island.",
+  "knownFor": [
+    "Provincial capital and the Inner Harbour legislature",
+    "Compact walkable downtown distinct from Greater Victoria",
+    "Mild coastal climate and year-round gardens",
+    "Ferry and floatplane gateway from the mainland and Washington",
+    "Beacon Hill Park and the Dallas Road waterfront"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Inner Harbour",
+      "why": "Causeway, Empress Hotel lawns, and the working harbour."
+    },
+    {
+      "name": "British Columbia Parliament Buildings",
+      "why": "Legislative precinct on the harbour."
+    },
+    {
+      "name": "Beacon Hill Park",
+      "why": "Large downtown park sloping to the Strait of Juan de Fuca."
+    },
+    {
+      "name": "Royal BC Museum",
+      "why": "Provincial museum beside the legislature."
+    },
+    {
+      "name": "Craigdarroch Castle",
+      "why": "Victorian mansion in the Rockland neighbourhood."
+    }
+  ]
+}

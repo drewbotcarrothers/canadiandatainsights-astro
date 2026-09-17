@@ -1,0 +1,33 @@
+{
+  "about": "Delta is a municipality in Metro Vancouver made up of three distinct communities: suburban North Delta, the historic fishing village of Ladner, and the ferry and farmland peninsula of Tsawwassen. It sits between the Fraser River and Boundary Bay, with remaining agricultural land on the delta flats. BC Ferries sail to Vancouver Island from the Tsawwassen terminal. About 108,000 people live in Delta.",
+  "seoSummary": "Metro Vancouver municipality of North Delta, Ladner, and Tsawwassen on the Fraser delta.",
+  "knownFor": [
+    "Three communities: North Delta, Ladner, and Tsawwassen",
+    "Fraser River and Boundary Bay shoreline",
+    "Tsawwassen ferry terminal to Vancouver Island",
+    "Remaining agricultural land on the delta flats",
+    "Migratory birds at George C. Reifel Sanctuary"
+  ],
+  "seeAndDo": [
+    {
+      "name": "George C. Reifel Migratory Bird Sanctuary",
+      "why": "Wetland reserve on Westham Island, known for snow geese in season."
+    },
+    {
+      "name": "Historic downtown Ladner",
+      "why": "Village main street near the original fishing harbour."
+    },
+    {
+      "name": "Boundary Bay Regional Park",
+      "why": "Dike trails and tidal flats on the bay."
+    },
+    {
+      "name": "Deas Island Regional Park",
+      "why": "Fraser River island park beside the Massey Tunnel."
+    },
+    {
+      "name": "Watershed Park",
+      "why": "Forest trails in North Delta above the river."
+    }
+  ]
+}

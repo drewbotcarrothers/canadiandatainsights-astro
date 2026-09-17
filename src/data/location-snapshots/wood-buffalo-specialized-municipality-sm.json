@@ -1,0 +1,33 @@
+{
+  "about": "The Regional Municipality of Wood Buffalo is a specialized municipality in northeastern Alberta, covering a vast boreal territory larger than many countries. Fort McMurray is the urban service area, not a separate city; hamlets such as Anzac, Janvier, and Fort Chipewyan sit far from that core. Oil-sands work camps and fly-in industry shape the regional economy along the Athabasca and Clearwater rivers. About 72,000 people live in Wood Buffalo.",
+  "seoSummary": "Northeastern Alberta specialized municipality around Fort McMurray and the Athabasca oil sands.",
+  "knownFor": [
+    "Fort McMurray as an urban service area, not a standalone city",
+    "Athabasca oil-sands industry and work camps",
+    "Huge northern land area including Fort Chipewyan",
+    "Clearwater and Athabasca river confluence",
+    "Fly-in and highway gateway to remote hamlets"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Oil Sands Discovery Centre",
+      "why": "Industry interpretation centre in Fort McMurray."
+    },
+    {
+      "name": "Heritage Park",
+      "why": "Historic buildings and river-valley site in the urban service area."
+    },
+    {
+      "name": "MacDonald Island Park",
+      "why": "Recreation complex on an island in the Clearwater River."
+    },
+    {
+      "name": "Clearwater River and the Snye",
+      "why": "Riverfront trails and the waterway at the heart of Fort McMurray."
+    },
+    {
+      "name": "Beacon Hill lookout",
+      "why": "Hilltop view over the Clearwater and Athabasca valleys."
+    }
+  ]
+}

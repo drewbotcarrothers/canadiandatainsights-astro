@@ -1,0 +1,33 @@
+{
+  "about": "Cape Breton Regional Municipality covers the industrial east end of Cape Breton Island, around Sydney Harbour. It was formed by amalgamating Sydney, Glace Bay, New Waterford, North Sydney, Louisbourg, and surrounding districts. Former steel and coal towns sit beside a working harbour and the restored Fortress of Louisbourg on the Atlantic shore. About 94,000 people live in the regional municipality.",
+  "seoSummary": "Amalgamated Cape Breton harbour municipality of Sydney, Glace Bay, and Louisbourg.",
+  "knownFor": [
+    "Sydney Harbour and a former steel-and-coal industrial base",
+    "Amalgamated towns including Glace Bay and North Sydney",
+    "Fortress of Louisbourg on the Atlantic shore",
+    "Cape Breton fiddle and Gaelic cultural life",
+    "Marine Atlantic ferry terminal at North Sydney"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Fortress of Louisbourg",
+      "why": "Reconstructed 18th-century French fortified town."
+    },
+    {
+      "name": "Sydney boardwalk",
+      "why": "Harbourfront promenade and cruise pavilion in downtown Sydney."
+    },
+    {
+      "name": "Cape Breton Miners Museum",
+      "why": "Coal-mining museum and underground tour in Glace Bay."
+    },
+    {
+      "name": "Membertou Heritage Park",
+      "why": "Mi’kmaw cultural interpretation in Membertou, adjoining Sydney."
+    },
+    {
+      "name": "Two Rivers Wildlife Park",
+      "why": "Wildlife park in the Mira River area of the municipality."
+    }
+  ]
+}

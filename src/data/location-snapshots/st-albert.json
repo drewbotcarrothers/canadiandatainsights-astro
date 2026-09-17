@@ -1,0 +1,33 @@
+{
+  "about": "St. Albert is immediately northwest of Edmonton on the Sturgeon River, a separate city with its own downtown rather than a neighbourhood of the capital. It grew from a 19th-century Catholic mission and Métis settlement into a suburban city of river-valley parks. Red Willow Park follows the Sturgeon through the centre of town. About 68,000 people live in St. Albert.",
+  "seoSummary": "Separate city on the Sturgeon River immediately northwest of Edmonton, with a riverside downtown.",
+  "knownFor": [
+    "Distinct city next to Edmonton, not a suburb without a core",
+    "Sturgeon River and Red Willow Park",
+    "Historic mission and Métis settlement origins",
+    "St. Albert Grain Elevator Park",
+    "Walkable downtown around St. Albert Place"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Red Willow Park",
+      "why": "Long river-valley park along the Sturgeon."
+    },
+    {
+      "name": "St. Albert Grain Elevator Park",
+      "why": "Preserved elevators and railway buildings on the river."
+    },
+    {
+      "name": "Musée Héritage Museum",
+      "why": "Local history museum downtown."
+    },
+    {
+      "name": "St. Albert Place",
+      "why": "Civic centre, library, and Arden Theatre in the city core."
+    },
+    {
+      "name": "Founders’ Walk",
+      "why": "River-valley path linking mission-era sites."
+    }
+  ]
+}

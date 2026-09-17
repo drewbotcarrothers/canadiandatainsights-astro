@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Hyacinthe is in Montérégie, on the rivière Yamaska east of Montréal. It is Québec’s agri-food capital, with a large livestock and food-processing cluster, a veterinary faculty of Université de Montréal, and a regional exhibition grounds. The city has a stone-church skyline and a walkable downtown. About 57,000 people live in Saint-Hyacinthe.",
+  "seoSummary": "Montérégie agri-food city on the rivière Yamaska, home to a veterinary faculty and exhibition grounds.",
+  "knownFor": [
+    "Québec’s agri-food and agribusiness centre",
+    "Université de Montréal faculty of veterinary medicine",
+    "Centre de foires and agricultural exhibitions",
+    "Rivière Yamaska downtown",
+    "Jardins Daniel A. Séguin horticultural gardens"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Jardins Daniel A. Séguin",
+      "why": "Themed horticultural gardens and trails."
+    },
+    {
+      "name": "Centre de foires de Saint-Hyacinthe",
+      "why": "Regional exhibition and agricultural-show grounds."
+    },
+    {
+      "name": "Downtown and the cathedral",
+      "why": "City-centre streets and Cathédrale Saint-Hyacinthe-le-Confesseur."
+    },
+    {
+      "name": "Centre des arts Juliette-Lassonde",
+      "why": "Performing-arts centre downtown."
+    },
+    {
+      "name": "Promenade de la Yamaska",
+      "why": "Riverside walk through the urban core."
+    }
+  ]
+}

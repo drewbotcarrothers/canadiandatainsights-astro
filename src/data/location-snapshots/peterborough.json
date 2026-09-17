@@ -1,0 +1,33 @@
+{
+  "about": "Peterborough is in central Ontario, on the Otonabee River and Little Lake at the edge of the Kawarthas. It is a college and university city on the Trent–Severn Waterway, known for the large hydraulic lift lock. Canoe-building, provincial offices, and a compact downtown around the river shape the core. About 84,000 people live in Peterborough.",
+  "seoSummary": "Kawartha city on the Otonabee River, home to the Trent–Severn lift lock.",
+  "knownFor": [
+    "Peterborough Lift Lock on the Trent–Severn Waterway",
+    "Trent University and Fleming College",
+    "Gateway to the Kawartha lakes",
+    "Canadian Canoe Museum",
+    "Little Lake and a riverside downtown"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Peterborough Lift Lock",
+      "why": "Historic hydraulic lift lock, among the world’s highest of its type."
+    },
+    {
+      "name": "Canadian Canoe Museum",
+      "why": "National collection of canoes and kayaks."
+    },
+    {
+      "name": "Little Lake and Millennium Park",
+      "why": "Downtown waterfront, fountain, and the path around the lake."
+    },
+    {
+      "name": "Jackson Park",
+      "why": "Creek-valley park with trails and a historic swinging bridge."
+    },
+    {
+      "name": "Trent University Symons Campus",
+      "why": "Riverside campus and nature areas on the Otonabee."
+    }
+  ]
+}

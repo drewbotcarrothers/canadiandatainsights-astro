@@ -1,0 +1,33 @@
+{
+  "about": "Pickering is a lakeshore city in Durham Region, immediately east of Toronto at the mouth of Duffins Creek. Frenchman’s Bay and a nuclear generating station mark the waterfront; newer neighbourhoods spread north toward the planned Seaton community. GO Transit and Highway 401 make it a major eastern gateway to the GTA. About 99,000 people live in Pickering.",
+  "seoSummary": "Durham lakeshore city east of Toronto, at Frenchman’s Bay and the Pickering nuclear station.",
+  "knownFor": [
+    "Pickering Nuclear Generating Station on the lakeshore",
+    "Frenchman’s Bay and the Nautical Village",
+    "Eastern gateway to Toronto on the 401 and GO",
+    "Seaton and other northward suburban growth",
+    "Rouge and Duffins Creek valleys"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Nautical Village",
+      "why": "Boardwalk shops and restaurants on Frenchman’s Bay."
+    },
+    {
+      "name": "Pickering waterfront trail",
+      "why": "Lakeshore parks from the bay toward the nuclear station lands."
+    },
+    {
+      "name": "Pickering Museum Village",
+      "why": "Heritage buildings in a rural hamlet setting north of the city centre."
+    },
+    {
+      "name": "Petticoat Creek Conservation Area",
+      "why": "Bluffs, pool, and trails on Lake Ontario."
+    },
+    {
+      "name": "Altona Forest",
+      "why": "Urban woodland in the west end, near the Toronto line."
+    }
+  ]
+}

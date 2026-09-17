@@ -1,0 +1,33 @@
+{
+  "about": "Thunder Bay sits at the western end of Lake Superior in northwestern Ontario, formed by amalgamating the former cities of Fort William and Port Arthur. It is a Great Lakes port and regional service centre, with grain elevators on the waterfront and the Sleeping Giant headland across the bay. The city is a gateway to the boreal Shield and to road and rail links toward Winnipeg and southern Ontario. About 109,000 people live in Thunder Bay.",
+  "seoSummary": "Northwestern Ontario port city on Lake Superior, at the foot of the Sleeping Giant.",
+  "knownFor": [
+    "Lake Superior harbour and grain elevators",
+    "Sleeping Giant on the Sibley Peninsula",
+    "Amalgamated Fort William and Port Arthur",
+    "Gateway between the Prairie and the Upper Great Lakes",
+    "Mount McKay overlooking the south side"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Fort William Historical Park",
+      "why": "Reconstructed fur-trade post on the Kaministiquia River."
+    },
+    {
+      "name": "Marina Park",
+      "why": "Waterfront park with views across the harbour to the Sleeping Giant."
+    },
+    {
+      "name": "Hillcrest Park",
+      "why": "Lookout over the bay and the north-side grain terminals."
+    },
+    {
+      "name": "Thunder Bay Museum",
+      "why": "Regional history in a former police station and court building."
+    },
+    {
+      "name": "Cascades Conservation Area",
+      "why": "Waterfalls and trails on the Current River in the city."
+    }
+  ]
+}

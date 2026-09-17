@@ -1,0 +1,33 @@
+{
+  "about": "Prince George is at the confluence of the Fraser and Nechako rivers in north-central British Columbia. It is the main service, forestry, and university city of the northern Interior, a highway and rail junction toward Prince Rupert, Dawson Creek, and the south. Winters are cold; the surrounding landscape is forest and plateau. About 77,000 people live in Prince George.",
+  "seoSummary": "Northern Interior B.C. service city at the Fraser and Nechako confluence.",
+  "knownFor": [
+    "Confluence of the Fraser and Nechako rivers",
+    "Forestry, mills, and a northern transportation hub",
+    "University of Northern British Columbia",
+    "Gateway to northern B.C. highways",
+    "Cold winters on the Interior plateau"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Exploration Place",
+      "why": "Museum and science centre at Cottonwood Island."
+    },
+    {
+      "name": "Two Rivers Gallery",
+      "why": "Public art gallery downtown."
+    },
+    {
+      "name": "Forests for the World",
+      "why": "Hilltop trails and lookout above the city."
+    },
+    {
+      "name": "Cottonwood Island Nature Park",
+      "why": "River-island park at the confluence."
+    },
+    {
+      "name": "University of Northern British Columbia",
+      "why": "Hill campus with views over the river valleys."
+    }
+  ]
+}

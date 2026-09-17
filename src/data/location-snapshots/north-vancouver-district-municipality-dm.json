@@ -1,0 +1,33 @@
+{
+  "about": "The District of North Vancouver is a district municipality on Burrard Inlet’s North Shore, wrapping around the much smaller City of North Vancouver. It is largely residential and forested, climbing from shoreline neighbourhoods such as Deep Cove and Lynn Valley into the North Shore mountains. Capilano, Lynn Canyon, Grouse Mountain, and Mount Seymour all sit inside or on the edge of the district—not in the City. About 88,000 people live in the district.",
+  "seoSummary": "North Shore district municipality of mountains and forest, including Deep Cove, Lynn Canyon, and Grouse.",
+  "knownFor": [
+    "North Shore mountains and forested residential neighbourhoods",
+    "Deep Cove on Indian Arm",
+    "Capilano Suspension Bridge and Grouse Mountain",
+    "Lynn Canyon and the Seymour River valley",
+    "A separate government from the City of North Vancouver"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Capilano Suspension Bridge Park",
+      "why": "Canyon suspension bridge and forest park above the Capilano River."
+    },
+    {
+      "name": "Grouse Mountain",
+      "why": "Ski hill and lookout reached by the Grouse Grind or Skyride."
+    },
+    {
+      "name": "Lynn Canyon Park",
+      "why": "Free canyon suspension bridge and forest trails."
+    },
+    {
+      "name": "Deep Cove",
+      "why": "Village harbour on Indian Arm, with kayaking and Quarry Rock."
+    },
+    {
+      "name": "Mount Seymour Provincial Park",
+      "why": "Ski and hiking mountain at the district’s eastern edge."
+    }
+  ]
+}

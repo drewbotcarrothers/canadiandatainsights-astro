@@ -1,0 +1,33 @@
+{
+  "about": "Chatham-Kent is a single-tier municipality in southwestern Ontario, covering a wide rural territory from the Thames River to Lake Erie. The urban centre is Chatham; Wallaceburg, Dresden, Ridgetown, Blenheim, and several lake-shore communities sit across the municipality. Farms, food processing, and Great Lakes shipping shape the local economy. About 104,000 people live in Chatham-Kent.",
+  "seoSummary": "Southwestern Ontario municipality of farms and towns from the Thames River to Lake Erie.",
+  "knownFor": [
+    "Amalgamated city of many former towns and townships",
+    "Thames River at Chatham",
+    "Lake Erie shoreline and agricultural hinterland",
+    "Uncle Tom’s Cabin Historic Site in Dresden",
+    "Food processing and greenhouse country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Tecumseh Park",
+      "why": "Riverside park in downtown Chatham."
+    },
+    {
+      "name": "Uncle Tom’s Cabin Historic Site",
+      "why": "Josiah Henson’s settlement site in Dresden, tied to the Underground Railroad."
+    },
+    {
+      "name": "Chatham Capitol Theatre",
+      "why": "Restored movie palace downtown."
+    },
+    {
+      "name": "RM Classic Car Exhibit",
+      "why": "Large collection of restored automobiles in Chatham."
+    },
+    {
+      "name": "Wheatley Provincial Park",
+      "why": "Lake Erie parkland and trails in the southwest of the municipality."
+    }
+  ]
+}
