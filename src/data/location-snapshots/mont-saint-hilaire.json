@@ -1,0 +1,33 @@
+{
+  "about": "Mont-Saint-Hilaire is a city in Montérégie, Quebec, on the Richelieu River at the foot of the Monteregian hill of the same name, southeast of Montreal. Apple orchards, a heritage village core, and mountain trails define a South Shore community known for art and outdoor recreation. About 19,000 people live in Mont-Saint-Hilaire.",
+  "seoSummary": "Richelieu River city at Mont Saint-Hilaire—orchards, mountain trails, and a heritage South Shore core.",
+  "knownFor": [
+    "City at the foot of Mont Saint-Hilaire",
+    "Apple orchards and agrotourism on the South Shore",
+    "Mountain hiking and Gault Nature Reserve approaches",
+    "Heritage village character on the Richelieu",
+    "Arts community tied to the mountain landscape"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Mont Saint-Hilaire trails / Gault Nature Reserve",
+      "why": "Hiking on the Monteregian hill above the city."
+    },
+    {
+      "name": "Downtown / chemin des Patriotes area",
+      "why": "Shops, cafés, and riverside streets."
+    },
+    {
+      "name": "Orchard and cider routes",
+      "why": "Seasonal picking and tasting around the mountain."
+    },
+    {
+      "name": "Musée des beaux-arts de Mont-Saint-Hilaire",
+      "why": "Regional art museum linked to the local arts scene."
+    },
+    {
+      "name": "Richelieu River waterfront",
+      "why": "Parks and views along the river."
+    }
+  ]
+}

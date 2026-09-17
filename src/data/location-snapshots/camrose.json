@@ -1,0 +1,33 @@
+{
+  "about": "Camrose is a city in east-central Alberta, southeast of Edmonton in parkland farming country. A compact downtown, Augustana Campus of the University of Alberta, and regional retail serve surrounding counties. Highways 13 and 21 meet in a classic prairie service centre. About 19,000 people live in Camrose.",
+  "seoSummary": "East-central Alberta parkland city—regional service hub with Augustana Campus southeast of Edmonton.",
+  "knownFor": [
+    "Parkland farming-region service city",
+    "Augustana Campus of the University of Alberta",
+    "Compact downtown and regional retail",
+    "Highway 13 / 21 junction in east-central Alberta",
+    "Big Valley Jamboree and community festival tradition"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Camrose",
+      "why": "Shops and civic buildings in the city centre."
+    },
+    {
+      "name": "Mirror Lake Park",
+      "why": "Central park, paths, and waterfowl viewing."
+    },
+    {
+      "name": "Camrose Railway Museum / heritage sites",
+      "why": "Local transport and prairie history."
+    },
+    {
+      "name": "Augustana Campus grounds",
+      "why": "University greenery and community events."
+    },
+    {
+      "name": "Stoney Creek / trail network",
+      "why": "Urban trails through coulees and parks."
+    }
+  ]
+}

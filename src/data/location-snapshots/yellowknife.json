@@ -1,0 +1,33 @@
+{
+  "about": "Yellowknife is the capital of the Northwest Territories, on the northern shore of Great Slave Lake on the Canadian Shield. Government, mining heritage, and northern research shape a compact city of old town rock outcrops, Frame Lake trails, and a modern downtown. It is the territories’ main air hub and service centre. About 20,000 people live in Yellowknife.",
+  "seoSummary": "Capital of the Northwest Territories on Great Slave Lake—government hub, Shield rock, and northern lights country.",
+  "knownFor": [
+    "Capital of the Northwest Territories",
+    "Great Slave Lake waterfront and Old Town rock outcrops",
+    "Northern lights viewing and polar-day summers",
+    "Diamond and gold mining heritage",
+    "Main air and government hub for the N.W.T."
+  ],
+  "seeAndDo": [
+    {
+      "name": "Old Town / Pilot’s Monument",
+      "why": "Historic harbour quarter and lookout over the bay."
+    },
+    {
+      "name": "Frame Lake Trail",
+      "why": "Popular urban walking loop around Frame Lake."
+    },
+    {
+      "name": "Prince of Wales Northern Heritage Centre",
+      "why": "Territorial museum of northern cultures and history."
+    },
+    {
+      "name": "Bush Pilots Monument / Ragged Ass Road area",
+      "why": "Classic Yellowknife viewpoints and colourful streets."
+    },
+    {
+      "name": "Great Slave Lake shore ice road season",
+      "why": "Winter lake travel and summer floatplane country."
+    }
+  ]
+}

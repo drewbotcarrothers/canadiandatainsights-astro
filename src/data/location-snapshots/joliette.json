@@ -1,0 +1,33 @@
+{
+  "about": "Joliette is a city in Lanaudière, Quebec, on the L’Assomption River northeast of Montreal. It serves as a regional cultural and service centre, with a historic downtown, arts institutions, and festival tradition. Highways 31 and 158 link it toward Montreal’s north shore. About 21,000 people live in Joliette.",
+  "seoSummary": "Lanaudière regional city on the L’Assomption River—arts, festivals, and a historic downtown.",
+  "knownFor": [
+    "Regional hub of Lanaudière northeast of Montreal",
+    "Festival de Lanaudière classical music tradition",
+    "Historic downtown on the L’Assomption River",
+    "Arts and cultural institutions for the region",
+    "Service centre for surrounding Lanaudière municipalities"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Joliette / Place Bourget area",
+      "why": "Shops, cafés, and civic heart of the city."
+    },
+    {
+      "name": "Musée d’art de Joliette",
+      "why": "Major regional art museum."
+    },
+    {
+      "name": "Cathédrale Saint-Charles-Borromée",
+      "why": "Landmark cathedral in the city centre."
+    },
+    {
+      "name": "L’Assomption River waterfront walks",
+      "why": "Riverside paths through the urban core."
+    },
+    {
+      "name": "Festival de Lanaudière venues (seasonal)",
+      "why": "Summer classical concerts drawing national audiences."
+    }
+  ]
+}

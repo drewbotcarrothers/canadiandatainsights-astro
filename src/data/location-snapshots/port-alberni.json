@@ -1,0 +1,33 @@
+{
+  "about": "Port Alberni is a city at the head of Alberni Inlet on Vancouver Island, British Columbia, inland from the west-coast surf beaches toward Ucluelet and Tofino. Forestry harbour heritage, inlet scenery, and a valley setting between mountain ranges define the Alberni Valley’s main centre. About 18,000 people live in Port Alberni.",
+  "seoSummary": "Vancouver Island city at the head of Alberni Inlet—forestry harbour and gateway toward Pacific Rim beaches.",
+  "knownFor": [
+    "City at the head of Alberni Inlet",
+    "Forestry and working-harbour heritage",
+    "Gateway toward Pacific Rim / Tofino–Ucluelet routes",
+    "Alberni Valley mountain-and-inlet setting",
+    "Salmon fishing and inlet recreation"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Harbour Quay",
+      "why": "Waterfront boardwalk, shops, and inlet views."
+    },
+    {
+      "name": "Robertson Creek / local hatchery visits",
+      "why": "Salmon heritage interpretation in the valley."
+    },
+    {
+      "name": "Della Falls approaches / hinterland trails",
+      "why": "Backcountry access into Strathcona country (trip planning required)."
+    },
+    {
+      "name": "Downtown Port Alberni",
+      "why": "Local shops and civic services in the valley core."
+    },
+    {
+      "name": "Sproat Lake (nearby)",
+      "why": "Swimming, pictographs, and lake recreation west of the city."
+    }
+  ]
+}

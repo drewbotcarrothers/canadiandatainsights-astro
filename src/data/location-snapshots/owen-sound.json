@@ -1,0 +1,33 @@
+{
+  "about": "Owen Sound is a city at the head of Owen Sound harbour on Georgian Bay, in Grey County, Ontario. Steep harbour hills drop to a working waterfront and a compact downtown, with trails climbing into the Niagara Escarpment. It anchors the region’s hospital, retail, and ferry-access corridors toward the Bruce Peninsula. About 22,000 people live in Owen Sound.",
+  "seoSummary": "Georgian Bay harbour city at the head of Owen Sound—Escarpment trails and a working waterfront.",
+  "knownFor": [
+    "Harbour city on Georgian Bay",
+    "Niagara Escarpment ravines and waterfall trails",
+    "Regional service hub for Grey and Bruce counties",
+    "Historic downtown and waterfront parks",
+    "Gateway toward the Bruce Peninsula"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Harrison Park",
+      "why": "Large riverside park with trails, pools, and picnic areas."
+    },
+    {
+      "name": "Inglis Falls",
+      "why": "Escarpment waterfall and conservation area south of town."
+    },
+    {
+      "name": "Downtown Owen Sound / harbourfront",
+      "why": "Shops, murals, and bay views along the waterfront."
+    },
+    {
+      "name": "Tom Thomson Art Gallery",
+      "why": "Regional art museum tied to the Group of Seven painter’s roots."
+    },
+    {
+      "name": "Billy Bishop Home and Museum",
+      "why": "Historic house museum of the WWI flying ace."
+    }
+  ]
+}

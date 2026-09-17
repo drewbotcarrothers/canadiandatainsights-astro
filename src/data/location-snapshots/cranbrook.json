@@ -1,0 +1,33 @@
+{
+  "about": "Cranbrook is a city in the East Kootenay region of southeastern British Columbia, in the Rocky Mountain Trench south of Kimberley. It is the region’s main retail, health, and transport hub, with airport links and highway corridors toward Alberta and the U.S. border. Surrounding peaks frame a compact urban core. About 20,000 people live in Cranbrook.",
+  "seoSummary": "East Kootenay regional city in the Rocky Mountain Trench—service hub south of Kimberley.",
+  "knownFor": [
+    "Regional hub of the East Kootenays",
+    "Rocky Mountain Trench setting between major ranges",
+    "Retail, hospital, and airport services for the region",
+    "Highway corridor toward Alberta and the border",
+    "Base for mountain recreation near Kimberley and Fernie approaches"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Cranbrook",
+      "why": "Shops and civic buildings in the city centre."
+    },
+    {
+      "name": "Canadian Museum of Rail Travel",
+      "why": "Historic railway cars and transport heritage downtown."
+    },
+    {
+      "name": "Community trails / Elizabeth Lake area",
+      "why": "Local walking and birding near the urban edge."
+    },
+    {
+      "name": "Nearby Kimberley (short drive)",
+      "why": "Alpine-town dining and ski-hill access used by Cranbrook residents."
+    },
+    {
+      "name": "Rotary Park and recreation facilities",
+      "why": "Community green space and sports venues."
+    }
+  ]
+}
