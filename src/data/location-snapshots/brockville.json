@@ -1,0 +1,33 @@
+{
+  "about": "Brockville is a city on the St. Lawrence River in eastern Ontario, at the gateway to the Thousand Islands. It is one of Ontario’s oldest incorporated cities, with a limestone downtown, river tunnel, and blockhouse heritage facing the shipping channel. The city serves as a local service centre between Kingston and Cornwall. About 22,000 people live in Brockville.",
+  "seoSummary": "Historic St. Lawrence River city at the Thousand Islands gateway, with a limestone downtown.",
+  "knownFor": [
+    "Gateway to the Thousand Islands",
+    "One of Ontario’s oldest incorporated cities",
+    "Limestone downtown and riverfront tunnel",
+    "St. Lawrence shipping channel views",
+    "Eastern Ontario service centre between Kingston and Cornwall"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Blockhouse Island / riverfront",
+      "why": "Park and harbour looking into the Thousand Islands."
+    },
+    {
+      "name": "Downtown Brockville",
+      "why": "King Street limestone shops and civic buildings."
+    },
+    {
+      "name": "Brockville Railway Tunnel",
+      "why": "Canada’s oldest railway tunnel, now a lit walkway."
+    },
+    {
+      "name": "Fulford Place",
+      "why": "Edwardian mansion museum overlooking the river."
+    },
+    {
+      "name": "Thousand Islands boat tours",
+      "why": "Cruises departing toward the island archipelago."
+    }
+  ]
+}

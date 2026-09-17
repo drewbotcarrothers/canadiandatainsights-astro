@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Lambert is a South Shore city in Montérégie, directly across the St. Lawrence from downtown Montréal via the Victoria Bridge. It is an older, leafy suburban city with a strong anglophone heritage, Victoria Avenue shops, and riverfront parks facing the harbour. Commuter trains and bridges tie it tightly to the island. About 23,000 people live in Saint-Lambert.",
+  "seoSummary": "Leafy South Shore city facing Montréal across the Victoria Bridge, with a historic riverside core.",
+  "knownFor": [
+    "Victoria Bridge gateway to Montréal",
+    "Leafy streets and anglophone South Shore heritage",
+    "Victoria Avenue commercial spine",
+    "St. Lawrence riverfront parks",
+    "Older suburban city rather than a new fringe suburb"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc de la Marina / riverfront",
+      "why": "Shore parks looking at Montréal’s skyline."
+    },
+    {
+      "name": "Avenue Victoria",
+      "why": "Shops, cafés, and the city’s main street."
+    },
+    {
+      "name": "Downtown / civic square area",
+      "why": "Libraries, churches, and heritage buildings."
+    },
+    {
+      "name": "Bike paths toward the Seaway / Longueuil",
+      "why": "South Shore cycling corridors."
+    },
+    {
+      "name": "Victoria Bridge viewpoints",
+      "why": "Historic bridge approaches into Montréal."
+    }
+  ]
+}

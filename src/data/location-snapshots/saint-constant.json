@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Constant is a South Shore city in Montérégie, southwest of Montréal near the St. Lawrence Seaway and Autoroute 30. It mixes older village streets with newer suburban neighbourhoods and is known regionally for the Exporail Canadian Railway Museum. Agricultural land still borders parts of the municipality. About 30,000 people live in Saint-Constant.",
+  "seoSummary": "South Shore city near the Seaway, home to the Exporail Canadian Railway Museum.",
+  "knownFor": [
+    "Exporail Canadian Railway Museum",
+    "South Shore suburb near Autoroute 30",
+    "Village core with newer residential districts",
+    "Proximity to the St. Lawrence Seaway corridor",
+    "Remaining farmland at the municipal edge"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Exporail – Canadian Railway Museum",
+      "why": "Large railway collection and historic rolling stock."
+    },
+    {
+      "name": "Parc municipal and sports fields",
+      "why": "Community parks and outdoor recreation."
+    },
+    {
+      "name": "Village centre",
+      "why": "Older streets and local shops of the historic core."
+    },
+    {
+      "name": "Nearby Seaway / Kahnawà:ke views",
+      "why": "Regional waterway landscape just beyond the city."
+    },
+    {
+      "name": "Trail and bike paths",
+      "why": "Local green corridors linking neighbourhoods."
+    }
+  ]
+}

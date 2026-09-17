@@ -1,0 +1,33 @@
+{
+  "about": "Whitehorse is the capital and largest community of Yukon, on the Yukon River in a broad mountain valley. It is the territory’s government, transport, and service hub, with a compact downtown above the river and neighbourhoods climbing the surrounding benches. Wilderness trails start minutes from city streets. About 28,000 people live in Whitehorse.",
+  "seoSummary": "Yukon’s capital on the Yukon River—the territory’s main government and service hub.",
+  "knownFor": [
+    "Capital of Yukon",
+    "Yukon River waterfront and historic downtown",
+    "Gateway to territorial wilderness and the Alaska Highway",
+    "Northern lights viewing in winter",
+    "Largest community in northern Canada’s territories by a wide margin"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Yukon River waterfront / Rotary Peace Park",
+      "why": "Riverside walks below downtown cliffs."
+    },
+    {
+      "name": "Miles Canyon",
+      "why": "Basalt canyon and suspension bridge south of town."
+    },
+    {
+      "name": "SS Klondike National Historic Site",
+      "why": "Beached sternwheeler museum on the riverbank."
+    },
+    {
+      "name": "Yukon Beringia Interpretive Centre",
+      "why": "Ice-age and Ice Age mammal exhibits by the airport."
+    },
+    {
+      "name": "Downtown Main Street",
+      "why": "Shops, murals, and civic buildings of the capital."
+    }
+  ]
+}

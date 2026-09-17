@@ -1,0 +1,33 @@
+{
+  "about": "Collingwood is a town on Nottawasaga Bay in Simcoe County, Ontario, at the base of the Niagara Escarpment’s Blue Mountains. It grew as a Georgian Bay shipbuilding and grain-port town and is now a four-season recreation hub for skiing, cycling, and waterfront living. A historic downtown and harbour define the urban core. About 25,000 people live in Collingwood.",
+  "seoSummary": "Georgian Bay harbour town at the Blue Mountains—skiing, cycling, and a historic downtown.",
+  "knownFor": [
+    "Gateway to Blue Mountain Resort",
+    "Historic downtown and harbour on Nottawasaga Bay",
+    "Former grain elevators and shipbuilding heritage",
+    "Four-season outdoor recreation hub",
+    "Escarpment trails and waterfront living"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Collingwood",
+      "why": "Hurontario and nearby streets of shops and restaurants."
+    },
+    {
+      "name": "Collingwood Harbour / waterfront",
+      "why": "Boardwalk, marina, and bay views."
+    },
+    {
+      "name": "Blue Mountain Resort (adjacent)",
+      "why": "Ski hills and village a short drive up the escarpment."
+    },
+    {
+      "name": "Pretty River / local trail network",
+      "why": "Cycling and hiking links toward the mountains."
+    },
+    {
+      "name": "Eddie Bush Memorial Arena / Mill Street area",
+      "why": "Civic and heritage pockets near the core."
+    }
+  ]
+}

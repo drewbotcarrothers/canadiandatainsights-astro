@@ -1,0 +1,33 @@
+{
+  "about": "Candiac is a South Shore city in Montérégie, on the St. Lawrence east of La Prairie toward the Champlain Bridge corridor. It is an affluent planned suburb with waterfront parks, tree-lined streets, and easy Exo train access into Montréal. The city’s compact footprint faces the river and the Seaway channel. About 23,000 people live in Candiac.",
+  "seoSummary": "Affluent South Shore planned suburb on the St. Lawrence, with train links into Montréal.",
+  "knownFor": [
+    "Planned South Shore suburb of Greater Montréal",
+    "St. Lawrence waterfront parks",
+    "Exo Candiac line commuting",
+    "Affluent residential streets",
+    "Compact riverside city beside La Prairie"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc de la Marina / waterfront",
+      "why": "River parks and boat access facing Montréal."
+    },
+    {
+      "name": "Centre-ville commercial streets",
+      "why": "Local shops and services in the planned core."
+    },
+    {
+      "name": "Network of municipal parks",
+      "why": "Neighbourhood green space throughout the city."
+    },
+    {
+      "name": "Bike paths toward La Prairie",
+      "why": "South Shore cycling links along the river corridor."
+    },
+    {
+      "name": "Candiac train station area",
+      "why": "Commuter rail gateway into downtown Montréal."
+    }
+  ]
+}

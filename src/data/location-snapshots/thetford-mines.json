@@ -1,0 +1,33 @@
+{
+  "about": "Thetford Mines is a city in Québec’s Chaudière-Appalaches region, in the Appalachian foothills southwest of Québec City. It grew as a major asbestos-mining centre; mine dumps and pit landscapes still mark the city’s edge. Downtown sits in a valley of working-class neighbourhoods and service streets. About 26,000 people live in Thetford Mines.",
+  "seoSummary": "Appalachian foothills city in Chaudière-Appalaches, shaped by its historic asbestos-mining past.",
+  "knownFor": [
+    "Historic asbestos-mining capital",
+    "Appalachian foothills setting",
+    "Mine-tailings landscapes at the city’s edge",
+    "Service hub for the surrounding MRC",
+    "Valley downtown and working-class neighbourhoods"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Musée minéralogique et minier",
+      "why": "Mining and mineral history of the Thetford region."
+    },
+    {
+      "name": "Downtown Thetford Mines",
+      "why": "Commercial streets in the valley core."
+    },
+    {
+      "name": "Parc national de Frontenac (nearby)",
+      "why": "Lakes and forests a short drive into the Appalachians."
+    },
+    {
+      "name": "Mine-viewpoint landscapes",
+      "why": "Open-pit and tailings topography surrounding the city."
+    },
+    {
+      "name": "Local recreation centres",
+      "why": "Arenas and community sports facilities."
+    }
+  ]
+}

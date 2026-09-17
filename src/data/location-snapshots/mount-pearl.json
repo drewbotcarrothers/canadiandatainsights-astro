@@ -1,0 +1,33 @@
+{
+  "about": "Mount Pearl is a city on Newfoundland and Labrador’s Avalon Peninsula, immediately southwest of St. John’s. It is a dense residential and commercial suburb with its own downtown along Commonwealth Avenue, distinct from the capital yet fully inside the metro area. Parks, arenas, and big-box retail define much of daily life. About 22,000 people live in Mount Pearl.",
+  "seoSummary": "Dense residential city southwest of St. John’s—Newfoundland’s second-largest urban centre.",
+  "knownFor": [
+    "Second-largest city in Newfoundland and Labrador",
+    "Immediate suburb of St. John’s",
+    "Commonwealth Avenue commercial corridor",
+    "Strong parks and recreation profile",
+    "Distinct municipal identity inside the capital metro"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Mount Pearl / Commonwealth Avenue",
+      "why": "Main commercial and civic spine."
+    },
+    {
+      "name": "Power’s Pond Park",
+      "why": "Popular pond trails and outdoor recreation."
+    },
+    {
+      "name": "Glacier Arena / Pearlgate recreation area",
+      "why": "Arenas and community sports facilities."
+    },
+    {
+      "name": "Admiralty House Museum",
+      "why": "Wireless-history museum in a historic building."
+    },
+    {
+      "name": "Trail links toward St. John’s",
+      "why": "Walking and cycling into neighbouring city parks."
+    }
+  ]
+}

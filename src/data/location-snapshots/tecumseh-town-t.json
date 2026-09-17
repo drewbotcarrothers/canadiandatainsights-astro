@@ -1,0 +1,33 @@
+{
+  "about": "Tecumseh is a town in Essex County, Ontario, on Lake St. Clair immediately east of Windsor. It is a suburban lakeshore community of waterfront parks, newer subdivisions, and a commercial strip along County Road 22. Proximity to Windsor shapes commuting while the lake shore gives the town its own character. About 23,000 people live in Tecumseh.",
+  "seoSummary": "Lake St. Clair town immediately east of Windsor, a suburban lakeshore community.",
+  "knownFor": [
+    "Lake St. Clair waterfront parks",
+    "Eastern suburb of the Windsor area",
+    "Lakeshore trails and marinas",
+    "County Road 22 commercial corridor",
+    "Quiet residential alternative to central Windsor"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Tecumseh Waterfront / Lacasse Park area",
+      "why": "Lake St. Clair shore parks and views."
+    },
+    {
+      "name": "Tecumseh Corners / main commercial area",
+      "why": "Shops and services along the town’s commercial spine."
+    },
+    {
+      "name": "Shoreline trail network",
+      "why": "Walking and cycling beside the lake."
+    },
+    {
+      "name": "Community recreation complex",
+      "why": "Arenas and sports facilities for residents."
+    },
+    {
+      "name": "Nearby Lake St. Clair boat launches",
+      "why": "Access to the lake’s western basin."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Chestermere is a city on a reservoir lake immediately east of Calgary in Alberta. It grew from a summer cottage shoreline into a full suburban city wrapped around Chestermere Lake, with waterfront paths, new neighbourhoods, and easy access to the Trans-Canada Highway. About 22,000 people live in Chestermere.",
+  "seoSummary": "Suburban city wrapped around Chestermere Lake, immediately east of Calgary.",
+  "knownFor": [
+    "City built around Chestermere Lake reservoir",
+    "Eastern edge of the Calgary metro",
+    "Waterfront paths and lake recreation",
+    "Rapid suburban residential growth",
+    "Trans-Canada Highway gateway east of Calgary"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Chestermere Lake shoreline",
+      "why": "Beaches, boat launches, and circling multi-use paths."
+    },
+    {
+      "name": "Waterfront parks / beach areas",
+      "why": "Public swimming and picnic shores on the reservoir."
+    },
+    {
+      "name": "Downtown / commercial nodes",
+      "why": "Shops and services for the lake city."
+    },
+    {
+      "name": "Pathway loop around the lake",
+      "why": "Walking and cycling the full shoreline circuit."
+    },
+    {
+      "name": "Nearby prairie edge toward Rocky View",
+      "why": "Open country just beyond the city limits."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Dieppe is a city beside Moncton in southeastern New Brunswick, on the Petitcodiac River tidal flats. It is a largely francophone community within Greater Moncton, with newer commercial corridors along Champlain Street and residential neighbourhoods toward the airport. The city grew rapidly as Moncton’s east-side twin. About 28,000 people live in Dieppe.",
+  "seoSummary": "Francophone city beside Moncton on the Petitcodiac, a fast-growing part of Greater Moncton.",
+  "knownFor": [
+    "Predominantly francophone city in Greater Moncton",
+    "Champlain Street commercial corridor",
+    "Petitcodiac River and tidal bore viewing nearby",
+    "Proximity to Greater Moncton Roméo LeBlanc International Airport",
+    "Rapid residential and retail growth"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown / Champlain Street",
+      "why": "Main commercial spine of shops and restaurants."
+    },
+    {
+      "name": "Dover Road / riverfront parks",
+      "why": "Green space facing the Petitcodiac marshes."
+    },
+    {
+      "name": "Dieppe Sports and Exhibition Centre area",
+      "why": "Arenas and community event venues."
+    },
+    {
+      "name": "Trail network toward Moncton",
+      "why": "Walking and cycling links across the twin cities."
+    },
+    {
+      "name": "Nearby tidal bore viewpoints",
+      "why": "Watch the Petitcodiac tidal wave from Greater Moncton shores."
+    }
+  ]
+}

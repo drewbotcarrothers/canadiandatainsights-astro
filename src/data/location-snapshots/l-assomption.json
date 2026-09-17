@@ -1,0 +1,33 @@
+{
+  "about": "L’Assomption is a city in Québec’s Lanaudière region, on the L’Assomption River northeast of Montréal. It grew from a seigneurial parish into a regional service centre with a historic core and newer suburbs along Autoroute 40 approaches. The river and remaining farmland still shape the city’s edges. About 23,000 people live in L’Assomption.",
+  "seoSummary": "Lanaudière river city northeast of Montréal, a regional centre on the Rivière L’Assomption.",
+  "knownFor": [
+    "Historic core on the L’Assomption River",
+    "Lanaudière regional service city",
+    "Seigneurial and parish heritage",
+    "Autoroute 40 corridor growth",
+    "Farmland remaining at the municipal edge"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Vieux-L’Assomption / centre-ville",
+      "why": "Historic streets and civic buildings near the river."
+    },
+    {
+      "name": "Rivière L’Assomption parks",
+      "why": "Riverfront green space through the city."
+    },
+    {
+      "name": "Parc des Moissons and municipal parks",
+      "why": "Community recreation fields and playgrounds."
+    },
+    {
+      "name": "Local cultural centres",
+      "why": "Theatre and library venues in the civic core."
+    },
+    {
+      "name": "Countryside toward Joliette",
+      "why": "Short drives into Lanaudière farmland."
+    }
+  ]
+}

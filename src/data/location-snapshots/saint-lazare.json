@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Lazare is a city on Montréal’s West Island fringe in Montérégie, west of Vaudreuil-Dorion toward the Ontario border approaches. It is known for equestrian estates, low-density residential streets, and remaining woodland—more countryside suburb than dense city. Highway 40 access ties residents into Greater Montréal. About 22,000 people live in Saint-Lazare.",
+  "seoSummary": "West Island–edge Montérégie city of equestrian estates and wooded low-density suburbs.",
+  "knownFor": [
+    "Equestrian and horse-farm landscape",
+    "Low-density wooded residential streets",
+    "West of Vaudreuil-Dorion on Montréal’s outer fringe",
+    "Family-oriented suburb with rural character",
+    "Highway 40 commuting into Greater Montréal"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc Nature Les Forestiers-de-Saint-Lazare",
+      "why": "Woodland trails preserved inside the city."
+    },
+    {
+      "name": "Equestrian centres and riding roads",
+      "why": "Horse farms and bridle paths that define local character."
+    },
+    {
+      "name": "Municipal parks and sports fields",
+      "why": "Community recreation for residents."
+    },
+    {
+      "name": "Village commercial area",
+      "why": "Local shops serving the dispersed neighbourhoods."
+    },
+    {
+      "name": "Nearby Vaudreuil–Hudson corridor",
+      "why": "Short trips to neighbouring West Island–edge towns."
+    }
+  ]
+}
