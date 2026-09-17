@@ -1,0 +1,33 @@
+{
+  "about": "Prince Edward County is a single-tier municipality in eastern Ontario, a nearly island-like peninsula in Lake Ontario south of Belleville. Despite its official city status, it feels like a rural county of farms, beaches, and small towns—Picton, Wellington, Bloomfield, and others—famous for wine, sand dunes, and summer tourism. About 26,000 people live in Prince Edward County.",
+  "seoSummary": "Lake Ontario peninsula municipality of Picton, beaches, dunes, and wine country—rural in character.",
+  "knownFor": [
+    "Wine region and farm-to-table food scene",
+    "Sandbanks Provincial Park dunes and beaches",
+    "Picton as the main town",
+    "Island-like peninsula in Lake Ontario",
+    "Arts, inns, and summer tourism"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Sandbanks Provincial Park",
+      "why": "Huge freshwater dunes and swimming beaches."
+    },
+    {
+      "name": "Downtown Picton",
+      "why": "County town shops, harbour, and Regent Theatre."
+    },
+    {
+      "name": "Wellington and Bloomfield",
+      "why": "Village main streets on the wine route."
+    },
+    {
+      "name": "County winery trail",
+      "why": "Vineyards across the limestone plain."
+    },
+    {
+      "name": "Lake on the Mountain",
+      "why": "Hilltop lake viewpoint above the Glenora ferry."
+    }
+  ]
+}

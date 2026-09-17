@@ -1,0 +1,33 @@
+{
+  "about": "Okotoks is a town on the Sheep River south of Calgary in Alberta’s foothills. It grew from a ranch-and-rail settlement into a fast-expanding bedroom community with a walkable downtown and large residential neighbourhoods. The Big Rock glacial erratic and Sheep River valley parks are the town’s signature landscapes. About 30,000 people live in Okotoks.",
+  "seoSummary": "Foothills town on the Sheep River south of Calgary, known for the Big Rock erratic.",
+  "knownFor": [
+    "Big Rock glacial erratic west of town",
+    "Sheep River valley parks and trails",
+    "Rapid growth as a Calgary-region bedroom community",
+    "Walkable downtown core",
+    "Foothills gateway toward southern Alberta ranch country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Okotoks Big Rock",
+      "why": "Massive glacial erratic in the fields west of town."
+    },
+    {
+      "name": "Sheep River valley parks",
+      "why": "Riverside trails and green space through the town centre."
+    },
+    {
+      "name": "Downtown Okotoks",
+      "why": "Historic main street shops and cafés."
+    },
+    {
+      "name": "Family Leisure Centre",
+      "why": "Indoor recreation hub for the growing town."
+    },
+    {
+      "name": "Pathway network",
+      "why": "Multi-use trails linking neighbourhoods to the river."
+    }
+  ]
+}

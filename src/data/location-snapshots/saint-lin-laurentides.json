@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Lin–Laurentides is a city in Québec’s Lanaudière region, northwest of Montréal beyond the immediate North Shore suburbs. It mixes a historic village associated with Sir Wilfrid Laurier’s birthplace with newer residential growth along rural highways. Farmland and woodlots still surround much of the municipality. About 24,000 people live in Saint-Lin–Laurentides.",
+  "seoSummary": "Lanaudière city northwest of Montréal, known for Laurier’s birthplace and surrounding farmland.",
+  "knownFor": [
+    "Birthplace of Sir Wilfrid Laurier",
+    "Lanaudière city beyond Montréal’s inner suburbs",
+    "Historic village core with newer housing growth",
+    "Surrounding farmland and woodlots",
+    "Highway corridor community toward the Laurentians edge"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Sir Wilfrid Laurier National Historic Site",
+      "why": "Birthplace house museum of Canada’s seventh prime minister."
+    },
+    {
+      "name": "Village centre",
+      "why": "Local shops and the parish core."
+    },
+    {
+      "name": "Municipal parks and sports fields",
+      "why": "Community recreation for a growing residential city."
+    },
+    {
+      "name": "Countryside roads",
+      "why": "Farm and woodlot drives around the municipal edge."
+    },
+    {
+      "name": "Nearby Lanaudière lakes region",
+      "why": "Short trips toward cottage country north and west."
+    }
+  ]
+}

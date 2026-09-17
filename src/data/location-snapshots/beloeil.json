@@ -1,0 +1,33 @@
+{
+  "about": "Beloeil is a South Shore city in Montérégie, on the Richelieu River facing Mont-Saint-Hilaire across the water. It combines a riverside village character with suburban neighbourhoods and is closely tied to the mountain’s trails and apple country. The Jacques-Cartier bridge over the Richelieu links Beloeil to McMasterville and Mont-Saint-Hilaire. About 24,000 people live in Beloeil.",
+  "seoSummary": "Richelieu River city facing Mont-Saint-Hilaire, a South Shore community of river and mountain views.",
+  "knownFor": [
+    "Richelieu River waterfront facing Mont-Saint-Hilaire",
+    "South Shore suburban city with village roots",
+    "Gateway to Mont-Saint-Hilaire trails and orchards",
+    "Bridge links to McMasterville and Mont-Saint-Hilaire",
+    "Parks and cycling along the river"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Promenade / Parc de la rivière Richelieu",
+      "why": "Riverfront walks with mountain views across the water."
+    },
+    {
+      "name": "Centre-ville de Beloeil",
+      "why": "Shops and cafés near the historic core."
+    },
+    {
+      "name": "Parc national du Mont-Saint-Hilaire (across the river)",
+      "why": "Iconic Monteregian mountain trails and apple orchards."
+    },
+    {
+      "name": "Pont Jacques-Cartier (Beloeil)",
+      "why": "River crossing toward McMasterville and the mountain."
+    },
+    {
+      "name": "Local bike paths",
+      "why": "Routes along the Richelieu valley."
+    }
+  ]
+}

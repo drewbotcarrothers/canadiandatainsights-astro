@@ -1,0 +1,33 @@
+{
+  "about": "La Prairie is a South Shore city in Montérégie, on the St. Lawrence immediately south of Montréal near the Champlain Bridge approaches. It preserves a historic Vieux-La Prairie village on the river while newer suburbs extend inland toward Autoroute 30. Commuter rail and highway links tie it tightly to Montréal. About 26,000 people live in La Prairie.",
+  "seoSummary": "South Shore city with a historic riverfront village facing Montréal across the St. Lawrence.",
+  "knownFor": [
+    "Vieux-La Prairie riverside village",
+    "South Shore suburb facing Montréal",
+    "St. Lawrence waterfront parks",
+    "Exo / highway commuting into Montréal",
+    "Mix of heritage core and inland suburbs"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Vieux-La Prairie",
+      "why": "Stone church, old streets, and riverfront village core."
+    },
+    {
+      "name": "Parc de la Marina / waterfront",
+      "why": "Shore parks looking toward Montréal’s skyline."
+    },
+    {
+      "name": "Parc René-Lévesque area paths",
+      "why": "Local green corridors and recreation fields."
+    },
+    {
+      "name": "Promenade riveraine",
+      "why": "Walking along the St. Lawrence edge."
+    },
+    {
+      "name": "Nearby Canal de la Rive-Sud links",
+      "why": "Regional cycling toward neighbouring South Shore cities."
+    }
+  ]
+}

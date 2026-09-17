@@ -1,0 +1,33 @@
+{
+  "about": "White Rock is a small city on Boundary Bay in Metro Vancouver’s South Surrey area, known for its long waterfront promenade, pier, and the landmark white glacial boulder on the shore. Steep streets drop from the uplands to a beachfront strip of restaurants and shops facing the bay and the U.S. border marshes. About 22,000 people live in White Rock.",
+  "seoSummary": "Small Metro Vancouver seaside city on Boundary Bay, known for its pier and white rock landmark.",
+  "knownFor": [
+    "Namesake white glacial boulder on the beach",
+    "Long pier and Marine Drive waterfront",
+    "Boundary Bay views toward the U.S. border",
+    "Steep hillside neighbourhoods above the shore",
+    "Compact seaside city beside Surrey"
+  ],
+  "seeAndDo": [
+    {
+      "name": "White Rock Pier",
+      "why": "Long wooden pier into Boundary Bay."
+    },
+    {
+      "name": "The White Rock",
+      "why": "Landmark boulder that gave the city its name."
+    },
+    {
+      "name": "Marine Drive promenade",
+      "why": "Restaurants, shops, and beach walking along the shore."
+    },
+    {
+      "name": "East and West Beach",
+      "why": "Sand and tidal flats on either side of the pier."
+    },
+    {
+      "name": "Hillside parks / Centennial Park area",
+      "why": "Views down to the bay from the upland streets."
+    }
+  ]
+}

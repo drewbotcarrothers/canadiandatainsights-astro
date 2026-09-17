@@ -1,0 +1,33 @@
+{
+  "about": "Courtenay is a city on Vancouver Island’s east coast, at the head of the Courtenay River estuary facing Comox Harbour. It is the largest urban centre in the Comox Valley, paired with neighbouring Comox and Cumberland. Mountains, estuary trails, and a revitalized downtown define the city’s character. About 28,000 people live in Courtenay.",
+  "seoSummary": "Comox Valley’s main city on Vancouver Island, at the Courtenay River estuary.",
+  "knownFor": [
+    "Hub city of the Comox Valley",
+    "Courtenay River estuary and harbour views",
+    "Gateway toward Strathcona Provincial Park and Mount Washington",
+    "Arts-oriented downtown",
+    "Mild east-Island climate and outdoor recreation"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Courtenay",
+      "why": "Shops, galleries, and the Filberg-adjacent valley arts scene."
+    },
+    {
+      "name": "Courtenay Riverway / estuary trails",
+      "why": "Waterfront paths along the river and tidal flats."
+    },
+    {
+      "name": "Simms Millennium Park",
+      "why": "Central park and festival grounds by the river."
+    },
+    {
+      "name": "Comox Lake / Puntledge River area",
+      "why": "Nearby swimming, trails, and river recreation."
+    },
+    {
+      "name": "Mount Washington Alpine Resort (nearby)",
+      "why": "Ski and summer alpine destination above the valley."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Fort Saskatchewan is a city on the North Saskatchewan River northeast of Edmonton, in Alberta’s Industrial Heartland. It began as a North-West Mounted Police fort and grew with petrochemical plants along the river valley. A historic downtown, river valley trails, and a large Dow chemical complex define the modern city. About 27,000 people live in Fort Saskatchewan.",
+  "seoSummary": "North Saskatchewan River city northeast of Edmonton in Alberta’s Industrial Heartland.",
+  "knownFor": [
+    "Industrial Heartland petrochemical centre",
+    "North-West Mounted Police fort origins",
+    "North Saskatchewan River valley parks",
+    "Historic downtown core",
+    "Commuter and industrial city in the Edmonton metro"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Fort Heritage Precinct",
+      "why": "Reconstructed fort and museum of NWMP and pioneer history."
+    },
+    {
+      "name": "River valley trails",
+      "why": "Paths along the North Saskatchewan through the city."
+    },
+    {
+      "name": "Downtown Fort Saskatchewan",
+      "why": "Main street shops and civic buildings."
+    },
+    {
+      "name": "Turner Park / Jones Park area",
+      "why": "Community parks and recreation fields."
+    },
+    {
+      "name": "Dow Centennial Centre",
+      "why": "Performing arts and recreation complex."
+    }
+  ]
+}

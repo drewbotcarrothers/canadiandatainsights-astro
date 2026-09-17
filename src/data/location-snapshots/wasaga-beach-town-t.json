@@ -1,0 +1,33 @@
+{
+  "about": "Wasaga Beach is a town on Georgian Bay in Simcoe County, Ontario, with one of the longest freshwater beaches in the world. It is a major summer tourism destination of beach strips, rental cottages, and a commercial strip behind the dunes, quieter in the off-season as a growing permanent community. The Nottawasaga River meets the bay at the town’s heart. About 25,000 people live in Wasaga Beach.",
+  "seoSummary": "Georgian Bay beach town with one of the world’s longest freshwater beaches.",
+  "knownFor": [
+    "Extremely long freshwater beach on Georgian Bay",
+    "Major Ontario summer tourism destination",
+    "Nottawasaga River mouth at the beach",
+    "Beachfront commercial strip and rental culture",
+    "Growing year-round residential community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Wasaga Beach Provincial Park beaches",
+      "why": "Kilometres of public sand on Georgian Bay."
+    },
+    {
+      "name": "Beach Areas 1–2 boardwalk strip",
+      "why": "Main tourist promenade and shops behind the dunes."
+    },
+    {
+      "name": "Nottawasaga River mouth",
+      "why": "River meeting the bay at the town centre."
+    },
+    {
+      "name": "Allenwood and New Wasaga beach sections",
+      "why": "Quieter stretches east and west of the main strip."
+    },
+    {
+      "name": "Trail network / Sparrow Place arboretum area",
+      "why": "Inland walking away from the shoreline crowds."
+    }
+  ]
+}

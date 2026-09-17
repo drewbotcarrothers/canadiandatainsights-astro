@@ -1,0 +1,33 @@
+{
+  "about": "Kingsville is a town in Essex County, Ontario, on Lake Erie west of Leamington. It mixes a historic main street, marina harbour, and surrounding greenhouse and vineyard country. Jack Miner’s bird sanctuary heritage and easy access to Point Pelee’s western approaches shape its visitor profile. About 22,000 people live in Kingsville.",
+  "seoSummary": "Lake Erie town in Essex County with a historic harbour main street and greenhouse country.",
+  "knownFor": [
+    "Historic downtown and Lake Erie harbour",
+    "Greenhouse and vineyard countryside",
+    "Jack Miner Bird Sanctuary heritage",
+    "Gateway toward Point Pelee’s west side",
+    "Small lakeshore town west of Leamington"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Kingsville / Main Street",
+      "why": "Shops and restaurants in a walkable historic core."
+    },
+    {
+      "name": "Kingsville Harbour / lakeshore",
+      "why": "Marina, parks, and Lake Erie views."
+    },
+    {
+      "name": "Jack Miner Migratory Bird Foundation",
+      "why": "Historic bird sanctuary and migration landmark."
+    },
+    {
+      "name": "Colasanti’s / greenhouse country drives",
+      "why": "Tropical gardens and glasshouse landscape nearby."
+    },
+    {
+      "name": "Lakeshore Road toward Leamington",
+      "why": "Scenic Erie shore drive through farm country."
+    }
+  ]
+}

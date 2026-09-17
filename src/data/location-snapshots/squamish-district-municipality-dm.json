@@ -1,0 +1,33 @@
+{
+  "about": "Squamish is a district municipality at the head of Howe Sound in British Columbia, between Vancouver and Whistler on the Sea to Sky Highway. Steep granite walls, the Stawamus Chief, and estuary wetlands frame a growing adventure-sports town that still anchors logging and industrial harbour history. About 24,000 people live in Squamish.",
+  "seoSummary": "Howe Sound adventure town on the Sea to Sky Highway, beneath the Stawamus Chief.",
+  "knownFor": [
+    "Stawamus Chief granite massif and climbing",
+    "Sea to Sky Highway between Vancouver and Whistler",
+    "Wind sports on Howe Sound and the spit",
+    "Estuary and Coast Mountain scenery",
+    "Rapidly growing outdoor-recreation community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Stawamus Chief Provincial Park",
+      "why": "Iconic granite peaks, hiking, and climbing above town."
+    },
+    {
+      "name": "Shannon Falls Provincial Park",
+      "why": "Tall waterfall beside the Sea to Sky Highway."
+    },
+    {
+      "name": "Squamish Estuary / Spit",
+      "why": "Windsurfing, kiteboarding, and estuary trails."
+    },
+    {
+      "name": "Downtown Squamish",
+      "why": "Cleveland Avenue shops and the adventure-town core."
+    },
+    {
+      "name": "Sea to Sky Gondola",
+      "why": "Gondola and summit boardwalks above Howe Sound."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Bruno-de-Montarville is a South Shore city in Montérégie, at the foot of Mont Saint-Bruno east of Longueuil. An affluent suburban community wraps around Parc national du Mont-Saint-Bruno and a historic village core. Ski slopes, apple orchards, and mountain trails sit inside and beside the city. About 26,000 people live in Saint-Bruno-de-Montarville.",
+  "seoSummary": "Affluent South Shore city at Mont Saint-Bruno, wrapping a national park and historic village.",
+  "knownFor": [
+    "Parc national du Mont-Saint-Bruno",
+    "Affluent South Shore suburb of Greater Montréal",
+    "Mountain skiing and orchard country in town",
+    "Historic village centre",
+    "Commuter city with strong outdoor recreation"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc national du Mont-Saint-Bruno",
+      "why": "Lakes, trails, skiing, and mountain forest inside the city."
+    },
+    {
+      "name": "Village de Saint-Bruno",
+      "why": "Shops and cafés in the historic centre."
+    },
+    {
+      "name": "Verger / orchard roads",
+      "why": "Apple country on the mountain’s flanks."
+    },
+    {
+      "name": "Centre de ski Mont-Saint-Bruno",
+      "why": "Local ski hill within the park landscape."
+    },
+    {
+      "name": "Municipal parks and bike paths",
+      "why": "Neighbourhood green links below the mountain."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Magog is a city at the north end of Lake Memphremagog in Québec’s Eastern Townships (Estrie), where the Magog River leaves the lake toward Sherbrooke. It is a resort and service town for lake recreation, with a lively waterfront and mountain views toward Owl’s Head and Mont Orford. Tourism and a year-round residential base share the shoreline. About 28,000 people live in Magog.",
+  "seoSummary": "Eastern Townships lakeside city at the north tip of Lake Memphremagog, near Mont Orford.",
+  "knownFor": [
+    "North shore of Lake Memphremagog",
+    "Gateway to Parc national du Mont-Orford",
+    "Resort and waterfront promenade culture",
+    "Magog River outlet toward Sherbrooke",
+    "Eastern Townships tourism hub"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Lac Memphrémagog waterfront",
+      "why": "Promenade, beaches, and boat access at the lake’s north end."
+    },
+    {
+      "name": "Parc national du Mont-Orford",
+      "why": "Nearby mountains, lakes, hiking, and skiing."
+    },
+    {
+      "name": "Centre-ville de Magog",
+      "why": "Rue Principale shops and restaurants near the water."
+    },
+    {
+      "name": "Plage municipale / lake beaches",
+      "why": "Public swimming on Memphremagog."
+    },
+    {
+      "name": "Riverwalk toward the Magog River",
+      "why": "Paths where the lake drains toward Sherbrooke."
+    }
+  ]
+}

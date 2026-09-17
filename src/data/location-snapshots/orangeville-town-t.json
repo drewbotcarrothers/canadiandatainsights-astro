@@ -1,0 +1,33 @@
+{
+  "about": "Orangeville is a town in Dufferin County, Ontario, northwest of the Greater Toronto Area on the upper Credit River. It serves as the county seat and a service hub for surrounding farmland and hill country toward the Niagara Escarpment. A Victorian downtown and Island Lake are the town’s public landmarks. About 30,000 people live in Orangeville.",
+  "seoSummary": "Dufferin County seat northwest of the GTA, on the upper Credit River and Island Lake.",
+  "knownFor": [
+    "County seat of Dufferin County",
+    "Victorian downtown main street",
+    "Island Lake Conservation Area",
+    "Service town for surrounding farmland and hill country",
+    "Gateway toward the Niagara Escarpment and Hockley Valley"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Orangeville",
+      "why": "Broadway shops in a Victorian commercial core."
+    },
+    {
+      "name": "Island Lake Conservation Area",
+      "why": "Reservoir trails, paddling, and shoreline parks east of downtown."
+    },
+    {
+      "name": "Credit River corridor",
+      "why": "Upper river green space through and near town."
+    },
+    {
+      "name": "Hockley Valley area",
+      "why": "Nearby escarpment hills, inns, and ski hills south of town."
+    },
+    {
+      "name": "Theatre Orangeville",
+      "why": "Professional theatre company in the downtown core."
+    }
+  ]
+}

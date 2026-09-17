@@ -1,0 +1,33 @@
+{
+  "about": "Grimsby is a town on the Niagara Escarpment and Lake Ontario shore between Hamilton and St. Catharines. It sits in Niagara’s tender-fruit and wine belt, with a historic downtown below the escarpment brow and beaches along the lake. The Bruce Trail and orchard country are close at hand. About 29,000 people live in Grimsby.",
+  "seoSummary": "Niagara lakeshore town on the Escarpment between Hamilton and St. Catharines.",
+  "knownFor": [
+    "Niagara Escarpment and Bruce Trail access",
+    "Lake Ontario waterfront parks",
+    "Tender-fruit and wine-country setting",
+    "Historic downtown below the escarpment",
+    "Commuter town between Hamilton and the Niagara Peninsula"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Grimsby Beach / waterfront",
+      "why": "Lakefront parks and historic cottage-community shoreline."
+    },
+    {
+      "name": "Downtown Grimsby",
+      "why": "Main street shops at the foot of the escarpment."
+    },
+    {
+      "name": "Beamer Memorial Conservation Area",
+      "why": "Escarpment lookout and hawk-watch site above town."
+    },
+    {
+      "name": "Bruce Trail segments",
+      "why": "Escarpment hiking near the town boundary."
+    },
+    {
+      "name": "Forty Mile Creek parks",
+      "why": "Creek corridor green space through the community."
+    }
+  ]
+}

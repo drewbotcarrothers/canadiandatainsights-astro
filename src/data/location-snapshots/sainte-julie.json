@@ -1,0 +1,33 @@
+{
+  "about": "Sainte-Julie is a South Shore city in Montérégie, east of Longueuil along Autoroute 20. It grew from a rural parish into a family-oriented suburban city of parks, schools, and residential neighbourhoods. Woodlots and agricultural edges still frame parts of the municipal boundary. About 30,000 people live in Sainte-Julie.",
+  "seoSummary": "Family-oriented Montérégie suburb on Autoroute 20, east of Longueuil on the South Shore.",
+  "knownFor": [
+    "South Shore suburban city of Greater Montréal",
+    "Parks and recreation focus for families",
+    "Autoroute 20 commuter corridor",
+    "Remaining woodlots and farmland at the urban edge",
+    "Residential neighbourhoods rather than a dense downtown skyline"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc Rolland-J.-A.-Allard and municipal parks",
+      "why": "Large community parks and sports fields."
+    },
+    {
+      "name": "Centre communautaire / arena complex",
+      "why": "Indoor recreation and civic gatherings."
+    },
+    {
+      "name": "Bois and trail network",
+      "why": "Woodlot paths preserved inside the suburban fabric."
+    },
+    {
+      "name": "Village commercial streets",
+      "why": "Local shops along the older parish spine."
+    },
+    {
+      "name": "Nearby Montérégie countryside",
+      "why": "Short drives to remaining farms and orchards beyond the city line."
+    }
+  ]
+}

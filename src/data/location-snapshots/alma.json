@@ -1,0 +1,33 @@
+{
+  "about": "Alma is a city in Québec’s Saguenay–Lac-Saint-Jean region, on the Grande Décharge at the outlet of Lac Saint-Jean. It grew with pulp, paper, and aluminum industry along the river channels that drain the lake. The waterfront, islands, and winter outdoor culture remain central to daily life. About 30,000 people live in Alma.",
+  "seoSummary": "Saguenay–Lac-Saint-Jean city at the Grande Décharge outlet of Lac Saint-Jean.",
+  "knownFor": [
+    "Gateway at the outlet of Lac Saint-Jean",
+    "Pulp, paper, and aluminum industrial heritage",
+    "River islands and waterfront promenades",
+    "Winter outdoor culture in the Lac-Saint-Jean region",
+    "Dam and power infrastructure on the Grande Décharge"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Promenade du Lac-Saint-Jean / waterfront",
+      "why": "Shore walks facing the lake outlet and channels."
+    },
+    {
+      "name": "Île Maligne and river islands",
+      "why": "Islands and bridges in the Grande Décharge channels."
+    },
+    {
+      "name": "Musée du fromage cheddar",
+      "why": "Local cheddar museum reflecting Lac-Saint-Jean food culture."
+    },
+    {
+      "name": "Parc des Aulnaies / riverside parks",
+      "why": "Green space along the river corridors."
+    },
+    {
+      "name": "Downtown Alma",
+      "why": "Commercial core and civic square of the regional city."
+    }
+  ]
+}
