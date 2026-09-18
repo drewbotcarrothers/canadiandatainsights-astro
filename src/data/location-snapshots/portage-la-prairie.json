@@ -1,0 +1,33 @@
+{
+  "about": "Portage la Prairie is a city in southern Manitoba on the Assiniboine River, about an hour west of Winnipeg along the Trans-Canada Highway. Prairie agriculture, a historic Main Street, and a role as a regional service centre for the Portage Plains define the community. About 13,000 people live in Portage la Prairie.",
+  "seoSummary": "Southern Manitoba city on the Assiniboine west of Winnipeg—prairie agriculture and Trans-Canada service hub.",
+  "knownFor": [
+    "Assiniboine River city west of Winnipeg",
+    "Portage Plains agricultural hub",
+    "Trans-Canada Highway prairie stop",
+    "Historic downtown and Island Park",
+    "Regional service centre for south-central Manitoba"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Island Park / Crescent Lake",
+      "why": "Urban park, zoo, and lake loop in the city."
+    },
+    {
+      "name": "Downtown Portage la Prairie",
+      "why": "Main Street shops and prairie-city streetscape."
+    },
+    {
+      "name": "Fort la Reine Museum",
+      "why": "Pioneer and regional history exhibits."
+    },
+    {
+      "name": "Manitoba Agricultural Museum (nearby Austin)",
+      "why": "Short drive to major farm-heritage site."
+    },
+    {
+      "name": "Assiniboine River valley drives",
+      "why": "Prairie river scenery toward Winnipeg and Brandon."
+    }
+  ]
+}

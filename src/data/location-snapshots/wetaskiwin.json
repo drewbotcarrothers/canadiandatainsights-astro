@@ -1,0 +1,33 @@
+{
+  "about": "Wetaskiwin is a city in central Alberta south of Edmonton, in parkland farming country near Maskwacis and Highway 2A. The Reynolds-Alberta Museum’s aviation and transportation collections, a historic Main Street, and a role as an agricultural service centre define the community. About 13,000 people live in Wetaskiwin.",
+  "seoSummary": "Central Alberta city south of Edmonton—Reynolds-Alberta Museum, historic Main Street, and parkland farm hub.",
+  "knownFor": [
+    "Reynolds-Alberta Museum aviation and transport collections",
+    "Central Alberta parkland city south of Edmonton",
+    "Historic downtown Main Street",
+    "Agricultural service centre near Maskwacis",
+    "Highway 2A corridor community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Reynolds-Alberta Museum",
+      "why": "Major provincial museum of vehicles, aircraft, and agriculture."
+    },
+    {
+      "name": "Canada’s Aviation Hall of Fame",
+      "why": "Aviation heritage exhibits beside the Reynolds museum."
+    },
+    {
+      "name": "Downtown Wetaskiwin",
+      "why": "Historic Main Street shops and services."
+    },
+    {
+      "name": "By-the-Lake Park",
+      "why": "Urban recreation lake and pathways."
+    },
+    {
+      "name": "Parkland farm drives",
+      "why": "Countryside toward Millet and Maskwacis."
+    }
+  ]
+}

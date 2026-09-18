@@ -1,0 +1,33 @@
+{
+  "about": "Erin is a town in Wellington County, Ontario, in the Hills of Headwaters between Orangeville and Guelph, covering Erin village, Hillsburgh, and surrounding countryside. Rolling farmland, the West Credit River, and a small-town Main Street define a rural municipality often mistaken for only its namesake village. About 12,000 people live in Erin.",
+  "seoSummary": "Wellington County town in the Hills of Headwaters—Erin village, Hillsburgh, and West Credit River countryside.",
+  "knownFor": [
+    "Hills of Headwaters town of villages and farms",
+    "Erin village Main Street",
+    "Hillsburgh as a second settlement",
+    "West Credit River and rolling Wellington countryside",
+    "Between Orangeville and Guelph on scenic roads"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Erin village",
+      "why": "Main Street shops and cafés in the town core."
+    },
+    {
+      "name": "Hillsburgh village",
+      "why": "Secondary hub with local services."
+    },
+    {
+      "name": "West Credit River walks",
+      "why": "Scenic waterway through headwaters country."
+    },
+    {
+      "name": "Countryside drives toward Forks of the Credit",
+      "why": "Rolling hills and nearby conservation scenery."
+    },
+    {
+      "name": "Local farms and seasonal markets",
+      "why": "Headwaters produce and rural stands."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Amos is a city in Quebec’s Abitibi-Témiscamingue region, on the Rivière Harricana north of Val-d’Or and Rouyn-Noranda. Mining and forestry heritage, a bilingual service-hub role for the Abitibi, and northern boreal setting define the community. About 13,000 people live in Amos.",
+  "seoSummary": "Abitibi-Témiscamingue city on the Harricana—mining-forestry hub and northern Quebec service centre.",
+  "knownFor": [
+    "Abitibi city on the Rivière Harricana",
+    "Mining and forestry regional hub",
+    "Northern Quebec boreal service centre",
+    "Gateway toward James Bay highway country",
+    "Bilingual Abitibi community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Centre-ville Amos",
+      "why": "Main commercial streets and regional services."
+    },
+    {
+      "name": "Rivière Harricana waterfront",
+      "why": "River parks and northern-city scenery."
+    },
+    {
+      "name": "Refuge Pageau (nearby)",
+      "why": "Wildlife rehabilitation centre popular with visitors."
+    },
+    {
+      "name": "Parc régional / local trails",
+      "why": "Outdoor recreation in Abitibi forest country."
+    },
+    {
+      "name": "Route de la Baie-James approaches",
+      "why": "Gateway drives toward James Bay territory."
+    }
+  ]
+}

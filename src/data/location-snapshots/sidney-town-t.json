@@ -1,0 +1,33 @@
+{
+  "about": "Sidney is a town on the Saanich Peninsula north of Victoria, British Columbia, on the Salish Sea near Victoria International Airport and the Swartz Bay ferry terminal. Bookstores, a harbour waterfront, and a role as a peninsula service and tourist town define the community. About 12,000 people live in Sidney.",
+  "seoSummary": "Saanich Peninsula town north of Victoria—harbour, bookstores, and gateway near the airport and Swartz Bay ferries.",
+  "knownFor": [
+    "Town on the Saanich Peninsula north of Victoria",
+    "Beacon Avenue bookstores and harbour village feel",
+    "Near Victoria International Airport",
+    "Close to Swartz Bay BC Ferries terminal",
+    "Salish Sea waterfront and whale-watching departures"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Beacon Avenue / downtown Sidney",
+      "why": "Bookshops, cafés, and peninsula Main Street."
+    },
+    {
+      "name": "Sidney waterfront / Fisherman’s Wharf area",
+      "why": "Harbour walks and seaside parks."
+    },
+    {
+      "name": "Shaw Centre for the Salish Sea",
+      "why": "Aquarium focused on local marine life."
+    },
+    {
+      "name": "Sidney Spit (Gulf Islands National Park Reserve)",
+      "why": "Ferry or boat day trip to a sandy spit island."
+    },
+    {
+      "name": "Lochside Trail approaches",
+      "why": "Cycling path linking Sidney toward Victoria."
+    }
+  ]
+}

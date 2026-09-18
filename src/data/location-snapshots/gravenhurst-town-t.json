@@ -1,0 +1,33 @@
+{
+  "about": "Gravenhurst is a town at the southern gateway to Muskoka, Ontario, on Lake Muskoka and Gull Lake. Steamship heritage, a waterfront downtown, and a role as the first major Muskoka stop north of the GTA define the cottage-country community. About 13,000 people live in Gravenhurst.",
+  "seoSummary": "Southern Muskoka town on Lake Muskoka—steamship heritage and cottage-country gateway north of the GTA.",
+  "knownFor": [
+    "Southern gateway to Muskoka cottage country",
+    "RMS Segwun and steamship heritage",
+    "Lake Muskoka and Gull Lake waterfront",
+    "Birthplace of Norman Bethune museum site",
+    "Highway 11 Muskoka corridor town"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Muskoka Wharf / Discovery Centre",
+      "why": "Waterfront boardwalk, steamship docks, and exhibits."
+    },
+    {
+      "name": "RMS Segwun cruises",
+      "why": "Historic steamship trips on Lake Muskoka."
+    },
+    {
+      "name": "Bethune Memorial House National Historic Site",
+      "why": "Childhood home of Norman Bethune."
+    },
+    {
+      "name": "Downtown Gravenhurst",
+      "why": "Main Street shops near the harbour."
+    },
+    {
+      "name": "Gull Lake Rotary Park",
+      "why": "Beach and park on Gull Lake in town."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Prévost is a city in Quebec’s Laurentides, on the Rivière du Nord north of Saint-Jérôme along Autoroute 15. Wooded neighbourhoods, river valleys, and a gateway role toward the Laurentians ski and cottage country define a growing North Shore community. About 14,000 people live in Prévost.",
+  "seoSummary": "Laurentides city on the Rivière du Nord north of Saint-Jérôme—wooded neighbourhoods and Laurentians gateway.",
+  "knownFor": [
+    "Laurentides city north of Saint-Jérôme",
+    "Rivière du Nord valley setting",
+    "Gateway toward Laurentians ski and cottage country",
+    "Wooded residential neighbourhoods",
+    "Autoroute 15 North Shore corridor"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc linéaire Le P’tit Train du Nord",
+      "why": "Rail-trail cycling and walking through Prévost."
+    },
+    {
+      "name": "Rivière du Nord parks",
+      "why": "Riverfront green space in the municipal core."
+    },
+    {
+      "name": "Centre-ville Prévost",
+      "why": "Local shops and services along the main corridors."
+    },
+    {
+      "name": "Nearby Saint-Sauveur approaches",
+      "why": "Short drive to ski hills and village shopping."
+    },
+    {
+      "name": "Forest trails and neighbourhood paths",
+      "why": "Wooded walks in Laurentides residential country."
+    }
+  ]
+}

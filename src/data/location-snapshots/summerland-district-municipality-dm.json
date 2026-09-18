@@ -1,0 +1,33 @@
+{
+  "about": "Summerland is a district municipality on the west side of Okanagan Lake in British Columbia’s Okanagan Valley, between Peachland and Penticton—not a large city. Orchards, vineyards, a lakeside town centre, and Giant’s Head mountain define a fruit-growing community. About 12,000 people live in Summerland.",
+  "seoSummary": "Okanagan Lake district municipality between Peachland and Penticton—orchards, vineyards, and Giant’s Head, not a city.",
+  "knownFor": [
+    "District municipality on Okanagan Lake, not a large city",
+    "Orchards, vineyards, and fruit-growing heritage",
+    "Giant’s Head mountain above town",
+    "Westside Okanagan between Peachland and Penticton",
+    "Lakeside parks and winery country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Giant’s Head Park / summit hike",
+      "why": "Iconic hilltop views over Okanagan Lake."
+    },
+    {
+      "name": "Downtown Summerland / Lakeshore",
+      "why": "Town centre shops and lake access."
+    },
+    {
+      "name": "Summerland Sweets / fruit stands",
+      "why": "Local orchard products and tasting."
+    },
+    {
+      "name": "Kettle Valley Steam Railway",
+      "why": "Heritage train through orchard and canyon country."
+    },
+    {
+      "name": "Winery and orchard drives",
+      "why": "West Okanagan tasting-room routes."
+    }
+  ]
+}

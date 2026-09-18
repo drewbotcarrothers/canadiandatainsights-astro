@@ -1,0 +1,33 @@
+{
+  "about": "Bécancour is a city in Centre-du-Québec on the south shore of the St. Lawrence River opposite Trois-Rivières, at the mouth of the Rivière Bécancour. A large industrial park, riverfront neighbourhoods, and a mix of urban and rural territory define the community. About 14,000 people live in Bécancour.",
+  "seoSummary": "Centre-du-Québec city on the St. Lawrence opposite Trois-Rivières—industrial park and Rivière Bécancour mouth.",
+  "knownFor": [
+    "St. Lawrence south-shore city opposite Trois-Rivières",
+    "Major industrial and port park",
+    "Rivière Bécancour at the St. Lawrence confluence",
+    "Mix of urban core and rural territory",
+    "Centre-du-Québec river community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc de l’Anse",
+      "why": "Riverfront park with views toward Trois-Rivières."
+    },
+    {
+      "name": "Centre-ville Bécancour",
+      "why": "Local shops and services in the urban core."
+    },
+    {
+      "name": "Rivière Bécancour shores",
+      "why": "Confluence scenery where the river meets the St. Lawrence."
+    },
+    {
+      "name": "Nearby Nicolet and lake country",
+      "why": "Short drives to Lac Saint-Pierre approaches."
+    },
+    {
+      "name": "Industrial park viewpoints (from public roads)",
+      "why": "Scale of the region’s major employment zone."
+    }
+  ]
+}
