@@ -1,0 +1,33 @@
+{
+  "about": "Canmore is a town in Alberta’s Bow Valley, in the Rocky Mountains just east of Banff National Park along the Trans-Canada Highway. Former coal-mining roots give way to outdoor recreation, mountain neighbourhoods, and a busy Main Street serving hikers, skiers, and Banff-bound travellers. About 16,000 people live in Canmore.",
+  "seoSummary": "Bow Valley mountain town east of Banff National Park—trails, peaks, and a busy Main Street gateway.",
+  "knownFor": [
+    "Rocky Mountain town east of Banff National Park",
+    "Hiking, climbing, and Nordic ski gateway",
+    "Former coal town turned outdoor recreation hub",
+    "Three Sisters and Bow Valley mountain views",
+    "Trans-Canada Highway mountain gateway"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Main Street / downtown Canmore",
+      "why": "Shops, restaurants, and mountain-town atmosphere."
+    },
+    {
+      "name": "Grassi Lakes trail",
+      "why": "Short hike to turquoise lakes above town."
+    },
+    {
+      "name": "Canmore Nordic Centre Provincial Park",
+      "why": "Olympic-legacy trails for skiing and biking."
+    },
+    {
+      "name": "Policeman’s Creek boardwalk",
+      "why": "Wetland walk with downtown and peak views."
+    },
+    {
+      "name": "Ha Ling Peak / East End of Rundle approaches",
+      "why": "Iconic Bow Valley scramble and hike trailheads."
+    }
+  ]
+}

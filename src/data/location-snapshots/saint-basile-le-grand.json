@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Basile-le-Grand is a South Shore city in Montérégie, Quebec, between Mont-Saint-Bruno and the Richelieu corridor toward McMasterville. Suburban neighbourhoods, parks, and quick access to Mont-Saint-Bruno’s trails and orchards define a residential Montréal-region community. About 17,000 people live in Saint-Basile-le-Grand.",
+  "seoSummary": "Montérégie South Shore city beside Mont-Saint-Bruno, a residential community of parks and mountain access.",
+  "knownFor": [
+    "South Shore city next to Mont-Saint-Bruno",
+    "Residential Montérégie community toward the Richelieu",
+    "Gateway to mountain trails and apple country",
+    "Parks and family neighbourhoods",
+    "Regional transit links toward Montréal"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc national du Mont-Saint-Bruno (nearby)",
+      "why": "Lakes, trails, and ski hills on the Monteregian mountain."
+    },
+    {
+      "name": "Local parks and bike paths",
+      "why": "Neighbourhood green space and cycling links."
+    },
+    {
+      "name": "Centre-ville commercial streets",
+      "why": "Shops and services in the municipal core."
+    },
+    {
+      "name": "Orchard country approaches",
+      "why": "Apple and farm stands on the mountain’s flanks."
+    },
+    {
+      "name": "Richelieu valley drives",
+      "why": "Short trips toward Beloeil and river towns."
+    }
+  ]
+}

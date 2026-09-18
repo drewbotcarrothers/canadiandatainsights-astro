@@ -1,0 +1,33 @@
+{
+  "about": "Lavaltrie is a city in Lanaudière, Quebec, on the north shore of the St. Lawrence River between Repentigny and Lanoraie. A riverside setting, local services, and Highway 40 corridor access define a growing North Shore community with views across the river. About 14,000 people live in Lavaltrie.",
+  "seoSummary": "Lanaudière city on the St. Lawrence between Repentigny and Lanoraie—riverside North Shore community.",
+  "knownFor": [
+    "St. Lawrence north-shore city in Lanaudière",
+    "Riverside parks and river views",
+    "Highway 40 corridor community",
+    "Neighbour between Repentigny and Lanoraie",
+    "Growing residential North Shore city"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc riverain / St. Lawrence waterfront",
+      "why": "Shoreline walks with wide river views."
+    },
+    {
+      "name": "Centre-ville commercial streets",
+      "why": "Shops and services in the municipal core."
+    },
+    {
+      "name": "Local bike paths and parks",
+      "why": "Neighbourhood recreation along the shore."
+    },
+    {
+      "name": "Community recreation centres",
+      "why": "Arenas and sports facilities."
+    },
+    {
+      "name": "Countryside drives toward Lanoraie",
+      "why": "Farm and river-road scenery east of town."
+    }
+  ]
+}

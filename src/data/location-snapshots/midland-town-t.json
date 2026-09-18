@@ -1,0 +1,33 @@
+{
+  "about": "Midland is a town on Georgian Bay in Simcoe County, Ontario, at the heart of historic Huronia. A working harbour, downtown streets, and nearby Wye Marsh and Sainte-Marie among the Hurons shape its identity as a bayfront service and tourism centre. Highway 12 and the Georgian Bay coastline bring cottage and cruise traffic through town. About 18,000 people live in Midland.",
+  "seoSummary": "Georgian Bay harbour town in historic Huronia, near Wye Marsh and Sainte-Marie among the Hurons.",
+  "knownFor": [
+    "Harbour town on Georgian Bay",
+    "Historic Huronia and Jesuit mission country",
+    "Wye Marsh and Sainte-Marie among the Hurons nearby",
+    "Downtown murals and bayfront boardwalk",
+    "Service centre for Tiny and Tay cottage country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Midland Harbour and waterfront",
+      "why": "Boardwalk, marina, and Georgian Bay views."
+    },
+    {
+      "name": "Sainte-Marie among the Hurons",
+      "why": "Reconstructed 17th-century Jesuit mission just south of town."
+    },
+    {
+      "name": "Wye Marsh Wildlife Centre",
+      "why": "Wetlands, trails, and trumpeter swan habitat."
+    },
+    {
+      "name": "Downtown Midland murals",
+      "why": "Painted building faces depicting local history."
+    },
+    {
+      "name": "Little Lake Park",
+      "why": "Urban park and beach near the town centre."
+    }
+  ]
+}

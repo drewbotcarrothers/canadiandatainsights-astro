@@ -1,0 +1,33 @@
+{
+  "about": "Port Hope is a municipality on Lake Ontario in Northumberland County, Ontario, at the mouth of the Ganaraska River. A well-preserved historic downtown, theatre culture, and a working harbour define the lakefront centre; the amalgamated municipality also includes inland rural areas. Highway 401 and County Road 2 pass nearby. About 17,000 people live in Port Hope.",
+  "seoSummary": "Lake Ontario municipality at the Ganaraska River mouth, known for a historic downtown and harbour.",
+  "knownFor": [
+    "Historic downtown on the Ganaraska River",
+    "Lake Ontario harbour and waterfront",
+    "Capitol Theatre and arts culture",
+    "Municipality combining town and rural wards",
+    "Northumberland County lakefront community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Port Hope (Walton Street)",
+      "why": "Heritage commercial street and riverside shops."
+    },
+    {
+      "name": "Capitol Theatre",
+      "why": "Restored atmospheric theatre for live performance and film."
+    },
+    {
+      "name": "Port Hope Harbour and waterfront trail",
+      "why": "Marina, beach access, and lakeshore walks."
+    },
+    {
+      "name": "Ganaraska River parks",
+      "why": "Fishing, trails, and falls views through town."
+    },
+    {
+      "name": "Garden Hill / rural countryside",
+      "why": "Inland farms and hamlets within the municipality."
+    }
+  ]
+}

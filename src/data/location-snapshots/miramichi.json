@@ -1,0 +1,33 @@
+{
+  "about": "Miramichi is a city in northeastern New Brunswick, strung along the Miramichi River where several former towns amalgamated. Atlantic salmon fishing, riverfront boardwalks, and Acadian–Irish–Scottish heritage define the place. Highways 8 and 11 make it a service centre for Northumberland County. About 17,000 people live in Miramichi.",
+  "seoSummary": "Northeastern New Brunswick river city on the Miramichi, known for salmon fishing and amalgamated waterfront towns.",
+  "knownFor": [
+    "Miramichi River and Atlantic salmon fishing",
+    "Amalgamated city of former riverside towns",
+    "Acadian, Irish, and Scottish cultural mix",
+    "Northumberland County service centre",
+    "Riverfront boardwalks and historic streets"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Miramichi River waterfront",
+      "why": "Boardwalks, lookouts, and boat access along the main stem."
+    },
+    {
+      "name": "Beaubears Island (nearby)",
+      "why": "National historic site and Acadian refuge island in the river."
+    },
+    {
+      "name": "Middle Island Irish Historical Park",
+      "why": "Famine-era quarantine island interpretation."
+    },
+    {
+      "name": "Downtown Newcastle / Chatham cores",
+      "why": "Historic main streets from the pre-amalgamation towns."
+    },
+    {
+      "name": "Ritchie Wharf",
+      "why": "Waterfront park and amphitheatre in Newcastle."
+    }
+  ]
+}

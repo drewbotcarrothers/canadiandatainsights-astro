@@ -1,0 +1,33 @@
+{
+  "about": "Swift Current is a city in southwestern Saskatchewan on the Trans-Canada Highway and the Swift Current Creek. Prairie agriculture, a regional service role, and Chinook winds off the open plains shape daily life. The city anchors trade and healthcare for a wide farm hinterland. About 16,000 people live in Swift Current.",
+  "seoSummary": "Southwestern Saskatchewan prairie city on the Trans-Canada, a regional service hub on Swift Current Creek.",
+  "knownFor": [
+    "Prairie city on the Trans-Canada Highway",
+    "Regional service centre for southwest Saskatchewan",
+    "Swift Current Creek valley setting",
+    "Agriculture and agribusiness economy",
+    "Chinook-influenced southern plains climate"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Kinetic Park / exhibition grounds",
+      "why": "Fairgrounds and major outdoor events."
+    },
+    {
+      "name": "Downtown Central Avenue",
+      "why": "Shops and services in the city core."
+    },
+    {
+      "name": "Swift Current Creek trails and parks",
+      "why": "Riverside walks through town."
+    },
+    {
+      "name": "Art Gallery of Swift Current",
+      "why": "Regional visual arts in the downtown."
+    },
+    {
+      "name": "Frontier Leisure Centre",
+      "why": "Municipal aquatics and recreation complex."
+    }
+  ]
+}

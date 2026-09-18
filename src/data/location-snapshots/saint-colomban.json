@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Colomban is a city in the Lower Laurentians north of Montréal, inland from Mirabel and Saint-Jérôme. Wooded residential neighbourhoods and small commercial nodes dominate rather than a dense downtown; Highway 15 and regional roads tie it to the North Shore job market. About 17,000 people live in Saint-Colomban.",
+  "seoSummary": "Lower Laurentians residential city north of Montréal, wooded neighbourhoods toward Mirabel and Saint-Jérôme.",
+  "knownFor": [
+    "Residential Laurentians city north of Montréal",
+    "Wooded neighbourhoods rather than a dense core",
+    "Commuter community toward Mirabel and Saint-Jérôme",
+    "Proximity to Highway 15 North Shore corridor",
+    "Parks and outdoor recreation in a semi-rural setting"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Local parks and trails",
+      "why": "Neighbourhood green space among wooded streets."
+    },
+    {
+      "name": "Village commercial nodes",
+      "why": "Shops and services scattered through the municipality."
+    },
+    {
+      "name": "Nearby Saint-Jérôme amenities",
+      "why": "Regional shopping and culture a short drive south."
+    },
+    {
+      "name": "Mirabel countryside drives",
+      "why": "Rural roads and farmland on the city’s doorstep."
+    },
+    {
+      "name": "Community recreation facilities",
+      "why": "Arenas, fields, and halls used year-round."
+    }
+  ]
+}

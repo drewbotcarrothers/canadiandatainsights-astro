@@ -1,0 +1,33 @@
+{
+  "about": "Lachute is a city in Argenteuil, in Quebec’s Lower Laurentians, on the North River (Rivière du Nord) northwest of Montréal. A historic downtown, agricultural fair heritage, and a service role for surrounding Argenteuil countryside define the place. Highways 50 and 148 provide quick links to the Montréal region. About 14,000 people live in Lachute.",
+  "seoSummary": "Argenteuil city on the Rivière du Nord—historic downtown and Lower Laurentians service hub northwest of Montréal.",
+  "knownFor": [
+    "Argenteuil regional city on the Rivière du Nord",
+    "Historic downtown and civic centre",
+    "Agricultural fair and rural service heritage",
+    "Highway 50 corridor toward Montréal",
+    "Lower Laurentians gateway community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Lachute",
+      "why": "Shops and heritage streets in the city core."
+    },
+    {
+      "name": "Rivière du Nord parks and walks",
+      "why": "Riverside green space through town."
+    },
+    {
+      "name": "Argenteuil Regional Museum",
+      "why": "Local history interpretation."
+    },
+    {
+      "name": "Expo Lachute Fairgrounds",
+      "why": "Home of the long-running Lachute agricultural fair."
+    },
+    {
+      "name": "Nearby Argenteuil countryside / lakes",
+      "why": "Farm and cottage drives outside the city."
+    }
+  ]
+}

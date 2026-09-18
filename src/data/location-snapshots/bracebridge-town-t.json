@@ -1,0 +1,33 @@
+{
+  "about": "Bracebridge is a town in Muskoka District, Ontario, where the Muskoka River drops over Bracebridge Falls in the downtown core. Cottage-country tourism, a historic main street, and year-round service roles for lake communities shape the place. Highways 11 and 118 bring travellers from the GTA into the district. About 17,000 people live in Bracebridge.",
+  "seoSummary": "Muskoka town known for Bracebridge Falls on the Muskoka River and cottage-country services.",
+  "knownFor": [
+    "Bracebridge Falls in the downtown core",
+    "Muskoka District cottage-country service town",
+    "Historic main street and river gorge setting",
+    "Gateway on Highways 11 and 118",
+    "Year-round hub for surrounding lake communities"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Bracebridge Falls and Annie Williams Memorial Park",
+      "why": "Waterfall overlook and riverside park in the town centre."
+    },
+    {
+      "name": "Downtown Manitoba Street",
+      "why": "Shops, cafés, and heritage storefronts."
+    },
+    {
+      "name": "Bracebridge Bay / Muskoka River waterfront",
+      "why": "Boat launches and river views below the falls."
+    },
+    {
+      "name": "Santa’s Village (seasonal)",
+      "why": "Family theme park on the river south of downtown."
+    },
+    {
+      "name": "Muskoka Lakes drives",
+      "why": "Scenic cottage roads to nearby lakes within minutes."
+    }
+  ]
+}

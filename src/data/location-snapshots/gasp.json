@@ -1,0 +1,33 @@
+{
+  "about": "Gaspé is a city at the eastern tip of Quebec’s Gaspé Peninsula, where the York, Dartmouth, and Saint-Jean rivers meet Gaspé Bay toward Forillon National Park. Fishing heritage, a wide bay waterfront, and a role as the peninsula’s eastern service centre define the place. Highway 132 loops through the city. About 15,000 people live in Gaspé.",
+  "seoSummary": "City at the tip of the Gaspé Peninsula on Gaspé Bay, gateway to Forillon National Park.",
+  "knownFor": [
+    "Eastern tip of the Gaspé Peninsula on Gaspé Bay",
+    "Gateway to Forillon National Park",
+    "Fishing and maritime heritage",
+    "Confluence of the York, Dartmouth, and Saint-Jean rivers",
+    "Highway 132 peninsula service centre"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Gaspé Bay waterfront / boardwalk",
+      "why": "Bay views and harbour walks in the city."
+    },
+    {
+      "name": "Forillon National Park (nearby)",
+      "why": "Cliffs, whales, and hiking at the peninsula’s tip."
+    },
+    {
+      "name": "Musée de la Gaspésie",
+      "why": "Regional history and culture in Gaspé."
+    },
+    {
+      "name": "Site of Jacques Cartier’s cross / Cap-aux-Os area",
+      "why": "Interpretation of early European landfall on the bay."
+    },
+    {
+      "name": "Downtown Gaspé",
+      "why": "Shops and services serving the eastern peninsula."
+    }
+  ]
+}

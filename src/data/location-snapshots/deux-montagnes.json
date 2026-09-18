@@ -1,0 +1,33 @@
+{
+  "about": "Deux-Montagnes is a North Shore city in the Laurentides, on Lac des Deux Montagnes where the Ottawa River widens toward the St. Lawrence. EXO train service ends at the waterfront station, linking a lakeside downtown and suburban neighbourhoods to downtown Montréal. Parks and beaches face the lake and Rivière des Mille Îles. About 18,000 people live in Deux-Montagnes.",
+  "seoSummary": "North Shore city on Lac des Deux Montagnes with an EXO train terminus and lakeside parks.",
+  "knownFor": [
+    "Lac des Deux Montagnes waterfront on the North Shore",
+    "EXO Deux-Montagnes train terminus toward Montréal",
+    "Riverside and lakeside parks and beaches",
+    "Suburban city with a compact lakeside core",
+    "Gateway between the Lower Laurentians and the island of Montréal"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc central / waterfront",
+      "why": "Lakeside walks and views across Lac des Deux Montagnes."
+    },
+    {
+      "name": "Gare de Deux-Montagnes",
+      "why": "EXO train station anchoring the lakeside downtown."
+    },
+    {
+      "name": "Plage et parcs riverains",
+      "why": "Summer swimming and shoreline recreation."
+    },
+    {
+      "name": "Centre-ville",
+      "why": "Shops and services near the station and lake."
+    },
+    {
+      "name": "Rivière des Mille Îles shoreline",
+      "why": "Quiet river views on the city’s east side."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Summerside is a city on Prince Edward Island’s south shore, on Bedeque Bay opposite the Northumberland Strait. It is the island’s second-largest urban centre after Charlottetown, with a harbour waterfront, historic downtown, and former air-force base lands now used for business and recreation. About 16,000 people live in Summerside.",
+  "seoSummary": "PEI’s second city on Bedeque Bay—harbour waterfront, historic downtown, and south-shore service hub.",
+  "knownFor": [
+    "Prince Edward Island’s second-largest city",
+    "Bedeque Bay harbour and waterfront boardwalk",
+    "Historic downtown and College of Piping culture",
+    "Former CFB Summerside lands repurposed",
+    "South-shore gateway toward the Confederation Bridge approaches"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Summerside waterfront boardwalk",
+      "why": "Harbour walks and bay views on Bedeque Bay."
+    },
+    {
+      "name": "Downtown Water Street",
+      "why": "Shops, cafés, and heritage commercial buildings."
+    },
+    {
+      "name": "College of Piping and Celtic Performing Arts",
+      "why": "Celtic music and dance performances and classes."
+    },
+    {
+      "name": "Spinnakers’ Landing",
+      "why": "Waterfront shops and seasonal harbour activity."
+    },
+    {
+      "name": "Credit Union Place / recreation complex",
+      "why": "Arenas and aquatics serving the city."
+    }
+  ]
+}
