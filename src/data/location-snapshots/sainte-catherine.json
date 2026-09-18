@@ -1,0 +1,33 @@
+{
+  "about": "Sainte-Catherine is a South Shore city in Montérégie, on the St. Lawrence River opposite Montréal near the Kahnawà:ke Mohawk Territory and the Honoré-Mercier Bridge approaches. Riverside parks, a marina, and suburban neighbourhoods define a compact riverside municipality. About 17,000 people live in Sainte-Catherine.",
+  "seoSummary": "South Shore city on the St. Lawrence near Kahnawà:ke, with riverside parks and marina.",
+  "knownFor": [
+    "St. Lawrence waterfront on Montréal’s South Shore",
+    "Neighbour to Kahnawà:ke and the Mercier Bridge corridor",
+    "Marina and riverside parks",
+    "Compact suburban city with river views",
+    "Cycling links along the Seaway and shore"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc riverain / waterfront",
+      "why": "Shoreline walks facing the St. Lawrence and Montréal."
+    },
+    {
+      "name": "Marina de Sainte-Catherine",
+      "why": "Boat slips and summer harbour life."
+    },
+    {
+      "name": "Centre-ville commercial streets",
+      "why": "Local shops and services near the river."
+    },
+    {
+      "name": "Bike paths along the Seaway",
+      "why": "Cycling routes toward neighbouring South Shore towns."
+    },
+    {
+      "name": "Honoré-Mercier Bridge approaches",
+      "why": "Gateway views toward the island of Montréal."
+    }
+  ]
+}

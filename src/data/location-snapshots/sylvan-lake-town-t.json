@@ -1,0 +1,33 @@
+{
+  "about": "Sylvan Lake is a town in central Alberta on the south shore of Sylvan Lake, west of Red Deer. Summer beach crowds, a lakeside boardwalk, and year-round neighbourhoods make it one of the province’s best-known recreation lakes within an easy drive of the QEII Highway. About 16,000 people live in Sylvan Lake.",
+  "seoSummary": "Central Alberta lakeside town west of Red Deer, known for its beach, boardwalk, and summer recreation.",
+  "knownFor": [
+    "Beach town on Sylvan Lake west of Red Deer",
+    "Summer boardwalk and waterfront crowds",
+    "Central Alberta recreation and cottage gateway",
+    "Year-round residential community by the lake",
+    "Short drive from the Queen Elizabeth II Highway"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Sylvan Lake beach and boardwalk",
+      "why": "Sandy beach, pier, and lakeside promenade."
+    },
+    {
+      "name": "Marina and water sports",
+      "why": "Boating, paddling, and rental activity on the lake."
+    },
+    {
+      "name": "Downtown lakeside streets",
+      "why": "Cafés, shops, and ice cream near the shore."
+    },
+    {
+      "name": "NexSource Centre / recreation facilities",
+      "why": "Indoor aquatics and community sports."
+    },
+    {
+      "name": "Lakeshore parks and pathways",
+      "why": "Walking and cycling along the water."
+    }
+  ]
+}

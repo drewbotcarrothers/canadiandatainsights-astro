@@ -1,0 +1,33 @@
+{
+  "about": "Mont-Laurier is a city in the Upper Laurentians of Quebec, on the Rivière du Lièvre along Highway 117 toward the Réserve faunique Rouge-Matawin and parks farther north. Forestry, outdoor recreation, and a role as the region’s main service centre define the place. About 14,000 people live in Mont-Laurier.",
+  "seoSummary": "Upper Laurentians city on the Lièvre River and Highway 117—forestry and outdoor gateway north of Montréal.",
+  "knownFor": [
+    "Upper Laurentians service city on Highway 117",
+    "Rivière du Lièvre waterfront setting",
+    "Forestry and outdoor recreation economy",
+    "Gateway toward northern parks and wildlife reserves",
+    "Regional healthcare and retail hub"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Mont-Laurier",
+      "why": "Shops and services along the Highway 117 core."
+    },
+    {
+      "name": "Rivière du Lièvre waterfront parks",
+      "why": "River walks and lookouts in the city."
+    },
+    {
+      "name": "Parc national du Mont-Tremblant approaches (south)",
+      "why": "Trail and lake country toward the lower Laurentians."
+    },
+    {
+      "name": "Local beaches and boat launches",
+      "why": "Summer recreation on nearby lakes and the river."
+    },
+    {
+      "name": "Forestry interpretive / outdoor outfitters",
+      "why": "Gear and information for hunting, fishing, and snowmobiling."
+    }
+  ]
+}

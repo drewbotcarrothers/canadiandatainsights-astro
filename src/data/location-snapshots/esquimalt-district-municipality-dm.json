@@ -1,0 +1,33 @@
+{
+  "about": "Esquimalt is a district municipality west of Victoria on Vancouver Island, wrapped around Esquimalt Harbour and CFB Esquimalt, Canada’s Pacific naval base. Working waterfront, older neighbourhoods, and harbour views sit next to the capital without being part of the City of Victoria. About 17,000 people live in Esquimalt.",
+  "seoSummary": "Greater Victoria district municipality on Esquimalt Harbour, home to CFB Esquimalt—not the City of Victoria.",
+  "knownFor": [
+    "District municipality west of Victoria, not the City of Victoria",
+    "CFB Esquimalt, Canada’s Pacific naval base",
+    "Esquimalt Harbour working waterfront",
+    "Older capital-region neighbourhoods and parks",
+    "West Bay and harbour shoreline recreation"
+  ],
+  "seeAndDo": [
+    {
+      "name": "West Bay / harbour walkways",
+      "why": "Waterfront paths with views of the naval harbour."
+    },
+    {
+      "name": "Esquimalt Gorge Park",
+      "why": "Japanese garden, trails, and creek estuary green space."
+    },
+    {
+      "name": "Saxe Point Park",
+      "why": "Clifftop park overlooking the Strait of Juan de Fuca."
+    },
+    {
+      "name": "Esquimalt Village / commercial streets",
+      "why": "Local shops and services in the district core."
+    },
+    {
+      "name": "CFB Esquimalt Museum (when open to visitors)",
+      "why": "Naval heritage interpretation at the base."
+    }
+  ]
+}

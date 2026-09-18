@@ -1,0 +1,33 @@
+{
+  "about": "Matane is a city in Quebec’s Bas-Saint-Laurent region on the south shore of the St. Lawrence estuary, at the mouth of the Matane River. A ferry to Baie-Comeau and Godbout, shrimp fishing heritage, and a windswept estuary waterfront define the place. Highway 132 follows the coast through the city. About 14,000 people live in Matane.",
+  "seoSummary": "Bas-Saint-Laurent city on the St. Lawrence estuary—ferry port, shrimp heritage, and Matane River mouth.",
+  "knownFor": [
+    "St. Lawrence estuary city in Bas-Saint-Laurent",
+    "Ferry link to Baie-Comeau and the Côte-Nord",
+    "Shrimp fishing and maritime heritage",
+    "Matane River mouth and salmon run",
+    "Highway 132 coastal service centre"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Matane waterfront / marina",
+      "why": "Estuary views, harbour walks, and ferry terminal area."
+    },
+    {
+      "name": "Parc des Îles / river mouth parks",
+      "why": "Green space where the Matane River meets the St. Lawrence."
+    },
+    {
+      "name": "Mathieu-D’Amours Dam salmon observation",
+      "why": "Watch Atlantic salmon ascending the Matane River."
+    },
+    {
+      "name": "Downtown Matane",
+      "why": "Shops and services along the coastal core."
+    },
+    {
+      "name": "Phare de Matane / shoreline lookouts",
+      "why": "Lighthouse and windy estuary scenery."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Sainte-Anne-des-Plaines is a city in the Lower Laurentians north of Montréal, in the Thérèse-De Blainville area toward Mirabel. Residential neighbourhoods, a traditional village core, and surrounding farm and woodland edges define a North Shore community outside the densest suburbs. About 15,000 people live in Sainte-Anne-des-Plaines.",
+  "seoSummary": "Lower Laurentians city north of Montréal with a village core and residential neighbourhoods toward Mirabel.",
+  "knownFor": [
+    "Lower Laurentians city north of Montréal",
+    "Traditional village core and parish heritage",
+    "Residential neighbourhoods toward Mirabel",
+    "Farm and woodland edges on the urban fringe",
+    "North Shore commuter community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Village centre / church square",
+      "why": "Historic core and local gathering place."
+    },
+    {
+      "name": "Municipal parks and trails",
+      "why": "Green space among residential streets."
+    },
+    {
+      "name": "Local commercial streets",
+      "why": "Shops and services for daily needs."
+    },
+    {
+      "name": "Nearby Mirabel countryside",
+      "why": "Rural roads and farmland on the city’s edge."
+    },
+    {
+      "name": "Community recreation facilities",
+      "why": "Arenas, fields, and halls used year-round."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Comox is a town on Vancouver Island’s east coast in the Comox Valley, on the shores of Comox Harbour facing the Beaufort Mountains and Strait of Georgia. A marina, downtown streets, and nearby CFB Comox shape a coastal valley community distinct from Courtenay next door. About 15,000 people live in Comox.",
+  "seoSummary": "Comox Valley harbour town on Vancouver Island—marina, downtown, and coastal mountain views.",
+  "knownFor": [
+    "Harbour town on Comox Harbour",
+    "Comox Valley neighbour to Courtenay",
+    "Marina and downtown waterfront",
+    "Proximity to CFB Comox",
+    "Views to the Beauforts and Strait of Georgia"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Comox Marina and harbour walk",
+      "why": "Boat slips and waterfront paths."
+    },
+    {
+      "name": "Downtown Comox",
+      "why": "Shops, restaurants, and galleries near the harbour."
+    },
+    {
+      "name": "Filberg Heritage Lodge and Park",
+      "why": "Waterfront estate grounds and gardens."
+    },
+    {
+      "name": "Goose Spit Park",
+      "why": "Sand spit with harbour and mountain views."
+    },
+    {
+      "name": "Nearby Comox Lake / mountain trailheads",
+      "why": "Valley recreation beyond the harbour town."
+    }
+  ]
+}
