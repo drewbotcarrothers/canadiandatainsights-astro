@@ -1,0 +1,33 @@
+{
+  "about": "Parksville is a city on the east coast of Vancouver Island, British Columbia, on the Strait of Georgia north of Nanaimo. Famous low-tide sandy beaches, a harbour village feel, and a gateway role toward Port Alberni and the Island Highway define a mid-Island seaside community. About 14,000 people live in Parksville.",
+  "seoSummary": "East Vancouver Island seaside city north of Nanaimo—sandy beaches, harbour village, and Island Highway gateway.",
+  "knownFor": [
+    "Famous low-tide sandy beaches on the Strait of Georgia",
+    "East Vancouver Island seaside city",
+    "Parksville Community Park and waterfront",
+    "Gateway toward Port Alberni and Cathedral Grove",
+    "Island Highway mid-Island stop"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parksville Community Park / beach",
+      "why": "Wide sandy flats and playgrounds at low tide."
+    },
+    {
+      "name": "Rathtrevor Beach Provincial Park (nearby)",
+      "why": "Iconic Island beach and forest campground."
+    },
+    {
+      "name": "Downtown Parksville",
+      "why": "Shops and cafés near the waterfront."
+    },
+    {
+      "name": "Englishman River approaches",
+      "why": "River and estuary country south of town."
+    },
+    {
+      "name": "Coombs / Old Country Market (nearby)",
+      "why": "Goat-on-the-roof market stop inland."
+    }
+  ]
+}

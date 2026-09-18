@@ -1,0 +1,33 @@
+{
+  "about": "Truro is a town in central Nova Scotia at the hub of the province’s highway and rail network, near the Salmon River and the Minas Basin’s tidal flats. Victorian architecture, Victoria Park’s gorge trails, and a role as “Hubtown” for the Maritimes define the community. About 13,000 people live in Truro.",
+  "seoSummary": "Central Nova Scotia hub town near the Minas Basin—Victoria Park, Victorian streets, and provincial crossroads.",
+  "knownFor": [
+    "Hubtown at Nova Scotia’s highway and rail crossroads",
+    "Victoria Park gorge and waterfall trails",
+    "Victorian downtown architecture",
+    "Salmon River and Minas Basin tidal country",
+    "Service centre for Colchester County"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Victoria Park",
+      "why": "Urban forest, gorge trails, and Jacob’s Ladder stairs."
+    },
+    {
+      "name": "Downtown Truro / Inglis Place",
+      "why": "Historic commercial streets and local shops."
+    },
+    {
+      "name": "Salmon River waterfront",
+      "why": "Tidal river walks near the town centre."
+    },
+    {
+      "name": "Truro Farmers’ Market",
+      "why": "Local produce and makers in season."
+    },
+    {
+      "name": "Nearby Fundy tidal flats / Cobequid Bay",
+      "why": "Extreme tides a short drive from Hubtown."
+    }
+  ]
+}

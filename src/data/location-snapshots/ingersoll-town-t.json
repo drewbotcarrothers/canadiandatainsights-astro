@@ -1,0 +1,33 @@
+{
+  "about": "Ingersoll is a town in Oxford County, Ontario, on the Thames River between London and Woodstock along Highway 401. Cheese-making heritage, a compact downtown, and a role as a manufacturing and agricultural service centre define the community. About 13,000 people live in Ingersoll.",
+  "seoSummary": "Oxford County town on the Thames between London and Woodstock—cheese heritage and Highway 401 service centre.",
+  "knownFor": [
+    "Cheese-making and dairy heritage",
+    "Town on the Thames River in Oxford County",
+    "Highway 401 corridor between London and Woodstock",
+    "Manufacturing and agricultural services",
+    "Compact historic downtown"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Ingersoll Cheese & Agricultural Museum",
+      "why": "Dairy and farm heritage exhibits."
+    },
+    {
+      "name": "Downtown Ingersoll",
+      "why": "Main Street shops and Thames-town streetscape."
+    },
+    {
+      "name": "Fusion Youth Centre / Centennial Park area",
+      "why": "Community recreation near the town core."
+    },
+    {
+      "name": "Thames River paths",
+      "why": "Green space along the river through town."
+    },
+    {
+      "name": "Oxford County countryside drives",
+      "why": "Farm roads toward Tillsonburg and Woodstock."
+    }
+  ]
+}
