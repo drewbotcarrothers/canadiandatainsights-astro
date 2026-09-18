@@ -1,0 +1,33 @@
+{
+  "about": "Nicolet is a city in Centre-du-Québec, on the south shore of the St. Lawrence at Lac Saint-Pierre, opposite Trois-Rivières—not Trois-Rivières itself. A cathedral city with seminary and religious-heritage landmarks, it sits at the Nicolet River mouth among lowland farms. About 9,000 people live in Nicolet.",
+  "seoSummary": "Centre-du-Québec cathedral city on Lac Saint-Pierre—facing Trois-Rivières, not the north-shore city.",
+  "knownFor": [
+    "South-shore city facing Trois-Rivières across Lac Saint-Pierre",
+    "Cathedral and religious-heritage skyline",
+    "Nicolet River mouth on the St. Lawrence",
+    "Centre-du-Québec lowland agricultural setting",
+    "Musée des religions du monde"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Cathédrale Saint-Jean-Baptiste",
+      "why": "Landmark cathedral of this religious-heritage city."
+    },
+    {
+      "name": "Musée des religions du monde",
+      "why": "Museum of world religions in a former convent setting."
+    },
+    {
+      "name": "Old Nicolet / waterfront",
+      "why": "Streets and parks toward Lac Saint-Pierre."
+    },
+    {
+      "name": "Anse du Port / birding approaches",
+      "why": "Wetlands of the lac Saint-Pierre biosphere on the doorstep."
+    },
+    {
+      "name": "Views toward Trois-Rivières (separate city)",
+      "why": "North-shore skyline across the lake."
+    }
+  ]
+}

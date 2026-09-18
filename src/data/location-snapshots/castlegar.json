@@ -1,0 +1,33 @@
+{
+  "about": "Castlegar is a city in British Columbia’s West Kootenay, at the confluence of the Columbia and Kootenay rivers. A Doukhobor settlement heritage, Selkirk College, a regional airport, and a mill-and-highway service role define the community. About 8,000 people live in Castlegar.",
+  "seoSummary": "West Kootenay city at the Columbia—Kootenay confluence—Doukhobor heritage, college, and river-valley hub.",
+  "knownFor": [
+    "Confluence of the Columbia and Kootenay rivers",
+    "Doukhobor settlement and communal-heritage sites",
+    "Selkirk College campus city",
+    "West Kootenay highway and airport hub",
+    "Mill-town river valley between Trail and Nelson"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Zuckerberg Island Heritage Park",
+      "why": "Footbridge island park at the river confluence."
+    },
+    {
+      "name": "Doukhobor Discovery Centre",
+      "why": "Communal-settlement history on the city’s edge."
+    },
+    {
+      "name": "Millennium Park / riverfront",
+      "why": "Beaches and paths on the Columbia."
+    },
+    {
+      "name": "Downtown Castlegar",
+      "why": "Columbia Avenue shops and civic buildings."
+    },
+    {
+      "name": "Brilliant Suspension Bridge",
+      "why": "Historic Doukhobor-built span over the Kootenay."
+    }
+  ]
+}

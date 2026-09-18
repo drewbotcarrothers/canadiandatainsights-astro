@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Félicien is a city at the western end of Lac Saint-Jean in the Saguenay–Lac-Saint-Jean region of Quebec. A forestry and service town, it is widely known for the Zoo sauvage de Saint-Félicien and as a gateway to the Ashuapmushuan country. About 10,000 people live in Saint-Félicien.",
+  "seoSummary": "Lac Saint-Jean city known for the Zoo sauvage and western-lake forestry-and-service role.",
+  "knownFor": [
+    "Western Lac Saint-Jean service city",
+    "Zoo sauvage de Saint-Félicien",
+    "Forestry and regional commercial hub",
+    "Gateway toward the Ashuapmushuan wilderness",
+    "Saguenay–Lac-Saint-Jean French-speaking community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Zoo sauvage de Saint-Félicien",
+      "why": "Boreal-species park with walk-through nature trails."
+    },
+    {
+      "name": "Lac Saint-Jean waterfront",
+      "why": "Lake views and recreation at the west end of the lake."
+    },
+    {
+      "name": "Centre-ville Saint-Félicien",
+      "why": "Shops and services in the city core."
+    },
+    {
+      "name": "Ashuapmushuan River approaches",
+      "why": "Outdoor country west of town toward the wildlife reserve."
+    },
+    {
+      "name": "Local parks and beach access",
+      "why": "Summer swimming and picnic spots on the lake."
+    }
+  ]
+}

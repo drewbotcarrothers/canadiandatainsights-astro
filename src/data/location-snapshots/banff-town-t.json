@@ -1,0 +1,33 @@
+{
+  "about": "Banff is a town in Alberta’s Banff National Park, in the Bow River valley of the Rocky Mountains west of Calgary. A concentrated visitor townsite of hotels, Banff Avenue shops, and trailheads, it is governed as a municipality inside the national park—not a gateway city outside the park. About 8,000 people live in Banff.",
+  "seoSummary": "Rocky Mountain townsite inside Banff National Park—Bow Valley hotels, Banff Avenue, and trailheads west of Calgary.",
+  "knownFor": [
+    "Municipality inside Banff National Park, not a prairie city",
+    "Bow River valley townsite west of Calgary",
+    "Banff Avenue and mountain-hotel visitor core",
+    "Trailheads to Sulphur Mountain, Tunnel Mountain, and the Bow Falls",
+    "Year-round national-park tourism economy"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Banff Avenue and Bow River downtown",
+      "why": "Shops, river paths, and the townsite core."
+    },
+    {
+      "name": "Sulphur Mountain Gondola / boardwalk",
+      "why": "Ridge views above the Bow Valley."
+    },
+    {
+      "name": "Bow Falls and Surprise Corner",
+      "why": "River falls and classic viewpoints near the Banff Springs hotel grounds."
+    },
+    {
+      "name": "Cave and Basin National Historic Site",
+      "why": "Thermal springs that led to the national park."
+    },
+    {
+      "name": "Tunnel Mountain and lakeshore trails",
+      "why": "Walks from town toward the Fairmont grounds and Vermilion Lakes."
+    }
+  ]
+}

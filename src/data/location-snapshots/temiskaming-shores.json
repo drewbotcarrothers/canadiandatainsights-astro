@@ -1,0 +1,33 @@
+{
+  "about": "Temiskaming Shores is a city at the head of Lake Timiskaming in northeastern Ontario, formed by amalgamating New Liskeard, Haileybury, and Dymond. Clay-belt farmland, a lakeshore downtown, and a bilingual service role on the Quebec border define the community. About 10,000 people live in Temiskaming Shores.",
+  "seoSummary": "Northeastern Ontario city on Lake Timiskaming—New Liskeard, Haileybury, and Dymond on the clay belt.",
+  "knownFor": [
+    "Amalgamated city of New Liskeard, Haileybury, and Dymond",
+    "Head of Lake Timiskaming on the Ontario—Quebec line",
+    "Little Clay Belt agricultural region",
+    "Bilingual northeastern service centre",
+    "Waterfront downtowns along the lake"
+  ],
+  "seeAndDo": [
+    {
+      "name": "New Liskeard waterfront",
+      "why": "Boardwalk, beach, and marina at the head of the lake."
+    },
+    {
+      "name": "Haileybury lakeshore and Lookout",
+      "why": "Historic townsite views over Lake Timiskaming."
+    },
+    {
+      "name": "Downtown New Liskeard / Whitewood Avenue",
+      "why": "Shops and services in the commercial core."
+    },
+    {
+      "name": "Little Clay Belt farm drives",
+      "why": "Unusually rich farmland for this latitude."
+    },
+    {
+      "name": "Highway 11 / Quebec border approaches",
+      "why": "Short trips toward Ville-Marie and the opposite shore."
+    }
+  ]
+}

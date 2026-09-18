@@ -1,0 +1,33 @@
+{
+  "about": "La Malbaie is a city in Charlevoix, Quebec, on a wide bay of the St. Lawrence, including neighbourhoods such as Pointe-au-Pic. Resort heritage at the Manoir Richelieu, casino tourism, and cliff-and-river scenery define this regional centre. About 8,000 people live in La Malbaie.",
+  "seoSummary": "Charlevoix city on a St. Lawrence bay—Manoir Richelieu, casino, and Pointe-au-Pic resort heritage.",
+  "knownFor": [
+    "Charlevoix city on a broad St. Lawrence bay",
+    "Fairmont Le Manoir Richelieu resort heritage",
+    "Casino de Charlevoix",
+    "Pointe-au-Pic and river-cliff scenery",
+    "Service centre for the Charlevoix-Est coast"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Fairmont Le Manoir Richelieu / Pointe-au-Pic",
+      "why": "Historic cliff-top resort and gardens above the river."
+    },
+    {
+      "name": "Casino de Charlevoix",
+      "why": "Gaming and entertainment beside the manor."
+    },
+    {
+      "name": "Centre-ville La Malbaie",
+      "why": "Shops and services in the bay-town core."
+    },
+    {
+      "name": "Quai and river lookouts",
+      "why": "St. Lawrence views from the Malbaie waterfront."
+    },
+    {
+      "name": "Charlevoix countryside drives",
+      "why": "Scenic routes toward Baie-Saint-Paul and the hinterland."
+    }
+  ]
+}

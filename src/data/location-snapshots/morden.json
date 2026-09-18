@@ -1,0 +1,33 @@
+{
+  "about": "Morden is a city in Manitoba’s Pembina Valley, west of Winkler and north of the U.S. border, in rolling prairie at the Manitoba Escarpment. The Canadian Fossil Discovery Centre, the Corn and Apple Festival, and a walkable downtown define this regional service city. About 10,000 people live in Morden.",
+  "seoSummary": "Pembina Valley city west of Winkler—fossil museum, Corn and Apple Festival, and prairie service centre.",
+  "knownFor": [
+    "Pembina Valley regional service city",
+    "Canadian Fossil Discovery Centre and marine-reptile fossils",
+    "Annual Corn and Apple Festival",
+    "Walkable prairie downtown",
+    "Neighbour to Winkler and the RM of Stanley, which are separate"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Canadian Fossil Discovery Centre",
+      "why": "Mosasaur and other marine fossils from the Pembina Hills."
+    },
+    {
+      "name": "Downtown Morden",
+      "why": "Shops, cafés, and civic buildings on Stephen Street."
+    },
+    {
+      "name": "Access Event Centre / recreation",
+      "why": "Arenas, aquatics, and community events."
+    },
+    {
+      "name": "Morden Park and hill lookouts",
+      "why": "Prairie-escarpment views above the city."
+    },
+    {
+      "name": "Corn and Apple Festival grounds",
+      "why": "Late-summer harvest celebration in the city core."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Hinton is a town in western Alberta on the Athabasca River and Yellowhead Highway, the last major service centre before Jasper National Park. Coal, forestry, and mountain-gateway tourism shape a working town at the edge of the Rockies. About 10,000 people live in Hinton.",
+  "seoSummary": "Yellowhead Highway town on the Athabasca—coal, forestry, and gateway to Jasper National Park.",
+  "knownFor": [
+    "Gateway town to Jasper National Park on the Yellowhead",
+    "Athabasca River and foothills setting",
+    "Coal and forestry working-town economy",
+    "Beaver Boardwalk and wetland trails in town",
+    "Last full service centre east of the park gates"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Beaver Boardwalk",
+      "why": "Elevated trail through wetlands on the edge of town."
+    },
+    {
+      "name": "Athabasca Lookout / Bighorn lookout",
+      "why": "Foothills viewpoints toward the Rockies."
+    },
+    {
+      "name": "Downtown Hinton",
+      "why": "Highway-town shops and visitor services."
+    },
+    {
+      "name": "Willmore Wilderness approaches",
+      "why": "Backcountry trails north toward Grande Cache country."
+    },
+    {
+      "name": "Drive west to Jasper National Park",
+      "why": "Short trip to the park gate and Athabasca valley."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Olds is a town in central Alberta on Highway 27, just east of Highway 2 between Calgary and Red Deer. Olds College, a compact downtown, and a role as an agricultural service centre on the parkland prairie define the community. About 9,000 people live in Olds.",
+  "seoSummary": "Central Alberta town on Highway 27—Olds College and parkland agricultural service centre between Calgary and Red Deer.",
+  "knownFor": [
+    "Parkland agricultural service town",
+    "Olds College campus and agri-food training",
+    "Highway 27 junction east of Highway 2",
+    "Compact downtown between Calgary and Red Deer",
+    "Central Alberta farm-region hub"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Uptowne Olds / downtown",
+      "why": "Independent shops and civic buildings on the main streets."
+    },
+    {
+      "name": "Olds College campus",
+      "why": "Agricultural college grounds and community events."
+    },
+    {
+      "name": "Olds Aquatic Centre / recreation",
+      "why": "Pool and indoor recreation for residents and visitors."
+    },
+    {
+      "name": "Rotary Athletic Park / trails",
+      "why": "Sports fields and walking paths in town."
+    },
+    {
+      "name": "Parkland farm drives",
+      "why": "Countryside toward Didsbury, Bowden, and the Highway 2 corridor."
+    }
+  ]
+}

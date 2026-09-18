@@ -1,0 +1,33 @@
+{
+  "about": "Kimberley is a city in British Columbia’s East Kootenay, in the Purcell Mountains north of Cranbrook, a former Sullivan Mine town reinvented around the Bavarian-themed Platzl and Kimberley Alpine Resort. About 8,000 people live in Kimberley.",
+  "seoSummary": "East Kootenay mountain city—former Sullivan Mine town with the Platzl and Kimberley Alpine Resort north of Cranbrook.",
+  "knownFor": [
+    "Purcell Mountains city north of Cranbrook",
+    "Former Sullivan Mine company town",
+    "Bavarian-themed Platzl pedestrian centre",
+    "Kimberley Alpine Resort",
+    "East Kootenay four-season outdoor base"
+  ],
+  "seeAndDo": [
+    {
+      "name": "The Platzl",
+      "why": "Pedestrian plaza of shops and the town cuckoo clock."
+    },
+    {
+      "name": "Kimberley Alpine Resort",
+      "why": "Ski and bike hill above the city."
+    },
+    {
+      "name": "Downtown Kimberley / Centre 64",
+      "why": "Arts and civic buildings near the Platzl."
+    },
+    {
+      "name": "Kimberley Underground Mining Railway",
+      "why": "Heritage rail and mine interpretation in season."
+    },
+    {
+      "name": "Nordic trails and Kimberley Nature Park",
+      "why": "Forest recreation on the city’s doorstep."
+    }
+  ]
+}

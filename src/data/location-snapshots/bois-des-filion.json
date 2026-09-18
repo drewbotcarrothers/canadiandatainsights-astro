@@ -1,0 +1,33 @@
+{
+  "about": "Bois-des-Filion is a city on Montréal’s North Shore in Thérèse-De Blainville, on the Rivière des Mille Îles between Terrebonne and Lorraine. A compact riverside suburb with parks along the river, it is a distinct municipality—not Terrebonne or Lorraine next door. About 10,000 people live in Bois-des-Filion.",
+  "seoSummary": "North Shore city on the Rivière des Mille Îles between Terrebonne and Lorraine—compact riverside suburb.",
+  "knownFor": [
+    "North Shore city on the Rivière des Mille Îles",
+    "Between Terrebonne and Lorraine, and separate from both",
+    "Compact riverside suburban municipality",
+    "Parks and cycling along the Mille Îles",
+    "Commuter community in Thérèse-De Blainville"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Rivière des Mille Îles waterfront",
+      "why": "Parks and paths along the North Shore river."
+    },
+    {
+      "name": "Parc du Domaine-Vert approaches / local parks",
+      "why": "Neighbourhood green space and family recreation."
+    },
+    {
+      "name": "Centre-ville shops and services",
+      "why": "Small commercial core serving the riverside city."
+    },
+    {
+      "name": "Bike links toward Terrebonne and Lorraine",
+      "why": "Regional cycling routes along the Mille Îles corridor."
+    },
+    {
+      "name": "River lookouts toward the islands",
+      "why": "Views of the Mille Îles archipelago from shore parks."
+    }
+  ]
+}

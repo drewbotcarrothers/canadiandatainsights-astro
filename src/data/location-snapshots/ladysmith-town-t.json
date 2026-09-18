@@ -1,0 +1,33 @@
+{
+  "about": "Ladysmith is a town on Vancouver Island’s east coast in the Cowichan Valley, between Nanaimo and Duncan, facing the Salish Sea. A former coal port, it is known for Transfer Beach, a steep downtown above the harbour, and 49th-parallel heritage. About 9,000 people live in Ladysmith.",
+  "seoSummary": "Cowichan Valley harbour town between Nanaimo and Duncan—Transfer Beach, coal-port heritage, and Salish Sea waterfront.",
+  "knownFor": [
+    "Harbour town between Nanaimo and Duncan",
+    "Transfer Beach and waterfront park",
+    "Former coal-port and 49th-parallel heritage",
+    "Steep downtown above the harbour",
+    "Salish Sea / Cowichan Valley Island community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Transfer Beach Park",
+      "why": "Sand, pier, and summer concerts on the harbour."
+    },
+    {
+      "name": "Downtown Ladysmith",
+      "why": "Heritage shops on the hillside above the water."
+    },
+    {
+      "name": "Ladysmith Waterfront / First Avenue walks",
+      "why": "Harbour views and the machine-shop precinct."
+    },
+    {
+      "name": "Local museums and heritage buildings",
+      "why": "Coal-port and railway interpretation in town."
+    },
+    {
+      "name": "Island Highway drives toward Nanaimo and Duncan",
+      "why": "Coastal corridor of the mid-Island."
+    }
+  ]
+}
