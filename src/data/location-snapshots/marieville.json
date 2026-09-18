@@ -1,0 +1,33 @@
+{
+  "about": "Marieville is a city in Montérégie, Quebec, east of Montréal in the Richelieu Valley countryside toward Farnham and Saint-Hyacinthe. A small urban core, surrounding farmland, and South Shore agricultural roots define the community. About 11,000 people live in Marieville.",
+  "seoSummary": "Montérégie Richelieu Valley city east of Montréal—small urban core amid South Shore farmland toward Farnham.",
+  "knownFor": [
+    "Richelieu Valley city in Montérégie",
+    "Small urban core amid surrounding farmland",
+    "East of Montréal toward Farnham and Saint-Hyacinthe",
+    "South Shore agricultural community",
+    "Regional services for nearby rural parishes"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Centre-ville Marieville",
+      "why": "Local shops and services in the city core."
+    },
+    {
+      "name": "Community parks and recreation grounds",
+      "why": "Sports fields and neighbourhood green space."
+    },
+    {
+      "name": "Richelieu Valley countryside drives",
+      "why": "Farm roads through Montérégie agricultural country."
+    },
+    {
+      "name": "Nearby Farnham and valley towns",
+      "why": "Short trips to neighbouring South Shore centres."
+    },
+    {
+      "name": "Seasonal markets and local events",
+      "why": "Agricultural community gatherings through the year."
+    }
+  ]
+}

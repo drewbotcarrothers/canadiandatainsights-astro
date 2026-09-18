@@ -1,0 +1,33 @@
+{
+  "about": "Bromont is a city in the Eastern Townships (Estrie), Quebec, in the Appalachian foothills southeast of Montréal. A major ski resort, a technoparc industrial park, and equestrian and bike tourism define this mountain-town economy. About 11,000 people live in Bromont.",
+  "seoSummary": "Eastern Townships mountain city southeast of Montréal—ski resort, technoparc, and equestrian tourism.",
+  "knownFor": [
+    "Eastern Townships ski resort city",
+    "Technoparc and light-industry employment",
+    "Equestrian centre and mountain-bike destination",
+    "Appalachian foothills southeast of Montréal",
+    "Year-round outdoor tourism economy"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Bromont, montagne d’expériences",
+      "why": "Ski, bike, and alpine recreation on the local mountain."
+    },
+    {
+      "name": "Centre équestre de Bromont",
+      "why": "Major equestrian venue and showgrounds."
+    },
+    {
+      "name": "Downtown / village Bromont",
+      "why": "Shops and restaurants at the mountain-town base."
+    },
+    {
+      "name": "Bike and trail networks",
+      "why": "Cross-country and mountain-bike routes around the city."
+    },
+    {
+      "name": "Eastern Townships countryside drives",
+      "why": "Scenic roads toward Knowlton and lac Brome."
+    }
+  ]
+}

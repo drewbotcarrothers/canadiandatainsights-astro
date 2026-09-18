@@ -1,0 +1,33 @@
+{
+  "about": "Rawdon is a municipality in Lanaudière, Quebec, in the foothills of the Laurentians north of Montréal. Waterfalls, forest lakes, and an English- and French-speaking village heritage define a popular weekend and cottage destination. About 11,000 people live in Rawdon.",
+  "seoSummary": "Lanaudière Laurentian-foothills municipality north of Montréal—waterfalls, lakes, and bilingual village country.",
+  "knownFor": [
+    "Laurentian foothills municipality in Lanaudière",
+    "Waterfalls and forest lake recreation",
+    "Bilingual English and French village heritage",
+    "Weekend and cottage destination from Montréal",
+    "Parc des Chutes Dorwin and nearby nature sites"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc des Chutes Dorwin",
+      "why": "Waterfalls, boardwalks, and forest trails in town."
+    },
+    {
+      "name": "Centre-ville Rawdon",
+      "why": "Village shops and services in the municipal core."
+    },
+    {
+      "name": "Local lakes and beaches",
+      "why": "Summer swimming and cottage shoreline recreation."
+    },
+    {
+      "name": "Laurentian foothill drives",
+      "why": "Scenic roads toward Saint-Donat and mountain country."
+    },
+    {
+      "name": "Community parks and trails",
+      "why": "Year-round outdoor recreation near the village."
+    }
+  ]
+}

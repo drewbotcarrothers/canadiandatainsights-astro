@@ -1,0 +1,33 @@
+{
+  "about": "Weyburn is a city in southeastern Saskatchewan on the Souris River, southeast of Regina along Highway 39. Oilfield services, agriculture, and a role as a regional hub for the southeast prairie define the community. About 11,000 people live in Weyburn.",
+  "seoSummary": "Southeastern Saskatchewan city on the Souris River—oilfield and farm hub southeast of Regina on Highway 39.",
+  "knownFor": [
+    "Southeastern Saskatchewan regional hub",
+    "Souris River prairie city",
+    "Oilfield services and agriculture economy",
+    "Highway 39 corridor southeast of Regina",
+    "Service centre for surrounding farm country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Weyburn",
+      "why": "Main streets and regional shopping."
+    },
+    {
+      "name": "Souris River valley parks",
+      "why": "Riverside green space through the city."
+    },
+    {
+      "name": "Weyburn museum / heritage sites",
+      "why": "Local history of the southeast prairie."
+    },
+    {
+      "name": "Community recreation complexes",
+      "why": "Sports and leisure facilities for the region."
+    },
+    {
+      "name": "Prairie drives on Highway 39",
+      "why": "Open-country roads toward Estevan and Regina."
+    }
+  ]
+}

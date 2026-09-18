@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Raymond is a city in Portneuf, Quebec, northwest of Québec City in the Laurentian foothills. A gateway to Jacques-Cartier National Park and the Vallée Bras-du-Nord, it mixes a small urban core with forest recreation and Portneuf countryside. About 10,000 people live in Saint-Raymond.",
+  "seoSummary": "Portneuf Laurentian-foothills city northwest of Québec City—gateway to Jacques-Cartier Park and Vallée Bras-du-Nord.",
+  "knownFor": [
+    "Portneuf city in the Laurentian foothills",
+    "Gateway to Jacques-Cartier National Park",
+    "Vallée Bras-du-Nord outdoor recreation",
+    "Northwest of Québec City",
+    "Forest tourism and small urban core"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Approaches to Jacques-Cartier National Park",
+      "why": "Trailheads and park access in the mountains north."
+    },
+    {
+      "name": "Vallée Bras-du-Nord",
+      "why": "Hiking, paddling, and biking in a renowned valley network."
+    },
+    {
+      "name": "Centre-ville Saint-Raymond",
+      "why": "Local shops and services in the city core."
+    },
+    {
+      "name": "Portneuf countryside drives",
+      "why": "Scenic roads through foothill farm and forest."
+    },
+    {
+      "name": "Local parks and river accesses",
+      "why": "Community green space and water recreation."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Saint-Sauveur is a city in the Laurentians, Quebec, northwest of Montréal, long known as a ski-village and boutique resort town. Village streets, nearby ski hills, and year-round tourism in the lower Laurentians define the community. About 11,000 people live in Saint-Sauveur.",
+  "seoSummary": "Laurentian ski-village city northwest of Montréal—boutiques, hills, and year-round resort tourism.",
+  "knownFor": [
+    "Lower Laurentian ski and boutique resort town",
+    "Village centre with shops and restaurants",
+    "Ski hills and outdoor recreation nearby",
+    "Year-round tourism from the Montréal region",
+    "Gateway toward Saint-Adolphe-d’Howard and Tremblant country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Rue Principale / village centre",
+      "why": "Boutiques, cafés, and resort-town streetscape."
+    },
+    {
+      "name": "Ski hills around Saint-Sauveur",
+      "why": "Downhill and night skiing in the lower Laurentians."
+    },
+    {
+      "name": "Parc / pedestrian village spaces",
+      "why": "Summer terraces and festival gathering spots."
+    },
+    {
+      "name": "Nearby water parks and attractions",
+      "why": "Family recreation popular in peak season."
+    },
+    {
+      "name": "Laurentian Route 117 corridor",
+      "why": "Scenic drives deeper into ski country."
+    }
+  ]
+}
