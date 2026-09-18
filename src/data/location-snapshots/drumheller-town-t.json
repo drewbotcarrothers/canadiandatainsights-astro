@@ -1,0 +1,33 @@
+{
+  "about": "Drumheller is a town in the Red Deer River badlands of southern Alberta, northeast of Calgary. Hoodoos, the Royal Tyrrell Museum of Palaeontology, and a compact valley downtown define Canada’s best-known dinosaur-country community. About 8,000 people live in Drumheller.",
+  "seoSummary": "Red Deer River badlands town—Royal Tyrrell Museum, hoodoos, and dinosaur-country downtown northeast of Calgary.",
+  "knownFor": [
+    "Red Deer River badlands town northeast of Calgary",
+    "Royal Tyrrell Museum of Palaeontology",
+    "Hoodoos and dinosaur-country tourism",
+    "World’s Largest Dinosaur downtown landmark",
+    "Valley service centre in the Alberta badlands"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Royal Tyrrell Museum of Palaeontology",
+      "why": "Major dinosaur museum in Midland Provincial Park beside town."
+    },
+    {
+      "name": "Downtown Drumheller / World’s Largest Dinosaur",
+      "why": "Valley main street and the climbable dinosaur statue."
+    },
+    {
+      "name": "Hoodoos Trail / Horsethief Canyon",
+      "why": "Classic badlands formations and river-bend lookouts."
+    },
+    {
+      "name": "Repsol Sport Centre / river parks",
+      "why": "Recreation and green space in the valley town."
+    },
+    {
+      "name": "Atlas Coal Mine (East Coulee area)",
+      "why": "Wooden tipple and mine tours in the nearby coulee."
+    }
+  ]
+}

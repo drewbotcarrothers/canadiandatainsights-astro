@@ -1,0 +1,33 @@
+{
+  "about": "Smiths Falls is a town in Lanark County, Ontario, on the Rideau Canal at the junction of historic rail lines between Ottawa and Kingston. Combined locks, a canal-side downtown, and railway heritage define this Rideau service town. About 9,000 people live in Smiths Falls.",
+  "seoSummary": "Lanark County town on the Rideau Canal—combined locks, railway heritage, and canal-side downtown.",
+  "knownFor": [
+    "Rideau Canal town with combined lockstation",
+    "Railway junction heritage between Ottawa and Kingston",
+    "Canal-side downtown and mill buildings",
+    "Lanark County service centre",
+    "UNESCO Rideau waterway stop"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Rideau Canal combined locks",
+      "why": "Watch boats transit the stacked lockstation downtown."
+    },
+    {
+      "name": "Downtown Smiths Falls",
+      "why": "Beckwith Street shops beside the canal."
+    },
+    {
+      "name": "Railway Museum of Eastern Ontario",
+      "why": "Trains and station heritage on the old rail yards."
+    },
+    {
+      "name": "Heritage House Museum",
+      "why": "Victorian house museum in town."
+    },
+    {
+      "name": "Waterfront parks and boardwalks",
+      "why": "Canal green space through the town centre."
+    }
+  ]
+}

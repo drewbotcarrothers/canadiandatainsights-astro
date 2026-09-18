@@ -1,0 +1,33 @@
+{
+  "about": "Morinville is a town in Alberta’s Sturgeon County country just north of St. Albert and Edmonton, on Highway 2. A Francophone founding, the landmark St. Jean Baptiste church, and a growing Edmonton-region commuter role define the community. About 10,000 people live in Morinville.",
+  "seoSummary": "Town north of St. Albert and Edmonton—Francophone roots, landmark church, and Highway 2 commuter community.",
+  "knownFor": [
+    "Edmonton-region town north of St. Albert",
+    "Francophone settlement heritage on the parkland prairie",
+    "St. Jean Baptiste church skyline",
+    "Highway 2 corridor commuter community",
+    "Sturgeon County service-town role"
+  ],
+  "seeAndDo": [
+    {
+      "name": "St. Jean Baptiste Church",
+      "why": "Historic parish church that still dominates the town skyline."
+    },
+    {
+      "name": "Downtown Morinville",
+      "why": "Local shops and civic buildings along the main street."
+    },
+    {
+      "name": "Morinville Leisure Centre / parks",
+      "why": "Recreation and neighbourhood green space for residents."
+    },
+    {
+      "name": "Community trail network",
+      "why": "Walking and cycling paths through town neighbourhoods."
+    },
+    {
+      "name": "Approaches to Edmonton and St. Albert",
+      "why": "Short Highway 2 trips to capital-region services."
+    }
+  ]
+}

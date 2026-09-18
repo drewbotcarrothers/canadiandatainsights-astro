@@ -1,0 +1,33 @@
+{
+  "about": "Goderich is a town in Huron County, Ontario, on a bluff above Lake Huron at the Maitland River mouth. An octagonal town square, a working harbour and salt mine, and sunsets over the lake define this unique planned town. About 8,000 people live in Goderich.",
+  "seoSummary": "Lake Huron bluff town at the Maitland mouth—octagonal square, harbour, and salt-mine port in Huron County.",
+  "knownFor": [
+    "Planned town with a unique octagonal central square",
+    "Lake Huron bluff and Maitland River mouth",
+    "Working harbour and underground salt mine",
+    "Historic Courthouse Square streetscape",
+    "Huron County lakeshore service centre"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Courthouse Square",
+      "why": "Octagonal civic square and heritage commercial streets."
+    },
+    {
+      "name": "Goderich harbour and boardwalk",
+      "why": "Freighters, salt operations, and lake-mouth views."
+    },
+    {
+      "name": "St. Christopher’s Beach / Rotary Cove",
+      "why": "Sand beaches below the bluff."
+    },
+    {
+      "name": "Huron County Museum",
+      "why": "County history a short walk from the square."
+    },
+    {
+      "name": "Maitland Valley trails and lookouts",
+      "why": "River gorge and bluff paths on the town’s edge."
+    }
+  ]
+}

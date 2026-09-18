@@ -1,0 +1,33 @@
+{
+  "about": "Coaticook is a city in Quebec’s Eastern Townships (Estrie), in the Coaticook River gorge country near the Vermont border. A compact downtown, the Parc de la Gorge, Foresta Lumina night walk, and a dairy-and-maple hinterland define the community. About 9,000 people live in Coaticook.",
+  "seoSummary": "Eastern Townships city near Vermont—Coaticook Gorge, Foresta Lumina, and dairy country.",
+  "knownFor": [
+    "Eastern Townships city on the Coaticook River",
+    "Parc de la Gorge and suspended pedestrian bridge",
+    "Foresta Lumina illuminated night trail",
+    "Dairy, cheese, and maple hinterland",
+    "Near the Vermont border south of Sherbrooke"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc de la Gorge de Coaticook",
+      "why": "River gorge, long pedestrian suspension bridge, and trails."
+    },
+    {
+      "name": "Foresta Lumina",
+      "why": "Seasonal illuminated night walk through the gorge forest."
+    },
+    {
+      "name": "Centre-ville Coaticook",
+      "why": "Shops and the Marché de Coaticook in the city core."
+    },
+    {
+      "name": "Laiterie de Coaticook",
+      "why": "Local dairy famous for ice cream and regional cheese."
+    },
+    {
+      "name": "Eastern Townships drives toward Vermont",
+      "why": "Scenic roads of the Coaticook valley."
+    }
+  ]
+}

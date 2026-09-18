@@ -1,0 +1,33 @@
+{
+  "about": "Innisfail is a town in central Alberta on Highway 2 between Calgary and Red Deer, in parkland farming country. A compact downtown, agricultural-service role, and nearby historic village museum define this prairie highway town. About 8,000 people live in Innisfail.",
+  "seoSummary": "Central Alberta Highway 2 town between Calgary and Red Deer—parkland agricultural service centre.",
+  "knownFor": [
+    "Highway 2 town between Calgary and Red Deer",
+    "Parkland agricultural service centre",
+    "Compact prairie downtown",
+    "Innisfail Historical Village nearby",
+    "Central Alberta farm-region hub"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Downtown Innisfail",
+      "why": "50 Street shops and civic buildings."
+    },
+    {
+      "name": "Napoleon Lake / town parks",
+      "why": "Lakeside paths and recreation in town."
+    },
+    {
+      "name": "Innisfail Historical Village",
+      "why": "Pioneer buildings interpreted on the edge of town."
+    },
+    {
+      "name": "Community leisure centre",
+      "why": "Pool, arena, and indoor recreation."
+    },
+    {
+      "name": "Parkland farm drives",
+      "why": "Countryside toward Bowden, Penhold, and the Highway 2 corridor."
+    }
+  ]
+}

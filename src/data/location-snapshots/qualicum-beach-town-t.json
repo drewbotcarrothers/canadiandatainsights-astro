@@ -1,0 +1,33 @@
+{
+  "about": "Qualicum Beach is a town on Vancouver Island’s Oceanside, between Parksville and the Bowser shore, facing the Strait of Georgia—not Parksville, which is a separate town. A wide sand beach, old-growth remnants, and a walkable village centre define this retirement-and-visitor community. About 9,000 people live in Qualicum Beach.",
+  "seoSummary": "Vancouver Island Oceanside town—sand beach and village centre, not the neighbouring Town of Parksville.",
+  "knownFor": [
+    "Oceanside beach town on the Strait of Georgia",
+    "Separate from neighbouring Parksville",
+    "Wide sand beach and waterfront promenade",
+    "Walkable village centre and heritage streets",
+    "Old-growth and waterfall parks inland from the shore"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Qualicum Beach waterfront",
+      "why": "Sand beach, promenade, and Strait of Georgia views."
+    },
+    {
+      "name": "Village centre / Memorial Avenue",
+      "why": "Independent shops and cafés in the town core."
+    },
+    {
+      "name": "Milner Gardens & Woodland",
+      "why": "Coastal estate gardens and woodland trails."
+    },
+    {
+      "name": "Little Qualicum Falls Provincial Park",
+      "why": "River gorges and old-growth just inland (regional day trip)."
+    },
+    {
+      "name": "Heritage Forest / Brown’s Indian River",
+      "why": "Protected Douglas-fir forest walks near town."
+    }
+  ]
+}

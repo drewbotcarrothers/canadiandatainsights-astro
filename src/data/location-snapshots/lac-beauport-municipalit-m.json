@@ -1,0 +1,33 @@
+{
+  "about": "Lac-Beauport is a municipality in the lakes-and-hills country immediately north of Québec City—not a borough of the capital. A four-season recreation community around its namesake lake, it is known for Le Relais ski centre and cottage-to-suburb living on the Jacques-Cartier doorstep. About 8,000 people live in Lac-Beauport.",
+  "seoSummary": "Lake-and-hill municipality north of Québec—Le Relais ski and namesake lake, not part of the capital.",
+  "knownFor": [
+    "Separate lake municipality north of Québec City",
+    "Namesake lake and cottage-to-suburb shoreline",
+    "Le Relais ski centre",
+    "Four-season outdoor recreation community",
+    "Jacques-Cartier highland doorstep of the capital"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Lac Beauport waterfront and beaches",
+      "why": "Swimming, paddling, and shoreline paths on the lake."
+    },
+    {
+      "name": "Le Relais",
+      "why": "Downhill ski and four-season hill above the lake."
+    },
+    {
+      "name": "Village / Chemin du Tour-du-Lac",
+      "why": "Loop road, local shops, and lake views."
+    },
+    {
+      "name": "Forest trails around the basin",
+      "why": "Hiking and bike paths in the surrounding hills."
+    },
+    {
+      "name": "Short trip into Québec City",
+      "why": "Capital services minutes down the hill."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Lorraine is a city on Montréal’s North Shore in Thérèse-De Blainville, a planned garden-city suburb between Bois-des-Filion and Rosemère—not those neighbours, and not Lorraine, France. Leafy residential streets, woodland parks, and a small civic core define this low-rise North Shore community. About 10,000 people live in Lorraine.",
+  "seoSummary": "Planned North Shore garden-city between Bois-des-Filion and Rosemère—leafy suburb, not a big city.",
+  "knownFor": [
+    "Planned garden-city suburb on Montréal’s North Shore",
+    "Between Bois-des-Filion and Rosemère, and separate from both",
+    "Leafy residential streets and woodland parks",
+    "Low-rise civic core rather than a dense downtown",
+    "Thérèse-De Blainville commuter community"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Parc de Lorraine / woodland parks",
+      "why": "Forest paths and neighbourhood green space."
+    },
+    {
+      "name": "Civic centre and local shops",
+      "why": "Small commercial and municipal core."
+    },
+    {
+      "name": "Rivière des Mille Îles approaches",
+      "why": "Short links to the North Shore river parks."
+    },
+    {
+      "name": "Bike routes toward Rosemère and Bois-des-Filion",
+      "why": "Regional cycling through garden-city streets."
+    },
+    {
+      "name": "Community recreation facilities",
+      "why": "Sports and leisure for residents."
+    }
+  ]
+}
