@@ -1,0 +1,33 @@
+{
+  "about": "Nelson is a city in the West Kootenay region of British Columbia, on the West Arm of Kootenay Lake. A preserved heritage downtown, arts culture, and mountain-lake recreation define this classic interior mountain town. About 11,000 people live in Nelson.",
+  "seoSummary": "West Kootenay city on Kootenay Lake’s West Arm—heritage downtown, arts culture, and mountain-lake recreation.",
+  "knownFor": [
+    "West Kootenay city on Kootenay Lake",
+    "Well-preserved heritage downtown Baker Street",
+    "Arts, music, and counterculture reputation",
+    "Mountain and lake outdoor recreation",
+    "Ferry and highway links across the Kootenays"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Baker Street downtown",
+      "why": "Heritage storefronts, cafés, and independent shops."
+    },
+    {
+      "name": "Kootenay Lake waterfront",
+      "why": "Beach, pier, and lake views in the city."
+    },
+    {
+      "name": "Touchstones Nelson Museum of Art and History",
+      "why": "Regional art and heritage exhibits."
+    },
+    {
+      "name": "Pulpit Rock and local trails",
+      "why": "Hiking lookouts above the West Arm."
+    },
+    {
+      "name": "Nearby Whitewater ski area",
+      "why": "Powder skiing in the mountains south of town."
+    }
+  ]
+}

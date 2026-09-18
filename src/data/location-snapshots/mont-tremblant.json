@@ -1,0 +1,33 @@
+{
+  "about": "Mont-Tremblant is a city in the Laurentians, Quebec, encompassing the resort village, the mountain, and surrounding lake country northwest of Montréal—not only the ski resort. Lac Tremblant, pedestrian tourist village, and vast park approaches define one of Quebec’s premier four-season destinations. About 10,000 people live in Mont-Tremblant.",
+  "seoSummary": "Laurentian resort city northwest of Montréal—ski mountain, pedestrian village, and Lac Tremblant lake country.",
+  "knownFor": [
+    "Premier Laurentian four-season resort city",
+    "Mont Tremblant ski mountain and pedestrian village",
+    "Lac Tremblant and surrounding lake country",
+    "Gateway to Tremblant National Park approaches",
+    "Major tourism economy northwest of Montréal"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Tremblant pedestrian village and gondola",
+      "why": "Shops, hotels, and mountain access at the resort base."
+    },
+    {
+      "name": "Mont Tremblant summit and trails",
+      "why": "Skiing, hiking, and panoramic Laurentian views."
+    },
+    {
+      "name": "Lac Tremblant waterfront",
+      "why": "Beach, boating, and lake scenery."
+    },
+    {
+      "name": "Domaine Saint-Bernard / local parks",
+      "why": "Trails and green space away from the resort core."
+    },
+    {
+      "name": "Old Tremblant / centre-ville sector",
+      "why": "Traditional village streets beyond the tourist village."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "View Royal is a town on southern Vancouver Island in Greater Victoria, between Esquimalt Harbour and Thetis Lake country—not Victoria itself. Harbour shores, Thetis Lake Regional Park approaches, and suburban neighbourhoods along the Island Highway define the community. About 12,000 people live in View Royal.",
+  "seoSummary": "Greater Victoria town between Esquimalt Harbour and Thetis Lake—harbour shores and Island Highway suburbs.",
+  "knownFor": [
+    "Town in Greater Victoria, not the City of Victoria",
+    "Esquimalt Harbour shoreline setting",
+    "Thetis Lake Regional Park on the doorstep",
+    "Island Highway / Trans-Canada corridor community",
+    "Mix of harbour, lakes, and suburban neighbourhoods"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Thetis Lake Regional Park",
+      "why": "Swimming lakes and forest trails adjoining the town."
+    },
+    {
+      "name": "Esquimalt Harbour viewpoints",
+      "why": "Shoreline scenery toward naval and harbour waters."
+    },
+    {
+      "name": "View Royal Park and local green space",
+      "why": "Community parks and waterfront access points."
+    },
+    {
+      "name": "Galloping Goose / regional trails",
+      "why": "Cycling and walking links across the capital region."
+    },
+    {
+      "name": "Approaches to downtown Victoria",
+      "why": "Short transit and road links to the capital core."
+    }
+  ]
+}

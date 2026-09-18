@@ -1,0 +1,33 @@
+{
+  "about": "Salt Spring Island is a regional district electoral area in British Columbia’s Southern Gulf Islands, between Vancouver Island and the mainland—not a city. Markets, artisan farms, ferry landings at Fulford and Vesuvius, and forested hills around Ganges define Canada’s most populous Gulf Island. About 11,000 people live on Salt Spring Island.",
+  "seoSummary": "Southern Gulf Islands electoral area—markets, artisan farms, and ferry landings around Ganges, not a city.",
+  "knownFor": [
+    "Most populous Southern Gulf Island, not a city",
+    "Ganges village markets and harbour",
+    "Artisan farms, studios, and weekend tourism",
+    "Ferry links at Fulford Harbour and Vesuvius",
+    "Forested hills and island coastline"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Ganges Village and Saturday Market",
+      "why": "Harbour shops and the island’s famous farmers’ market."
+    },
+    {
+      "name": "Ruckle Provincial Park",
+      "why": "Farm heritage, camping, and southeast shoreline trails."
+    },
+    {
+      "name": "Mount Maxwell / Baynes Peak viewpoints",
+      "why": "Island lookouts over the Gulf Islands."
+    },
+    {
+      "name": "Fulford Harbour",
+      "why": "South-end ferry landing and village cove."
+    },
+    {
+      "name": "Island studio and farm tours",
+      "why": "Artisan workshops and rural roads across the island."
+    }
+  ]
+}

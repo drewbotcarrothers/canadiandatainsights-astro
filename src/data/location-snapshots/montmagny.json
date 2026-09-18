@@ -1,0 +1,33 @@
+{
+  "about": "Montmagny is a city in Chaudière-Appalaches, Quebec, on the south shore of the St. Lawrence River east of Québec City. Snow-goose migration along the river, a small urban core, and Appalaches countryside inland define this Côte-du-Sud community. About 11,000 people live in Montmagny.",
+  "seoSummary": "Chaudière-Appalaches St. Lawrence south-shore city east of Québec—snow-goose migration and Côte-du-Sud hub.",
+  "knownFor": [
+    "St. Lawrence south-shore city east of Québec",
+    "Famous for snow-goose (oie blanche) migration",
+    "Côte-du-Sud regional service centre",
+    "Chaudière-Appalaches river and farm country",
+    "Gateway toward the lower St. Lawrence south shore"
+  ],
+  "seeAndDo": [
+    {
+      "name": "St. Lawrence waterfront and goose-watching sites",
+      "why": "Fall migration viewing along the river marshes."
+    },
+    {
+      "name": "Centre-ville Montmagny",
+      "why": "Shops and services in the urban core."
+    },
+    {
+      "name": "Parc des Chutes de la Rivière-du-Sud",
+      "why": "Waterfalls and trails near the city."
+    },
+    {
+      "name": "Festival de l’oie blanche season",
+      "why": "Regional celebration tied to the autumn migration."
+    },
+    {
+      "name": "Côte-du-Sud countryside drives",
+      "why": "Scenic south-shore roads toward Cap-Saint-Ignace."
+    }
+  ]
+}

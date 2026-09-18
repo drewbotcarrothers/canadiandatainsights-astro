@@ -1,0 +1,33 @@
+{
+  "about": "Sainte-Agathe-des-Monts is a city in the Laurentians, Quebec, on Lac des Sables northwest of Montréal. A classic Laurentian resort town, it mixes a lakeside village centre with surrounding ski hills, bike paths, and cottage country. About 10,000 people live in Sainte-Agathe-des-Monts.",
+  "seoSummary": "Laurentian lakeside city on Lac des Sables—resort town, village centre, and cottage country northwest of Montréal.",
+  "knownFor": [
+    "Laurentian resort city on Lac des Sables",
+    "Lakeside village centre and boardwalk",
+    "Ski, bike, and cottage tourism hub",
+    "Northwest of Montréal on Route 117",
+    "Gateway toward Mont-Tremblant country"
+  ],
+  "seeAndDo": [
+    {
+      "name": "Lac des Sables waterfront",
+      "why": "Beach, boardwalk, and lake views in the town centre."
+    },
+    {
+      "name": "Centre-ville Sainte-Agathe",
+      "why": "Shops and restaurants around the lakeside core."
+    },
+    {
+      "name": "Parc des Pionniers and local trails",
+      "why": "Green space and walking routes near downtown."
+    },
+    {
+      "name": "Nearby ski hills and bike paths",
+      "why": "Year-round outdoor recreation in the Laurentians."
+    },
+    {
+      "name": "Route 117 mountain corridor",
+      "why": "Scenic drives toward Tremblant and deeper ski country."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "about": "Gander is a town in central Newfoundland on the Trans-Canada Highway, built around Gander International Airport—famous for wartime ferry flights and for sheltering diverted airliners after September 11, 2001. A planned mid-century townsite, aviation museums, and nearby Gander Lake define the community. About 12,000 people live in Gander.",
+  "seoSummary": "Central Newfoundland town built around Gander International Airport—aviation heritage and post-9/11 hospitality.",
+  "knownFor": [
+    "Gander International Airport and aviation history",
+    "Shelter for diverted flights after September 11, 2001",
+    "Planned mid-century townsite in central Newfoundland",
+    "Gateway toward Fogo Island and Twillingate routes",
+    "Gander Lake recreation nearby"
+  ],
+  "seeAndDo": [
+    {
+      "name": "North Atlantic Aviation Museum",
+      "why": "Exhibits on ferry command, wartime flights, and local aviation."
+    },
+    {
+      "name": "Silent Witnesses Memorial",
+      "why": "Tribute to the Arrow Air crash near the airport."
+    },
+    {
+      "name": "Downtown / town centre Gander",
+      "why": "Shops and services in the planned townsite core."
+    },
+    {
+      "name": "Gander Lake accesses",
+      "why": "Boating and shoreline recreation near town."
+    },
+    {
+      "name": "Airport viewing and heritage sites",
+      "why": "Public reminders of the town’s aviation role."
+    }
+  ]
+}
