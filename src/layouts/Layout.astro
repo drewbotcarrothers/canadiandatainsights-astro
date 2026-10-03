@@ -15,6 +15,11 @@ interface Props {
   ogImage?: string;
   /** Extra JSON-LD objects (page-specific). Sitewide Organization+WebSite always included. */
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  /**
+   * When false, use `title` as the document, Open Graph, and Twitter title
+   * with no "| Canadian Data Insights" suffix.
+   */
+  appendBrand?: boolean;
 }
 
 const {
@@ -25,13 +30,15 @@ const {
   noindex = false,
   ogImage,
   jsonLd,
+  appendBrand = true,
 } = Astro.props;
 
 const site = SITE_URL;
 const canonical = new URL(canonicalPath ?? Astro.url.pathname, site).toString();
-const fullTitle = title.includes('Canadian Data Insights')
-  ? title
-  : `${title} | Canadian Data Insights`;
+const fullTitle =
+  !appendBrand || title.includes('Canadian Data Insights')
+    ? title
+    : `${title} | Canadian Data Insights`;
 
 const imageRaw = ogImage ?? DEFAULT_OG_IMAGE;
 const imageUrl = imageRaw.startsWith('http')

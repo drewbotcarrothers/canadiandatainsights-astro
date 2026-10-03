@@ -5,6 +5,7 @@ import DistributionBar from '../../components/location/DistributionBar.astro';
 import SectionHeader from '../../components/location/SectionHeader.astro';
 import LocationEngage from '../../components/location/LocationEngage.astro';
 import CommunitySnapshot from '../../components/location/CommunitySnapshot.astro';
+import PopulationByCity from '../../components/location/PopulationByCity.astro';
 import {
   getAllLocations,
   getLocationBySlug,
@@ -16,6 +17,14 @@ import {
 import { getLocationSnapshot } from '../../data/location-snapshots';
 import { formatNumber, formatPercent, formatCurrency, pct } from '../../lib/utils';
 import { locationJsonLd } from '../../lib/seo';
+import {
+  growthSince2016,
+  placeMetaDescription,
+  placePageTitle,
+  possessiveName,
+  provinceMetaDescription,
+  provincePageTitle,
+} from '../../lib/location-seo';
 
 export async function getStaticPaths() {
   const locations = await getAllLocations();
@@ -138,28 +147,30 @@ const dwellingTypes = [
 const maxDwelling = Math.max(...dwellingTypes.map((x) => x.value || 0), 1);
 
 const popFormatted = formatNumber(d.POP_2021);
-const titleWithPop = `${name} Population (${popFormatted}) | Demographics`;
-const titleFallback = `${name} Population & Demographics`;
-// Prefer query-shaped titles under ~65 chars; Layout appends "| Canadian Data Insights".
-const pageTitle = titleWithPop.length <= 65 ? titleWithPop : titleFallback;
-
-const descBits: string[] = [];
-if (d.POP_2021 != null) {
-  let popBit = `${name} population was ${popFormatted} in 2021`;
-  if (d.POP_CHANGE_PCT != null && !Number.isNaN(d.POP_CHANGE_PCT as number)) {
-    popBit += ` (${formatPercent(d.POP_CHANGE_PCT)} since 2016)`;
-  }
-  descBits.push(`${popBit}.`);
-}
-if (d.HH_INCOME_MEDIAN_AFTER_TAX != null) {
-  descBits.push(`Median household income ${formatCurrency(d.HH_INCOME_MEDIAN_AFTER_TAX)}.`);
-}
-if (snapshot?.seoSummary) {
-  descBits.push(snapshot.seoSummary);
-} else {
-  descBits.push('Explore households, employment, languages, and more.');
-}
-const description = descBits.join(' ');
+const topCities = provinceCities.slice(0, 3).map((city) => ({
+  name: toDisplayName(city.GEO_NAME),
+  slug: generateSlug(city.GEO_NAME),
+  population: city.POP_2021,
+  populationLabel: formatNumber(city.POP_2021),
+}));
+const pageTitle = isProvince
+  ? provincePageTitle(name, d.POP_2021, d.POP_CHANGE_PCT)
+  : placePageTitle(name, d.POP_2021, d.POP_CHANGE_PCT);
+const description = isProvince
+  ? provinceMetaDescription({
+      name,
+      population: d.POP_2021,
+      growthPct: d.POP_CHANGE_PCT,
+      topCities,
+    })
+  : placeMetaDescription({
+      name,
+      population: d.POP_2021,
+      growthPct: d.POP_CHANGE_PCT,
+      medianIncome: d.HH_INCOME_MEDIAN_AFTER_TAX,
+      seoSummary: snapshot?.seoSummary,
+    });
+const growthLead = growthSince2016(d.POP_CHANGE_PCT);
 
 const mapQuery = encodeURIComponent(`${name}, ${(d.PROVINCE as string) || 'Canada'}`);
 const mapZoom = isProvince ? 4 : 10;
@@ -171,6 +182,7 @@ const jsonLd = locationJsonLd({
   population: d.POP_2021 ?? null,
   medianIncome: d.HH_INCOME_MEDIAN_AFTER_TAX ?? null,
   description,
+  pageTitle,
   snapshot: snapshot
     ? { about: snapshot.about, seeAndDo: snapshot.seeAndDo }
     : undefined,
@@ -192,9 +204,47 @@ const jsonLd = locationJsonLd({
           <h1 class="mb-4 font-heading text-4xl font-bold leading-tight text-primary sm:text-5xl">
             {name} <span class="text-tertiary">Profile</span>
           </h1>
+          {
+            isProvince ? (
+              <p class="mb-4 font-sans text-lg leading-relaxed text-on-surface">
+                <strong>
+                  {possessiveName(name)} population is {popFormatted}
+                </strong>
+                {growthLead ? `, ${growthLead}` : ''}.
+                {topCities.length > 0 && (
+                  <>
+                    {' '}
+                    The largest {topCities.length === 1 ? 'city' : 'cities'}{' '}
+                    {topCities.length === 1 ? 'is' : 'are'}{' '}
+                    {topCities.map((city, index) => (
+                      <>
+                        {index > 0 &&
+                          (index === topCities.length - 1
+                            ? topCities.length > 2
+                              ? ', and '
+                              : ' and '
+                            : ', ')}
+                        <a
+                          href={`/location/${city.slug}/`}
+                          class="font-medium text-primary underline-offset-2 hover:underline"
+                        >
+                          {city.name}
+                        </a>{' '}
+                        ({city.populationLabel})
+                      </>
+                    ))}
+                    .
+                  </>
+                )}
+              </p>
+            ) : null
+          }
           <p class="mb-8 font-sans text-lg leading-relaxed text-on-surface-variant">
-            Explore population, households, income, employment, languages, and dwellings for {name}.
-            Compare trends since 2016 and dig into the full demographic profile below.
+            {
+              isProvince
+                ? `Income, age, households, and a full population-by-city list for ${name} are below.`
+                : `Explore population, households, income, employment, languages, and dwellings for ${name}. Compare trends since 2016 and dig into the full demographic profile below.`
+            }
           </p>
           <div class="flex flex-wrap gap-4">
             <div class="rounded-md border border-border/40 bg-surface/80 px-4 py-2 shadow-sm backdrop-blur">
@@ -651,51 +701,13 @@ const jsonLd = locationJsonLd({
     isProvince && provinceCities.length > 0 && (
       <section class="bg-background py-10 sm:py-16 md:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader title={`Cities & towns in ${name}`} id="cities" />
-          <div class="overflow-x-auto rounded-xl border border-border/30 bg-surface">
-            <table class="w-full min-w-[560px] text-left text-sm">
-              <thead class="border-b border-border/40 bg-surface-soft">
-                <tr>
-                  <th class="px-4 py-3 font-heading font-bold text-primary">Location</th>
-                  <th class="px-4 py-3 font-heading font-bold text-primary">Population</th>
-                  <th class="px-4 py-3 font-heading font-bold text-primary">Growth</th>
-                  <th class="px-4 py-3 font-heading font-bold text-primary">Avg Age</th>
-                  <th class="px-4 py-3 font-heading font-bold text-primary">Median HH Income</th>
-                  <th class="px-4 py-3 font-heading font-bold text-primary">Employment</th>
-                </tr>
-              </thead>
-              <tbody>
-                {provinceCities.slice(0, 50).map((c) => (
-                  <tr class="border-b border-border/20 last:border-0 hover:bg-surface-soft/60">
-                    <td class="px-4 py-3">
-                      <a
-                        href={`/location/${generateSlug(c.GEO_NAME)}/`}
-                        class="font-medium text-primary no-underline hover:underline"
-                      >
-                        {toDisplayName(c.GEO_NAME)}
-                      </a>
-                    </td>
-                    <td class="px-4 py-3 text-on-surface-variant">{formatNumber(c.POP_2021)}</td>
-                    <td class="px-4 py-3 text-on-surface-variant">{formatPercent(c.POP_CHANGE_PCT)}</td>
-                    <td class="px-4 py-3 text-on-surface-variant">{c.POP_AVG_AGE ?? '—'}</td>
-                    <td class="px-4 py-3 text-on-surface-variant">
-                      {c.HH_INCOME_MEDIAN_AFTER_TAX ? formatCurrency(c.HH_INCOME_MEDIAN_AFTER_TAX) : '—'}
-                    </td>
-                    <td class="px-4 py-3 text-on-surface-variant">
-                      {c.LABOUR_EMPLOYMENT_RATE != null
-                        ? `${(c.LABOUR_EMPLOYMENT_RATE as number).toFixed(1)}%`
-                        : '—'}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          {provinceCities.length > 50 && (
-            <p class="mt-4 font-sans text-sm text-on-surface-variant">
-              Showing top 50 of {provinceCities.length} census subdivisions by population.
-            </p>
-          )}
+          <SectionHeader title="Population by city" id="population-by-city" />
+          <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+            {provinceCities.length === 1
+              ? `1 municipality in ${name}, with a link to its full profile.`
+              : `${provinceCities.length} municipalities in ${name}, largest first. Each name links to its full profile.`}
+          </p>
+          <PopulationByCity cities={provinceCities} placeName={name} />
         </div>
       </section>
     )

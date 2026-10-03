@@ -64,6 +64,8 @@ export function locationJsonLd(opts: {
   population?: number | null;
   medianIncome?: number | null;
   description: string;
+  /** Document title without the site suffix. Kept in sync with the meta title. */
+  pageTitle?: string;
   /** Optional editorial snapshot — uses real schema.org types only. */
   snapshot?: {
     about: string;
@@ -124,7 +126,7 @@ export function locationJsonLd(opts: {
   const dataset: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
-    name: `${opts.name} — population & demographics profile`,
+    name: opts.pageTitle || `${opts.name} — population & demographics profile`,
     description: opts.description,
     url: pageUrl,
     license: OGL_LICENSE_URL,

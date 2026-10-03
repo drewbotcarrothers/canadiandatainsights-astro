@@ -22,7 +22,7 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
- title: "Toronto vs Calgary: Population & Income Compared",
+ title: "Toronto vs Calgary Population: 2,794,356 vs 1,306,784 + Income",
  slug: "toronto-vs-calgary-2021-census",
  date: "September 14, 2026",
  category: "Comparisons",
@@ -38,17 +38,17 @@ const existingBlogPosts: BlogPost[] = [
  { name: "Toronto med. HH $k", value: 74 },
  { name: "Calgary med. HH $k", value: 85 },
  ],
- excerpt: "Side-by-side 2021 figures for Canada's largest city and Alberta's largest: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Toronto is bigger, but Calgary grew faster (5.5% vs 2.3%). Median income is $85,000 in Calgary and $74,000 in Toronto. Average age: Toronto 41.5, Calgary 38.8.",
  content: `
  <p>Toronto and Calgary sit at opposite ends of a familiar Canadian trade-off: sheer scale versus growth and household income. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/toronto/"><strong>Toronto</strong></a> counted <strong>2,794,356</strong> residents in 2021 — more than double Calgary's <strong>1,306,784</strong>. Size, however, is not the same as momentum. Toronto's population rose <strong>2.3%</strong> from 2016 to 2021, while <a href="/location/calgary/"><strong>Calgary</strong></a> grew <strong>5.5%</strong> over the same period.</p>
 
- <p>In short: Toronto remains the country's largest municipal population; Calgary added people faster during the last census cycle.</p>
+ <p>In short: Toronto remains the country's largest municipal population; Calgary added people faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
- <p>Median after-tax household income tells a different story. Calgary households sat at <strong>$85,000</strong> (median after tax), versus <strong>$74,000</strong> in Toronto. That gap matters for cost-of-living conversations: Toronto's larger labour market does not automatically translate into higher typical household take-home pay in the census snapshot.</p>
+ <p>Median after-tax household income tells a different story. Calgary households sat at <strong>$85,000</strong> (median after tax), versus <strong>$74,000</strong> in Toronto. That gap matters for cost-of-living conversations: Toronto's larger labour market does not automatically translate into higher typical household take-home pay in this snapshot.</p>
 
  <h2>Age profile</h2>
  <p>Average age was <strong>41.5</strong> years in Toronto and <strong>38.8</strong> in Calgary. Calgary's younger profile lines up with faster growth and a labour market historically tied to energy and professional services migration.</p>
@@ -68,7 +68,7 @@ const existingBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/toronto/">Toronto demographic profile</a></li>
  <li><a href="/location/calgary/">Calgary demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Toronto and Calgary</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Toronto and Calgary</li>
  </ul>
  `,
  },
