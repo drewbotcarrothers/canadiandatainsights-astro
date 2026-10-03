@@ -1,0 +1,91 @@
+---
+import { displayName, generateSlug, type LocationData } from '../../lib/locations';
+import { formatNumber, formatPercent } from '../../lib/utils';
+
+interface Props {
+  cities: LocationData[];
+  placeName: string;
+}
+
+const { cities, placeName } = Astro.props;
+const PREVIEW = 25;
+const preview = cities.slice(0, PREVIEW);
+const rest = cities.slice(PREVIEW);
+---
+
+<div class="overflow-x-auto rounded-xl border border-border/30 bg-surface">
+  <table class="w-full min-w-[28rem] text-left text-sm sm:min-w-full">
+    <caption class="sr-only">Population by city in {placeName}</caption>
+    <thead class="border-b border-border/40 bg-surface-soft">
+      <tr>
+        <th scope="col" class="px-4 py-3 font-heading font-bold text-primary">Name</th>
+        <th scope="col" class="px-4 py-3 font-heading font-bold text-primary">Population</th>
+        <th scope="col" class="whitespace-nowrap px-4 py-3 font-heading font-bold text-primary">Growth</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        preview.map((city) => (
+          <tr class="border-b border-border/20 last:border-0 hover:bg-surface-soft/60">
+            <td class="px-4 py-3">
+              <a
+                href={`/location/${generateSlug(city.GEO_NAME)}/`}
+                class="font-medium text-primary no-underline hover:underline"
+              >
+                {displayName(city.GEO_NAME)}
+              </a>
+            </td>
+            <td class="whitespace-nowrap px-4 py-3 tabular-nums text-on-surface-variant">
+              {formatNumber(city.POP_2021)}
+            </td>
+            <td class="whitespace-nowrap px-4 py-3 tabular-nums text-on-surface-variant">
+              {formatPercent(city.POP_CHANGE_PCT)}
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+{
+  rest.length > 0 && (
+    <details class="mt-4 overflow-hidden rounded-xl border border-border/30 bg-surface">
+      <summary class="cursor-pointer px-4 py-3 font-heading text-sm font-bold text-primary hover:bg-surface-soft">
+        Show all ({rest.length} more)
+      </summary>
+      <div class="overflow-x-auto border-t border-border/30">
+        <table class="w-full min-w-[28rem] text-left text-sm sm:min-w-full">
+          <caption class="sr-only">Remaining municipalities in {placeName} by population</caption>
+          <thead class="border-b border-border/40 bg-surface-soft">
+            <tr>
+              <th scope="col" class="px-4 py-3 font-heading font-bold text-primary">Name</th>
+              <th scope="col" class="px-4 py-3 font-heading font-bold text-primary">Population</th>
+              <th scope="col" class="whitespace-nowrap px-4 py-3 font-heading font-bold text-primary">Growth</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rest.map((city) => (
+              <tr class="border-b border-border/20 last:border-0 hover:bg-surface-soft/60">
+                <td class="px-4 py-3">
+                  <a
+                    href={`/location/${generateSlug(city.GEO_NAME)}/`}
+                    class="font-medium text-primary no-underline hover:underline"
+                  >
+                    {displayName(city.GEO_NAME)}
+                  </a>
+                </td>
+                <td class="whitespace-nowrap px-4 py-3 tabular-nums text-on-surface-variant">
+                  {formatNumber(city.POP_2021)}
+                </td>
+                <td class="whitespace-nowrap px-4 py-3 tabular-nums text-on-surface-variant">
+                  {formatPercent(city.POP_CHANGE_PCT)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  )
+}

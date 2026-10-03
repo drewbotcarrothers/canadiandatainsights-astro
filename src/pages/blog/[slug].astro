@@ -19,10 +19,17 @@ const jsonLd = blogPostingJsonLd({
   datePublished: post.date,
   image: post.heroImage,
 });
+
+const BLOG_SUFFIX = ' | Canadian Data Insights Blog';
+const withBlogSuffix = `${post.title}${BLOG_SUFFIX}`;
+// Compare titles already carry the population figures. Drop the brand suffix
+// when adding it would push the document title past ~65 characters.
+const dropBrand = post.category === 'Comparisons' && withBlogSuffix.length > 65;
 ---
 
 <Layout
-  title={`${post.title} | Canadian Data Insights Blog`}
+  title={dropBrand ? post.title : withBlogSuffix}
+  appendBrand={!dropBrand}
   description={post.excerpt}
   canonicalPath={`/blog/${post.slug}/`}
   ogType="article"

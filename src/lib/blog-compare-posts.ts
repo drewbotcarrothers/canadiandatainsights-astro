@@ -7,7 +7,7 @@ import type { BlogPost } from './blog-data';
  */
 export const compareBlogPosts: BlogPost[] = [
  {
- title: "Toronto vs Montréal: Population & Income Compared",
+ title: "Toronto vs Montréal Population: 2,794,356 vs 1,762,949 + Income",
  slug: "toronto-vs-montreal-2021-census",
  date: "September 15, 2026",
  category: "Comparisons",
@@ -23,20 +23,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Toronto med. HH $k", value: 74 },
  { name: "Montréal med. HH $k", value: 56 },
  ],
- excerpt: "Side-by-side 2021 figures for Toronto and Montréal: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Toronto is bigger, but Montréal grew faster (3.4% vs 2.3%). Median income is $74,000 in Toronto and $56,000 in Montréal. Age: Toronto 41.5, Montréal 40.6.",
  content: `
  <p>Toronto and Montréal anchor Canada's two largest municipal populations — one in Ontario, one in Quebec — with very different income and growth profiles in 2021. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/toronto/"><strong>Toronto</strong></a> counted <strong>2,794,356</strong> residents in 2021, compared with <a href="/location/montr-al/"><strong>Montréal</strong></a> at <strong>1,762,949</strong>. Size, however, is not the same as momentum. Toronto's population rose <strong>2.3%</strong> from 2016 to 2021, while Montréal grew <strong>3.4%</strong> over the same period.</p>
 
- <p>In short: Toronto leads on municipal population; Montréal grew faster during the last census cycle.</p>
+ <p>In short: Toronto leads on municipal population; Montréal grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Toronto households sat at <strong>$74,000</strong> (median after tax), versus <strong>$56,000</strong> in Montréal. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>41.5</strong> years in Toronto and <strong>40.6</strong> in Montréal. Montréal's younger profile contrasts with Toronto in this census snapshot.</p>
+ <p>Average age was <strong>41.5</strong> years in Toronto and <strong>40.6</strong> in Montréal. Montréal's younger profile contrasts with Toronto in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -53,12 +53,12 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/toronto/">Toronto demographic profile</a></li>
  <li><a href="/location/montr-al/">Montréal demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Toronto and Montréal</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Toronto and Montréal</li>
  </ul>
  `,
  },
  {
- title: "Vancouver vs Calgary: Population & Income Compared",
+ title: "Vancouver vs Calgary Population: 662,248 vs 1,306,784 + Income",
  slug: "vancouver-vs-calgary-2021-census",
  date: "September 17, 2026",
  category: "Comparisons",
@@ -74,7 +74,7 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Vancouver med. HH $k", value: 72 },
  { name: "Calgary med. HH $k", value: 85 },
  ],
- excerpt: "Side-by-side 2021 figures for Vancouver and Calgary: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Calgary is larger (1,306,784 vs 662,248). Median after-tax household income is $85,000 in Calgary and $72,000 in Vancouver. Age: Vancouver 42.2, Calgary 38.8.",
  content: `
  <p>Vancouver and Calgary are West Coast and Prairie powerhouses that often compete for talent and capital. The numbers show a clear scale-versus-income contrast. Here is a clear head-to-head.</p>
 
@@ -87,7 +87,7 @@ export const compareBlogPosts: BlogPost[] = [
  <p>Median after-tax household income tells another part of the story. Calgary households sat at <strong>$85,000</strong> (median after tax), versus <strong>$72,000</strong> in Vancouver. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>42.2</strong> years in Vancouver and <strong>38.8</strong> in Calgary. Calgary's younger profile contrasts with Vancouver in this census snapshot.</p>
+ <p>Average age was <strong>42.2</strong> years in Vancouver and <strong>38.8</strong> in Calgary. Calgary's younger profile contrasts with Vancouver in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -104,12 +104,12 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/vancouver/">Vancouver demographic profile</a></li>
  <li><a href="/location/calgary/">Calgary demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Vancouver and Calgary</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Vancouver and Calgary</li>
  </ul>
  `,
  },
  {
- title: "Edmonton vs Calgary: Population & Income Compared",
+ title: "Edmonton vs Calgary Population: 1,010,899 vs 1,306,784 + Income",
  slug: "edmonton-vs-calgary-2021-census",
  date: "September 19, 2026",
  category: "Comparisons",
@@ -125,20 +125,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Edmonton med. HH $k", value: 79.5 },
  { name: "Calgary med. HH $k", value: 85 },
  ],
- excerpt: "Side-by-side 2021 figures for Edmonton and Calgary: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Calgary is bigger, but Edmonton grew faster (8.3% vs 5.5%). Median income is $85,000 in Calgary and $79,500 in Edmonton. Age: Edmonton 38.4, Calgary 38.8.",
  content: `
  <p>Alberta's two largest cities are frequent peers in labour-market and housing debates. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/edmonton/"><strong>Edmonton</strong></a> counted <strong>1,010,899</strong> residents in 2021, compared with <a href="/location/calgary/"><strong>Calgary</strong></a> at <strong>1,306,784</strong>. Size, however, is not the same as momentum. Edmonton's population rose <strong>8.3%</strong> from 2016 to 2021, while Calgary grew <strong>5.5%</strong> over the same period.</p>
 
- <p>In short: Calgary leads on municipal population; Edmonton grew faster during the last census cycle.</p>
+ <p>In short: Calgary leads on municipal population; Edmonton grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Calgary households sat at <strong>$85,000</strong> (median after tax), versus <strong>$79,500</strong> in Edmonton. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>38.4</strong> years in Edmonton and <strong>38.8</strong> in Calgary. Edmonton's younger profile contrasts with Calgary in this census snapshot.</p>
+ <p>Average age was <strong>38.4</strong> years in Edmonton and <strong>38.8</strong> in Calgary. Edmonton's younger profile contrasts with Calgary in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -155,12 +155,12 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/edmonton/">Edmonton demographic profile</a></li>
  <li><a href="/location/calgary/">Calgary demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Edmonton and Calgary</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Edmonton and Calgary</li>
  </ul>
  `,
  },
  {
- title: "Ottawa vs Gatineau: Population & Income Compared",
+ title: "Ottawa vs Gatineau Population: 1,017,449 vs 291,041 + Income",
  slug: "ottawa-vs-gatineau-2021-census",
  date: "September 21, 2026",
  category: "Comparisons",
@@ -176,9 +176,9 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Ottawa med. HH $k", value: 88 },
  { name: "Gatineau med. HH $k", value: 69.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Ottawa and Gatineau: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Ottawa is larger and grew faster (8.9% vs 5.4%). Median after-tax income is $88,000 in Ottawa versus $69,500 in Gatineau. Age: Ottawa 40.7, Gatineau 40.3.",
  content: `
- <p>Ottawa and Gatineau form one of Canada's most integrated cross-provincial urban regions. Census subdivision figures for 2021 separate the Ontario and Quebec sides of the National Capital Region. Here is a clear head-to-head.</p>
+ <p>Ottawa and Gatineau form one of Canada's most integrated cross-provincial urban regions. Municipal figures for 2021 separate the Ontario and Quebec sides of the National Capital Region. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/ottawa/"><strong>Ottawa</strong></a> counted <strong>1,017,449</strong> residents in 2021, compared with <a href="/location/gatineau/"><strong>Gatineau</strong></a> at <strong>291,041</strong>. Size, however, is not the same as momentum. Ottawa's population rose <strong>8.9%</strong> from 2016 to 2021, while Gatineau grew <strong>5.4%</strong> over the same period.</p>
@@ -189,7 +189,7 @@ export const compareBlogPosts: BlogPost[] = [
  <p>Median after-tax household income tells another part of the story. Ottawa households sat at <strong>$88,000</strong> (median after tax), versus <strong>$69,500</strong> in Gatineau. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.7</strong> years in Ottawa and <strong>40.3</strong> in Gatineau. Gatineau's younger profile contrasts with Ottawa in this census snapshot.</p>
+ <p>Average age was <strong>40.7</strong> years in Ottawa and <strong>40.3</strong> in Gatineau. Gatineau's younger profile contrasts with Ottawa in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -206,12 +206,12 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/ottawa/">Ottawa demographic profile</a></li>
  <li><a href="/location/gatineau/">Gatineau demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Ottawa and Gatineau</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Ottawa and Gatineau</li>
  </ul>
  `,
  },
  {
- title: "Mississauga vs Brampton: Population & Income Compared",
+ title: "Mississauga vs Brampton Population: 717,961 vs 656,480 + Income",
  slug: "mississauga-vs-brampton-2021-census",
  date: "September 23, 2026",
  category: "Comparisons",
@@ -227,7 +227,7 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Mississauga med. HH $k", value: 89 },
  { name: "Brampton med. HH $k", value: 98 },
  ],
- excerpt: "Side-by-side 2021 figures for Mississauga and Brampton: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Mississauga is bigger, but it shrank while Brampton grew (10.6% vs -0.5%). Income: Mississauga $89,000, Brampton $98,000. Age: Mississauga 41.1, Brampton 37.5.",
  content: `
  <p>Mississauga and Brampton are neighbouring Peel Region giants that often move in opposite directions on growth. The 2021 snapshot captures that divergence clearly. Here is a clear head-to-head.</p>
 
@@ -240,7 +240,7 @@ export const compareBlogPosts: BlogPost[] = [
  <p>Median after-tax household income tells another part of the story. Brampton households sat at <strong>$98,000</strong> (median after tax), versus <strong>$89,000</strong> in Mississauga. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>41.1</strong> years in Mississauga and <strong>37.5</strong> in Brampton. Brampton's younger profile contrasts with Mississauga in this census snapshot.</p>
+ <p>Average age was <strong>41.1</strong> years in Mississauga and <strong>37.5</strong> in Brampton. Brampton's younger profile contrasts with Mississauga in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -257,12 +257,12 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/mississauga/">Mississauga demographic profile</a></li>
  <li><a href="/location/brampton/">Brampton demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Mississauga and Brampton</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Mississauga and Brampton</li>
  </ul>
  `,
  },
  {
- title: "Hamilton vs Burlington: Population & Income Compared",
+ title: "Hamilton vs Burlington Population: 569,353 vs 186,948 + Income",
  slug: "hamilton-vs-burlington-2021-census",
  date: "September 26, 2026",
  category: "Comparisons",
@@ -278,7 +278,7 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Hamilton med. HH $k", value: 75.5 },
  { name: "Burlington med. HH $k", value: 94 },
  ],
- excerpt: "Side-by-side 2021 figures for Hamilton and Burlington: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Hamilton is larger and grew faster (6.0% vs 2.0%). Median income is $94,000 in Burlington and $75,500 in Hamilton. Average age: Hamilton 41.5, Burlington 43.3.",
  content: `
  <p>Hamilton and Burlington sit on the western edge of the Greater Toronto and Hamilton Area — one a major industrial city, the other a smaller, higher-income neighbour. Here is a clear head-to-head.</p>
 
@@ -291,7 +291,7 @@ export const compareBlogPosts: BlogPost[] = [
  <p>Median after-tax household income tells another part of the story. Burlington households sat at <strong>$94,000</strong> (median after tax), versus <strong>$75,500</strong> in Hamilton. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>41.5</strong> years in Hamilton and <strong>43.3</strong> in Burlington. Hamilton's younger profile contrasts with Burlington in this census snapshot.</p>
+ <p>Average age was <strong>41.5</strong> years in Hamilton and <strong>43.3</strong> in Burlington. Hamilton's younger profile contrasts with Burlington in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -308,12 +308,12 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/hamilton/">Hamilton demographic profile</a></li>
  <li><a href="/location/burlington/">Burlington demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Hamilton and Burlington</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Hamilton and Burlington</li>
  </ul>
  `,
  },
  {
- title: "Winnipeg vs Saskatoon: Population & Income Compared",
+ title: "Winnipeg vs Saskatoon Population: 749,607 vs 266,141 + Income",
  slug: "winnipeg-vs-saskatoon-2021-census",
  date: "September 28, 2026",
  category: "Comparisons",
@@ -329,7 +329,7 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Winnipeg med. HH $k", value: 69.5 },
  { name: "Saskatoon med. HH $k", value: 74.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Winnipeg and Saskatoon: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Winnipeg is bigger, but Saskatoon grew faster (7.7% vs 6.3%). Median income is $74,500 in Saskatoon and $69,500 in Winnipeg. Age: Winnipeg 40.3, Saskatoon 38.8.",
  content: `
  <p>Winnipeg and Saskatoon are Prairie anchors — Manitoba's largest city and Saskatchewan's largest. Side-by-side 2021 figures highlight scale, growth, and income differences. Here is a clear head-to-head.</p>
 
@@ -342,7 +342,7 @@ export const compareBlogPosts: BlogPost[] = [
  <p>Median after-tax household income tells another part of the story. Saskatoon households sat at <strong>$74,500</strong> (median after tax), versus <strong>$69,500</strong> in Winnipeg. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.3</strong> years in Winnipeg and <strong>38.8</strong> in Saskatoon. Saskatoon's younger profile contrasts with Winnipeg in this census snapshot.</p>
+ <p>Average age was <strong>40.3</strong> years in Winnipeg and <strong>38.8</strong> in Saskatoon. Saskatoon's younger profile contrasts with Winnipeg in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -359,12 +359,12 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/winnipeg/">Winnipeg demographic profile</a></li>
  <li><a href="/location/saskatoon/">Saskatoon demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Winnipeg and Saskatoon</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Winnipeg and Saskatoon</li>
  </ul>
  `,
  },
  {
- title: "Halifax vs Québec: Population & Income Compared",
+ title: "Halifax vs Québec Population: 439,819 vs 549,459 + Income",
  slug: "halifax-vs-quebec-2021-census",
  date: "October 1, 2026",
  category: "Comparisons",
@@ -380,20 +380,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Halifax med. HH $k", value: 69.5 },
  { name: "Québec med. HH $k", value: 60.8 },
  ],
- excerpt: "Side-by-side 2021 figures for Halifax and Québec: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Québec is bigger, but Halifax grew faster (9.1% vs 3.3%). Median income is $69,500 in Halifax and $60,800 in Québec. Average age: Halifax 41.3, Québec 43.8.",
  content: `
- <p>Halifax and Québec are major Atlantic and Quebec City hubs often compared for livability and public-sector employment. Census subdivision data for 2021 puts population, growth, and income side by side. Here is a clear head-to-head.</p>
+ <p>Halifax and Québec are major Atlantic and Quebec City hubs often compared for livability and public-sector employment. Municipal figures for 2021 puts population, growth, and income side by side. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/halifax-regional-municipality-rgm/"><strong>Halifax</strong></a> counted <strong>439,819</strong> residents in 2021, compared with <a href="/location/qu-bec/"><strong>Québec</strong></a> at <strong>549,459</strong>. Size, however, is not the same as momentum. Halifax's population rose <strong>9.1%</strong> from 2016 to 2021, while Québec grew <strong>3.3%</strong> over the same period.</p>
 
- <p>In short: Québec leads on municipal population; Halifax grew faster during the last census cycle.</p>
+ <p>In short: Québec leads on municipal population; Halifax grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Halifax households sat at <strong>$69,500</strong> (median after tax), versus <strong>$60,800</strong> in Québec. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>41.3</strong> years in Halifax and <strong>43.8</strong> in Québec. Halifax's younger profile contrasts with Québec in this census snapshot.</p>
+ <p>Average age was <strong>41.3</strong> years in Halifax and <strong>43.8</strong> in Québec. Halifax's younger profile contrasts with Québec in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -410,12 +410,12 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/halifax-regional-municipality-rgm/">Halifax demographic profile</a></li>
  <li><a href="/location/qu-bec/">Québec demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Halifax and Québec</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Halifax and Québec</li>
  </ul>
  `,
  },
  {
- title: "Surrey vs Burnaby: Population & Income Compared",
+ title: "Surrey vs Burnaby Population: 568,322 vs 249,125 + Income",
  slug: "surrey-vs-burnaby-2021-census",
  date: "October 3, 2026",
  category: "Comparisons",
@@ -431,7 +431,7 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Surrey med. HH $k", value: 87 },
  { name: "Burnaby med. HH $k", value: 73.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Surrey and Burnaby: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Surrey is larger and grew faster (9.7% vs 7.0%). Median after-tax household income is $87,000 in Surrey and $73,500 in Burnaby. Age: Surrey 39.5, Burnaby 42.",
  content: `
  <p>Surrey and Burnaby are two of Metro Vancouver's largest municipalities outside the City of Vancouver itself. Figures for 2021 show Surrey pulling ahead on growth and income. Here is a clear head-to-head.</p>
 
@@ -444,7 +444,7 @@ export const compareBlogPosts: BlogPost[] = [
  <p>Median after-tax household income tells another part of the story. Surrey households sat at <strong>$87,000</strong> (median after tax), versus <strong>$73,500</strong> in Burnaby. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>39.5</strong> years in Surrey and <strong>42</strong> in Burnaby. Surrey's younger profile contrasts with Burnaby in this census snapshot.</p>
+ <p>Average age was <strong>39.5</strong> years in Surrey and <strong>42</strong> in Burnaby. Surrey's younger profile contrasts with Burnaby in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -461,14 +461,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/surrey/">Surrey demographic profile</a></li>
  <li><a href="/location/burnaby/">Burnaby demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Surrey and Burnaby</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Surrey and Burnaby</li>
  </ul>
  `,
  },
  {
- title: "London vs Kitchener: Population & Income Compared",
+ title: "London vs Kitchener Population: 422,324 vs 256,885 + Income",
  slug: "london-vs-kitchener-2021-census",
- date: "October 6, 2026",
+ date: "August 9, 2026",
  category: "Comparisons",
  readTime: "6 min read",
  heroImage: "/images/blog/compare/london-vs-kitchener-2021-census.png",
@@ -482,20 +482,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "London med. HH $k", value: 68.5 },
  { name: "Kitchener med. HH $k", value: 76.5 },
  ],
- excerpt: "Side-by-side 2021 figures for London and Kitchener: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "London is larger (422,324 vs 256,885). Median after-tax household income is $76,500 in Kitchener and $68,500 in London. Average age: London 40.7, Kitchener 39.",
  content: `
- <p>London and Kitchener are southwestern Ontario mid-sized cities that both posted double-digit growth in the last census cycle. Here is a clear head-to-head.</p>
+ <p>London and Kitchener are southwestern Ontario mid-sized cities that both posted double-digit growth from 2016 to 2021. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/london/"><strong>London</strong></a> counted <strong>422,324</strong> residents in 2021, compared with <a href="/location/kitchener/"><strong>Kitchener</strong></a> at <strong>256,885</strong>. Size, however, is not the same as momentum. London's population rose <strong>10%</strong> from 2016 to 2021, while Kitchener grew <strong>10.1%</strong> over the same period.</p>
 
- <p>In short: London leads on municipal population, while both cities posted similar growth rates in the last census cycle.</p>
+ <p>In short: London leads on municipal population, while both cities posted similar growth rates from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Kitchener households sat at <strong>$76,500</strong> (median after tax), versus <strong>$68,500</strong> in London. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.7</strong> years in London and <strong>39</strong> in Kitchener. Kitchener's younger profile contrasts with London in this census snapshot.</p>
+ <p>Average age was <strong>40.7</strong> years in London and <strong>39</strong> in Kitchener. Kitchener's younger profile contrasts with London in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -512,14 +512,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/london/">London demographic profile</a></li>
  <li><a href="/location/kitchener/">Kitchener demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then London and Kitchener</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then London and Kitchener</li>
  </ul>
  `,
  },
  {
- title: "Regina vs Saskatoon: Population & Income Compared",
+ title: "Regina vs Saskatoon Population: 226,404 vs 266,141 + Income",
  slug: "regina-vs-saskatoon-2021-census",
- date: "October 8, 2026",
+ date: "August 11, 2026",
  category: "Comparisons",
  readTime: "5 min read",
  heroImage: "/images/blog/compare/regina-vs-saskatoon-2021-census.png",
@@ -533,20 +533,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Regina med. HH $k", value: 76.5 },
  { name: "Saskatoon med. HH $k", value: 74.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Regina and Saskatoon: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Saskatoon is larger and grew faster (7.7% vs 5.3%). Median after-tax income is $76,500 in Regina versus $74,500 in Saskatoon. Age: Regina 39, Saskatoon 38.8.",
  content: `
  <p>Regina and Saskatoon are Saskatchewan's two dominant cities. The numbers show Saskatoon ahead on size and growth, with incomes and ages nearly tied. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/regina/"><strong>Regina</strong></a> counted <strong>226,404</strong> residents in 2021, compared with <a href="/location/saskatoon/"><strong>Saskatoon</strong></a> at <strong>266,141</strong>. Size, however, is not the same as momentum. Regina's population rose <strong>5.3%</strong> from 2016 to 2021, while Saskatoon grew <strong>7.7%</strong> over the same period.</p>
 
- <p>In short: Saskatoon leads on municipal population; Saskatoon grew faster during the last census cycle.</p>
+ <p>In short: Saskatoon leads on municipal population; Saskatoon grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Regina households sat at <strong>$76,500</strong> (median after tax), versus <strong>$74,500</strong> in Saskatoon. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>39</strong> years in Regina and <strong>38.8</strong> in Saskatoon. Saskatoon's younger profile contrasts with Regina in this census snapshot.</p>
+ <p>Average age was <strong>39</strong> years in Regina and <strong>38.8</strong> in Saskatoon. Saskatoon's younger profile contrasts with Regina in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -563,14 +563,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/regina/">Regina demographic profile</a></li>
  <li><a href="/location/saskatoon/">Saskatoon demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Regina and Saskatoon</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Regina and Saskatoon</li>
  </ul>
  `,
  },
  {
- title: "Vaughan vs Markham: Population & Income Compared",
+ title: "Vaughan vs Markham Population: 323,103 vs 338,503 + Income",
  slug: "vaughan-vs-markham-2021-census",
- date: "October 10, 2026",
+ date: "August 13, 2026",
  category: "Comparisons",
  readTime: "7 min read",
  heroImage: "/images/blog/compare/vaughan-vs-markham-2021-census.png",
@@ -584,20 +584,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Vaughan med. HH $k", value: 107 },
  { name: "Markham med. HH $k", value: 92 },
  ],
- excerpt: "Side-by-side 2021 figures for Vaughan and Markham: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Markham is bigger, but Vaughan grew faster (5.5% vs 2.9%). Median income is $107,000 in Vaughan and $92,000 in Markham. Average age: Vaughan 40.9, Markham 41.8.",
  content: `
  <p>Vaughan and Markham are York Region neighbours known for rapid suburban growth and high household incomes. 2021 figures put their populations and paycheques in context. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/vaughan/"><strong>Vaughan</strong></a> counted <strong>323,103</strong> residents in 2021, compared with <a href="/location/markham/"><strong>Markham</strong></a> at <strong>338,503</strong>. Size, however, is not the same as momentum. Vaughan's population rose <strong>5.5%</strong> from 2016 to 2021, while Markham grew <strong>2.9%</strong> over the same period.</p>
 
- <p>In short: Markham leads on municipal population; Vaughan grew faster during the last census cycle.</p>
+ <p>In short: Markham leads on municipal population; Vaughan grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Vaughan households sat at <strong>$107,000</strong> (median after tax), versus <strong>$92,000</strong> in Markham. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.9</strong> years in Vaughan and <strong>41.8</strong> in Markham. Vaughan's younger profile contrasts with Markham in this census snapshot.</p>
+ <p>Average age was <strong>40.9</strong> years in Vaughan and <strong>41.8</strong> in Markham. Vaughan's younger profile contrasts with Markham in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -614,14 +614,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/vaughan/">Vaughan demographic profile</a></li>
  <li><a href="/location/markham/">Markham demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Vaughan and Markham</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Vaughan and Markham</li>
  </ul>
  `,
  },
  {
- title: "Toronto vs Vancouver: Population & Income Compared",
+ title: "Toronto vs Vancouver Population: 2,794,356 vs 662,248 + Income",
  slug: "toronto-vs-vancouver-2021-census",
- date: "October 13, 2026",
+ date: "August 15, 2026",
  category: "Comparisons",
  readTime: "6 min read",
  heroImage: "/images/blog/compare/toronto-vs-vancouver-2021-census.png",
@@ -635,20 +635,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Toronto med. HH $k", value: 74 },
  { name: "Vancouver med. HH $k", value: 72 },
  ],
- excerpt: "Side-by-side 2021 figures for Toronto and Vancouver: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Toronto is bigger, but Vancouver grew faster (4.9% vs 2.3%). Median income is $74,000 in Toronto and $72,000 in Vancouver. Age: Toronto 41.5, Vancouver 42.2.",
  content: `
  <p>Toronto and Vancouver are frequently compared across Canada's largest metros. The numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/toronto/"><strong>Toronto</strong></a> counted <strong>2,794,356</strong> residents in 2021, compared with <a href="/location/vancouver/"><strong>Vancouver</strong></a> at <strong>662,248</strong>. Size, however, is not the same as momentum. Toronto's population rose <strong>2.3%</strong> from 2016 to 2021, while Vancouver grew <strong>4.9%</strong> over the same period.</p>
 
- <p>In short: Toronto leads on municipal population; Vancouver grew faster during the last census cycle.</p>
+ <p>In short: Toronto leads on municipal population; Vancouver grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Toronto households sat at <strong>$74,000</strong> (median after tax), versus <strong>$72,000</strong> in Vancouver. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>41.5</strong> years in Toronto and <strong>42.2</strong> in Vancouver. Toronto's younger profile contrasts with Vancouver in this census snapshot.</p>
+ <p>Average age was <strong>41.5</strong> years in Toronto and <strong>42.2</strong> in Vancouver. Toronto's younger profile contrasts with Vancouver in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -665,14 +665,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/toronto/">Toronto demographic profile</a></li>
  <li><a href="/location/vancouver/">Vancouver demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Toronto and Vancouver</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Toronto and Vancouver</li>
  </ul>
  `,
  },
  {
- title: "Montréal vs Québec: Population & Income Compared",
+ title: "Montréal vs Québec Population: 1,762,949 vs 549,459 + Income",
  slug: "montreal-vs-quebec-2021-census",
- date: "October 15, 2026",
+ date: "August 17, 2026",
  category: "Comparisons",
  readTime: "5 min read",
  heroImage: "/images/blog/compare/montreal-vs-quebec-2021-census.png",
@@ -686,20 +686,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Montréal med. HH $k", value: 56 },
  { name: "Québec med. HH $k", value: 60.8 },
  ],
- excerpt: "Side-by-side 2021 figures for Montréal and Québec: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Montréal is larger (1,762,949 vs 549,459). Median after-tax household income is $60,800 in Québec and $56,000 in Montréal. Age: Montréal 40.6, Québec 43.8.",
  content: `
  <p>Montréal and Québec sit in Quebec and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/montr-al/"><strong>Montréal</strong></a> counted <strong>1,762,949</strong> residents in 2021, compared with <a href="/location/qu-bec/"><strong>Québec</strong></a> at <strong>549,459</strong>. Size, however, is not the same as momentum. Montréal's population rose <strong>3.4%</strong> from 2016 to 2021, while Québec grew <strong>3.3%</strong> over the same period.</p>
 
- <p>In short: Montréal leads on municipal population; Montréal grew faster during the last census cycle.</p>
+ <p>In short: Montréal leads on municipal population; Montréal grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Québec households sat at <strong>$60,800</strong> (median after tax), versus <strong>$56,000</strong> in Montréal. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.6</strong> years in Montréal and <strong>43.8</strong> in Québec. Montréal's younger profile contrasts with Québec in this census snapshot.</p>
+ <p>Average age was <strong>40.6</strong> years in Montréal and <strong>43.8</strong> in Québec. Montréal's younger profile contrasts with Québec in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -716,14 +716,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/montr-al/">Montréal demographic profile</a></li>
  <li><a href="/location/qu-bec/">Québec demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Montréal and Québec</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Montréal and Québec</li>
  </ul>
  `,
  },
  {
- title: "Ottawa vs Hamilton: Population & Income Compared",
+ title: "Ottawa vs Hamilton Population: 1,017,449 vs 569,353 + Income",
  slug: "ottawa-vs-hamilton-2021-census",
- date: "October 17, 2026",
+ date: "August 19, 2026",
  category: "Comparisons",
  readTime: "7 min read",
  heroImage: "/images/blog/compare/ottawa-vs-hamilton-2021-census.png",
@@ -737,20 +737,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Ottawa med. HH $k", value: 88 },
  { name: "Hamilton med. HH $k", value: 75.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Ottawa and Hamilton: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Ottawa is larger and grew faster (8.9% vs 6.0%). Median after-tax income is $88,000 in Ottawa versus $75,500 in Hamilton. Age: Ottawa 40.7, Hamilton 41.5.",
  content: `
  <p>Choosing between Ottawa and Hamilton in Ontario? These metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/ottawa/"><strong>Ottawa</strong></a> counted <strong>1,017,449</strong> residents in 2021, compared with <a href="/location/hamilton/"><strong>Hamilton</strong></a> at <strong>569,353</strong>. Size, however, is not the same as momentum. Ottawa's population rose <strong>8.9%</strong> from 2016 to 2021, while Hamilton grew <strong>6%</strong> over the same period.</p>
 
- <p>In short: Ottawa leads on municipal population; Ottawa grew faster during the last census cycle.</p>
+ <p>In short: Ottawa leads on municipal population; Ottawa grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Ottawa households sat at <strong>$88,000</strong> (median after tax), versus <strong>$75,500</strong> in Hamilton. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.7</strong> years in Ottawa and <strong>41.5</strong> in Hamilton. Ottawa's younger profile contrasts with Hamilton in this census snapshot.</p>
+ <p>Average age was <strong>40.7</strong> years in Ottawa and <strong>41.5</strong> in Hamilton. Ottawa's younger profile contrasts with Hamilton in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -767,14 +767,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/ottawa/">Ottawa demographic profile</a></li>
  <li><a href="/location/hamilton/">Hamilton demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Ottawa and Hamilton</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Ottawa and Hamilton</li>
  </ul>
  `,
  },
  {
- title: "Edmonton vs Winnipeg: Population & Income Compared",
+ title: "Edmonton vs Winnipeg Population: 1,010,899 vs 749,607 + Income",
  slug: "edmonton-vs-winnipeg-2021-census",
- date: "October 20, 2026",
+ date: "August 21, 2026",
  category: "Comparisons",
  readTime: "6 min read",
  heroImage: "/images/blog/compare/edmonton-vs-winnipeg-2021-census.png",
@@ -788,20 +788,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Edmonton med. HH $k", value: 79.5 },
  { name: "Winnipeg med. HH $k", value: 69.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Edmonton and Winnipeg: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Edmonton is larger and grew faster (8.3% vs 6.3%). Median after-tax income is $79,500 in Edmonton versus $69,500 in Winnipeg. Age: Edmonton 38.4, Winnipeg 40.3.",
  content: `
  <p>Edmonton and Winnipeg are frequently compared across the Prairies. The numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/edmonton/"><strong>Edmonton</strong></a> counted <strong>1,010,899</strong> residents in 2021, compared with <a href="/location/winnipeg/"><strong>Winnipeg</strong></a> at <strong>749,607</strong>. Size, however, is not the same as momentum. Edmonton's population rose <strong>8.3%</strong> from 2016 to 2021, while Winnipeg grew <strong>6.3%</strong> over the same period.</p>
 
- <p>In short: Edmonton leads on municipal population; Edmonton grew faster during the last census cycle.</p>
+ <p>In short: Edmonton leads on municipal population; Edmonton grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Edmonton households sat at <strong>$79,500</strong> (median after tax), versus <strong>$69,500</strong> in Winnipeg. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>38.4</strong> years in Edmonton and <strong>40.3</strong> in Winnipeg. Edmonton's younger profile contrasts with Winnipeg in this census snapshot.</p>
+ <p>Average age was <strong>38.4</strong> years in Edmonton and <strong>40.3</strong> in Winnipeg. Edmonton's younger profile contrasts with Winnipeg in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -818,14 +818,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/edmonton/">Edmonton demographic profile</a></li>
  <li><a href="/location/winnipeg/">Winnipeg demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Edmonton and Winnipeg</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Edmonton and Winnipeg</li>
  </ul>
  `,
  },
  {
- title: "Brampton vs Surrey: Population & Income Compared",
+ title: "Brampton vs Surrey Population: 656,480 vs 568,322 + Income",
  slug: "brampton-vs-surrey-2021-census",
- date: "October 22, 2026",
+ date: "August 23, 2026",
  category: "Comparisons",
  readTime: "5 min read",
  heroImage: "/images/blog/compare/brampton-vs-surrey-2021-census.png",
@@ -839,20 +839,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Brampton med. HH $k", value: 98 },
  { name: "Surrey med. HH $k", value: 87 },
  ],
- excerpt: "Side-by-side 2021 figures for Brampton and Surrey: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Brampton is larger (656,480 vs 568,322). Median after-tax household income is $98,000 in Brampton and $87,000 in Surrey. Age: Brampton 37.5, Surrey 39.5.",
  content: `
  <p>Brampton and Surrey sit in fast-growing suburban Canada and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/brampton/"><strong>Brampton</strong></a> counted <strong>656,480</strong> residents in 2021, compared with <a href="/location/surrey/"><strong>Surrey</strong></a> at <strong>568,322</strong>. Size, however, is not the same as momentum. Brampton's population rose <strong>10.6%</strong> from 2016 to 2021, while Surrey grew <strong>9.7%</strong> over the same period.</p>
 
- <p>In short: Brampton leads on municipal population; Brampton grew faster during the last census cycle.</p>
+ <p>In short: Brampton leads on municipal population; Brampton grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Brampton households sat at <strong>$98,000</strong> (median after tax), versus <strong>$87,000</strong> in Surrey. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>37.5</strong> years in Brampton and <strong>39.5</strong> in Surrey. Brampton's younger profile contrasts with Surrey in this census snapshot.</p>
+ <p>Average age was <strong>37.5</strong> years in Brampton and <strong>39.5</strong> in Surrey. Brampton's younger profile contrasts with Surrey in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -869,14 +869,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/brampton/">Brampton demographic profile</a></li>
  <li><a href="/location/surrey/">Surrey demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Brampton and Surrey</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Brampton and Surrey</li>
  </ul>
  `,
  },
  {
- title: "Mississauga vs Vaughan: Population & Income Compared",
+ title: "Mississauga vs Vaughan Population: 717,961 vs 323,103 + Income",
  slug: "mississauga-vs-vaughan-2021-census",
- date: "October 24, 2026",
+ date: "August 25, 2026",
  category: "Comparisons",
  readTime: "7 min read",
  heroImage: "/images/blog/compare/mississauga-vs-vaughan-2021-census.png",
@@ -890,7 +890,7 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Mississauga med. HH $k", value: 89 },
  { name: "Vaughan med. HH $k", value: 107 },
  ],
- excerpt: "Side-by-side 2021 figures for Mississauga and Vaughan: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Mississauga is bigger, but it shrank while Vaughan grew (5.5% vs -0.5%). Income: Mississauga $89,000, Vaughan $107,000. Age: Mississauga 41.1, Vaughan 40.9.",
  content: `
  <p>Choosing between Mississauga and Vaughan in the Greater Toronto Area? These metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
@@ -903,7 +903,7 @@ export const compareBlogPosts: BlogPost[] = [
  <p>Median after-tax household income tells another part of the story. Vaughan households sat at <strong>$107,000</strong> (median after tax), versus <strong>$89,000</strong> in Mississauga. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>41.1</strong> years in Mississauga and <strong>40.9</strong> in Vaughan. Vaughan's younger profile contrasts with Mississauga in this census snapshot.</p>
+ <p>Average age was <strong>41.1</strong> years in Mississauga and <strong>40.9</strong> in Vaughan. Vaughan's younger profile contrasts with Mississauga in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -920,14 +920,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/mississauga/">Mississauga demographic profile</a></li>
  <li><a href="/location/vaughan/">Vaughan demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Mississauga and Vaughan</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Mississauga and Vaughan</li>
  </ul>
  `,
  },
  {
- title: "Winnipeg vs Regina: Population & Income Compared",
+ title: "Winnipeg vs Regina Population: 749,607 vs 226,404 + Income",
  slug: "winnipeg-vs-regina-2021-census",
- date: "October 27, 2026",
+ date: "August 27, 2026",
  category: "Comparisons",
  readTime: "6 min read",
  heroImage: "/images/blog/compare/winnipeg-vs-regina-2021-census.png",
@@ -941,20 +941,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Winnipeg med. HH $k", value: 69.5 },
  { name: "Regina med. HH $k", value: 76.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Winnipeg and Regina: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Winnipeg is larger and grew faster (6.3% vs 5.3%). Median after-tax income is $76,500 in Regina versus $69,500 in Winnipeg. Age: Winnipeg 40.3, Regina 39.",
  content: `
  <p>Winnipeg and Regina are frequently compared across Prairie Canada. The numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/winnipeg/"><strong>Winnipeg</strong></a> counted <strong>749,607</strong> residents in 2021, compared with <a href="/location/regina/"><strong>Regina</strong></a> at <strong>226,404</strong>. Size, however, is not the same as momentum. Winnipeg's population rose <strong>6.3%</strong> from 2016 to 2021, while Regina grew <strong>5.3%</strong> over the same period.</p>
 
- <p>In short: Winnipeg leads on municipal population; Winnipeg grew faster during the last census cycle.</p>
+ <p>In short: Winnipeg leads on municipal population; Winnipeg grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Regina households sat at <strong>$76,500</strong> (median after tax), versus <strong>$69,500</strong> in Winnipeg. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.3</strong> years in Winnipeg and <strong>39</strong> in Regina. Regina's younger profile contrasts with Winnipeg in this census snapshot.</p>
+ <p>Average age was <strong>40.3</strong> years in Winnipeg and <strong>39</strong> in Regina. Regina's younger profile contrasts with Winnipeg in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -971,14 +971,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/winnipeg/">Winnipeg demographic profile</a></li>
  <li><a href="/location/regina/">Regina demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Winnipeg and Regina</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Winnipeg and Regina</li>
  </ul>
  `,
  },
  {
- title: "London vs Windsor: Population & Income Compared",
+ title: "London vs Windsor Population: 422,324 vs 229,660 + Income",
  slug: "london-vs-windsor-2021-census",
- date: "October 29, 2026",
+ date: "August 29, 2026",
  category: "Comparisons",
  readTime: "5 min read",
  heroImage: "/images/blog/compare/london-vs-windsor-2021-census.png",
@@ -992,20 +992,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "London med. HH $k", value: 68.5 },
  { name: "Windsor med. HH $k", value: 63.6 },
  ],
- excerpt: "Side-by-side 2021 figures for London and Windsor: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "London is larger and grew faster (10.0% vs 5.7%). Median after-tax household income is $68,500 in London and $63,600 in Windsor. Age: London 40.7, Windsor 41.4.",
  content: `
  <p>London and Windsor sit in southwestern Ontario and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/london/"><strong>London</strong></a> counted <strong>422,324</strong> residents in 2021, compared with <a href="/location/windsor/"><strong>Windsor</strong></a> at <strong>229,660</strong>. Size, however, is not the same as momentum. London's population rose <strong>10%</strong> from 2016 to 2021, while Windsor grew <strong>5.7%</strong> over the same period.</p>
 
- <p>In short: London leads on municipal population; London grew faster during the last census cycle.</p>
+ <p>In short: London leads on municipal population; London grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. London households sat at <strong>$68,500</strong> (median after tax), versus <strong>$63,600</strong> in Windsor. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.7</strong> years in London and <strong>41.4</strong> in Windsor. London's younger profile contrasts with Windsor in this census snapshot.</p>
+ <p>Average age was <strong>40.7</strong> years in London and <strong>41.4</strong> in Windsor. London's younger profile contrasts with Windsor in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -1022,14 +1022,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/london/">London demographic profile</a></li>
  <li><a href="/location/windsor/">Windsor demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then London and Windsor</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then London and Windsor</li>
  </ul>
  `,
  },
  {
- title: "Kelowna vs Nanaimo: Population & Income Compared",
+ title: "Kelowna vs Nanaimo Population: 144,576 vs 99,863 + Income",
  slug: "kelowna-vs-nanaimo-2021-census",
- date: "November 1, 2026",
+ date: "August 31, 2026",
  category: "Comparisons",
  readTime: "7 min read",
  heroImage: "/images/blog/compare/kelowna-vs-nanaimo-2021-census.png",
@@ -1043,20 +1043,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Kelowna med. HH $k", value: 73.5 },
  { name: "Nanaimo med. HH $k", value: 68.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Kelowna and Nanaimo: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Kelowna is larger and grew faster (13.5% vs 10.3%). Median after-tax income is $73,500 in Kelowna versus $68,500 in Nanaimo. Age: Kelowna 43.4, Nanaimo 44.8.",
  content: `
  <p>Choosing between Kelowna and Nanaimo in British Columbia? These metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/kelowna/"><strong>Kelowna</strong></a> counted <strong>144,576</strong> residents in 2021, compared with <a href="/location/nanaimo/"><strong>Nanaimo</strong></a> at <strong>99,863</strong>. Size, however, is not the same as momentum. Kelowna's population rose <strong>13.5%</strong> from 2016 to 2021, while Nanaimo grew <strong>10.3%</strong> over the same period.</p>
 
- <p>In short: Kelowna leads on municipal population; Kelowna grew faster during the last census cycle.</p>
+ <p>In short: Kelowna leads on municipal population; Kelowna grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Kelowna households sat at <strong>$73,500</strong> (median after tax), versus <strong>$68,500</strong> in Nanaimo. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>43.4</strong> years in Kelowna and <strong>44.8</strong> in Nanaimo. Kelowna's younger profile contrasts with Nanaimo in this census snapshot.</p>
+ <p>Average age was <strong>43.4</strong> years in Kelowna and <strong>44.8</strong> in Nanaimo. Kelowna's younger profile contrasts with Nanaimo in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -1073,14 +1073,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/kelowna/">Kelowna demographic profile</a></li>
  <li><a href="/location/nanaimo/">Nanaimo demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Kelowna and Nanaimo</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Kelowna and Nanaimo</li>
  </ul>
  `,
  },
  {
- title: "Barrie vs Oshawa: Population & Income Compared",
+ title: "Barrie vs Oshawa Population: 147,829 vs 175,383 + Income",
  slug: "barrie-vs-oshawa-2021-census",
- date: "November 3, 2026",
+ date: "September 2, 2026",
  category: "Comparisons",
  readTime: "6 min read",
  heroImage: "/images/blog/compare/barrie-vs-oshawa-2021-census.png",
@@ -1094,20 +1094,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Barrie med. HH $k", value: 82 },
  { name: "Oshawa med. HH $k", value: 76 },
  ],
- excerpt: "Side-by-side 2021 figures for Barrie and Oshawa: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Oshawa is larger and grew faster (10.0% vs 4.5%). Median after-tax household income is $82,000 in Barrie and $76,000 in Oshawa. Age: Barrie 40.2, Oshawa 40.3.",
  content: `
  <p>Barrie and Oshawa are frequently compared across central and eastern Ontario. The numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/barrie/"><strong>Barrie</strong></a> counted <strong>147,829</strong> residents in 2021, compared with <a href="/location/oshawa/"><strong>Oshawa</strong></a> at <strong>175,383</strong>. Size, however, is not the same as momentum. Barrie's population rose <strong>4.5%</strong> from 2016 to 2021, while Oshawa grew <strong>10%</strong> over the same period.</p>
 
- <p>In short: Oshawa leads on municipal population; Oshawa grew faster during the last census cycle.</p>
+ <p>In short: Oshawa leads on municipal population; Oshawa grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Barrie households sat at <strong>$82,000</strong> (median after tax), versus <strong>$76,000</strong> in Oshawa. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.2</strong> years in Barrie and <strong>40.3</strong> in Oshawa. Barrie's younger profile contrasts with Oshawa in this census snapshot.</p>
+ <p>Average age was <strong>40.2</strong> years in Barrie and <strong>40.3</strong> in Oshawa. Barrie's younger profile contrasts with Oshawa in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -1124,14 +1124,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/barrie/">Barrie demographic profile</a></li>
  <li><a href="/location/oshawa/">Oshawa demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Barrie and Oshawa</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Barrie and Oshawa</li>
  </ul>
  `,
  },
  {
- title: "Guelph vs Kitchener: Population & Income Compared",
+ title: "Guelph vs Kitchener Population: 143,740 vs 256,885 + Income",
  slug: "guelph-vs-kitchener-2021-census",
- date: "November 5, 2026",
+ date: "September 4, 2026",
  category: "Comparisons",
  readTime: "5 min read",
  heroImage: "/images/blog/compare/guelph-vs-kitchener-2021-census.png",
@@ -1145,20 +1145,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Guelph med. HH $k", value: 82 },
  { name: "Kitchener med. HH $k", value: 76.5 },
  ],
- excerpt: "Side-by-side 2021 figures for Guelph and Kitchener: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Kitchener is larger and grew faster (10.1% vs 9.1%). Median after-tax income is $82,000 in Guelph versus $76,500 in Kitchener. Age: Guelph 40.1, Kitchener 39.",
  content: `
  <p>Guelph and Kitchener sit in southwestern Ontario and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/guelph/"><strong>Guelph</strong></a> counted <strong>143,740</strong> residents in 2021, compared with <a href="/location/kitchener/"><strong>Kitchener</strong></a> at <strong>256,885</strong>. Size, however, is not the same as momentum. Guelph's population rose <strong>9.1%</strong> from 2016 to 2021, while Kitchener grew <strong>10.1%</strong> over the same period.</p>
 
- <p>In short: Kitchener leads on municipal population; Kitchener grew faster during the last census cycle.</p>
+ <p>In short: Kitchener leads on municipal population; Kitchener grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Guelph households sat at <strong>$82,000</strong> (median after tax), versus <strong>$76,500</strong> in Kitchener. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.1</strong> years in Guelph and <strong>39</strong> in Kitchener. Kitchener's younger profile contrasts with Guelph in this census snapshot.</p>
+ <p>Average age was <strong>40.1</strong> years in Guelph and <strong>39</strong> in Kitchener. Kitchener's younger profile contrasts with Guelph in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -1175,14 +1175,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/guelph/">Guelph demographic profile</a></li>
  <li><a href="/location/kitchener/">Kitchener demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Guelph and Kitchener</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Guelph and Kitchener</li>
  </ul>
  `,
  },
  {
- title: "Laval vs Longueuil: Population & Income Compared",
+ title: "Laval vs Longueuil Population: 438,366 vs 254,483 + Income",
  slug: "laval-vs-longueuil-2021-census",
- date: "November 8, 2026",
+ date: "September 6, 2026",
  category: "Comparisons",
  readTime: "7 min read",
  heroImage: "/images/blog/compare/laval-vs-longueuil-2021-census.png",
@@ -1196,20 +1196,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Laval med. HH $k", value: 73.5 },
  { name: "Longueuil med. HH $k", value: 62 },
  ],
- excerpt: "Side-by-side 2021 figures for Laval and Longueuil: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Laval is bigger, but Longueuil grew faster (6.1% vs 3.6%). Median income is $73,500 in Laval and $62,000 in Longueuil. Average age: Laval 42, Longueuil 41.7.",
  content: `
- <p>Choosing between Laval and Longueuil in the Montréal census metro area? These metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
+ <p>Choosing between Laval and Longueuil in the Montréal metro area? These metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/laval/"><strong>Laval</strong></a> counted <strong>438,366</strong> residents in 2021, compared with <a href="/location/longueuil/"><strong>Longueuil</strong></a> at <strong>254,483</strong>. Size, however, is not the same as momentum. Laval's population rose <strong>3.6%</strong> from 2016 to 2021, while Longueuil grew <strong>6.1%</strong> over the same period.</p>
 
- <p>In short: Laval leads on municipal population; Longueuil grew faster during the last census cycle.</p>
+ <p>In short: Laval leads on municipal population; Longueuil grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Laval households sat at <strong>$73,500</strong> (median after tax), versus <strong>$62,000</strong> in Longueuil. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>42</strong> years in Laval and <strong>41.7</strong> in Longueuil. Longueuil's younger profile contrasts with Laval in this census snapshot.</p>
+ <p>Average age was <strong>42</strong> years in Laval and <strong>41.7</strong> in Longueuil. Longueuil's younger profile contrasts with Laval in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -1226,14 +1226,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/laval/">Laval demographic profile</a></li>
  <li><a href="/location/longueuil/">Longueuil demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Laval and Longueuil</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Laval and Longueuil</li>
  </ul>
  `,
  },
  {
- title: "Burnaby vs Coquitlam: Population & Income Compared",
+ title: "Burnaby vs Coquitlam Population: 249,125 vs 148,625 + Income",
  slug: "burnaby-vs-coquitlam-2021-census",
- date: "November 10, 2026",
+ date: "September 8, 2026",
  category: "Comparisons",
  readTime: "6 min read",
  heroImage: "/images/blog/compare/burnaby-vs-coquitlam-2021-census.png",
@@ -1247,20 +1247,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Burnaby med. HH $k", value: 73.5 },
  { name: "Coquitlam med. HH $k", value: 82 },
  ],
- excerpt: "Side-by-side 2021 figures for Burnaby and Coquitlam: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Burnaby is larger (249,125 vs 148,625). Median after-tax household income is $82,000 in Coquitlam and $73,500 in Burnaby. Age: Burnaby 42, Coquitlam 41.4.",
  content: `
  <p>Burnaby and Coquitlam are frequently compared across Metro Vancouver. The numbers put population, growth, income, and age side by side. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/burnaby/"><strong>Burnaby</strong></a> counted <strong>249,125</strong> residents in 2021, compared with <a href="/location/coquitlam/"><strong>Coquitlam</strong></a> at <strong>148,625</strong>. Size, however, is not the same as momentum. Burnaby's population rose <strong>7%</strong> from 2016 to 2021, while Coquitlam grew <strong>6.7%</strong> over the same period.</p>
 
- <p>In short: Burnaby leads on municipal population; Burnaby grew faster during the last census cycle.</p>
+ <p>In short: Burnaby leads on municipal population; Burnaby grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Coquitlam households sat at <strong>$82,000</strong> (median after tax), versus <strong>$73,500</strong> in Burnaby. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>42</strong> years in Burnaby and <strong>41.4</strong> in Coquitlam. Coquitlam's younger profile contrasts with Burnaby in this census snapshot.</p>
+ <p>Average age was <strong>42</strong> years in Burnaby and <strong>41.4</strong> in Coquitlam. Coquitlam's younger profile contrasts with Burnaby in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -1277,14 +1277,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/burnaby/">Burnaby demographic profile</a></li>
  <li><a href="/location/coquitlam/">Coquitlam demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Burnaby and Coquitlam</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Burnaby and Coquitlam</li>
  </ul>
  `,
  },
  {
- title: "Sherbrooke vs Trois-Rivières: Population & Income Compared",
+ title: "Sherbrooke vs Trois-Rivières Population: 172,950 vs 139,163",
  slug: "sherbrooke-vs-trois-rivieres-2021-census",
- date: "November 12, 2026",
+ date: "September 10, 2026",
  category: "Comparisons",
  readTime: "5 min read",
  heroImage: "/images/blog/compare/sherbrooke-vs-trois-rivieres-2021-census.png",
@@ -1298,20 +1298,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Sherbrooke med. HH $k", value: 55.2 },
  { name: "Trois-Rivières med. HH $k", value: 53.6 },
  ],
- excerpt: "Side-by-side 2021 figures for Sherbrooke and Trois-Rivières: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Sherbrooke is larger and grew faster (7.2% vs 3.5%). Income is $55,200 in Sherbrooke and $53,600 in Trois-Rivières. Age: Sherbrooke 42.2, Trois-Rivières 45.8.",
  content: `
  <p>Sherbrooke and Trois-Rivières sit in Quebec outside Montréal and often compete for talent and investment. 2021 figures show how they stack up on size, momentum, and household income. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/sherbrooke/"><strong>Sherbrooke</strong></a> counted <strong>172,950</strong> residents in 2021, compared with <a href="/location/trois-rivi-res/"><strong>Trois-Rivières</strong></a> at <strong>139,163</strong>. Size, however, is not the same as momentum. Sherbrooke's population rose <strong>7.2%</strong> from 2016 to 2021, while Trois-Rivières grew <strong>3.5%</strong> over the same period.</p>
 
- <p>In short: Sherbrooke leads on municipal population; Sherbrooke grew faster during the last census cycle.</p>
+ <p>In short: Sherbrooke leads on municipal population; Sherbrooke grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Sherbrooke households sat at <strong>$55,200</strong> (median after tax), versus <strong>$53,600</strong> in Trois-Rivières. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>42.2</strong> years in Sherbrooke and <strong>45.8</strong> in Trois-Rivières. Sherbrooke's younger profile contrasts with Trois-Rivières in this census snapshot.</p>
+ <p>Average age was <strong>42.2</strong> years in Sherbrooke and <strong>45.8</strong> in Trois-Rivières. Sherbrooke's younger profile contrasts with Trois-Rivières in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -1328,14 +1328,14 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/sherbrooke/">Sherbrooke demographic profile</a></li>
  <li><a href="/location/trois-rivi-res/">Trois-Rivières demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Sherbrooke and Trois-Rivières</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Sherbrooke and Trois-Rivières</li>
  </ul>
  `,
  },
  {
- title: "Oakville vs Burlington: Population & Income Compared",
+ title: "Oakville vs Burlington Population: 213,759 vs 186,948 + Income",
  slug: "oakville-vs-burlington-2021-census",
- date: "November 15, 2026",
+ date: "September 12, 2026",
  category: "Comparisons",
  readTime: "7 min read",
  heroImage: "/images/blog/compare/oakville-vs-burlington-2021-census.png",
@@ -1349,20 +1349,20 @@ export const compareBlogPosts: BlogPost[] = [
  { name: "Oakville med. HH $k", value: 108 },
  { name: "Burlington med. HH $k", value: 94 },
  ],
- excerpt: "Side-by-side 2021 figures for Oakville and Burlington: population, growth, median household income, and average age — with links to full profiles and the comparison tool.",
+ excerpt: "Oakville is larger and grew faster (10.3% vs 2.0%). Median income is $108,000 in Oakville and $94,000 in Burlington. Age: Oakville 40.4, Burlington 43.3.",
  content: `
  <p>Choosing between Oakville and Burlington in the western GTA / Halton corridor? These metrics — population, growth, median after-tax household income, and average age — offer a factual starting point. Here is a clear head-to-head.</p>
 
  <h2>Population &amp; growth</h2>
  <p><a href="/location/oakville-town-t/"><strong>Oakville</strong></a> counted <strong>213,759</strong> residents in 2021, compared with <a href="/location/burlington/"><strong>Burlington</strong></a> at <strong>186,948</strong>. Size, however, is not the same as momentum. Oakville's population rose <strong>10.3%</strong> from 2016 to 2021, while Burlington grew <strong>2%</strong> over the same period.</p>
 
- <p>In short: Oakville leads on municipal population; Oakville grew faster during the last census cycle.</p>
+ <p>In short: Oakville leads on municipal population; Oakville grew faster from 2016 to 2021.</p>
 
  <h2>Income</h2>
  <p>Median after-tax household income tells another part of the story. Oakville households sat at <strong>$108,000</strong> (median after tax), versus <strong>$94,000</strong> in Burlington. That gap matters for cost-of-living and labour-market conversations across the two cities.</p>
 
  <h2>Age profile</h2>
- <p>Average age was <strong>40.4</strong> years in Oakville and <strong>43.3</strong> in Burlington. Oakville's younger profile contrasts with Burlington in this census snapshot.</p>
+ <p>Average age was <strong>40.4</strong> years in Oakville and <strong>43.3</strong> in Burlington. Oakville's younger profile contrasts with Burlington in this snapshot.</p>
 
  <h2>Quick comparison table</h2>
  <ul>
@@ -1379,7 +1379,7 @@ export const compareBlogPosts: BlogPost[] = [
  <ul>
  <li><a href="/location/oakville-town-t/">Oakville demographic profile</a></li>
  <li><a href="/location/burlington/">Burlington demographic profile</a></li>
- <li><a href="/compare/">Location Comparison tool</a> — select Census subdivision, then Oakville and Burlington</li>
+ <li><a href="/compare/">Location Comparison tool</a> — choose both places, then Oakville and Burlington</li>
  </ul>
  `,
  }
