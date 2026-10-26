@@ -22,6 +22,67 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Canadian News Roundup — October 26, 2026: Ontario Votes, B.C. Turns Blue, Alberta Referendum Results",
+ slug: "canadian-news-roundup-2026-10-26",
+ date: "October 26, 2026",
+ category: "News",
+ readTime: "6 min read",
+ heroImage: "/images/blog/canadian-news-roundup-2026-10-26.png",
+ chartType: 'bar',
+ chartTitle: "Ontario mayoral races in the news — population (2021 Census, thousands)",
+ chartData: [
+ { name: "Toronto", value: 2794 },
+ { name: "Ottawa", value: 1017 },
+ { name: "Mississauga", value: 718 },
+ { name: "Hamilton", value: 569 },
+ { name: "Oshawa", value: 175 },
+ { name: "Cambridge", value: 138 },
+ { name: "Thunder Bay", value: 109 },
+ ],
+ excerpt: "More than 11.8 million Ontarians can vote in today's municipal elections, the B.C. Conservatives won their first majority since 1928, Alberta's immigration questions passed, and the Bank of Canada decides on rates Wednesday.",
+ content: `
+ <p><strong>TL;DR:</strong> Ontario picks mayors and councils today, with Toronto's race polling as a dead heat. B.C. elected its first Conservative majority since 1928, Alberta voters backed all five immigration questions but rejected constitutional changes, and most economists now expect the Bank of Canada to raise rates on Wednesday. Plus a historic First Nations–first ministers meeting and a Go Public investigation into Air Canada compensation denials.</p>
+
+ <h2>1. Ontario votes in municipal elections today</h2>
+ <p>Monday is municipal election day across Ontario, and most polling stations are open from 10 a.m. to 8 p.m. More than <strong>11.8 million</strong> Ontarians are eligible to vote, and about <strong>6,663</strong> candidates are running for <strong>2,800</strong> positions, including mayor, councillor and school board trustee, according to the Association of Municipalities of Ontario.</p>
+ <p>In Toronto, incumbent Olivia Chow faces councillor Brad Bradford. A Liaison Strategies poll last week had Bradford at <strong>49%</strong> and Chow at <strong>47%</strong> among decided and leaning voters (margin of error ±3.1 points, 19 times out of 20), a statistical dead heat. In Ottawa, a Quorus Consulting Group survey put incumbent Mark Sutcliffe at <strong>28%</strong> and Jeff Leiper at <strong>24%</strong>. Thunder Bay has 10 mayoral candidates, with Mayor Ken Boshcoff not seeking re-election, and the city faces a <strong>$30.6 million</strong> annual infrastructure deficit.</p>
+ <p><strong>By the numbers (2021 Census):</strong> <a href="/location/ontario/">Ontario</a> had <strong>14,223,942</strong> residents (+5.8% since 2016). <a href="/location/toronto/">Toronto</a> counted 2,794,356 (+2.3%), <a href="/location/ottawa/">Ottawa</a> 1,017,449 (+8.9%), <a href="/location/mississauga/">Mississauga</a> 717,961 (−0.5%), <a href="/location/hamilton/">Hamilton</a> 569,353 (+6.0%), <a href="/location/oshawa/">Oshawa</a> 175,383 (+10.0%), <a href="/location/cambridge/">Cambridge</a> 138,479 (+6.6%) and <a href="/location/thunder-bay/">Thunder Bay</a> 108,843 (+0.9%).</p>
+ <p><strong>Why it matters to you:</strong> mayors and councils set property taxes, housing approvals, transit and policing budgets in Canada's most populous province.</p>
+ <p>Source: <a href="https://www.cbc.ca/news/canada/ontario-municipal-elections-explainer-9.7392950" target="_blank" rel="noopener">CBC News</a></p>
+
+ <h2>2. Bank of Canada rate decision on Wednesday</h2>
+ <p>Inflation rose to <strong>3.1%</strong> in September, pushed up by fuel prices, while core measures stayed subdued. The economy is weak: GDP stalled in July (0% growth), and August GDP, expected at +0.1%, comes out Friday. Even so, most major forecasters now expect the Bank of Canada to raise its key overnight rate when it announces its decision and Monetary Policy Report on <strong>Wednesday, Oct. 28</strong>.</p>
+ <p><strong>Why it matters to you:</strong> a hike would push up costs on variable-rate mortgages and lines of credit.</p>
+ <p>Source: <a href="https://www.cbc.ca/news/business/armstrong-inflation-bank-of-canada-interest-rates-9.7393998" target="_blank" rel="noopener">CBC News</a></p>
+
+ <h2>3. Alberta referendum: immigration questions pass, constitutional changes rejected</h2>
+ <p>All five immigration-related questions in Alberta's referendum won majority support, while four constitutional reform questions were rejected. Requiring proof of citizenship to vote in provincial elections had the highest yes share at <strong>58%</strong>, and about <strong>55%</strong> backed Alberta taking greater control of immigration. The three questions on limiting some services for some non-permanent residents received 52.6%, 53% and 52%. Elections Alberta hand-counted <strong>20,574,612</strong> ballots, which it called the most ever counted by hand in a Canadian electoral event; results become official Oct. 29. CBC also reported that First Nations celebrated the decisive defeat of the separation question.</p>
+ <p>Premier Danielle Smith said the province will prioritize changes for economic migrants and "proceed with caution" on the rest.</p>
+ <p><strong>By the numbers (2021 Census):</strong> <a href="/location/alberta/">Alberta</a> had 4,262,635 residents (+4.8% since 2016), including <a href="/location/calgary/">Calgary</a> at 1,306,784 (+5.5%) and <a href="/location/edmonton/">Edmonton</a> at 1,010,899 (+8.3%).</p>
+ <p><strong>Why it matters to you:</strong> temporary residents such as international students and foreign workers could face new residency rules or fees for some provincial services if these measures become law.</p>
+ <p>Source: <a href="https://www.cbc.ca/news/canada/calgary/alberta-referendum-questions-immigration-constitution-9.7394465" target="_blank" rel="noopener">CBC News</a></p>
+
+ <h2>4. B.C. Conservatives win first majority since 1928</h2>
+ <p>CBC News projects a B.C. Conservative majority government under Premier-designate Lorne Doerkson, the party's first since 1928. David Eby, who called the election two years early, resigned as premier and NDP leader. CBC projected at least 11 Conservative wins in previously NDP-held ridings, all but one in Metro Vancouver and many in Surrey and the Tri-Cities. Green Leader Emily Lowan was projected to win her first seat.</p>
+ <p><strong>By the numbers (2021 Census):</strong> <a href="/location/british-columbia/">British Columbia</a> had 5,000,879 residents (+7.6% since 2016); <a href="/location/surrey/">Surrey</a> grew 9.7% to 568,322.</p>
+ <p><strong>Why it matters to you:</strong> a new government changes direction on housing, the economy and Indigenous rights legislation in Canada's third most populous province.</p>
+ <p>Source: <a href="https://www.cbc.ca/news/canada/british-columbia/livestory/bc-provincial-election-results-live-updates-2026-9.7389208" target="_blank" rel="noopener">CBC News</a></p>
+
+ <h2>5. First Nations and first ministers meet for the first time in two decades</h2>
+ <p>First Nations leaders and Canada's first ministers meet in Ottawa today to discuss Indigenous rights, the first such meeting in two decades. The last was in 2005 in Kelowna, B.C., which produced the Kelowna Accord. AFN National Chief Cindy Woodhouse Nepinak says chiefs want "tangible results," though she said a declaration will not come out of this meeting because the AFN needs more time to consult chiefs. AFN discussion papers mention economic prosperity, policing, constitutional rights, health and education.</p>
+ <p><strong>Why it matters to you:</strong> commitments could shape resource projects, policing and services in First Nations communities across the country.</p>
+ <p>Source: <a href="https://www.cbc.ca/news/indigenous/first-nations-first-ministers-9.7393838" target="_blank" rel="noopener">CBC News</a></p>
+
+ <h2>6. Air Canada's maintenance "loophole" on compensation</h2>
+ <p>Documents obtained by CBC Go Public show Air Canada told passengers their flights were cancelled for safety-related maintenance, making them ineligible for compensation, while the planes they were scheduled to fly were used on other routes. Under the Air Passenger Protection Regulations, passengers can be entitled to up to <strong>$1,000</strong> for delays within the airline's control and not required for safety. Gatineau's Juan Rojas won $1,000 after the Canadian Transportation Agency found Air Canada's safety claim unfounded. Air Canada says it made commercial decisions to reassign aircraft and was within its rights.</p>
+ <p><strong>Why it matters to you:</strong> if your flight is cancelled for "maintenance," it may be worth asking which aircraft was affected before accepting a denial.</p>
+ <p>Source: <a href="https://www.cbc.ca/news/gopublic/air-canada-maintenance-loophole-deny-compensation-9.7392314" target="_blank" rel="noopener">CBC News</a></p>
+
+ <h2>Data sources</h2>
+ <p>Population figures are from the 2021 Census of Population as presented on Canadian Data Insights location pages. See <a href="/sources/">Data sources</a>. News facts are from the linked reports. This roundup is for education only; verify primary sources.</p>
+ `,
+ },
+ {
  title: "Toronto vs Calgary Population: 2,794,356 vs 1,306,784 + Income",
  slug: "toronto-vs-calgary-2021-census",
  date: "September 14, 2026",
