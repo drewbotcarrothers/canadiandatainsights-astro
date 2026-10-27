@@ -28,7 +28,7 @@ export const website = {
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    'Interactive Canadian demographic insights — population, growth, income, and community profiles.',
+    'Interactive Canadian insights from Statistics Canada — census profiles, housing, and consumer prices.',
   publisher: { '@id': `${SITE_URL}/#organization` },
   inLanguage: 'en-CA',
 };
@@ -203,16 +203,66 @@ export function blogPostingJsonLd(opts: {
   return [article, crumbs];
 }
 
+export function costOfLivingJsonLd(opts: {
+  description: string;
+  referenceMonth: string;
+}): Record<string, unknown>[] {
+  const pageUrl = `${SITE_URL}/cost-of-living/`;
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Cost of living in Canada',
+      url: pageUrl,
+      description: opts.description,
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      inLanguage: 'en-CA',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Dataset',
+      name: 'Consumer Price Index and selected retail prices',
+      description: opts.description,
+      url: pageUrl,
+      license: OGL_LICENSE_URL,
+      creator: {
+        '@type': 'Organization',
+        name: 'Statistics Canada',
+        url: 'https://www.statcan.gc.ca/',
+      },
+      publisher: organization,
+      temporalCoverage: opts.referenceMonth,
+      spatialCoverage: { '@type': 'Country', name: 'Canada' },
+      isBasedOn: [
+        {
+          '@type': 'CreativeWork',
+          name: 'Consumer Price Index, monthly, not seasonally adjusted',
+          url: 'https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401',
+        },
+        {
+          '@type': 'CreativeWork',
+          name: 'Monthly average retail prices for selected products',
+          url: 'https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024501',
+        },
+      ],
+    },
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Cost of living', path: '/cost-of-living/' },
+    ]),
+  ];
+}
+
 export function sourcesJsonLd(): Record<string, unknown>[] {
   const pageUrl = `${SITE_URL}/sources/`;
   return [
     {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'Census Methodology & Sources',
+      name: 'Data sources and methodology',
       url: pageUrl,
       description:
-        'How Canadian Data Insights sources, processes, and presents Statistics Canada 2021 Census data under the Open Government Licence - Canada.',
+        'How Canadian Data Insights sources Statistics Canada census profiles, housing tables, the Consumer Price Index, and retail prices under the Open Government Licence - Canada.',
       isPartOf: { '@id': `${SITE_URL}/#website` },
       about: {
         '@type': 'Dataset',

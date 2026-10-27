@@ -1,0 +1,140 @@
+---
+import DistributionBar from './DistributionBar.astro';
+import SectionHeader from './SectionHeader.astro';
+import StatRow from './StatRow.astro';
+import { describeHousing } from '../../lib/geo-match';
+import type { HousingRecord } from '../../lib/geo-links';
+import { formatCurrency, formatNumber, pct } from '../../lib/utils';
+
+interface Props {
+  placeName: string;
+  housing: HousingRecord;
+}
+
+const { placeName, housing } = Astro.props;
+const kind = describeHousing(housing.geo).kind;
+const sameGeography = kind === 'country' || kind === 'region';
+const areaLabel = housing.geo.includes('(CA)')
+  ? 'census agglomeration'
+  : 'census metropolitan area';
+
+const countShare = (part: number | null, total: number | null) => {
+  if (part == null) return null;
+  if (total == null) return formatNumber(part);
+  return `${formatNumber(part)} (${pct(part, total)})`;
+};
+
+const dollars = (value: number | null) => (value == null ? null : formatCurrency(value));
+
+const bands = housing.shelterBands.filter((band) => band.households != null);
+const maxBand = Math.max(...bands.map((band) => band.households || 0), 0);
+---
+
+<section class="bg-background py-10 sm:py-16 md:py-20" data-housing-geo={housing.geo}>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionHeader
+      title={sameGeography ? `${placeName} housing` : `Housing · ${housing.geo}`}
+      id="housing"
+    />
+    {
+      sameGeography ? (
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          Tenure and monthly shelter costs for {placeName} from the 2021 Census, tables 98-10-0252-01 and
+          98-10-0253-01. Shares are calculated on this site from the published household counts.
+        </p>
+      ) : (
+        <p class="mb-6 max-w-3xl rounded-lg border border-primary/20 bg-primary/5 px-4 py-3 font-sans text-sm leading-relaxed text-on-surface sm:text-base">
+          These figures are published for <strong>{housing.geo}</strong>, a {areaLabel}. They are not
+          counts for {placeName} alone. Shares are calculated on this site from the published household
+          counts in tables 98-10-0252-01 and 98-10-0253-01.
+        </p>
+      )
+    }
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+      <div class="rounded-xl border border-border/30 bg-surface p-6">
+        <h3 class="mb-6 font-heading text-lg font-bold text-primary">Tenure</h3>
+        <StatRow label="Private households" value={formatNumber(housing.households)} />
+        <StatRow label="Owner households" value={countShare(housing.owner, housing.households)} />
+        <StatRow label="Renter households" value={countShare(housing.renter, housing.households)} />
+        <div class="my-4 h-px bg-border/30" />
+        <StatRow
+          label="Owners with a mortgage"
+          value={countShare(housing.ownerWithMortgage, housing.owner)}
+          sub="Share of owner households"
+        />
+        <StatRow
+          label="Owners without a mortgage"
+          value={countShare(housing.ownerWithoutMortgage, housing.owner)}
+          sub="Share of owner households"
+        />
+        <StatRow
+          label="Renters in subsidized housing"
+          value={countShare(housing.renterSubsidized, housing.renter)}
+          sub="Share of renter households"
+        />
+        <StatRow
+          label="Renters not in subsidized housing"
+          value={countShare(housing.renterNotSubsidized, housing.renter)}
+          sub="Share of renter households"
+        />
+      </div>
+      <div class="rounded-xl border border-border/30 bg-surface p-6">
+        <h3 class="mb-6 font-heading text-lg font-bold text-primary">Shelter costs</h3>
+        <StatRow label="Median monthly shelter cost" value={dollars(housing.medianShelter)} sub="All households, 2021" />
+        <StatRow label="Average monthly shelter cost" value={dollars(housing.averageShelter)} sub="All households, 2021" />
+        <StatRow label="Owners, median" value={dollars(housing.ownerMedianShelter)} />
+        <StatRow label="Renters, median" value={dollars(housing.renterMedianShelter)} />
+        <StatRow label="Owners with a mortgage, median" value={dollars(housing.mortgageMedianShelter)} />
+        <StatRow label="Owners without a mortgage, median" value={dollars(housing.noMortgageMedianShelter)} />
+        <div class="my-4 h-px bg-border/30" />
+        <StatRow
+          label="Spending 30% or more of income on shelter"
+          value={countShare(housing.spend30Plus, housing.households)}
+          sub="Share of households"
+        />
+        <StatRow
+          label="Owners spending 30% or more"
+          value={countShare(housing.ownerSpend30Plus, housing.owner)}
+          sub="Share of owner households"
+        />
+        <StatRow
+          label="Renters spending 30% or more"
+          value={countShare(housing.renterSpend30Plus, housing.renter)}
+          sub="Share of renter households"
+        />
+        <StatRow
+          label="Shelter-cost ratio not applicable"
+          value={countShare(housing.spendNotApplicable, housing.households)}
+        />
+      </div>
+    </div>
+    {
+      bands.length > 0 && (
+        <div class="mt-12 rounded-xl border border-border/30 bg-surface p-6">
+          <h3 class="mb-2 font-heading text-lg font-bold text-primary">Monthly shelter cost</h3>
+          <p class="mb-6 font-sans text-sm text-on-surface-variant">
+            Published household counts by shelter-cost band. Census counts are randomly rounded, so the
+            bands can differ slightly from the household total.
+          </p>
+          {bands.map((band) => (
+            <DistributionBar
+              label={band.label}
+              value={band.households || 0}
+              max={maxBand}
+              total={housing.households ?? undefined}
+              labelClass="sm:w-40"
+            />
+          ))}
+        </div>
+      )
+    }
+    <p class="mt-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+      Shelter cost is the census monthly amount. For owners it includes mortgage payments, property taxes
+      and condominium fees, along with electricity, heat, water and other municipal services. For renters
+      it includes rent and those utility payments when the tenant pays them. Current consumer prices are a
+      separate series on the <a href="/cost-of-living/" class="font-medium text-primary underline-offset-2 hover:underline">cost-of-living page</a>.
+      {' '}
+      <a href="/sources/" class="font-medium text-primary underline-offset-2 hover:underline">Data sources</a>.
+    </p>
+  </div>
+</section>

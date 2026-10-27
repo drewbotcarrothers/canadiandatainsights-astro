@@ -1,5 +1,15 @@
 ---
 const year = new Date().getFullYear();
+
+const portfolio = [
+  { href: 'https://canadianoptimizer.com/', label: 'Canadian Optimizer' },
+  { href: 'https://canadiancreditcardfinder.com/', label: 'Canadian Credit Card Finder' },
+  { href: 'https://latestmortgagerates.ca/', label: 'Latest Mortgage Rates' },
+  { href: 'https://makemoneyoptimizer.com/', label: 'Make Money Optimizer' },
+  { href: 'https://savingoptimizer.com/', label: 'Saving Optimizer' },
+  { href: 'https://aitoolsoptimizer.com/', label: 'AI Tools Optimizer' },
+  { href: 'https://stocksummarizer.com/', label: 'Stock Summarizer' },
+];
 ---
 
 <footer class="mt-20 w-full border-t border-border/40 bg-surface-soft px-4 py-12 sm:px-8">
@@ -18,6 +28,12 @@ const year = new Date().getFullYear();
         class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant no-underline transition-colors hover:text-primary"
       >
         Blog
+      </a>
+      <a
+        href="/cost-of-living/"
+        class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant no-underline transition-colors hover:text-primary"
+      >
+        Cost of living
       </a>
       <a
         href="/about/"
@@ -57,22 +73,29 @@ const year = new Date().getFullYear();
       YouTube
     </a>
   </div>
-  <div class="mx-auto mt-8 flex max-w-6xl flex-col items-center gap-2 md:items-start">
+  <div class="mx-auto mt-8 flex max-w-6xl flex-col items-center gap-3 md:items-start">
     <p class="font-sans text-[10px] font-medium uppercase tracking-widest text-on-surface-variant">
       More Canadian tools
     </p>
-    <a
-      href="https://canadiancreditcardfinder.com/"
-      class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant no-underline transition-colors hover:text-primary"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Canadian Credit Card Finder
-    </a>
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 md:justify-start" aria-label="More Canadian tools">
+      {
+        portfolio.map((tool) => (
+          <a
+            href={tool.href}
+            class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant no-underline transition-colors hover:text-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {tool.label}
+          </a>
+        ))
+      }
+    </nav>
   </div>
   <div class="mx-auto mt-8 max-w-6xl text-center md:text-left">
     <p class="max-w-2xl text-[10px] leading-relaxed text-on-surface-variant/70">
-      Adapted from Statistics Canada, Census of Population, 2021, used under the{' '}
+      Census figures are adapted from Statistics Canada, Census of Population, 2021. Price figures are
+      adapted from Statistics Canada consumer price and retail price tables. Used under the{' '}
       <a
         href="https://open.canada.ca/en/open-government-licence-canada"
         class="underline underline-offset-2 hover:text-primary"

@@ -1,0 +1,1023 @@
+{
+  "retrieved": "2026-10-27",
+  "table": {
+    "id": "18-10-0245-01",
+    "title": "Monthly average retail prices for selected products",
+    "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024501",
+    "uom": "Dollars"
+  },
+  "products": [
+    "Ground beef, per kilogram",
+    "Whole chicken, per kilogram",
+    "Chicken breasts, per kilogram",
+    "Milk, 2 litres",
+    "Eggs, 1 dozen",
+    "White bread, 675 grams",
+    "Butter, 454 grams",
+    "Apples, per kilogram",
+    "Bananas, per kilogram",
+    "Potatoes, per kilogram",
+    "Tomatoes, per kilogram",
+    "White rice, 2 kilograms",
+    "Dry or fresh pasta, 500 grams",
+    "Roasted or ground coffee, 340 grams"
+  ],
+  "comparisonProducts": [
+    "Ground beef, per kilogram",
+    "Milk, 2 litres",
+    "Eggs, 1 dozen",
+    "White bread, 675 grams"
+  ],
+  "rows": [
+    {
+      "geo": "Alberta",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.74
+    },
+    {
+      "geo": "Alberta",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 2.08
+    },
+    {
+      "geo": "Alberta",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.83
+    },
+    {
+      "geo": "Alberta",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 15.55
+    },
+    {
+      "geo": "Alberta",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.57
+    },
+    {
+      "geo": "Alberta",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 5.19
+    },
+    {
+      "geo": "Alberta",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 18.19
+    },
+    {
+      "geo": "Alberta",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.58
+    },
+    {
+      "geo": "Alberta",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.0
+    },
+    {
+      "geo": "Alberta",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.21
+    },
+    {
+      "geo": "Alberta",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 4.73
+    },
+    {
+      "geo": "Alberta",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.61
+    },
+    {
+      "geo": "Alberta",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 9.06
+    },
+    {
+      "geo": "Alberta",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 9.87
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.68
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 1.84
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.84
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 16.65
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.65
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 5.71
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 18.53
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.62
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.04
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.53
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 4.67
+    },
+    {
+      "geo": "British Columbia",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 4.04
+    },
+    {
+      "geo": "British Columbia",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 9.05
+    },
+    {
+      "geo": "British Columbia",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 8.87
+    },
+    {
+      "geo": "Canada",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.47
+    },
+    {
+      "geo": "Canada",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 1.89
+    },
+    {
+      "geo": "Canada",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.68
+    },
+    {
+      "geo": "Canada",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 14.41
+    },
+    {
+      "geo": "Canada",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.37
+    },
+    {
+      "geo": "Canada",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 4.83
+    },
+    {
+      "geo": "Canada",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 16.75
+    },
+    {
+      "geo": "Canada",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.49
+    },
+    {
+      "geo": "Canada",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.17
+    },
+    {
+      "geo": "Canada",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.46
+    },
+    {
+      "geo": "Canada",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 4.8
+    },
+    {
+      "geo": "Canada",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.63
+    },
+    {
+      "geo": "Canada",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 9.73
+    },
+    {
+      "geo": "Canada",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.13
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.64
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 2.06
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.73
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 15.1
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.49
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 4.8
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 17.38
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 4.82
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.05
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 8.84
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 4.57
+    },
+    {
+      "geo": "Manitoba",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.55
+    },
+    {
+      "geo": "Manitoba",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 8.56
+    },
+    {
+      "geo": "Manitoba",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 9.71
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.26
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 2.19
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.72
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 14.3
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.42
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 5.18
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 16.23
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.16
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.1
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.63
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.79
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.8
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 10.17
+    },
+    {
+      "geo": "New Brunswick",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.37
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.71
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 2.76
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.78
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 15.53
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.65
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 5.55
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 16.15
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.09
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.32
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.74
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.2
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 4.19
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 10.3
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.24
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.24
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 2.16
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.61
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 14.58
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.71
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 5.3
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 16.25
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.04
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.81
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 10.12
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.56
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.68
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 10.44
+    },
+    {
+      "geo": "Nova Scotia",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.28
+    },
+    {
+      "geo": "Ontario",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.35
+    },
+    {
+      "geo": "Ontario",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 1.71
+    },
+    {
+      "geo": "Ontario",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.75
+    },
+    {
+      "geo": "Ontario",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 13.94
+    },
+    {
+      "geo": "Ontario",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.32
+    },
+    {
+      "geo": "Ontario",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 5.0
+    },
+    {
+      "geo": "Ontario",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 16.09
+    },
+    {
+      "geo": "Ontario",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.92
+    },
+    {
+      "geo": "Ontario",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.38
+    },
+    {
+      "geo": "Ontario",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.38
+    },
+    {
+      "geo": "Ontario",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 4.41
+    },
+    {
+      "geo": "Ontario",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.27
+    },
+    {
+      "geo": "Ontario",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 9.29
+    },
+    {
+      "geo": "Ontario",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.86
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.19
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 2.17
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.48
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 14.75
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.73
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 5.32
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 15.75
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 4.73
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 4.99
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.92
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.76
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.79
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 10.54
+    },
+    {
+      "geo": "Prince Edward Island",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 7.38
+    },
+    {
+      "geo": "Quebec",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.25
+    },
+    {
+      "geo": "Quebec",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 2.0
+    },
+    {
+      "geo": "Quebec",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.46
+    },
+    {
+      "geo": "Quebec",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 14.01
+    },
+    {
+      "geo": "Quebec",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.22
+    },
+    {
+      "geo": "Quebec",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 4.16
+    },
+    {
+      "geo": "Quebec",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 16.77
+    },
+    {
+      "geo": "Quebec",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.36
+    },
+    {
+      "geo": "Quebec",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 4.6
+    },
+    {
+      "geo": "Quebec",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.7
+    },
+    {
+      "geo": "Quebec",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.47
+    },
+    {
+      "geo": "Quebec",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.97
+    },
+    {
+      "geo": "Quebec",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 11.01
+    },
+    {
+      "geo": "Quebec",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.71
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Apples, per kilogram",
+      "refDate": "2026-08",
+      "price": 6.71
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Bananas, per kilogram",
+      "refDate": "2026-08",
+      "price": 2.05
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 5.67
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Chicken breasts, per kilogram",
+      "refDate": "2026-08",
+      "price": 14.95
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.49
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 4.8
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Ground beef, per kilogram",
+      "refDate": "2026-08",
+      "price": 17.38
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.26
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Potatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 5.06
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 8.6
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Tomatoes, per kilogram",
+      "refDate": "2026-08",
+      "price": 4.62
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.62
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 8.71
+    },
+    {
+      "geo": "Saskatchewan",
+      "product": "Whole chicken, per kilogram",
+      "refDate": "2026-08",
+      "price": 9.83
+    },
+    {
+      "geo": "Whitehorse, Yukon",
+      "product": "Butter, 454 grams",
+      "refDate": "2026-08",
+      "price": 6.32
+    },
+    {
+      "geo": "Whitehorse, Yukon",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.76
+    },
+    {
+      "geo": "Whitehorse, Yukon",
+      "product": "Eggs, 1 dozen",
+      "refDate": "2026-08",
+      "price": 5.4
+    },
+    {
+      "geo": "Whitehorse, Yukon",
+      "product": "Milk, 2 litres",
+      "refDate": "2026-08",
+      "price": 5.78
+    },
+    {
+      "geo": "Whitehorse, Yukon",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 9.99
+    },
+    {
+      "geo": "Whitehorse, Yukon",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 3.69
+    },
+    {
+      "geo": "Whitehorse, Yukon",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 9.57
+    },
+    {
+      "geo": "Yellowknife, Northwest Territories",
+      "product": "Dry or fresh pasta, 500 grams",
+      "refDate": "2026-08",
+      "price": 3.67
+    },
+    {
+      "geo": "Yellowknife, Northwest Territories",
+      "product": "Roasted or ground coffee, 340 grams",
+      "refDate": "2026-08",
+      "price": 10.46
+    },
+    {
+      "geo": "Yellowknife, Northwest Territories",
+      "product": "White bread, 675 grams",
+      "refDate": "2026-08",
+      "price": 4.38
+    },
+    {
+      "geo": "Yellowknife, Northwest Territories",
+      "product": "White rice, 2 kilograms",
+      "refDate": "2026-08",
+      "price": 9.41
+    }
+  ]
+}

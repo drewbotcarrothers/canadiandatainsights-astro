@@ -2,7 +2,16 @@ import type { APIRoute } from 'astro';
 import { getAllLocations, generateSlug } from '../lib/locations';
 import { blogPosts } from '../lib/blog-data';
 
-const staticPages = ['/', '/about/', '/sources/', '/privacy/', '/terms/', '/blog/', '/compare/'];
+const staticPages = [
+  '/',
+  '/about/',
+  '/sources/',
+  '/privacy/',
+  '/terms/',
+  '/blog/',
+  '/compare/',
+  '/cost-of-living/',
+];
 
 export const GET: APIRoute = async () => {
   const site = 'https://canadiandatainsights.com';

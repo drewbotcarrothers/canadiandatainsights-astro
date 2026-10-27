@@ -33,15 +33,17 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Data Integrity</h2>
           <p class="mb-4">
-            Our platform relies strictly on the official 2021 Canadian Census. By avoiding
-            estimations and third-party extrapolations, we maintain a high standard of
-            accuracy.
+            Location profiles use the official 2021 Census of Population, including education,
+            occupation, industry, and place of work as well as population and income. Housing
+            tenure and shelter costs are added only where Statistics Canada published them:
+            Canada, the provinces and territories, and census metropolitan areas and census
+            agglomerations. The cost-of-living page uses the Consumer Price Index and average
+            retail prices for the geographies in those tables.
           </p>
           <p>
-            We process hundreds of distinct demographic variables ranging from granular
-            income brackets and shifting age demographics, to language prevalence and
-            household compositions in order to compute dynamic rankings across thousands of
-            municipalities.
+            We do not estimate a figure for a municipality that is absent from the source
+            table, and we do not mix in third-party extrapolations. Rankings on census profile
+            fields are calculated from those published counts.
           </p>
         </div>
 
