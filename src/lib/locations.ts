@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import Papa from 'papaparse';
+import { linksFor, type GeoLink } from './geo-links';
 
 export interface LocationData {
   ALT_GEO_CODE: string | number;
@@ -173,6 +174,36 @@ export const COMPARE_FIELDS = [
   'MOTHER_TONGUE_FR',
   'MOTHER_TONGUE_NON_OFFICIAL',
   'MOTHER_TONGUE_TOTAL',
+  'EDU_TOTAL_15_PLUS',
+  'EDU_NO_CERTIFICATE',
+  'EDU_HIGH_SCHOOL',
+  'EDU_POSTSECONDARY',
+  'EDU_BACHELOR_OR_HIGHER',
+  'EDU_BACHELOR',
+  'EDU_MASTERS',
+  'COMMUTE_TOTAL',
+  'COMMUTE_WORK_AT_HOME',
+  'COMMUTE_USUAL_PLACE',
+  'COMMUTE_NO_FIXED_ADDRESS',
+  'COMMUTE_OUTSIDE_CANADA',
+  'OCC_TOTAL',
+  'OCC_MANAGEMENT',
+  'OCC_BUSINESS_FINANCE',
+  'OCC_SCIENCES',
+  'OCC_HEALTH',
+  'OCC_EDUCATION_LAW_SOCIAL',
+  'OCC_SALES_SERVICE',
+  'OCC_TRADES_TRANSPORT',
+  'OCC_MANUFACTURING',
+  'IND_TOTAL',
+  'IND_CONSTRUCTION',
+  'IND_MANUFACTURING',
+  'IND_RETAIL',
+  'IND_PROFESSIONAL_SCIENTIFIC',
+  'IND_HEALTHCARE',
+  'IND_ACCOMMODATION_FOOD',
+  'IND_PUBLIC_ADMIN',
+  'IND_EDUCATION',
 ] as const;
 
 export type CompareLocation = {
@@ -222,18 +253,74 @@ export type CompareLocation = {
   MOTHER_TONGUE_FR?: number | null;
   MOTHER_TONGUE_NON_OFFICIAL?: number | null;
   MOTHER_TONGUE_TOTAL?: number | null;
+  EDU_TOTAL_15_PLUS?: number | null;
+  EDU_NO_CERTIFICATE?: number | null;
+  EDU_HIGH_SCHOOL?: number | null;
+  EDU_POSTSECONDARY?: number | null;
+  EDU_BACHELOR_OR_HIGHER?: number | null;
+  EDU_BACHELOR?: number | null;
+  EDU_MASTERS?: number | null;
+  COMMUTE_TOTAL?: number | null;
+  COMMUTE_WORK_AT_HOME?: number | null;
+  COMMUTE_USUAL_PLACE?: number | null;
+  COMMUTE_NO_FIXED_ADDRESS?: number | null;
+  COMMUTE_OUTSIDE_CANADA?: number | null;
+  OCC_TOTAL?: number | null;
+  OCC_MANAGEMENT?: number | null;
+  OCC_BUSINESS_FINANCE?: number | null;
+  OCC_SCIENCES?: number | null;
+  OCC_HEALTH?: number | null;
+  OCC_EDUCATION_LAW_SOCIAL?: number | null;
+  OCC_SALES_SERVICE?: number | null;
+  OCC_TRADES_TRANSPORT?: number | null;
+  OCC_MANUFACTURING?: number | null;
+  IND_TOTAL?: number | null;
+  IND_CONSTRUCTION?: number | null;
+  IND_MANUFACTURING?: number | null;
+  IND_RETAIL?: number | null;
+  IND_PROFESSIONAL_SCIENTIFIC?: number | null;
+  IND_HEALTHCARE?: number | null;
+  IND_ACCOMMODATION_FOOD?: number | null;
+  IND_PUBLIC_ADMIN?: number | null;
+  IND_EDUCATION?: number | null;
+  HOUSING_GEO?: string | null;
+  HOUSING_HOUSEHOLDS?: number | null;
+  HOUSING_OWNER?: number | null;
+  HOUSING_RENTER?: number | null;
+  HOUSING_SPEND_30_PLUS?: number | null;
+  HOUSING_OWNER_SPEND_30_PLUS?: number | null;
+  HOUSING_RENTER_SPEND_30_PLUS?: number | null;
+  HOUSING_MEDIAN_SHELTER?: number | null;
+  HOUSING_OWNER_MEDIAN_SHELTER?: number | null;
+  HOUSING_RENTER_MEDIAN_SHELTER?: number | null;
+  HOUSING_OWNER_WITH_MORTGAGE?: number | null;
+  HOUSING_RENTER_SUBSIDIZED?: number | null;
 };
 
-export function toCompareLocation(loc: LocationData): CompareLocation {
+export function toCompareLocation(loc: LocationData, link?: GeoLink | null): CompareLocation {
   const out: Record<string, unknown> = {};
   for (const field of COMPARE_FIELDS) {
     const val = loc[field];
     out[field] = val === undefined ? null : val;
   }
+  const housing = link?.housing;
+  out.HOUSING_GEO = housing?.geo ?? null;
+  out.HOUSING_HOUSEHOLDS = housing?.households ?? null;
+  out.HOUSING_OWNER = housing?.owner ?? null;
+  out.HOUSING_RENTER = housing?.renter ?? null;
+  out.HOUSING_SPEND_30_PLUS = housing?.spend30Plus ?? null;
+  out.HOUSING_OWNER_SPEND_30_PLUS = housing?.ownerSpend30Plus ?? null;
+  out.HOUSING_RENTER_SPEND_30_PLUS = housing?.renterSpend30Plus ?? null;
+  out.HOUSING_MEDIAN_SHELTER = housing?.medianShelter ?? null;
+  out.HOUSING_OWNER_MEDIAN_SHELTER = housing?.ownerMedianShelter ?? null;
+  out.HOUSING_RENTER_MEDIAN_SHELTER = housing?.renterMedianShelter ?? null;
+  out.HOUSING_OWNER_WITH_MORTGAGE = housing?.ownerWithMortgage ?? null;
+  out.HOUSING_RENTER_SUBSIDIZED = housing?.renterSubsidized ?? null;
   return out as CompareLocation;
 }
 
 export async function getCompareLocations(): Promise<CompareLocation[]> {
   const locations = await getAllLocations();
-  return locations.map(toCompareLocation);
+  const links = linksFor(locations);
+  return locations.map((loc) => toCompareLocation(loc, links.get(String(loc.ALT_GEO_CODE))));
 }

@@ -1,0 +1,206 @@
+---
+import DistributionBar from './DistributionBar.astro';
+import SectionHeader from './SectionHeader.astro';
+import StatRow from './StatRow.astro';
+import {
+  commuteBars,
+  educationBars,
+  industryBars,
+  metric,
+  occupationBars,
+} from '../../lib/census-profile';
+import { formatNumber, pct } from '../../lib/utils';
+import type { LocationData } from '../../lib/locations';
+
+interface Props {
+  place: LocationData;
+  name: string;
+}
+
+const { place, name } = Astro.props;
+
+const eduTotal = metric(place, 'EDU_TOTAL_15_PLUS');
+const education = educationBars.map((item) => ({
+  label: item.label,
+  value: metric(place, item.key),
+}));
+const educationRows = education.filter((item) => item.value != null) as { label: string; value: number }[];
+const maxEducation = Math.max(...educationRows.map((item) => item.value), 0);
+
+const occTotal = metric(place, 'OCC_TOTAL');
+const occupation = occupationBars.map((item) => ({
+  label: item.label,
+  value: metric(place, item.key),
+}));
+const occupationRows = occupation.filter((item) => item.value != null) as { label: string; value: number }[];
+const maxOccupation = Math.max(...occupationRows.map((item) => item.value), 0);
+
+const indTotal = metric(place, 'IND_TOTAL');
+const industry = industryBars.map((item) => ({
+  label: item.label,
+  value: metric(place, item.key),
+}));
+const industryRows = industry.filter((item) => item.value != null) as { label: string; value: number }[];
+const maxIndustry = Math.max(...industryRows.map((item) => item.value), 0);
+
+const commuteTotal = metric(place, 'COMMUTE_TOTAL');
+const commute = commuteBars.map((item) => ({
+  label: item.label,
+  value: metric(place, item.key),
+}));
+const commuteRows = commute.filter((item) => item.value != null) as { label: string; value: number }[];
+const maxCommute = Math.max(...commuteRows.map((item) => item.value), 0);
+
+const countShare = (part: number | null, total: number | null) => {
+  if (part == null) return null;
+  if (total == null) return formatNumber(part);
+  return `${formatNumber(part)} (${pct(part, total)})`;
+};
+---
+
+{
+  eduTotal != null && educationRows.length > 0 && (
+    <section class="bg-background py-10 sm:py-16 md:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader title={`${name} education`} id="education" />
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          Highest certificate, diploma or degree for the population aged 15 and over, Census 2021.
+          The bars are mutually exclusive. Shares are calculated on this site from the published counts.
+        </p>
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+          <div class="rounded-xl border border-border/30 bg-surface p-6">
+            <h3 class="mb-6 font-heading text-lg font-bold text-primary">Highest credential</h3>
+            <StatRow label="Population aged 15 and over" value={formatNumber(eduTotal)} />
+            <StatRow
+              label="No certificate, diploma or degree"
+              value={countShare(metric(place, 'EDU_NO_CERTIFICATE'), eduTotal)}
+            />
+            <StatRow
+              label="High school diploma"
+              value={countShare(metric(place, 'EDU_HIGH_SCHOOL'), eduTotal)}
+            />
+            <StatRow
+              label="Postsecondary credential"
+              value={countShare(metric(place, 'EDU_POSTSECONDARY'), eduTotal)}
+            />
+            <StatRow
+              label="Bachelor's degree or higher"
+              value={countShare(metric(place, 'EDU_BACHELOR_OR_HIGHER'), eduTotal)}
+            />
+            <div class="my-4 h-px bg-border/30" />
+            <h4 class="mb-3 font-sans text-xs font-bold uppercase tracking-wider text-on-surface-variant">
+              Within bachelor's degree or higher
+            </h4>
+            <StatRow label="Bachelor's degree" value={countShare(metric(place, 'EDU_BACHELOR'), eduTotal)} />
+            <StatRow label="Master's degree" value={countShare(metric(place, 'EDU_MASTERS'), eduTotal)} />
+            <StatRow
+              label="Medicine, dentistry or veterinary medicine"
+              value={countShare(metric(place, 'EDU_MEDICINE_DENTISTRY_VET'), eduTotal)}
+            />
+            <p class="mt-4 font-sans text-xs leading-relaxed text-on-surface-variant">
+              Those three credentials are published parts of “bachelor's degree or higher.” They do not
+              add up to that total. Other university credentials, including earned doctorates, stay inside
+              the published total and are not separate columns in this extract.
+            </p>
+          </div>
+          <div class="rounded-xl border border-border/30 bg-surface p-6 lg:col-span-2">
+            <h3 class="mb-6 font-heading text-lg font-bold text-primary">Share of the population aged 15 and over</h3>
+            {educationRows.map((item) => (
+              <DistributionBar
+                label={item.label}
+                value={item.value}
+                max={maxEducation}
+                total={eduTotal}
+                labelClass="sm:w-64"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  occTotal != null && occupationRows.length > 0 && (
+    <section class="bg-surface-soft py-10 sm:py-16 md:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader title={`${name} occupation`} id="occupation" />
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          Broad category for the labour force aged 15 and over, Census 2021, using the National
+          Occupational Classification (NOC) 2021. Legislative and senior management is broad category 0,
+          not every job with “manager” in the title. Shares are calculated on this site from the published counts.
+        </p>
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <StatRow label="Labour force" value={formatNumber(occTotal)} />
+          <div class="my-4 h-px bg-border/30" />
+          {occupationRows.map((item) => (
+            <DistributionBar
+              label={item.label}
+              value={item.value}
+              max={maxOccupation}
+              total={occTotal}
+              colorClass="bg-tertiary"
+              labelClass="sm:w-72"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  indTotal != null && industryRows.length > 0 && (
+    <section class="bg-background py-10 sm:py-16 md:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader title={`${name} industry`} id="industry" />
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          Industry sector for the labour force aged 15 and over, Census 2021. Shares are calculated on
+          this site from the published counts.
+        </p>
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <StatRow label="Labour force" value={formatNumber(indTotal)} />
+          <div class="my-4 h-px bg-border/30" />
+          {industryRows.map((item) => (
+            <DistributionBar
+              label={item.label}
+              value={item.value}
+              max={maxIndustry}
+              total={indTotal}
+              colorClass="bg-primary/60"
+              labelClass="sm:w-72"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  commuteTotal != null && commuteRows.length > 0 && (
+    <section class="bg-surface-soft py-10 sm:py-16 md:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader title={`${name} commute`} id="commute" />
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          Place of work for the employed labour force aged 15 and over, Census 2021. Shares are
+          calculated on this site from the published counts.
+        </p>
+        <div class="rounded-xl border border-border/30 bg-surface p-6">
+          <StatRow label="Employed labour force" value={formatNumber(commuteTotal)} />
+          <div class="my-4 h-px bg-border/30" />
+          {commuteRows.map((item) => (
+            <DistributionBar
+              label={item.label}
+              value={item.value}
+              max={maxCommute}
+              total={commuteTotal}
+              labelClass="sm:w-56"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

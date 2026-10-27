@@ -1,15 +1,15 @@
 # Canadian Data Insights
 
-> Interactive Statistics Canada Census of Population 2021 insights for Canadian provinces, territories, and municipalities.
+> Statistics Canada census profiles, housing tenure and shelter costs, and consumer prices for Canadian provinces, territories, and municipalities.
 
 ## About
 
-Canadian Data Insights (CDI) turns official Statistics Canada 2021 Census geography profiles into accessible web pages: population, growth, households, income, employment, languages, and dwellings. We do not invent census estimates; figures are derived from published Census 2021 data.
+Canadian Data Insights (CDI) turns official Statistics Canada data into accessible web pages. Census profiles cover population, growth, households, income, employment, education, occupation, industry, place of work, languages, and dwellings. Housing tenure and shelter costs are shown only for geographies published in census tables 98-10-0252-01 and 98-10-0253-01. Consumer prices use the Consumer Price Index (table 18-10-0004-01) and selected average retail prices (table 18-10-0245-01). We do not invent figures for a municipality that is not in the source table.
 
 - Site: https://canadiandatainsights.com/
 - Contact: hello@canadiandatainsights.com
 - YouTube: https://www.youtube.com/channel/UCkKDB5U853YVBnfAPIlPHTw
-- Primary data: Statistics Canada, Census of Population, 2021
+- Primary data: Statistics Canada, Census of Population, 2021; Consumer Price Index; monthly average retail prices
 - Licence: Open Government Licence - Canada
   https://open.canada.ca/en/open-government-licence-canada
 
@@ -17,6 +17,7 @@ Canadian Data Insights (CDI) turns official Statistics Canada 2021 Census geogra
 
 - Home / Interactive Atlas: https://canadiandatainsights.com/
 - Location Comparison: https://canadiandatainsights.com/compare/
+- Cost of living: https://canadiandatainsights.com/cost-of-living/
 - Blog: https://canadiandatainsights.com/blog/
 - Sources & methodology: https://canadiandatainsights.com/sources/
 - About: https://canadiandatainsights.com/about/
@@ -28,17 +29,18 @@ Individual community profiles live at `/location/{slug}/` (trailing slash), for 
 
 - https://canadiandatainsights.com/location/toronto/
 - https://canadiandatainsights.com/location/ontario/
+- https://canadiandatainsights.com/location/canada/
 
-Profiles cover provinces, territories, and municipalities (generally population ≥ 5,000 in the source extract). Each page summarizes Census 2021 characteristics for that geography.
+Profiles cover provinces, territories, and municipalities (generally population ≥ 5,000 in the source extract). Education, occupation, industry, and commute are on each profile. A CPI card and a housing section appear only when a published price or housing geography matches that place. When the match is a census metropolitan area, census agglomeration, or CPI city, the page names that geography rather than treating it as the municipality alone.
 
 ## How to cite
 
-Suggested attribution when citing figures shown on this site:
+Suggested attribution when citing census figures shown on this site:
 
 > Adapted from Statistics Canada, Census of Population, 2021. This does not constitute an endorsement by Statistics Canada of this product.
 
-Also link the Open Government Licence - Canada and, when practical, the CDI page URL you used.
+For consumer prices, name table 18-10-0004-01 or 18-10-0245-01 and the reference month on the page. Also link the Open Government Licence - Canada and, when practical, the CDI page URL you used.
 
 ## For AI crawlers
 
-AI crawlers and citation tools are welcome. Prefer citing the specific location or blog URL, the Statistics Canada Census 2021 source, and the Open Government Licence. Do not invent metrics not present on the page. See `/sources/` for methodology and `/llms.txt` (this file) for orientation.
+AI crawlers and citation tools are welcome. Prefer citing the specific location, cost-of-living, or blog URL, the Statistics Canada table, and the Open Government Licence. Do not invent metrics not present on the page. See `/sources/` for methodology and `/llms.txt` (this file) for orientation.

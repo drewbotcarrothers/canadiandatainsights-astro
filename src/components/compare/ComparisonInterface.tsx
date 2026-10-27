@@ -168,6 +168,10 @@ export default function ComparisonInterface() {
     if (!part || !total || total === 0) return null;
     return (part / total) * 100;
   };
+  const share = (part: number | null | undefined, total: number | null | undefined) => {
+    if (part == null || total == null || total === 0) return null;
+    return (part / total) * 100;
+  };
   const formatPctStr = (val: number | null) => (val != null ? `${val.toFixed(1)}%` : '—');
   const formatCombined = (
     val: number | null | undefined,
@@ -626,6 +630,321 @@ export default function ComparisonInterface() {
               </div>
             </div>
           </div>
+
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+            <div>
+              <h3 className="accent-bar mb-6 pl-6 font-heading text-[10px] font-bold uppercase tracking-wider text-primary">
+                Education
+              </h3>
+              <div className="rounded-xl border border-border/30 bg-surface p-6">
+                {renderDataRow(
+                  'No certificate',
+                  formatPctStr(share(locA.EDU_NO_CERTIFICATE, locA.EDU_TOTAL_15_PLUS)),
+                  formatPctStr(share(locB.EDU_NO_CERTIFICATE, locB.EDU_TOTAL_15_PLUS)),
+                  false,
+                  share(locA.EDU_NO_CERTIFICATE, locA.EDU_TOTAL_15_PLUS),
+                  share(locB.EDU_NO_CERTIFICATE, locB.EDU_TOTAL_15_PLUS)
+                )}
+                {renderDataRow(
+                  'High school',
+                  formatPctStr(share(locA.EDU_HIGH_SCHOOL, locA.EDU_TOTAL_15_PLUS)),
+                  formatPctStr(share(locB.EDU_HIGH_SCHOOL, locB.EDU_TOTAL_15_PLUS)),
+                  true,
+                  share(locA.EDU_HIGH_SCHOOL, locA.EDU_TOTAL_15_PLUS),
+                  share(locB.EDU_HIGH_SCHOOL, locB.EDU_TOTAL_15_PLUS)
+                )}
+                {renderDataRow(
+                  'Postsecondary',
+                  formatPctStr(share(locA.EDU_POSTSECONDARY, locA.EDU_TOTAL_15_PLUS)),
+                  formatPctStr(share(locB.EDU_POSTSECONDARY, locB.EDU_TOTAL_15_PLUS)),
+                  true,
+                  share(locA.EDU_POSTSECONDARY, locA.EDU_TOTAL_15_PLUS),
+                  share(locB.EDU_POSTSECONDARY, locB.EDU_TOTAL_15_PLUS)
+                )}
+                {renderDataRow(
+                  "Bachelor's or higher",
+                  formatPctStr(share(locA.EDU_BACHELOR_OR_HIGHER, locA.EDU_TOTAL_15_PLUS)),
+                  formatPctStr(share(locB.EDU_BACHELOR_OR_HIGHER, locB.EDU_TOTAL_15_PLUS)),
+                  true,
+                  share(locA.EDU_BACHELOR_OR_HIGHER, locA.EDU_TOTAL_15_PLUS),
+                  share(locB.EDU_BACHELOR_OR_HIGHER, locB.EDU_TOTAL_15_PLUS)
+                )}
+                {renderDataRow(
+                  "Master's degree",
+                  formatPctStr(share(locA.EDU_MASTERS, locA.EDU_TOTAL_15_PLUS)),
+                  formatPctStr(share(locB.EDU_MASTERS, locB.EDU_TOTAL_15_PLUS)),
+                  true,
+                  share(locA.EDU_MASTERS, locA.EDU_TOTAL_15_PLUS),
+                  share(locB.EDU_MASTERS, locB.EDU_TOTAL_15_PLUS)
+                )}
+              </div>
+            </div>
+            <div>
+              <h3 className="accent-bar mb-6 pl-6 font-heading text-[10px] font-bold uppercase tracking-wider text-primary">
+                Commute
+              </h3>
+              <div className="rounded-xl border border-border/30 bg-surface p-6">
+                {renderDataRow(
+                  'Usual place of work',
+                  formatPctStr(share(locA.COMMUTE_USUAL_PLACE, locA.COMMUTE_TOTAL)),
+                  formatPctStr(share(locB.COMMUTE_USUAL_PLACE, locB.COMMUTE_TOTAL)),
+                  true,
+                  share(locA.COMMUTE_USUAL_PLACE, locA.COMMUTE_TOTAL),
+                  share(locB.COMMUTE_USUAL_PLACE, locB.COMMUTE_TOTAL)
+                )}
+                {renderDataRow(
+                  'Worked at home',
+                  formatPctStr(share(locA.COMMUTE_WORK_AT_HOME, locA.COMMUTE_TOTAL)),
+                  formatPctStr(share(locB.COMMUTE_WORK_AT_HOME, locB.COMMUTE_TOTAL)),
+                  true,
+                  share(locA.COMMUTE_WORK_AT_HOME, locA.COMMUTE_TOTAL),
+                  share(locB.COMMUTE_WORK_AT_HOME, locB.COMMUTE_TOTAL)
+                )}
+                {renderDataRow(
+                  'No fixed workplace',
+                  formatPctStr(share(locA.COMMUTE_NO_FIXED_ADDRESS, locA.COMMUTE_TOTAL)),
+                  formatPctStr(share(locB.COMMUTE_NO_FIXED_ADDRESS, locB.COMMUTE_TOTAL)),
+                  true,
+                  share(locA.COMMUTE_NO_FIXED_ADDRESS, locA.COMMUTE_TOTAL),
+                  share(locB.COMMUTE_NO_FIXED_ADDRESS, locB.COMMUTE_TOTAL)
+                )}
+                {renderDataRow(
+                  'Worked outside Canada',
+                  formatPctStr(share(locA.COMMUTE_OUTSIDE_CANADA, locA.COMMUTE_TOTAL)),
+                  formatPctStr(share(locB.COMMUTE_OUTSIDE_CANADA, locB.COMMUTE_TOTAL)),
+                  false,
+                  share(locA.COMMUTE_OUTSIDE_CANADA, locA.COMMUTE_TOTAL),
+                  share(locB.COMMUTE_OUTSIDE_CANADA, locB.COMMUTE_TOTAL)
+                )}
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+            <div>
+              <h3 className="accent-bar mb-6 pl-6 font-heading text-[10px] font-bold uppercase tracking-wider text-primary">
+                Occupation
+              </h3>
+              <div className="rounded-xl border border-border/30 bg-surface p-6">
+                {renderDataRow(
+                  'Sales and service',
+                  formatPctStr(share(locA.OCC_SALES_SERVICE, locA.OCC_TOTAL)),
+                  formatPctStr(share(locB.OCC_SALES_SERVICE, locB.OCC_TOTAL)),
+                  true,
+                  share(locA.OCC_SALES_SERVICE, locA.OCC_TOTAL),
+                  share(locB.OCC_SALES_SERVICE, locB.OCC_TOTAL)
+                )}
+                {renderDataRow(
+                  'Business and finance',
+                  formatPctStr(share(locA.OCC_BUSINESS_FINANCE, locA.OCC_TOTAL)),
+                  formatPctStr(share(locB.OCC_BUSINESS_FINANCE, locB.OCC_TOTAL)),
+                  true,
+                  share(locA.OCC_BUSINESS_FINANCE, locA.OCC_TOTAL),
+                  share(locB.OCC_BUSINESS_FINANCE, locB.OCC_TOTAL)
+                )}
+                {renderDataRow(
+                  'Trades and transport',
+                  formatPctStr(share(locA.OCC_TRADES_TRANSPORT, locA.OCC_TOTAL)),
+                  formatPctStr(share(locB.OCC_TRADES_TRANSPORT, locB.OCC_TOTAL)),
+                  true,
+                  share(locA.OCC_TRADES_TRANSPORT, locA.OCC_TOTAL),
+                  share(locB.OCC_TRADES_TRANSPORT, locB.OCC_TOTAL)
+                )}
+                {renderDataRow(
+                  'Education, law and social',
+                  formatPctStr(share(locA.OCC_EDUCATION_LAW_SOCIAL, locA.OCC_TOTAL)),
+                  formatPctStr(share(locB.OCC_EDUCATION_LAW_SOCIAL, locB.OCC_TOTAL)),
+                  true,
+                  share(locA.OCC_EDUCATION_LAW_SOCIAL, locA.OCC_TOTAL),
+                  share(locB.OCC_EDUCATION_LAW_SOCIAL, locB.OCC_TOTAL)
+                )}
+                {renderDataRow(
+                  'Health',
+                  formatPctStr(share(locA.OCC_HEALTH, locA.OCC_TOTAL)),
+                  formatPctStr(share(locB.OCC_HEALTH, locB.OCC_TOTAL)),
+                  true,
+                  share(locA.OCC_HEALTH, locA.OCC_TOTAL),
+                  share(locB.OCC_HEALTH, locB.OCC_TOTAL)
+                )}
+                {renderDataRow(
+                  'Natural and applied sciences',
+                  formatPctStr(share(locA.OCC_SCIENCES, locA.OCC_TOTAL)),
+                  formatPctStr(share(locB.OCC_SCIENCES, locB.OCC_TOTAL)),
+                  true,
+                  share(locA.OCC_SCIENCES, locA.OCC_TOTAL),
+                  share(locB.OCC_SCIENCES, locB.OCC_TOTAL)
+                )}
+              </div>
+            </div>
+            <div>
+              <h3 className="accent-bar mb-6 pl-6 font-heading text-[10px] font-bold uppercase tracking-wider text-primary">
+                Industry
+              </h3>
+              <div className="rounded-xl border border-border/30 bg-surface p-6">
+                {renderDataRow(
+                  'Health care',
+                  formatPctStr(share(locA.IND_HEALTHCARE, locA.IND_TOTAL)),
+                  formatPctStr(share(locB.IND_HEALTHCARE, locB.IND_TOTAL)),
+                  true,
+                  share(locA.IND_HEALTHCARE, locA.IND_TOTAL),
+                  share(locB.IND_HEALTHCARE, locB.IND_TOTAL)
+                )}
+                {renderDataRow(
+                  'Retail trade',
+                  formatPctStr(share(locA.IND_RETAIL, locA.IND_TOTAL)),
+                  formatPctStr(share(locB.IND_RETAIL, locB.IND_TOTAL)),
+                  true,
+                  share(locA.IND_RETAIL, locA.IND_TOTAL),
+                  share(locB.IND_RETAIL, locB.IND_TOTAL)
+                )}
+                {renderDataRow(
+                  'Professional services',
+                  formatPctStr(share(locA.IND_PROFESSIONAL_SCIENTIFIC, locA.IND_TOTAL)),
+                  formatPctStr(share(locB.IND_PROFESSIONAL_SCIENTIFIC, locB.IND_TOTAL)),
+                  true,
+                  share(locA.IND_PROFESSIONAL_SCIENTIFIC, locA.IND_TOTAL),
+                  share(locB.IND_PROFESSIONAL_SCIENTIFIC, locB.IND_TOTAL)
+                )}
+                {renderDataRow(
+                  'Construction',
+                  formatPctStr(share(locA.IND_CONSTRUCTION, locA.IND_TOTAL)),
+                  formatPctStr(share(locB.IND_CONSTRUCTION, locB.IND_TOTAL)),
+                  true,
+                  share(locA.IND_CONSTRUCTION, locA.IND_TOTAL),
+                  share(locB.IND_CONSTRUCTION, locB.IND_TOTAL)
+                )}
+                {renderDataRow(
+                  'Manufacturing',
+                  formatPctStr(share(locA.IND_MANUFACTURING, locA.IND_TOTAL)),
+                  formatPctStr(share(locB.IND_MANUFACTURING, locB.IND_TOTAL)),
+                  true,
+                  share(locA.IND_MANUFACTURING, locA.IND_TOTAL),
+                  share(locB.IND_MANUFACTURING, locB.IND_TOTAL)
+                )}
+                {renderDataRow(
+                  'Educational services',
+                  formatPctStr(share(locA.IND_EDUCATION, locA.IND_TOTAL)),
+                  formatPctStr(share(locB.IND_EDUCATION, locB.IND_TOTAL)),
+                  true,
+                  share(locA.IND_EDUCATION, locA.IND_TOTAL),
+                  share(locB.IND_EDUCATION, locB.IND_TOTAL)
+                )}
+                {renderDataRow(
+                  'Accommodation and food',
+                  formatPctStr(share(locA.IND_ACCOMMODATION_FOOD, locA.IND_TOTAL)),
+                  formatPctStr(share(locB.IND_ACCOMMODATION_FOOD, locB.IND_TOTAL)),
+                  true,
+                  share(locA.IND_ACCOMMODATION_FOOD, locA.IND_TOTAL),
+                  share(locB.IND_ACCOMMODATION_FOOD, locB.IND_TOTAL)
+                )}
+                {renderDataRow(
+                  'Public administration',
+                  formatPctStr(share(locA.IND_PUBLIC_ADMIN, locA.IND_TOTAL)),
+                  formatPctStr(share(locB.IND_PUBLIC_ADMIN, locB.IND_TOTAL)),
+                  true,
+                  share(locA.IND_PUBLIC_ADMIN, locA.IND_TOTAL),
+                  share(locB.IND_PUBLIC_ADMIN, locB.IND_TOTAL)
+                )}
+              </div>
+            </div>
+          </div>
+
+          {(locA.HOUSING_HOUSEHOLDS != null || locB.HOUSING_HOUSEHOLDS != null) && (
+            <div>
+              <h3 className="accent-bar mb-3 pl-6 font-heading text-[10px] font-bold uppercase tracking-wider text-primary">
+                Housing, Census 2021
+              </h3>
+              <p className="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+                Tenure and shelter costs are published for Canada, provinces, territories, census
+                metropolitan areas and census agglomerations. A municipality shows the published area
+                whose name matches it. {locA.GEO_NAME.split(',')[0]}:{' '}
+                {locA.HOUSING_GEO ?? 'not published at this geography'}. {locB.GEO_NAME.split(',')[0]}:{' '}
+                {locB.HOUSING_GEO ?? 'not published at this geography'}.
+              </p>
+              <div className="rounded-xl border border-border/30 bg-surface p-6">
+                {renderDataRow(
+                  'Owner households',
+                  formatPctStr(share(locA.HOUSING_OWNER, locA.HOUSING_HOUSEHOLDS)),
+                  formatPctStr(share(locB.HOUSING_OWNER, locB.HOUSING_HOUSEHOLDS)),
+                  true,
+                  share(locA.HOUSING_OWNER, locA.HOUSING_HOUSEHOLDS),
+                  share(locB.HOUSING_OWNER, locB.HOUSING_HOUSEHOLDS)
+                )}
+                {renderDataRow(
+                  'Renter households',
+                  formatPctStr(share(locA.HOUSING_RENTER, locA.HOUSING_HOUSEHOLDS)),
+                  formatPctStr(share(locB.HOUSING_RENTER, locB.HOUSING_HOUSEHOLDS)),
+                  true,
+                  share(locA.HOUSING_RENTER, locA.HOUSING_HOUSEHOLDS),
+                  share(locB.HOUSING_RENTER, locB.HOUSING_HOUSEHOLDS)
+                )}
+                {renderDataRow(
+                  'Spending 30%+ on shelter',
+                  formatPctStr(share(locA.HOUSING_SPEND_30_PLUS, locA.HOUSING_HOUSEHOLDS)),
+                  formatPctStr(share(locB.HOUSING_SPEND_30_PLUS, locB.HOUSING_HOUSEHOLDS)),
+                  false,
+                  share(locA.HOUSING_SPEND_30_PLUS, locA.HOUSING_HOUSEHOLDS),
+                  share(locB.HOUSING_SPEND_30_PLUS, locB.HOUSING_HOUSEHOLDS)
+                )}
+                {renderDataRow(
+                  'Owners spending 30%+',
+                  formatPctStr(share(locA.HOUSING_OWNER_SPEND_30_PLUS, locA.HOUSING_OWNER)),
+                  formatPctStr(share(locB.HOUSING_OWNER_SPEND_30_PLUS, locB.HOUSING_OWNER)),
+                  false,
+                  share(locA.HOUSING_OWNER_SPEND_30_PLUS, locA.HOUSING_OWNER),
+                  share(locB.HOUSING_OWNER_SPEND_30_PLUS, locB.HOUSING_OWNER)
+                )}
+                {renderDataRow(
+                  'Renters spending 30%+',
+                  formatPctStr(share(locA.HOUSING_RENTER_SPEND_30_PLUS, locA.HOUSING_RENTER)),
+                  formatPctStr(share(locB.HOUSING_RENTER_SPEND_30_PLUS, locB.HOUSING_RENTER)),
+                  false,
+                  share(locA.HOUSING_RENTER_SPEND_30_PLUS, locA.HOUSING_RENTER),
+                  share(locB.HOUSING_RENTER_SPEND_30_PLUS, locB.HOUSING_RENTER)
+                )}
+                {renderDataRow(
+                  'Median shelter cost',
+                  formatCurrency(locA.HOUSING_MEDIAN_SHELTER),
+                  formatCurrency(locB.HOUSING_MEDIAN_SHELTER),
+                  false,
+                  locA.HOUSING_MEDIAN_SHELTER,
+                  locB.HOUSING_MEDIAN_SHELTER
+                )}
+                {renderDataRow(
+                  'Owner median shelter',
+                  formatCurrency(locA.HOUSING_OWNER_MEDIAN_SHELTER),
+                  formatCurrency(locB.HOUSING_OWNER_MEDIAN_SHELTER),
+                  false,
+                  locA.HOUSING_OWNER_MEDIAN_SHELTER,
+                  locB.HOUSING_OWNER_MEDIAN_SHELTER
+                )}
+                {renderDataRow(
+                  'Renter median shelter',
+                  formatCurrency(locA.HOUSING_RENTER_MEDIAN_SHELTER),
+                  formatCurrency(locB.HOUSING_RENTER_MEDIAN_SHELTER),
+                  false,
+                  locA.HOUSING_RENTER_MEDIAN_SHELTER,
+                  locB.HOUSING_RENTER_MEDIAN_SHELTER
+                )}
+                {renderDataRow(
+                  'Owners with a mortgage',
+                  formatPctStr(share(locA.HOUSING_OWNER_WITH_MORTGAGE, locA.HOUSING_OWNER)),
+                  formatPctStr(share(locB.HOUSING_OWNER_WITH_MORTGAGE, locB.HOUSING_OWNER)),
+                  true,
+                  share(locA.HOUSING_OWNER_WITH_MORTGAGE, locA.HOUSING_OWNER),
+                  share(locB.HOUSING_OWNER_WITH_MORTGAGE, locB.HOUSING_OWNER)
+                )}
+                {renderDataRow(
+                  'Renters in subsidized housing',
+                  formatPctStr(share(locA.HOUSING_RENTER_SUBSIDIZED, locA.HOUSING_RENTER)),
+                  formatPctStr(share(locB.HOUSING_RENTER_SUBSIDIZED, locB.HOUSING_RENTER)),
+                  false,
+                  share(locA.HOUSING_RENTER_SUBSIDIZED, locA.HOUSING_RENTER),
+                  share(locB.HOUSING_RENTER_SUBSIDIZED, locB.HOUSING_RENTER)
+                )}
+              </div>
+            </div>
+          )}
         </div>
       ) : (
         <div className="rounded-md border border-dashed border-border/40 bg-surface-soft py-20 text-center">

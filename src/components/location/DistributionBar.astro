@@ -7,15 +7,17 @@ interface Props {
   max: number;
   total?: number;
   colorClass?: string;
+  /** Tailwind width classes for the label. Defaults to the short demographic labels. */
+  labelClass?: string;
 }
 
-const { label, value, max, total, colorClass = 'bg-primary' } = Astro.props;
+const { label, value, max, total, colorClass = 'bg-primary', labelClass = 'sm:w-24' } = Astro.props;
 const barPct = max > 0 ? (value / max) * 100 : 0;
 const totalPct = total && total > 0 ? (value / total) * 100 : null;
 ---
 
 <div class="flex flex-wrap items-center gap-x-3 gap-y-1 py-1.5 sm:flex-nowrap">
-  <span class="w-full shrink-0 font-sans text-sm text-on-surface-variant sm:w-24 sm:text-right">{label}</span>
+  <span class:list={['w-full shrink-0 font-sans text-sm text-on-surface-variant sm:text-right', labelClass]}>{label}</span>
   <div class="h-5 min-w-[4rem] flex-grow overflow-hidden rounded-sm bg-surface-soft">
     <div class={`h-full rounded-sm ${colorClass}`} style={`width: ${Math.max(barPct, 1)}%`}></div>
   </div>

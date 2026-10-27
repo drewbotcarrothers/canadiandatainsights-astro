@@ -1,13 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { housingExtract, cpiExtract } from '../lib/geo-links';
+import foodFile from '../data/statcan/food-prices.json';
+import { formatRefMonth } from '../lib/utils';
 import { sourcesJsonLd } from '../lib/seo';
 
 const jsonLd = sourcesJsonLd();
 ---
 
 <Layout
-  title="Census Methodology & Sources"
-  description="How Canadian Data Insights sources, processes, and presents Statistics Canada 2021 Census data under the Open Government Licence - Canada."
+  title="Data sources and methodology"
+  description="How Canadian Data Insights sources Statistics Canada census profiles, housing tables, the Consumer Price Index, and retail prices under the Open Government Licence - Canada."
   canonicalPath="/sources/"
   jsonLd={jsonLd}
 >
@@ -15,7 +18,7 @@ const jsonLd = sourcesJsonLd();
     <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
         <h1 class="font-heading text-4xl font-bold text-primary sm:text-5xl">
-          Census <span class="text-tertiary">Methodology</span>
+          Data <span class="text-tertiary">sources</span>
         </h1>
         <p class="mt-4 max-w-2xl font-sans text-lg leading-relaxed text-on-surface-variant">
           Where our numbers come from, how we process them, and how we attribute Statistics
@@ -43,14 +46,94 @@ const jsonLd = sourcesJsonLd();
           <h2 class="mb-4 font-heading text-2xl font-bold text-primary">What we process</h2>
           <p class="mb-4">
             Raw census extracts are cleaned and reshaped into location-level profiles. For
-            each place we surface categories such as population and growth, households,
-            income, languages, education, labour and industry, dwelling types, and related
-            rankings within the same geography level.
+            each place we surface population and growth, households, income, languages,
+            education, occupation, industry, place of work, dwelling types, and related
+            rankings within the same geography level. Education, occupation, industry, and
+            place of work from that file are shown on location profiles and in the comparison
+            tool. Shares on those charts are calculated here from the published counts.
           </p>
           <p>
             Charts, comparisons, and rankings on this site are derived from those processed
             tables. Presentation choices (layout, labels, rankings) are ours; the underlying
             counts and rates remain Statistics Canada's published census data.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Housing tenure and shelter costs</h2>
+          <p class="mb-4">
+            Tenure, the share of households spending 30% or more of income on shelter, and monthly
+            shelter costs come from the 2021 Census tables below. The extract was taken on{' '}
+            {housingExtract.retrieved}. Values are copied from the published tables for all private
+            households, not an income or family subgroup. Suppressed cells are left blank. We do not
+            estimate a municipality that is outside the table's geography.
+          </p>
+          <ul class="mb-4 list-disc space-y-2 pl-5">
+            {
+              housingExtract.tables.map((table) => (
+                <li>
+                  <a
+                    href={table.url}
+                    class="text-primary underline underline-offset-2 hover:text-tertiary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Table {table.id}
+                  </a>
+                  . {table.title}.
+                </li>
+              ))
+            }
+          </ul>
+          <p>
+            Those tables cover Canada, the provinces and territories, census metropolitan areas, and
+            census agglomerations. A municipality page shows them only when its name matches one of
+            those published areas, and the page names that area. Owner and renter shares, and the
+            share spending 30% or more of income on shelter, are calculated on this site from the
+            published household counts. Shelter-cost bands can differ slightly from the household
+            total because census counts are randomly rounded.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Consumer prices</h2>
+          <p class="mb-4">
+            The <a href="/cost-of-living/" class="text-primary underline underline-offset-2 hover:text-tertiary">cost-of-living page</a>{' '}
+            uses two monthly tables. The all-items index on this build is {formatRefMonth(cpiExtract.referenceMonth)},
+            compared with {formatRefMonth(cpiExtract.comparisonMonth)}. The 12-month percent change is
+            calculated here from those two published index levels. It is not a separate Statistics
+            Canada “percent change” series. Grocery prices use each product's latest published month.
+            The extract was taken on {cpiExtract.retrieved}.
+          </p>
+          <ul class="mb-4 list-disc space-y-2 pl-5">
+            <li>
+              <a
+                href={cpiExtract.table.url}
+                class="text-primary underline underline-offset-2 hover:text-tertiary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Table {cpiExtract.table.id}
+              </a>
+              . {cpiExtract.table.title}. Index base {cpiExtract.table.uom}.
+            </li>
+            <li>
+              <a
+                href={foodFile.table.url}
+                class="text-primary underline underline-offset-2 hover:text-tertiary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Table {foodFile.table.id}
+              </a>
+              . {foodFile.table.title}.
+            </li>
+          </ul>
+          <p>
+            City CPI rows follow Statistics Canada's price-index geography, which is not the
+            municipality alone. The food index is published for Canada, the provinces, Whitehorse,
+            and Yellowknife. A location page shows a price card only when one of these geographies
+            matches that place.
           </p>
         </div>
 

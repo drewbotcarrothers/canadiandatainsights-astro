@@ -1,0 +1,83 @@
+---
+import { describeCpi, geoAnchor } from '../../lib/geo-match';
+import type { CpiRecord } from '../../lib/geo-links';
+import { cpiExtract } from '../../lib/geo-links';
+import {
+  changeClause,
+  formatIndex,
+  formatRefMonth,
+  formatSignedPercentPoints,
+  indexChange,
+} from '../../lib/utils';
+
+interface Props {
+  placeName: string;
+  cpi: CpiRecord;
+}
+
+const { placeName, cpi } = Astro.props;
+const kind = describeCpi(cpi.geo).kind;
+const sameGeography = kind === 'country' || kind === 'region';
+const month = formatRefMonth(cpi.refDate);
+const earlier = formatRefMonth(cpiExtract.comparisonMonth);
+const allItemsChange = indexChange(cpi.allItems, cpi.allItemsYearAgo);
+const foodChange =
+  cpi.foodRefDate === cpi.refDate ? indexChange(cpi.food, cpi.foodYearAgo) : null;
+const showFood = cpi.food != null && cpi.foodRefDate === cpi.refDate;
+---
+
+<div
+  class="mt-10 w-full rounded-xl border border-border/40 bg-surface p-5 shadow-sm sm:p-6"
+  data-cpi-geo={cpi.geo}
+  id="consumer-prices"
+>
+  <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+    <div class="max-w-2xl">
+      <p class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+        Consumer Price Index
+      </p>
+      <h2 class="mt-1 font-heading text-2xl font-bold text-primary">{cpi.geo}</h2>
+      <p class="mt-2 font-sans text-sm leading-relaxed text-on-surface-variant">
+        All-items index for {month}
+        {changeClause(allItemsChange, earlier)}, calculated from the published index
+        ({cpiExtract.table.uom}).
+        {
+          sameGeography
+            ? ` This is the Statistics Canada series for ${placeName}.`
+            : ` Statistics Canada publishes this series as “${cpi.geo}”. It follows that price-index area, not the municipal boundary of ${placeName} alone.`
+        }
+      </p>
+    </div>
+    <dl class="grid grid-cols-2 gap-6 sm:grid-cols-3">
+      <div>
+        <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">All-items</dt>
+        <dd class="mt-1 font-heading text-2xl font-bold text-primary">{formatIndex(cpi.allItems)}</dd>
+      </div>
+      <div>
+        <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">12-month change</dt>
+        <dd class="mt-1 font-heading text-2xl font-bold text-primary">{formatSignedPercentPoints(allItemsChange)}</dd>
+      </div>
+      {
+        showFood && (
+          <div>
+            <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Food</dt>
+            <dd class="mt-1 font-heading text-2xl font-bold text-primary">
+              {formatIndex(cpi.food)}
+              <span class="mt-1 block font-sans text-xs font-medium text-on-surface-variant">
+                {formatSignedPercentPoints(foodChange)} in 12 months
+              </span>
+            </dd>
+          </div>
+        )
+      }
+    </dl>
+  </div>
+  <p class="mt-4 font-sans text-sm text-on-surface-variant">
+    <a
+      href={`/cost-of-living/#${geoAnchor(cpi.geo)}`}
+      class="font-medium text-primary underline-offset-2 hover:underline"
+    >
+      Compare consumer prices across Canada
+    </a>
+  </p>
+</div>

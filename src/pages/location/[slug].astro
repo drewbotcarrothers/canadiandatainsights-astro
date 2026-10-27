@@ -6,6 +6,10 @@ import SectionHeader from '../../components/location/SectionHeader.astro';
 import LocationEngage from '../../components/location/LocationEngage.astro';
 import CommunitySnapshot from '../../components/location/CommunitySnapshot.astro';
 import PopulationByCity from '../../components/location/PopulationByCity.astro';
+import WorkLearning from '../../components/location/WorkLearning.astro';
+import HousingSection from '../../components/location/HousingSection.astro';
+import CpiCard from '../../components/location/CpiCard.astro';
+import { linksFor } from '../../lib/geo-links';
 import {
   getAllLocations,
   getLocationBySlug,
@@ -47,6 +51,7 @@ if (!location) {
 }
 
 const d = location as LocationData;
+const geoLink = linksFor(await getAllLocations()).get(String(d.ALT_GEO_CODE));
 const snapshot = getLocationSnapshot(slug!);
 const isProvince = d.GEO_LEVEL === 'Province' || d.GEO_LEVEL === 'Territory';
 const provinceKey = (d.PROVINCE as string) || d.GEO_NAME.split(',')[0];
@@ -242,8 +247,8 @@ const jsonLd = locationJsonLd({
           <p class="mb-8 font-sans text-lg leading-relaxed text-on-surface-variant">
             {
               isProvince
-                ? `Income, age, households, and a full population-by-city list for ${name} are below.`
-                : `Explore population, households, income, employment, languages, and dwellings for ${name}. Compare trends since 2016 and dig into the full demographic profile below.`
+                ? `Income, age, households, education, work, and a full population-by-city list for ${name} are below.`
+                : `Explore population, households, income, employment, education, occupation, industry, and commute for ${name}. Compare trends since 2016 and dig into the full profile below.`
             }
           </p>
           <div class="flex flex-wrap gap-4">
@@ -270,6 +275,7 @@ const jsonLd = locationJsonLd({
           ></iframe>
         </div>
       </div>
+      {geoLink?.cpi && <CpiCard placeName={name} cpi={geoLink.cpi} />}
     </div>
   </section>
 
@@ -580,6 +586,8 @@ const jsonLd = locationJsonLd({
     </div>
   </section>
 
+  <WorkLearning place={d} name={name} />
+
   <!-- Languages -->
   <section class="bg-background py-10 sm:py-16 md:py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -696,10 +704,12 @@ const jsonLd = locationJsonLd({
     )
   }
 
+  {geoLink?.housing && <HousingSection placeName={name} housing={geoLink.housing} />}
+
   <!-- Province cities -->
   {
     isProvince && provinceCities.length > 0 && (
-      <section class="bg-background py-10 sm:py-16 md:py-20">
+      <section class="bg-surface-soft py-10 sm:py-16 md:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader title="Population by city" id="population-by-city" />
           <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
@@ -738,8 +748,8 @@ const jsonLd = locationJsonLd({
   <section class="bg-background py-8 sm:py-10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <p class="font-sans text-sm text-on-surface-variant">
-        <a href="/sources/" class="font-medium text-primary underline-offset-2 hover:underline">Data source</a>
-        {' '}→ Census methodology &amp; attribution
+        <a href="/sources/" class="font-medium text-primary underline-offset-2 hover:underline">Data sources</a>
+        {' '}→ Census profiles, housing tables, and consumer prices
       </p>
     </div>
   </section>

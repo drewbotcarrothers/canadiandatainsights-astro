@@ -4,6 +4,7 @@ const pathname = Astro.url.pathname;
 const links = [
   { href: '/', label: 'Dashboard' },
   { href: '/compare/', label: 'Comparisons' },
+  { href: '/cost-of-living/', label: 'Cost of living' },
   { href: '/blog/', label: 'Blog' },
   { href: '/sources/', label: 'Sources' },
   { href: '/about/', label: 'About' },
@@ -29,12 +30,12 @@ function isActive(href: string) {
       </span>
     </a>
 
-    <nav class="hidden items-center gap-1 sm:flex" aria-label="Primary">
+    <nav class="hidden min-w-0 flex-1 flex-wrap items-center justify-end gap-1 md:flex" aria-label="Primary">
       {links.map((link) => (
         <a
           href={link.href}
           class:list={[
-            'rounded-md px-3 py-2 text-sm font-medium no-underline transition-colors',
+            'rounded-md px-2.5 py-2 text-sm font-medium no-underline transition-colors',
             isActive(link.href)
               ? 'bg-primary/10 text-primary'
               : 'text-on-surface-variant hover:bg-surface-soft hover:text-primary',
@@ -45,7 +46,7 @@ function isActive(href: string) {
       ))}
     </nav>
 
-    <details class="relative sm:hidden" id="mobile-nav">
+    <details class="relative md:hidden" id="mobile-nav">
       <summary
         class="flex min-h-[44px] min-w-[44px] cursor-pointer list-none items-center justify-center rounded-md border border-border px-3 py-2 text-sm font-medium text-on-surface"
         aria-label="Open navigation menu"
