@@ -1,0 +1,194 @@
+---
+import ShareBars from './ShareBars.astro';
+import SectionHeader from './SectionHeader.astro';
+import StatRow from './StatRow.astro';
+import {
+  bachelorParts,
+  commuteBars,
+  countShare,
+  educationBars,
+  educationRollup,
+  formatSharePercent,
+  industryBars,
+  metric,
+  occupationBars,
+  presentRows,
+  shareOf,
+  themeCopy,
+  type MetricRecord,
+} from '../../lib/census-profile';
+import { formatNumber } from '../../lib/utils';
+
+interface Props {
+  place: MetricRecord;
+  name: string;
+}
+
+const { place, name } = Astro.props;
+
+const education = themeCopy('education');
+const commute = themeCopy('commute');
+const occupation = themeCopy('occupation');
+const industry = themeCopy('industry');
+
+const eduTotal = metric(place, 'EDU_TOTAL_15_PLUS');
+const educationRows = presentRows(place, educationBars);
+const rollupRows = presentRows(place, educationRollup);
+const bachelorRows = presentRows(place, bachelorParts);
+const bachelorOrHigher = metric(place, 'EDU_BACHELOR_OR_HIGHER');
+
+const commuteTotal = metric(place, 'COMMUTE_TOTAL');
+const commuteRows = presentRows(place, commuteBars).map((row) => ({
+  ...row,
+  colorClass: row.key === 'COMMUTE_WORK_AT_HOME' ? 'bg-tertiary' : 'bg-primary',
+}));
+const workedAtHome = metric(place, 'COMMUTE_WORK_AT_HOME');
+const workedAtHomeShare = formatSharePercent(workedAtHome, commuteTotal);
+
+const occTotal = metric(place, 'OCC_TOTAL');
+const occupationRows = presentRows(place, occupationBars);
+
+const indTotal = metric(place, 'IND_TOTAL');
+const industryRows = presentRows(place, industryBars);
+
+const sectionClass = (tone: 'background' | 'soft') =>
+  `${tone === 'soft' ? 'bg-surface-soft' : 'bg-background'} py-10 sm:py-16 md:py-20`;
+
+const withinBachelor = (part: number) => {
+  const share = shareOf(part, bachelorOrHigher);
+  if (share == null) return undefined;
+  return `${share.toFixed(1)}% of bachelor's or higher`;
+};
+---
+
+{
+  eduTotal != null && educationRows.length > 0 && (
+    <section class={sectionClass('background')}>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader title={`${name} ${education.title}`} id={education.id} />
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          {education.intro}
+        </p>
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+          <div class="rounded-xl border border-border/30 bg-surface p-6">
+            <h3 class="mb-6 font-heading text-lg font-bold text-primary">Highest credential</h3>
+            <StatRow label={education.totalLabel} value={formatNumber(eduTotal)} />
+            {rollupRows.map((row) => (
+              <StatRow label={row.label} value={countShare(row.value, eduTotal)} />
+            ))}
+            {bachelorRows.length > 0 && (
+              <>
+                <div class="my-4 h-px bg-border/30" />
+                <h4 class="mb-3 font-sans text-xs font-bold uppercase tracking-wider text-on-surface-variant">
+                  Within bachelor's degree or higher
+                </h4>
+                {bachelorRows.map((row) => (
+                  <StatRow
+                    label={row.label}
+                    value={countShare(row.value, eduTotal)}
+                    sub={withinBachelor(row.value)}
+                  />
+                ))}
+                <p class="mt-4 font-sans text-xs leading-relaxed text-on-surface-variant">
+                  Those credentials are published parts of bachelor's degree or higher. They do not
+                  add up to that count. Earned doctorates and other university credentials above the
+                  bachelor level stay inside the published total and are not separate columns in this
+                  extract.
+                </p>
+              </>
+            )}
+          </div>
+          <div class="lg:col-span-2">
+            <ShareBars
+              heading="Share of the population aged 15 and over"
+              rows={educationRows}
+              total={eduTotal}
+              labelClass="sm:w-72 sm:text-left"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+{
+  commuteTotal != null && commuteRows.length > 0 && (
+    <section class={sectionClass('soft')}>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader title={`${name} ${commute.title}`} id={commute.id} />
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          {commute.intro}
+        </p>
+        {workedAtHome != null && workedAtHomeShare != null && (
+          <div class="mb-6 rounded-xl border border-border/30 bg-surface p-6 sm:flex sm:items-end sm:justify-between sm:gap-8">
+            <div>
+              <p class="font-sans text-[10px] font-bold uppercase tracking-widest text-tertiary">
+                Worked at home
+              </p>
+              <p class="mt-1 font-heading text-4xl font-bold text-primary">{workedAtHomeShare}</p>
+              <p class="mt-1 font-sans text-sm text-on-surface-variant">
+                {formatNumber(workedAtHome)} people
+              </p>
+            </div>
+            <p class="mt-3 max-w-sm font-sans text-sm leading-relaxed text-on-surface-variant sm:mt-0 sm:text-right">
+              Share of {formatNumber(commuteTotal)} employed people aged 15 and over with a place of work.
+            </p>
+          </div>
+        )}
+        <ShareBars
+          heading="Place of work"
+          rows={commuteRows}
+          total={commuteTotal}
+          labelClass="sm:w-64 sm:text-left"
+        />
+      </div>
+    </section>
+  )
+}
+
+{
+  occTotal != null && occupationRows.length > 0 && (
+    <section class={sectionClass('background')}>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader title={`${name} ${occupation.title}`} id={occupation.id} />
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          {occupation.intro}
+        </p>
+        <div class="mb-6 rounded-xl border border-border/30 bg-surface px-6 py-2">
+          <StatRow label={occupation.totalLabel} value={formatNumber(occTotal)} />
+        </div>
+        <ShareBars
+          heading="Share of the labour force"
+          rows={occupationRows}
+          total={occTotal}
+          colorClass="bg-tertiary"
+          labelClass="sm:w-80 sm:text-left"
+        />
+      </div>
+    </section>
+  )
+}
+
+{
+  indTotal != null && industryRows.length > 0 && (
+    <section class={sectionClass('soft')}>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeader title={`${name} ${industry.title}`} id={industry.id} />
+        <p class="mb-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+          {industry.intro}
+        </p>
+        <div class="mb-6 rounded-xl border border-border/30 bg-surface px-6 py-2">
+          <StatRow label={industry.totalLabel} value={formatNumber(indTotal)} />
+        </div>
+        <ShareBars
+          heading="Share of the labour force"
+          rows={industryRows}
+          total={indTotal}
+          colorClass="bg-primary/60"
+          labelClass="sm:w-80 sm:text-left"
+        />
+      </div>
+    </section>
+  )
+}
