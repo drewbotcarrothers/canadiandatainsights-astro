@@ -17,7 +17,9 @@ export const organization = {
   email: CONTACT_EMAIL,
   logo: {
     '@type': 'ImageObject',
-    url: `${SITE_URL}/favicon.svg`,
+    url: `${SITE_URL}/images/logo-512.png`,
+    width: 512,
+    height: 512,
   },
   sameAs: [YOUTUBE_URL],
 };
