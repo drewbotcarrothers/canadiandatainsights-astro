@@ -163,6 +163,7 @@ export function blogPostingJsonLd(opts: {
   description: string;
   datePublished: string;
   image?: string;
+  authorName?: string;
 }): Record<string, unknown>[] {
   const pageUrl = `${SITE_URL}/blog/${opts.slug}/`;
   const imageUrl = opts.image
@@ -186,7 +187,9 @@ export function blogPostingJsonLd(opts: {
     description: opts.description,
     image: imageUrl,
     datePublished: isoDate,
-    author: organization,
+    author: opts.authorName
+      ? { '@type': 'Person', name: opts.authorName }
+      : organization,
     publisher: organization,
     mainEntityOfPage: {
       '@type': 'WebPage',

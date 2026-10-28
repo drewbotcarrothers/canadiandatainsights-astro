@@ -15,12 +15,160 @@ export interface BlogPost {
  category: string;
  readTime: string;
  heroImage: string;
+ /** Visible byline. First name only. */
+ author?: string;
  chartType?: 'bar' | 'area' | 'pie';
  chartData?: ChartDataPoint[];
  chartTitle?: string;
 }
 
 const existingBlogPosts: BlogPost[] = [
+ {
+ title: "Canada's Top Work-from-Home Cities (2021 Census)",
+ slug: "canadas-top-work-from-home-cities",
+ date: "October 28, 2026",
+ category: "Labour",
+ readTime: "6 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadas-top-work-from-home-cities.png",
+ chartType: 'bar',
+ chartTitle: "Worked at home, places of 50,000 or more (percent)",
+ chartData: [
+ { name: "Oakville", value: 44.9 },
+ { name: "Ottawa", value: 43.7 },
+ { name: "Waterloo", value: 40.3 },
+ { name: "Richmond Hill", value: 39.8 },
+ { name: "Toronto", value: 39.0 },
+ { name: "Aurora", value: 38.8 },
+ { name: "Markham", value: 38.6 },
+ { name: "Milton", value: 37.0 },
+ ],
+ excerpt: "Oakville led Canadian places of 50,000 or more: 44.9% worked at home in the 2021 Census. The national share was 24.3%. See the top 15 and the lowest.",
+ content: `
+ <p>In the 2021 Census, <strong>44.9%</strong> of Oakville's employed labour force worked at home — the highest share among Canada's <strong>101</strong> census subdivisions with <strong>50,000</strong> or more residents. <a href="/location/ottawa/#commute">Ottawa</a> was next, at 43.7%. Across Canada, the same share was <strong>24.3%</strong>.</p>
+
+ <p>The percentage is the published count of people who worked at home, divided by the published place-of-work total. On this site that total is the employed labour force aged 15 and over. It is the same calculation as the <a href="/location/oakville-town-t/#commute">commute section</a> on each location page: worked at home, usual place of work, no fixed workplace address, and worked outside Canada.</p>
+
+ <p>The census question refers to the reference week in <strong>May 2021</strong>, when COVID-19 restrictions were still widespread. These shares are higher than they would be in a more ordinary week after offices reopened. "Worked at home" also includes people whose job is based at home, not only employees who left an office temporarily. The file does not split those groups apart.</p>
+
+ <h2>Places of 50,000 or more</h2>
+ <p>The ranking below keeps the list to census subdivisions — cities, towns, and other municipalities — with a 2021 population of at least 50,000. That threshold leaves 101 places. Smaller municipalities can post very high shares, and a separate list further down covers places of 10,000 to 49,999. Every figure is calculated from the census counts in this site's location file. Statistics Canada randomly rounds those counts, so a set of categories can miss its published total by a few people. This page does not adjust for that.</p>
+
+ <p>Thirteen of the top 15 are in Ontario. Toronto does not lead the share, but it has the largest worked-at-home count in the group: <strong>510,240</strong> people.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Worked at home</th>
+ <th class="num">Employed labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/oakville-town-t/#commute">Oakville</a></td><td>Ontario</td><td class="num">213,759</td><td class="num">44,885</td><td class="num">99,945</td><td class="num">44.9%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/ottawa/#commute">Ottawa</a></td><td>Ontario</td><td class="num">1,017,449</td><td class="num">215,705</td><td class="num">493,140</td><td class="num">43.7%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/waterloo/#commute">Waterloo</a></td><td>Ontario</td><td class="num">121,436</td><td class="num">23,380</td><td class="num">58,050</td><td class="num">40.3%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/richmond-hill-town-t/#commute">Richmond Hill</a></td><td>Ontario</td><td class="num">202,022</td><td class="num">37,055</td><td class="num">93,020</td><td class="num">39.8%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/toronto/#commute">Toronto</a></td><td>Ontario</td><td class="num">2,794,356</td><td class="num">510,240</td><td class="num">1,308,110</td><td class="num">39.0%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/aurora-town-t/#commute">Aurora</a></td><td>Ontario</td><td class="num">62,057</td><td class="num">11,720</td><td class="num">30,170</td><td class="num">38.8%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/markham/#commute">Markham</a></td><td>Ontario</td><td class="num">338,503</td><td class="num">56,810</td><td class="num">147,070</td><td class="num">38.6%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/milton-town-t/#commute">Milton</a></td><td>Ontario</td><td class="num">132,979</td><td class="num">23,160</td><td class="num">62,640</td><td class="num">37.0%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/burlington/#commute">Burlington</a></td><td>Ontario</td><td class="num">186,948</td><td class="num">33,075</td><td class="num">89,495</td><td class="num">37.0%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/pickering/#commute">Pickering</a></td><td>Ontario</td><td class="num">99,186</td><td class="num">16,745</td><td class="num">46,790</td><td class="num">35.8%</td></tr>
+ <tr><td class="num">11</td><td><a href="/location/north-vancouver-district-municipality-dm/#commute">North Vancouver District</a></td><td>British Columbia</td><td class="num">88,168</td><td class="num">15,400</td><td class="num">44,490</td><td class="num">34.6%</td></tr>
+ <tr><td class="num">12</td><td><a href="/location/whitby-town-t/#commute">Whitby</a></td><td>Ontario</td><td class="num">138,501</td><td class="num">22,440</td><td class="num">64,840</td><td class="num">34.6%</td></tr>
+ <tr><td class="num">13</td><td><a href="/location/vaughan/#commute">Vaughan</a></td><td>Ontario</td><td class="num">323,103</td><td class="num">53,225</td><td class="num">154,615</td><td class="num">34.4%</td></tr>
+ <tr><td class="num">14</td><td><a href="/location/vancouver/#commute">Vancouver</a></td><td>British Columbia</td><td class="num">662,248</td><td class="num">123,110</td><td class="num">359,280</td><td class="num">34.3%</td></tr>
+ <tr><td class="num">15</td><td><a href="/location/mississauga/#commute">Mississauga</a></td><td>Ontario</td><td class="num">717,961</td><td class="num">111,685</td><td class="num">331,995</td><td class="num">33.6%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Waterloo in this table is the city of 121,436, not a regional total. Shares are shown to one decimal place, matching the location pages. Two pairs round to the same tenth. Milton (23,160 of 62,640) ranks just ahead of Burlington (33,075 of 89,495), and North Vancouver District (15,400 of 44,490) just ahead of Whitby (22,440 of 64,840), on the unrounded share. North Vancouver District is the district municipality, not the <a href="/location/north-vancouver/#commute">City of North Vancouver</a>, which had 58,120 residents and a worked-at-home share of 30.6% (9,930 of 32,490).</p>
+
+ <h2>Where the largest cities land</h2>
+ <p>Outside this top 15, the next-largest cities sit much closer to the national figure, or below it. <a href="/location/montr-al/#commute">Montréal</a> ranked 21st at <strong>30.3%</strong> (260,415 of 859,920). <a href="/location/calgary/#commute">Calgary</a> ranked 25th at <strong>28.5%</strong> (182,015 of 638,645). <a href="/location/edmonton/#commute">Edmonton</a> ranked 50th at <strong>21.1%</strong> (102,215 of 483,855). <a href="/location/winnipeg/#commute">Winnipeg</a> ranked 63rd at <strong>18.8%</strong> (68,960 of 366,595).</p>
+
+ <h2>The low end of the same list</h2>
+ <p>The same 50,000-person cutoff produces a very different bottom. Brandon, Man., is last among the 101 places, at <strong>8.5%</strong>. The five lowest:</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Worked at home</th>
+ <th class="num">Employed labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">97</td><td><a href="/location/wood-buffalo-specialized-municipality-sm/#commute">Wood Buffalo</a></td><td>Alberta</td><td class="num">72,326</td><td class="num">4,595</td><td class="num">38,920</td><td class="num">11.8%</td></tr>
+ <tr><td class="num">98</td><td><a href="/location/drummondville/#commute">Drummondville</a></td><td>Quebec</td><td class="num">79,258</td><td class="num">4,285</td><td class="num">37,540</td><td class="num">11.4%</td></tr>
+ <tr><td class="num">99</td><td><a href="/location/medicine-hat/#commute">Medicine Hat</a></td><td>Alberta</td><td class="num">63,271</td><td class="num">2,785</td><td class="num">27,925</td><td class="num">10.0%</td></tr>
+ <tr><td class="num">100</td><td><a href="/location/grande-prairie/#commute">Grande Prairie</a></td><td>Alberta</td><td class="num">64,141</td><td class="num">3,095</td><td class="num">32,300</td><td class="num">9.6%</td></tr>
+ <tr><td class="num">101</td><td><a href="/location/brandon/#commute">Brandon</a></td><td>Manitoba</td><td class="num">51,313</td><td class="num">2,165</td><td class="num">25,340</td><td class="num">8.5%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <h2>What the share is measuring</h2>
+ <p>The census does not record a reason. Industry and education counts for the same places show why a high share, and a low one, can come from different kinds of work.</p>
+ <p><a href="/location/oakville-town-t/#commute">Oakville</a> is a professional and highly educated suburb. <strong>47.9%</strong> of residents aged 15 and over held a bachelor's degree or higher (83,230 of 173,625), compared with <strong>26.7%</strong> in Canada (8,086,245 of 30,335,915). Professional, scientific and technical services were <strong>15.0%</strong> of Oakville's labour force (17,005 of 113,190), compared with <strong>8.1%</strong> nationally (1,571,160 of 19,310,340).</p>
+ <p><a href="/location/ottawa/#commute">Ottawa</a> combines that pattern with government employment. Public administration was <strong>21.1%</strong> of the city's labour force (116,235 of 549,985), compared with <strong>6.2%</strong> in Canada (1,188,915 of 19,310,340).</p>
+ <p>At the other end, <a href="/location/wood-buffalo-specialized-municipality-sm/#commute">Wood Buffalo</a>'s labour force was concentrated in mining, quarrying, and oil and gas extraction: <strong>29.6%</strong> (12,625 of 42,655), compared with <strong>1.2%</strong> nationally (239,030 of 19,310,340). Those jobs are much more likely to have a worksite, or no fixed workplace, than a home office. Industry shares use the published labour-force total, a wider base than the place-of-work total behind the worked-at-home percentage. Education shares use the population aged 15 and over. Location pages use those same denominators.</p>
+
+ <h2>The national figure, and the group of 101</h2>
+ <p>For <a href="/location/canada/">Canada</a>, 4,214,860 people worked at home out of an employed labour force of 17,321,700, which is <strong>24.3%</strong>. The country's 2021 population was 36,991,981.</p>
+ <p>Among the 101 places of 50,000 or more, the median share was <strong>21.0%</strong>. On the one-decimal shares used in the tables, 37 places round above Canada's 24.3%, <a href="/location/longueuil/#commute">Longueuil</a> rounds to the same 24.3% (30,435 of 125,030), and 63 round lower. Added together, those 101 places had 3,154,420 people working at home out of 11,465,845 in the employed labour force, a combined share of <strong>27.5%</strong>. The median counts each municipality once. The combined share counts every employed person, so large places with high shares — Toronto, Montréal, Vancouver, and Ottawa — pull it above both the median and the Canada figure.</p>
+ <p><a href="/location/ontario/#commute">Ontario</a> was the highest province or territory in the file, at <strong>29.7%</strong> (1,929,760 of 6,492,895). That lines up with an Ontario-heavy top of the municipal list.</p>
+
+ <h2>Places of 10,000 to 49,999</h2>
+ <p>Dropping the floor to 10,000 residents, and stopping below 50,000, leaves <strong>314</strong> census subdivisions. The top of that list is not a second copy of the big-city ranking. Several are small, affluent suburbs. One is a farming township. Westmount, at 19,658 residents, would have ranked above Oakville if the population floor were lower.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Worked at home</th>
+ <th class="num">Employed labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/westmount/#commute">Westmount</a></td><td>Quebec</td><td class="num">19,658</td><td class="num">3,965</td><td class="num">8,680</td><td class="num">45.7%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/beaconsfield/#commute">Beaconsfield</a></td><td>Quebec</td><td class="num">19,277</td><td class="num">3,930</td><td class="num">9,205</td><td class="num">42.7%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/saint-lambert/#commute">Saint-Lambert</a></td><td>Quebec</td><td class="num">22,761</td><td class="num">4,500</td><td class="num">10,580</td><td class="num">42.5%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/west-vancouver-district-municipality-dm/#commute">West Vancouver District</a></td><td>British Columbia</td><td class="num">44,122</td><td class="num">7,140</td><td class="num">17,640</td><td class="num">40.5%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/mont-royal/#commute">Mont-Royal</a></td><td>Quebec</td><td class="num">20,953</td><td class="num">3,690</td><td class="num">9,410</td><td class="num">39.2%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/wellesley-township-tp/#commute">Wellesley</a></td><td>Ontario</td><td class="num">11,318</td><td class="num">2,240</td><td class="num">5,840</td><td class="num">38.4%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/whitchurch-stouffville-town-t/#commute">Whitchurch-Stouffville</a></td><td>Ontario</td><td class="num">49,864</td><td class="num">8,980</td><td class="num">23,530</td><td class="num">38.2%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/oak-bay-district-municipality-dm/#commute">Oak Bay District</a></td><td>British Columbia</td><td class="num">17,990</td><td class="num">2,855</td><td class="num">7,595</td><td class="num">37.6%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/westmount/#commute">Westmount</a> looks like the Oakville pattern, in a smaller place: 63.3% of residents aged 15 and over held a bachelor's degree or higher (10,415 of 16,450), and professional, scientific and technical services were 19.5% of the labour force (1,835 of 9,405). <a href="/location/wellesley-township-tp/#commute">Wellesley</a>, a township of 11,318 in Ontario, is a different case. Agriculture, forestry, fishing and hunting was <strong>16.7%</strong> of its labour force (1,015 of 6,080), compared with <strong>2.3%</strong> in Canada (434,800 of 19,310,340). A high worked-at-home share there is consistent with jobs based on the farm, not only with remote office work.</p>
+
+ <h2>Compare a place yourself</h2>
+ <p>Open any linked place for the full commute breakdown, or set two places side by side in the <a href="/compare/">comparison tool</a>. The commute, education, occupation, and industry sections use the same anchors on location pages and in that tool.</p>
+
+ <h2>Sources</h2>
+ <p>Worked-at-home counts, employed-labour-force totals, population, industry, and education counts are from the <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm?Lang=E" target="_blank" rel="noopener">Statistics Canada 2021 Census of Population (Census Profile)</a>, as stored for each place in the Canadian Data Insights location file. Shares on this page are calculated here from those published counts. See <a href="/sources/">how this site handles census data</a>. Statistics Canada data is used under the <a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank" rel="noopener">Open Government Licence – Canada</a>. This post is by Andrew.</p>
+ `,
+ },
  {
  title: "Canadian News Deep-Dives — October 28, 2026: $40M Lotto Max Ticket Expires, RBC Blocks AI Agents, Canada's First Eurovision Vote",
  slug: "canadian-news-roundup-2026-10-28",
