@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import Papa from 'papaparse';
+import { WORK_PROFILE_FIELDS, type WorkProfileField } from './census-profile';
 
 export interface LocationData {
   ALT_GEO_CODE: string | number;
@@ -173,6 +174,7 @@ export const COMPARE_FIELDS = [
   'MOTHER_TONGUE_FR',
   'MOTHER_TONGUE_NON_OFFICIAL',
   'MOTHER_TONGUE_TOTAL',
+  ...WORK_PROFILE_FIELDS,
 ] as const;
 
 export type CompareLocation = {
@@ -222,7 +224,7 @@ export type CompareLocation = {
   MOTHER_TONGUE_FR?: number | null;
   MOTHER_TONGUE_NON_OFFICIAL?: number | null;
   MOTHER_TONGUE_TOTAL?: number | null;
-};
+} & Partial<Record<WorkProfileField, number | null>>;
 
 export function toCompareLocation(loc: LocationData): CompareLocation {
   const out: Record<string, unknown> = {};

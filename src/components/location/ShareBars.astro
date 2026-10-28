@@ -1,0 +1,43 @@
+---
+import DistributionBar from './DistributionBar.astro';
+
+interface Row {
+  label: string;
+  value: number;
+  colorClass?: string;
+}
+
+interface Props {
+  rows: Row[];
+  total: number;
+  heading?: string;
+  colorClass?: string;
+  labelClass?: string;
+}
+
+const {
+  rows,
+  total,
+  heading = 'Share',
+  colorClass = 'bg-primary',
+  labelClass = 'sm:w-72 sm:text-left',
+} = Astro.props;
+
+const max = Math.max(...rows.map((row) => row.value), 0);
+---
+
+<div class="rounded-xl border border-border/30 bg-surface p-6">
+  {heading ? <h3 class="mb-6 font-heading text-lg font-bold text-primary">{heading}</h3> : null}
+  {
+    rows.map((row) => (
+      <DistributionBar
+        label={row.label}
+        value={row.value}
+        max={max}
+        total={total}
+        colorClass={row.colorClass ?? colorClass}
+        labelClass={labelClass}
+      />
+    ))
+  }
+</div>

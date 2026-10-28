@@ -4,7 +4,7 @@
 
 ## About
 
-Canadian Data Insights (CDI) turns official Statistics Canada 2021 Census geography profiles into accessible web pages: population, growth, households, income, employment, languages, and dwellings. We do not invent census estimates; figures are derived from published Census 2021 data.
+Canadian Data Insights (CDI) turns official Statistics Canada 2021 Census geography profiles into accessible web pages: population, growth, households, income, employment, education, commute, occupation, industry, languages, and dwellings. We do not invent census estimates; figures are derived from published Census 2021 data. Shares on the work-profile sections are calculated from published counts.
 
 - Site: https://canadiandatainsights.com/
 - Contact: hello@canadiandatainsights.com
@@ -30,6 +30,15 @@ Individual community profiles live at `/location/{slug}/` (trailing slash), for 
 - https://canadiandatainsights.com/location/ontario/
 
 Profiles cover provinces, territories, and municipalities (generally population ≥ 5,000 in the source extract). Each page summarizes Census 2021 characteristics for that geography.
+
+Work-profile anchors on every location page, for example Toronto:
+
+- Education: https://canadiandatainsights.com/location/toronto/#education
+- Commute, including the worked-at-home share: https://canadiandatainsights.com/location/toronto/#commute
+- Occupation: https://canadiandatainsights.com/location/toronto/#occupation
+- Industry: https://canadiandatainsights.com/location/toronto/#industry
+
+The comparison tool uses the same ids (`#education`, `#commute`, `#occupation`, `#industry`) once two places are selected: https://canadiandatainsights.com/compare/
 
 ## How to cite
 

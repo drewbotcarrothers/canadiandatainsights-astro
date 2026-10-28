@@ -6,6 +6,7 @@ import SectionHeader from '../../components/location/SectionHeader.astro';
 import LocationEngage from '../../components/location/LocationEngage.astro';
 import CommunitySnapshot from '../../components/location/CommunitySnapshot.astro';
 import PopulationByCity from '../../components/location/PopulationByCity.astro';
+import WorkProfile from '../../components/location/WorkProfile.astro';
 import {
   getAllLocations,
   getLocationBySlug,
@@ -242,8 +243,8 @@ const jsonLd = locationJsonLd({
           <p class="mb-8 font-sans text-lg leading-relaxed text-on-surface-variant">
             {
               isProvince
-                ? `Income, age, households, and a full population-by-city list for ${name} are below.`
-                : `Explore population, households, income, employment, languages, and dwellings for ${name}. Compare trends since 2016 and dig into the full demographic profile below.`
+                ? `Income, age, households, education, commute, occupation, industry, and a full population-by-city list for ${name} are below.`
+                : `Explore population, households, income, employment, education, commute, occupation, industry, languages, and dwellings for ${name}. Compare trends since 2016 and dig into the full profile below.`
             }
           </p>
           <div class="flex flex-wrap gap-4">
@@ -258,6 +259,12 @@ const jsonLd = locationJsonLd({
               <span class="font-heading text-sm font-bold text-primary">{d.GEO_LEVEL}</span>
             </div>
           </div>
+          <nav class="mt-6 flex flex-wrap gap-x-4 gap-y-2" aria-label="Work profile">
+            <a href="#education" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Education</a>
+            <a href="#commute" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Commute</a>
+            <a href="#occupation" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Occupation</a>
+            <a href="#industry" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Industry</a>
+          </nav>
         </div>
 
         <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-surface-soft shadow-md lg:w-1/2">
@@ -579,6 +586,8 @@ const jsonLd = locationJsonLd({
       </div>
     </div>
   </section>
+
+  <WorkProfile place={d} name={name} />
 
   <!-- Languages -->
   <section class="bg-background py-10 sm:py-16 md:py-20">

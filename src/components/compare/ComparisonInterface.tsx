@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { CompareLocation } from '../../lib/locations';
 import { formatNumber, formatCurrency, cn } from '../../lib/utils';
 import { trackEvent } from '../../lib/analytics';
+import WorkProfileCompare from './WorkProfileCompare';
 
 export default function ComparisonInterface() {
   const [locations, setLocations] = useState<CompareLocation[]>([]);
@@ -626,6 +627,7 @@ export default function ComparisonInterface() {
               </div>
             </div>
           </div>
+          <WorkProfileCompare locA={locA} locB={locB} />
         </div>
       ) : (
         <div className="rounded-md border border-dashed border-border/40 bg-surface-soft py-20 text-center">
