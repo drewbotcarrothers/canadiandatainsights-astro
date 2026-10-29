@@ -24,6 +24,205 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Canada's Trades-Heavy Towns (2021 Census)",
+ slug: "canadas-trades-heavy-towns",
+ date: "October 29, 2026",
+ category: "Labour",
+ readTime: "7 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadas-trades-heavy-towns.png",
+ chartType: 'bar',
+ chartTitle: "Trades, transport and equipment operators, places of 50,000 or more (percent)",
+ chartData: [
+ { name: "Wood Buffalo", value: 31.3 },
+ { name: "Kawartha Lakes", value: 24.7 },
+ { name: "Norfolk County", value: 24.3 },
+ { name: "Maple Ridge", value: 23.2 },
+ { name: "Grande Prairie", value: 23.2 },
+ { name: "Airdrie", value: 23.0 },
+ { name: "Abbotsford", value: 22.9 },
+ { name: "Brampton", value: 22.5 },
+ ],
+ excerpt: "Wood Buffalo led Canadian places of 50,000 or more: 31.3% of the labour force was in trades, transport and equipment operators. Lac Ste. Anne County led places of 10,000 to 49,999, at 31.9%. The national share was 16.8%.",
+ content: `
+ <p>In the 2021 Census, <strong>31.3%</strong> of <a href="/location/wood-buffalo-specialized-municipality-sm/#occupation">Wood Buffalo</a>'s labour force was in trades, transport and equipment operators — the highest share among Canada's <strong>101</strong> census subdivisions with <strong>50,000</strong> or more residents. <a href="/location/kawartha-lakes/#occupation">Kawartha Lakes</a> was next, at 24.7%. Across <a href="/location/canada/#occupation">Canada</a>, the same share was <strong>16.8%</strong>. Two places of 10,000 to 49,999 rank higher than Wood Buffalo. That list is below.</p>
+
+ <p>The percentage is the published count for trades, transport and equipment operators, divided by the published labour-force total. On this site that total is the labour force aged 15 and over. It is a wider base than the employed labour force used for place of work. It is the same calculation as the <a href="/location/wood-buffalo-specialized-municipality-sm/#occupation">occupation section</a> on each location page.</p>
+
+ <p>The occupation categories do not add up to that labour-force total. Statistics Canada randomly rounds census counts, and people with no classified occupation stay in the published total. This page does not estimate that remainder, and it does not adjust for rounding.</p>
+
+ <h2>Places of 50,000 or more</h2>
+ <p>The ranking below keeps the list to census subdivisions — cities, towns, and other municipalities — with a 2021 population of at least 50,000. That threshold leaves 101 places. Every figure is calculated from the census counts in this site's location file. Seven of the top 15 are in British Columbia. Four are in Ontario, three in Alberta, and one in Quebec.</p>
+
+ <p>Brampton does not lead the share, but it has the largest trades count in this top 15: <strong>80,200</strong> people.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Trades, transport and equipment operators</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/wood-buffalo-specialized-municipality-sm/#occupation">Wood Buffalo</a></td><td>Alberta</td><td class="num">72,326</td><td class="num">13,345</td><td class="num">42,655</td><td class="num">31.3%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/kawartha-lakes/#occupation">Kawartha Lakes</a></td><td>Ontario</td><td class="num">79,247</td><td class="num">9,030</td><td class="num">36,500</td><td class="num">24.7%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/norfolk-county/#occupation">Norfolk County</a></td><td>Ontario</td><td class="num">67,490</td><td class="num">7,685</td><td class="num">31,620</td><td class="num">24.3%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/maple-ridge/#occupation">Maple Ridge</a></td><td>British Columbia</td><td class="num">90,990</td><td class="num">11,575</td><td class="num">49,870</td><td class="num">23.2%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/grande-prairie/#occupation">Grande Prairie</a></td><td>Alberta</td><td class="num">64,141</td><td class="num">8,505</td><td class="num">36,645</td><td class="num">23.2%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/airdrie/#occupation">Airdrie</a></td><td>Alberta</td><td class="num">74,100</td><td class="num">9,525</td><td class="num">41,335</td><td class="num">23.0%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/abbotsford/#occupation">Abbotsford</a></td><td>British Columbia</td><td class="num">153,524</td><td class="num">18,570</td><td class="num">81,080</td><td class="num">22.9%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/brampton/#occupation">Brampton</a></td><td>Ontario</td><td class="num">656,480</td><td class="num">80,200</td><td class="num">355,755</td><td class="num">22.5%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/surrey/#occupation">Surrey</a></td><td>British Columbia</td><td class="num">568,322</td><td class="num">68,505</td><td class="num">308,190</td><td class="num">22.2%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/chilliwack/#occupation">Chilliwack</a></td><td>British Columbia</td><td class="num">93,203</td><td class="num">10,310</td><td class="num">46,785</td><td class="num">22.0%</td></tr>
+ <tr><td class="num">11</td><td><a href="/location/caledon-town-t/#occupation">Caledon</a></td><td>Ontario</td><td class="num">76,581</td><td class="num">9,380</td><td class="num">43,140</td><td class="num">21.7%</td></tr>
+ <tr><td class="num">12</td><td><a href="/location/delta/#occupation">Delta</a></td><td>British Columbia</td><td class="num">108,455</td><td class="num">12,560</td><td class="num">58,010</td><td class="num">21.7%</td></tr>
+ <tr><td class="num">13</td><td><a href="/location/prince-george/#occupation">Prince George</a></td><td>British Columbia</td><td class="num">76,708</td><td class="num">8,745</td><td class="num">41,275</td><td class="num">21.2%</td></tr>
+ <tr><td class="num">14</td><td><a href="/location/mirabel/#occupation">Mirabel</a></td><td>Quebec</td><td class="num">61,108</td><td class="num">7,460</td><td class="num">35,560</td><td class="num">21.0%</td></tr>
+ <tr><td class="num">15</td><td><a href="/location/kamloops/#occupation">Kamloops</a></td><td>British Columbia</td><td class="num">97,902</td><td class="num">10,575</td><td class="num">51,030</td><td class="num">20.7%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Shares are shown to one decimal place, matching the location pages. Two pairs round to the same tenth. Maple Ridge (11,575 of 49,870) ranks just ahead of Grande Prairie (8,505 of 36,645), and Caledon (9,380 of 43,140) just ahead of Delta (12,560 of 58,010), on the unrounded share.</p>
+
+ <h2>Places of 10,000 to 49,999</h2>
+ <p>Places under 50,000 residents post higher shares than that list. Dropping the floor to 10,000 residents, and stopping below 50,000, leaves <strong>314</strong> census subdivisions. <a href="/location/lac-ste-anne-county-municipal-district-md/#occupation">Lac Ste. Anne County</a>, at 10,832 residents, is first, at <strong>31.9%</strong>. <a href="/location/saint-lin-laurentides/#occupation">Saint-Lin--Laurentides</a> is second, at <strong>31.5%</strong>. Both are above Wood Buffalo's 31.3%. The top 20 are below. Seven are in Alberta, five in Quebec, three in Manitoba, two in British Columbia, two in Ontario, and one in Nova Scotia.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Trades, transport and equipment operators</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/lac-ste-anne-county-municipal-district-md/#occupation">Lac Ste. Anne County</a></td><td>Alberta</td><td class="num">10,832</td><td class="num">1,775</td><td class="num">5,565</td><td class="num">31.9%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/saint-lin-laurentides/#occupation">Saint-Lin--Laurentides</a></td><td>Quebec</td><td class="num">24,030</td><td class="num">4,010</td><td class="num">12,715</td><td class="num">31.5%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/hanover-rural-municipality-rm/#occupation">Hanover</a></td><td>Manitoba</td><td class="num">17,216</td><td class="num">2,650</td><td class="num">8,490</td><td class="num">31.2%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/st-clements-rural-municipality-rm/#occupation">St. Clements</a></td><td>Manitoba</td><td class="num">11,586</td><td class="num">1,890</td><td class="num">6,315</td><td class="num">29.9%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/yellowhead-county-municipal-district-md/#occupation">Yellowhead County</a></td><td>Alberta</td><td class="num">10,426</td><td class="num">1,535</td><td class="num">5,220</td><td class="num">29.4%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/sainte-sophie-municipalit-m/#occupation">Sainte-Sophie</a></td><td>Quebec</td><td class="num">18,080</td><td class="num">2,950</td><td class="num">10,190</td><td class="num">28.9%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/mackenzie-county-specialized-municipality-sm/#occupation">Mackenzie County</a></td><td>Alberta</td><td class="num">12,804</td><td class="num">1,475</td><td class="num">5,105</td><td class="num">28.9%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/prince-rupert/#occupation">Prince Rupert</a></td><td>British Columbia</td><td class="num">12,300</td><td class="num">1,950</td><td class="num">6,780</td><td class="num">28.8%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/lavaltrie/#occupation">Lavaltrie</a></td><td>Quebec</td><td class="num">14,425</td><td class="num">2,205</td><td class="num">7,680</td><td class="num">28.7%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/sainte-julienne-municipalit-m/#occupation">Sainte-Julienne</a></td><td>Quebec</td><td class="num">11,173</td><td class="num">1,615</td><td class="num">5,665</td><td class="num">28.5%</td></tr>
+ <tr><td class="num">11</td><td><a href="/location/mission-district-municipality-dm/#occupation">Mission</a></td><td>British Columbia</td><td class="num">41,519</td><td class="num">6,045</td><td class="num">21,345</td><td class="num">28.3%</td></tr>
+ <tr><td class="num">12</td><td><a href="/location/parkland-county-municipal-district-md/#occupation">Parkland County</a></td><td>Alberta</td><td class="num">32,205</td><td class="num">4,785</td><td class="num">17,135</td><td class="num">27.9%</td></tr>
+ <tr><td class="num">13</td><td><a href="/location/east-hants-municipal-district-md/#occupation">East Hants</a></td><td>Nova Scotia</td><td class="num">22,892</td><td class="num">3,380</td><td class="num">12,400</td><td class="num">27.3%</td></tr>
+ <tr><td class="num">14</td><td><a href="/location/brock-township-tp/#occupation">Brock</a></td><td>Ontario</td><td class="num">12,567</td><td class="num">1,750</td><td class="num">6,490</td><td class="num">27.0%</td></tr>
+ <tr><td class="num">15</td><td><a href="/location/leduc/#occupation">Leduc</a></td><td>Alberta</td><td class="num">34,094</td><td class="num">4,940</td><td class="num">18,355</td><td class="num">26.9%</td></tr>
+ <tr><td class="num">16</td><td><a href="/location/tach-rural-municipality-rm/#occupation">Taché</a></td><td>Manitoba</td><td class="num">11,916</td><td class="num">1,765</td><td class="num">6,615</td><td class="num">26.7%</td></tr>
+ <tr><td class="num">17</td><td><a href="/location/south-dundas-municipality-mu/#occupation">South Dundas</a></td><td>Ontario</td><td class="num">11,044</td><td class="num">1,370</td><td class="num">5,140</td><td class="num">26.7%</td></tr>
+ <tr><td class="num">18</td><td><a href="/location/saint-colomban/#occupation">Saint-Colomban</a></td><td>Quebec</td><td class="num">17,740</td><td class="num">2,645</td><td class="num">10,055</td><td class="num">26.3%</td></tr>
+ <tr><td class="num">19</td><td><a href="/location/spruce-grove/#occupation">Spruce Grove</a></td><td>Alberta</td><td class="num">37,645</td><td class="num">5,375</td><td class="num">20,595</td><td class="num">26.1%</td></tr>
+ <tr><td class="num">20</td><td><a href="/location/bonnyville-no-87-municipal-district-md/#occupation">Bonnyville No. 87</a></td><td>Alberta</td><td class="num">12,897</td><td class="num">1,775</td><td class="num">6,815</td><td class="num">26.0%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Shares are again to one decimal place. Sainte-Sophie (2,950 of 10,190) ranks just ahead of Mackenzie County (1,475 of 5,105), and Taché (1,765 of 6,615) just ahead of South Dundas (1,370 of 5,140), on the unrounded share.</p>
+
+ <p><a href="/location/hanover-rural-municipality-rm/#occupation">Hanover</a> in this table is the rural municipality in Manitoba, population 17,216. <a href="/location/hanover-town-t/#occupation">Hanover, Ontario</a>, is a separate census subdivision of 7,967 residents. It falls below the 10,000 floor, so it is not in this ranking.</p>
+
+ <p>Random rounding moves a share more when the labour force is small. Lac Ste. Anne County's denominator is 5,565 people. Wood Buffalo's is 42,655, and Toronto's is 1,518,420. A few people rounded into or out of a count change the first decimal in the smaller place and do not change it in the larger one. The ranks above use the published counts as stored.</p>
+
+ <h2>Natural resources and manufacturing</h2>
+ <p>Natural resources, agriculture and related production, and manufacturing and utilities, are separate occupation groups. They use the same labour-force total as the trades share. A high trades share is not the same fact as a high natural-resources share. In the top 10 of the 10,000-to-49,999 list, natural resources runs from 1.7% to 16.5%. Manufacturing stays in a narrower band, from 3.2% to 7.3%. Canada is 2.8% and 4.4% on those two groups.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Place</th>
+ <th class="num">Trades</th>
+ <th class="num">Natural resources</th>
+ <th class="num">Manufacturing</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td><a href="/location/lac-ste-anne-county-municipal-district-md/#occupation">Lac Ste. Anne County</a></td><td class="num">31.9%</td><td class="num">13.4%</td><td class="num">4.2%</td></tr>
+ <tr><td><a href="/location/saint-lin-laurentides/#occupation">Saint-Lin--Laurentides</a></td><td class="num">31.5%</td><td class="num">1.9%</td><td class="num">6.4%</td></tr>
+ <tr><td><a href="/location/hanover-rural-municipality-rm/#occupation">Hanover</a></td><td class="num">31.2%</td><td class="num">10.7%</td><td class="num">6.1%</td></tr>
+ <tr><td><a href="/location/st-clements-rural-municipality-rm/#occupation">St. Clements</a></td><td class="num">29.9%</td><td class="num">4.0%</td><td class="num">3.2%</td></tr>
+ <tr><td><a href="/location/yellowhead-county-municipal-district-md/#occupation">Yellowhead County</a></td><td class="num">29.4%</td><td class="num">16.5%</td><td class="num">7.3%</td></tr>
+ <tr><td><a href="/location/sainte-sophie-municipalit-m/#occupation">Sainte-Sophie</a></td><td class="num">28.9%</td><td class="num">1.7%</td><td class="num">6.7%</td></tr>
+ <tr><td><a href="/location/mackenzie-county-specialized-municipality-sm/#occupation">Mackenzie County</a></td><td class="num">28.9%</td><td class="num">15.9%</td><td class="num">6.7%</td></tr>
+ <tr><td><a href="/location/prince-rupert/#occupation">Prince Rupert</a></td><td class="num">28.8%</td><td class="num">4.0%</td><td class="num">3.5%</td></tr>
+ <tr><td><a href="/location/lavaltrie/#occupation">Lavaltrie</a></td><td class="num">28.7%</td><td class="num">1.8%</td><td class="num">4.6%</td></tr>
+ <tr><td><a href="/location/sainte-julienne-municipalit-m/#occupation">Sainte-Julienne</a></td><td class="num">28.5%</td><td class="num">2.1%</td><td class="num">5.3%</td></tr>
+ <tr><td><a href="/location/canada/#occupation">Canada</a></td><td class="num">16.8%</td><td class="num">2.8%</td><td class="num">4.4%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/yellowhead-county-municipal-district-md/#occupation">Yellowhead County</a> has the highest natural-resources share in that top 10, at <strong>16.5%</strong> (860 of 5,220), and the highest manufacturing share in the group, at <strong>7.3%</strong> (380 of 5,220). <a href="/location/mackenzie-county-specialized-municipality-sm/#occupation">Mackenzie County</a> is next on natural resources, at 15.9% (810 of 5,105). <a href="/location/lac-ste-anne-county-municipal-district-md/#occupation">Lac Ste. Anne County</a> is 13.4% (745 of 5,565). <a href="/location/hanover-rural-municipality-rm/#occupation">Hanover</a> is 10.7% (910 of 8,490).</p>
+
+ <p>The other end of the same top 10 is close to, or under, the Canada natural-resources share. <a href="/location/sainte-sophie-municipalit-m/#occupation">Sainte-Sophie</a> is 1.7% (175 of 10,190). <a href="/location/saint-lin-laurentides/#occupation">Saint-Lin--Laurentides</a>, second on trades, is 1.9% (240 of 12,715). <a href="/location/lavaltrie/#occupation">Lavaltrie</a> is 1.8% (140 of 7,680). Manufacturing in the top 10 runs from 3.2% in <a href="/location/st-clements-rural-municipality-rm/#occupation">St. Clements</a> (200 of 6,315) to Yellowhead County's 7.3%. Canada's manufacturing share is 4.4% (857,540 of 19,310,340). Canada's natural-resources share is 2.8% (541,235 of 19,310,340).</p>
+
+ <p>Among the 15 larger places in the first table, <a href="/location/norfolk-county/#occupation">Norfolk County</a> has the highest manufacturing share, at <strong>10.5%</strong> (3,325 of 31,620), and the highest natural-resources share, at <strong>7.2%</strong> (2,275 of 31,620). <a href="/location/wood-buffalo-specialized-municipality-sm/#occupation">Wood Buffalo</a>, the trades leader in that list, is 4.0% natural resources (1,690 of 42,655) and 6.1% manufacturing (2,595 of 42,655). The three groups do not add up to the labour-force total.</p>
+
+ <h2>Where the largest cities land</h2>
+ <p>Five census subdivisions in the file have 1,000,000 residents or more. <a href="/location/edmonton/#occupation">Edmonton</a> is the only one above the Canada share: 32nd at <strong>18.5%</strong> (102,620 of 554,040). <a href="/location/calgary/#occupation">Calgary</a> is 59th at <strong>15.8%</strong> (115,655 of 730,050). <a href="/location/toronto/#occupation">Toronto</a> is 89th at <strong>11.6%</strong> (175,505 of 1,518,420) and has the largest trades count in the group of 101. <a href="/location/montr-al/#occupation">Montréal</a> is 93rd at <strong>10.3%</strong> (98,535 of 959,130). <a href="/location/ottawa/#occupation">Ottawa</a> is 99th at <strong>10.0%</strong> (54,825 of 549,985).</p>
+
+ <p><a href="/location/winnipeg/#occupation">Winnipeg</a>, at 749,607 residents, ranked 57th at <strong>16.0%</strong> (64,295 of 402,365). <a href="/location/vancouver/#occupation">Vancouver</a> ranked 96th at <strong>10.1%</strong> (39,750 of 394,670).</p>
+
+ <h2>The low end of the 50,000-person list</h2>
+ <p><a href="/location/oakville-town-t/#occupation">Oakville</a> is last among the 101 places, at <strong>9.0%</strong>. The five lowest:</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Trades, transport and equipment operators</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">97</td><td><a href="/location/waterloo/#occupation">Waterloo</a></td><td>Ontario</td><td class="num">121,436</td><td class="num">6,640</td><td class="num">65,955</td><td class="num">10.1%</td></tr>
+ <tr><td class="num">98</td><td><a href="/location/markham/#occupation">Markham</a></td><td>Ontario</td><td class="num">338,503</td><td class="num">17,160</td><td class="num">170,540</td><td class="num">10.1%</td></tr>
+ <tr><td class="num">99</td><td><a href="/location/ottawa/#occupation">Ottawa</a></td><td>Ontario</td><td class="num">1,017,449</td><td class="num">54,825</td><td class="num">549,985</td><td class="num">10.0%</td></tr>
+ <tr><td class="num">100</td><td><a href="/location/fredericton/#occupation">Fredericton</a></td><td>New Brunswick</td><td class="num">63,116</td><td class="num">3,475</td><td class="num">34,905</td><td class="num">10.0%</td></tr>
+ <tr><td class="num">101</td><td><a href="/location/oakville-town-t/#occupation">Oakville</a></td><td>Ontario</td><td class="num">213,759</td><td class="num">10,235</td><td class="num">113,190</td><td class="num">9.0%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Vancouver, at 10.1%, ranks 96th, just ahead of Waterloo and Markham on the unrounded share. Vancouver is 39,750 of 394,670. Waterloo is 6,640 of 65,955. Markham is 17,160 of 170,540. Ottawa (54,825 of 549,985) ranks just ahead of Fredericton (3,475 of 34,905). Both round to 10.0%.</p>
+
+ <p>Oakville led the worked-at-home ranking in <a href="/blog/canadas-top-work-from-home-cities/">Canada's top work-from-home cities</a>. It is last on this list. The two rankings use different census questions and different denominators. Worked at home is a share of the employed labour force. This post is a share of the labour force.</p>
+
+ <h2>The national figure</h2>
+ <p>For <a href="/location/canada/#occupation">Canada</a>, 3,239,500 people were in trades, transport and equipment operators out of a labour force of 19,310,340, which is <strong>16.8%</strong>. The country's 2021 population was 36,991,981. That Canada figure is the country's published counts in the location file. It is not the sum of the municipal rows above.</p>
+
+ <p>Among the 101 places of 50,000 or more, the median share was <strong>16.3%</strong>. <a href="/location/belleville/#occupation">Belleville</a> holds that middle place, at 16.3% (4,160 of 25,450). On the one-decimal shares used in the tables, 47 places round above Canada's 16.8% and 54 round lower. Added together, those 101 places had 1,916,155 people in this occupation group out of a labour force of 12,888,495, a combined share of <strong>14.9%</strong>. The 314 places of 10,000 to 49,999 combine to <strong>19.3%</strong> (630,075 of 3,257,685). The median counts each municipality once. The combined share counts every person in the labour force, so large places with lower shares — Toronto, Montréal, Calgary, and Ottawa — pull the 50,000-person group below both the median and the Canada figure. The smaller band, taken together, sits above Canada.</p>
+
+ <p><a href="/location/newfoundland-and-labrador/#occupation">Newfoundland and Labrador</a> was the highest province or territory in the file, at <strong>19.4%</strong> (47,285 of 243,330). <a href="/location/alberta/#occupation">Alberta</a> was next, at <strong>19.3%</strong> (441,955 of 2,295,380). <a href="/location/quebec/#occupation">Quebec</a> was the lowest, at <strong>15.8%</strong> (702,290 of 4,435,460). <a href="/location/ontario/#occupation">Ontario</a> was the second lowest, at <strong>15.9%</strong> (1,175,410 of 7,399,205).</p>
+
+ <h2>Compare a place yourself</h2>
+ <p>Open any linked place for the full occupation breakdown, or set two places side by side in the <a href="/compare/">comparison tool</a>. The education, commute, occupation, and industry sections use the same anchors on location pages and in that tool. The worked-at-home ranking is in <a href="/blog/canadas-top-work-from-home-cities/">Canada's top work-from-home cities</a>.</p>
+
+ <h2>Sources</h2>
+ <p>Trades, natural-resources, and manufacturing counts, labour-force totals, and population are from the <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm?Lang=E" target="_blank" rel="noopener">Statistics Canada 2021 Census of Population (Census Profile)</a>, as stored for each place in the Canadian Data Insights location file. Shares on this page are calculated here from those published counts. See <a href="/sources/">how this site handles census data</a>. Statistics Canada data is used under the <a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank" rel="noopener">Open Government Licence – Canada</a>. This post is by Andrew.</p>
+    `,
+  },
+  {
  title: "Canadian News Deep-Dives — October 29, 2026: Bank of Canada Hikes to 2.5%, Gillingham Wins Winnipeg, Rogers' 1.6% Card Fee",
  slug: "canadian-news-roundup-2026-10-29",
  date: "October 29, 2026",
