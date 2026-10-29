@@ -24,6 +24,61 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Canadian News Deep-Dives — October 29, 2026: Bank of Canada Hikes to 2.5%, Gillingham Wins Winnipeg, Rogers' 1.6% Card Fee",
+ slug: "canadian-news-roundup-2026-10-29",
+ date: "October 29, 2026",
+ category: "News",
+ readTime: "8 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-10-29.png",
+ chartType: 'bar',
+ chartTitle: "Winnipeg mayoral race, Oct. 28, 2026 — top four candidates by unofficial vote share (%)",
+ chartData: [
+ { name: "Gillingham", value: 39.82 },
+ { name: "Klein", value: 20.71 },
+ { name: "Redden", value: 19.84 },
+ { name: "Vogiatzakis", value: 9.66 },
+ ],
+ excerpt: "Three deep-dives: the Bank of Canada's first rate hike since 2023 and what a 4.70% prime means for borrowers, Scott Gillingham's second term and a remade Winnipeg council, and the 1.6% fee Rogers will add to credit card bill payments in January.",
+ content: `
+ <p><strong>TL;DR:</strong> Today's three most-searched Canadian news stories on Google Trends Canada, explained in depth with 2021 Census context. The Bank of Canada raised its key rate to 2.5%, its first increase since July 2023, and the big banks' prime rate is 4.70% as of today. Winnipeg re-elected Mayor Scott Gillingham but sent nine new faces to its 15-seat council. And Rogers will add a 1.6% charge when you pay your bill by credit card, starting Jan. 17, 2027.</p>
+
+ <h2 id="bank-of-canada-hike">1. The Bank of Canada raises its key rate to 2.5% — the first hike since 2023</h2>
+ <p>On Wednesday, Oct. 28, the Bank of Canada increased its target for the overnight rate by 25 basis points to <strong>2.5%</strong>, with the Bank Rate at 2.75% and the deposit rate at 2.45%. Governor Tiff Macklem said it is the first interest rate increase since <strong>July 2023</strong>.</p>
+ <p><strong>Why it hiked:</strong> "With the outlook for inflation substantially higher and the economy showing resilience, an increase in the policy rate is needed to reduce the risk that elevated energy prices could spill over and become generalized inflation," Macklem said (The Globe and Mail). The Bank says the conflict in the Middle East is in its eighth month with no clear path to resolution, and higher-for-longer energy prices add to the persistence of inflation.</p>
+ <p><strong>The inflation picture:</strong> CPI inflation has been around 3% since April and is expected to rise to about <strong>3.5%</strong> by the end of the year. Excluding gasoline, inflation was 2.2% in September, and core measures remain close to 2%. The Bank now expects inflation to average 3% in 2027, a percentage point above its July projection, before coming back to 2% in the middle of 2028.</p>
+ <p><strong>The economy:</strong> GDP grew 3.3% in the second quarter and unemployment has been around 6.5% for several months. The Bank expects growth to slow in the fourth quarter because of new US tariffs, then pick up in 2027. It projects growth of 1% in 2026 and 2% in 2027 and 2028.</p>
+ <p><strong>Prime is now 4.70%:</strong> RBC, TD, BMO, CIBC, Scotiabank and National Bank all raised their prime rates by 25 basis points, from 4.45% to <strong>4.70%</strong>, effective today, Oct. 29 (Financial Post). Variable-rate mortgages tied to prime rise first; new fixed mortgage rates follow bond yields (CBC News). Toronto broker Marcus Tzaferis told CBC that a quarter-point hike adds about <strong>$70 a month</strong> on average to payments on a $500,000 mortgage. Senior Deputy Governor Carolyn Rogers said the housing market is already struggling, particularly in Ontario and British Columbia, and the hike will add to that pressure.</p>
+ <p><strong>More to come?</strong> "There could be a need to raise the policy rate further, but given the uncertainties, we will proceed carefully," Macklem said, adding decisions will be made one meeting at a time. The next rate announcement is <strong>Dec. 9, 2026</strong>.</p>
+ <p><strong>By the numbers (2021 Census):</strong> the median Canadian household had a total income of <strong>$84,000</strong> in 2020, across <strong>14,978,941</strong> occupied private dwellings (<a href="/location/canada/">Canada profile</a>). That is the income base absorbing any higher monthly payments.</p>
+ <p><strong>Why it matters to you:</strong> if you have a variable-rate mortgage, a home equity line of credit or another prime-linked loan, your cost goes up starting today. If you are renewing soon, compare fixed and variable offers carefully. This is general information, not financial advice.</p>
+ <p>Sources: <a href="https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/" target="_blank" rel="noopener">Bank of Canada</a> · <a href="https://www.theglobeandmail.com/business/article-bank-of-canada-interest-rate-decision-oct-28-live-updates/" target="_blank" rel="noopener">The Globe and Mail</a> · <a href="https://www.cbc.ca/news/business/bank-of-canada-hike-mortgage-housing-market-9.7400127" target="_blank" rel="noopener">CBC News</a> · <a href="https://financialpost.com/fp-finance/banking/banks-raise-prime-rate-after-bank-of-canada-interest-rate-increase" target="_blank" rel="noopener">Financial Post</a> · <a href="https://www.newswire.ca/news-releases/rbc-royal-bank-announces-change-to-prime-rate-837555648.html" target="_blank" rel="noopener">RBC</a> · <a href="https://td.mediaroom.com/2026-10-28-TD-Canada-Trust-announces-change-to-TD-Prime-Rate" target="_blank" rel="noopener">TD</a></p>
+
+ <h2 id="winnipeg-election">2. Gillingham wins a second term in Winnipeg as voters remake council</h2>
+ <p>Scott Gillingham was re-elected mayor of Winnipeg on Wednesday. Unofficial results gave him <strong>80,206</strong> votes (<strong>39.82%</strong>), ahead of former MLA and city councillor Kevin Klein with 41,703 (20.71%), software developer Noah Redden with 39,962 (19.84%) and funeral home director Mike Vogiatzakis with 19,463 (9.66%). The other eight candidates in a field of 12, the most since 1992, each had less than 3% (Winnipeg Free Press; The Canadian Press).</p>
+ <p><strong>A stronger mandate:</strong> Gillingham won in 2022 with 27.52% of the vote, the smallest share for any Winnipeg mayor in recent history, and a margin of only 4,391 votes (Winnipeg Free Press; CBC News). "Tonight you have given me the honour of serving as your mayor once again," he told supporters. "Thank you, Winnipeg. I will never take your trust for granted."</p>
+ <p><strong>A new-look council:</strong> nine of 15 wards will have new councillors. Four incumbents lost: Ross Eadie to Natalie Smith in Mynarski, Devi Sharma to Greg McFarlane in Old Kildonan, Shawn Dobson to Kelly Ryback in St. James, and Russ Wyatt to Lora Meseman in Transcona. In the five open wards, voters elected Jasmine Brar (Waverley West), Ray DuBois (St. Norbert-Seine River), Sara MacArthur (River Heights-Fort Garry), Jeff Palmer (Fort Rouge-East Fort Garry) and Chris Sigurdson (St. Vital) (Winnipeg Free Press).</p>
+ <p><strong>Turnout watch:</strong> a record <strong>50,767</strong> people voted in advance, up 21% from 2022. Overall turnout was 37.5% in 2022, the lowest since 1989, and 42.33% in 2018 (Winnipeg Free Press).</p>
+ <p><strong>What's next:</strong> the campaign focused on housing and public safety, and Gillingham has vowed to tackle homelessness, addictions, mental health and crime. Klein conceded and said he would hold a news conference Friday (The Canadian Press). Almost every other Manitoba community voted Wednesday too.</p>
+ <p><strong>By the numbers (2021 Census):</strong> <a href="/location/winnipeg/">Winnipeg</a> had <strong>749,607</strong> residents, up 6.3% from 2016. Its median age was 38.8 (Canada: 41.6), its median household income was $80,000 in 2020 (Canada: $84,000), and 12.9% of residents were in low income (Canada: 11.1%). The city had 315,465 private dwellings, 300,431 of them occupied by usual residents. See also <a href="/location/manitoba/">Manitoba</a>.</p>
+ <p><strong>Why it matters to you:</strong> if you live in Winnipeg, more than half of your council is new, so check who now represents your ward before the next round of budget and housing decisions.</p>
+ <p>Sources: <a href="https://www.winnipegfreepress.com/breakingnews/2026/10/28/gillingham-takes-lead-in-mayoral-race" target="_blank" rel="noopener">Winnipeg Free Press</a> · <a href="https://www.theglobeandmail.com/canada/article-scott-gillingham-re-elected-as-mayor-of-winnipeg/" target="_blank" rel="noopener">The Canadian Press via The Globe and Mail</a> · <a href="https://www.cbc.ca/news/canada/manitoba/winnipeg-mayoral-race-analysis-2026-9.7400665" target="_blank" rel="noopener">CBC News</a> · <a href="https://globalnews.ca/news/12122725/election-day-winnipeg-2026/" target="_blank" rel="noopener">Global News</a></p>
+
+ <h2 id="rogers-credit-card-fee">3. Rogers will charge 1.6% when you pay your bill by credit card</h2>
+ <p>Starting <strong>Jan. 17, 2027</strong>, Rogers will add a <strong>1.6%</strong> "credit card processing charge" every time a customer pays a Rogers bill by credit card, whether through Auto-Pay or a one-time payment. Rogers says the charge "reflects the fees we are charged by credit card companies." MoneySense reports Fido bills are included. On a $100 bill, that is $1.60.</p>
+ <p><strong>Rogers' reasoning:</strong> a spokesperson said its credit card processing costs have gone up nearly 40% since 2020 and it now pays about <strong>$150 million</strong> a year in fees (CBC News; MobileSyrup).</p>
+ <p><strong>Who is exempt:</strong> customers in Quebec, where the Consumer Protection Act prohibits such fees (MoneySense), customers on select specialized plans such as Connected for Success, and former Shaw Mobile customers on migrated plans.</p>
+ <p><strong>How to avoid it:</strong> the charge does not apply to direct debit, online banking payments, cheques, Rogers gift cards, prepaid cards, Debit Mastercard or Visa Debit. MoneySense's analysis found a card earning 1% to 1.5% back on telecom bills won't cover a 1.6% fee, while a 2% card roughly breaks even.</p>
+ <p><strong>Is this allowed?</strong> Card surcharges became possible in Canada after a class-action settlement. Under Mastercard's rules, in effect since Oct. 6, 2022, a credit card surcharge can't exceed 2.4% or the merchant's actual cost, whichever is lower, and surcharges aren't allowed on Debit Mastercard or prepaid cards (MoneySense). Telus rolled out a 1.5% credit card fee for mobile and home internet customers in 2022 before scrapping it a year later (CBC News).</p>
+ <p><strong>By the numbers (2021 Census):</strong> <a href="/location/quebec/">Quebec</a>, where the fee won't apply, had <strong>8,501,833</strong> residents, about 23% of <a href="/location/canada/">Canada's</a> 36,991,981.</p>
+ <p><strong>Why it matters to you:</strong> if you pay Rogers or Fido by credit card outside Quebec, decide before January whether your card rewards still beat the fee, or switch to debit or a bank payment.</p>
+ <p>Sources: <a href="https://www.rogers.com/support/billing-accounts/understanding-the-credit-card-processing-charge" target="_blank" rel="noopener">Rogers</a> · <a href="https://www.cbc.ca/news/business/rogers-credit-card-fee-9.7391506" target="_blank" rel="noopener">CBC News</a> · <a href="https://www.moneysense.ca/spend/credit-cards/rogers-credit-card-payment-fee/" target="_blank" rel="noopener">MoneySense</a> · <a href="https://mobilesyrup.com/2026/10/21/rogers-credit-card-processing-fee/" target="_blank" rel="noopener">MobileSyrup</a></p>
+
+ <h2>Data sources</h2>
+ <p>Population, age, income, low-income and dwelling figures are from the 2021 Census of Population (income refers to 2020) as presented on Canadian Data Insights location pages. See <a href="/sources/">Data sources</a>. News facts are from the linked reports. Topics were chosen using Google Trends Canada interest on the morning of Oct. 29, 2026.</p>
+ `,
+ },
+ {
  title: "Canada's Top Work-from-Home Cities (2021 Census)",
  slug: "canadas-top-work-from-home-cities",
  date: "October 28, 2026",
