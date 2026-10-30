@@ -24,6 +24,301 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Bachelor's vs trades: education mix by Canadian city (2021 Census)",
+ slug: "canadas-bachelors-vs-trades-cities",
+ date: "October 30, 2026",
+ category: "Education",
+ readTime: "8 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadas-bachelors-vs-trades-cities.png",
+ chartType: 'bar',
+ chartTitle: "Bachelor's degree or higher, places of 50,000 or more (percent)",
+ chartData: [
+ { name: "Oakville", value: 47.9 },
+ { name: "Vancouver", value: 44.9 },
+ { name: "Richmond Hill", value: 44.7 },
+ { name: "N. Van. District", value: 44.0 },
+ { name: "Waterloo", value: 43.6 },
+ { name: "Victoria", value: 42.6 },
+ { name: "North Vancouver", value: 42.4 },
+ { name: "Ottawa", value: 41.4 },
+ ],
+ excerpt: "Oakville led Canadian places of 50,000 or more: 47.9% of residents aged 15 and over held a bachelor's degree or higher. Saguenay led on apprenticeship or trades certificates, at 23.2%. In nine of those places, trades certificates outnumber degrees. Canada was 26.7% and 8.7%.",
+ content: `
+
+ <p>In the 2021 Census, <strong>47.9%</strong> of <a href="/location/oakville-town-t/#education">Oakville</a> residents aged 15 and over held a bachelor's degree or higher — the highest share among Canada's <strong>101</strong> census subdivisions with <strong>50,000</strong> or more residents. <a href="/location/vancouver/#education">Vancouver</a> was next, at 44.9%. Across <a href="/location/canada/#education">Canada</a>, the same share was <strong>26.7%</strong>.</p>
+
+ <p>The other ranking uses the apprenticeship or trades certificate, and the same population. <a href="/location/saguenay/#education">Saguenay</a> led those 101 places, at <strong>23.2%</strong>. Canada's share was <strong>8.7%</strong>. In nine of the 101, trades certificates outnumber bachelor's degrees. All nine are in Quebec. A separate list further down covers places of 10,000 to 49,999. <a href="/location/westmount/#education">Westmount</a>, at 19,658 residents, leads that smaller degree list, at 63.3%.</p>
+
+ <p>Both percentages divide a published count by the population aged 15 and over. Bachelor's degree or higher is one highest credential. Apprenticeship or trades certificate is another. A person is in one group, not both. College, CEGEP or other non-university certificate is a third group, and it is not inside either share. For Canada, that college share was 18.8% (5,714,490 of 30,335,915). The education section on each location page uses these same counts and the same denominator.</p>
+
+ <p>This is a different ranking from <a href="/blog/canadas-trades-heavy-towns/">Canada's trades-heavy towns</a>. That post counts people whose job was in trades, transport and equipment operators, as a share of the labour force. This post counts credentials, as a share of everyone aged 15 and over. <a href="/location/wood-buffalo-specialized-municipality-sm/#education">Wood Buffalo</a> led the occupation list, at 31.3% (13,345 of 42,655). On this credential list it is 13th, at 14.5% (8,025 of 55,245), and bachelor's degrees still outnumber trades certificates there (10,790 and 8,025).</p>
+
+ <p>Statistics Canada randomly rounds census counts, so a set of categories can miss its published total by a few people. For Canada, the four published parts of postsecondary — trades certificate, college or CEGEP, university certificate below the bachelor level, and bachelor's or higher — add up to the postsecondary total of 17,339,045. This page does not adjust municipal rows for rounding, and it does not estimate any remainder.</p>
+
+ <h2>Places of 50,000 or more: bachelor's degree or higher</h2>
+ <p>The ranking below keeps the list to census subdivisions — cities, towns, and other municipalities — with a 2021 population of at least 50,000. That threshold leaves 101 places. Every figure is calculated from the census counts in this site's location file. Nine of the top 15 are in Ontario, five are in British Columbia, and one is in New Brunswick.</p>
+
+ <p><a href="/location/toronto/#education">Toronto</a> does not lead the share. It has the largest bachelor's count in the group of 101: <strong>976,620</strong> people.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Bachelor's or higher</th>
+ <th class="num">Trades certificate</th>
+ <th class="num">Aged 15+</th>
+ <th class="num">Bachelor's share</th>
+ <th class="num">Trades share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/oakville-town-t/#education">Oakville</a></td><td>Ontario</td><td class="num">213,759</td><td class="num">83,230</td><td class="num">4,910</td><td class="num">173,625</td><td class="num">47.9%</td><td class="num">2.8%</td></tr>
+<tr><td class="num">2</td><td><a href="/location/vancouver/#education">Vancouver</a></td><td>British Columbia</td><td class="num">662,248</td><td class="num">260,240</td><td class="num">24,410</td><td class="num">580,010</td><td class="num">44.9%</td><td class="num">4.2%</td></tr>
+<tr><td class="num">3</td><td><a href="/location/richmond-hill-town-t/#education">Richmond Hill</a></td><td>Ontario</td><td class="num">202,022</td><td class="num">76,510</td><td class="num">5,260</td><td class="num">170,980</td><td class="num">44.7%</td><td class="num">3.1%</td></tr>
+<tr><td class="num">4</td><td><a href="/location/north-vancouver-district-municipality-dm/#education">North Vancouver District</a></td><td>British Columbia</td><td class="num">88,168</td><td class="num">32,065</td><td class="num">3,850</td><td class="num">72,820</td><td class="num">44.0%</td><td class="num">5.3%</td></tr>
+<tr><td class="num">5</td><td><a href="/location/waterloo/#education">Waterloo</a></td><td>Ontario</td><td class="num">121,436</td><td class="num">43,915</td><td class="num">3,185</td><td class="num">100,820</td><td class="num">43.6%</td><td class="num">3.2%</td></tr>
+<tr><td class="num">6</td><td><a href="/location/victoria/#education">Victoria</a></td><td>British Columbia</td><td class="num">91,867</td><td class="num">33,860</td><td class="num">4,320</td><td class="num">79,470</td><td class="num">42.6%</td><td class="num">5.4%</td></tr>
+<tr><td class="num">7</td><td><a href="/location/north-vancouver/#education">North Vancouver</a></td><td>British Columbia</td><td class="num">58,120</td><td class="num">21,280</td><td class="num">2,965</td><td class="num">50,205</td><td class="num">42.4%</td><td class="num">5.9%</td></tr>
+<tr><td class="num">8</td><td><a href="/location/ottawa/#education">Ottawa</a></td><td>Ontario</td><td class="num">1,017,449</td><td class="num">345,465</td><td class="num">29,735</td><td class="num">834,135</td><td class="num">41.4%</td><td class="num">3.6%</td></tr>
+<tr><td class="num">9</td><td><a href="/location/toronto/#education">Toronto</a></td><td>Ontario</td><td class="num">2,794,356</td><td class="num">976,620</td><td class="num">80,935</td><td class="num">2,377,950</td><td class="num">41.1%</td><td class="num">3.4%</td></tr>
+<tr><td class="num">10</td><td><a href="/location/aurora-town-t/#education">Aurora</a></td><td>Ontario</td><td class="num">62,057</td><td class="num">20,715</td><td class="num">1,785</td><td class="num">50,830</td><td class="num">40.8%</td><td class="num">3.5%</td></tr>
+<tr><td class="num">11</td><td><a href="/location/milton-town-t/#education">Milton</a></td><td>Ontario</td><td class="num">132,979</td><td class="num">40,300</td><td class="num">3,505</td><td class="num">99,460</td><td class="num">40.5%</td><td class="num">3.5%</td></tr>
+<tr><td class="num">12</td><td><a href="/location/markham/#education">Markham</a></td><td>Ontario</td><td class="num">338,503</td><td class="num">111,165</td><td class="num">7,030</td><td class="num">283,405</td><td class="num">39.2%</td><td class="num">2.5%</td></tr>
+<tr><td class="num">13</td><td><a href="/location/fredericton/#education">Fredericton</a></td><td>New Brunswick</td><td class="num">63,116</td><td class="num">20,220</td><td class="num">2,515</td><td class="num">52,730</td><td class="num">38.3%</td><td class="num">4.8%</td></tr>
+<tr><td class="num">14</td><td><a href="/location/burnaby/#education">Burnaby</a></td><td>British Columbia</td><td class="num">249,125</td><td class="num">81,580</td><td class="num">10,870</td><td class="num">213,475</td><td class="num">38.2%</td><td class="num">5.1%</td></tr>
+<tr><td class="num">15</td><td><a href="/location/mississauga/#education">Mississauga</a></td><td>Ontario</td><td class="num">717,961</td><td class="num">230,635</td><td class="num">22,470</td><td class="num">603,595</td><td class="num">38.2%</td><td class="num">3.7%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Shares are shown to one decimal place, matching the location pages. <a href="/location/burnaby/#education">Burnaby</a> (81,580 of 213,475) ranks just ahead of <a href="/location/mississauga/#education">Mississauga</a> (230,635 of 603,595). Both round to 38.2%.</p>
+
+ <p><a href="/location/north-vancouver-district-municipality-dm/#education">North Vancouver District</a> in this table is the district municipality, population 88,168. <a href="/location/north-vancouver/#education">North Vancouver</a> is the city, population 58,120, at 42.4% (21,280 of 50,205). <a href="/location/waterloo/#education">Waterloo</a> is the city of 121,436, not a regional total. <a href="/location/fredericton/#education">Fredericton</a> is the one Atlantic place in the top 15, at 38.3% (20,220 of 52,730). <a href="/location/new-brunswick/#education">New Brunswick</a> as a whole was 19.0% (122,865 of 648,245).</p>
+
+ <h2>Apprenticeship or trades certificate</h2>
+ <p>The same 101 places, ranked the other way. The top 12 are in Quebec, and 14 of the top 15 are. <a href="/location/wood-buffalo-specialized-municipality-sm/#education">Wood Buffalo</a> is the one place outside Quebec in that top 15.</p>
+
+ <p><a href="/location/montr-al/#education">Montréal</a> does not lead the share. It has the largest trades-certificate count in the group of 101: <strong>135,320</strong> people. Its bachelor's count is larger still, at 522,915.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Bachelor's or higher</th>
+ <th class="num">Trades certificate</th>
+ <th class="num">Aged 15+</th>
+ <th class="num">Bachelor's share</th>
+ <th class="num">Trades share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/saguenay/#education">Saguenay</a></td><td>Quebec</td><td class="num">144,723</td><td class="num">20,985</td><td class="num">27,700</td><td class="num">119,590</td><td class="num">17.5%</td><td class="num">23.2%</td></tr>
+<tr><td class="num">2</td><td><a href="/location/mirabel/#education">Mirabel</a></td><td>Quebec</td><td class="num">61,108</td><td class="num">7,055</td><td class="num">10,485</td><td class="num">48,245</td><td class="num">14.6%</td><td class="num">21.7%</td></tr>
+<tr><td class="num">3</td><td><a href="/location/mascouche/#education">Mascouche</a></td><td>Quebec</td><td class="num">51,183</td><td class="num">6,190</td><td class="num">8,475</td><td class="num">39,930</td><td class="num">15.5%</td><td class="num">21.2%</td></tr>
+<tr><td class="num">4</td><td><a href="/location/drummondville/#education">Drummondville</a></td><td>Quebec</td><td class="num">79,258</td><td class="num">8,710</td><td class="num">12,525</td><td class="num">64,035</td><td class="num">13.6%</td><td class="num">19.6%</td></tr>
+<tr><td class="num">5</td><td><a href="/location/terrebonne/#education">Terrebonne</a></td><td>Quebec</td><td class="num">119,944</td><td class="num">15,170</td><td class="num">18,230</td><td class="num">94,250</td><td class="num">16.1%</td><td class="num">19.3%</td></tr>
+<tr><td class="num">6</td><td><a href="/location/saint-jean-sur-richelieu/#education">Saint-Jean-sur-Richelieu</a></td><td>Quebec</td><td class="num">97,873</td><td class="num">12,265</td><td class="num">14,835</td><td class="num">79,075</td><td class="num">15.5%</td><td class="num">18.8%</td></tr>
+<tr><td class="num">7</td><td><a href="/location/repentigny/#education">Repentigny</a></td><td>Quebec</td><td class="num">86,100</td><td class="num">12,230</td><td class="num">12,515</td><td class="num">69,450</td><td class="num">17.6%</td><td class="num">18.0%</td></tr>
+<tr><td class="num">8</td><td><a href="/location/saint-hyacinthe/#education">Saint-Hyacinthe</a></td><td>Quebec</td><td class="num">57,239</td><td class="num">6,540</td><td class="num">8,285</td><td class="num">46,350</td><td class="num">14.1%</td><td class="num">17.9%</td></tr>
+<tr><td class="num">9</td><td><a href="/location/trois-rivi-res/#education">Trois-Rivières</a></td><td>Quebec</td><td class="num">139,163</td><td class="num">22,550</td><td class="num">20,005</td><td class="num">114,125</td><td class="num">19.8%</td><td class="num">17.5%</td></tr>
+<tr><td class="num">10</td><td><a href="/location/granby/#education">Granby</a></td><td>Quebec</td><td class="num">69,025</td><td class="num">7,405</td><td class="num">9,680</td><td class="num">56,025</td><td class="num">13.2%</td><td class="num">17.3%</td></tr>
+<tr><td class="num">11</td><td><a href="/location/l-vis/#education">Lévis</a></td><td>Quebec</td><td class="num">149,683</td><td class="num">29,765</td><td class="num">20,365</td><td class="num">121,095</td><td class="num">24.6%</td><td class="num">16.8%</td></tr>
+<tr><td class="num">12</td><td><a href="/location/sherbrooke/#education">Sherbrooke</a></td><td>Quebec</td><td class="num">172,950</td><td class="num">34,895</td><td class="num">23,115</td><td class="num">139,990</td><td class="num">24.9%</td><td class="num">16.5%</td></tr>
+<tr><td class="num">13</td><td><a href="/location/wood-buffalo-specialized-municipality-sm/#education">Wood Buffalo</a></td><td>Alberta</td><td class="num">72,326</td><td class="num">10,790</td><td class="num">8,025</td><td class="num">55,245</td><td class="num">19.5%</td><td class="num">14.5%</td></tr>
+<tr><td class="num">14</td><td><a href="/location/blainville/#education">Blainville</a></td><td>Quebec</td><td class="num">59,819</td><td class="num">11,665</td><td class="num">6,900</td><td class="num">48,010</td><td class="num">24.3%</td><td class="num">14.4%</td></tr>
+<tr><td class="num">15</td><td><a href="/location/qu-bec/#education">Québec</a></td><td>Quebec</td><td class="num">549,459</td><td class="num">132,100</td><td class="num">64,890</td><td class="num">452,695</td><td class="num">29.2%</td><td class="num">14.3%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/qu-bec/#education">Québec</a> (64,890 of 452,695) ranks just ahead of <a href="/location/longueuil/#education">Longueuil</a> (29,680 of 207,820). Both round to 14.3%. Longueuil is 16th, just outside the table. Québec in that sentence is the city, not <a href="/location/quebec/#education">the province</a>.</p>
+
+ <p>A high trades-certificate share is not the same fact as trades certificates outnumbering degrees. <a href="/location/trois-rivi-res/#education">Trois-Rivières</a> is 9th on this list, at 17.5% (20,005 of 114,125), and bachelor's degrees are still higher, at 19.8% (22,550 of 114,125). <a href="/location/wood-buffalo-specialized-municipality-sm/#education">Wood Buffalo</a>, 13th here, is the same kind of case: 10,790 bachelor's degrees and 8,025 trades certificates.</p>
+
+ <p>College or CEGEP stays near the national share inside this top 10. It runs from 16.2% in <a href="/location/saint-hyacinthe/#education">Saint-Hyacinthe</a> (7,530 of 46,350) to 19.8% in <a href="/location/saguenay/#education">Saguenay</a> (23,725 of 119,590). Canada is 18.8%. Trades-certificate shares in the same ten places run from 17.3% to 23.2%, above Canada's 8.7%.</p>
+
+ <h2>Where trades certificates outnumber degrees</h2>
+ <p>Nine of the 101 places have more residents whose highest credential is an apprenticeship or trades certificate than residents whose highest credential is a bachelor's degree or higher. All nine are in Quebec. The ratio is the trades-certificate count divided by the bachelor's-or-higher count, shown to two decimal places.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Trades certificate</th>
+ <th class="num">Bachelor's or higher</th>
+ <th class="num">Trades per degree</th>
+ <th class="num">Trades share</th>
+ <th class="num">Bachelor's share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/mirabel/#education">Mirabel</a></td><td>Quebec</td><td class="num">61,108</td><td class="num">10,485</td><td class="num">7,055</td><td class="num">1.49</td><td class="num">21.7%</td><td class="num">14.6%</td></tr>
+<tr><td class="num">2</td><td><a href="/location/drummondville/#education">Drummondville</a></td><td>Quebec</td><td class="num">79,258</td><td class="num">12,525</td><td class="num">8,710</td><td class="num">1.44</td><td class="num">19.6%</td><td class="num">13.6%</td></tr>
+<tr><td class="num">3</td><td><a href="/location/mascouche/#education">Mascouche</a></td><td>Quebec</td><td class="num">51,183</td><td class="num">8,475</td><td class="num">6,190</td><td class="num">1.37</td><td class="num">21.2%</td><td class="num">15.5%</td></tr>
+<tr><td class="num">4</td><td><a href="/location/saguenay/#education">Saguenay</a></td><td>Quebec</td><td class="num">144,723</td><td class="num">27,700</td><td class="num">20,985</td><td class="num">1.32</td><td class="num">23.2%</td><td class="num">17.5%</td></tr>
+<tr><td class="num">5</td><td><a href="/location/granby/#education">Granby</a></td><td>Quebec</td><td class="num">69,025</td><td class="num">9,680</td><td class="num">7,405</td><td class="num">1.31</td><td class="num">17.3%</td><td class="num">13.2%</td></tr>
+<tr><td class="num">6</td><td><a href="/location/saint-hyacinthe/#education">Saint-Hyacinthe</a></td><td>Quebec</td><td class="num">57,239</td><td class="num">8,285</td><td class="num">6,540</td><td class="num">1.27</td><td class="num">17.9%</td><td class="num">14.1%</td></tr>
+<tr><td class="num">7</td><td><a href="/location/saint-jean-sur-richelieu/#education">Saint-Jean-sur-Richelieu</a></td><td>Quebec</td><td class="num">97,873</td><td class="num">14,835</td><td class="num">12,265</td><td class="num">1.21</td><td class="num">18.8%</td><td class="num">15.5%</td></tr>
+<tr><td class="num">8</td><td><a href="/location/terrebonne/#education">Terrebonne</a></td><td>Quebec</td><td class="num">119,944</td><td class="num">18,230</td><td class="num">15,170</td><td class="num">1.20</td><td class="num">19.3%</td><td class="num">16.1%</td></tr>
+<tr><td class="num">9</td><td><a href="/location/repentigny/#education">Repentigny</a></td><td>Quebec</td><td class="num">86,100</td><td class="num">12,515</td><td class="num">12,230</td><td class="num">1.02</td><td class="num">18.0%</td><td class="num">17.6%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/mirabel/#education">Mirabel</a> is the widest gap, at 1.49 trades certificates for every bachelor's degree or higher (10,485 and 7,055). <a href="/location/repentigny/#education">Repentigny</a> is the narrowest. Trades certificates lead by 285 people (12,515 and 12,230), a ratio of 1.02.</p>
+
+ <p>The other end of the same ratio is a degree-heavy suburb. In <a href="/location/oakville-town-t/#education">Oakville</a> there are 16.95 people with a bachelor's degree or higher for every trades certificate (83,230 and 4,910). <a href="/location/markham/#education">Markham</a> is next, at 15.81 (111,165 and 7,030). <a href="/location/richmond-hill-town-t/#education">Richmond Hill</a> is third, at 14.55 (76,510 and 5,260). Canada is 3.06 (8,086,245 and 2,641,555).</p>
+
+ <p><a href="/location/markham/#education">Markham</a> has the lowest trades-certificate share in the group of 101, at 2.5%. <a href="/location/oakville-town-t/#education">Oakville</a> is second-lowest, at 2.8%, and first on the bachelor's share. Oakville also led the worked-at-home ranking in <a href="/blog/canadas-top-work-from-home-cities/">Canada's top work-from-home cities</a>, and it was last on the occupation list in the trades-towns post, at 9.0% (10,235 of 113,190). The three rankings use different census questions. Worked at home is a share of the employed labour force. The occupation share uses the labour force. This post uses the population aged 15 and over.</p>
+
+ <h2>Where the largest cities land</h2>
+ <p>Five census subdivisions in the file have 1,000,000 residents or more. <a href="/location/ottawa/#education">Ottawa</a> is 8th on bachelor's degrees, at <strong>41.4%</strong> (345,465 of 834,135), and 94th on trades certificates, at 3.6% (29,735 of 834,135). <a href="/location/toronto/#education">Toronto</a> is 9th and 97th, at 41.1% and 3.4%. <a href="/location/montr-al/#education">Montréal</a> is 19th and 30th, at 36.0% (522,915 of 1,453,295) and 9.3% (135,320 of 1,453,295). <a href="/location/calgary/#education">Calgary</a> is 22nd and 64th, at 35.7% (377,450 of 1,056,230) and 5.9% (62,155 of 1,056,230). <a href="/location/edmonton/#education">Edmonton</a> is 34th and 42nd, at 29.7% (241,480 of 812,610) and 7.3% (59,580 of 812,610).</p>
+
+ <p><a href="/location/winnipeg/#education">Winnipeg</a>, at 749,607 residents, is 37th on bachelor's degrees, at 29.2% (178,745 of 612,550), and 68th on trades certificates, at 5.7% (34,885 of 612,550). <a href="/location/vancouver/#education">Vancouver</a> is already in the first table: 2nd on bachelor's degrees and 88th on trades certificates, at 4.2% (24,410 of 580,010).</p>
+
+ <h2>The low end of the 50,000-person list</h2>
+ <p><a href="/location/norfolk-county/#education">Norfolk County</a> is last on bachelor's degrees among the 101 places, at <strong>12.5%</strong>. The five lowest:</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Bachelor's or higher</th>
+ <th class="num">Trades certificate</th>
+ <th class="num">Aged 15+</th>
+ <th class="num">Bachelor's share</th>
+ <th class="num">Trades share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">97</td><td><a href="/location/drummondville/#education">Drummondville</a></td><td>Quebec</td><td class="num">79,258</td><td class="num">8,710</td><td class="num">12,525</td><td class="num">64,035</td><td class="num">13.6%</td><td class="num">19.6%</td></tr>
+<tr><td class="num">98</td><td><a href="/location/kawartha-lakes/#education">Kawartha Lakes</a></td><td>Ontario</td><td class="num">79,247</td><td class="num">8,985</td><td class="num">5,420</td><td class="num">66,700</td><td class="num">13.5%</td><td class="num">8.1%</td></tr>
+<tr><td class="num">99</td><td><a href="/location/granby/#education">Granby</a></td><td>Quebec</td><td class="num">69,025</td><td class="num">7,405</td><td class="num">9,680</td><td class="num">56,025</td><td class="num">13.2%</td><td class="num">17.3%</td></tr>
+<tr><td class="num">100</td><td><a href="/location/chatham-kent-municipality-mu/#education">Chatham-Kent</a></td><td>Ontario</td><td class="num">103,988</td><td class="num">11,030</td><td class="num">5,500</td><td class="num">85,225</td><td class="num">12.9%</td><td class="num">6.5%</td></tr>
+<tr><td class="num">101</td><td><a href="/location/norfolk-county/#education">Norfolk County</a></td><td>Ontario</td><td class="num">67,490</td><td class="num">6,975</td><td class="num">4,405</td><td class="num">55,980</td><td class="num">12.5%</td><td class="num">7.9%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Last on bachelor's degrees is not the same fact as the smallest postsecondary share. <a href="/location/norfolk-county/#education">Norfolk County</a>'s postsecondary share is 47.2% (26,410 of 55,980), below Canada's 57.2% (17,339,045 of 30,335,915). Its college share is 25.5% (14,250 of 55,980), above Canada's 18.8%. <a href="/location/kawartha-lakes/#education">Kawartha Lakes</a> is 98th on bachelor's degrees and 37th on trades certificates, at 8.1% (5,420 of 66,700). Its college share is 26.0% (17,330 of 66,700), and its postsecondary share is 49.0% (32,655 of 66,700).</p>
+
+ <p>Those two places sat near the top of the occupation ranking. <a href="/location/kawartha-lakes/#education">Kawartha Lakes</a> was 2nd, at 24.7% of the labour force (9,030 of 36,500). <a href="/location/norfolk-county/#education">Norfolk County</a> was 3rd, at 24.3% (7,685 of 31,620). Their trades-certificate shares, 8.1% and 7.9%, sit near Canada's 8.7%. A job in the trades and a trades certificate as one's highest credential are different census facts.</p>
+
+ <p>On the trades-certificate ranking, <a href="/location/markham/#education">Markham</a> is last, at 2.5% (7,030 of 283,405). Then <a href="/location/oakville-town-t/#education">Oakville</a> at 2.8%, <a href="/location/richmond-hill-town-t/#education">Richmond Hill</a> at 3.1% (5,260 of 170,980), <a href="/location/waterloo/#education">Waterloo</a> at 3.2% (3,185 of 100,820), and <a href="/location/toronto/#education">Toronto</a> at 3.4% (80,935 of 2,377,950). <a href="/location/milton-town-t/#education">Milton</a> (3,505 of 99,460) ranks just ahead of <a href="/location/aurora-town-t/#education">Aurora</a> (1,785 of 50,830). Both round to 3.5%. Toronto's trades-certificate count is still the second-largest in the group of 101, after Montréal.</p>
+
+ <h2>The national figure</h2>
+ <p>For <a href="/location/canada/#education">Canada</a>, 8,086,245 people held a bachelor's degree or higher out of a population aged 15 and over of 30,335,915, which is <strong>26.7%</strong>. The trades-certificate count was 2,641,555, which is <strong>8.7%</strong>. The country's 2021 population was 36,991,981. That Canada figure is the country's published counts in the location file. It is not the sum of the municipal rows above.</p>
+
+ <p>High school diploma or equivalency also rounds to 26.7%, from a larger count: 8,097,295 of 30,335,915. The two groups are different people. Postsecondary credentials, the wider group that contains both degrees and trades certificates, were 57.2% (17,339,045 of 30,335,915).</p>
+
+ <p>Among the 101 places of 50,000 or more, the median bachelor's share was <strong>24.9%</strong>. <a href="/location/laval/#education">Laval</a> holds that middle place, 51st, at 24.9% (88,110 of 354,415). <a href="/location/sherbrooke/#education">Sherbrooke</a> ranks just ahead, 50th, and also rounds to 24.9% (34,895 of 139,990). The median trades-certificate share was <strong>6.7%</strong>. <a href="/location/halifax-regional-municipality-rgm/#education">Halifax</a> holds that middle place, at 6.7% (24,760 of 370,355). Halifax here is the regional municipality, population 439,819.</p>
+
+ <p>On the one-decimal shares used in the tables, 41 places round above Canada's 26.7% on bachelor's degrees, <a href="/location/st-albert/#education">St. Albert</a> rounds to the same 26.7% (14,620 of 54,675), and 59 round lower. On trades certificates, 32 places round above Canada's 8.7%, three round to the same 8.7% — <a href="/location/kelowna/#education">Kelowna</a> (10,650 of 122,175), <a href="/location/port-coquitlam/#education">Port Coquitlam</a> (4,410 of 50,770), and <a href="/location/sarnia/#education">Sarnia</a> (5,240 of 60,375) — and 66 round lower.</p>
+
+ <p>Added together, those 101 places had 6,296,965 people with a bachelor's degree or higher out of 19,837,945 aged 15 and over, a combined share of <strong>31.7%</strong>. The trades-certificate combined share was <strong>6.9%</strong> (1,360,125 of 19,837,945). The median counts each municipality once. The combined share counts every person aged 15 and over, so large places with high degree shares — Toronto, Montréal, Vancouver, and Ottawa — pull the bachelor's figure above both the median and the Canada figure. The same large places pull the trades-certificate figure below Canada. The 314 places of 10,000 to 49,999 combine to <strong>20.2%</strong> on bachelor's degrees (1,047,655 of 5,185,495) and <strong>10.7%</strong> on trades certificates (556,215 of 5,185,495).</p>
+
+ <p><a href="/location/ontario/#education">Ontario</a> was the highest province or territory on bachelor's degrees, at <strong>29.9%</strong> (3,528,600 of 11,782,820). <a href="/location/nunavut/#education">Nunavut</a> was the lowest, at <strong>10.6%</strong> (2,605 of 24,535). Among provinces, <a href="/location/newfoundland-and-labrador/#education">Newfoundland and Labrador</a> was the lowest, at <strong>16.6%</strong> (72,190 of 433,960). On trades certificates, <a href="/location/quebec/#education">Quebec</a> was the highest, at <strong>15.8%</strong> (1,096,360 of 6,918,730), and its bachelor's share was 23.5% (1,628,940 of 6,918,730). <a href="/location/ontario/#education">Ontario</a> was the lowest on trades certificates, at <strong>5.0%</strong> (592,485 of 11,782,820). <a href="/location/nunavut/#education">Nunavut</a> also rounds to 5.0% (1,235 of 24,535). Ontario's unrounded share is slightly lower. <a href="/location/alberta/#education">Alberta</a> rounds to the same 8.7% as Canada (295,285 of 3,375,135).</p>
+
+ <h2>Places of 10,000 to 49,999</h2>
+ <p>Dropping the floor to 10,000 residents, and stopping below 50,000, leaves <strong>314</strong> census subdivisions. Six of them post a higher bachelor's share than Oakville. <a href="/location/westmount/#education">Westmount</a> is first, at <strong>63.3%</strong> (10,415 of 16,450). The top eight are below. Five are in Quebec, two in British Columbia, and one in Alberta.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Bachelor's or higher</th>
+ <th class="num">Trades certificate</th>
+ <th class="num">Aged 15+</th>
+ <th class="num">Bachelor's share</th>
+ <th class="num">Trades share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/westmount/#education">Westmount</a></td><td>Quebec</td><td class="num">19,658</td><td class="num">10,415</td><td class="num">345</td><td class="num">16,450</td><td class="num">63.3%</td><td class="num">2.1%</td></tr>
+<tr><td class="num">2</td><td><a href="/location/mont-royal/#education">Mont-Royal</a></td><td>Quebec</td><td class="num">20,953</td><td class="num">9,855</td><td class="num">450</td><td class="num">16,430</td><td class="num">60.0%</td><td class="num">2.7%</td></tr>
+<tr><td class="num">3</td><td><a href="/location/oak-bay-district-municipality-dm/#education">Oak Bay District</a></td><td>British Columbia</td><td class="num">17,990</td><td class="num">8,145</td><td class="num">585</td><td class="num">15,345</td><td class="num">53.1%</td><td class="num">3.8%</td></tr>
+<tr><td class="num">4</td><td><a href="/location/saint-lambert/#education">Saint-Lambert</a></td><td>Quebec</td><td class="num">22,761</td><td class="num">9,530</td><td class="num">945</td><td class="num">18,380</td><td class="num">51.8%</td><td class="num">5.1%</td></tr>
+<tr><td class="num">5</td><td><a href="/location/beaconsfield/#education">Beaconsfield</a></td><td>Quebec</td><td class="num">19,277</td><td class="num">7,915</td><td class="num">525</td><td class="num">15,570</td><td class="num">50.8%</td><td class="num">3.4%</td></tr>
+<tr><td class="num">6</td><td><a href="/location/west-vancouver-district-municipality-dm/#education">West Vancouver District</a></td><td>British Columbia</td><td class="num">44,122</td><td class="num">18,635</td><td class="num">1,275</td><td class="num">37,225</td><td class="num">50.1%</td><td class="num">3.4%</td></tr>
+<tr><td class="num">7</td><td><a href="/location/kirkland/#education">Kirkland</a></td><td>Quebec</td><td class="num">19,413</td><td class="num">7,025</td><td class="num">780</td><td class="num">16,170</td><td class="num">43.4%</td><td class="num">4.8%</td></tr>
+<tr><td class="num">8</td><td><a href="/location/canmore-town-t/#education">Canmore</a></td><td>Alberta</td><td class="num">15,990</td><td class="num">5,745</td><td class="num">905</td><td class="num">13,485</td><td class="num">42.6%</td><td class="num">6.7%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>The trades-certificate list for the same population band is not a second copy of the big-city ranking. <a href="/location/saint-lin-laurentides/#education">Saint-Lin--Laurentides</a> is first, at <strong>28.4%</strong> (5,185 of 18,245), above Saguenay's 23.2%. Its bachelor's share is 5.0% (905 of 18,245). The top 10 are all in Quebec. Saint-Lin--Laurentides was also second on the occupation ranking in the trades-towns post.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Bachelor's or higher</th>
+ <th class="num">Trades certificate</th>
+ <th class="num">Aged 15+</th>
+ <th class="num">Bachelor's share</th>
+ <th class="num">Trades share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/saint-lin-laurentides/#education">Saint-Lin--Laurentides</a></td><td>Quebec</td><td class="num">24,030</td><td class="num">905</td><td class="num">5,185</td><td class="num">18,245</td><td class="num">5.0%</td><td class="num">28.4%</td></tr>
+<tr><td class="num">2</td><td><a href="/location/sainte-sophie-municipalit-m/#education">Sainte-Sophie</a></td><td>Quebec</td><td class="num">18,080</td><td class="num">1,145</td><td class="num">3,980</td><td class="num">14,095</td><td class="num">8.1%</td><td class="num">28.2%</td></tr>
+<tr><td class="num">3</td><td><a href="/location/sainte-julienne-municipalit-m/#education">Sainte-Julienne</a></td><td>Quebec</td><td class="num">11,173</td><td class="num">665</td><td class="num">2,425</td><td class="num">8,840</td><td class="num">7.5%</td><td class="num">27.4%</td></tr>
+<tr><td class="num">4</td><td><a href="/location/saint-raymond/#education">Saint-Raymond</a></td><td>Quebec</td><td class="num">11,108</td><td class="num">910</td><td class="num">2,390</td><td class="num">9,010</td><td class="num">10.1%</td><td class="num">26.5%</td></tr>
+<tr><td class="num">5</td><td><a href="/location/saint-colomban/#education">Saint-Colomban</a></td><td>Quebec</td><td class="num">17,740</td><td class="num">1,800</td><td class="num">3,590</td><td class="num">13,650</td><td class="num">13.2%</td><td class="num">26.3%</td></tr>
+<tr><td class="num">6</td><td><a href="/location/saint-f-licien/#education">Saint-Félicien</a></td><td>Quebec</td><td class="num">10,089</td><td class="num">1,115</td><td class="num">2,110</td><td class="num">8,315</td><td class="num">13.4%</td><td class="num">25.4%</td></tr>
+<tr><td class="num">7</td><td><a href="/location/dolbeau-mistassini/#education">Dolbeau-Mistassini</a></td><td>Quebec</td><td class="num">13,718</td><td class="num">1,275</td><td class="num">2,735</td><td class="num">11,065</td><td class="num">11.5%</td><td class="num">24.7%</td></tr>
+<tr><td class="num">8</td><td><a href="/location/lavaltrie/#education">Lavaltrie</a></td><td>Quebec</td><td class="num">14,425</td><td class="num">1,040</td><td class="num">2,850</td><td class="num">11,575</td><td class="num">9.0%</td><td class="num">24.6%</td></tr>
+<tr><td class="num">9</td><td><a href="/location/beauharnois/#education">Beauharnois</a></td><td>Quebec</td><td class="num">13,638</td><td class="num">1,235</td><td class="num">2,780</td><td class="num">11,295</td><td class="num">10.9%</td><td class="num">24.6%</td></tr>
+<tr><td class="num">10</td><td><a href="/location/saint-hippolyte-municipalit-m/#education">Saint-Hippolyte</a></td><td>Quebec</td><td class="num">10,669</td><td class="num">1,405</td><td class="num">2,180</td><td class="num">8,880</td><td class="num">15.8%</td><td class="num">24.5%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/lavaltrie/#education">Lavaltrie</a> (2,850 of 11,575) ranks just ahead of <a href="/location/beauharnois/#education">Beauharnois</a> (2,780 of 11,295). Both round to 24.6%.</p>
+
+ <p>Random rounding moves a share more when the population aged 15 and over is small. Saint-Lin--Laurentides' denominator is 18,245 people. Saguenay's is 119,590, and Toronto's is 2,377,950. A few people rounded into or out of a count change the first decimal in the smaller place and do not change it in the larger one. The ranks above use the published counts as stored.</p>
+
+ <h2>Movers, parents, and career changers</h2>
+ <p>A mover comparing cities is looking at the credentials of people aged 15 and over who already live there. Hiring rules and job postings sit outside this census question. <a href="/location/oakville-town-t/#education">Oakville</a> and <a href="/location/saguenay/#education">Saguenay</a> answer different questions: 47.9% with a bachelor's degree or higher in Oakville, 23.2% with a trades certificate in Saguenay. <a href="/location/burlington/#education">Burlington</a>, next door to Oakville, is 35.6% (54,880 of 154,075) on bachelor's degrees and 4.3% (6,550 of 154,075) on trades certificates. The paired write-ups are <a href="/blog/oakville-vs-burlington-2021-census/">Oakville vs Burlington</a>, <a href="/blog/toronto-vs-vancouver-2021-census/">Toronto vs Vancouver</a>, <a href="/blog/montreal-vs-quebec-2021-census/">Montréal vs Québec</a>, and <a href="/blog/sherbrooke-vs-trois-rivieres-2021-census/">Sherbrooke vs Trois-Rivières</a>.</p>
+
+ <p>A parent reading a "most educated" list is reading one credential. The census records the highest certificate, diploma, or degree of residents aged 15 and over. <a href="/location/norfolk-county/#education">Norfolk County</a> is last on bachelor's degrees, at 12.5%, with a college share of 25.5%, above the Canada figure. Its postsecondary share, 47.2%, remains below Canada's 57.2%.</p>
+
+ <p>Someone changing fields can read the ratio the same way: which credential is more common among the adults already there. Oakville has 16.95 bachelor's degrees for every trades certificate. Mirabel has 1.49 trades certificates for every bachelor's degree. Canada has 3.06. Classroom seats and current job openings sit outside this table. A trades certificate, a college or CEGEP diploma, and a bachelor's degree are three different highest credentials in the same count. The location page has the rest of the breakdown.</p>
+
+ <h2>Compare a place yourself</h2>
+ <p>Open any linked place for the full education breakdown, or set two places side by side in the <a href="/compare/">comparison tool</a>. The education, commute, occupation, and industry sections use the same anchors on location pages and in that tool. The worked-at-home ranking is in <a href="/blog/canadas-top-work-from-home-cities/">Canada's top work-from-home cities</a>. The occupation ranking is in <a href="/blog/canadas-trades-heavy-towns/">Canada's trades-heavy towns</a>.</p>
+
+ <h2>Sources</h2>
+ <p>Education counts, including bachelor's degree or higher, apprenticeship or trades certificate, college or CEGEP, and the population aged 15 and over, plus population and the occupation counts cited for comparison, are from the <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm?Lang=E" target="_blank" rel="noopener">Statistics Canada 2021 Census of Population (Census Profile)</a>, as stored for each place in the Canadian Data Insights location file. Shares on this page are calculated here from those published counts. See <a href="/sources/">how this site handles census data</a>. Statistics Canada data is used under the <a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank" rel="noopener">Open Government Licence – Canada</a>. This post is by Andrew.</p>
+ `,
+ },
+
+ {
  title: "Canadian News Deep-Dives — October 30, 2026: Ottawa's $1.6B Cohere Stake, 735 CRA Job Notices, Who Falls Back Nov. 1",
  slug: "canadian-news-roundup-2026-10-30",
  date: "October 30, 2026",
