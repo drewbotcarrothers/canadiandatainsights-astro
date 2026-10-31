@@ -24,6 +24,436 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Canada's industry map: oil & gas, healthcare and public-admin towns",
+ slug: "canadas-industry-towns",
+ date: "October 31, 2026",
+ category: "Labour",
+ readTime: "9 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadas-industry-towns.png",
+ chartType: 'bar',
+ chartTitle: "Mining, quarrying, and oil and gas extraction, places of 50,000 or more (percent)",
+ chartData: [
+ { name: "Wood Buffalo", value: 29.6 },
+ { name: "Grande Prairie", value: 10.2 },
+ { name: "Gt. Sudbury", value: 9.1 },
+ { name: "Red Deer", value: 5.5 },
+ { name: "Medicine Hat", value: 4.6 },
+ { name: "Calgary", value: 4.4 },
+ { name: "Strathcona", value: 3.8 },
+ { name: "Airdrie", value: 3.8 },
+ ],
+ excerpt: "Wood Buffalo led Canadian places of 50,000 or more: 29.6% of the labour force worked in mining, quarrying, and oil and gas extraction. Thunder Bay led health care and social assistance, at 20.0%. Gatineau led public administration, at 26.2%. Canada was 1.2%, 12.7%, and 6.2%.",
+ content: `
+ <p>In the 2021 Census, <strong>29.6%</strong> of <a href="/location/wood-buffalo-specialized-municipality-sm/#industry">Wood Buffalo</a>'s labour force worked in mining, quarrying, and oil and gas extraction — the highest share among Canada's <strong>101</strong> census subdivisions with <strong>50,000</strong> or more residents. <a href="/location/grande-prairie/#industry">Grande Prairie</a> was next, at 10.2%. Across <a href="/location/canada/#industry">Canada</a>, the same share was <strong>1.2%</strong>.</p>
+
+ <p>Two other rankings use the same labour-force total. <a href="/location/thunder-bay/#industry">Thunder Bay</a> led health care and social assistance, at <strong>20.0%</strong>. Canada's share was <strong>12.7%</strong>. <a href="/location/gatineau/#industry">Gatineau</a> led public administration, at <strong>26.2%</strong>. Canada's share was <strong>6.2%</strong>. <a href="/location/ottawa/#industry">Ottawa</a> was second on that list, at 21.1%, and has the largest public-administration count in the group of 101. A separate list further down covers places of 10,000 to 49,999. None of those smaller places rank above Wood Buffalo on mining, oil and gas. Fourteen rank above Thunder Bay on health care. Three rank above Gatineau on public administration.</p>
+
+ <p>The percentage is the published count for that industry, divided by the published labour-force total. On this site that total is the labour force aged 15 and over. It is the same calculation as the <a href="/location/wood-buffalo-specialized-municipality-sm/#industry">industry section</a> on each location page. The census gives each person one industry, the North American Industry Classification System (NAICS) sector of their job. These shares describe the labour force living in the place. They are not a count of workplaces located there.</p>
+
+ <p>Mining, quarrying, and oil and gas extraction is one sector. The file does not split oil and gas from mining or quarrying. Health care and social assistance is one sector. The file does not split hospitals and clinics from social assistance. Public administration is one sector. This file does not split federal, provincial, territorial, local, or defence employment into separate columns.</p>
+
+ <p>The industry categories do not add up to that labour-force total. Statistics Canada randomly rounds census counts, and people with no classified industry stay in the published total. This page does not estimate that remainder, and it does not adjust for rounding.</p>
+
+ <p>This is a different ranking from <a href="/blog/canadas-trades-heavy-towns/">Canada's trades-heavy towns</a> and from <a href="/blog/canadas-bachelors-vs-trades-cities/">bachelor's vs trades</a>. The trades-towns post counts an occupation, as a share of the same labour force. The education post counts credentials, as a share of everyone aged 15 and over. <a href="/blog/canadas-top-work-from-home-cities/">Worked at home</a> is a share of the employed labour force. Wood Buffalo led the occupation list, at 31.3% (13,345 of 42,655). It leads this mining list as well.</p>
+
+ <h2>Places of 50,000 or more: mining, quarrying, and oil and gas</h2>
+ <p>The ranking below keeps the list to census subdivisions — cities, towns, and other municipalities — with a 2021 population of at least 50,000. That threshold leaves 101 places. Every figure is calculated from the census counts in this site's location file. Nine of the top 15 are in Alberta. Three are in Ontario, and one each in British Columbia, Newfoundland and Labrador, and Saskatchewan.</p>
+
+ <p><a href="/location/calgary/#industry">Calgary</a> does not lead the share. It has the largest count in this sector in the group of 101: <strong>32,410</strong> people.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Mining, quarrying, and oil and gas</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/wood-buffalo-specialized-municipality-sm/#industry">Wood Buffalo</a></td><td>Alberta</td><td class="num">72,326</td><td class="num">12,625</td><td class="num">42,655</td><td class="num">29.6%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/grande-prairie/#industry">Grande Prairie</a></td><td>Alberta</td><td class="num">64,141</td><td class="num">3,750</td><td class="num">36,645</td><td class="num">10.2%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/greater-sudbury-grand-sudbury/#industry">Greater Sudbury</a></td><td>Ontario</td><td class="num">166,004</td><td class="num">7,620</td><td class="num">84,000</td><td class="num">9.1%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/red-deer/#industry">Red Deer</a></td><td>Alberta</td><td class="num">100,844</td><td class="num">2,940</td><td class="num">53,415</td><td class="num">5.5%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/medicine-hat/#industry">Medicine Hat</a></td><td>Alberta</td><td class="num">63,271</td><td class="num">1,445</td><td class="num">31,715</td><td class="num">4.6%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/calgary/#industry">Calgary</a></td><td>Alberta</td><td class="num">1,306,784</td><td class="num">32,410</td><td class="num">730,050</td><td class="num">4.4%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/strathcona-county-specialized-municipality-sm/#industry">Strathcona County</a></td><td>Alberta</td><td class="num">99,225</td><td class="num">2,090</td><td class="num">54,405</td><td class="num">3.8%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/airdrie/#industry">Airdrie</a></td><td>Alberta</td><td class="num">74,100</td><td class="num">1,560</td><td class="num">41,335</td><td class="num">3.8%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/kamloops/#industry">Kamloops</a></td><td>British Columbia</td><td class="num">97,902</td><td class="num">1,575</td><td class="num">51,030</td><td class="num">3.1%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/north-bay/#industry">North Bay</a></td><td>Ontario</td><td class="num">52,662</td><td class="num">640</td><td class="num">25,420</td><td class="num">2.5%</td></tr>
+ <tr><td class="num">11</td><td><a href="/location/st-john-s/#industry">St. John's</a></td><td>Newfoundland and Labrador</td><td class="num">110,525</td><td class="num">1,210</td><td class="num">57,380</td><td class="num">2.1%</td></tr>
+ <tr><td class="num">12</td><td><a href="/location/saskatoon/#industry">Saskatoon</a></td><td>Saskatchewan</td><td class="num">266,141</td><td class="num">2,975</td><td class="num">144,115</td><td class="num">2.1%</td></tr>
+ <tr><td class="num">13</td><td><a href="/location/st-albert/#industry">St. Albert</a></td><td>Alberta</td><td class="num">68,232</td><td class="num">725</td><td class="num">36,040</td><td class="num">2.0%</td></tr>
+ <tr><td class="num">14</td><td><a href="/location/edmonton/#industry">Edmonton</a></td><td>Alberta</td><td class="num">1,010,899</td><td class="num">10,225</td><td class="num">554,040</td><td class="num">1.8%</td></tr>
+ <tr><td class="num">15</td><td><a href="/location/thunder-bay/#industry">Thunder Bay</a></td><td>Ontario</td><td class="num">108,843</td><td class="num">780</td><td class="num">53,350</td><td class="num">1.5%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Shares are shown to one decimal place, matching the location pages. <a href="/location/strathcona-county-specialized-municipality-sm/#industry">Strathcona County</a> (2,090 of 54,405) ranks just ahead of <a href="/location/airdrie/#industry">Airdrie</a> (1,560 of 41,335), and <a href="/location/st-john-s/#industry">St. John's</a> (1,210 of 57,380) just ahead of <a href="/location/saskatoon/#industry">Saskatoon</a> (2,975 of 144,115), on the unrounded share. Both pairs round to the same tenth, 3.8% and 2.1%.</p>
+
+ <p><a href="/location/greater-sudbury-grand-sudbury/#industry">Greater Sudbury</a> in this table is the census subdivision named Greater Sudbury / Grand Sudbury, population 166,004. It is 3rd, at 9.1% (7,620 of 84,000). A high share here is the whole sector, mining and quarrying included. The file does not say how much of that 7,620 is oil and gas.</p>
+
+ <p>Three more places round above Canada's 1.2% and sit just outside the table. <a href="/location/cape-breton-regional-municipality-rgm/#industry">Cape Breton</a> is 16th, at 1.4% (570 of 41,585). <a href="/location/lethbridge/#industry">Lethbridge</a> is 17th, at 1.3% (685 of 51,775). <a href="/location/sarnia/#industry">Sarnia</a> is 18th, at 1.3% (425 of 33,035). Lethbridge ranks just ahead of Sarnia on the unrounded share.</p>
+
+ <p><a href="/location/wood-buffalo-specialized-municipality-sm/#industry">Wood Buffalo</a>, first on this list, is last on health care among the same 101 places, at 6.6% (2,815 of 42,655).</p>
+
+ <h2>Health care and social assistance</h2>
+ <p>The same 101 places, ranked on health care and social assistance. Five of the top 15 are in Ontario. Four are in Quebec, two in Alberta, and one each in Nova Scotia, Manitoba, New Brunswick, and British Columbia.</p>
+
+ <p><a href="/location/toronto/#industry">Toronto</a> does not lead the share. It has the largest health-care count in the group of 101: <strong>163,465</strong> people.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Health care and social assistance</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/thunder-bay/#industry">Thunder Bay</a></td><td>Ontario</td><td class="num">108,843</td><td class="num">10,685</td><td class="num">53,350</td><td class="num">20.0%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/cape-breton-regional-municipality-rgm/#industry">Cape Breton</a></td><td>Nova Scotia</td><td class="num">93,694</td><td class="num">8,125</td><td class="num">41,585</td><td class="num">19.5%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/sherbrooke/#industry">Sherbrooke</a></td><td>Quebec</td><td class="num">172,950</td><td class="num">16,415</td><td class="num">89,165</td><td class="num">18.4%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/trois-rivi-res/#industry">Trois-Rivières</a></td><td>Quebec</td><td class="num">139,163</td><td class="num">12,085</td><td class="num">67,075</td><td class="num">18.0%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/north-bay/#industry">North Bay</a></td><td>Ontario</td><td class="num">52,662</td><td class="num">4,515</td><td class="num">25,420</td><td class="num">17.8%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/peterborough/#industry">Peterborough</a></td><td>Ontario</td><td class="num">83,651</td><td class="num">7,005</td><td class="num">39,850</td><td class="num">17.6%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/sault-ste-marie/#industry">Sault Ste. Marie</a></td><td>Ontario</td><td class="num">72,051</td><td class="num">5,835</td><td class="num">33,215</td><td class="num">17.6%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/brandon/#industry">Brandon</a></td><td>Manitoba</td><td class="num">51,313</td><td class="num">4,725</td><td class="num">27,405</td><td class="num">17.2%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/kingston/#industry">Kingston</a></td><td>Ontario</td><td class="num">132,485</td><td class="num">11,520</td><td class="num">66,980</td><td class="num">17.2%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/lethbridge/#industry">Lethbridge</a></td><td>Alberta</td><td class="num">98,406</td><td class="num">8,650</td><td class="num">51,775</td><td class="num">16.7%</td></tr>
+ <tr><td class="num">11</td><td><a href="/location/repentigny/#industry">Repentigny</a></td><td>Quebec</td><td class="num">86,100</td><td class="num">7,375</td><td class="num">44,715</td><td class="num">16.5%</td></tr>
+ <tr><td class="num">12</td><td><a href="/location/saint-john/#industry">Saint John</a></td><td>New Brunswick</td><td class="num">69,895</td><td class="num">5,720</td><td class="num">35,225</td><td class="num">16.2%</td></tr>
+ <tr><td class="num">13</td><td><a href="/location/saguenay/#industry">Saguenay</a></td><td>Quebec</td><td class="num">144,723</td><td class="num">11,620</td><td class="num">71,660</td><td class="num">16.2%</td></tr>
+ <tr><td class="num">14</td><td><a href="/location/nanaimo/#industry">Nanaimo</a></td><td>British Columbia</td><td class="num">99,863</td><td class="num">8,060</td><td class="num">49,975</td><td class="num">16.1%</td></tr>
+ <tr><td class="num">15</td><td><a href="/location/red-deer/#industry">Red Deer</a></td><td>Alberta</td><td class="num">100,844</td><td class="num">8,495</td><td class="num">53,415</td><td class="num">15.9%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/peterborough/#industry">Peterborough</a> (7,005 of 39,850) ranks just ahead of <a href="/location/sault-ste-marie/#industry">Sault Ste. Marie</a> (5,835 of 33,215). Both round to 17.6%. <a href="/location/brandon/#industry">Brandon</a> (4,725 of 27,405) ranks just ahead of <a href="/location/kingston/#industry">Kingston</a> (11,520 of 66,980). Both round to 17.2%. <a href="/location/saint-john/#industry">Saint John</a> (5,720 of 35,225) ranks just ahead of <a href="/location/saguenay/#industry">Saguenay</a> (11,620 of 71,660). Both round to 16.2%.</p>
+
+ <p><a href="/location/cape-breton-regional-municipality-rgm/#industry">Cape Breton</a> in this table is the regional municipality, population 93,694. <a href="/location/thunder-bay/#industry">Thunder Bay</a>, first here, is 15th on mining, at 1.5% (780 of 53,350), and 18th on public administration, at 7.2% (3,865 of 53,350).</p>
+
+ <h2>Public administration</h2>
+ <p>The same 101 places, ranked on public administration. Four of the top 15 are in Ontario. Three are in Quebec, two in British Columbia, two in Nova Scotia, and one each in New Brunswick, Newfoundland and Labrador, Alberta, and Saskatchewan.</p>
+
+ <p><a href="/location/ottawa/#industry">Ottawa</a> does not lead the share. It has the largest public-administration count in the group of 101: <strong>116,235</strong> people. The paired write-up of the top two places is <a href="/blog/ottawa-vs-gatineau-2021-census/">Ottawa vs Gatineau</a>.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Public administration</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/gatineau/#industry">Gatineau</a></td><td>Quebec</td><td class="num">291,041</td><td class="num">40,725</td><td class="num">155,315</td><td class="num">26.2%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/ottawa/#industry">Ottawa</a></td><td>Ontario</td><td class="num">1,017,449</td><td class="num">116,235</td><td class="num">549,985</td><td class="num">21.1%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/qu-bec/#industry">Québec</a></td><td>Quebec</td><td class="num">549,459</td><td class="num">39,380</td><td class="num">293,660</td><td class="num">13.4%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/victoria/#industry">Victoria</a></td><td>British Columbia</td><td class="num">91,867</td><td class="num">6,915</td><td class="num">53,400</td><td class="num">12.9%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/fredericton/#industry">Fredericton</a></td><td>New Brunswick</td><td class="num">63,116</td><td class="num">4,425</td><td class="num">34,905</td><td class="num">12.7%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/saanich-district-municipality-dm/#industry">Saanich</a></td><td>British Columbia</td><td class="num">117,735</td><td class="num">7,410</td><td class="num">62,535</td><td class="num">11.8%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/kingston/#industry">Kingston</a></td><td>Ontario</td><td class="num">132,485</td><td class="num">7,710</td><td class="num">66,980</td><td class="num">11.5%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/st-john-s/#industry">St. John's</a></td><td>Newfoundland and Labrador</td><td class="num">110,525</td><td class="num">6,020</td><td class="num">57,380</td><td class="num">10.5%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/st-albert/#industry">St. Albert</a></td><td>Alberta</td><td class="num">68,232</td><td class="num">3,775</td><td class="num">36,040</td><td class="num">10.5%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/halifax-regional-municipality-rgm/#industry">Halifax</a></td><td>Nova Scotia</td><td class="num">439,819</td><td class="num">24,935</td><td class="num">242,690</td><td class="num">10.3%</td></tr>
+ <tr><td class="num">11</td><td><a href="/location/regina/#industry">Regina</a></td><td>Saskatchewan</td><td class="num">226,404</td><td class="num">11,795</td><td class="num">121,685</td><td class="num">9.7%</td></tr>
+ <tr><td class="num">12</td><td><a href="/location/greater-sudbury-grand-sudbury/#industry">Greater Sudbury</a></td><td>Ontario</td><td class="num">166,004</td><td class="num">7,545</td><td class="num">84,000</td><td class="num">9.0%</td></tr>
+ <tr><td class="num">13</td><td><a href="/location/l-vis/#industry">Lévis</a></td><td>Quebec</td><td class="num">149,683</td><td class="num">7,435</td><td class="num">82,795</td><td class="num">9.0%</td></tr>
+ <tr><td class="num">14</td><td><a href="/location/cape-breton-regional-municipality-rgm/#industry">Cape Breton</a></td><td>Nova Scotia</td><td class="num">93,694</td><td class="num">3,520</td><td class="num">41,585</td><td class="num">8.5%</td></tr>
+ <tr><td class="num">15</td><td><a href="/location/north-bay/#industry">North Bay</a></td><td>Ontario</td><td class="num">52,662</td><td class="num">2,045</td><td class="num">25,420</td><td class="num">8.0%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/st-john-s/#industry">St. John's</a> (6,020 of 57,380) ranks just ahead of <a href="/location/st-albert/#industry">St. Albert</a> (3,775 of 36,040). Both round to 10.5%. <a href="/location/greater-sudbury-grand-sudbury/#industry">Greater Sudbury</a> (7,545 of 84,000) ranks just ahead of <a href="/location/l-vis/#industry">Lévis</a> (7,435 of 82,795). Both round to 9.0%.</p>
+
+ <p><a href="/location/qu-bec/#industry">Québec</a> in that table is the city, population 549,459, not <a href="/location/quebec/#industry">the province</a>. The city's share is 13.4% (39,380 of 293,660). The province's share is 6.6% (290,765 of 4,435,460). <a href="/location/saanich-district-municipality-dm/#industry">Saanich</a> is the district municipality, population 117,735. <a href="/location/victoria/#industry">Victoria</a> is the city, 4th at 12.9% (6,915 of 53,400). <a href="/location/halifax-regional-municipality-rgm/#industry">Halifax</a> is the regional municipality, population 439,819.</p>
+
+ <p><a href="/location/ottawa/#industry">Ottawa</a>, at 21.1% (116,235 of 549,985), sits well above <a href="/location/ontario/#industry">Ontario</a>, at 5.8% (428,030 of 7,399,205). <a href="/location/fredericton/#industry">Fredericton</a>, at 12.7% (4,425 of 34,905), sits above <a href="/location/new-brunswick/#industry">New Brunswick</a>, at 9.1% (35,260 of 389,470).</p>
+
+ <h2>The three shares, side by side</h2>
+ <p>A high share in one sector is not the same fact as a high share in another. The leaders on each list, plus Calgary, Toronto, and Canada, use the same labour-force total for every column. Manufacturing, and agriculture, forestry, fishing and hunting, are in the last two columns.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Place</th>
+ <th class="num">Mining, oil and gas</th>
+ <th class="num">Health care</th>
+ <th class="num">Public administration</th>
+ <th class="num">Manufacturing</th>
+ <th class="num">Agriculture</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td><a href="/location/wood-buffalo-specialized-municipality-sm/#industry">Wood Buffalo</a></td><td class="num">29.6%</td><td class="num">6.6%</td><td class="num">4.8%</td><td class="num">2.0%</td><td class="num">0.2%</td></tr>
+ <tr><td><a href="/location/thunder-bay/#industry">Thunder Bay</a></td><td class="num">1.5%</td><td class="num">20.0%</td><td class="num">7.2%</td><td class="num">3.6%</td><td class="num">1.5%</td></tr>
+ <tr><td><a href="/location/gatineau/#industry">Gatineau</a></td><td class="num">0.2%</td><td class="num">12.5%</td><td class="num">26.2%</td><td class="num">2.7%</td><td class="num">0.4%</td></tr>
+ <tr><td><a href="/location/ottawa/#industry">Ottawa</a></td><td class="num">0.1%</td><td class="num">11.4%</td><td class="num">21.1%</td><td class="num">3.0%</td><td class="num">0.4%</td></tr>
+ <tr><td><a href="/location/calgary/#industry">Calgary</a></td><td class="num">4.4%</td><td class="num">12.5%</td><td class="num">3.3%</td><td class="num">4.5%</td><td class="num">0.4%</td></tr>
+ <tr><td><a href="/location/toronto/#industry">Toronto</a></td><td class="num">0.1%</td><td class="num">10.8%</td><td class="num">3.6%</td><td class="num">6.4%</td><td class="num">0.2%</td></tr>
+ <tr><td><a href="/location/canada/#industry">Canada</a></td><td class="num">1.2%</td><td class="num">12.7%</td><td class="num">6.2%</td><td class="num">8.0%</td><td class="num">2.3%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/wood-buffalo-specialized-municipality-sm/#industry">Wood Buffalo</a> is 2.0% manufacturing (850 of 42,655) and 0.2% agriculture (90 of 42,655). Both are below Canada. <a href="/location/sherbrooke/#industry">Sherbrooke</a>, 3rd on health care, is 12.4% manufacturing (11,045 of 89,165), above Canada's 8.0% (1,540,490 of 19,310,340).</p>
+
+ <p>Among the 101 places, <a href="/location/granby/#industry">Granby</a> leads manufacturing, at <strong>21.1%</strong> (7,095 of 33,700). <a href="/location/norfolk-county/#industry">Norfolk County</a> leads agriculture, forestry, fishing and hunting, at <strong>8.1%</strong> (2,570 of 31,620). Canada's agriculture share is 2.3% (434,800 of 19,310,340). Norfolk County was 3rd on the occupation ranking in the trades-towns post, at 24.3% (7,685 of 31,620). A job in the trades and a job in agriculture are different census facts, and both are different from the industry of the employer.</p>
+
+ <h2>Where the largest cities land</h2>
+ <p>Five census subdivisions in the file have 1,000,000 residents or more. On mining, oil and gas, <a href="/location/calgary/#industry">Calgary</a> is 6th, at <strong>4.4%</strong> (32,410 of 730,050). <a href="/location/edmonton/#industry">Edmonton</a> is 14th, at <strong>1.8%</strong> (10,225 of 554,040). <a href="/location/toronto/#industry">Toronto</a> is 82nd, at <strong>0.1%</strong> (1,985 of 1,518,420). <a href="/location/montr-al/#industry">Montréal</a> is 86th, at <strong>0.1%</strong> (1,195 of 959,130). <a href="/location/ottawa/#industry">Ottawa</a> is 94th, at <strong>0.1%</strong> (550 of 549,985).</p>
+
+ <p><a href="/location/winnipeg/#industry">Winnipeg</a>, at 749,607 residents, is 69th on mining, at 0.2% (665 of 402,365). <a href="/location/vancouver/#industry">Vancouver</a>, at 662,248 residents, is 38th, at 0.3% (1,250 of 394,670).</p>
+
+ <p>On health care, Edmonton is 38th, at <strong>13.9%</strong> (77,255 of 554,040). Montréal is 45th, at <strong>13.4%</strong> (128,175 of 959,130). Calgary is 58th, at <strong>12.5%</strong> (90,910 of 730,050). Ottawa is 70th, at <strong>11.4%</strong> (62,860 of 549,985). Toronto is 79th, at <strong>10.8%</strong> (163,465 of 1,518,420), below Canada's 12.7%, with the largest count. Winnipeg is 26th, at 15.0% (60,445 of 402,365). Vancouver is 68th, at 11.6% (45,910 of 394,670).</p>
+
+ <p><a href="/location/gatineau/#industry">Gatineau</a>, at 291,041 residents, is already 1st on public administration. On health care it is 57th, at 12.5% (19,415 of 155,315), just ahead of Calgary. Both round to 12.5%.</p>
+
+ <p>On public administration, Ottawa is 2nd. Edmonton is 23rd, at <strong>6.5%</strong> (36,125 of 554,040). <a href="/location/saint-jean-sur-richelieu/#industry">Saint-Jean-sur-Richelieu</a> is 24th, at 6.5% (3,335 of 51,225). Winnipeg is 25th, at 6.5% (26,050 of 402,365). All three round to 6.5%. Edmonton's unrounded share is the highest of the three. Toronto is 83rd, at 3.6% (54,970 of 1,518,420). Montréal is 72nd, at 4.0% (38,595 of 959,130). Calgary is 93rd, at 3.3% (24,185 of 730,050). Vancouver is 78th, at 3.9% (15,240 of 394,670).</p>
+
+ <h2>The low end of the 50,000-person list</h2>
+ <p><a href="/location/brampton/#industry">Brampton</a> is last on mining, oil and gas, at <strong>0.1%</strong>. The five lowest all round to 0.1%. They rank on the unrounded share.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Mining, quarrying, and oil and gas</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">97</td><td><a href="/location/niagara-falls/#industry">Niagara Falls</a></td><td>Ontario</td><td class="num">94,415</td><td class="num">45</td><td class="num">46,120</td><td class="num">0.1%</td></tr>
+ <tr><td class="num">98</td><td><a href="/location/kitchener/#industry">Kitchener</a></td><td>Ontario</td><td class="num">256,885</td><td class="num">135</td><td class="num">139,695</td><td class="num">0.1%</td></tr>
+ <tr><td class="num">99</td><td><a href="/location/markham/#industry">Markham</a></td><td>Ontario</td><td class="num">338,503</td><td class="num">135</td><td class="num">170,540</td><td class="num">0.1%</td></tr>
+ <tr><td class="num">100</td><td><a href="/location/vaughan/#industry">Vaughan</a></td><td>Ontario</td><td class="num">323,103</td><td class="num">135</td><td class="num">176,630</td><td class="num">0.1%</td></tr>
+ <tr><td class="num">101</td><td><a href="/location/brampton/#industry">Brampton</a></td><td>Ontario</td><td class="num">656,480</td><td class="num">225</td><td class="num">355,755</td><td class="num">0.1%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/waterloo/#industry">Waterloo</a>, at 0.1% (65 of 65,955), is 96th, just ahead of Niagara Falls (45 of 46,120). Kitchener, Markham, and Vaughan each have a count of 135. Kitchener (135 of 139,695) ranks ahead of Markham (135 of 170,540), which ranks ahead of Vaughan (135 of 176,630).</p>
+
+ <p>Wood Buffalo is last on health care, at <strong>6.6%</strong>. The five lowest:</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Health care and social assistance</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">97</td><td><a href="/location/brampton/#industry">Brampton</a></td><td>Ontario</td><td class="num">656,480</td><td class="num">30,440</td><td class="num">355,755</td><td class="num">8.6%</td></tr>
+ <tr><td class="num">98</td><td><a href="/location/aurora-town-t/#industry">Aurora</a></td><td>Ontario</td><td class="num">62,057</td><td class="num">2,835</td><td class="num">34,205</td><td class="num">8.3%</td></tr>
+ <tr><td class="num">99</td><td><a href="/location/halton-hills-town-t/#industry">Halton Hills</a></td><td>Ontario</td><td class="num">62,951</td><td class="num">2,785</td><td class="num">36,155</td><td class="num">7.7%</td></tr>
+ <tr><td class="num">100</td><td><a href="/location/caledon-town-t/#industry">Caledon</a></td><td>Ontario</td><td class="num">76,581</td><td class="num">3,235</td><td class="num">43,140</td><td class="num">7.5%</td></tr>
+ <tr><td class="num">101</td><td><a href="/location/wood-buffalo-specialized-municipality-sm/#industry">Wood Buffalo</a></td><td>Alberta</td><td class="num">72,326</td><td class="num">2,815</td><td class="num">42,655</td><td class="num">6.6%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Waterloo is 96th on health care, at 8.6% (5,670 of 65,955), just ahead of Brampton (30,440 of 355,755). Both round to 8.6%.</p>
+
+ <p>Brampton is also last on public administration, at <strong>2.7%</strong>. The five lowest:</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Public administration</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">97</td><td><a href="/location/drummondville/#industry">Drummondville</a></td><td>Quebec</td><td class="num">79,258</td><td class="num">1,185</td><td class="num">39,755</td><td class="num">3.0%</td></tr>
+ <tr><td class="num">98</td><td><a href="/location/kitchener/#industry">Kitchener</a></td><td>Ontario</td><td class="num">256,885</td><td class="num">4,085</td><td class="num">139,695</td><td class="num">2.9%</td></tr>
+ <tr><td class="num">99</td><td><a href="/location/waterloo/#industry">Waterloo</a></td><td>Ontario</td><td class="num">121,436</td><td class="num">1,900</td><td class="num">65,955</td><td class="num">2.9%</td></tr>
+ <tr><td class="num">100</td><td><a href="/location/windsor/#industry">Windsor</a></td><td>Ontario</td><td class="num">229,660</td><td class="num">2,925</td><td class="num">106,880</td><td class="num">2.7%</td></tr>
+ <tr><td class="num">101</td><td><a href="/location/brampton/#industry">Brampton</a></td><td>Ontario</td><td class="num">656,480</td><td class="num">9,670</td><td class="num">355,755</td><td class="num">2.7%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Kitchener (4,085 of 139,695) ranks just ahead of Waterloo (1,900 of 65,955). Both round to 2.9%. Windsor (2,925 of 106,880) ranks just ahead of Brampton (9,670 of 355,755). Both round to 2.7%.</p>
+
+ <h2>The national figure</h2>
+ <p>For <a href="/location/canada/#industry">Canada</a>, 239,030 people worked in mining, quarrying, and oil and gas extraction out of a labour force of 19,310,340, which is <strong>1.2%</strong>. Health care and social assistance was 2,446,370, which is <strong>12.7%</strong>. Public administration was 1,188,915, which is <strong>6.2%</strong>. The country's 2021 population was 36,991,981. That Canada figure is the country's published counts in the location file. It is not the sum of the municipal rows above.</p>
+
+ <p>Among the 101 places of 50,000 or more, the median mining share was <strong>0.2%</strong>. <a href="/location/victoria/#industry">Victoria</a> holds that middle place, 51st, at 0.2% (130 of 53,400). The median health-care share was <strong>13.1%</strong>. <a href="/location/st-albert/#industry">St. Albert</a> holds that middle place, 51st, at 13.1% (4,735 of 36,040). <a href="/location/fredericton/#industry">Fredericton</a> is 50th and also rounds to 13.1% (4,590 of 34,905). The median public-administration share was <strong>4.9%</strong>. <a href="/location/ajax-town-t/#industry">Ajax</a> holds that middle place, 51st, at 4.9% (3,350 of 68,525).</p>
+
+ <p>On the one-decimal shares used in the tables, 18 places round above Canada's 1.2% on mining and 83 round lower. None round to 1.2%. On health care, 53 places round above Canada's 12.7%, <a href="/location/mirabel/#industry">Mirabel</a> (4,530 of 35,560) and <a href="/location/oshawa/#industry">Oshawa</a> (11,115 of 87,550) round to the same 12.7%, and 46 round lower. On public administration, 28 places round above Canada's 6.2%, three round to the same 6.2% — <a href="/location/medicine-hat/#industry">Medicine Hat</a> (1,965 of 31,715), <a href="/location/sault-ste-marie/#industry">Sault Ste. Marie</a> (2,050 of 33,215), and <a href="/location/kawartha-lakes/#industry">Kawartha Lakes</a> (2,245 of 36,500) — and 70 round lower.</p>
+
+ <p>Added together, those 101 places had 106,045 people in mining, oil and gas out of a labour force of 12,888,495, a combined share of <strong>0.8%</strong>. Health care was <strong>12.5%</strong> (1,608,060 of 12,888,495). Public administration was <strong>5.9%</strong> (764,710 of 12,888,495). The 314 places of 10,000 to 49,999 combine to <strong>1.6%</strong> on mining (52,905 of 3,257,685), <strong>13.0%</strong> on health care (422,220 of 3,257,685), and <strong>6.6%</strong> on public administration (214,360 of 3,257,685).</p>
+
+ <p>The median counts each municipality once. The combined share counts every person in the labour force. On mining, large counts in Calgary, Wood Buffalo, and Edmonton pull the 50,000-person group above the median, and the group still sits below Canada. The smaller band, taken together, sits above Canada. On health care, the 101 places together sit just below Canada, and the smaller band sits just above it. On public administration, the 101 places together sit below Canada, and the smaller band sits above it.</p>
+
+ <p><a href="/location/alberta/#industry">Alberta</a> was the highest province or territory on mining, oil and gas, at <strong>4.9%</strong> (112,890 of 2,295,380). The <a href="/location/northwest-territories/#industry">Northwest Territories</a> were next, at <strong>4.3%</strong> (980 of 22,550). <a href="/location/prince-edward-island/#industry">Prince Edward Island</a> was the lowest, at <strong>0.2%</strong> (200 of 83,500). Calgary, at 4.4%, sits near the Alberta share.</p>
+
+ <p><a href="/location/newfoundland-and-labrador/#industry">Newfoundland and Labrador</a> was the highest on health care, at <strong>16.5%</strong> (40,245 of 243,330). <a href="/location/nunavut/#industry">Nunavut</a> was the lowest, at <strong>9.1%</strong> (1,310 of 14,380). Among provinces, <a href="/location/ontario/#industry">Ontario</a> was the lowest, at <strong>11.6%</strong> (859,910 of 7,399,205).</p>
+
+ <p>Nunavut was the highest on public administration, at <strong>29.3%</strong> (4,220 of 14,380). The Northwest Territories were next, at <strong>27.4%</strong> (6,185 of 22,550). <a href="/location/yukon/#industry">Yukon</a> was 24.6% (5,785 of 23,520). Among provinces, Prince Edward Island was the highest, at <strong>10.9%</strong> (9,105 of 83,500). Alberta was the lowest province or territory, at <strong>5.2%</strong> (118,270 of 2,295,380).</p>
+
+ <h2>Places of 10,000 to 49,999</h2>
+ <p>Dropping the floor to 10,000 residents, and stopping below 50,000, leaves <strong>314</strong> census subdivisions. None of them exceed Wood Buffalo's 29.6% on mining, oil and gas. <a href="/location/bonnyville-no-87-municipal-district-md/#industry">Bonnyville No. 87</a>, at 12,897 residents, is first, at <strong>19.7%</strong>. The top 10 are below. Seven are in Alberta, and one each in Ontario, Quebec, and Saskatchewan.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Mining, quarrying, and oil and gas</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/bonnyville-no-87-municipal-district-md/#industry">Bonnyville No. 87</a></td><td>Alberta</td><td class="num">12,897</td><td class="num">1,345</td><td class="num">6,815</td><td class="num">19.7%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/yellowhead-county-municipal-district-md/#industry">Yellowhead County</a></td><td>Alberta</td><td class="num">10,426</td><td class="num">785</td><td class="num">5,220</td><td class="num">15.0%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/timmins/#industry">Timmins</a></td><td>Ontario</td><td class="num">41,145</td><td class="num">3,145</td><td class="num">21,010</td><td class="num">15.0%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/val-d-or/#industry">Val-d'Or</a></td><td>Quebec</td><td class="num">32,752</td><td class="num">2,615</td><td class="num">17,545</td><td class="num">14.9%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/lloydminster-part/#industry">Lloydminster (Part)</a></td><td>Alberta</td><td class="num">19,739</td><td class="num">1,520</td><td class="num">10,735</td><td class="num">14.2%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/estevan/#industry">Estevan</a></td><td>Saskatchewan</td><td class="num">10,851</td><td class="num">835</td><td class="num">5,980</td><td class="num">14.0%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/clearwater-county-municipal-district-md/#industry">Clearwater County</a></td><td>Alberta</td><td class="num">11,865</td><td class="num">845</td><td class="num">6,475</td><td class="num">13.1%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/cold-lake/#industry">Cold Lake</a></td><td>Alberta</td><td class="num">15,661</td><td class="num">1,120</td><td class="num">8,740</td><td class="num">12.8%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/grande-prairie-county-no-1-municipal-district-md/#industry">Grande Prairie County No. 1</a></td><td>Alberta</td><td class="num">23,769</td><td class="num">1,665</td><td class="num">13,250</td><td class="num">12.6%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/sylvan-lake-town-t/#industry">Sylvan Lake</a></td><td>Alberta</td><td class="num">15,995</td><td class="num">1,070</td><td class="num">8,835</td><td class="num">12.1%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/yellowhead-county-municipal-district-md/#industry">Yellowhead County</a> (785 of 5,220) ranks just ahead of <a href="/location/timmins/#industry">Timmins</a> (3,145 of 21,010). Both round to 15.0%. Yellowhead County was 5th on the occupation ranking in the trades-towns post, at 29.4% (1,535 of 5,220).</p>
+
+ <p>Bonnyville No. 87 is the municipal district. <a href="/location/bonnyville-town-t/#industry">Bonnyville</a>, the town, is a separate census subdivision of 6,404 residents. It falls below the 10,000 floor, so it is not in this ranking. <a href="/location/lloydminster-part/#industry">Lloydminster (Part)</a> is the Alberta census subdivision in this file, population 19,739. A Saskatchewan part is not a separate row here. <a href="/location/grande-prairie-county-no-1-municipal-district-md/#industry">Grande Prairie County No. 1</a>, population 23,769, is a different census subdivision from the city of Grande Prairie, population 64,141, which is 2nd on the 50,000-person list.</p>
+
+ <p>Fourteen places in this band post a higher health-care share than Thunder Bay's 20.0%. <a href="/location/grand-falls-windsor-town-t/#industry">Grand Falls-Windsor</a>, at 13,853 residents, is first, at <strong>24.2%</strong> (1,520 of 6,270). The top 10 are below. Three are in Quebec, two in Newfoundland and Labrador, two in Ontario, and one each in Saskatchewan, New Brunswick, and Nova Scotia.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Health care and social assistance</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/grand-falls-windsor-town-t/#industry">Grand Falls-Windsor</a></td><td>Newfoundland and Labrador</td><td class="num">13,853</td><td class="num">1,520</td><td class="num">6,270</td><td class="num">24.2%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/saint-charles-borrom-e/#industry">Saint-Charles-Borromée</a></td><td>Quebec</td><td class="num">15,285</td><td class="num">1,380</td><td class="num">6,065</td><td class="num">22.8%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/elliot-lake/#industry">Elliot Lake</a></td><td>Ontario</td><td class="num">11,372</td><td class="num">785</td><td class="num">3,540</td><td class="num">22.2%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/north-battleford/#industry">North Battleford</a></td><td>Saskatchewan</td><td class="num">13,836</td><td class="num">1,510</td><td class="num">6,850</td><td class="num">22.0%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/edmundston/#industry">Edmundston</a></td><td>New Brunswick</td><td class="num">16,437</td><td class="num">1,620</td><td class="num">7,410</td><td class="num">21.9%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/kenora/#industry">Kenora</a></td><td>Ontario</td><td class="num">14,967</td><td class="num">1,630</td><td class="num">7,750</td><td class="num">21.0%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/corner-brook/#industry">Corner Brook</a></td><td>Newfoundland and Labrador</td><td class="num">19,333</td><td class="num">1,860</td><td class="num">8,920</td><td class="num">20.9%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/rimouski/#industry">Rimouski</a></td><td>Quebec</td><td class="num">48,935</td><td class="num">4,975</td><td class="num">23,870</td><td class="num">20.8%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/yarmouth-municipal-district-md/#industry">Yarmouth</a></td><td>Nova Scotia</td><td class="num">10,067</td><td class="num">1,055</td><td class="num">5,085</td><td class="num">20.7%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/baie-comeau/#industry">Baie-Comeau</a></td><td>Quebec</td><td class="num">20,687</td><td class="num">2,105</td><td class="num">10,300</td><td class="num">20.4%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>Four more also exceed Thunder Bay. <a href="/location/selkirk/#industry">Selkirk</a> is 11th, at 20.3% (930 of 4,590). <a href="/location/portage-la-prairie/#industry">Portage la Prairie</a> is 12th, at 20.2% (1,305 of 6,445). <a href="/location/owen-sound/#industry">Owen Sound</a> is 13th, at 20.2% (1,980 of 9,790). <a href="/location/gander-town-t/#industry">Gander</a> is 14th, at 20.1% (1,195 of 5,940). Portage la Prairie ranks just ahead of Owen Sound. Both round to 20.2%.</p>
+
+ <p><a href="/location/yarmouth-municipal-district-md/#industry">Yarmouth</a> in this table is the municipal district, population 10,067. <a href="/location/yarmouth-town-t/#industry">Yarmouth</a>, the town, is a separate census subdivision of 6,829 residents. It falls below the 10,000 floor, so it is not in this ranking.</p>
+
+ <p>Three places in this band exceed Gatineau's 26.2% on public administration. <a href="/location/petawawa-town-t/#industry">Petawawa</a>, at 18,160 residents, is first, at <strong>45.4%</strong> (4,305 of 9,475). <a href="/location/yellowknife/#industry">Yellowknife</a> is second, at 29.5%. <a href="/location/cantley-municipalit-m/#industry">Cantley</a> is third, at 28.8%. The top 10 are below.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="num">Rank</th>
+ <th>Place</th>
+ <th>Province</th>
+ <th class="num">Population</th>
+ <th class="num">Public administration</th>
+ <th class="num">Labour force</th>
+ <th class="num">Share</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="num">1</td><td><a href="/location/petawawa-town-t/#industry">Petawawa</a></td><td>Ontario</td><td class="num">18,160</td><td class="num">4,305</td><td class="num">9,475</td><td class="num">45.4%</td></tr>
+ <tr><td class="num">2</td><td><a href="/location/yellowknife/#industry">Yellowknife</a></td><td>Northwest Territories</td><td class="num">20,340</td><td class="num">3,675</td><td class="num">12,475</td><td class="num">29.5%</td></tr>
+ <tr><td class="num">3</td><td><a href="/location/cantley-municipalit-m/#industry">Cantley</a></td><td>Quebec</td><td class="num">11,449</td><td class="num">1,910</td><td class="num">6,625</td><td class="num">28.8%</td></tr>
+ <tr><td class="num">4</td><td><a href="/location/cold-lake/#industry">Cold Lake</a></td><td>Alberta</td><td class="num">15,661</td><td class="num">2,185</td><td class="num">8,740</td><td class="num">25.0%</td></tr>
+ <tr><td class="num">5</td><td><a href="/location/whitehorse/#industry">Whitehorse</a></td><td>Yukon</td><td class="num">28,201</td><td class="num">4,110</td><td class="num">16,900</td><td class="num">24.3%</td></tr>
+ <tr><td class="num">6</td><td><a href="/location/val-des-monts-municipalit-m/#industry">Val-des-Monts</a></td><td>Quebec</td><td class="num">13,328</td><td class="num">1,705</td><td class="num">7,470</td><td class="num">22.8%</td></tr>
+ <tr><td class="num">7</td><td><a href="/location/russell-township-tp/#industry">Russell</a></td><td>Ontario</td><td class="num">19,598</td><td class="num">2,345</td><td class="num">11,065</td><td class="num">21.2%</td></tr>
+ <tr><td class="num">8</td><td><a href="/location/clarence-rockland/#industry">Clarence-Rockland</a></td><td>Ontario</td><td class="num">26,505</td><td class="num">2,850</td><td class="num">13,875</td><td class="num">20.5%</td></tr>
+ <tr><td class="num">9</td><td><a href="/location/esquimalt-district-municipality-dm/#industry">Esquimalt</a></td><td>British Columbia</td><td class="num">17,533</td><td class="num">2,045</td><td class="num">9,980</td><td class="num">20.5%</td></tr>
+ <tr><td class="num">10</td><td><a href="/location/colwood/#industry">Colwood</a></td><td>British Columbia</td><td class="num">18,961</td><td class="num">2,030</td><td class="num">10,200</td><td class="num">19.9%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p><a href="/location/clarence-rockland/#industry">Clarence-Rockland</a> (2,850 of 13,875) ranks just ahead of <a href="/location/esquimalt-district-municipality-dm/#industry">Esquimalt</a> (2,045 of 9,980). Both round to 20.5%. Esquimalt is the district municipality, population 17,533. <a href="/location/cold-lake/#industry">Cold Lake</a> is 8th on the smaller mining list, at 12.8% (1,120 of 8,740), and 4th here, at 25.0% (2,185 of 8,740). The two shares use the same labour-force total.</p>
+
+ <p><a href="/location/iqaluit/#industry">Iqaluit</a>, at 7,429 residents, falls below the 10,000 floor. Its public-administration share is 43.5% (1,835 of 4,220). It is not in this ranking. The 45.4% in Petawawa is the whole public-administration sector. The file does not split defence employment out of that sector.</p>
+
+ <p>Random rounding moves a share more when the labour force is small. Petawawa's denominator is 9,475 people. Gatineau's is 155,315, and Toronto's is 1,518,420. A few people rounded into or out of a count change the first decimal in the smaller place and do not change it in the larger one. The ranks above use the published counts as stored.</p>
+
+ <h2>Questions the rankings can answer</h2>
+ <p><strong>Which places have the highest oil and gas share?</strong> Among places of 50,000 or more, Wood Buffalo, at 29.6% (12,625 of 42,655), then Grande Prairie, at 10.2% (3,750 of 36,645). The census sector is mining, quarrying, and oil and gas extraction. Greater Sudbury is 3rd, at 9.1% (7,620 of 84,000), and the file does not split mining from oil and gas. Among places of 10,000 to 49,999, Bonnyville No. 87 is first, at 19.7% (1,345 of 6,815), still below Wood Buffalo.</p>
+
+ <p><strong>Does the highest share mean the most jobs?</strong> The share and the count answer different questions. Calgary's mining count is 32,410, larger than Wood Buffalo's 12,625, at a share of 4.4% (32,410 of 730,050). Toronto's health-care count is 163,465, larger than Thunder Bay's 10,685, at a share of 10.8% (163,465 of 1,518,420). Ottawa's public-administration count is 116,235, larger than Gatineau's 40,725, at a share of 21.1% (116,235 of 549,985).</p>
+
+ <p><strong>Where is health care the largest share of the local labour force?</strong> Thunder Bay, at 20.0% (10,685 of 53,350), among places of 50,000 or more. Canada is 12.7% (2,446,370 of 19,310,340). Grand Falls-Windsor leads the 10,000-to-49,999 list, at 24.2% (1,520 of 6,270). The sector includes social assistance. The file does not split that out.</p>
+
+ <p><strong>Where is public administration the largest share?</strong> Among places of 50,000 or more, Gatineau, at 26.2% (40,725 of 155,315), then Ottawa, at 21.1%. Among places of 10,000 to 49,999, Petawawa, at 45.4% (4,305 of 9,475). Iqaluit, below that floor, is 43.5% (1,835 of 4,220). The column is the whole sector.</p>
+
+ <p><strong>What are the cutoff and the denominator?</strong> The headline list is 101 census subdivisions with 50,000 or more residents. The smaller list is 314 census subdivisions with 10,000 to 49,999 residents. The denominator is the published labour force aged 15 and over, the same total as the industry section on each location page. <a href="/location/oakville-town-t/#industry">Oakville</a> led the worked-at-home ranking and the bachelor's-degree ranking. On this map its mining share is 0.4% (465 of 113,190), its health-care share is 9.4% (10,655 of 113,190), and its public-administration share is 3.6% (4,035 of 113,190).</p>
+
+ <h2>Compare a place yourself</h2>
+ <p>Open any linked place for the full industry breakdown, or set two places side by side in the <a href="/compare/">comparison tool</a>. The education, commute, occupation, and industry sections use the same anchors on location pages and in that tool. The worked-at-home ranking is in <a href="/blog/canadas-top-work-from-home-cities/">Canada's top work-from-home cities</a>. The occupation ranking is in <a href="/blog/canadas-trades-heavy-towns/">Canada's trades-heavy towns</a>. The credential ranking is in <a href="/blog/canadas-bachelors-vs-trades-cities/">bachelor's vs trades</a>.</p>
+
+ <h2>Sources</h2>
+ <p>Industry counts, including mining, quarrying, and oil and gas extraction, health care and social assistance, public administration, manufacturing, and agriculture, forestry, fishing and hunting, plus labour-force totals and population, are from the <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm?Lang=E" target="_blank" rel="noopener">Statistics Canada 2021 Census of Population (Census Profile)</a>, as stored for each place in the Canadian Data Insights location file. Shares on this page are calculated here from those published counts. The occupation counts cited for comparison are from the same file. See <a href="/sources/">how this site handles census data</a>. Statistics Canada data is used under the <a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank" rel="noopener">Open Government Licence – Canada</a>. This post is by Andrew.</p>
+ `,
+ },
+ {
  title: "Canadian News Deep-Dives — October 31, 2026: Canada's EU 'Associate Member' Push, a Record El Niño Winter, Backstreet Boys Seat Refunds",
  slug: "canadian-news-roundup-2026-10-31",
  date: "October 31, 2026",
