@@ -24,6 +24,58 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Canadian News Deep-Dives — November 1, 2026: Ebola's Canadian Angle, WestJet's Fuel Alarm, the McRib Lawsuit",
+ slug: "canadian-news-roundup-2026-11-01",
+ date: "November 1, 2026",
+ category: "News",
+ readTime: "8 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-01.png",
+ chartType: 'bar',
+ chartTitle: "Transportation and warehousing share of the labour force, 2021 Census (percent)",
+ chartData: [
+ { name: "Calgary", value: 6.4 },
+ { name: "Laval", value: 6.1 },
+ { name: "Montreal", value: 5.1 },
+ { name: "Canada", value: 5.1 },
+ ],
+ excerpt: "Three deep-dives: why Africa's top doctor, who lives in Canada, is asking Ottawa to do more as Ebola passes 10,000 cases; why WestJet says doubled jet fuel costs could hit fares; and what a U.S. judge's McRib ruling does (and doesn't) mean for Canadians.",
+ content: `
+ <p><strong>TL;DR:</strong> Today's most-searched Canadian news stories on Google Trends Canada, explained in depth. The Ebola outbreak in the Democratic Republic of Congo has passed <strong>10,000</strong> confirmed cases, and Africa's top doctor, who has called Canada home since 2013, is asking Canada for more support; the federal government says the risk here remains <strong>low</strong>, with border measures in place until <strong>Nov. 27</strong>. WestJet says jet fuel costs have <strong>doubled</strong> and airlines can pass only part of that on through fares, as Air Canada cuts its outlook. And a U.S. judge has let a class action over the <strong>McRib</strong> go ahead.</p>
+
+ <h2 id="ebola-canada">1. Ebola passes 10,000 cases: the Canadian angle, and Canada's actual risk</h2>
+ <p>Confirmed Ebola cases in the Democratic Republic of Congo have surpassed <strong>10,000</strong>, and the latest report from the country's public health institute shows the death toll has surpassed <strong>5,000</strong>. The outbreak was declared in mid-May and is caused by the Bundibugyo strain, for which there is no approved treatment or vaccine. It is the country's largest-ever outbreak and the fastest-growing and second-largest Ebola outbreak ever recorded, behind only the 2014-2016 West Africa crisis, which infected more than 28,000 people (CBC News).</p>
+ <p><strong>A Canadian voice at the centre:</strong> Dr. Jean Kaseya, director-general of the Africa Centres for Disease Control and Prevention, has called Canada home since 2013. His three children attend university in Toronto and his wife lives in Laval, Que. "No one is safe today," he told CBC News. "If this outbreak [continues] like that, with the same magnitude, in one year we'll have more than what West Africa had in two years and a half." He said the risk to Canada remains low, but urged Canada to "move from low to zero by supporting [Africa] to stop the outbreak where it is currently." His message to Canadians: "No fear, no panic, but take it seriously" (CBC News).</p>
+ <p><strong>Where it has spread:</strong> smaller numbers of infections have appeared in Uganda, Kenya and Nigeria, which reported its first Ebola infection in a decade (CBC News).</p>
+ <p><strong>What Canada has done:</strong> Canada committed <strong>$8 million</strong> to the response in May, including <strong>$2 million</strong> for Africa CDC. In late July, Health Canada authorized Moderna to launch a clinical trial of its Bundibugyo vaccine. University of Winnipeg microbiologist Jason Kindrachuk says Canadian and Congolese scientists have sequenced more than <strong>1,000</strong> genomes, but that "there's a real need for Canada and other countries to step up" (CBC News).</p>
+ <p><strong>Canada's official risk and travel rules:</strong> the Public Health Agency of Canada says the overall risk to the general population in Canada remains low, and no importations of Ebola disease have previously occurred in Canada (PHAC). Temporary border measures apply to anyone who has visited or lives in Uganda, South Sudan or the DRC, even in transit, and last until <strong>Nov. 27, 2026</strong> at 11:59 pm (PHAC). Asymptomatic travellers who were in those countries in the past 21 days must quarantine for <strong>21 days</strong>, and foreign nationals who were in the DRC in that window can't enter (Canada Gazette).</p>
+ <p><strong>By the numbers (2021 Census):</strong> <a href="/location/laval/">Laval</a>, where Kaseya's family lives, had <strong>438,366</strong> residents, next to <a href="/location/montr-al/">Montreal</a> at <strong>1,762,949</strong>. Across <a href="/location/canada/#industry">Canada</a>, health care and social assistance employed <strong>12.7%</strong> of the labour force (2,446,370 of 19,310,340), the front line if a case ever were imported.</p>
+ <p><strong>Why it matters to you:</strong> the risk in Canada is officially low. If you or family travel to or from Uganda, South Sudan or the DRC, check the border rules before Nov. 27.</p>
+ <p>Sources: <a href="https://www.cbc.ca/news/health/africa-top-doctor-ebola-9.7403252" target="_blank" rel="noopener">CBC News</a> · <a href="https://www.canada.ca/en/public-health/services/emergency-preparedness-response/rapid-risk-assessments-public-health-professionals/ebola-disease-bundibugyo-virus-democratic-republic-congo-uganda-2026-07-07.html" target="_blank" rel="noopener">PHAC risk assessment</a> · <a href="https://www.canada.ca/en/public-health/services/diseases/ebola/border-measures.html" target="_blank" rel="noopener">PHAC border measures</a> · <a href="https://gazette.gc.ca/rp-pr/p1/2026/2026-10-10/html/notice-avis-eng.html" target="_blank" rel="noopener">Canada Gazette</a></p>
+
+ <h2 id="westjet-fuel">2. WestJet says jet fuel costs doubled. Will your airfare follow?</h2>
+ <p>WestJet Group chief executive Alexis von Hoensbroech told the Calgary Chamber of Commerce on Oct. 29 that geopolitical tensions have caused jet fuel costs to <strong>double</strong>, while transborder demand slowed and the Cuban leisure market stayed closed. Fuel is an airline's single largest expense. "Canada's aviation system has very few shock absorbers left," he said, and WestJet called for a national strategy on cost pressures (Financial Post, CTV News).</p>
+ <p><strong>The fare question:</strong> "Airlines can recover only part of the increase through fares, leaving thin margins to absorb the rest," WestJet said (Financial Post).</p>
+ <p><strong>Air Canada's numbers:</strong> the same day, Air Canada reported record third-quarter operating revenues of <strong>$7 billion</strong>, but cut its full-year adjusted EBITDA guidance to <strong>$2.4 billion-$2.7 billion</strong>, from $2.9 billion-$3.2 billion. CFO John Di Bert cited a <strong>$906 million</strong> year-over-year increase in fuel expense, with fuel prices 10 cents per litre above expectations. It now expects to offset about <strong>70 per cent</strong> of the extra fourth-quarter fuel cost, down from 100 per cent (Financial Post).</p>
+ <p><strong>The loan fight:</strong> Air Transat and Porter were each approved for a <strong>$150 million</strong> four-year loan and Flair for <strong>$76 million</strong> under the federal LASR financing program. WestJet says those loans sway market dynamics: "We fundamentally believe that governments should not intervene in markets if they want a healthy and competitive industry" (Financial Post).</p>
+ <p><strong>By the numbers (2021 Census):</strong> in <a href="/location/calgary/#industry">Calgary</a>, WestJet's home city, <strong>6.4%</strong> of the labour force worked in transportation and warehousing (46,840 of 730,050), compared with <strong>5.1%</strong> across <a href="/location/canada/#industry">Canada</a> (981,030 of 19,310,340).</p>
+ <p><strong>Why it matters to you:</strong> if airlines can pass on only part of a doubled fuel bill, watch for higher fares and fewer seats on thinner routes this winter. Booking flexibility is worth more than usual.</p>
+ <p>Sources: <a href="https://financialpost.com/transportation/airlines/westjet-sounds-alarm-high-fuel-costs-air-canada-lowers-outlook/" target="_blank" rel="noopener">Financial Post</a> · <a href="https://www.ctvnews.ca/calgary/article/westjet-ceo-calls-for-national-aviation-strategy-amid-rising-costs/" target="_blank" rel="noopener">CTV News Calgary</a></p>
+
+ <h2 id="mcrib-lawsuit">3. The McRib lawsuit: what a U.S. ruling means for Canadians</h2>
+ <p>A U.S. federal judge in Chicago, April Perry, on Oct. 30 rejected McDonald's request to dismiss a proposed class action accusing it of defrauding consumers about what's in the McRib, while dismissing some claims. The plaintiffs allege McDonald's shapes the patty with ridges to look like pork ribs and uses lower-grade pork such as shoulder, heart, tripe or stomach, so they overpaid (Reuters via NBC News).</p>
+ <p><strong>The judge's reasoning:</strong> McDonald's website describes the sandwich only as containing pork, Perry noted, and reasonable consumers need not do research before buying a US$7 fast-food sandwich. "Plaintiffs' proffered understanding of 'McRib' is not unreasonable or fanciful," she wrote. The ruling doesn't decide whether McDonald's misled anyone (Reuters via NBC News).</p>
+ <p><strong>McDonald's response:</strong> the company says it doesn't use hearts, tripe or stomach in the McRib and has always been transparent about its ingredients: "This lawsuit distorts the facts and the claims are meritless" (Reuters via NBC News). The suit was filed on Dec. 23, 2025, by four consumers from California, New York, Illinois and Washington, D.C. (Global News).</p>
+ <p><strong>The Canadian connection:</strong> the case is in a U.S. court. McDonald's Canada brought the McRib back to Canadian menus on Jan. 30, 2024, after last selling it here in 2014 (McDonald's Canada).</p>
+ <p><strong>By the numbers (2021 Census):</strong> accommodation and food services employed <strong>5.6%</strong> of <a href="/location/canada/#industry">Canada</a>'s labour force (1,085,270 of 19,310,340).</p>
+ <p><strong>Why it matters to you:</strong> nothing changes for Canadian diners yet. The takeaway is simple: a product's name or shape isn't an ingredient list.</p>
+ <p>Sources: <a href="https://www.nbcnews.com/business/business-news/mcdonalds-mcrib-lawsuit-rcna606719" target="_blank" rel="noopener">NBC News (Reuters)</a> · <a href="https://globalnews.ca/news/11600068/mcdonalds-mcrib-class-action-lawsuit-rib-meat/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.mcdonalds.com/ca/en-ca/newsroom/article/Prepare-your-napkins,-Canada---Suspenseful-Drumroll--The-McRib--is-back--.html" target="_blank" rel="noopener">McDonald's Canada</a></p>
+
+ <h2>Data sources</h2>
+ <p>Population and labour-force figures are from the 2021 Census of Population as presented on Canadian Data Insights location pages; shares are calculated from those counts. See <a href="/sources/">Data sources</a>. News facts are from the linked reports. Topics were chosen using Google Trends Canada interest on the morning of Nov. 1, 2026. This post is for education only and is not medical, travel or legal advice.</p>
+ `,
+ },
+ {
  title: "Canada's industry map: oil & gas, healthcare and public-admin towns",
  slug: "canadas-industry-towns",
  date: "October 31, 2026",
