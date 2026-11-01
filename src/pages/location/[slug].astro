@@ -7,6 +7,9 @@ import LocationEngage from '../../components/location/LocationEngage.astro';
 import CommunitySnapshot from '../../components/location/CommunitySnapshot.astro';
 import PopulationByCity from '../../components/location/PopulationByCity.astro';
 import WorkProfile from '../../components/location/WorkProfile.astro';
+import HousingSection from '../../components/location/HousingSection.astro';
+import CpiCard from '../../components/location/CpiCard.astro';
+import { linksFor } from '../../lib/geo-links';
 import {
   getAllLocations,
   getLocationBySlug,
@@ -48,6 +51,7 @@ if (!location) {
 }
 
 const d = location as LocationData;
+const geoLink = linksFor(await getAllLocations()).get(String(d.ALT_GEO_CODE));
 const snapshot = getLocationSnapshot(slug!);
 const isProvince = d.GEO_LEVEL === 'Province' || d.GEO_LEVEL === 'Territory';
 const provinceKey = (d.PROVINCE as string) || d.GEO_NAME.split(',')[0];
@@ -259,11 +263,17 @@ const jsonLd = locationJsonLd({
               <span class="font-heading text-sm font-bold text-primary">{d.GEO_LEVEL}</span>
             </div>
           </div>
-          <nav class="mt-6 flex flex-wrap gap-x-4 gap-y-2" aria-label="Work profile">
+          <nav class="mt-6 flex flex-wrap gap-x-4 gap-y-2" aria-label="On this page">
             <a href="#education" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Education</a>
             <a href="#commute" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Commute</a>
             <a href="#occupation" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Occupation</a>
             <a href="#industry" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Industry</a>
+            {geoLink?.housing && (
+              <a href="#housing" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Housing</a>
+            )}
+            {geoLink?.cpi && (
+              <a href="#consumer-prices" class="font-sans text-sm font-medium text-primary no-underline underline-offset-4 hover:underline">Prices</a>
+            )}
           </nav>
         </div>
 
@@ -277,6 +287,7 @@ const jsonLd = locationJsonLd({
           ></iframe>
         </div>
       </div>
+      {geoLink?.cpi && <CpiCard placeName={name} cpi={geoLink.cpi} />}
     </div>
   </section>
 
@@ -705,6 +716,8 @@ const jsonLd = locationJsonLd({
     )
   }
 
+  {geoLink?.housing && <HousingSection placeName={name} housing={geoLink.housing} />}
+
   <!-- Province cities -->
   {
     isProvince && provinceCities.length > 0 && (
@@ -747,8 +760,8 @@ const jsonLd = locationJsonLd({
   <section class="bg-background py-8 sm:py-10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <p class="font-sans text-sm text-on-surface-variant">
-        <a href="/sources/" class="font-medium text-primary underline-offset-2 hover:underline">Data source</a>
-        {' '}→ Census methodology &amp; attribution
+        <a href="/sources/" class="font-medium text-primary underline-offset-2 hover:underline">Data sources</a>
+        {' '}→ Census profiles, housing tables, and consumer prices
       </p>
     </div>
   </section>
