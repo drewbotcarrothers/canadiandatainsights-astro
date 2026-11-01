@@ -1,0 +1,385 @@
+---
+import Layout from '../layouts/Layout.astro';
+import foodFile from '../data/statcan/food-prices.json';
+import housingFile from '../data/statcan/housing.json';
+import { geoAnchor } from '../lib/geo-match';
+import { cpiExtract, linksFor } from '../lib/geo-links';
+import { displayName, generateSlug, getAllLocations } from '../lib/locations';
+import { costOfLivingJsonLd } from '../lib/seo';
+import {
+  changeClause,
+  formatCurrency,
+  formatIndex,
+  formatNumber,
+  formatPrice,
+  formatRefMonth,
+  formatSignedPercentPoints,
+  indexChange,
+  pct,
+} from '../lib/utils';
+
+const regionOrder = [
+  'Canada',
+  'Newfoundland and Labrador',
+  'Prince Edward Island',
+  'Nova Scotia',
+  'New Brunswick',
+  'Quebec',
+  'Ontario',
+  'Manitoba',
+  'Saskatchewan',
+  'Alberta',
+  'British Columbia',
+  'Yukon',
+  'Northwest Territories',
+  'Nunavut',
+];
+
+const foodGeoOrder = [
+  'Canada',
+  'Newfoundland and Labrador',
+  'Prince Edward Island',
+  'Nova Scotia',
+  'New Brunswick',
+  'Quebec',
+  'Ontario',
+  'Manitoba',
+  'Saskatchewan',
+  'Alberta',
+  'British Columbia',
+  'Whitehorse, Yukon',
+  'Yellowknife, Northwest Territories',
+];
+
+const locations = await getAllLocations();
+const links = linksFor(locations);
+const profiles = new Map<string, { name: string; slug: string }[]>();
+for (const loc of locations) {
+  const cpi = links.get(String(loc.ALT_GEO_CODE))?.cpi;
+  if (!cpi) continue;
+  const list = profiles.get(cpi.geo) ?? [];
+  list.push({ name: displayName(loc.GEO_NAME), slug: generateSlug(loc.GEO_NAME) });
+  profiles.set(cpi.geo, list);
+}
+for (const list of profiles.values()) {
+  list.sort((a, b) => a.name.localeCompare(b.name, 'en-CA'));
+}
+
+const byGeo = new Map(cpiExtract.geographies.map((row) => [row.geo, row]));
+const regions = regionOrder.map((name) => byGeo.get(name)).filter((row) => row != null);
+const cities = cpiExtract.geographies
+  .filter((row) => row.geo.includes(','))
+  .sort((a, b) => a.geo.localeCompare(b.geo, 'en-CA'));
+
+const canada = byGeo.get('Canada');
+const monthLabel = formatRefMonth(cpiExtract.referenceMonth);
+const yearAgoLabel = formatRefMonth(cpiExtract.comparisonMonth);
+const canadaChange = canada ? indexChange(canada.allItems, canada.allItemsYearAgo) : null;
+const canadaFoodChange =
+  canada && canada.foodRefDate === canada.refDate ? indexChange(canada.food, canada.foodYearAgo) : null;
+
+const priceKey = new Map(foodFile.rows.map((row) => [`${row.geo}|${row.product}`, row]));
+const canadaBasket = foodFile.products
+  .map((product) => priceKey.get(`Canada|${product}`))
+  .filter((row) => row != null);
+
+const canadaHousing = housingFile.geographies.find((row) => row.geo === 'Canada');
+
+const description = canada
+  ? `Canada's all-items Consumer Price Index was ${formatIndex(canada.allItems)} in ${monthLabel} (${cpiExtract.table.uom})${changeClause(canadaChange, yearAgoLabel)}. Provincial and city indexes, plus selected grocery prices, from Statistics Canada.`
+  : 'Consumer Price Index and selected grocery prices for Canada, from Statistics Canada.';
+
+const jsonLd = costOfLivingJsonLd({
+  description,
+  referenceMonth: cpiExtract.referenceMonth,
+});
+
+const rows = [...regions, ...cities];
+---
+
+<Layout
+  title="Cost of living in Canada"
+  description={description}
+  canonicalPath="/cost-of-living/"
+  jsonLd={jsonLd}
+>
+  <section class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <p class="mb-3 font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+        Statistics Canada · Table {cpiExtract.table.id}
+      </p>
+      <h1 class="font-heading text-4xl font-bold text-primary sm:text-5xl">
+        Cost of <span class="text-tertiary">living</span>
+      </h1>
+      {
+        canada && (
+          <p class="mt-4 max-w-3xl font-sans text-lg leading-relaxed text-on-surface-variant">
+            In {monthLabel}, Canada's all-items Consumer Price Index was{' '}
+            <strong class="text-on-surface">{formatIndex(canada.allItems)}</strong> ({cpiExtract.table.uom})
+            {changeClause(canadaChange, yearAgoLabel)}. The 12-month change is calculated on this site from
+            the published index.
+            {canada.food != null && canada.foodRefDate === canada.refDate && (
+              <>
+                {' '}
+                The food index was <strong class="text-on-surface">{formatIndex(canada.food)}</strong>
+                {changeClause(canadaFoodChange, yearAgoLabel)}.
+              </>
+            )}
+          </p>
+        )
+      }
+      <p class="mt-4 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+        This page is not a household budget. The index measures price change, with 2002 equal to 100. It
+        does not say what a city costs in dollars. City rows use Statistics Canada's CPI geography, which
+        is wider than a municipal boundary. Food indexes are published for Canada, the provinces, Whitehorse
+        and Yellowknife, not for census metropolitan areas. Figures were copied from the official table on{' '}
+        {new Intl.DateTimeFormat('en-CA', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(
+          new Date(`${cpiExtract.retrieved}T00:00:00Z`)
+        )}
+        .
+      </p>
+    </div>
+  </section>
+
+  <section class="border-t border-border/30 bg-surface-soft py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading text-2xl font-bold text-primary sm:text-3xl">All-items index</h2>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+        Reference month {monthLabel}, compared with {yearAgoLabel}. A dash means Statistics Canada does not
+        publish that series for the geography.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border/40 bg-surface">
+        <table class="min-w-full text-left font-sans text-sm">
+          <caption class="sr-only">
+            Consumer Price Index by geography, {monthLabel}
+          </caption>
+          <thead class="border-b border-border/40 bg-surface-soft text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+            <tr>
+              <th scope="col" class="px-4 py-3">Geography</th>
+              <th scope="col" class="px-4 py-3 text-right">All-items</th>
+              <th scope="col" class="px-4 py-3 text-right">12-month change</th>
+              <th scope="col" class="px-4 py-3 text-right">Food</th>
+              <th scope="col" class="px-4 py-3 text-right">Food, 12-month</th>
+              <th scope="col" class="px-4 py-3">Profile</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              rows.map((row) => {
+                const foodSameMonth = row.food != null && row.foodRefDate === row.refDate;
+                const linked = profiles.get(row.geo) ?? [];
+                return (
+                  <tr id={geoAnchor(row.geo)} class="scroll-mt-24 border-b border-border/20 last:border-0">
+                    <th scope="row" class="px-4 py-3 font-heading font-bold text-primary">
+                      {row.geo}
+                    </th>
+                    <td class="px-4 py-3 text-right tabular-nums">{formatIndex(row.allItems)}</td>
+                    <td class="px-4 py-3 text-right tabular-nums">
+                      {formatSignedPercentPoints(indexChange(row.allItems, row.allItemsYearAgo))}
+                    </td>
+                    <td class="px-4 py-3 text-right tabular-nums">
+                      {foodSameMonth ? formatIndex(row.food) : '—'}
+                    </td>
+                    <td class="px-4 py-3 text-right tabular-nums">
+                      {foodSameMonth
+                        ? formatSignedPercentPoints(indexChange(row.food, row.foodYearAgo))
+                        : '—'}
+                    </td>
+                    <td class="px-4 py-3">
+                      {linked.length > 0 ? (
+                        <span class="flex flex-col gap-1">
+                          {linked.map((profile) => (
+                            <a
+                              href={`/location/${profile.slug}/`}
+                              class="text-primary underline-offset-2 hover:underline"
+                            >
+                              {profile.name}
+                            </a>
+                          ))}
+                        </span>
+                      ) : (
+                        '—'
+                      )}
+                    </td>
+                  </tr>
+                );
+              })
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 font-sans text-sm text-on-surface-variant">
+        Source:{' '}
+        <a
+          href={cpiExtract.table.url}
+          class="font-medium text-primary underline-offset-2 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Table {cpiExtract.table.id}
+        </a>
+        . See <a href="/sources/" class="font-medium text-primary underline-offset-2 hover:underline">how these figures are sourced</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="border-t border-border/30 bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading text-2xl font-bold text-primary sm:text-3xl">Selected grocery prices</h2>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+        Average retail prices from table {foodFile.table.id}. Each price is the latest published month for
+        that product in that geography. The comparison table keeps a province only when its month matches
+        Canada's month for the same product, so the columns stay comparable.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border/40 bg-surface">
+        <table class="min-w-full text-left font-sans text-sm">
+          <caption class="sr-only">Average retail prices for selected products, Canada</caption>
+          <thead class="border-b border-border/40 bg-surface-soft text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+            <tr>
+              <th scope="col" class="px-4 py-3">Product</th>
+              <th scope="col" class="px-4 py-3">Month</th>
+              <th scope="col" class="px-4 py-3 text-right">Canada</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              canadaBasket.map((row) => (
+                <tr class="border-b border-border/20 last:border-0">
+                  <th scope="row" class="px-4 py-3 font-medium text-on-surface">
+                    {row.product}
+                  </th>
+                  <td class="px-4 py-3 text-on-surface-variant">{formatRefMonth(row.refDate)}</td>
+                  <td class="px-4 py-3 text-right font-heading font-bold tabular-nums text-primary">
+                    {formatPrice(row.price)}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      {
+        foodFile.comparisonProducts.length > 0 && (
+          <div class="mt-10 overflow-x-auto rounded-xl border border-border/40 bg-surface">
+            <table class="min-w-full text-left font-sans text-sm">
+              <caption class="sr-only">
+                Selected grocery prices for Canada and the provinces, matched to Canada's latest month
+              </caption>
+              <thead class="border-b border-border/40 bg-surface-soft text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                <tr>
+                  <th scope="col" class="px-4 py-3">Geography</th>
+                  {foodFile.comparisonProducts.map((product) => {
+                    const canadaRow = priceKey.get(`Canada|${product}`);
+                    return (
+                      <th scope="col" class="px-4 py-3 text-right">
+                        {product}
+                        {canadaRow && (
+                          <span class="mt-1 block font-medium normal-case tracking-normal text-on-surface-variant">
+                            {formatRefMonth(canadaRow.refDate)}
+                          </span>
+                        )}
+                      </th>
+                    );
+                  })}
+                </tr>
+              </thead>
+              <tbody>
+                {foodGeoOrder.map((geo) => (
+                  <tr class="border-b border-border/20 last:border-0">
+                    <th scope="row" class="px-4 py-3 font-heading font-bold text-primary">
+                      {geo}
+                    </th>
+                    {foodFile.comparisonProducts.map((product) => {
+                      const canadaRow = priceKey.get(`Canada|${product}`);
+                      const row = priceKey.get(`${geo}|${product}`);
+                      const comparable = row && canadaRow && row.refDate === canadaRow.refDate;
+                      return (
+                        <td class="px-4 py-3 text-right tabular-nums">
+                          {comparable ? formatPrice(row.price) : '—'}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
+      }
+      <p class="mt-4 font-sans text-sm text-on-surface-variant">
+        Source:{' '}
+        <a
+          href={foodFile.table.url}
+          class="font-medium text-primary underline-offset-2 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Table {foodFile.table.id}
+        </a>
+        . Prices are in Canadian dollars, as published.
+      </p>
+    </div>
+  </section>
+
+  {
+    canadaHousing && (
+      <section class="border-t border-border/30 bg-surface-soft py-12 sm:py-16">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <h2 class="font-heading text-2xl font-bold text-primary sm:text-3xl">Census shelter costs, 2021</h2>
+          <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+            Shelter costs are not part of the monthly price index. These Canada figures come from the 2021
+            Census tables {housingFile.tables.map((table) => table.id).join(' and ')}. Shares are calculated
+            on this site from the published household counts. Province and metro figures are on each
+            matching location profile.
+          </p>
+          <dl class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-xl border border-border/40 bg-surface p-5">
+              <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                Median shelter cost
+              </dt>
+              <dd class="mt-2 font-heading text-2xl font-bold text-primary">
+                {formatCurrency(canadaHousing.medianShelter)}
+              </dd>
+              <dd class="mt-1 text-xs text-on-surface-variant">Monthly, all households</dd>
+            </div>
+            <div class="rounded-xl border border-border/40 bg-surface p-5">
+              <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                Average shelter cost
+              </dt>
+              <dd class="mt-2 font-heading text-2xl font-bold text-primary">
+                {formatCurrency(canadaHousing.averageShelter)}
+              </dd>
+              <dd class="mt-1 text-xs text-on-surface-variant">Monthly, all households</dd>
+            </div>
+            <div class="rounded-xl border border-border/40 bg-surface p-5">
+              <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                Owner households
+              </dt>
+              <dd class="mt-2 font-heading text-2xl font-bold text-primary">
+                {pct(canadaHousing.owner, canadaHousing.households)}
+              </dd>
+              <dd class="mt-1 text-xs text-on-surface-variant">
+                {formatNumber(canadaHousing.owner)} households
+              </dd>
+            </div>
+            <div class="rounded-xl border border-border/40 bg-surface p-5">
+              <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                Spending 30% or more
+              </dt>
+              <dd class="mt-2 font-heading text-2xl font-bold text-primary">
+                {pct(canadaHousing.spend30Plus, canadaHousing.households)}
+              </dd>
+              <dd class="mt-1 text-xs text-on-surface-variant">Share of households</dd>
+            </div>
+          </dl>
+          <p class="mt-4 font-sans text-sm text-on-surface-variant">
+            <a href="/location/canada/#housing" class="font-medium text-primary underline-offset-2 hover:underline">
+              Canada housing detail
+            </a>
+          </p>
+        </div>
+      </section>
+    )
+  }
+</Layout>
