@@ -1,4 +1,5 @@
 import { compareBlogPosts } from './blog-compare-posts';
+import { day7Posts } from './blog-day7-posts';
 
 export interface ChartDataPoint {
  name: string;
@@ -1713,6 +1714,6 @@ const existingBlogPosts: BlogPost[] = [
  },
 ];
 
-/** All blog posts (compare SEO posts + existing editorial posts). */
-export const blogPosts: BlogPost[] = [...compareBlogPosts, ...existingBlogPosts];
+/** All blog posts (compare SEO posts + census/CPI editorial posts + existing posts). */
+export const blogPosts: BlogPost[] = [...compareBlogPosts, ...day7Posts, ...existingBlogPosts];
 
