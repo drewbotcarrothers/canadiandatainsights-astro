@@ -46,6 +46,7 @@ const existingBlogPosts: BlogPost[] = [
  <h2 id="halloween-candy-metal">What happened in Happy Valley-Goose Bay</h2>
  <p>RCMP Newfoundland and Labrador say they received three reports in Happy Valley-Goose Bay of small metal items found in treat-sized Coffee Crisp bars that were collected on Saturday night, Oct. 31 (RCMP). The reports came in Sunday morning (VOCM). Police are investigating to determine the source of the treats, and as of Monday morning were still trying to determine where they came from (VOCM).</p>
  <p>Police have not said whether the metal came from deliberate tampering or a manufacturing defect. Their advice names both possibilities.</p>
+ <div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;"><iframe src="https://www.youtube-nocookie.com/embed/07ikXSNKtbU" title="Metal in Halloween Candy: Check Your Kids&#39; Haul" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
  <p><strong>If you find something similar:</strong> contact the Happy Valley-Goose Bay detachment at <strong>709-896-3383</strong> or <strong>1-800-709-RCMP (7267)</strong> (RCMP).</p>
 
  <h2 id="what-police-advise">What the RCMP advise every parent</h2>
