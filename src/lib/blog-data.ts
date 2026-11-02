@@ -70,6 +70,7 @@ const existingBlogPosts: BlogPost[] = [
  </table>
  <p>The town counted <strong>515</strong> children aged 5 to 9 and <strong>490</strong> aged 10 to 14, about <strong>1,005</strong> kids in prime trick-or-treat years (Statistics Canada rounds these counts). Across Canada, about <strong>4.18 million</strong> children were aged 5 to 14 (2,054,900 aged 5 to 9 and 2,126,705 aged 10 to 14).</p>
  <p>Happy Valley-Goose Bay's median age of <strong>39.2</strong> is nine years younger than the province's <strong>48.4</strong>. Its population held roughly steady between censuses, at 8,040 in 2021 versus 8,109 in 2016.</p>
+ <p><strong>How young is that?</strong> Among the <strong>15</strong> Newfoundland and Labrador municipalities with at least 5,000 residents, Happy Valley-Goose Bay has the <strong>3rd-youngest</strong> median age (after Paradise at 38.0 and Labrador City at 38.4) and the <strong>5th-highest</strong> share of residents under 15.</p>
 
  <h2 id="why-it-matters">Why it matters to you</h2>
  <p>Most Halloween hauls are still sitting in Canadian kitchens this week. The advice from police applies anywhere: check wrappers, look for defects as well as tampering, and call police instead of tossing anything suspicious, so investigators can trace where it came from.</p>
