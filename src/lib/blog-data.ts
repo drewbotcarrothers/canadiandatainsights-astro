@@ -24,6 +24,60 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Metal in Halloween Candy: RCMP Investigate in Happy Valley-Goose Bay, One of N.L.'s Youngest Towns",
+ slug: "canadian-news-roundup-2026-11-02",
+ date: "November 2, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-02.png",
+ chartType: 'bar',
+ chartTitle: "Share of residents under 15, 2021 Census (percent)",
+ chartData: [
+ { name: "Happy Valley-Goose Bay", value: 17.5 },
+ { name: "Canada", value: 16.3 },
+ { name: "Newfoundland and Labrador", value: 13.4 },
+ ],
+ excerpt: "17.5% of Happy Valley-Goose Bay residents are under 15, versus 13.4% across Newfoundland and Labrador. That's the town where RCMP are investigating three reports of small metal items in Halloween Coffee Crisp bars. What police know, what they advise, and the numbers behind it.",
+ content: `
+ <p><strong>TL;DR:</strong> RCMP in Happy Valley-Goose Bay, N.L., received <strong>three</strong> reports of small metal items found in treat-sized Coffee Crisp bars collected while trick-or-treating on Saturday night. Police are still working to find where the treats came from. The town is unusually young for its province: in the 2021 Census, <strong>17.5%</strong> of its 8,040 residents were under 15, compared with <strong>13.4%</strong> across Newfoundland and Labrador. That means a lot of Halloween bags in one small town.</p>
+
+ <h2 id="halloween-candy-metal">What happened in Happy Valley-Goose Bay</h2>
+ <p>RCMP Newfoundland and Labrador say they received three reports in Happy Valley-Goose Bay of small metal items found in treat-sized Coffee Crisp bars that were collected on Saturday night, Oct. 31 (RCMP). The reports came in Sunday morning (VOCM). Police are investigating to determine the source of the treats, and as of Monday morning were still trying to determine where they came from (VOCM).</p>
+ <p>Police have not said whether the metal came from deliberate tampering or a manufacturing defect. Their advice names both possibilities.</p>
+ <p><strong>If you find something similar:</strong> contact the Happy Valley-Goose Bay detachment at <strong>709-896-3383</strong> or <strong>1-800-709-RCMP (7267)</strong> (RCMP).</p>
+
+ <h2 id="what-police-advise">What the RCMP advise every parent</h2>
+ <ul>
+ <li>Check treats thoroughly before kids eat them.</li>
+ <li>Look for signs of tampering <em>and</em> for manufacturing defects.</li>
+ <li>Make sure the packaging is intact.</li>
+ <li>Keep only treats that are a recognizable, trusted commercial brand.</li>
+ <li>If you're worried a treat has been tampered with, set it aside and contact your local police detachment right away.</li>
+ </ul>
+ <p>Setting a suspicious treat aside, rather than throwing it out, gives investigators something to trace.</p>
+
+ <h2 id="by-the-numbers">By the numbers: a young town in an older province</h2>
+ <p>The candy reports come from one of the youngest communities in Newfoundland and Labrador. Here is how <a href="/location/happy-valley-goose-bay-town-t/#population">Happy Valley-Goose Bay</a> compares with <a href="/location/newfoundland-and-labrador/#population">Newfoundland and Labrador</a> and <a href="/location/canada/#population">Canada</a> in the 2021 Census:</p>
+ <table>
+ <thead><tr><th></th><th>Happy Valley-Goose Bay</th><th>Newfoundland and Labrador</th><th>Canada</th></tr></thead>
+ <tbody>
+ <tr><td>Population (2021)</td><td>8,040</td><td>510,550</td><td>36,991,981</td></tr>
+ <tr><td>Residents under 15</td><td>1,405 (17.5%)</td><td>68,190 (13.4%)</td><td>6,012,795 (16.3%)</td></tr>
+ <tr><td>Median age</td><td>39.2</td><td>48.4</td><td>41.6</td></tr>
+ <tr><td>Couples with children, share of households</td><td>26.7% (820 of 3,075)</td><td>22.8% (50,825 of 223,255)</td><td>25.3% (3,789,795 of 14,978,945)</td></tr>
+ </tbody>
+ </table>
+ <p>The town counted <strong>515</strong> children aged 5 to 9 and <strong>490</strong> aged 10 to 14, about <strong>1,005</strong> kids in prime trick-or-treat years (Statistics Canada rounds these counts). Across Canada, about <strong>4.18 million</strong> children were aged 5 to 14 (2,054,900 aged 5 to 9 and 2,126,705 aged 10 to 14).</p>
+ <p>Happy Valley-Goose Bay's median age of <strong>39.2</strong> is nine years younger than the province's <strong>48.4</strong>. Its population held roughly steady between censuses, at 8,040 in 2021 versus 8,109 in 2016.</p>
+
+ <h2 id="why-it-matters">Why it matters to you</h2>
+ <p>Most Halloween hauls are still sitting in Canadian kitchens this week. The advice from police applies anywhere: check wrappers, look for defects as well as tampering, and call police instead of tossing anything suspicious, so investigators can trace where it came from.</p>
+ <p>Sources: <a href="https://rcmp.ca/en/nl/news/2026/11/4358385" target="_blank" rel="noopener">RCMP Newfoundland and Labrador</a> · <a href="https://ntv.ca/news/rcmp-investigating-after-metal-items-found-in-halloween-candy-in-happy-valley-goose-bay/" target="_blank" rel="noopener">NTV News</a> · <a href="https://vocm.com/2026/11/01/rcmp-investigate-reports-of-metal-found-in-halloween-candy/" target="_blank" rel="noopener">VOCM (Nov. 1)</a> · <a href="https://vocm.com/2026/11/02/police-reminding-parents-to-check-halloween-haul-after-reports-of-tampered-treats/" target="_blank" rel="noopener">VOCM (Nov. 2)</a> · Statistics Canada, 2021 Census of Population (see <a href="/sources/">sources</a>)</p>
+ <p><em>Canadian Data Insights is for education only. Verify primary sources.</em></p>
+ `,
+ },
+ {
  title: "Canadian News Deep-Dives — November 1, 2026: Ebola's Canadian Angle, WestJet's Fuel Alarm, the Bridle Path Home Invasion",
  slug: "canadian-news-roundup-2026-11-01",
  date: "November 1, 2026",
