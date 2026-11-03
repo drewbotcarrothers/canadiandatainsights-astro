@@ -25,6 +25,74 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Hackers Hit Europe's Supermarket Fridges. Canadians Spend $309 Million a Day at Grocery Stores",
+ slug: "canadian-news-roundup-2026-11-03",
+ date: "November 3, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-03.png",
+ chartType: 'bar',
+ chartTitle: "Sales at supermarkets and other grocery retailers, August 2026 (billions of dollars, unadjusted)",
+ chartData: [
+ { name: "Ontario", value: 3.31 },
+ { name: "Quebec", value: 2.40 },
+ { name: "British Columbia", value: 1.43 },
+ { name: "Alberta", value: 1.10 },
+ { name: "Manitoba", value: 0.35 },
+ { name: "Saskatchewan", value: 0.27 },
+ { name: "Nova Scotia", value: 0.25 },
+ { name: "New Brunswick", value: 0.19 },
+ ],
+ excerpt: "Canadians spent $9.58 billion at supermarkets and grocery stores in August 2026, about $309 million a day. Hackers just turned up the fridges at grocers in seven European countries. No Canadian store has been hit, but Canada's Cyber Centre has already logged tampering with control systems here. What happened, and the numbers behind it.",
+ content: `
+ <p><strong>TL;DR:</strong> For the second time in less than a month, hackers took control of supermarket fridges and freezers in Europe, this time at stores in <strong>seven</strong> countries, sending some freezers to <strong>50 C</strong> and forcing grocers to throw out food. No similar incidents have been reported in Canada. But the stakes here are big: Canadians spent <strong>$9.58 billion</strong> at supermarkets and other grocery retailers in August 2026, about <strong>$309 million a day</strong> (Statistics Canada). And Canada's Cyber Centre has already reported hacktivists tampering with internet-connected control systems in Canada, including a grain-drying silo on a farm.</p>
+
+ <h2 id="supermarket-fridge-cyberattack">What happened in Europe's supermarkets</h2>
+ <p>A hacking attack on Monday, Nov. 2, raised temperatures in refrigerator and freezer units at dozens of European stores. It hit Ahold Delhaize and Colruyt in Belgium and Luxembourg, Swedish grocers ICA and Coop, and at least one Ikea store (CBC News/Reuters). Stores in seven countries, including Belgium, Sweden and Ireland, reported refrigeration problems linked to suspected cyberattacks (CTV News).</p>
+ <p>"Everything is destroyed," an ICA store manager in Stockholm told Reuters. The attack happened at 2 a.m. and was only noticed hours later: "all our freezers reached 50 degrees" (CBC News/Reuters).</p>
+ <ul>
+ <li><strong>Coop (Sweden):</strong> 7 of its 800 stores affected.</li>
+ <li><strong>Carrefour (Belgium):</strong> 15 of its 700 stores.</li>
+ <li><strong>Musgrave (Ireland):</strong> 13 SuperValu stores; some chilled and frozen products pulled from sale.</li>
+ <li><strong>Colruyt (Belgium):</strong> five shops.</li>
+ <li><strong>One Belgian butcher:</strong> about €15,000 ($23,485 Cdn) of meat ruined.</li>
+ </ul>
+ <p>It follows an attack in France last month, when hackers seized control of cooling units at hundreds of supermarkets, causing fires and food losses. No one has claimed responsibility for either attack (CBC News).</p>
+
+ <h2 id="how-fridges-get-hacked">How a fridge gets hacked</h2>
+ <p>In many large grocery stores, every fridge and freezer is linked to a control unit that sets temperatures, runs defrost cycles and raises alarms. Those controllers can often be reached over the internet so maintenance firms can manage them remotely (CTV News).</p>
+ <p>At least some of the affected units used temperature-control technology from Danish firm Danfoss, which was also targeted in France. Danfoss said the French units were running outdated firmware or had reached end of life. After a researcher disclosed a vulnerability over the summer, the company released a patch and urged customers to install it (CBC News).</p>
+
+ <h2 id="could-it-happen-in-canada">Could it happen in Canada?</h2>
+ <p>No similar incidents have been reported here. Danfoss sells products in Canada, but it is not known which Canadian grocers, if any, use the affected systems. Metro declined to discuss its cybersecurity (CTV News). Cybersecurity expert Ritesh Kotak told CTV that some Canadian stores could, in theory, be vulnerable.</p>
+ <p>Canada has seen this kind of tampering before. In an October 2025 alert, the <a href="https://www.cyber.gc.ca/en/alerts-advisories/al25-016-internet-accessible-industrial-control-systems-ics-abused-hacktivists" target="_blank" rel="noopener">Canadian Centre for Cyber Security</a> said it and the RCMP had received multiple reports of hacktivists manipulating internet-accessible industrial control systems: water pressure at a water facility, a tank gauge at an oil and gas company, and temperature and humidity in a grain-drying silo on a Canadian farm. It named food as one of the sectors where regulation doesn't cover cyber security, and advised organizations to inventory exposed devices and use VPNs with two-factor authentication instead of leaving controls open to the internet.</p>
+
+ <h2 id="by-the-numbers">By the numbers: what's riding on Canada's grocery aisles</h2>
+ <p>Statistics Canada's monthly retail survey shows how much money flows through the stores that rely on those fridges:</p>
+ <table>
+ <thead><tr><th>Supermarkets and other grocery retailers</th><th>Sales</th></tr></thead>
+ <tbody>
+ <tr><td>Canada, August 2026 (unadjusted)</td><td>$9.58 billion (about $309 million a day)</td></tr>
+ <tr><td>Canada, 12 months from Sept. 2025 to Aug. 2026</td><td>$113.7 billion</td></tr>
+ <tr><td>Share of all Canadian retail sales, August 2026 (seasonally adjusted)</td><td>12.8%</td></tr>
+ <tr><td>Ontario, August 2026</td><td>$3.31 billion (about $107 million a day)</td></tr>
+ <tr><td>Quebec, August 2026</td><td>$2.40 billion (about $77 million a day)</td></tr>
+ <tr><td>British Columbia, August 2026</td><td>$1.43 billion (about $46 million a day)</td></tr>
+ <tr><td>Alberta, August 2026</td><td>$1.10 billion (about $36 million a day)</td></tr>
+ </tbody>
+ </table>
+ <p>Daily figures divide the monthly total by August's 31 days. Ontario and Quebec together account for about <strong>60%</strong> of the national total.</p>
+ <p><strong>The people behind the counters:</strong> retail trade employed <strong>2,149,640</strong> people across <a href="/location/canada/#industry">Canada</a> in the 2021 Census, <strong>11.1%</strong> of the labour force, including 798,090 in <a href="/location/ontario/#industry">Ontario</a> and 514,090 in <a href="/location/quebec/#industry">Quebec</a>.</p>
+ <p><strong>The price backdrop:</strong> Canada's food price index was up <strong>2.2%</strong> in the 12 months to September 2026, with all items up 3.1% (<a href="/location/canada/#consumer-prices">Statistics Canada CPI via Canadian Data Insights</a>).</p>
+
+ <h2 id="why-it-matters">Why it matters to you</h2>
+ <p>Grocery is about one in every eight dollars of Canadian retail spending. No Canadian store has been hit, but the Cyber Centre has already documented attacks on Canadian control systems, including on a farm. A fridge attack here would mean spoiled stock and empty cases, and losses someone pays for, at a time when food prices are already rising.</p>
+ <p>Sources: <a href="https://www.cbc.ca/news/business/europe-fridge-cyber-incident-9.7405834" target="_blank" rel="noopener">CBC News (Reuters)</a> · <a href="https://www.cp24.com/news/world/2026/11/03/could-the-cyberattack-that-shut-down-european-grocery-fridges-happen-here-next/" target="_blank" rel="noopener">CTV News</a> · <a href="https://www.cyber.gc.ca/en/alerts-advisories/al25-016-internet-accessible-industrial-control-systems-ics-abused-hacktivists" target="_blank" rel="noopener">Canadian Centre for Cyber Security, AL25-016</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2010005601" target="_blank" rel="noopener">Statistics Canada, table 20-10-0056-01</a> · Statistics Canada, 2021 Census of Population and table 18-10-0004-01 (see <a href="/sources/">sources</a>)</p>
+ <p><em>Topic chosen using Google Trends Canada interest on the morning of Nov. 3, 2026. Canadian Data Insights is for education only. Verify primary sources.</em></p>
+ `,
+ },
+ {
  title: "Metal in Halloween Candy: RCMP Investigate in Happy Valley-Goose Bay, One of N.L.'s Youngest Towns",
  slug: "canadian-news-roundup-2026-11-02",
  date: "November 2, 2026",
