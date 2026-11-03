@@ -51,6 +51,7 @@ const existingBlogPosts: BlogPost[] = [
  <h2 id="supermarket-fridge-cyberattack">What happened in Europe's supermarkets</h2>
  <p>A hacking attack on Monday, Nov. 2, raised temperatures in refrigerator and freezer units at dozens of European stores. It hit Ahold Delhaize and Colruyt in Belgium and Luxembourg, Swedish grocers ICA and Coop, and at least one Ikea store (CBC News/Reuters). Stores in seven countries, including Belgium, Sweden and Ireland, reported refrigeration problems linked to suspected cyberattacks (CTV News).</p>
  <p>"Everything is destroyed," an ICA store manager in Stockholm told Reuters. The attack happened at 2 a.m. and was only noticed hours later: "all our freezers reached 50 degrees" (CBC News/Reuters).</p>
+ <div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;"><iframe src="https://www.youtube-nocookie.com/embed/PGyO2TomNHE" title="Could Hackers Hit Canada&#39;s Grocery Fridges?" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
  <ul>
  <li><strong>Coop (Sweden):</strong> 7 of its 800 stores affected.</li>
  <li><strong>Carrefour (Belgium):</strong> 15 of its 700 stores.</li>
