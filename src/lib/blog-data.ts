@@ -46,6 +46,7 @@ const existingBlogPosts: BlogPost[] = [
 
  <h2 id="toys-r-us-staples">What Staples and Toys R Us announced</h2>
  <p>On Nov. 3, Staples Canada said it has been named the official and exclusive Canadian retail partner for Toys "R" Us Canada and Parties "R" Us Canada (Staples Canada). The first shop-in-shop opens at the Staples store at 45 Red Maple Road in <a href="/location/richmond-hill-town-t/">Richmond Hill</a>, with a grand opening on Saturday, Nov. 14, plus an online experience on staples.ca.</p>
+ <div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;"><iframe src="https://www.youtube-nocookie.com/embed/INZjj2ld004" title="Why Toys R Us Is Moving Into Staples" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
  <ul>
  <li><strong>Scale:</strong> the companies hope to have the departments in roughly 300 Staples stores by the end of 2027 (The Canadian Press).</li>
  <li><strong>New concept:</strong> Parties "R" Us will sell balloons, party goods, seasonal essentials and licensed party products (Staples Canada).</li>
