@@ -25,6 +25,62 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Toys R Us Returns Inside Staples. Canadian Toy Prices Are Still Below 2002 Levels",
+ slug: "canadian-news-roundup-2026-11-04",
+ date: "November 4, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-04.png",
+ chartType: 'bar',
+ chartTitle: "Price change to September 2026 (%), Statistics Canada CPI",
+ chartData: [
+ { name: "All items, 10 years", value: 32.0 },
+ { name: "Toys, games & hobby, 10 years", value: 7.7 },
+ { name: "All items, 12 months", value: 3.1 },
+ { name: "Toys, games & hobby, 12 months", value: 0.4 },
+ ],
+ excerpt: "Toys R Us is coming back to Canada as shop-in-shops inside roughly 300 Staples stores, starting Nov. 14 in Richmond Hill. The data angle: Canada's price index for toys, games and hobby supplies is still slightly below its 2002 level, while overall prices are up 70%. What the deal is, why the old chain collapsed, and the numbers behind it.",
+ content: `
+ <p><strong>TL;DR:</strong> Toys "R" Us is returning to Canada, but not as big-box stores. Staples Canada says it will open Toys "R" Us and new Parties "R" Us departments inside its stores, starting with a pilot in <strong>Richmond Hill, Ont., on Nov. 14</strong> and growing to roughly <strong>300 Staples stores</strong> by the end of 2027. The number the big outlets aren't showing you: Statistics Canada's price index for <strong>toys, games and hobby supplies was 99.5 in September 2026</strong>, slightly <em>below</em> its 2002 base of 100. Over the same stretch, all consumer prices rose about <strong>70%</strong> (index 170.0). Toys are one of the few things in the basket that cost about what they did 24 years ago.</p>
+
+ <h2 id="toys-r-us-staples">What Staples and Toys R Us announced</h2>
+ <p>On Nov. 3, Staples Canada said it has been named the official and exclusive Canadian retail partner for Toys "R" Us Canada and Parties "R" Us Canada (Staples Canada). The first shop-in-shop opens at the Staples store at 45 Red Maple Road in <a href="/location/richmond-hill-town-t/">Richmond Hill</a>, with a grand opening on Saturday, Nov. 14, plus an online experience on staples.ca.</p>
+ <ul>
+ <li><strong>Scale:</strong> the companies hope to have the departments in roughly 300 Staples stores by the end of 2027 (The Canadian Press).</li>
+ <li><strong>New concept:</strong> Parties "R" Us will sell balloons, party goods, seasonal essentials and licensed party products (Staples Canada).</li>
+ <li><strong>Who owns the brand now:</strong> Staples' partner is Next Century Ipco Can ULC, an affiliate of U.S. firm Ad Populum, which owns Party City and manages several toy companies. Next Century bought 150 Toys "R" Us Canada trademarks earlier this year (The Canadian Press).</li>
+ <li><strong>Still unknown:</strong> Staples offered no hints about which brands or kinds of toys the shops will sell (The Canadian Press via BNN Bloomberg), and no store-by-store schedule.</li>
+ </ul>
+
+ <h2 id="how-the-old-chain-collapsed">How the old chain collapsed</h2>
+ <p>Toys "R" Us Canada, owned since 2021 by Ancaster, Ont.-based Putman Investments, filed for creditor protection on Feb. 3, 2026. It had closed <strong>53 stores</strong> in the previous two years, owed at least <strong>$120 million</strong> to vendors and "substantial" amounts to landlords, and had 22 stores still open (CBC News / The Canadian Press). In court documents, the company blamed inflation, rising labour costs, supply chain disruptions and a shift toward e-commerce.</p>
+ <p>By the time an Ontario court approved splitting the business among three buyers, the chain was down to <strong>15 stores and 260 employees</strong> (CBC News / The Canadian Press). A numbered company run by Doug Putman bought 10 store leases, the inventory and equipment; his lawyers have said he can use the Toys "R" Us name until Jan. 25, 2027, and hopes to extend that or rebrand.</p>
+
+ <h2 id="by-the-numbers">By the numbers: flat toy prices, rising everything else</h2>
+ <p>Statistics Canada's Consumer Price Index tracks a category called "toys, games (excluding video games) and hobby supplies." Here's how it compares with the overall index:</p>
+ <table>
+ <thead><tr><th>CPI, Canada (2002 = 100)</th><th>Toys, games and hobby supplies</th><th>All items</th></tr></thead>
+ <tbody>
+ <tr><td>September 2016</td><td>92.4</td><td>128.8</td></tr>
+ <tr><td>September 2025</td><td>99.1</td><td>164.9</td></tr>
+ <tr><td>September 2026</td><td>99.5</td><td>170.0</td></tr>
+ <tr><td>Change, 10 years</td><td>+7.7%</td><td>+32.0%</td></tr>
+ <tr><td>Change, 12 months</td><td>+0.4%</td><td>+3.1%</td></tr>
+ </tbody>
+ </table>
+ <p>An index of 99.5 means toy prices, on average, are about where they were in 2002, while the overall basket is up 70%. That's a tough place for a big-box toy chain: shelf prices barely move, while the costs the company itself pointed to, like labour and rent, don't stand still.</p>
+ <p><strong>The online squeeze:</strong> Canadian retail e-commerce sales hit <strong>$5.27 billion</strong> in August 2026, <strong>6.9%</strong> of all retail sales, up from 6.2% a year earlier. Online sales grew <strong>15.5%</strong> in a year, versus 4.5% for retail overall (Statistics Canada, unadjusted).</p>
+ <p><strong>The category still sells:</strong> sporting goods, hobby, musical instrument and book retailers rang up <strong>$1.55 billion</strong> in August 2026, up 4.9% from a year earlier (Statistics Canada, unadjusted).</p>
+ <p><strong>The customers:</strong> Canada had <strong>6,012,795</strong> children under 15 in the 2021 Census, 16.3% of the population (<a href="/location/canada/">Canada profile</a>). Richmond Hill, home of the pilot store, had 29,970 children under 15 out of 202,022 residents (<a href="/location/richmond-hill-town-t/">Richmond Hill profile</a>).</p>
+
+ <h2 id="why-it-matters">Why it matters to you</h2>
+ <p>For parents, the good news in the data is that toys are one of the rare categories where prices haven't run away. For the brand, a department inside about 300 existing Staples stores means no new big-box leases, the cost that helped sink the old chain. Whether a shop-in-shop can win back holiday shoppers from online retailers is the question to watch, starting Nov. 14 in Richmond Hill.</p>
+ <p>Sources: <a href="https://globalnews.ca/news/12134766/toys-r-us-returns-canada-staples-stores/" target="_blank" rel="noopener">The Canadian Press via Global News</a> · <a href="https://www.bnnbloomberg.ca/business/company-news/2026/11/03/toys-r-us-canada-to-open-within-300-staples-stores-by-end-of-2027/" target="_blank" rel="noopener">The Canadian Press via BNN Bloomberg</a> · <a href="https://www.staples.ca/a/learn/staples-canada-named-official-and-exclusive-canadian-retail-partner-for-toys-r-us-canada" target="_blank" rel="noopener">Staples Canada</a> · <a href="https://www.cbc.ca/news/business/toys-r-us-canada-creditor-protection-9.7073015" target="_blank" rel="noopener">CBC News (Feb. 3, 2026)</a> · <a href="https://www.cbc.ca/news/business/toysrus-court-approval-sale-9.7244928" target="_blank" rel="noopener">CBC News (court approval)</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401" target="_blank" rel="noopener">Statistics Canada, table 18-10-0004-01</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2010005601" target="_blank" rel="noopener">Statistics Canada, table 20-10-0056-01</a> · Statistics Canada, 2021 Census of Population (see <a href="/sources/">sources</a>)</p>
+ <p><em>Topic chosen using Google Trends Canada interest on the morning of Nov. 4, 2026. Canadian Data Insights is for education only. Verify primary sources.</em></p>
+ `,
+ },
+ {
  title: "Hackers Hit Europe's Supermarket Fridges. Canadians Spend $309 Million a Day at Grocery Stores",
  slug: "canadian-news-roundup-2026-11-03",
  date: "November 3, 2026",
