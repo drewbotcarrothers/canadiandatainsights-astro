@@ -25,6 +25,57 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Sherritt Lays Off 47% of Canadian Staff. Canada Has Only Three Nickel Refineries",
+ slug: "canadian-news-roundup-2026-11-05",
+ date: "November 5, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-05.png",
+ chartType: 'bar',
+ chartTitle: "Canada cobalt production 2024 (tonnes), Natural Resources Canada",
+ chartData: [
+ { name: "Refined cobalt", value: 5920 },
+ { name: "Mine cobalt", value: 3351 },
+ ],
+ excerpt: "Sherritt is temporarily laying off about 280 employees — 47% of its Canadian workforce — for ~90 days while Fort Saskatchewan refining stays idle. Canada refined 5,920 tonnes of cobalt in 2024 at just three plants, and Fort Saskatchewan is one of them.",
+ content: `
+<p><strong>TL;DR:</strong> Sherritt International is temporarily laying off about <strong>280 employees — 47% of its Canadian workforce</strong> — for roughly 90 days while its Fort Saskatchewan, Alta., nickel and cobalt refinery stays idle. The plant stopped refining on June 22, 2026 after Cuban feed ran out under expanded U.S. sanctions. The number the big outlets aren't putting next to the layoff count: Canada refined only <strong>5,920 tonnes of cobalt in 2024</strong> at <strong>three</strong> refineries, and Fort Saskatchewan is one of them. Nickel mine production was <strong>125,364 tonnes</strong> (fourth globally) and nickel-related exports were <strong>$4.5 billion</strong>.</p>
+
+ <h2 id="sherritt-fort-saskatchewan-layoffs">What Sherritt announced</h2>
+ <p>On Nov. 4, Toronto-based Sherritt International Corp. (TSX:S) said it will temporarily lay off approximately 280 employees — 47% of its Canadian staff — as it preserves liquidity and works to restore metals refining at Fort Saskatchewan (Sherritt; The Canadian Press). The company expects the layoffs to last about 90 days, with earlier recalls possible if refining restarts.</p>
+ <ul>
+ <li><strong>Still running on site:</strong> ammonia fertilizer and sulphuric acid production and sales, necessary maintenance, and environmental protection and safety work continue (Sherritt).</li>
+ <li><strong>Why refining stopped:</strong> feed inventory from the Moa joint venture in Cuba was depleted; refining ceased June 22, 2026 (Sherritt; CBC News / The Canadian Press).</li>
+ <li><strong>Sanctions path:</strong> after U.S. Executive Order 14404 expanded Cuba-related sanctions, Sherritt suspended direct participation in the Cuban joint venture on May 7, 2026 (Sherritt).</li>
+ <li><strong>Regulatory progress:</strong> on Oct. 19, 2026 it received the first of a series of anticipated U.S. Treasury OFAC emergency licences needed to restart mining/processing in Cuba and refining in Canada (Sherritt).</li>
+ </ul>
+ <p>When refining first paused in June, Sherritt told CBC no jobs were lost at that time and that fertilizer, acid and maintenance would keep the Alberta workforce busy. Today's announcement is the staffing cut that followed months of idle refining capacity.</p>
+
+ <h2 id="by-the-numbers">By the numbers: three Canadian cobalt refineries</h2>
+ <p>Natural Resources Canada (citing Statistics Canada production data) puts Canada's critical-minerals refining footprint in plain view:</p>
+ <table>
+ <thead><tr><th>Canada, 2024</th><th>Figure</th></tr></thead>
+ <tbody>
+ <tr><td>Refined cobalt production</td><td>5,920 tonnes (3 refineries)</td></tr>
+ <tr><td>Cobalt mine production</td><td>~3,351 tonnes</td></tr>
+ <tr><td>Cobalt and cobalt-product exports</td><td>$344 million</td></tr>
+ <tr><td>Nickel mine production</td><td>125,364 tonnes (4th globally)</td></tr>
+ <tr><td>Nickel and nickel-based product exports</td><td>$4.5 billion</td></tr>
+ </tbody>
+ </table>
+ <p>NRCan lists Canada's three key <strong>nickel</strong> refineries as Fort Saskatchewan, Alta.; Sudbury, Ont.; and Long Harbour, N.L. The same three cities host Canada's refined-cobalt capacity (Fort Saskatchewan; Port Colborne, Ont.; Long Harbour). Sherritt calls Fort Saskatchewan the only significant cobalt refinery and one of just three nickel refineries in North America.</p>
+ <p><strong>Local Census context:</strong> <a href="/location/fort-saskatchewan/">Fort Saskatchewan</a> had <strong>27,088</strong> people in the 2021 Census (+12.1% from 2016), a median age of 36.0, <strong>13,245 employed</strong> and an unemployment rate of 10.7%. Roughly 280 temporary layoffs equal about <strong>2.1%</strong> of the city's employed labour force if the cuts land locally — a material hit in a city of this size.</p>
+
+ <h2 id="why-it-matters-critical-minerals">Why it matters for critical minerals</h2>
+ <p>Nickel and cobalt sit in the batteries and stainless steels of the energy transition. Canada already mines meaningful nickel, but refining capacity is concentrated. When one of three domestic nickel refineries sits idle because Cuban feed and U.S. licences are blocked, the bottleneck is not ore in the ground — it is geopolitics and a thin refining network.</p>
+ <p>Sherritt says it remains focused on restarting and on being "a key contributor to North America's critical minerals supply chain." The OFAC licence in October is a start; more licences and a rebuilt feed pipeline are still required before Fort Saskatchewan pours metal again.</p>
+ <p>Sources: <a href="https://sherritt.com/sherritt-announces-temporary-workforce-layoffs-as-it-advances-path-toward-restoring-its-metals-refining-operations/" target="_blank" rel="noopener">Sherritt International</a> · <a href="https://www.theglobeandmail.com/business/article-sherritt-layoffs-canadian-staff/" target="_blank" rel="noopener">The Canadian Press via The Globe and Mail</a> · <a href="https://www.cbc.ca/news/canada/edmonton/sherritt-fort-sask-refinery-9.7250254" target="_blank" rel="noopener">CBC News / The Canadian Press (June 2026)</a> · <a href="https://natural-resources.canada.ca/minerals-mining/mining-data-statistics-analysis/minerals-metals-facts/nickel-facts" target="_blank" rel="noopener">NRCan Nickel facts</a> · <a href="https://natural-resources.canada.ca/minerals-mining/mining-data-statistics-analysis/minerals-metals-facts/cobalt-facts" target="_blank" rel="noopener">NRCan Cobalt facts</a> · Statistics Canada, 2021 Census of Population (see <a href="/sources/">sources</a>)</p>
+ <p><em>Topic chosen using Google Trends Canada interest on the morning of Nov. 5, 2026. Canadian Data Insights is for education only. Verify primary sources.</em></p>
+ `,
+ },
+
+ {
  title: "Toys R Us Returns Inside Staples. Canadian Toy Prices Are Still Below 2002 Levels",
  slug: "canadian-news-roundup-2026-11-04",
  date: "November 4, 2026",
