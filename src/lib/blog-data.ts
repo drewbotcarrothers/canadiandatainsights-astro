@@ -44,6 +44,7 @@ const existingBlogPosts: BlogPost[] = [
 
  <h2 id="sherritt-fort-saskatchewan-layoffs">What Sherritt announced</h2>
  <p>On Nov. 4, Toronto-based Sherritt International Corp. (TSX:S) said it will temporarily lay off approximately 280 employees — 47% of its Canadian staff — as it preserves liquidity and works to restore metals refining at Fort Saskatchewan (Sherritt; The Canadian Press). The company expects the layoffs to last about 90 days, with earlier recalls possible if refining restarts.</p>
+ <div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;"><iframe src="https://www.youtube-nocookie.com/embed/fM2bWnJZoDc" title="Why Sherritt Laid Off Half Its Staff" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
  <ul>
  <li><strong>Still running on site:</strong> ammonia fertilizer and sulphuric acid production and sales, necessary maintenance, and environmental protection and safety work continue (Sherritt).</li>
  <li><strong>Why refining stopped:</strong> feed inventory from the Moa joint venture in Cuba was depleted; refining ceased June 22, 2026 (Sherritt; CBC News / The Canadian Press).</li>
