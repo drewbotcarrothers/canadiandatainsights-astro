@@ -25,6 +25,66 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Canada Spends $665 Per Capita on Defence. Budget 2026 Charts $157B by 2030",
+ slug: "canadian-news-roundup-2026-11-06",
+ date: "November 6, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-06.png",
+ chartType: 'bar',
+ chartTitle: "Defence spending per capita, 2024 (CAD) — Statistics Canada CCOFOG",
+ chartData: [
+ { name: "CGG defence", value: 665 },
+ { name: "Federal defence", value: 676 },
+ { name: "Federal military", value: 620 },
+ ],
+ excerpt: "Budget 2026 charts a path to ~$157 billion a year on defence by 2030 (4%+ of GDP) and 5% by 2035. StatsCan already puts consolidated defence at $665 per Canadian in 2024 — the baseline outlets aren't pairing with that path.",
+ content: `
+
+ <p><strong>TL;DR:</strong> Budget 2026 charts a path to slightly more than <strong>4% of GDP on defence</strong> — about <strong>$157 billion a year by 2030</strong> — and toward NATO's <strong>5% by 2035</strong>. By 2030-31 that means <strong>$99.2 billion</strong> in direct military spending plus <strong>$58.3 billion</strong> for defence infrastructure. The number the big outlets aren't putting next to that path: Statistics Canada already puts consolidated Canadian defence at <strong>$665 per capita in 2024</strong> (+13.3% from $587), and federal defence at <strong>$676</strong> (military defence <strong>$620</strong> of that).</p>
+
+ <h2 id="federal-budget-2026-defence-spending">What Budget 2026 says on defence</h2>
+ <p>Finance Minister François-Philippe Champagne tabled Budget 2026 — titled <em>Masters of our destiny</em> — on Nov. 5 under Prime Minister Mark Carney. Canada.ca Key Measures says the plan builds on Canada's achievement of NATO's 2% of GDP defence target and puts the country "on track to spend 4% of GDP on defence this decade and reach 5% of GDP by 2035," with investments in the Defence Industrial Strategy and the Defence Drone Initiative.</p>
+ <ul>
+ <li><strong>2030 path:</strong> slightly more than 4% of GDP — roughly <strong>$157 billion</strong> annually by the end of the decade (CBC News, Murray Brewster).</li>
+ <li><strong>2030-31 split:</strong> direct military spending <strong>$99.2 billion</strong> + defence infrastructure <strong>$58.3 billion</strong> (CBC).</li>
+ <li><strong>Near term:</strong> ongoing budget year direct <strong>$75 billion</strong> + infrastructure <strong>$50 billion</strong>; 2027-28 direct <strong>$89 billion</strong> + infrastructure <strong>$52 billion</strong> (CBC).</li>
+ <li><strong>NATO frame:</strong> 5% of GDP by 2035 (3.5% military + 1.5% defence-related); 2029 is the review year (CBC).</li>
+ <li><strong>Defence Drone Initiative:</strong> <strong>$2.3 billion over five years</strong>, starting next year (CBC).</li>
+ <li><strong>Operation REASSURANCE:</strong> Canada.ca Key Measures provides <strong>$7.6 billion over five years</strong> to extend and expand Canada's largest overseas mission on NATO's Eastern Flank. CBC, citing the Defence Department's annual budget, puts a <strong>$7.1 billion</strong> figure on the extended Latvia mission — prefer the Canada.ca figure; the two are not reconciled here.</li>
+ <li><strong>Equipment:</strong> references already-planned purchases of up to 12 submarines, airborne early warning jets, armoured vehicles and drones; light on other equipment detail (CBC).</li>
+ </ul>
+ <p>Associated Press reports the budget includes about <strong>$142.1 billion CAD</strong> in multiyear spending and tax breaks. Broader Budget 2026 measures (housing, groceries top-up, critical minerals, electricity) are context only — this deep-dive is the defence path.</p>
+
+ <h2 id="by-the-numbers">By the numbers: StatsCan defence per capita vs the budget path</h2>
+ <p>Statistics Canada's Canadian Classification of Functions of Government (CCOFOG) release for 2024 puts today's baseline in dollars per Canadian — the comparison outlets are not leading with:</p>
+ <table>
+ <thead><tr><th>Measure</th><th>Figure</th></tr></thead>
+ <tbody>
+ <tr><td>Consolidated CGG defence per capita, 2024</td><td>$665 (+13.3% from $587)</td></tr>
+ <tr><td>Federal defence per capita, 2024</td><td>$676</td></tr>
+ <tr><td>— of which military defence</td><td>$620</td></tr>
+ <tr><td>Budget path ≈4% of GDP by end of decade</td><td>~$157 billion / year</td></tr>
+ <tr><td>2030-31 direct military</td><td>$99.2 billion</td></tr>
+ <tr><td>2030-31 defence infrastructure</td><td>$58.3 billion</td></tr>
+ <tr><td>Ongoing year: direct + infrastructure</td><td>$75B + $50B</td></tr>
+ <tr><td>2027-28: direct + infrastructure</td><td>$89B + $52B</td></tr>
+ <tr><td>Defence Drone Initiative</td><td>$2.3B / 5 years</td></tr>
+ <tr><td>Operation REASSURANCE (Canada.ca)</td><td>$7.6B / 5 years</td></tr>
+ </tbody>
+ </table>
+ <p>Sources for the per-capita rows: Statistics Canada The Daily (Nov. 27, 2025), Table 1 consolidated per capita CCOFOG 2024, and Overview infographic 11-627-M2025056. Federal defence rows are unconsolidated federal government data.</p>
+
+ <h2 id="why-it-matters-defence-path">Why the per-capita baseline matters</h2>
+ <p>A climb to four-plus per cent of GDP is a fiscal choice measured in hundreds of billions. Starting from <strong>$665 per Canadian</strong> in consolidated defence (and <strong>$676</strong> federally) makes the scale of that climb concrete — without inventing a reconciliation between per-capita accounting and the budget's cash path.</p>
+ <p>Analysts quoted by CBC are already asking whether fiscal pressure and the 2029 NATO review will hold the line after 2030, and whether the Defence Department can spend the money fast enough that it does not become a tempting offset for other priorities. Execution — submarines, AEW jets, drones, Latvia — will decide whether the path on paper becomes kit in the field.</p>
+ <p>Sources: <a href="https://www.cbc.ca/news/politics/defence-budget-military-nato-trump-9.7411329" target="_blank" rel="noopener">CBC News (Murray Brewster)</a> · <a href="https://www.canada.ca/en/department-finance/news/2026/11/budget-2026-key-measures.html" target="_blank" rel="noopener">Canada.ca Budget 2026 Key Measures</a> · <a href="https://apnews.com/article/canada-budget-carney-trump-1ec6134771fbeaea75552415b1bab8c9" target="_blank" rel="noopener">Associated Press</a> · <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/251127/dq251127b-eng.htm" target="_blank" rel="noopener">Statistics Canada The Daily</a> · <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/251127/t001b-eng.htm" target="_blank" rel="noopener">StatsCan Table 1</a> · <a href="https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2025056-eng.htm" target="_blank" rel="noopener">StatsCan Overview 11-627-M</a> · <a href="https://budget.canada.ca/2026/report-rapport/pdf/budget-2026.pdf" target="_blank" rel="noopener">Budget 2026 PDF</a></p>
+ <p><em>Topic chosen using Google Trends Canada interest on the morning of Nov. 6, 2026. Canadian Data Insights is for education only. Verify primary sources.</em></p>
+ `,
+ },
+
+ {
  title: "Sherritt Lays Off 47% of Canadian Staff. Canada Has Only Three Nickel Refineries",
  slug: "canadian-news-roundup-2026-11-05",
  date: "November 5, 2026",
