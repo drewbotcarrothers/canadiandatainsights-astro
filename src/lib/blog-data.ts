@@ -46,6 +46,7 @@ const existingBlogPosts: BlogPost[] = [
 
  <h2 id="federal-budget-2026-defence-spending">What Budget 2026 says on defence</h2>
  <p>Finance Minister François-Philippe Champagne tabled Budget 2026 — titled <em>Masters of our destiny</em> — on Nov. 5 under Prime Minister Mark Carney. Canada.ca Key Measures says the plan builds on Canada's achievement of NATO's 2% of GDP defence target and puts the country "on track to spend 4% of GDP on defence this decade and reach 5% of GDP by 2035," with investments in the Defence Industrial Strategy and the Defence Drone Initiative.</p>
+ <div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;"><iframe src="https://www.youtube-nocookie.com/embed/wazdm_5FbVk" title="Canada Already Spends $665 on Defence" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
  <ul>
  <li><strong>2030 path:</strong> slightly more than 4% of GDP — roughly <strong>$157 billion</strong> annually by the end of the decade (CBC News, Murray Brewster).</li>
  <li><strong>2030-31 split:</strong> direct military spending <strong>$99.2 billion</strong> + defence infrastructure <strong>$58.3 billion</strong> (CBC).</li>
