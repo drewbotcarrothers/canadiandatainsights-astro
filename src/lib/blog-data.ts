@@ -45,6 +45,7 @@ const existingBlogPosts: BlogPost[] = [
 
  <h2 id="budget-2026-rrsp-for-life">What Budget 2026 proposes for RRSPs</h2>
  <p>Finance Minister François-Philippe Champagne tabled Budget 2026 on Nov. 5. Today, Canadians must cash out their RRSP, buy an annuity, or convert it to a Registered Retirement Income Fund (RRIF) by the end of the year they turn 71. The budget proposes folding the core features of the two accounts into one plan that stays open for life.</p>
+ <div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;"><iframe src="https://www.youtube-nocookie.com/embed/a41JnpN86qk" title="The RRSP Rule 449,576 Canadians Face" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
  <ul>
  <li><strong>No forced conversion:</strong> the RRSP would no longer have to become a RRIF at 71 (Budget 2026, quoted by Global News; Investment Executive).</li>
  <li><strong>Minimum withdrawals stay:</strong> holders would still have to withdraw a minimum share each year, based on life expectancy (CBC News; Investment Executive).</li>
