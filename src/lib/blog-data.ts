@@ -25,6 +25,64 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Budget 2026's 'RRSP-for-Life': 449,576 Canadians Turn 71 This Year",
+ slug: "canadian-news-roundup-2026-11-07",
+ date: "November 7, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-07.png",
+ chartType: 'bar',
+ chartTitle: "Canadians aged 71 on July 1 — Statistics Canada Table 17-10-0005-01",
+ chartData: [
+ { name: "2024", value: 411125 },
+ { name: "2025", value: 430797 },
+ { name: "2026", value: 449576 },
+ ],
+ excerpt: "Budget 2026 proposes an 'RRSP-for-life' that ends the forced RRSP-to-RRIF conversion at 71. Outlets say 'hundreds of thousands' a year are affected — StatsCan counts 449,576 Canadians aged 71 this year, up 9.4% in two years. But only 21% of tax filers contributed to an RRSP in 2023.",
+ content: `
+<p><strong>TL;DR:</strong> Budget 2026 proposes merging the RRSP and RRIF into a single <strong>"RRSP-for-life"</strong>, which the budget says "would eliminate the need for individuals to convert their RRSP to a RRIF at age 71." Minimum withdrawals stay, contributions still stop at 71, and a consultation runs to <strong>Jan. 8, 2027</strong>. The number the big outlets aren't using: Statistics Canada counts <strong>449,576 Canadians aged 71</strong> on July 1, 2026 — up <strong>9.4%</strong> from 411,125 in 2024 — with <strong>462,003</strong> aged 70 right behind them. But only <strong>21% of tax filers</strong> (6.35 million of 29.97 million) made an RRSP contribution in 2023.</p>
+
+ <h2 id="budget-2026-rrsp-for-life">What Budget 2026 proposes for RRSPs</h2>
+ <p>Finance Minister François-Philippe Champagne tabled Budget 2026 on Nov. 5. Today, Canadians must cash out their RRSP, buy an annuity, or convert it to a Registered Retirement Income Fund (RRIF) by the end of the year they turn 71. The budget proposes folding the core features of the two accounts into one plan that stays open for life.</p>
+ <ul>
+ <li><strong>No forced conversion:</strong> the RRSP would no longer have to become a RRIF at 71 (Budget 2026, quoted by Global News; Investment Executive).</li>
+ <li><strong>Minimum withdrawals stay:</strong> holders would still have to withdraw a minimum share each year, based on life expectancy (CBC News; Investment Executive).</li>
+ <li><strong>No new contribution years:</strong> contributions still end in the year you turn 71, the Finance Minister's press secretary confirmed to CBC.</li>
+ <li><strong>Successor holder:</strong> a surviving spouse or common-law partner could become a "successor holder", with simpler tax-free transfers to qualified survivors (CBC; Investment Executive).</li>
+ <li><strong>Timing:</strong> a Finance Canada consultation runs until <strong>Jan. 8, 2027</strong>. Nothing changes until legislation passes; CIBC's Jamie Golombek expects it could take years (CBC; Global News).</li>
+ <li><strong>2026 contribution limit:</strong> 18% of 2025 earned income, up to <strong>$33,810</strong> (CBC).</li>
+ </ul>
+
+ <h2 id="by-the-numbers">By the numbers: who the change actually touches</h2>
+ <p>Coverage says the conversion is paperwork for "hundreds of thousands" every year. Statistics Canada lets us put an exact count on it — and on how many Canadians use RRSPs at all:</p>
+ <table>
+ <thead><tr><th>Measure</th><th>Figure</th></tr></thead>
+ <tbody>
+ <tr><td>Canadians aged 71, July 1, 2024</td><td>411,125</td></tr>
+ <tr><td>Canadians aged 71, July 1, 2025</td><td>430,797</td></tr>
+ <tr><td>Canadians aged 71, July 1, 2026</td><td><strong>449,576</strong> (+9.4% vs 2024)</td></tr>
+ <tr><td>Canadians aged 70, July 1, 2026 (next year's cohort)</td><td>462,003</td></tr>
+ <tr><td>Canadians aged 65+, July 1, 2026</td><td>8,378,381 (20.0% of 41.8 million)</td></tr>
+ <tr><td>Tax filers with RRSP contributions, 2023</td><td>6,350,070 of 29,965,100 (21%)</td></tr>
+ <tr><td>Total RRSP contributions, 2023</td><td>$55.73 billion</td></tr>
+ <tr><td>Median RRSP contribution, 2023</td><td>$4,000</td></tr>
+ <tr><td>Average age of RRSP contributors, 2023</td><td>46</td></tr>
+ <tr><td>Share of contributors aged 65+, 2023</td><td>7% (11% of contribution dollars)</td></tr>
+ </tbody>
+ </table>
+ <p>By province, the 71-year-old cohort on July 1, 2026 is largest in Ontario (166,319), Quebec (107,760), British Columbia (64,627) and Alberta (46,523), followed by Manitoba (14,805), Nova Scotia (13,784), Saskatchewan (13,285), New Brunswick (11,439), Newfoundland and Labrador (7,966) and P.E.I. (2,114).</p>
+ <p>Sources: Statistics Canada Table 17-10-0005-01 (population estimates on July 1, by age) and Table 11-10-0044-01 (tax filers with RRSP contributions, 2023 tax year). Not everyone aged 71 holds an RRSP; the cohort is the upper bound of who faces the age-71 deadline this year.</p>
+
+ <h2 id="why-it-matters-rrsp-for-life">Why the cohort size matters</h2>
+ <p>The age-71 deadline arrives for a bigger group every year: nearly 450,000 Canadians this year and more than 460,000 next. Removing a forced account switch for that many people — and letting a surviving spouse simply take over the plan — is real relief for families and for the banks that chase every client turning 71.</p>
+ <p>But the reform is a convenience fix for people who already saved. Only about one in five tax filers put money into an RRSP in 2023, and CPA Canada's Li Zhang told CBC that only 33 to 37 per cent of Canadians have access to a pension. For seniors without registered savings, "RRSP-for-life" changes nothing. The withdrawal minimums — and the tax that comes with them — also stay.</p>
+ <p>Sources: <a href="https://www.cbc.ca/news/business/rrsp-for-life-9.7412568" target="_blank" rel="noopener">CBC News (Jeff Lagerquist)</a> · <a href="https://globalnews.ca/news/12139983/budget-2026-rrsp-for-life/" target="_blank" rel="noopener">Global News (Uday Rana)</a> · <a href="https://www.investmentexecutive.com/news/economy/budget-2026/budget-proposes-rrsp-for-life-eliminating-need-to-convert-to-rrif/" target="_blank" rel="noopener">Investment Executive</a> · <a href="https://budget.canada.ca/2026/report-rapport/pdf/budget-2026.pdf" target="_blank" rel="noopener">Budget 2026</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501" target="_blank" rel="noopener">Statistics Canada Table 17-10-0005-01</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110004401" target="_blank" rel="noopener">Statistics Canada Table 11-10-0044-01</a></p>
+ <p><em>Topic chosen using Google Trends Canada interest on the morning of Nov. 7, 2026. Canadian Data Insights is for education only, not financial or tax advice. Verify primary sources.</em></p>
+ `,
+ },
+
+ {
  title: "Canada Spends $665 Per Capita on Defence. Budget 2026 Charts $157B by 2030",
  slug: "canadian-news-roundup-2026-11-06",
  date: "November 6, 2026",
