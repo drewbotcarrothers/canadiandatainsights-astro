@@ -25,6 +25,67 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Quebec Ends Universal Free Flu Shots: 7,046,190 Residents Under 65 Lose Automatic Coverage",
+ slug: "canadian-news-roundup-2026-11-08",
+ date: "November 8, 2026",
+ category: "News",
+ readTime: "6 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-08.png",
+ chartType: 'bar',
+ chartTitle: "Quebec population on July 1, 2026 — Statistics Canada Table 17-10-0005-01",
+ chartData: [
+ { name: "Under 65", value: 7046190 },
+ { name: "65 and older", value: 2020924 },
+ ],
+ excerpt: "Quebec is the only Canadian province that no longer offers free flu shots to everyone, as cases run about five times higher than last year at this time. Outlets have not quantified who lost automatic coverage: Statistics Canada counts 7,046,190 Quebecers under 65 on July 1, 2026 — 77.7% of the province. They are no longer automatically eligible (exceptions include chronic conditions, pregnancy, health-care workers, certain residences and household contacts). Another 2,020,924 residents aged 65 and older still qualify by age.",
+ content: `
+<p><strong>TL;DR:</strong> Quebec has returned to a pre-pandemic, risk-based flu-shot program and is now the only Canadian province that does not offer free flu shots to everyone, <a href="https://www.cbc.ca/news/canada/montreal/quebec-flu-shots-9.7412417" target="_blank" rel="noopener">CBC News reported on Nov. 8</a>. Infectious disease physician Dr. Don Vinh told CBC cases are about <strong>five times higher</strong> than last year at this time — a rise he said is likely <em>not</em> caused by the policy shift — and that people who pay out of pocket face a bill of <strong>$30 to $60</strong>. The number the big outlets are not using: Statistics Canada counts <strong>7,046,190 Quebecers under 65</strong> on July 1, 2026 — <strong>77.7%</strong> of the province’s 9,067,114 residents — who are no longer automatically eligible for a free shot. That is not the same as saying all of them must pay. Another <strong>2,020,924</strong> Quebecers aged 65 and older (22.3% of the province, versus 20.0% of Canada) still qualify by age.</p>
+
+<h2 id="quebec-flu-shots-not-universal">Quebec is the only province without free flu shots for everyone</h2>
+<p>This fall, Quebec stopped providing free flu shots to everyone and returned to the risk-based model it used before the pandemic (CBC News, Hayley Carolan, posted Nov. 8, 2026, 4:00 a.m. EST). During the pandemic the province offered free flu vaccines to everyone as an “exceptional” measure; CBC notes it also stopped paying for everyone’s COVID-19 vaccines last year.</p>
+<p>The Globe and Mail reported the policy change on Sept. 4, 2026 (Tu Thanh Ha and Alanna Smith): other provinces reached by the Globe said they were still maintaining flu-shot coverage, typically offering the vaccine free to everyone six months of age and older. Quebec’s Health Department told the Globe the decision relied on guidance from the province’s immunization committee (CIQ). Department spokesman Émile Giard said that in recent years, “particularly during the pandemic, the decision was made to offer free vaccination to everyone,” and that “this year marks a change so that the vaccination program reflects the recommendations of the CIQ.” The <a href="https://montrealgazette.com/news/provincial-news/quebec-no-longer-offering-free-flu-vaccines-to-everyone/" target="_blank" rel="noopener">Montreal Gazette</a> (Abby McLaughlin, Sept. 30, 2026) quoted Health Ministry spokesperson Marie-Christine Patry using the same wording. The Globe also reported that an 11-page interim CIQ scientific opinion released in April recommended harmonizing the criteria for Quebec’s flu and COVID-19 vaccination programs, citing an interest in synchronizing the fall campaigns “to increase coverage, facilitate planning and reduce costs.”</p>
+<p>Vinh, of the McGill University Health Centre, told CBC the out-of-pocket cost creates “an equity barrier to people who have to pay out of pocket, $30 to $60 for a flu shot.” In an earlier Globe and Mail report (Oct. 2, 2026), Marilie Beaulieu-Gravel of the Association québécoise des pharmaciens propriétaires said people who do not qualify can expect to pay between $30 and $40. Quebec’s <a href="https://www.quebec.ca/en/health/advice-and-prevention/vaccination/flu-vaccine" target="_blank" rel="noopener">official flu-vaccine page</a> (last updated Oct. 13, 2026) does not publish a price; it tells people to contact a pharmacy or medical clinic.</p>
+<p>CBC summarized free coverage this year as: people aged 65 and older; people aged 6 months and older with certain chronic conditions; residents of CHSLDs, senior housing, intermediate care facilities for seniors, or private senior residences; pregnant people at 13 weeks or more; health-care workers; and people living in the same household as those groups. Quebec’s official page lists the same core groups in more detail — including pregnant people with certain chronic diseases at any stage, or who are healthy and at 13 weeks or more; residents of CHSLDs, Elders’ Houses, RI-SAPA intermediate resources, RPAs and similar communal settings; health-care staff; and household relatives or informal caregivers of a child under 6 months, a person aged 75 or older, a resident of those settings, a pregnant person, or a person living with certain chronic diseases. The page says a health professional can help if someone is unsure.</p>
+<p>Canada’s National Advisory Committee on Immunization (NACI) recommends the flu vaccine for all children from six months to under five years old. CBC reported that Quebec only pays for children with certain chronic conditions.</p>
+<p>Vinh told CBC flu cases are around five times higher than last year at this time, but that this is not likely linked to the change in vaccination strategy. He said the season started earlier, and that increased travel and climate change — which can affect how viruses mutate — could also be factors. Limiting funding to higher-risk groups, he said, is “an administrative decision, not a medical one.” National and international committees, he said, agree that people aged six months and older benefit from the flu vaccine. He warned the policy could discourage vaccination, that some eligible people might not realize they qualify, and that illness uses health-care resources and leads to missed school and work.</p>
+<p>Quebec’s public health institute told CBC the idea is to decrease hospitalization by vaccinating more people in higher-risk groups. It said young adults with chronic disease in Quebec have a vaccination rate of less than 50 per cent, and that its priority is more initiatives to reach this group, without specifying how. The health ministry told CBC that universal programs do not necessarily mean more people get vaccinated, and that the goal is not to eliminate flu cases but to prevent serious complications, hospitalization and death. The institute said a risk-based strategy could prevent more hospitalizations than a universal one.</p>
+<p>Dr. Jesse Papenburg, a pediatric infectious disease specialist at the Montreal Children’s Hospital and president of the committee that makes Quebec’s vaccine recommendations — not speaking on behalf of the group — told CBC it is still too early to know whether there will be more cases overall this year or a shift in the usual timeline. Quebec is an outlier in Canada, he said, but some European countries use targeted approaches. “It’s about making sure that we’re using our health-care resources in an efficient way, in a cost-effective way,” he said. The health ministry told CBC that vulnerable people should get their shots before the holiday season, and that flu, COVID-19 and RSV vaccines can be given in the same appointment.</p>
+
+<h2 id="by-the-numbers">By the numbers: who lost automatic coverage</h2>
+<p>Coverage says Quebec is the only province without universal free flu shots, and that cases are about five times higher than last year at this time. Statistics Canada lets us put a count on the population that is no longer automatically covered by age — and on the preschool ages closest to the group NACI flags as particularly important:</p>
+<table>
+<thead><tr><th>Measure</th><th>Figure</th></tr></thead>
+<tbody>
+<tr><td>Quebec population, July 1, 2026</td><td>9,067,114</td></tr>
+<tr><td>Quebec aged 65 and older (still automatically eligible by age)</td><td><strong>2,020,924</strong> (22.3%)</td></tr>
+<tr><td>Quebec under 65 (no longer automatically eligible)</td><td><strong>7,046,190</strong> (77.7%)</td></tr>
+<tr><td>Canada aged 65 and older, July 1, 2026</td><td>8,378,381 of 41,798,407 (20.0%)</td></tr>
+<tr><td>Quebec aged 65 and older, July 1, 2025</td><td>1,962,813</td></tr>
+<tr><td>Quebec aged 65 and older, July 1, 2024</td><td>1,905,282</td></tr>
+<tr><td>Quebec change in 65-and-older population, 2025 to 2026</td><td>+58,111 (+3.0%)</td></tr>
+<tr><td>Quebec children aged 0 (under 1 year), July 1, 2026</td><td>78,176</td></tr>
+<tr><td>Quebec children aged 1</td><td>77,535</td></tr>
+<tr><td>Quebec children aged 2</td><td>79,271</td></tr>
+<tr><td>Quebec children aged 3</td><td>82,309</td></tr>
+<tr><td>Quebec children aged 4</td><td>88,875</td></tr>
+<tr><td>Quebec children aged 1 to 4 combined</td><td>327,990</td></tr>
+<tr><td>Quebec children aged 0 to 4</td><td>406,166</td></tr>
+</tbody>
+</table>
+<p>Under-65 Quebecers are no longer <em>automatically</em> covered. Many still qualify — including people with certain chronic conditions, pregnant people (from 13 weeks if otherwise healthy), health-care workers, residents of listed senior-care settings, and specified household contacts or caregivers. The 7,046,190 figure is the age-based upper bound of who lost automatic eligibility, not a count of people who must pay.</p>
+<p>The 0-to-4 totals are the closest published Statistics Canada ages to NACI’s “six months to under five years” group. They are not an exact match: age 0 includes infants under six months, who are not recommended for the flu vaccine, and the table has no “6 months to 4 years” bin.</p>
+<p>Sources: Statistics Canada Table 17-10-0005-01 (population estimates on July 1, by age and gender). The table’s reference date appears as 2026-01-01; the underlying raw period is July 1, 2026. <a href="https://canadiandatainsights.com/location/quebec/" target="_blank" rel="noopener">Canadian Data Insights’ Quebec profile</a>, based on the 2021 Census, reports a provincial population of 8,501,833 (up 4.1% from 8,164,361 in 2016), including 422,980 children aged 0 to 4. That Census count is a different vintage from the July 1, 2026 estimates above.</p>
+
+<h2 id="why-it-matters-quebec-flu">Why the under-65 count matters</h2>
+<p>More than seven million Quebecers under 65 are no longer automatically offered a free flu shot, in the only province that has dropped universal coverage, while a physician at the MUHC is telling CBC that cases are already about five times higher than last year at this time. Vinh argues the funding limit is an administrative choice, not a medical one, and that eligible people may not realize they still qualify. Quebec’s public health institute and health ministry counter that a targeted program can focus resources on people at highest risk of hospitalization and death — including young adults with chronic disease, whose vaccination rate the institute put at less than 50 per cent.</p>
+<p>Those are policy arguments. The unused number is simpler: 7,046,190 residents under 65 have lost automatic coverage, 2,020,924 aged 65 and older still have it by age, and the closest published count of preschool-age children — the group NACI says is particularly important to vaccinate — is 78,176 children aged 0 (under 1 year) plus 327,990 children aged 1 to 4.</p>
+<p>Sources: <a href="https://www.cbc.ca/news/canada/montreal/quebec-flu-shots-9.7412417" target="_blank" rel="noopener">CBC News (Hayley Carolan)</a> · <a href="https://www.theglobeandmail.com/canada/article-quebec-will-not-administer-free-flu-shots-this-fall/" target="_blank" rel="noopener">The Globe and Mail (Sept. 4, 2026)</a> · <a href="https://www.theglobeandmail.com/canada/article-quebec-lose-flu-shot-coverage-vaccine-covid-19/" target="_blank" rel="noopener">The Globe and Mail (Oct. 2, 2026)</a> · <a href="https://montrealgazette.com/news/provincial-news/quebec-no-longer-offering-free-flu-vaccines-to-everyone/" target="_blank" rel="noopener">Montreal Gazette</a> · <a href="https://www.quebec.ca/en/health/advice-and-prevention/vaccination/flu-vaccine" target="_blank" rel="noopener">Gouvernement du Québec, Flu vaccination</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501" target="_blank" rel="noopener">Statistics Canada Table 17-10-0005-01</a> · <a href="https://canadiandatainsights.com/location/quebec/" target="_blank" rel="noopener">CDI Quebec profile</a></p>
+<p><em>Topic chosen using Google Trends Canada interest on the morning of Nov. 8, 2026. Canadian Data Insights is for education only, not medical advice. This is not a substitute for advice from a qualified health professional. Eligibility, timing and cost can change; verify them with Quebec public-health sources, the official flu-vaccine page, or your health-care provider.</em></p>
+ `,
+ },
+
+ {
  title: "Budget 2026's 'RRSP-for-Life': 449,576 Canadians Turn 71 This Year",
  slug: "canadian-news-roundup-2026-11-07",
  date: "November 7, 2026",
