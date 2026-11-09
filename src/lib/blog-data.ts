@@ -25,6 +25,72 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Gun Ban at the Supreme Court: Firearm Homicides Fell to 221 in 2025, the Fewest Since 2015",
+ slug: "canadian-news-roundup-2026-11-09",
+ date: "November 9, 2026",
+ category: "News",
+ readTime: "6 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-09.png",
+ chartType: 'bar',
+ chartTitle: "Firearm homicide victims in Canada, 2015–2025 — Statistics Canada Table 35-10-0170-01",
+ chartData: [
+ { name: "2015", value: 181 },
+ { name: "2016", value: 223 },
+ { name: "2017", value: 267 },
+ { name: "2018", value: 253 },
+ { name: "2019", value: 264 },
+ { name: "2020", value: 280 },
+ { name: "2021", value: 299 },
+ { name: "2022", value: 346 },
+ { name: "2023", value: 297 },
+ { name: "2024", value: 288 },
+ { name: "2025", value: 221 },
+ ],
+ excerpt: "The Supreme Court of Canada hears the challenge to Ottawa’s 2020 assault-style firearms ban on Nov. 9 and 10. Coverage focuses on cabinet’s legal power and buyback dollars. The number it leaves out: Statistics Canada counts 221 firearm homicide victims in 2025, the fewest since 2015 and 36% below the 2022 peak of 346. Handguns were used in 112 of them, rifles or shotguns in 70.",
+ content: `
+<p><strong>TL;DR:</strong> The Supreme Court of Canada is hearing four appeals against the federal government’s May 2020 ban on assault-style firearms on Monday, Nov. 9 and Tuesday, Nov. 10. The Globe and Mail calls it the biggest hearing at the top court this fall. The court will decide whether cabinet had the power to ban the guns by regulation. The number the big outlets are not using comes from Statistics Canada: police reported <strong>221 firearm homicide victims in 2025</strong>. That is the <strong>fewest since 2015</strong>, down <strong>23.3%</strong> from 288 in 2024 and <strong>36.1%</strong> from the 2022 peak of 346. Handguns were used in <strong>112</strong> of those homicides and rifles or shotguns in <strong>70</strong>.</p>
+
+<h2 id="supreme-court-firearms-ban-hearing">The firearms ban reaches the Supreme Court</h2>
+<p>In May 2020, the federal government prohibited the use, sale and importation of 1,500 firearms models and variants, including the AR-15 and Ruger Mini-14, <a href="https://www.winnipegfreepress.com/canada/2026/11/09/in-the-news-today-gun-ban-court-fight-osap-pause-b-c-storms-laboratory-fined" target="_blank" rel="noopener">The Canadian Press reported on Nov. 9</a>. Ottawa used regulatory powers rather than legislation. It increased the list to more than 2,500 types of firearms in late 2024 and early 2025, according to <a href="https://www.theglobeandmail.com/canada/article-gun-users-battle-ottawas-firearms-ban-at-supreme-court/" target="_blank" rel="noopener">The Globe and Mail</a> (David Ebner). Opponents lost in the Federal Court and the Federal Court of Appeal. A Federal Court judge dismissed a request to strike down the ban in October 2023. The Supreme Court agreed in March to hear the appeals.</p>
+<p>According to the <a href="https://www.scc-csc.ca/cases-dossiers/hearings-audiences/scheduled-prevues/41858-41859-41860-41861/" target="_blank" rel="noopener">Supreme Court’s counsel sheet</a>, four cases are being heard together: Christine Generoux et al., the Canadian Coalition for Firearm Rights et al., Michael John Doherty et al., and Jennifer Eichenberg et al., all against the Attorney General of Canada. On day one, the appellants and the federal government each get 90 minutes. Day two is for interveners, including the attorneys general of Ontario, Saskatchewan and Alberta, with 10 minutes each. The court is not expected to rule at the hearing. A judgment will come later.</p>
+<p>The Globe reports that several self-represented litigants will argue without a lawyer, including Generoux, from Ottawa. “Sport shooting is destroyed and hunting disrupted,” she stated in her filing. The Canadian Coalition for Firearm Rights argued the regulations were too vague to be within Ottawa’s powers. It also argued that mass shootings are rare in Canada and most high-profile shootings involve illegal guns. Five other gun groups and the provinces of Alberta, Saskatchewan and Ontario also oppose the ban. Alberta’s filing said Ottawa criminalized firearms ownership “at the stroke of a pen” for more than 100,000 Canadians licensed to own such guns. Ontario stated: “The regulations are unconstitutional.”</p>
+<p>Ottawa’s response began by listing mass shootings in which killers used assault-style firearms, including Portapique, N.S., in 2020, École Polytechnique in 1989 and the Quebec City mosque in 2017. It argues Parliament has long given cabinet broad discretion to prohibit firearms in the interest of public safety, and that the ban “was reasonable and justified by the serious public safety concerns these firearms pose.” The Canadian Coalition for Gun Control is the only intervener explicitly backing Ottawa, the Globe reports.</p>
+
+<h2 id="buyback-and-amnesty">What happens to the guns: buyback and amnesty</h2>
+<p>An amnesty protects owners of the prohibited firearms until <strong>90 days after the Supreme Court rules</strong>. <a href="https://www.canada.ca/en/public-safety-canada/campaigns/firearms-buyback.html" target="_blank" rel="noopener">Public Safety Canada</a> says the amnesty orders for the 2020, 2024 and 2025 prohibitions now expire on that timeline. The declaration period for individuals has ended, and collection, deactivation and compensation were expected to run from spring to early fall 2026. The business program has closed. “While participating in the program is voluntary, compliance with the law is not,” the department says.</p>
+<p>As of mid-2026, the federal government had paid businesses <strong>$96 million</strong> for about <strong>74,000</strong> guns, an average of about <strong>$1,300</strong> per weapon, the Globe reports.</p>
+
+<h2 id="by-the-numbers">By the numbers: firearm homicides in Canada</h2>
+<p>Statistics Canada’s Homicide Survey counts homicide victims by the type of firearm used. Its latest data, released July 22, 2026, cover 2025:</p>
+<table>
+<thead><tr><th>Year</th><th>Firearm homicide victims</th><th>Handgun</th><th>Rifle or shotgun</th><th>Share of all homicides</th></tr></thead>
+<tbody>
+<tr><td>2015</td><td>181</td><td>102</td><td>62</td><td>30.4%</td></tr>
+<tr><td>2020</td><td>280</td><td>138</td><td>86</td><td>37.9%</td></tr>
+<tr><td>2021</td><td>299</td><td>171</td><td>81</td><td>39.2%</td></tr>
+<tr><td>2022</td><td><strong>346</strong> (peak)</td><td>218</td><td>79</td><td>40.0%</td></tr>
+<tr><td>2023</td><td>297</td><td>169</td><td>75</td><td>38.6%</td></tr>
+<tr><td>2024</td><td>288</td><td>162</td><td>99</td><td>37.5%</td></tr>
+<tr><td>2025</td><td><strong>221</strong></td><td><strong>112</strong></td><td><strong>70</strong></td><td><strong>34.5%</strong></td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>221</strong> firearm homicide victims in 2025 is the lowest count since 2015 (181).</li>
+<li>That is down <strong>23.3%</strong> from 2024 (288) and <strong>36.1%</strong> from the 2022 peak (346).</li>
+<li>Handguns accounted for <strong>60.9%</strong> of 2025 firearm homicides where the gun type was known; rifles or shotguns for <strong>38.0%</strong>. In 37 cases the type was unknown.</li>
+<li>Canada recorded <strong>672</strong> homicide victims of all kinds in 2025, down from 797 in 2024 (Table 35-10-0069-01).</li>
+</ul>
+<p>Two cautions. First, Statistics Canada does not separate the banned “assault-style” models from other rifles and shotguns, so these numbers cannot show how often banned guns were used. Second, the data show <em>that</em> firearm homicides fell, not <em>why</em>. They do not prove or disprove that the ban worked. Homicides are counted in the year police report them, and “share of all homicides” excludes cases where the cause of death is unknown.</p>
+<p>Sources: <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017001" target="_blank" rel="noopener">Statistics Canada Table 35-10-0170-01</a> (homicide victims by type of firearm) and <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510006901" target="_blank" rel="noopener">Table 35-10-0069-01</a> (homicide victims by method). See how Canadian Data Insights uses Statistics Canada data on our <a href="/sources/">sources page</a>.</p>
+
+<h2 id="why-it-matters-firearms-ban">Why it matters</h2>
+<p>The legal question is narrow: whether cabinet could ban more than 1,500 models (now more than 2,500) by regulation instead of through a law passed by Parliament. The stakes are broad. Whatever the court decides, the 90-day amnesty clock starts with its ruling. The data add a backdrop that rarely appears in the debate. Firearm homicides are down to 221, the fewest since 2015, and handguns, not rifles or shotguns, still account for most of them.</p>
+<p>Sources: <a href="https://www.theglobeandmail.com/canada/article-gun-users-battle-ottawas-firearms-ban-at-supreme-court/" target="_blank" rel="noopener">The Globe and Mail</a> · <a href="https://www.winnipegfreepress.com/canada/2026/11/09/in-the-news-today-gun-ban-court-fight-osap-pause-b-c-storms-laboratory-fined" target="_blank" rel="noopener">The Canadian Press</a> · <a href="https://www.scc-csc.ca/cases-dossiers/hearings-audiences/scheduled-prevues/41858-41859-41860-41861/" target="_blank" rel="noopener">Supreme Court of Canada counsel sheet</a> · <a href="https://www.canada.ca/en/public-safety-canada/campaigns/firearms-buyback.html" target="_blank" rel="noopener">Public Safety Canada</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510017001" target="_blank" rel="noopener">Statistics Canada Table 35-10-0170-01</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510006901" target="_blank" rel="noopener">Statistics Canada Table 35-10-0069-01</a></p>
+<p><em>Topic chosen using Google Trends Canada interest on the morning of Nov. 9, 2026. Canadian Data Insights is for education only, not legal advice. Firearm owners should confirm their obligations with Public Safety Canada or the RCMP.</em></p>
+ `,
+ },
+ {
  title: "Quebec Ends Universal Free Flu Shots: 7,046,190 Residents Under 65 Lose Automatic Coverage",
  slug: "canadian-news-roundup-2026-11-08",
  date: "November 8, 2026",
