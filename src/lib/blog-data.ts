@@ -25,6 +25,71 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Stellantis Sells Its Brampton Plant: Ontario's Auto Assembly Jobs Are Down 37% Since 2001",
+ slug: "canadian-news-roundup-2026-11-10",
+ date: "November 10, 2026",
+ category: "News",
+ readTime: "6 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-10.png",
+ chartType: 'bar',
+ chartTitle: "Ontario motor vehicle manufacturing employment (NAICS 3361), 2015–2025 — Statistics Canada Table 14-10-0202-01",
+ chartData: [
+ { name: "2015", value: 35840 },
+ { name: "2016", value: 37937 },
+ { name: "2017", value: 38112 },
+ { name: "2018", value: 38120 },
+ { name: "2019", value: 37658 },
+ { name: "2020", value: 30195 },
+ { name: "2021", value: 31335 },
+ { name: "2022", value: 32211 },
+ { name: "2023", value: 31563 },
+ { name: "2024", value: 28815 },
+ { name: "2025", value: 29024 },
+ ],
+ excerpt: "Stellantis has agreed to sell its idled Brampton Assembly Plant to armoured-vehicle maker Roshel. The number the coverage leaves out: Statistics Canada counts 29,024 motor vehicle assembly payroll jobs in Ontario in 2025, down 37% from 46,062 in 2001 and 24% from 2018. And Brampton leans on manufacturing more than Ontario does: 11.9% of its workers versus 8.9%.",
+ content: `
+<p><strong>TL;DR:</strong> Stellantis announced on Monday, Nov. 9 that it will sell its idled Brampton Assembly Plant to Roshel, a Brampton-based maker of armoured vehicles, for an undisclosed amount. The deal is expected to close by the end of 2026. Unifor calls it the “worst-case scenario.” The number the big outlets are not using comes from Statistics Canada: Ontario had <strong>29,024</strong> motor vehicle manufacturing payroll jobs in 2025. That is down <strong>37%</strong> from 46,062 in 2001 and <strong>24%</strong> from 38,120 in 2018, and close to the series low of 28,815 in 2024. Ontario holds <strong>81.5%</strong> of Canada’s 35,593 such jobs.</p>
+
+<h2 id="stellantis-brampton-roshel-sale">Stellantis sells the Brampton plant to Roshel</h2>
+<p>Under an asset purchase agreement, Roshel will acquire the Brampton Assembly Plant and its equipment, <a href="https://media.stellantisnorthamerica.com/newsrelease.do?id=28190&mid=1" target="_blank" rel="noopener">Stellantis said in a joint release</a>. The companies will also explore working together on vehicle technologies for the defence industry. The deal still needs to meet closing conditions, including government and regulatory requirements. Stellantis said it employs more than 10,000 Canadians outside Brampton, including at Windsor Assembly Plant and Etobicoke Casting Plant.</p>
+<p>Roshel says it has deployed more than 2,500 armoured vehicles to Ukraine. Its CEO, Roman Shimonov, said the plan is a new “Centre of Excellence for advanced manufacturing.” About 700 to 1,000 laid-off Stellantis employees could return to work under Roshel, and Roshel plans to lease about one-quarter of the site back to Stellantis for automotive work, <a href="https://globalnews.ca/news/12143427/stellantis-roshel-brampton-assembly-plant-deal/" target="_blank" rel="noopener">Global News reports</a>. Shimonov told <a href="https://www.cbc.ca/news/canada/toronto/stellantis-brampton-plant-9.7415345" target="_blank" rel="noopener">CBC</a> that Roshel has a letter of intent from a major European automaker he would not name. “Our goal is to employ thousands of people and we’ll definitely give the first priority to Brampton people,” he said.</p>
+<p>The plant stopped production in 2023 to retool, and more than 2,000 workers were laid off. Retooling for Jeep production began in early 2024 and was paused in early 2025. Stellantis later moved Jeep Compass production to Illinois. <a href="https://www.theglobeandmail.com/business/article-stellantis-sale-brampton-auto-plant-roshel-november-9/" target="_blank" rel="noopener">The Globe and Mail</a> reports the plant employed more than 3,000 people and covers 2.95 million square feet on 269 acres.</p>
+
+<h2 id="unifor-and-ottawa-react">Unifor and Ottawa react</h2>
+<p>Unifor national president Lana Payne called the sale an “unacceptable outcome.” She said closing and selling the plant cuts Canada’s vehicle production capacity by 10 per cent. “Once that capacity is gone, it’s often gone for good,” she told reporters. Stellantis workers in Canada voted 97.3% last month to give Unifor a strike mandate. The union represents more than 9,000 Stellantis workers in Canada. Payne said a strike remains a last resort.</p>
+<p>Industry Minister Mélanie Joly said the sale does not “erase the commitment” Stellantis made to its workers. She is calling a meeting this week with Stellantis, Unifor, the Ontario government and plant representatives. Brampton Mayor Patrick Brown said Stellantis should repay public funding it received for production in the city. Stellantis said it acknowledges its obligations under the collective agreement and is prepared to negotiate a settlement with Unifor.</p>
+
+<h2 id="by-the-numbers">By the numbers: Ontario’s auto assembly jobs</h2>
+<p>Statistics Canada’s Survey of Employment, Payrolls and Hours counts payroll employees by industry. The table below shows motor vehicle manufacturing (NAICS 3361, vehicle assembly), all employees:</p>
+<table>
+<thead><tr><th>Year</th><th>Ontario</th><th>Canada</th><th>Ontario share</th></tr></thead>
+<tbody>
+<tr><td>2001</td><td>46,062</td><td>53,204</td><td>86.6%</td></tr>
+<tr><td>2008</td><td>38,073</td><td>43,347</td><td>87.8%</td></tr>
+<tr><td>2018</td><td>38,120</td><td>44,747</td><td>85.2%</td></tr>
+<tr><td>2020</td><td>30,195</td><td>36,304</td><td>83.2%</td></tr>
+<tr><td>2023</td><td>31,563</td><td>38,310</td><td>82.4%</td></tr>
+<tr><td>2024</td><td>28,815</td><td>35,933</td><td>80.2%</td></tr>
+<tr><td>2025</td><td><strong>29,024</strong></td><td><strong>35,593</strong></td><td><strong>81.5%</strong></td></tr>
+</tbody>
+</table>
+<ul>
+<li>Ontario’s vehicle assembly payroll was <strong>29,024</strong> in 2025, down <strong>37.0%</strong> from 2001 and <strong>23.9%</strong> from 2018.</li>
+<li>Canada-wide, the count fell <strong>33.1%</strong>, from 53,204 in 2001 to 35,593 in 2025.</li>
+<li>Parts plants employ more people than assembly plants. Ontario motor vehicle parts manufacturing (NAICS 3363) had <strong>61,060</strong> payroll jobs in 2025, down from 89,317 in 2001.</li>
+</ul>
+<p>Brampton leans on factory work more than the rest of the province. In the 2021 Census, <strong>42,495</strong> of Brampton’s <strong>355,755</strong> workers (<strong>11.9%</strong>) were in manufacturing. That compares with <strong>8.9%</strong> in Ontario and <strong>8.0%</strong> in Canada. See the full profile on our <a href="/location/brampton/">Brampton page</a>.</p>
+<p>Two cautions. Statistics Canada does not publish employment for a single plant, so these figures cannot show how many Brampton workers are still counted on payroll during their paid layoff. The table has no Ontario figures for 2002 to 2007, and Statistics Canada attaches data-quality ratings to the estimates.</p>
+<p>Sources: <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410020201" target="_blank" rel="noopener">Statistics Canada Table 14-10-0202-01</a> (employment by industry, annual) and the 2021 Census of Population via our <a href="/location/brampton/">Brampton page</a>. See how Canadian Data Insights uses Statistics Canada data on our <a href="/sources/">sources page</a>.</p>
+
+<h2 id="why-it-matters-brampton-plant">Why it matters</h2>
+<p>The sale shows where Canada’s auto footprint is heading. Ontario holds more than four in five of Canada’s vehicle assembly jobs, and that count is already near its lowest point in the data. Selling an assembly plant to a defence company means Brampton will build something, but not the full vehicles it once did, unless the Stellantis lease-back or Roshel’s unnamed European automaker brings that work back. For more than 2,000 laid-off workers, the details from this week’s meeting will matter more than the headline.</p>
+<p>Sources: <a href="https://media.stellantisnorthamerica.com/newsrelease.do?id=28190&mid=1" target="_blank" rel="noopener">Stellantis</a> · <a href="https://www.cbc.ca/news/canada/toronto/stellantis-brampton-plant-9.7415345" target="_blank" rel="noopener">CBC News</a> · <a href="https://www.theglobeandmail.com/business/article-stellantis-sale-brampton-auto-plant-roshel-november-9/" target="_blank" rel="noopener">The Globe and Mail</a> · <a href="https://globalnews.ca/news/12143427/stellantis-roshel-brampton-assembly-plant-deal/" target="_blank" rel="noopener">Global News</a> · <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410020201" target="_blank" rel="noopener">Statistics Canada Table 14-10-0202-01</a></p>
+<p><em>Topic chosen using Google Trends Canada interest on the morning of Nov. 10, 2026. Canadian Data Insights is for education only, not investment or legal advice.</em></p>
+ `,
+ },
+ {
  title: "Gun Ban at the Supreme Court: Firearm Homicides Fell to 221 in 2025, the Fewest Since 2015",
  slug: "canadian-news-roundup-2026-11-09",
  date: "November 9, 2026",
