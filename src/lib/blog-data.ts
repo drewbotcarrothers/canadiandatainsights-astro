@@ -25,6 +25,63 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Remembrance Day 2026: Four Soldiers Died Training at CFB Wainwright. Canada Still Wants Answers",
+ slug: "canadian-news-roundup-2026-11-11",
+ date: "November 11, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-11.png",
+ chartType: 'bar',
+ chartTitle: "CFB Wainwright fire, Oct. 17, 2026: soldiers killed, injured and still in hospital (National Defence; Canadian Press; Acute Care Alberta via CBC News)",
+ chartData: [
+ { name: "Killed", value: 4 },
+ { name: "Injured", value: 39 },
+ { name: "Still in hospital (all provinces)", value: 25 },
+ { name: "In hospital in Alberta", value: 21 },
+ { name: "On ventilators (Alberta)", value: 15 },
+ { name: "Critical (Alberta)", value: 9 },
+ ],
+ excerpt: "Canada pauses today for its war dead, but this year's freshest losses came at home. A grass fire at CFB Wainwright killed four soldiers and injured 39 during live-fire training on Oct. 17. Twenty-five are still in hospital, investigators want to know why training went on while the range burned, and the Silver Cross Mother laying today's national wreath lost her own daughter in a training accident.",
+ content: `
+<p><strong>TL;DR:</strong> On Oct. 17, a grass fire swept through a training area at Canadian Forces Base Wainwright in Alberta. Four soldiers were killed and 39 were injured. Officials said last week that 25 were still in hospital; in Alberta, 21 remain in hospital, nine in critical condition and 15 on ventilators. The fire started on a grenade launcher range that firefighters could not enter, and investigators are asking why training continued for hours while it burned. Today, the National Silver Cross Mother, Virginia Hicks, lays the national wreath in Ottawa. Her daughter also died in training.</p>
+
+<h2 id="remembrance-day-wainwright-fire">Remembrance Day under the shadow of Wainwright</h2>
+<p>Remembrance Day honours Canadians who died in service. This year, the most recent names on that list did not die overseas. Sgt. Morgan Wong, 26, of Edmonton; Pte. Shaun Farrell, 23, of Prince Albert, Sask.; Pte. Aidan Goulding, 23, of North Vancouver; and Pte. Hayden Lykkemark, 19, of Langley, B.C., were killed at CFB Wainwright on Oct. 17, <a href="https://globalnews.ca/news/12144233/wainwright-remembrance-day/" target="_blank" rel="noopener">The Canadian Press reports</a>. Prime Minister Mark Carney has called it one of the worst tragedies for the Armed Forces on Canadian soil in peacetime.</p>
+<p>Roughly 84 soldiers with the Princess Patricia's Canadian Light Infantry were on a field exercise when strong, sudden winds pushed a grass fire into their path. The fire reached C Company of the 3rd Battalion, PPCLI, which was doing live-fire training to prepare for a deployment to Latvia this spring, <a href="https://www.cbc.ca/news/politics/chief-of-defence-staff-wainwright-speed-of-fire-9.7393268" target="_blank" rel="noopener">CBC News reports</a>.</p>
+
+<h2>The fire burned for hours before it reached the soldiers</h2>
+<p>Military officials say the fire started from training on an automatic grenade launcher range. It broke out in a "permanent danger zone," an area firefighters could not enter because unexploded ordnance could be on the ground. The base fire hall and range control monitored it "throughout the day," the Canadian Forces Provost Marshal said. When the wind picked up, the fire grew and spread.</p>
+<p>That is the central question now: investigators are trying to find out what caused the fire and why training was allowed to continue for hours. Chief of the Defence Staff Gen. Jennie Carignan said soldiers could not escape "mostly due to how fast the fire travelled." Training has resumed at the base, and she said nothing so far shows a need for immediate changes.</p>
+<p>Retired Maj. Robert Parent, a former president of a military Board of Inquiry, told CBC: "One decision at any time during this process would have avoided the final and tragic outcome."</p>
+
+<h2>Three investigations, no answers yet</h2>
+<p>Military Police are investigating independently of the chain of command to determine whether any criminal or service offences occurred, <a href="https://www.canada.ca/en/department-national-defence/news/2026/10/canadian-armed-forces-provides-update-on-incident-at-canadian-forces-base-wainwright.html" target="_blank" rel="noopener">National Defence said</a>. A separate Board of Inquiry is being convened to find out how it happened and what lessons can prevent a repeat. In all, three investigations are looking into the fire.</p>
+
+<h2>25 soldiers still in hospital</h2>
+<p>Officials said last week that 25 soldiers were still in hospital. In Alberta, 21 remain in hospital, nine in critical condition and 15 on ventilators, according to Acute Care Alberta, <a href="https://www.cbc.ca/news/canada/edmonton/specialized-burn-treatments-soldiers-wainwright-military-base-fire-9.7415813" target="_blank" rel="noopener">CBC News reports</a>. Health Canada used its special access program to bring in RECELL, an unlicensed spray-on skin device, to treat the burns. Burn specialists from Toronto were flown to Edmonton on a military Hercules in October.</p>
+
+<h2>The Silver Cross Mother knows this loss</h2>
+<p>This year's National Silver Cross Mother is Virginia Hicks of Frankford, Ont. Her daughter, Sapper Mariebeth Short, a 22-year-old combat engineer, was killed when her light armoured vehicle rolled over during a training exercise at CFB Petawawa on Sept. 23, 2002, <a href="https://www.cbc.ca/news/thenational/silver-cross-mother-2026-9.7402837" target="_blank" rel="noopener">CBC News reports</a>. Today she lays a wreath at the National War Memorial in Ottawa.</p>
+<p>When she heard about Wainwright, Hicks said: "Oh my God, not again." Then: "I now have four more members of our club." The families of the four soldiers will receive the Memorial Cross.</p>
+<p>In Wainwright, a town of about 7,000 people 210 km southeast of Edmonton, the ceremony fills the local ice rink. "It will be different this year just with the weight of what happened," Mayor Bruce Pugh said.</p>
+
+<h2>Why it matters</h2>
+<p>Canada keeps training troops for missions abroad, including the Latvia deployment. The soldiers who died at Wainwright were preparing for that mission. Their families, and every family with someone in uniform, are owed a clear account of how a fire on a closed range ended up killing four people, and what changes before the next exercise. Remembering the fallen also means getting answers for the ones lost at home.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.canada.ca/en/department-national-defence/news/2026/10/canadian-armed-forces-provides-update-on-incident-at-canadian-forces-base-wainwright.html" target="_blank" rel="noopener">National Defence: CAF update on the CFB Wainwright incident (Oct. 22, 2026)</a></li>
+<li><a href="https://www.cbc.ca/news/politics/chief-of-defence-staff-wainwright-speed-of-fire-9.7393268" target="_blank" rel="noopener">CBC News: Rapid spread of fire was main factor in CFB Wainwright deaths, injuries</a></li>
+<li><a href="https://www.cbc.ca/news/canada/edmonton/specialized-burn-treatments-soldiers-wainwright-military-base-fire-9.7415813" target="_blank" rel="noopener">CBC News: Specialized burn treatments deployed for injured soldiers</a></li>
+<li><a href="https://www.cbc.ca/news/thenational/silver-cross-mother-2026-9.7402837" target="_blank" rel="noopener">CBC News: This year's Silver Cross Mother has a message for grieving families</a></li>
+<li><a href="https://globalnews.ca/news/12144233/wainwright-remembrance-day/" target="_blank" rel="noopener">Global News / The Canadian Press: Wainwright prepares for Remembrance Day after fire</a></li>
+<li><a href="https://www.ctvnews.ca/canada/article/her-daughter-died-in-training-too-now-canadas-silver-cross-mother-has-a-message-for-wainwright-families/" target="_blank" rel="noopener">CTV News: Veteran who lost daughter in training accident named National Silver Cross Mother</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "Stellantis Sells Its Brampton Plant: Ontario's Auto Assembly Jobs Are Down 37% Since 2001",
  slug: "canadian-news-roundup-2026-11-10",
  date: "November 10, 2026",
