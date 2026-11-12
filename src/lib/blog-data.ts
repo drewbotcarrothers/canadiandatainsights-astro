@@ -25,6 +25,58 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "World Juniors 2026: Ottawa Bars Russian Players Even With Valid Visas, Defying a Sports-Court Order",
+ slug: "canadian-news-roundup-2026-11-12",
+ date: "November 12, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-12.png",
+ chartType: 'bar',
+ chartTitle: "CHL import draft 2026: players selected from Russia vs. all other countries (CHL via The Canadian Press)",
+ chartData: [
+ { name: "Russia", value: 32 },
+ { name: "All other countries", value: 82 },
+ ],
+ excerpt: "Ottawa says Russian and Belarusian players will not get into Canada for the world juniors in Edmonton and Red Deer, even if they already hold valid visas. That puts Canada head to head with an Oct. 30 Court of Arbitration for Sport order to reinstate Russia, leaves Norway in limbo and puts the IIHF in a bind about six weeks before puck drop.",
+ content: `
+<p><strong>TL;DR:</strong> On Nov. 11, Secretary of State for Sport Adam van Koeverden said Immigration, Refugees and Citizenship Canada will individually assess and block Russian and Belarusian athletes and officials from entering Canada to compete, even if they already hold valid visas. That shuts the door on Russia at the world junior championship, which opens Dec. 26 in Edmonton and Red Deer, despite an Oct. 30 Court of Arbitration for Sport ruling ordering the IIHF to let Russian teams back in. Norway, which the IIHF had planned to drop to make room for Russia, is waiting to hear whether it is back in.</p>
+
+<h2 id="world-juniors-russia-visa-ban">Ottawa closes the last loophole</h2>
+<p>The federal government says Russian hockey players will not be permitted to compete at next month's world juniors in Alberta, even with valid Canadian visas, <a href="https://www.cbc.ca/sports/hockey/secretary-of-sport-says-canada-will-not-allow-russians-world-juniors-9.7418528" target="_blank" rel="noopener">The Canadian Press reports</a>. "The Minister will take measures to individually assess and prevent Russian and Belarusian athletes and officials from entering Canada to compete, regardless of whether they already hold valid visas," van Koeverden said in a statement, <a href="https://www.tsn.ca/hockey-canada/article/canadian-government-tells-hockey-canada-it-will-not-issue-visas-for-russians-to-play-in-wjc/" target="_blank" rel="noopener">TSN reports</a>.</p>
+<p>That matters because Russians already play here. Russia led this year's Canadian Hockey League import draft with 32 of the 114 players selected, according to the CHL. Those players hold visas to play junior hockey in Canada. They will not be allowed to play for Russia at the world juniors.</p>
+<p>Ottawa's message: the move is "not directed at the Russian and Belarusian people," but at stopping their governments from using events hosted in Canada for "state representation, political legitimacy and propaganda." And: "as long as Russia continues its war of aggression against Ukraine, there can be no return to business as usual."</p>
+
+<h2>How we got here: a sports court said let them in</h2>
+<p>Russia and Belarus have been banned from international hockey since Russia invaded Ukraine, with Belarusian help, in February 2022. On Oct. 30, the <a href="https://www.tas-cas.org/generated/assets/lists/dceab111-07bc-435f-b5f9-de88eff9db72/CAS%20Media%20Release_12573%20et%20al_final.pdf" target="_blank" rel="noopener">Court of Arbitration for Sport</a> upheld an appeal by the Russian Ice Hockey Federation. It ordered the IIHF to allow Russian teams in five events, starting with the world juniors in Canada and including the Women's World Championship in Canada in November 2027. The panel found the IIHF's safety and security arguments were "not supported by sufficient evidence."</p>
+<p>Prime Minister Mark Carney answered on Nov. 3: "So if you're asking specifically about the world juniors, the Russians will not be there." Ottawa first left room for individual athletes to compete as neutrals. On Nov. 9, van Koeverden clarified that applies to individuals, not teams. The Nov. 11 statement closes the visa question too.</p>
+
+<h2>Norway in limbo, Europe on Canada's side</h2>
+<p>Norway's hockey federation said on Nov. 8 that the IIHF told it Russia would be added to the tournament at Norway's expense, <a href="https://www.euronews.com/2026/11/09/norway-dropped-from-junior-hockey-championship-to-make-room-for-russia" target="_blank" rel="noopener">Euronews reports</a>. Norway qualified and says it still hopes to play. The IIHF has not formally changed the field; its website still lists Norway among the 10 teams.</p>
+<p>Canada is not alone. Hockey federations in Finland, Sweden, Czechia and Norway have said their teams will refuse to play Russia, and Switzerland has joined them, <a href="https://www.dw.com/en/norways-ice-hockey-team-says-russia-replacing-it-at-world-juniors/a-79901844" target="_blank" rel="noopener">DW reports</a>. Sponsors of next May's men's world championship in Germany, including Skoda, its main sponsor for more than 30 years, have said they would reassess or end their backing if Russia plays.</p>
+
+<h2>Can a sports court overrule a border?</h2>
+<p>Not really, says Dick Pound, a longtime IOC member and former CAS arbitrator. CAS cannot order the Canadian government to grant visas. "Short of stamping their feet and pouting, there's not much they can actually do," he told <a href="https://www.cbc.ca/sports/hockey/norway-hockey-world-championships-russia-hockey-band-9.7409018" target="_blank" rel="noopener">The Canadian Press</a>. Van Koeverden has dismissed concerns that the ban could hurt Canada's chances of hosting future events, including the Olympics.</p>
+<p>The IIHF has said "the global impact of the decision made by the CAS Panel and the challenges it creates for all involved were significantly underestimated," citing visa requirements and possible changes to tournament formats. Russia's ambassador to Canada, Oleg Stepanov, has accused Ottawa of "bringing politics even into junior hockey" and of knocking out strong rivals before the puck drops, <a href="https://www.bbc.com/sport/ice-hockey/articles/c6dxw090qvnzo" target="_blank" rel="noopener">BBC Sport reports</a>.</p>
+
+<h2>Why it matters</h2>
+<p>The world juniors are Canada's holiday tournament, and this one is on home ice in about six weeks. Canada also hosts the women's worlds next November, another event on the CAS list. Ottawa is using immigration law to override an international sports court, with most of Europe's top hockey nations behind it. The IIHF now has to pick between a court order and a host country that will not let Russia in. The open questions: does Norway get its spot back, and does the IIHF try to punish the host? Ottawa is betting that the border beats a sports court, and right now it holds every card.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/sports/hockey/secretary-of-sport-says-canada-will-not-allow-russians-world-juniors-9.7418528" target="_blank" rel="noopener">CBC Sports / The Canadian Press: Russian players with visas will still be barred from WJC (Nov. 11, 2026)</a></li>
+<li><a href="https://www.tsn.ca/hockey-canada/article/canadian-government-tells-hockey-canada-it-will-not-issue-visas-for-russians-to-play-in-wjc/" target="_blank" rel="noopener">TSN: Canadian government tells Hockey Canada it will not issue visas for Russians to play in WJC</a></li>
+<li><a href="https://globalnews.ca/news/12147202/world-juniors-russia-visa-players/" target="_blank" rel="noopener">Global News / The Canadian Press: Russian players with visas will still be barred from World Juniors</a></li>
+<li><a href="https://www.tas-cas.org/generated/assets/lists/dceab111-07bc-435f-b5f9-de88eff9db72/CAS%20Media%20Release_12573%20et%20al_final.pdf" target="_blank" rel="noopener">Court of Arbitration for Sport: media release on the ice hockey ruling (Oct. 30, 2026)</a></li>
+<li><a href="https://www.cbc.ca/sports/hockey/norway-hockey-world-championships-russia-hockey-band-9.7409018" target="_blank" rel="noopener">CBC Sports / The Canadian Press: Canada dismisses fears of international blowback (Nov. 4, 2026)</a></li>
+<li><a href="https://www.euronews.com/2026/11/09/norway-dropped-from-junior-hockey-championship-to-make-room-for-russia" target="_blank" rel="noopener">Euronews: Norway dropped from junior hockey championship to make room for Russia</a></li>
+<li><a href="https://www.dw.com/en/norways-ice-hockey-team-says-russia-replacing-it-at-world-juniors/a-79901844" target="_blank" rel="noopener">DW: Russia ice hockey return sparks World Juniors crisis</a></li>
+<li><a href="https://www.bbc.com/sport/ice-hockey/articles/c6dxw090qvnzo" target="_blank" rel="noopener">BBC Sport: Canada bars Russia and Belarus from junior tournament</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "Remembrance Day 2026: Four Soldiers Died Training at CFB Wainwright. Canada Still Wants Answers",
  slug: "canadian-news-roundup-2026-11-11",
  date: "November 11, 2026",
