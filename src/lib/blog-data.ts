@@ -44,6 +44,7 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="microsoft-outage-canada">A code grey over email</h2>
 <p>Unity Health Toronto, the network that includes St. Michael's Hospital, declared a code grey, which is called when there is a loss or failure of infrastructure, <a href="https://www.cp24.com/local/toronto/2026/11/12/code-grey-declared-at-toronto-hospital-network-amid-microsoft-outage/" target="_blank" rel="noopener">CP24 reports</a>. Staff could not reliably send or receive email. The network said patient and resident care was not affected and asked anyone with an urgent appointment question to call its main line.</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;"><iframe src="https://www.youtube-nocookie.com/embed/WFiaCzjv8I8" title="Microsoft Outage: Canada Had No Plan B" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p>It was not alone. University Health Network said its email was temporarily unavailable, with no impact on patient care. Sunnybrook told patients with urgent appointments to call because staff could not send or receive email. The City of Toronto said some services "may be temporarily unavailable or experience delays."</p>
 
 <h2>Who else went dark</h2>
