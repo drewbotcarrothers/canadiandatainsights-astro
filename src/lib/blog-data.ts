@@ -25,6 +25,56 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Microsoft Outage: Toronto Hospitals, City Hall, Via Rail and Federal Offices Lose Email as Day 2 Begins",
+ slug: "canadian-news-roundup-2026-11-13",
+ date: "November 13, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-13.png",
+ chartType: 'bar',
+ chartTitle: "Microsoft outage, Nov. 12, 2026: Downdetector reports, Canada vs. Outlook peak across 74 countries (CBC; Globe and Mail)",
+ chartData: [
+ { name: "Canada (Microsoft platforms)", value: 20000 },
+ { name: "Outlook peak, 74 countries", value: 130000 },
+ ],
+ excerpt: "A Microsoft 365 outage that began Thursday knocked out Outlook, Teams and Copilot and dragged into a second day. In Canada it cut email at Toronto hospitals, the City of Toronto, universities, Via Rail, the Newfoundland government and some federal departments. Nothing was hacked and the internet stayed up. It was one company's servers failing, and it raises a hard question about how much of Canada runs on a single provider.",
+ content: `
+<p><strong>TL;DR:</strong> A Microsoft 365 outage that began around 11 a.m. ET Thursday took down Outlook email, Teams and the Copilot AI assistant for users in dozens of countries, and it was still not fully fixed on Friday morning. In Canada, a Toronto hospital network declared a code grey, Sunnybrook told patients to phone instead of email, the City of Toronto warned of delays, and Via Rail, universities, the Newfoundland government and some federal departments lost email. Microsoft says there is no sign of a cyberattack. Servers failed their own health checks, and the fixes did not take.</p>
+
+<h2 id="microsoft-outage-canada">A code grey over email</h2>
+<p>Unity Health Toronto, the network that includes St. Michael's Hospital, declared a code grey, which is called when there is a loss or failure of infrastructure, <a href="https://www.cp24.com/local/toronto/2026/11/12/code-grey-declared-at-toronto-hospital-network-amid-microsoft-outage/" target="_blank" rel="noopener">CP24 reports</a>. Staff could not reliably send or receive email. The network said patient and resident care was not affected and asked anyone with an urgent appointment question to call its main line.</p>
+<p>It was not alone. University Health Network said its email was temporarily unavailable, with no impact on patient care. Sunnybrook told patients with urgent appointments to call because staff could not send or receive email. The City of Toronto said some services "may be temporarily unavailable or experience delays."</p>
+
+<h2>Who else went dark</h2>
+<p>Downdetector logged more than 20,000 reports of problems with Microsoft platforms in Canada, <a href="https://www.cbc.ca/news/world/microsoft-outage-9.7419814" target="_blank" rel="noopener">CBC News reports</a>. Some federal departments had trouble getting into email and meetings, though it was unclear whether any public services were affected. Via Rail warned passengers they might not get trip emails and pointed them to its train tracker and SMS alerts. The University of Toronto, Seneca Polytechnic and George Brown Polytechnic said their email was hit; classes did not appear to be, <a href="https://www.ctvnews.ca/sci-tech/article/widespread-issues-reported-with-microsoft-products-downdetector/" target="_blank" rel="noopener">CTV News reports</a>. The Newfoundland provincial government was also affected, <a href="https://www.theglobeandmail.com/business/article-microsoft-outage-experts-warn-risks-single-provider/" target="_blank" rel="noopener">the Globe and Mail reports</a>.</p>
+<p>On Bay Street, the evening rush came early. Toronto's Union Station normally fills around 5 p.m. as many of the 200,000 people who work in the financial district head home. Observers told the Globe that on Thursday the procession began hours earlier, because many people simply could not work.</p>
+
+<h2>What broke, and why the fixes failed</h2>
+<p>This was not an internet outage. Bell and Rogers confirmed their networks stayed up. The failure was inside Microsoft. The company said a number of servers were "unexpectedly unavailable," failing automated health checks and straining the rest of its infrastructure, and that the problem was not caused by a jump in traffic, <a href="https://globalnews.ca/news/12148204/microsoft-outage-2026/" target="_blank" rel="noopener">Global News reports</a>. Nearly 130,000 users across 74 countries reported Outlook problems on Downdetector just after 1 p.m. ET.</p>
+<p>The fixes did not land. By early Thursday evening Microsoft said its actions "have not provided the anticipated relief." Later it said changes were "not taking as expected." On Friday the outage rolled into a second day. Microsoft said it had no indication of malicious activity and was seeing "early stabilization and capacity improvements as recovery actions continue," but gave no time for full restoration, <a href="https://www.cbc.ca/news/world/microsoft-outage-friday-activity-9.7420313" target="_blank" rel="noopener">The Associated Press reports</a>. More than 430 million people use Microsoft 365 apps, according to Microsoft.</p>
+<p>The disruption reached governments in Japan and Singapore and the Philippines' Supreme Court. Australia's Home Affairs Minister Tony Burke said Microsoft likened it to the July 2024 CrowdStrike outage: an update gone awry, not an attack, <a href="https://www.cp24.com/news/world/2026/11/13/microsoft-struggles-to-restore-services-as-outage-hits-companies-and-governments-worldwide/" target="_blank" rel="noopener">AP reports</a>.</p>
+
+<h2>The real question: one provider, no plan B</h2>
+<p>Experts say the bigger story is concentration. Matt Hatfield of OpenMedia told the Globe the outage shows the risk of depending on a single provider, and that there is a need "for Canada to drive a more decentralized, open-source tech stack." Vass Bednar of the Canadian Shield Institute said Microsoft "has a tight hold on white-collar work" and noted that "European governments are getting off Microsoft." Denmark, France and some German states have been moving toward open-source alternatives to cut their reliance on US providers.</p>
+
+<h2>Why it matters</h2>
+<p>For a day and a half, one American company's server failure cut email at Toronto hospitals, City Hall, universities, Via Rail, a provincial government and federal departments, and sent a chunk of Bay Street home early. Nothing was hacked. Patient care held. But the hospitals that stayed open did it by telling people to pick up the phone. Canada runs its hospitals, cities and government inboxes on one US company, and this week showed there is no plan B. Watch for whether Ottawa or the provinces ask for an incident report, and whether "digital sovereignty" moves from think-tank talking point to procurement policy.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/world/microsoft-outage-friday-activity-9.7420313" target="_blank" rel="noopener">CBC News / The Associated Press: Microsoft's global outage extends into 2nd day (Nov. 13, 2026)</a></li>
+<li><a href="https://www.cbc.ca/news/world/microsoft-outage-9.7419814" target="_blank" rel="noopener">CBC News: Microsoft outage continues as planned fixes are not working as expected (Nov. 12, 2026)</a></li>
+<li><a href="https://www.cp24.com/local/toronto/2026/11/12/code-grey-declared-at-toronto-hospital-network-amid-microsoft-outage/" target="_blank" rel="noopener">CP24: Microsoft outage impacts some Toronto hospitals, City of Toronto, post-secondary institutions</a></li>
+<li><a href="https://www.ctvnews.ca/sci-tech/article/widespread-issues-reported-with-microsoft-products-downdetector/" target="_blank" rel="noopener">CTV News: Microsoft outage impacting hospitals, universities and Via Rail services</a></li>
+<li><a href="https://www.theglobeandmail.com/business/article-microsoft-outage-experts-warn-risks-single-provider/" target="_blank" rel="noopener">The Globe and Mail: Experts warn of depending on single provider in light of Microsoft outage</a></li>
+<li><a href="https://globalnews.ca/news/12148204/microsoft-outage-2026/" target="_blank" rel="noopener">Global News: Microsoft 365 outage</a></li>
+<li><a href="https://www.cp24.com/news/world/2026/11/13/microsoft-struggles-to-restore-services-as-outage-hits-companies-and-governments-worldwide/" target="_blank" rel="noopener">CP24 / The Associated Press: Microsoft struggles to restore services as outage hits companies and governments worldwide</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "World Juniors 2026: Ottawa Bars Russian Players Even With Valid Visas, Defying a Sports-Court Order",
  slug: "canadian-news-roundup-2026-11-12",
  date: "November 12, 2026",
