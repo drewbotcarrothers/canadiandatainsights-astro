@@ -25,6 +25,74 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "FAA Ground Stop: Hundreds of Canadian Flights Cancelled, and Why You Get a Rebooking, Not a Cheque",
+ slug: "canadian-news-roundup-2026-11-14",
+ date: "November 14, 2026",
+ category: "News",
+ readTime: "6 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-14.png",
+ chartType: 'bar',
+ chartTitle: "FAA ground stop, Nov. 13, 2026: flights cancelled at Canadian airports, as reported (Pearson 120+ U.S. plus 20 international; Montreal-Trudeau 40; Vancouver 8 of 22 U.S.-bound as of 5:45 p.m. PT) (CP24; CTV News; CBC News)",
+ chartData: [
+ { name: "Toronto Pearson", value: 140 },
+ { name: "Montreal-Trudeau", value: 40 },
+ { name: "Vancouver (by 5:45 p.m. PT)", value: 8 },
+ ],
+ excerpt: "A communications failure inside the U.S. air traffic control system grounded every flight in America for more than four hours on Friday, and Canada paid for it too: more than 120 U.S. flights plus 20 international flights cancelled at Pearson, 40 at Montreal-Trudeau, every lower-48 flight at Calgary, and Canadians stuck in the Caribbean. Pearson is in recovery mode this weekend. Here's what happened, and what Canada's passenger rules do (and don't) owe you.",
+ content: `
+<p><strong>TL;DR:</strong> At 3:53 p.m. ET Friday, the U.S. Federal Aviation Administration grounded every departing flight in the country after its regional air traffic control centres lost radar and radio contact intermittently. The order lasted until 8:15 p.m. ET. In Canada, Air Canada and Porter cancelled their remaining U.S. flights, Pearson lost more than 120 U.S. flights and 20 other international ones, Montreal-Trudeau cancelled 40, and Calgary cancelled everything to the lower 48. Pearson says it is in "recovery mode" today and tomorrow. Because the cause was an air traffic control order, Canada's Air Passenger Protection Regulations owe you a rebooking or a refund, not compensation.</p>
+
+<h2 id="faa-ground-stop-canada">America hit pause, and Canada's departure boards went red</h2>
+<p>U.S. Transportation Secretary Sean Duffy said the FAA began losing radar and communications at its 22 regional air traffic control centres at 3:36 p.m. ET. The ground stop came 17 minutes later. More than 3,500 planes were in the air heading to U.S. airports at the time, <a href="https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404" target="_blank" rel="noopener">CBC News reports</a>. By the time the FAA reopened the airspace at 8:15 p.m. ET, about 6,700 flights had been cancelled and 8,600 delayed, according to FlightAware.</p>
+<p>It was only the second nationwide stop of all departures since the Sept. 11, 2001 attacks. The other was in January 2023, <a href="https://globalnews.ca/news/12150274/faa-usa-ground-stop-order/" target="_blank" rel="noopener">Global News reports</a>.</p>
+
+<h2>Airport by airport: what Canada lost on Friday</h2>
+<ul>
+<li><strong>Toronto Pearson:</strong> more than 120 U.S. flights scheduled to depart and arrive were cancelled, plus 20 other international flights, <a href="https://www.cp24.com/local/toronto/2026/11/14/us-ground-stop-results-in-hundreds-of-cancelled-flights-at-torontos-two-airports/" target="_blank" rel="noopener">CP24 reports</a>.</li>
+<li><strong>Toronto Billy Bishop:</strong> Air Canada and Porter cancelled all remaining Friday U.S. flights.</li>
+<li><strong>Montreal-Trudeau:</strong> all U.S. flights suspended; 40 flights cancelled, 24 departures and 16 arrivals, <a href="https://www.ctvnews.ca/montreal/article/montreal-airport-suspends-all-flights-to-and-from-the-us-after-faa-ground-stop/" target="_blank" rel="noopener">CTV News Montreal reports</a>.</li>
+<li><strong>Calgary:</strong> every Friday flight to "the lower 48 states" cancelled, Calgary Airports told CTV News.</li>
+<li><strong>Vancouver:</strong> 8 of 22 U.S.-bound flights on the board cancelled and 7 delayed as of 5:45 p.m. PT, CBC reported from the terminal.</li>
+<li><strong>Halifax:</strong> minimal impact, one Boston flight delayed. <strong>Saskatoon and Regina:</strong> unaffected, with no direct U.S. flights left on Friday's schedule.</li>
+</ul>
+<p>Air Canada cancelled all flights to and from the U.S. for the rest of Friday evening and warned that flights between Canada, the Caribbean and South America that cross U.S. airspace could be hit too. That is how a U.S. problem stranded Canadians in Sint Maarten, Barbados and Costa Rica. NAV Canada, which runs Canada's air navigation system, said its own systems were operating normally. It briefly added "traffic management measures" at Pearson, Montreal-Trudeau, Calgary and Vancouver to handle the backlog.</p>
+
+<h2>Stranded: "find your own hotel"</h2>
+<p>In Costa Rica, Porter told passengers on a cancelled flight to Toronto that the plane had to cross U.S. airspace and that they would have to find their own hotel and food, with travel possibly on Saturday, <a href="https://www.theglobeandmail.com/world/us-politics/article-us-grounds-departing-flights-air-traffic-control-communication-issues/" target="_blank" rel="noopener">the Globe and Mail reports</a>. A WestJet passenger in Barbados learned her flight home was cancelled while the plane was on the runway, <a href="https://www.ctvnews.ca/world/article/canadian-airports-warn-more-delays-expected-after-us-faa-lifts-ground-stop/" target="_blank" rel="noopener">CTV News reports</a>. Pearson says it will be in "recovery mode" today and tomorrow, with its emergency operations centre still activated, and more delays and cancellations are possible. Check your flight with your airline before you head to the airport.</p>
+
+<h2>What Canadian rules owe you (and what they don't)</h2>
+<p>This is the part that hits your wallet. Under Canada's <a href="https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-150/FullText.html" target="_blank" rel="noopener">Air Passenger Protection Regulations</a>, "instructions from air traffic control" are listed as a situation outside the airline's control (section 10). In that category, the airline must:</p>
+<ul>
+<li>keep you informed about the disruption;</li>
+<li>for a cancellation, or a delay of three hours or more, give you a confirmed seat on its next available flight, or a partner's, that leaves within 48 hours of your original departure (section 18);</li>
+<li>if it can't do that, give you the choice of a refund for the unused part of your ticket or another free reservation, including on another airline for large carriers.</li>
+</ul>
+<p>What's missing: compensation, and the outside-control section does not require meals or hotels. Nadja Dreff of credit rating agency Morningstar DBRS told the Globe that meals or hotel costs "may be offered by airlines in some cases but [are] not mandatory," and that extra expenses could be covered by travel insurance, depending on the policy. Keep your receipts and check your card or travel policy.</p>
+
+<h2>Why it happened, and why it could happen again</h2>
+<p>Duffy blamed "an incredibly old air traffic control system" that "got overloaded." U.S. Homeland Security Secretary Markwayne Mullin said there was no sign of a cyberattack and "no connection" to this week's Microsoft outage. Congress approved US$12.5 billion for an overhaul last year; Duffy has said another US$30 billion is needed and on Friday said he now wants US$50 billion. Asked whether it could happen again, he said: "I don't know that this exact scenario will happen," <a href="https://www.ctvnews.ca/world/article/federal-aviation-administration-says-airplane-departures-can-resume-following-us-ground-stop/" target="_blank" rel="noopener">AP reports</a>.</p>
+<p>Ottawa offered help. Transport Minister Steven MacKinnon said Canada told the FAA it could let U.S.-bound aircraft land here if needed. California Gov. Gavin Newsom replied on X: "Thank you, Canada. Neighbors help neighbors." Ottawa also updated its U.S. travel advisory to warn of air travel disruptions.</p>
+
+<h2>Why it matters</h2>
+<p>Canada's own air navigation system ran fine on Friday. It didn't matter. Most Canadian flights to the U.S., and many to the Caribbean and Latin America, depend on American air traffic control, and that system is old, overloaded and waiting on Congress for money. When it fails, the cost lands on Canadian travellers, and our passenger rules treat it like a snowstorm: a rebooking or a refund, no cheque. If you're flying south this winter, that's worth knowing before you book, and it's a good reason to check what your travel insurance actually covers.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404" target="_blank" rel="noopener">CBC News: U.S. flights cleared to take off again after ground stop order (Nov. 13-14, 2026)</a></li>
+<li><a href="https://www.cp24.com/local/toronto/2026/11/14/us-ground-stop-results-in-hundreds-of-cancelled-flights-at-torontos-two-airports/" target="_blank" rel="noopener">CP24: U.S. ground stop results in hundreds of cancelled flights at Toronto's two airports</a></li>
+<li><a href="https://www.ctvnews.ca/world/article/canadian-airports-warn-more-delays-expected-after-us-faa-lifts-ground-stop/" target="_blank" rel="noopener">CTV News: Canadian airports warn more delays expected after U.S. FAA lifts ground stop</a></li>
+<li><a href="https://www.ctvnews.ca/montreal/article/montreal-airport-suspends-all-flights-to-and-from-the-us-after-faa-ground-stop/" target="_blank" rel="noopener">CTV News Montreal: Montreal airport suspends all flights to and from the U.S.</a></li>
+<li><a href="https://globalnews.ca/news/12150274/faa-usa-ground-stop-order/" target="_blank" rel="noopener">Global News: U.S. flights resuming as nationwide ground stop lifted; Canadians warned to expect delays</a></li>
+<li><a href="https://www.theglobeandmail.com/world/us-politics/article-us-grounds-departing-flights-air-traffic-control-communication-issues/" target="_blank" rel="noopener">The Globe and Mail: U.S. lifts nationwide ground stop after FAA order triggers widespread flight disruptions</a></li>
+<li><a href="https://www.theglobeandmail.com/world/article-faa-ground-stop-us-flights-live-updates/" target="_blank" rel="noopener">The Globe and Mail: FAA ground stop live updates</a></li>
+<li><a href="https://www.ctvnews.ca/world/article/federal-aviation-administration-says-airplane-departures-can-resume-following-us-ground-stop/" target="_blank" rel="noopener">CTV News / The Associated Press: FAA says departures can resume following U.S. ground stop</a></li>
+<li><a href="https://laws-lois.justice.gc.ca/eng/regulations/SOR-2019-150/FullText.html" target="_blank" rel="noopener">Justice Laws Website: Air Passenger Protection Regulations (SOR/2019-150), sections 10 and 18</a></li>
+</ul>
+<p><em>For education only. Verify primary sources. Not legal advice; check your airline's tariff and the Canadian Transportation Agency for your specific case.</em></p>
+`,
+ },
+ {
  title: "Microsoft Outage: Toronto Hospitals, City Hall, Via Rail and Federal Offices Lose Email as Day 2 Begins",
  slug: "canadian-news-roundup-2026-11-13",
  date: "November 13, 2026",
