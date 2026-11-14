@@ -45,6 +45,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="faa-ground-stop-canada">America hit pause, and Canada's departure boards went red</h2>
 <p>U.S. Transportation Secretary Sean Duffy said the FAA began losing radar and communications at its 22 regional air traffic control centres at 3:36 p.m. ET. The ground stop came 17 minutes later. More than 3,500 planes were in the air heading to U.S. airports at the time, <a href="https://www.cbc.ca/news/world/livestory/faa-grounds-all-flights-united-states-air-traffic-control-live-updates-9.7421404" target="_blank" rel="noopener">CBC News reports</a>. By the time the FAA reopened the airspace at 8:15 p.m. ET, about 6,700 flights had been cancelled and 8,600 delayed, according to FlightAware.</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/ZZSATN54DME" title="FAA Ground Stop: Why Canadians Get No Cheque" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>It was only the second nationwide stop of all departures since the Sept. 11, 2001 attacks. The other was in January 2023, <a href="https://globalnews.ca/news/12150274/faa-usa-ground-stop-order/" target="_blank" rel="noopener">Global News reports</a>.</p>
 
 <h2>Airport by airport: what Canada lost on Friday</h2>
