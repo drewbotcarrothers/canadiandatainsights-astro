@@ -45,6 +45,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="wainwright-fifth-soldier-dies">The death toll rises to five</h2>
 <p>The Department of National Defence announced Saturday that Pte. Dal Bianco died Friday from injuries he suffered in the fire, <a href="https://www.cbc.ca/news/canada/edmonton/fifth-soldier-dies-cfb-wainwright-fire-9.7422365" target="_blank" rel="noopener">CBC News reports</a>. He had been moved to Ontario for treatment closer to home.</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/C43vAQutS5I" title="Wainwright Fire: Five Dead, No Board of Inquiry" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>Four soldiers died in the fire's immediate aftermath: Sgt. Morgan Wong, 26, of Edmonton; Pte. Shaun Farrell, 23, of Prince Albert, Sask.; Pte. Aidan Goulding, 23, of North Vancouver; and Pte. Hayden Lykkemark, 19, of Langley, B.C. All were Edmonton-based members of 3 PPCLI, <a href="https://www.theglobeandmail.com/canada/article-fifth-soldier-dead-cfb-wainwright-fire-october/" target="_blank" rel="noopener">the Globe and Mail reports</a>. They were among troops training for deployment to Latvia with NATO.</p>
 <p>"Private Dal Bianco and his fellow soldiers were training to defend Canada," Prime Minister Mark Carney said Saturday. "With their bright futures still before them, they chose to safeguard ours. That is service. Now, we serve them."</p>
 
