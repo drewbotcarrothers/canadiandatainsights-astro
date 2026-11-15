@@ -25,6 +25,67 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "CFB Wainwright Fire: A Fifth Soldier Dies, and the Promised Inquiry Still Hasn't Been Convened",
+ slug: "canadian-news-roundup-2026-11-15",
+ date: "November 15, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-15.png",
+ chartType: 'bar',
+ chartTitle: "CFB Wainwright fire (Oct. 17, 2026): soldiers' status as of Nov. 14, per the Canadian Armed Forces (CBC; Global News; CTV News)",
+ chartData: [
+ { name: "Died", value: 5 },
+ { name: "Still in hospital", value: 24 },
+ { name: "Released from hospital", value: 14 },
+ ],
+ excerpt: "Pte. William Douglas Dal Bianco died Friday in an Ontario hospital, the fifth soldier killed by the Oct. 17 fire at CFB Wainwright. Twenty-four soldiers are still in hospital. Four weeks on, the board of inquiry the military promised hasn't been convened, and the military hasn't explained why its own memo called the fire risk 'low' on a day the national system rated it 'extreme'.",
+ content: `
+<p><strong>TL;DR:</strong> A fifth soldier has died from the Oct. 17 fire at Canadian Forces Base Wainwright in Alberta. Pte. William Douglas Dal Bianco, of the 3rd Battalion, Princess Patricia's Canadian Light Infantry, died Friday in an Ontario hospital. The Canadian Armed Forces says 24 members are still in hospital and 14 have been released. The fire had burned for hours on a day the national fire-weather system rated "extreme". A military memo called the "fire index" "low". The board of inquiry the military promised has not been convened.</p>
+
+<h2 id="wainwright-fifth-soldier-dies">The death toll rises to five</h2>
+<p>The Department of National Defence announced Saturday that Pte. Dal Bianco died Friday from injuries he suffered in the fire, <a href="https://www.cbc.ca/news/canada/edmonton/fifth-soldier-dies-cfb-wainwright-fire-9.7422365" target="_blank" rel="noopener">CBC News reports</a>. He had been moved to Ontario for treatment closer to home.</p>
+<p>Four soldiers died in the fire's immediate aftermath: Sgt. Morgan Wong, 26, of Edmonton; Pte. Shaun Farrell, 23, of Prince Albert, Sask.; Pte. Aidan Goulding, 23, of North Vancouver; and Pte. Hayden Lykkemark, 19, of Langley, B.C. All were Edmonton-based members of 3 PPCLI, <a href="https://www.theglobeandmail.com/canada/article-fifth-soldier-dead-cfb-wainwright-fire-october/" target="_blank" rel="noopener">the Globe and Mail reports</a>. They were among troops training for deployment to Latvia with NATO.</p>
+<p>"Private Dal Bianco and his fellow soldiers were training to defend Canada," Prime Minister Mark Carney said Saturday. "With their bright futures still before them, they chose to safeguard ours. That is service. Now, we serve them."</p>
+
+<h2>24 soldiers still in hospital</h2>
+<p>The CAF said Saturday that 24 members remain in hospital and 14 have been released, <a href="https://globalnews.ca/news/12151278/5-dead-cfb-wainwright/" target="_blank" rel="noopener">Global News reports</a>. Acute Care Alberta said 21 soldiers were being treated in the province as of Nov. 10, nine in critical condition. Earlier in the week, 15 of the Alberta patients were on ventilators, CBC reported.</p>
+<p>Most of the injured suffered extreme burns that need multiple surgeries and long rehabilitation. Some have had more than half of their bodies burned, the Globe reports. Conservative Leader Pierre Poilievre said he was praying "for the 24 soldiers still fighting to recover in hospital."</p>
+
+<h2>A fire that burned for hours</h2>
+<p>About 350 troops from 3 PPCLI were on a routine training exercise when intense winds drove a nearby grass fire through the group. The fire then jumped the base fence and threatened rural areas and the town of Wainwright, Global News reports. Military officials have said it was burning in a permanent danger area that base firefighters couldn't reach.</p>
+<p>The questions have not gone away:</p>
+<ul>
+<li><strong>It was known.</strong> The Canadian Forces Provost Marshal, Brig.-Gen. Vanessa Hanrahan, said the fire started hours earlier on the base's automatic grenade launcher range and was monitored continuously. Maj.-Gen. Wade Rutland said troops knew about it, roughly a kilometre away, for several hours, but it was "not originally assessed as a threat," <a href="https://www.theglobeandmail.com/canada/article-25-soldiers-still-hospitalized-weeks-after-cfb-wainwright-disaster/" target="_blank" rel="noopener">the Globe reports</a>.</li>
+<li><strong>The risk was "extreme".</strong> The Canadian Wildland Fire Information System rated the Fire Weather Index at Wainwright "extreme" that day, and Environment Canada had warned of high winds. Internal communications obtained by the Globe show the military was told the "fire index" "was low." DND has not answered the Globe's questions about the gap.</li>
+<li><strong>It wasn't unusual.</strong> Gen. Jennie Carignan, the Chief of the Defence Staff, told the Globe it is not uncommon for soldiers to train at Wainwright while grass fires burn.</li>
+</ul>
+
+<h2>Who's investigating, and what hasn't started</h2>
+<p>Military police (the Canadian Forces National Investigation Service) and Alberta's chief medical examiner are investigating. The military also promised a board of inquiry into the fire and whether safety protocols were adequate. As of Saturday, that board <strong>has not been convened</strong>, the Globe reports. Rutland said last month that "Canadians and families are rightly asking how that assessment was reached." Four weeks and five deaths later, there's still no public answer.</p>
+<p>The Globe calls it one of Canada's worst peacetime training tragedies on home soil, with dozens more injured than the 1988 Slesse Range disaster at CFB Chilliwack, which killed six military engineer trainees.</p>
+
+<h2>What Ottawa has put on the table</h2>
+<p>Budget 2026 proposes $28 million over two years for affected CAF members, families and communities: $25 million to DND, delivered through Canadian Forces Morale and Welfare Services, and $3 million in 2026-27 for the Wainwright Military Family Resources Centre, <a href="https://www.theglobeandmail.com/politics/article-ottawa-28-million-federal-budget-support-cfb-wainwright-fire-canadian/" target="_blank" rel="noopener">the Globe reports</a>.</p>
+<p>Reservists were among the injured, and they face a gap. Retired Maj.-Gen. John Milne, a former director general of reserves and cadets, told The Canadian Press the daily pay formula works out to an earnings penalty of roughly 32 per cent for part-time reservists compared with regular force members, and injured reservists normally get lower-tier compensation and benefits during recovery, <a href="https://globalnews.ca/news/12151043/cfb-wainwright-reserve-pay-disparities/" target="_blank" rel="noopener">Global News reports</a>.</p>
+
+<h2>Why it matters</h2>
+<p>These were young Canadians training on Canadian soil, not in a war zone. Five are dead and 24 are still in hospital. The basic questions, why training went ahead near a fire that had burned for hours, on an "extreme" fire-weather day, after a memo said the risk was "low", belong to the board of inquiry. That board hasn't started. Until it does, the families are waiting, and so is every Canadian who sends a son or daughter to train.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/canada/edmonton/fifth-soldier-dies-cfb-wainwright-fire-9.7422365" target="_blank" rel="noopener">CBC News: Fifth soldier dead from injuries suffered in CFB Wainwright fire, officials say (Nov. 14, 2026)</a></li>
+<li><a href="https://www.theglobeandmail.com/canada/article-fifth-soldier-dead-cfb-wainwright-fire-october/" target="_blank" rel="noopener">The Globe and Mail: Fifth soldier dies from injuries after October fire at CFB Wainwright (Nov. 14, 2026)</a></li>
+<li><a href="https://globalnews.ca/news/12151278/5-dead-cfb-wainwright/" target="_blank" rel="noopener">Global News: Fifth Canadian soldier has died after fire in Wainwright, CAF says</a></li>
+<li><a href="https://www.ctvnews.ca/edmonton/article/we-are-heartbroken-fifth-soldier-dies-following-cfb-wainwright-fire/" target="_blank" rel="noopener">CTV News Edmonton: 'We are heartbroken': Fifth soldier dies following CFB Wainwright fire</a></li>
+<li><a href="https://www.theglobeandmail.com/canada/article-25-soldiers-still-hospitalized-weeks-after-cfb-wainwright-disaster/" target="_blank" rel="noopener">The Globe and Mail: 25 soldiers still hospitalized weeks after CFB Wainwright disaster</a></li>
+<li><a href="https://www.theglobeandmail.com/politics/article-ottawa-28-million-federal-budget-support-cfb-wainwright-fire-canadian/" target="_blank" rel="noopener">The Globe and Mail: Budget 2026: Ottawa proposes $28-million to support those affected by CFB Wainwright fire</a></li>
+<li><a href="https://globalnews.ca/news/12151043/cfb-wainwright-reserve-pay-disparities/" target="_blank" rel="noopener">Global News / The Canadian Press: CFB Wainwright tragedy casts spotlight on reservist pay disparities</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "FAA Ground Stop: Hundreds of Canadian Flights Cancelled, and Why You Get a Rebooking, Not a Cheque",
  slug: "canadian-news-roundup-2026-11-14",
  date: "November 14, 2026",
