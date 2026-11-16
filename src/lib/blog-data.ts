@@ -25,6 +25,61 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Carney Says Canada Could Turn to Chinese Automakers if Trump Talks Fail, a Day Before He Meets Xi",
+ slug: "canadian-news-roundup-2026-11-16",
+ date: "November 16, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-16.png",
+ chartType: 'bar',
+ chartTitle: "Share of Canadians who would support a U.S. trade deal that keeps tariffs on Canadian goods (Nanos Research for CTV News, %)",
+ chartData: [
+ { name: "Aug. 2025", value: 41 },
+ { name: "Oct.-Nov. 2026", value: 33.3 },
+ ],
+ excerpt: "Prime Minister Mark Carney says Canada could turn to Chinese, European or Japanese automakers if trade talks with Donald Trump fail to protect an integrated North American auto industry. 'It's not leverage. But action, reaction,' he said in Cambodia, a day before he meets Xi Jinping in Shenzhen.",
+ content: `
+<p><strong>TL;DR:</strong> Prime Minister Mark Carney said Monday that Canada could turn to Chinese automakers if trade talks with U.S. President Donald Trump fail to keep the North American auto industry integrated. He called it "not leverage. But action, reaction." He meets Chinese President Xi Jinping in Shenzhen on Tuesday, and Chinese investment in Canada's auto sector is on the agenda.</p>
+
+<h2 id="carney-china-autos-trump-talks">"Canada is going to move forward either way"</h2>
+<p>Speaking to reporters at the Francophonie Summit in Phnom Penh, Cambodia, Carney said Canada's auto workers belong in a North American market, but that market is shrinking because of Washington, <a href="https://www.cbc.ca/news/politics/canada-china-carney-auto-9.7423156" target="_blank" rel="noopener">CBC News reports, citing The Associated Press</a>.</p>
+<p>"We have the best auto workers in the world, and we want them fully deployed, full opportunity, in an integrated North American market," Carney said. "That market has become less integrated because of U.S. trade actions."</p>
+<p>If talks don't settle that, he said, "there'll be other options, European options, Asian options," <a href="https://globalnews.ca/news/12152341/canada-auto-sector-europe-asia/" target="_blank" rel="noopener">The Canadian Press reports</a>, adding "of course – Chinese, Japanese," according to <a href="https://www.theglobeandmail.com/politics/article-carney-to-discuss-chinese-investment-in-canadas-auto-sector-with-xi/" target="_blank" rel="noopener">the Globe and Mail</a>.</p>
+<p>Asked whether Chinese investment was a bargaining chip with Washington, he said: "It's not leverage. But action, reaction. If they're not fully utilized in a North American context, that provides other opportunities. Canada is going to move forward either way." He said the U.S. talks remain his priority.</p>
+
+<h2>What's on the table with Xi</h2>
+<p>Carney meets Xi on Tuesday in Shenzhen, at the start of the APEC summit, and said he plans to talk about Chinese investment in Canada's auto sector, the Globe reports. It builds on the deal the two leaders struck in January:</p>
+<ul>
+<li><strong>Chinese EVs:</strong> Canada cut its 100 per cent tariff on Chinese electric vehicles to 6.1 per cent, initially for up to 49,000 vehicles a year, with the cap rising over time.</li>
+<li><strong>Farm exports:</strong> In return, China lowered tariffs on Canadian agricultural products, including canola. Chinese tariffs remain on others, including 25 per cent on pork, shrimp and geoduck clams.</li>
+<li><strong>Factories, not "kit cars":</strong> Carney says any Chinese investment must mean real manufacturing in Canada, Canadian labour standards and supply chains that grow over time, including Canadian critical minerals. "It's not just about kit cars," he said.</li>
+</ul>
+<p>In January, Ottawa said it expected significant Chinese auto investment "within three years." In June, Industry Minister Mélanie Joly met BYD, Chery, Geely and Shanghai Launch Automotive Technology in China about possibly building EVs here, the Globe reports.</p>
+
+<h2>The fight with Washington</h2>
+<p>Canada is pushing Trump to scale back 25 per cent tariffs on Canadian-made autos, the Globe reports, and The Canadian Press says Washington has threatened tariffs of up to 50 per cent on Canadian autos by January. In Manila on Saturday, Carney drew his line: "This government will not settle for a deal with the United States that is not consistent with a viable Canadian auto sector," <a href="https://globalnews.ca/news/12151109/canada-us-trade-deal-conditions/" target="_blank" rel="noopener">Global News reports</a>. He said talks were making progress after a "long, substantive conversation" with Trump.</p>
+<p>The U.S. charges a 100 per cent tariff on Chinese-made EVs, so a Chinese auto plant in Canada would put Ottawa further at odds with Washington. Ontario Premier Doug Ford has already warned that Chinese EVs could threaten Canadian jobs and access to the U.S. market. And the sector is raw: Ottawa recently threatened to sue Stellantis after it moved planned Jeep Compass production from Brampton, Ont., to Illinois and agreed to sell its idled Brampton plant.</p>
+
+<h2>Where Canadians stand</h2>
+<p>Canadians are hardening, too. A Nanos Research poll for CTV News found just 33.3 per cent would support a U.S. trade deal that keeps tariffs on Canadian goods, down from 41 per cent in August 2025 (1,058 adults, Oct. 31 to Nov. 2, margin of error plus or minus three points, 19 times out of 20), <a href="https://www.ctvnews.ca/politics/article/most-canadians-would-reject-a-trade-deal-that-includes-tariffs-nanos-survey-suggests/" target="_blank" rel="noopener">CTV News reports</a>.</p>
+
+<h2>Why it matters</h2>
+<p>Autos are the hardest issue in the Canada-U.S. talks and a pillar of Ontario's factory jobs. Carney is now saying out loud that if Washington won't keep the continental auto market intact, Canada will build cars with someone else, and he's saying it a day before sitting down with Xi. Watch Tuesday's meeting for any Chinese investment announcement, and watch Washington's reaction. Either one could decide where Canadian auto jobs land and what cars Canadians can buy.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/politics/canada-china-carney-auto-9.7423156" target="_blank" rel="noopener">CBC News / The Associated Press: Carney says Canada could turn to Chinese automakers if Trump trade talks fail (Nov. 16, 2026)</a></li>
+<li><a href="https://globalnews.ca/news/12152341/canada-auto-sector-europe-asia/" target="_blank" rel="noopener">Global News / The Canadian Press: Canada exploring 'other options' with Europe, Asia to grow auto sector: Carney</a></li>
+<li><a href="https://www.theglobeandmail.com/politics/article-carney-to-discuss-chinese-investment-in-canadas-auto-sector-with-xi/" target="_blank" rel="noopener">The Globe and Mail: China offers alternative for Canada's auto sector if U.S. no longer wants an integrated market, Carney says</a></li>
+<li><a href="https://nationalpost.com/news/canada/canada-europe-asia-auto-partners-u-s-trade-deal/" target="_blank" rel="noopener">National Post / Bloomberg News: Canada has European, Asian options for auto partners if U.S. deal doesn't pan out: Carney</a></li>
+<li><a href="https://globalnews.ca/news/12151109/canada-us-trade-deal-conditions/" target="_blank" rel="noopener">Global News / The Canadian Press: Canada-U.S. trade deal must include viable auto sector, Carney says</a></li>
+<li><a href="https://www.ctvnews.ca/politics/article/most-canadians-would-reject-a-trade-deal-that-includes-tariffs-nanos-survey-suggests/" target="_blank" rel="noopener">CTV News: Most Canadians would reject a trade deal that includes tariffs, Nanos survey suggests</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "CFB Wainwright Fire: A Fifth Soldier Dies, and the Promised Inquiry Still Hasn't Been Convened",
  slug: "canadian-news-roundup-2026-11-15",
  date: "November 15, 2026",
