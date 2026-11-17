@@ -25,6 +25,61 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Carney and Xi Cut Tariffs on $400 Million in Pork and Seafood, but There's No Auto Plant Deal",
+ slug: "canadian-news-roundup-2026-11-17",
+ date: "November 17, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-17.png",
+ chartType: 'bar',
+ chartTitle: "Canadian exports covered by Tuesday's Chinese tariff relief ($ millions, 2024 trade values, Prime Minister's Office)",
+ chartData: [
+ { name: "Frozen pork cuts", value: 116 },
+ { name: "Fish and seafood", value: 285 },
+ ],
+ excerpt: "Prime Minister Mark Carney and Chinese President Xi Jinping agreed in Shenzhen to lift 25 per cent Chinese tariffs on about $400 million a year of Canadian pork and seafood. Canada is widening remissions on Chinese steel and aluminum. What didn't come out of the meeting: a Chinese auto plant.",
+ content: `
+<p><strong>TL;DR:</strong> Prime Minister Mark Carney met Chinese President Xi Jinping in Shenzhen on Tuesday and came away with tariff relief for Canadian pork and seafood producers — about $400 million a year in exports, at 2024 trade values — not the Chinese auto investment he had put on the table a day earlier. In return, Canada is extending and widening remissions on Chinese steel and aluminum. The auto question is still tied to talks with Washington.</p>
+
+<h2 id="carney-xi-shenzhen-tariff-deal">Pork and seafood, not a car plant</h2>
+<p>Carney sat down with Xi mid-morning Tuesday at the Kylin Villa State Guesthouse in Shenzhen, at the start of the APEC summit. The meeting lasted about 25 minutes, <a href="https://www.theglobeandmail.com/politics/article-canada-china-trade-deal-1116/" target="_blank" rel="noopener">the Globe and Mail reports</a>.</p>
+<p>The two leaders agreed to expand a trade arrangement they had already extended earlier this month. China will provide additional tariff relief on approximately $400 million in Canadian exports, including $116 million in frozen pork cuts and $285 million in fish and seafood, <a href="https://www.pm.gc.ca/en/news/news-releases/2026/11/17/prime-minister-carney-advances-canadas-strategic-partnership-china" target="_blank" rel="noopener">the Prime Minister's Office said</a>. Those figures are based on 2024 trade values.</p>
+<p>The seafood side covers certain frozen cold-water shrimp and prawns, including Pacific spot prawn; certain molluscs, including geoduck; sea cucumber; and Greenland halibut. <a href="https://www.cbc.ca/news/politics/canada-china-carney-xi-9.7424608" target="_blank" rel="noopener">CBC News, citing The Canadian Press</a>, says the expansion would remove a 25 per cent Chinese tariff on frozen pork cuts and frozen cold-water shrimp, with the other products also on the list. The Globe, citing the Canadian government, says the reductions take effect Jan. 1, 2027, and run to Dec. 31, 2028.</p>
+<p>That builds on the two-year extension, announced earlier this month, of tariff relief for canola meal, peas, lobster and crab, until late 2028.</p>
+
+<h2>What Canada gave, and what producers still want</h2>
+<p>In exchange, Ottawa will extend by two years existing remissions on certain Chinese steel and aluminum products that were set to expire at the end of 2026, and expand that coverage to 32 more tariff items — 23 steel and nine aluminum — for which Canadian supply is insufficient or unavailable. Remission lets importers get refunds on the 25 per cent Canadian tariff. The leaders also agreed to open market access for Canadian fava beans, chickpeas and lentils, and to work toward a deal on pet food and wild aquatic products by the end of the year.</p>
+<p>Chris White, president of the Beijing-based Canadian Meat Advocacy Office, said the levy relief removes about half the barriers facing Canadian pork. The 25 per cent Chinese tariff on offal — organ meats — stays in place. In 2024, before the tariffs, Canadian pork producers exported about $450 million of product to China. This year, the industry has estimated, exports might be $250 million, the Globe reports. Canadian Meat Council CEO Kyle Larkin, speaking in Shenzhen, said he hoped for a full return of market access.</p>
+
+<h2>The auto file stays open</h2>
+<p>A day earlier, in Phnom Penh, Carney had said Canada could turn to Chinese, European or Japanese automakers if trade talks with Donald Trump fail to protect an integrated North American auto industry. He called it "not leverage. But action, reaction," and said Chinese auto investment would be on the agenda with Xi.</p>
+<p>It was discussed. The official <a href="https://www.pm.gc.ca/en/news/readouts/2026/11/17/prime-minister-carney-meets-president-peoples-republic-china-xi-jinping" target="_blank" rel="noopener">readout</a> says the leaders outlined opportunities in oil and gas, low-carbon technologies and electric vehicles. No factory was announced. Before the meeting, Carney said those auto talks still depend on the U.S. negotiations, and that "clear guardrails" keep China out of sensitive sectors such as critical minerals and artificial intelligence.</p>
+<p>The January EV deal is still just a quota, not a plant. Canada cut its 100 per cent tariff on Chinese electric vehicles to 6.1 per cent for an initial 49,000 vehicles a year, a cap the Globe says will rise to about 70,000 by 2030. As of Sept. 30, only about 16,200 Chinese EVs had entered Canada under the quota, according to a Global Affairs Canada website cited by the Globe. Background from Carney's office, reported by CBC, put the number imported since March at 16,211, about half priced at $35,000 or less. Ottawa said Tuesday that a Chinese car maker had just started importing vehicles, expected at under $35,000, and did not name the company. The government had said it expected significant Chinese auto investment in Canada "within three years." The Globe reports nothing has materialized.</p>
+<p>Washington is already bristling. After Carney's Monday comments, Trump trade adviser Peter Navarro posted on X: "Are u really threatening to play China off the U.S." He called it "offensive in the extreme" and said Canada should be "far more worried China is going to eat Canada alive." The Globe notes that widening remissions on Chinese steel and aluminum could also anger an administration that has accused Canada of being a back door for Chinese metals. In 2025, Canada sold more than $560 billion of goods to U.S. customers — still the market that dwarfs all others.</p>
+
+<h2>A thaw, in careful steps</h2>
+<p>The Prime Minister's Office says Canada has now restored market access for more than 90 per cent of trade previously subject to tariff action — nearly $7.5 billion in exports — and that over 90 per cent of Canada-China trade is now on reduced tariffs. Bilateral merchandise trade reached $125.6 billion in 2025, up 5.6 per cent from 2024. CBC, citing Canadian trade data, says exports to China have surged 40 per cent since Carney's January meeting with Xi in Beijing.</p>
+<p>In opening remarks, Carney told Xi that Canada is on its way to boosting annual exports to China by 50 per cent, which the Globe says would mean about $50.2 billion a year from $33.4 billion last year. Xi said exchanges and co-operation have "fully resumed." Other announcements included a major Canadian trade mission to China in 2027, a Canada-China Year of e-Commerce in 2027, $850,000 in scholarships for 850 Canadian students, $8 million for a China environment council, and new Air Canada flights from Vancouver to Guangzhou starting in May 2027.</p>
+<p>Before leaving Canada, Carney said he would raise foreign interference with Xi. A Chinese government spokesperson has denied any such activities. Parliamentary Secretary Kody Blois, travelling with the prime minister, told reporters in Shenzhen: "There are areas where we will disagree."</p>
+
+<h2>Why it matters</h2>
+<p>This was the meeting Carney previewed as a possible opening to Chinese automakers if Trump will not protect Canada's auto sector. What landed instead is help for pork and seafood exporters, more room for Chinese steel and aluminum, and no factory announcement for Ontario auto workers. That is a win for Prairie and coastal producers, a step in the thaw with Beijing, and a potential irritant in the talks with Washington. The auto question that hung over yesterday is still unanswered.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.pm.gc.ca/en/news/news-releases/2026/11/17/prime-minister-carney-advances-canadas-strategic-partnership-china" target="_blank" rel="noopener">Prime Minister of Canada: Carney advances Canada's strategic partnership with China (Nov. 17, 2026)</a></li>
+<li><a href="https://www.pm.gc.ca/en/news/readouts/2026/11/17/prime-minister-carney-meets-president-peoples-republic-china-xi-jinping" target="_blank" rel="noopener">Prime Minister of Canada: Readout of Carney's meeting with Xi Jinping</a></li>
+<li><a href="https://www.cbc.ca/news/politics/canada-china-carney-xi-9.7424608" target="_blank" rel="noopener">CBC News / The Canadian Press: Canada and China announce new trade measures on Carney's first day in Shenzhen</a></li>
+<li><a href="https://www.theglobeandmail.com/politics/article-canada-china-trade-deal-1116/" target="_blank" rel="noopener">The Globe and Mail: China rolls back tariffs on Canadian pork, seafood in new trade deal with Ottawa</a></li>
+<li><a href="https://globalnews.ca/news/12153994/carney-xi-meeting-apec-summit/" target="_blank" rel="noopener">Global News / The Canadian Press: Carney, Xi agree to ease trade restrictions</a></li>
+<li><a href="https://www.ctvnews.ca/politics/article/carney-secures-china-trade-concessions-as-tensions-over-auto-investment-persist/" target="_blank" rel="noopener">CTV News: Carney secures China trade concessions as tensions over auto investment persist</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+
+ {
  title: "Carney Says Canada Could Turn to Chinese Automakers if Trump Talks Fail, a Day Before He Meets Xi",
  slug: "canadian-news-roundup-2026-11-16",
  date: "November 16, 2026",
