@@ -5,6 +5,8 @@ export const SITE_NAME = 'Canadian Data Insights';
 export const CONTACT_EMAIL = 'hello@canadiandatainsights.com';
 export const OGL_LICENSE_URL =
   'https://open.canada.ca/en/open-government-licence-canada';
+export const STATCAN_OPEN_LICENCE_URL =
+  'https://www.statcan.gc.ca/en/terms-conditions/open-licence';
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.png`;
 export const YOUTUBE_URL =
   'https://www.youtube.com/channel/UCkKDB5U853YVBnfAPIlPHTw';
@@ -254,6 +256,68 @@ export function costOfLivingJsonLd(opts: {
     breadcrumbJsonLd([
       { name: 'Home', path: '/' },
       { name: 'Cost of living', path: '/cost-of-living/' },
+    ]),
+  ];
+}
+
+export function releaseDatasetJsonLd(opts: {
+  name: string;
+  description: string;
+  path: string;
+  csvPath: string;
+  temporalCoverage: string;
+  tables: { name: string; url: string }[];
+}): Record<string, unknown>[] {
+  const pageUrl = new URL(opts.path, SITE_URL).toString();
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Dataset',
+      name: opts.name,
+      description: opts.description,
+      url: pageUrl,
+      creator: {
+        '@type': 'Organization',
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+      license: STATCAN_OPEN_LICENCE_URL,
+      temporalCoverage: opts.temporalCoverage,
+      spatialCoverage: { '@type': 'Country', name: 'Canada' },
+      distribution: {
+        '@type': 'DataDownload',
+        encodingFormat: 'text/csv',
+        contentUrl: new URL(opts.csvPath, SITE_URL).toString(),
+      },
+      isBasedOn: opts.tables.map((table) => ({
+        '@type': 'CreativeWork',
+        name: table.name,
+        url: table.url,
+        creator: { '@type': 'Organization', name: 'Statistics Canada' },
+      })),
+    },
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Data', path: '/data/' },
+      { name: opts.name, path: opts.path },
+    ]),
+  ];
+}
+
+export function dataHubJsonLd(description: string): Record<string, unknown>[] {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Release-day data',
+      url: `${SITE_URL}/data/`,
+      description,
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      inLanguage: 'en-CA',
+    },
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Data', path: '/data/' },
     ]),
   ];
 }

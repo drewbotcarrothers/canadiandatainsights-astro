@@ -1,0 +1,12 @@
+---
+import Embed from '../../layouts/Embed.astro';
+import TrendChart from '../../components/release/TrendChart.astro';
+import { housingChartTitle, housingRelease } from '../../lib/release';
+---
+
+<Embed title={housingChartTitle} canonicalPath="/data/housing-starts/">
+  <TrendChart points={housingRelease.trend} title={housingChartTitle} mode="units" unit="units, annual rate" />
+  <p class="mt-3 font-sans text-sm leading-relaxed text-on-surface">
+    Chart: <a href="https://canadiandatainsights.com/data/housing-starts/">Canadian Data Insights</a>. Source: Statistics Canada.
+  </p>
+</Embed>

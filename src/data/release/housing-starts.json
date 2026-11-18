@@ -1,0 +1,369 @@
+{
+  "slug": "housing-starts",
+  "retrieved": "2026-11-18",
+  "referenceMonth": "2026-10",
+  "previousMonth": "2026-09",
+  "releaseDate": "2026-11-18",
+  "licence": "https://www.statcan.gc.ca/en/terms-conditions/open-licence",
+  "tables": [
+    {
+      "id": "34-10-0156-01",
+      "title": "Canada Mortgage and Housing Corporation, housing starts in all centres 10,000 and over, Canada, provinces, and census metropolitan areas, seasonally adjusted at annual rates, monthly",
+      "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015601",
+      "role": "saar",
+      "universe": "Housing starts in all centres of 10,000 and over, seasonally adjusted at annual rates"
+    },
+    {
+      "id": "34-10-0154-01",
+      "title": "Canada Mortgage and Housing Corporation, housing starts, under construction and completions in selected census metropolitan areas, monthly",
+      "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015401",
+      "role": "starts",
+      "universe": "Actual housing starts in selected census metropolitan areas, not seasonally adjusted"
+    }
+  ],
+  "adapted": "The national seasonally adjusted annual rate is the published value multiplied by 1,000, because the Web Data Service reports that series with a scalar factor of thousands. The month-to-month changes are the differences of those published figures. Actual census metropolitan area starts are the published unit counts. Ottawa-Gatineau provincial parts are omitted because the starts table also publishes the combined census metropolitan area. The national rate covers centres of 10,000 and over; it is not an all-areas rate and it is not the sum of the census metropolitan area rows.",
+  "canada": {
+    "saarUnits": 230883,
+    "saarPreviousUnits": 232108,
+    "saarChangeUnits": -1225,
+    "publishedThousands": 230.883,
+    "symbol": null
+  },
+  "cmaTotal": {
+    "geo": "Census metropolitan areas",
+    "starts": 18451,
+    "previousStarts": 17313,
+    "change": 1138
+  },
+  "trend": [
+    {
+      "month": "2024-11",
+      "value": 242837
+    },
+    {
+      "month": "2024-12",
+      "value": 214758
+    },
+    {
+      "month": "2025-01",
+      "value": 220297
+    },
+    {
+      "month": "2025-02",
+      "value": 209289
+    },
+    {
+      "month": "2025-03",
+      "value": 202249
+    },
+    {
+      "month": "2025-04",
+      "value": 261293
+    },
+    {
+      "month": "2025-05",
+      "value": 257693
+    },
+    {
+      "month": "2025-06",
+      "value": 262801
+    },
+    {
+      "month": "2025-07",
+      "value": 270216
+    },
+    {
+      "month": "2025-08",
+      "value": 219737
+    },
+    {
+      "month": "2025-09",
+      "value": 256440
+    },
+    {
+      "month": "2025-10",
+      "value": 218218
+    },
+    {
+      "month": "2025-11",
+      "value": 240474
+    },
+    {
+      "month": "2025-12",
+      "value": 269780
+    },
+    {
+      "month": "2026-01",
+      "value": 224120
+    },
+    {
+      "month": "2026-02",
+      "value": 236684
+    },
+    {
+      "month": "2026-03",
+      "value": 227826
+    },
+    {
+      "month": "2026-04",
+      "value": 259304
+    },
+    {
+      "month": "2026-05",
+      "value": 242542
+    },
+    {
+      "month": "2026-06",
+      "value": 228784
+    },
+    {
+      "month": "2026-07",
+      "value": 226086
+    },
+    {
+      "month": "2026-08",
+      "value": 223963
+    },
+    {
+      "month": "2026-09",
+      "value": 232108
+    },
+    {
+      "month": "2026-10",
+      "value": 230883
+    }
+  ],
+  "rows": [
+    {
+      "geo": "Montréal, Quebec",
+      "starts": 3165,
+      "previousStarts": 1266,
+      "change": 1899,
+      "caution": false
+    },
+    {
+      "geo": "Vancouver, British Columbia",
+      "starts": 2474,
+      "previousStarts": 2491,
+      "change": -17,
+      "caution": false
+    },
+    {
+      "geo": "Toronto, Ontario",
+      "starts": 1900,
+      "previousStarts": 1440,
+      "change": 460,
+      "caution": false
+    },
+    {
+      "geo": "Calgary, Alberta",
+      "starts": 1858,
+      "previousStarts": 2535,
+      "change": -677,
+      "caution": false
+    },
+    {
+      "geo": "Edmonton, Alberta",
+      "starts": 1850,
+      "previousStarts": 1548,
+      "change": 302,
+      "caution": false
+    },
+    {
+      "geo": "Ottawa-Gatineau, Ontario/Quebec",
+      "starts": 1309,
+      "previousStarts": 979,
+      "change": 330,
+      "caution": false
+    },
+    {
+      "geo": "Québec, Quebec",
+      "starts": 1150,
+      "previousStarts": 1385,
+      "change": -235,
+      "caution": false
+    },
+    {
+      "geo": "Winnipeg, Manitoba",
+      "starts": 674,
+      "previousStarts": 807,
+      "change": -133,
+      "caution": false
+    },
+    {
+      "geo": "Abbotsford-Mission, British Columbia",
+      "starts": 479,
+      "previousStarts": 92,
+      "change": 387,
+      "caution": false
+    },
+    {
+      "geo": "Saskatoon, Saskatchewan",
+      "starts": 291,
+      "previousStarts": 330,
+      "change": -39,
+      "caution": false
+    },
+    {
+      "geo": "Victoria, British Columbia",
+      "starts": 285,
+      "previousStarts": 873,
+      "change": -588,
+      "caution": false
+    },
+    {
+      "geo": "Barrie, Ontario",
+      "starts": 275,
+      "previousStarts": 27,
+      "change": 248,
+      "caution": false
+    },
+    {
+      "geo": "St. John's, Newfoundland and Labrador",
+      "starts": 252,
+      "previousStarts": 74,
+      "change": 178,
+      "caution": false
+    },
+    {
+      "geo": "Sherbrooke, Quebec",
+      "starts": 250,
+      "previousStarts": 117,
+      "change": 133,
+      "caution": false
+    },
+    {
+      "geo": "Windsor, Ontario",
+      "starts": 247,
+      "previousStarts": 96,
+      "change": 151,
+      "caution": false
+    },
+    {
+      "geo": "Moncton, New Brunswick",
+      "starts": 216,
+      "previousStarts": 622,
+      "change": -406,
+      "caution": false
+    },
+    {
+      "geo": "Kitchener-Cambridge-Waterloo, Ontario",
+      "starts": 193,
+      "previousStarts": 112,
+      "change": 81,
+      "caution": false
+    },
+    {
+      "geo": "St. Catharines-Niagara, Ontario",
+      "starts": 183,
+      "previousStarts": 177,
+      "change": 6,
+      "caution": false
+    },
+    {
+      "geo": "Regina, Saskatchewan",
+      "starts": 173,
+      "previousStarts": 68,
+      "change": 105,
+      "caution": false
+    },
+    {
+      "geo": "London, Ontario",
+      "starts": 159,
+      "previousStarts": 223,
+      "change": -64,
+      "caution": false
+    },
+    {
+      "geo": "Kelowna, British Columbia",
+      "starts": 129,
+      "previousStarts": 126,
+      "change": 3,
+      "caution": false
+    },
+    {
+      "geo": "Saguenay, Quebec",
+      "starts": 118,
+      "previousStarts": 128,
+      "change": -10,
+      "caution": false
+    },
+    {
+      "geo": "Halifax, Nova Scotia",
+      "starts": 110,
+      "previousStarts": 388,
+      "change": -278,
+      "caution": false
+    },
+    {
+      "geo": "Brantford, Ontario",
+      "starts": 66,
+      "previousStarts": 63,
+      "change": 3,
+      "caution": false
+    },
+    {
+      "geo": "Trois-Rivières, Quebec",
+      "starts": 45,
+      "previousStarts": 48,
+      "change": -3,
+      "caution": false
+    },
+    {
+      "geo": "Hamilton, Ontario",
+      "starts": 37,
+      "previousStarts": 72,
+      "change": -35,
+      "caution": false
+    },
+    {
+      "geo": "Kingston, Ontario",
+      "starts": 22,
+      "previousStarts": 53,
+      "change": -31,
+      "caution": false
+    },
+    {
+      "geo": "Peterborough, Ontario",
+      "starts": 22,
+      "previousStarts": 77,
+      "change": -55,
+      "caution": false
+    },
+    {
+      "geo": "Greater Sudbury, Ontario",
+      "starts": 16,
+      "previousStarts": 62,
+      "change": -46,
+      "caution": false
+    },
+    {
+      "geo": "Oshawa, Ontario",
+      "starts": 16,
+      "previousStarts": 76,
+      "change": -60,
+      "caution": false
+    },
+    {
+      "geo": "Saint John, New Brunswick",
+      "starts": 12,
+      "previousStarts": 70,
+      "change": -58,
+      "caution": false
+    },
+    {
+      "geo": "Thunder Bay, Ontario",
+      "starts": 8,
+      "previousStarts": 88,
+      "change": -80,
+      "caution": false
+    },
+    {
+      "geo": "Guelph, Ontario",
+      "starts": 4,
+      "previousStarts": 99,
+      "change": -95,
+      "caution": false
+    }
+  ]
+}

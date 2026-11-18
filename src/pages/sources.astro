@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { housingExtract, cpiExtract } from '../lib/geo-links';
 import foodFile from '../data/statcan/food-prices.json';
+import { cpiRelease, housingRelease, jobsRelease } from '../lib/release';
 import { formatRefMonth } from '../lib/utils';
 import { sourcesJsonLd } from '../lib/seo';
 
@@ -143,6 +144,34 @@ const jsonLd = sourcesJsonLd();
             and Yellowknife. A location page shows a price card only when one of these geographies
             matches that place.
           </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Release-day tables</h2>
+          <p class="mb-4">
+            The <a href="/data/" class="text-primary underline underline-offset-2 hover:text-tertiary">data hub</a>{' '}
+            republishes three monthly releases. Percent changes and month-to-month differences on those
+            pages are calculated here from the published levels. Where the Web Data Service reports a
+            scalar of thousands, the page multiplies the published cell by 1,000 and says so.
+          </p>
+          <ul class="mb-4 list-disc space-y-2 pl-5">
+            <li>
+              <a href="/data/cpi/" class="text-primary underline underline-offset-2 hover:text-tertiary">Consumer Price Index</a>,
+              table {cpiRelease.table.id}, reference month {cpiRelease.referenceMonth}.
+            </li>
+            <li>
+              <a href="/data/jobs/" class="text-primary underline underline-offset-2 hover:text-tertiary">Labour Force Survey</a>,
+              tables {jobsRelease.tables.map((table) => table.id).join(' and ')}, reference month {jobsRelease.referenceMonth}.
+              Census metropolitan area unemployment rates use table 14-10-0459-01, the current three-month
+              moving average. Table 14-10-0380-01 is archived and is not used.
+            </li>
+            <li>
+              <a href="/data/housing-starts/" class="text-primary underline underline-offset-2 hover:text-tertiary">Housing starts</a>,
+              tables {housingRelease.tables.map((table) => table.id).join(' and ')}, reference month {housingRelease.referenceMonth}.
+              The national figure is the seasonally adjusted annual rate for centres of 10,000 and over.
+              City rows are actual monthly starts.
+            </li>
+          </ul>
         </div>
 
         <div>

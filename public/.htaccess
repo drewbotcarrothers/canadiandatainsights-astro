@@ -18,5 +18,4 @@ RewriteRule ^location/trois-rivires/?$ /location/trois-rivi-res/ [R=301,L]
 RewriteRule ^location/whitby/?$ /location/whitby-town-t/ [R=301,L]
 RewriteRule ^location/oakville/?$ /location/oakville-town-t/ [R=301,L]
 
-# Legacy /data path → Sources
-RewriteRule ^data/?$ /sources/ [R=301,L]
+# /data/ is the release-day data hub. Do not redirect it to /sources/.

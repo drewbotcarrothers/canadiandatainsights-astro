@@ -11,6 +11,10 @@ const staticPages = [
   '/blog/',
   '/compare/',
   '/cost-of-living/',
+  '/data/',
+  '/data/cpi/',
+  '/data/jobs/',
+  '/data/housing-starts/',
 ];
 
 export const GET: APIRoute = async () => {

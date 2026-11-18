@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Attribution from '../../components/release/Attribution.astro';
+import EmbedSnippet from '../../components/release/EmbedSnippet.astro';
+import TrendChart from '../../components/release/TrendChart.astro';
+import {
+  asOfLine,
+  embedSnippet,
+  formatSignedNumber,
+  housingChartTitle,
+  housingRelease,
+  housingSummary,
+} from '../../lib/release';
+import { releaseDatasetJsonLd } from '../../lib/seo';
+import { formatNumber, formatRefMonth } from '../../lib/utils';
+
+const file = housingRelease;
+const month = formatRefMonth(file.referenceMonth);
+const summary = housingSummary();
+const title = `Housing starts, ${month}`;
+const snippet = embedSnippet('housing-starts', housingChartTitle);
+const saar = file.tables.find((table) => table.role === 'saar');
+const starts = file.tables.find((table) => table.role === 'starts');
+if (!saar || !starts) {
+  throw new Error('Housing release is missing a source table');
+}
+const jsonLd = releaseDatasetJsonLd({
+  name: title,
+  description: summary,
+  path: '/data/housing-starts/',
+  csvPath: '/data/housing-starts.csv',
+  temporalCoverage: `${file.trend[0].month}/${file.referenceMonth}`,
+  tables: file.tables.map((table) => ({ name: table.title, url: table.url })),
+});
+---
+
+<Layout title={title} description={summary} canonicalPath="/data/housing-starts/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <p class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+        <a href="/data/" class="no-underline hover:underline">Data</a>
+        <span aria-hidden="true"> · </span>
+        CMHC via Statistics Canada · Tables {saar.id} and {starts.id}
+      </p>
+      <h1 class="mt-3 font-heading text-4xl font-bold text-primary sm:text-5xl">
+        Housing starts, <span class="text-tertiary">{month}</span>
+      </h1>
+      <p class="mt-3 font-sans text-sm font-semibold text-on-surface">{asOfLine(file.referenceMonth, file.releaseDate)}</p>
+      <p class="mt-4 max-w-3xl font-sans text-lg leading-relaxed text-on-surface-variant">{summary}</p>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        The national figure is a seasonally adjusted annual rate for centres of 10,000 and over. It is not
+        an all-areas rate. The city counts below are actual starts in the month, total units, and they are
+        not seasonally adjusted.
+      </p>
+      <p class="mt-3 font-sans text-sm text-on-surface-variant">Prepared by Andrew.</p>
+
+      <dl class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Canada, annual rate</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatNumber(file.canada.saarUnits)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Units, centres of 10,000 and over</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Change in the annual rate</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedNumber(file.canada.saarChangeUnits)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Units, from {formatRefMonth(file.previousMonth)}</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Census metropolitan areas</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatNumber(file.cmaTotal.starts)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">
+            Actual starts, {formatSignedNumber(file.cmaTotal.change)} from {formatRefMonth(file.previousMonth)}
+          </dd>
+        </div>
+      </dl>
+
+      <div class="mt-10 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <TrendChart points={file.trend} title={housingChartTitle} mode="units" unit="units, annual rate" />
+      </div>
+
+      <div class="mt-10">
+        <a
+          href="/data/housing-starts.csv"
+          download="housing-starts.csv"
+          class="inline-flex min-h-[44px] items-center rounded-md bg-tertiary px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-tertiary/90"
+        >
+          Download CSV
+        </a>
+      </div>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">Census metropolitan areas</h2>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Ranked by actual housing starts in {month}, total units, from table {starts.id}. Statistics Canada’s
+        published total for these census metropolitan areas was {formatNumber(file.cmaTotal.starts)}. That
+        total is not a sum calculated on this page. Ottawa-Gatineau is the combined area; the provincial
+        parts in the source table are omitted here.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border/40 bg-surface">
+        <table class="min-w-full text-left font-sans text-sm">
+          <caption class="sr-only">Housing starts by census metropolitan area, {month}</caption>
+          <thead class="border-b border-border/40 bg-surface-soft text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+            <tr>
+              <th scope="col" class="px-3 py-3 sm:px-4">Rank</th>
+              <th scope="col" class="px-3 py-3 sm:px-4">Census metropolitan area</th>
+              <th scope="col" class="px-3 py-3 text-right sm:px-4">Starts</th>
+              <th scope="col" class="hidden px-4 py-3 text-right sm:table-cell">Change</th>
+              <th scope="col" class="hidden px-4 py-3 text-right md:table-cell">Previous month</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              file.rows.map((row, index) => (
+                <tr class="border-b border-border/20 last:border-0">
+                  <td class="px-3 py-3 tabular-nums text-on-surface-variant sm:px-4">{index + 1}</td>
+                  <th scope="row" class="px-3 py-3 font-heading font-bold text-primary sm:px-4">
+                    {row.geo}
+                    {row.caution ? <span class="ml-1 font-sans text-xs font-medium text-on-surface-variant">(use with caution)</span> : null}
+                  </th>
+                  <td class="whitespace-nowrap px-3 py-3 text-right tabular-nums sm:px-4">{formatNumber(row.starts)}</td>
+                  <td class="hidden whitespace-nowrap px-4 py-3 text-right tabular-nums sm:table-cell">{formatSignedNumber(row.change)}</td>
+                  <td class="hidden whitespace-nowrap px-4 py-3 text-right tabular-nums md:table-cell">{formatNumber(row.previousStarts)}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-10">
+        <EmbedSnippet snippet={snippet} />
+      </div>
+      <div class="mt-10">
+        <Attribution tables={[saar, starts]} adapted={file.adapted} licence={file.licence} />
+      </div>
+    </div>
+  </article>
+</Layout>

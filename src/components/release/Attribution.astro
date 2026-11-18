@@ -1,0 +1,46 @@
+---
+interface TableRef {
+  id: string;
+  url: string;
+}
+
+interface Props {
+  tables: TableRef[];
+  adapted: string;
+  licence: string;
+}
+
+const { tables, adapted, licence } = Astro.props;
+---
+
+<div class="space-y-3 font-sans text-sm leading-relaxed text-on-surface-variant">
+  {
+    tables.map((table) => (
+      <p>
+        Source: Statistics Canada, Table {table.id}. Reproduced and distributed on an "as is" basis
+        with the permission of Statistics Canada.{' '}
+        <a
+          href={table.url}
+          class="font-medium text-primary underline-offset-2 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Table {table.id}
+        </a>
+        .
+      </p>
+    ))
+  }
+  <p>
+    Adapted from Statistics Canada. {adapted}{' '}
+    <a
+      href={licence}
+      class="font-medium text-primary underline-offset-2 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Statistics Canada Open Licence
+    </a>
+    .
+  </p>
+</div>

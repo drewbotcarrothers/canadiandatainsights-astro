@@ -11,7 +11,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "ingest:statcan": "python3 scripts/ingest_statcan.py"
+    "ingest:statcan": "python3 scripts/ingest_statcan.py",
+    "ingest:release": "python3 scripts/release-pages/ingest.py"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.5",

@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Attribution from '../../components/release/Attribution.astro';
+import EmbedSnippet from '../../components/release/EmbedSnippet.astro';
+import TrendChart from '../../components/release/TrendChart.astro';
+import {
+  asOfLine,
+  embedSnippet,
+  formatRate,
+  formatSignedNumber,
+  formatSignedPoints,
+  jobsChartTitle,
+  jobsRelease,
+  jobsSummary,
+} from '../../lib/release';
+import { releaseDatasetJsonLd } from '../../lib/seo';
+import { formatNumber, formatRefMonth } from '../../lib/utils';
+
+const file = jobsRelease;
+const month = formatRefMonth(file.referenceMonth);
+const summary = jobsSummary();
+const title = `Labour Force Survey, ${month}`;
+const snippet = embedSnippet('jobs', jobsChartTitle);
+const national = file.tables.find((table) => table.role === 'national');
+const cma = file.tables.find((table) => table.role === 'cma');
+if (!national || !cma) {
+  throw new Error('Jobs release is missing a source table');
+}
+const jsonLd = releaseDatasetJsonLd({
+  name: title,
+  description: summary,
+  path: '/data/jobs/',
+  csvPath: '/data/jobs.csv',
+  temporalCoverage: `${file.trend[0].month}/${file.referenceMonth}`,
+  tables: file.tables.map((table) => ({ name: table.title, url: table.url })),
+});
+---
+
+<Layout title={title} description={summary} canonicalPath="/data/jobs/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <p class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+        <a href="/data/" class="no-underline hover:underline">Data</a>
+        <span aria-hidden="true"> · </span>
+        Statistics Canada · Tables {national.id} and {cma.id}
+      </p>
+      <h1 class="mt-3 font-heading text-4xl font-bold text-primary sm:text-5xl">
+        Labour Force Survey, <span class="text-tertiary">{month}</span>
+      </h1>
+      <p class="mt-3 font-sans text-sm font-semibold text-on-surface">{asOfLine(file.referenceMonth, file.releaseDate)}</p>
+      <p class="mt-4 max-w-3xl font-sans text-lg leading-relaxed text-on-surface-variant">{summary}</p>
+      <p class="mt-3 font-sans text-sm text-on-surface-variant">Prepared by Andrew.</p>
+
+      <dl class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Employment</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatNumber(file.canada.employmentPersons)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">
+            {formatRate(file.canada.employmentThousands)} thousand persons, seasonally adjusted
+          </dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Employment change</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedNumber(file.canada.employmentChangePersons)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Persons, from {formatRefMonth(file.previousMonth)}</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Unemployment rate</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatRate(file.canada.unemploymentRate)}%</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">
+            {formatSignedPoints(file.canada.monthChangePoints)} points from {formatRefMonth(file.previousMonth)}
+          </dd>
+        </div>
+      </dl>
+
+      <div class="mt-10 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <TrendChart points={file.trend} title={jobsChartTitle} mode="rate" unit="percent" />
+      </div>
+
+      <div class="mt-10">
+        <a
+          href="/data/jobs.csv"
+          download="jobs.csv"
+          class="inline-flex min-h-[44px] items-center rounded-md bg-tertiary px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-tertiary/90"
+        >
+          Download CSV
+        </a>
+      </div>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">Census metropolitan areas</h2>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Ranked by the unemployment rate. These are three-month moving averages, seasonally adjusted, from
+        table {cma.id}. The Canada rate above is the monthly seasonally adjusted rate from table {national.id},
+        not a three-month average. Ottawa-Gatineau is the combined census metropolitan area. The provincial
+        parts published in the same table are left out of this ranking.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border/40 bg-surface">
+        <table class="min-w-full text-left font-sans text-sm">
+          <caption class="sr-only">Unemployment rate by census metropolitan area, {month}</caption>
+          <thead class="border-b border-border/40 bg-surface-soft text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+            <tr>
+              <th scope="col" class="px-3 py-3 sm:px-4">Rank</th>
+              <th scope="col" class="px-3 py-3 sm:px-4">Census metropolitan area</th>
+              <th scope="col" class="px-3 py-3 text-right sm:px-4">Unemployment rate</th>
+              <th scope="col" class="hidden px-4 py-3 text-right sm:table-cell">Previous month</th>
+              <th scope="col" class="hidden px-4 py-3 text-right md:table-cell">Year earlier</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              file.rows.map((row, index) => (
+                <tr class="border-b border-border/20 last:border-0">
+                  <td class="px-3 py-3 tabular-nums text-on-surface-variant sm:px-4">{index + 1}</td>
+                  <th scope="row" class="px-3 py-3 font-heading font-bold text-primary sm:px-4">
+                    {row.geo}
+                    {row.caution ? <span class="ml-1 font-sans text-xs font-medium text-on-surface-variant">(use with caution)</span> : null}
+                  </th>
+                  <td class="whitespace-nowrap px-3 py-3 text-right tabular-nums sm:px-4">{formatRate(row.unemploymentRate)}%</td>
+                  <td class="hidden whitespace-nowrap px-4 py-3 text-right tabular-nums sm:table-cell">
+                    {formatRate(row.unemploymentRatePrevious)}%
+                    <span class="ml-1 text-on-surface-variant">({formatSignedPoints(row.monthChangePoints)})</span>
+                  </td>
+                  <td class="hidden whitespace-nowrap px-4 py-3 text-right tabular-nums md:table-cell">
+                    {formatRate(row.unemploymentRateYearAgo)}%
+                    <span class="ml-1 text-on-surface-variant">({formatSignedPoints(row.yearChangePoints)})</span>
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-10">
+        <EmbedSnippet snippet={snippet} />
+      </div>
+      <div class="mt-10">
+        <Attribution tables={[national, cma]} adapted={file.adapted} licence={file.licence} />
+      </div>
+    </div>
+  </article>
+</Layout>

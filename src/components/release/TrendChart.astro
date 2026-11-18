@@ -1,0 +1,139 @@
+---
+import { chartAxisLabel, formatRate } from '../../lib/release';
+import { formatIndex, formatNumber, formatRefMonth } from '../../lib/utils';
+
+interface Point {
+  month: string;
+  value: number;
+}
+
+interface Props {
+  points: Point[];
+  title: string;
+  mode: 'index' | 'rate' | 'units';
+  unit: string;
+}
+
+const { points, title, mode, unit } = Astro.props;
+if (points.length < 2) {
+  throw new Error(`Chart “${title}” needs at least two points`);
+}
+
+const width = 720;
+const height = 320;
+const pad = { l: 68, r: 16, t: 16, b: 40 };
+const innerW = width - pad.l - pad.r;
+const innerH = height - pad.t - pad.b;
+const values = points.map((point) => point.value);
+const min = Math.min(...values);
+const max = Math.max(...values);
+const span = max - min || Math.abs(max) * 0.05 || 1;
+const yMin = min - span * 0.14;
+const yMax = max + span * 0.16;
+
+function xAt(index: number): number {
+  return pad.l + (index / (points.length - 1)) * innerW;
+}
+
+function yAt(value: number): number {
+  return pad.t + ((yMax - value) / (yMax - yMin)) * innerH;
+}
+
+function formatTick(value: number): string {
+  if (mode === 'index') return formatIndex(value);
+  if (mode === 'rate') return `${formatRate(value)}%`;
+  return new Intl.NumberFormat('en-CA', {
+    notation: 'compact',
+    maximumFractionDigits: 1,
+  }).format(value);
+}
+
+const line = points
+  .map((point, index) => `${index === 0 ? 'M' : 'L'} ${xAt(index).toFixed(1)} ${yAt(point.value).toFixed(1)}`)
+  .join(' ');
+const last = points.length - 1;
+const area = `${line} L ${xAt(last).toFixed(1)} ${(pad.t + innerH).toFixed(1)} L ${xAt(0).toFixed(1)} ${(pad.t + innerH).toFixed(1)} Z`;
+const yTicks = [0, 1, 2, 3].map((step) => yMin + ((yMax - yMin) * step) / 3);
+const labelIndexes = [0, 6, 12, 18, last];
+const latest = points[last];
+const caption = `${formatRefMonth(latest.month)}: ${mode === 'rate' ? `${formatRate(latest.value)}%` : mode === 'index' ? formatIndex(latest.value) : formatNumber(latest.value)} ${unit}`;
+---
+
+<figure class="w-full">
+  <figcaption class="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+    <p class="font-heading text-base font-bold text-primary">{title}</p>
+    <p class="font-sans text-sm font-semibold tabular-nums text-on-surface">{caption}</p>
+  </figcaption>
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    role="img"
+    aria-label={`${title}. ${caption}. The vertical axis does not start at zero.`}
+    class="h-auto w-full"
+  >
+    <title>{title}</title>
+    <desc>
+      {caption}. {points.length} monthly points from {formatRefMonth(points[0].month)} to {formatRefMonth(latest.month)}. The vertical axis does not start at zero.
+    </desc>
+    {
+      yTicks.map((tick) => (
+        <g>
+          <line
+            x1={pad.l}
+            x2={width - pad.r}
+            y1={yAt(tick)}
+            y2={yAt(tick)}
+            stroke="#c4c6cf"
+            stroke-width="1"
+          />
+          <text
+            x={pad.l - 8}
+            y={yAt(tick) + 4}
+            text-anchor="end"
+            fill="#43474e"
+            font-size="12"
+            font-family="Inter, sans-serif"
+          >
+            {formatTick(tick)}
+          </text>
+        </g>
+      ))
+    }
+    <path d={area} fill="#003461" opacity="0.08" />
+    <path d={line} fill="none" stroke="#003461" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+    <circle cx={xAt(last)} cy={yAt(latest.value)} r="5" fill="#6e000b" />
+    {
+      labelIndexes.map((index) => (
+        <text
+          x={xAt(index)}
+          y={height - 12}
+          text-anchor={index === 0 ? 'start' : index === last ? 'end' : 'middle'}
+          fill="#43474e"
+          font-size="12"
+          font-family="Inter, sans-serif"
+        >
+          {chartAxisLabel(points[index].month)}
+        </text>
+      ))
+    }
+  </svg>
+  <p class="mt-2 font-sans text-xs text-on-surface-variant">Vertical axis does not start at zero.</p>
+  <table class="sr-only">
+    <caption>{title}</caption>
+    <thead>
+      <tr>
+        <th scope="col">Month</th>
+        <th scope="col">{unit}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        points.map((point) => (
+          <tr>
+            <th scope="row">{formatRefMonth(point.month)}</th>
+            <td>{mode === 'rate' ? formatRate(point.value) : mode === 'index' ? formatIndex(point.value) : formatNumber(point.value)}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</figure>

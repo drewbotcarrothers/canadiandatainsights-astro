@@ -339,6 +339,63 @@ def year_ago(ref: str) -> str:
     return f"{int(year) - 1}-{month}"
 
 
+def cpi_payload(
+    series: dict[tuple[str, str], dict[str, float]],
+    dguids: dict[str, str],
+) -> dict:
+    """Build the location-page CPI extract from All-items and Food levels.
+
+    `series` maps (geography, product) to {YYYY-MM: index}. Indexes are copied
+    from the published table. The 12-month change is not stored here; pages
+    calculate it from these two levels.
+    """
+    geos = []
+    latest_month = ""
+    names = sorted({geo for geo, _product in series} | set(dguids))
+    for geo in names:
+        all_items = series.get((geo, "All-items"), {})
+        food = series.get((geo, "Food"), {})
+        if not all_items:
+            continue
+        ref = max(all_items)
+        latest_month = max(latest_month, ref)
+        ago = year_ago(ref)
+        food_ref = max(food) if food else None
+        geos.append(
+            {
+                "geo": geo,
+                "dguid": dguids.get(geo, ""),
+                "refDate": ref,
+                "allItems": round(all_items[ref], 1),
+                "allItemsYearAgo": round(all_items[ago], 1) if ago in all_items else None,
+                "food": round(food[food_ref], 1) if food_ref else None,
+                "foodRefDate": food_ref,
+                "foodYearAgo": (
+                    round(food[year_ago(food_ref)], 1)
+                    if food_ref and year_ago(food_ref) in food
+                    else None
+                ),
+            }
+        )
+    if not latest_month:
+        raise SystemExit("CPI series produced no all-items month")
+    # Keep one reference month: the newest all-items month, which should be shared.
+    shared = [item for item in geos if item["refDate"] == latest_month]
+    print(f"  CPI geos {len(shared)} at {latest_month}", file=sys.stderr)
+    return {
+        "retrieved": date.today().isoformat(),
+        "table": {
+            "id": "18-10-0004-01",
+            "title": "Consumer Price Index, monthly, not seasonally adjusted",
+            "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401",
+            "uom": "2002=100",
+        },
+        "referenceMonth": latest_month,
+        "comparisonMonth": year_ago(latest_month),
+        "geographies": shared,
+    }
+
+
 def ingest_cpi(path: Path) -> dict:
     print("reading 18-10-0004-01", file=sys.stderr)
     series: dict[tuple[str, str], dict[str, float]] = {}
@@ -363,48 +420,7 @@ def ingest_cpi(path: Path) -> dict:
                 dguids[geo] = row["DGUID"]
                 series.setdefault((geo, product), {})[row["REF_DATE"]] = float(row["VALUE"])
 
-    geos = []
-    latest_month = ""
-    for geo in sorted(set(dguids)):
-        all_items = series.get((geo, "All-items"), {})
-        food = series.get((geo, "Food"), {})
-        if not all_items:
-            continue
-        ref = max(all_items)
-        latest_month = max(latest_month, ref)
-        ago = year_ago(ref)
-        food_ref = max(food) if food else None
-        geos.append(
-            {
-                "geo": geo,
-                "dguid": dguids[geo],
-                "refDate": ref,
-                "allItems": round(all_items[ref], 1),
-                "allItemsYearAgo": round(all_items[ago], 1) if ago in all_items else None,
-                "food": round(food[food_ref], 1) if food_ref else None,
-                "foodRefDate": food_ref,
-                "foodYearAgo": (
-                    round(food[year_ago(food_ref)], 1)
-                    if food_ref and year_ago(food_ref) in food
-                    else None
-                ),
-            }
-        )
-    # Keep one reference month: the newest all-items month, which should be shared.
-    shared = [item for item in geos if item["refDate"] == latest_month]
-    print(f"  CPI geos {len(shared)} at {latest_month}", file=sys.stderr)
-    return {
-        "retrieved": date.today().isoformat(),
-        "table": {
-            "id": "18-10-0004-01",
-            "title": "Consumer Price Index, monthly, not seasonally adjusted",
-            "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401",
-            "uom": "2002=100",
-        },
-        "referenceMonth": latest_month,
-        "comparisonMonth": year_ago(latest_month),
-        "geographies": shared,
-    }
+    return cpi_payload(series, dguids)
 
 
 def ingest_food(path: Path) -> dict:

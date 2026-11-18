@@ -1,0 +1,12 @@
+---
+import Embed from '../../layouts/Embed.astro';
+import TrendChart from '../../components/release/TrendChart.astro';
+import { jobsChartTitle, jobsRelease } from '../../lib/release';
+---
+
+<Embed title={jobsChartTitle} canonicalPath="/data/jobs/">
+  <TrendChart points={jobsRelease.trend} title={jobsChartTitle} mode="rate" unit="percent" />
+  <p class="mt-3 font-sans text-sm leading-relaxed text-on-surface">
+    Chart: <a href="https://canadiandatainsights.com/data/jobs/">Canadian Data Insights</a>. Source: Statistics Canada.
+  </p>
+</Embed>

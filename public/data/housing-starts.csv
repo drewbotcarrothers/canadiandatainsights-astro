@@ -1,0 +1,70 @@
+# Canadian Data Insights — housing starts
+# Source: Statistics Canada, Table 34-10-0156-01. Reproduced and distributed on an "as is" basis with the permission of Statistics Canada.
+# Source: Statistics Canada, Table 34-10-0154-01. Reproduced and distributed on an "as is" basis with the permission of Statistics Canada.
+# Adapted from Statistics Canada. The national seasonally adjusted annual rate is the published value multiplied by 1,000, because the Web Data Service reports that series with a scalar factor of thousands. The month-to-month changes are the differences of those published figures. Actual census metropolitan area starts are the published unit counts. Ottawa-Gatineau provincial parts are omitted because the starts table also publishes the combined census metropolitan area. The national rate covers centres of 10,000 and over; it is not an all-areas rate and it is not the sum of the census metropolitan area rows.
+# Licence: https://www.statcan.gc.ca/en/terms-conditions/open-licence
+# Reference month: 2026-10. Released: 2026-11-18. Retrieved: 2026-11-18.
+# saar_units is the seasonally adjusted annual rate for centres of 10,000 and over, in units.
+# housing_starts is the actual monthly count of total units for that census metropolitan area.
+record_type,geography,month,saar_units,saar_change_units,housing_starts,housing_starts_previous,housing_starts_change
+canada_saar,Canada,2026-10,230883,-1225,,,
+cma_total,Census metropolitan areas,2026-10,,,18451,17313,1138
+cma,"Montréal, Quebec",2026-10,,,3165,1266,1899
+cma,"Vancouver, British Columbia",2026-10,,,2474,2491,-17
+cma,"Toronto, Ontario",2026-10,,,1900,1440,460
+cma,"Calgary, Alberta",2026-10,,,1858,2535,-677
+cma,"Edmonton, Alberta",2026-10,,,1850,1548,302
+cma,"Ottawa-Gatineau, Ontario/Quebec",2026-10,,,1309,979,330
+cma,"Québec, Quebec",2026-10,,,1150,1385,-235
+cma,"Winnipeg, Manitoba",2026-10,,,674,807,-133
+cma,"Abbotsford-Mission, British Columbia",2026-10,,,479,92,387
+cma,"Saskatoon, Saskatchewan",2026-10,,,291,330,-39
+cma,"Victoria, British Columbia",2026-10,,,285,873,-588
+cma,"Barrie, Ontario",2026-10,,,275,27,248
+cma,"St. John's, Newfoundland and Labrador",2026-10,,,252,74,178
+cma,"Sherbrooke, Quebec",2026-10,,,250,117,133
+cma,"Windsor, Ontario",2026-10,,,247,96,151
+cma,"Moncton, New Brunswick",2026-10,,,216,622,-406
+cma,"Kitchener-Cambridge-Waterloo, Ontario",2026-10,,,193,112,81
+cma,"St. Catharines-Niagara, Ontario",2026-10,,,183,177,6
+cma,"Regina, Saskatchewan",2026-10,,,173,68,105
+cma,"London, Ontario",2026-10,,,159,223,-64
+cma,"Kelowna, British Columbia",2026-10,,,129,126,3
+cma,"Saguenay, Quebec",2026-10,,,118,128,-10
+cma,"Halifax, Nova Scotia",2026-10,,,110,388,-278
+cma,"Brantford, Ontario",2026-10,,,66,63,3
+cma,"Trois-Rivières, Quebec",2026-10,,,45,48,-3
+cma,"Hamilton, Ontario",2026-10,,,37,72,-35
+cma,"Kingston, Ontario",2026-10,,,22,53,-31
+cma,"Peterborough, Ontario",2026-10,,,22,77,-55
+cma,"Greater Sudbury, Ontario",2026-10,,,16,62,-46
+cma,"Oshawa, Ontario",2026-10,,,16,76,-60
+cma,"Saint John, New Brunswick",2026-10,,,12,70,-58
+cma,"Thunder Bay, Ontario",2026-10,,,8,88,-80
+cma,"Guelph, Ontario",2026-10,,,4,99,-95
+trend,Canada,2024-11,242837,,,,
+trend,Canada,2024-12,214758,,,,
+trend,Canada,2025-01,220297,,,,
+trend,Canada,2025-02,209289,,,,
+trend,Canada,2025-03,202249,,,,
+trend,Canada,2025-04,261293,,,,
+trend,Canada,2025-05,257693,,,,
+trend,Canada,2025-06,262801,,,,
+trend,Canada,2025-07,270216,,,,
+trend,Canada,2025-08,219737,,,,
+trend,Canada,2025-09,256440,,,,
+trend,Canada,2025-10,218218,,,,
+trend,Canada,2025-11,240474,,,,
+trend,Canada,2025-12,269780,,,,
+trend,Canada,2026-01,224120,,,,
+trend,Canada,2026-02,236684,,,,
+trend,Canada,2026-03,227826,,,,
+trend,Canada,2026-04,259304,,,,
+trend,Canada,2026-05,242542,,,,
+trend,Canada,2026-06,228784,,,,
+trend,Canada,2026-07,226086,,,,
+trend,Canada,2026-08,223963,,,,
+trend,Canada,2026-09,232108,,,,
+trend,Canada,2026-10,230883,,,,
+# Source: Statistics Canada, Table 34-10-0156-01. Reproduced and distributed on an "as is" basis with the permission of Statistics Canada.
+# Source: Statistics Canada, Table 34-10-0154-01. Reproduced and distributed on an "as is" basis with the permission of Statistics Canada.

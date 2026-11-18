@@ -5,6 +5,10 @@ dist/
 # Statistics Canada zip cache from scripts/ingest_statcan.py
 .cache/
 
+# Python bytecode from the ingest scripts
+__pycache__/
+*.pyc
+
 # dependencies
 node_modules/
 

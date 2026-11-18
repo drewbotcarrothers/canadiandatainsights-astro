@@ -18,6 +18,10 @@ Canadian Data Insights (CDI) turns official Statistics Canada data into accessib
 - Home / Interactive Atlas: https://canadiandatainsights.com/
 - Location Comparison: https://canadiandatainsights.com/compare/
 - Cost of living: https://canadiandatainsights.com/cost-of-living/
+- Release-day data: https://canadiandatainsights.com/data/
+  - Consumer Price Index (table 18-10-0004-01): https://canadiandatainsights.com/data/cpi/
+  - Labour Force Survey (tables 14-10-0287-01 and 14-10-0459-01): https://canadiandatainsights.com/data/jobs/
+  - Housing starts (tables 34-10-0156-01 and 34-10-0154-01): https://canadiandatainsights.com/data/housing-starts/
 - Blog: https://canadiandatainsights.com/blog/
 - Sources & methodology: https://canadiandatainsights.com/sources/
 - About: https://canadiandatainsights.com/about/

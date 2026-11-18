@@ -1,40 +1,40 @@
 {
-  "retrieved": "2026-11-01",
+  "retrieved": "2026-11-18",
   "table": {
     "id": "18-10-0004-01",
     "title": "Consumer Price Index, monthly, not seasonally adjusted",
     "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401",
     "uom": "2002=100"
   },
-  "referenceMonth": "2026-09",
-  "comparisonMonth": "2025-09",
+  "referenceMonth": "2026-10",
+  "comparisonMonth": "2025-10",
   "geographies": [
     {
       "geo": "Alberta",
       "dguid": "2016A000248",
-      "refDate": "2026-09",
-      "allItems": 178.6,
-      "allItemsYearAgo": 172.4,
-      "food": 201.1,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 196.5
+      "refDate": "2026-10",
+      "allItems": 179.0,
+      "allItemsYearAgo": 173.2,
+      "food": 199.9,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 195.7
     },
     {
       "geo": "British Columbia",
       "dguid": "2016A000259",
-      "refDate": "2026-09",
-      "allItems": 163.5,
-      "allItemsYearAgo": 158.8,
-      "food": 194.8,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 190.5
+      "refDate": "2026-10",
+      "allItems": 163.4,
+      "allItemsYearAgo": 159.4,
+      "food": 194.4,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 189.9
     },
     {
       "geo": "Calgary, Alberta",
       "dguid": "2011S0503825",
-      "refDate": "2026-09",
-      "allItems": 181.6,
-      "allItemsYearAgo": 175.7,
+      "refDate": "2026-10",
+      "allItems": 182.1,
+      "allItemsYearAgo": 176.6,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -42,19 +42,19 @@
     {
       "geo": "Canada",
       "dguid": "2016A000011124",
-      "refDate": "2026-09",
-      "allItems": 170.0,
-      "allItemsYearAgo": 164.9,
-      "food": 201.8,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 197.5
+      "refDate": "2026-10",
+      "allItems": 170.4,
+      "allItemsYearAgo": 165.3,
+      "food": 201.6,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 196.9
     },
     {
       "geo": "Charlottetown and Summerside, Prince Edward Island",
       "dguid": "",
-      "refDate": "2026-09",
-      "allItems": 178.5,
-      "allItemsYearAgo": 169.1,
+      "refDate": "2026-10",
+      "allItems": 177.4,
+      "allItemsYearAgo": 168.8,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -62,9 +62,9 @@
     {
       "geo": "Edmonton, Alberta",
       "dguid": "2011S0503835",
-      "refDate": "2026-09",
-      "allItems": 176.6,
-      "allItemsYearAgo": 170.6,
+      "refDate": "2026-10",
+      "allItems": 177.1,
+      "allItemsYearAgo": 171.2,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -72,9 +72,9 @@
     {
       "geo": "Halifax, Nova Scotia",
       "dguid": "2011S0503205",
-      "refDate": "2026-09",
-      "allItems": 176.5,
-      "allItemsYearAgo": 167.5,
+      "refDate": "2026-10",
+      "allItems": 177.4,
+      "allItemsYearAgo": 167.7,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -82,9 +82,9 @@
     {
       "geo": "Iqaluit, Nunavut",
       "dguid": "2011A00056204003",
-      "refDate": "2026-09",
-      "allItems": 149.6,
-      "allItemsYearAgo": 145.2,
+      "refDate": "2026-10",
+      "allItems": 149.7,
+      "allItemsYearAgo": 145.1,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -92,19 +92,19 @@
     {
       "geo": "Manitoba",
       "dguid": "2016A000246",
-      "refDate": "2026-09",
-      "allItems": 172.2,
-      "allItemsYearAgo": 165.0,
-      "food": 200.1,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 194.4
+      "refDate": "2026-10",
+      "allItems": 173.2,
+      "allItemsYearAgo": 166.2,
+      "food": 199.4,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 194.5
     },
     {
       "geo": "Montréal, Quebec",
       "dguid": "2011S0503462",
-      "refDate": "2026-09",
-      "allItems": 170.6,
-      "allItemsYearAgo": 165.6,
+      "refDate": "2026-10",
+      "allItems": 171.6,
+      "allItemsYearAgo": 166.0,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -112,48 +112,48 @@
     {
       "geo": "New Brunswick",
       "dguid": "2016A000213",
-      "refDate": "2026-09",
-      "allItems": 172.6,
-      "allItemsYearAgo": 164.4,
+      "refDate": "2026-10",
+      "allItems": 173.0,
+      "allItemsYearAgo": 165.0,
       "food": 212.8,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 210.6
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 209.3
     },
     {
       "geo": "Newfoundland and Labrador",
       "dguid": "2016A000210",
-      "refDate": "2026-09",
-      "allItems": 173.0,
+      "refDate": "2026-10",
+      "allItems": 173.3,
       "allItemsYearAgo": 165.2,
-      "food": 200.0,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 197.0
+      "food": 200.2,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 196.1
     },
     {
       "geo": "Nova Scotia",
       "dguid": "2016A000212",
-      "refDate": "2026-09",
-      "allItems": 178.1,
-      "allItemsYearAgo": 168.6,
-      "food": 207.6,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 204.2
+      "refDate": "2026-10",
+      "allItems": 178.8,
+      "allItemsYearAgo": 168.8,
+      "food": 207.5,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 202.8
     },
     {
       "geo": "Ontario",
       "dguid": "2016A000235",
-      "refDate": "2026-09",
-      "allItems": 170.3,
-      "allItemsYearAgo": 166.1,
-      "food": 204.1,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 199.9
+      "refDate": "2026-10",
+      "allItems": 170.6,
+      "allItemsYearAgo": 166.4,
+      "food": 203.7,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 199.5
     },
     {
       "geo": "Ottawa-Gatineau, Ontario part, Ontario/Quebec",
       "dguid": "2011S050535505",
-      "refDate": "2026-09",
-      "allItems": 172.0,
+      "refDate": "2026-10",
+      "allItems": 172.5,
       "allItemsYearAgo": 167.0,
       "food": null,
       "foodRefDate": null,
@@ -162,29 +162,29 @@
     {
       "geo": "Prince Edward Island",
       "dguid": "2016A000211",
-      "refDate": "2026-09",
-      "allItems": 177.6,
-      "allItemsYearAgo": 168.1,
-      "food": 215.6,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 211.6
+      "refDate": "2026-10",
+      "allItems": 176.6,
+      "allItemsYearAgo": 167.8,
+      "food": 215.2,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 210.7
     },
     {
       "geo": "Quebec",
       "dguid": "2016A000224",
-      "refDate": "2026-09",
-      "allItems": 167.7,
-      "allItemsYearAgo": 162.6,
-      "food": 201.0,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 196.5
+      "refDate": "2026-10",
+      "allItems": 168.4,
+      "allItemsYearAgo": 162.9,
+      "food": 201.8,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 195.5
     },
     {
       "geo": "Québec, Quebec",
       "dguid": "2011S0503421",
-      "refDate": "2026-09",
-      "allItems": 166.0,
-      "allItemsYearAgo": 160.7,
+      "refDate": "2026-10",
+      "allItems": 166.5,
+      "allItemsYearAgo": 160.9,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -192,9 +192,9 @@
     {
       "geo": "Regina, Saskatchewan",
       "dguid": "2011S0503705",
-      "refDate": "2026-09",
-      "allItems": 173.5,
-      "allItemsYearAgo": 167.8,
+      "refDate": "2026-10",
+      "allItems": 174.4,
+      "allItemsYearAgo": 168.3,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -202,9 +202,9 @@
     {
       "geo": "Saint John, New Brunswick",
       "dguid": "2011S0503310",
-      "refDate": "2026-09",
-      "allItems": 172.2,
-      "allItemsYearAgo": 164.3,
+      "refDate": "2026-10",
+      "allItems": 172.9,
+      "allItemsYearAgo": 165.1,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -212,18 +212,18 @@
     {
       "geo": "Saskatchewan",
       "dguid": "2016A000247",
-      "refDate": "2026-09",
-      "allItems": 172.0,
-      "allItemsYearAgo": 166.5,
-      "food": 205.9,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 200.6
+      "refDate": "2026-10",
+      "allItems": 173.0,
+      "allItemsYearAgo": 166.8,
+      "food": 205.5,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 200.7
     },
     {
       "geo": "Saskatoon, Saskatchewan",
       "dguid": "2011S0503725",
-      "refDate": "2026-09",
-      "allItems": 173.6,
+      "refDate": "2026-10",
+      "allItems": 174.5,
       "allItemsYearAgo": 168.4,
       "food": null,
       "foodRefDate": null,
@@ -232,9 +232,9 @@
     {
       "geo": "St. John's, Newfoundland and Labrador",
       "dguid": "2011S0503001",
-      "refDate": "2026-09",
-      "allItems": 172.2,
-      "allItemsYearAgo": 164.6,
+      "refDate": "2026-10",
+      "allItems": 172.6,
+      "allItemsYearAgo": 164.2,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -242,9 +242,9 @@
     {
       "geo": "Thunder Bay, Ontario",
       "dguid": "2011S0503595",
-      "refDate": "2026-09",
-      "allItems": 158.5,
-      "allItemsYearAgo": 154.2,
+      "refDate": "2026-10",
+      "allItems": 159.7,
+      "allItemsYearAgo": 154.7,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -252,9 +252,9 @@
     {
       "geo": "Toronto, Ontario",
       "dguid": "2011S0503535",
-      "refDate": "2026-09",
-      "allItems": 171.6,
-      "allItemsYearAgo": 168.1,
+      "refDate": "2026-10",
+      "allItems": 171.9,
+      "allItemsYearAgo": 168.4,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -262,9 +262,9 @@
     {
       "geo": "Vancouver, British Columbia",
       "dguid": "2011S0503933",
-      "refDate": "2026-09",
-      "allItems": 166.8,
-      "allItemsYearAgo": 161.9,
+      "refDate": "2026-10",
+      "allItems": 166.4,
+      "allItemsYearAgo": 162.3,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -272,9 +272,9 @@
     {
       "geo": "Victoria, British Columbia",
       "dguid": "2011S0503935",
-      "refDate": "2026-09",
-      "allItems": 160.9,
-      "allItemsYearAgo": 155.6,
+      "refDate": "2026-10",
+      "allItems": 161.0,
+      "allItemsYearAgo": 156.8,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -282,19 +282,19 @@
     {
       "geo": "Whitehorse, Yukon",
       "dguid": "2011A00056001009",
-      "refDate": "2026-09",
-      "allItems": 174.4,
-      "allItemsYearAgo": 164.4,
-      "food": 175.4,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 168.9
+      "refDate": "2026-10",
+      "allItems": 172.9,
+      "allItemsYearAgo": 164.6,
+      "food": 174.9,
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 168.5
     },
     {
       "geo": "Winnipeg, Manitoba",
       "dguid": "2011S0503602",
-      "refDate": "2026-09",
-      "allItems": 171.9,
-      "allItemsYearAgo": 164.9,
+      "refDate": "2026-10",
+      "allItems": 172.8,
+      "allItemsYearAgo": 166.0,
       "food": null,
       "foodRefDate": null,
       "foodYearAgo": null
@@ -302,12 +302,12 @@
     {
       "geo": "Yellowknife, Northwest Territories",
       "dguid": "2011A00056106023",
-      "refDate": "2026-09",
-      "allItems": 170.0,
-      "allItemsYearAgo": 162.4,
+      "refDate": "2026-10",
+      "allItems": 171.2,
+      "allItemsYearAgo": 163.6,
       "food": 193.1,
-      "foodRefDate": "2026-09",
-      "foodYearAgo": 188.4
+      "foodRefDate": "2026-10",
+      "foodYearAgo": 187.7
     }
   ]
 }

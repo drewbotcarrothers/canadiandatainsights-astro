@@ -1,0 +1,415 @@
+{
+  "slug": "cpi",
+  "retrieved": "2026-11-18",
+  "referenceMonth": "2026-10",
+  "previousMonth": "2026-09",
+  "yearAgoMonth": "2025-10",
+  "releaseDate": "2026-11-16",
+  "licence": "https://www.statcan.gc.ca/en/terms-conditions/open-licence",
+  "table": {
+    "id": "18-10-0004-01",
+    "title": "Consumer Price Index, monthly, not seasonally adjusted",
+    "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401",
+    "uom": "2002=100"
+  },
+  "adapted": "12-month and 1-month percent changes are calculated by Canadian Data Insights from the published all-items index (2002=100). They are not a separate Statistics Canada percent-change series.",
+  "canada": {
+    "geo": "Canada",
+    "index": 170.4,
+    "previousIndex": 170,
+    "yearAgoIndex": 165.3,
+    "momPct": 0.2,
+    "yoyPct": 3.1,
+    "symbol": null
+  },
+  "trend": [
+    {
+      "month": "2024-11",
+      "value": 161.8
+    },
+    {
+      "month": "2024-12",
+      "value": 161.2
+    },
+    {
+      "month": "2025-01",
+      "value": 161.3
+    },
+    {
+      "month": "2025-02",
+      "value": 163
+    },
+    {
+      "month": "2025-03",
+      "value": 163.5
+    },
+    {
+      "month": "2025-04",
+      "value": 163.4
+    },
+    {
+      "month": "2025-05",
+      "value": 164.3
+    },
+    {
+      "month": "2025-06",
+      "value": 164.4
+    },
+    {
+      "month": "2025-07",
+      "value": 164.9
+    },
+    {
+      "month": "2025-08",
+      "value": 164.8
+    },
+    {
+      "month": "2025-09",
+      "value": 164.9
+    },
+    {
+      "month": "2025-10",
+      "value": 165.3
+    },
+    {
+      "month": "2025-11",
+      "value": 165.4
+    },
+    {
+      "month": "2025-12",
+      "value": 165
+    },
+    {
+      "month": "2026-01",
+      "value": 165
+    },
+    {
+      "month": "2026-02",
+      "value": 165.9
+    },
+    {
+      "month": "2026-03",
+      "value": 167.4
+    },
+    {
+      "month": "2026-04",
+      "value": 168
+    },
+    {
+      "month": "2026-05",
+      "value": 169.6
+    },
+    {
+      "month": "2026-06",
+      "value": 169
+    },
+    {
+      "month": "2026-07",
+      "value": 169.9
+    },
+    {
+      "month": "2026-08",
+      "value": 169.8
+    },
+    {
+      "month": "2026-09",
+      "value": 170
+    },
+    {
+      "month": "2026-10",
+      "value": 170.4
+    }
+  ],
+  "rows": [
+    {
+      "geo": "Nova Scotia",
+      "kind": "province",
+      "index": 178.8,
+      "previousIndex": 178.1,
+      "yearAgoIndex": 168.8,
+      "momPct": 0.4,
+      "yoyPct": 5.9,
+      "caution": false
+    },
+    {
+      "geo": "Halifax, Nova Scotia",
+      "kind": "city",
+      "index": 177.4,
+      "previousIndex": 176.5,
+      "yearAgoIndex": 167.7,
+      "momPct": 0.5,
+      "yoyPct": 5.8,
+      "caution": false
+    },
+    {
+      "geo": "Prince Edward Island",
+      "kind": "province",
+      "index": 176.6,
+      "previousIndex": 177.6,
+      "yearAgoIndex": 167.8,
+      "momPct": -0.6,
+      "yoyPct": 5.2,
+      "caution": false
+    },
+    {
+      "geo": "Charlottetown and Summerside, Prince Edward Island",
+      "kind": "city",
+      "index": 177.4,
+      "previousIndex": 178.5,
+      "yearAgoIndex": 168.8,
+      "momPct": -0.6,
+      "yoyPct": 5.1,
+      "caution": false
+    },
+    {
+      "geo": "St. John's, Newfoundland and Labrador",
+      "kind": "city",
+      "index": 172.6,
+      "previousIndex": 172.2,
+      "yearAgoIndex": 164.2,
+      "momPct": 0.2,
+      "yoyPct": 5.1,
+      "caution": false
+    },
+    {
+      "geo": "Whitehorse, Yukon",
+      "kind": "city",
+      "index": 172.9,
+      "previousIndex": 174.4,
+      "yearAgoIndex": 164.6,
+      "momPct": -0.9,
+      "yoyPct": 5,
+      "caution": false
+    },
+    {
+      "geo": "Newfoundland and Labrador",
+      "kind": "province",
+      "index": 173.3,
+      "previousIndex": 173,
+      "yearAgoIndex": 165.2,
+      "momPct": 0.2,
+      "yoyPct": 4.9,
+      "caution": false
+    },
+    {
+      "geo": "New Brunswick",
+      "kind": "province",
+      "index": 173,
+      "previousIndex": 172.6,
+      "yearAgoIndex": 165,
+      "momPct": 0.2,
+      "yoyPct": 4.8,
+      "caution": false
+    },
+    {
+      "geo": "Saint John, New Brunswick",
+      "kind": "city",
+      "index": 172.9,
+      "previousIndex": 172.2,
+      "yearAgoIndex": 165.1,
+      "momPct": 0.4,
+      "yoyPct": 4.7,
+      "caution": false
+    },
+    {
+      "geo": "Yellowknife, Northwest Territories",
+      "kind": "city",
+      "index": 171.2,
+      "previousIndex": 170,
+      "yearAgoIndex": 163.6,
+      "momPct": 0.7,
+      "yoyPct": 4.6,
+      "caution": false
+    },
+    {
+      "geo": "Manitoba",
+      "kind": "province",
+      "index": 173.2,
+      "previousIndex": 172.2,
+      "yearAgoIndex": 166.2,
+      "momPct": 0.6,
+      "yoyPct": 4.2,
+      "caution": false
+    },
+    {
+      "geo": "Winnipeg, Manitoba",
+      "kind": "city",
+      "index": 172.8,
+      "previousIndex": 171.9,
+      "yearAgoIndex": 166,
+      "momPct": 0.5,
+      "yoyPct": 4.1,
+      "caution": false
+    },
+    {
+      "geo": "Saskatchewan",
+      "kind": "province",
+      "index": 173,
+      "previousIndex": 172,
+      "yearAgoIndex": 166.8,
+      "momPct": 0.6,
+      "yoyPct": 3.7,
+      "caution": false
+    },
+    {
+      "geo": "Regina, Saskatchewan",
+      "kind": "city",
+      "index": 174.4,
+      "previousIndex": 173.5,
+      "yearAgoIndex": 168.3,
+      "momPct": 0.5,
+      "yoyPct": 3.6,
+      "caution": false
+    },
+    {
+      "geo": "Saskatoon, Saskatchewan",
+      "kind": "city",
+      "index": 174.5,
+      "previousIndex": 173.6,
+      "yearAgoIndex": 168.4,
+      "momPct": 0.5,
+      "yoyPct": 3.6,
+      "caution": false
+    },
+    {
+      "geo": "Québec, Quebec",
+      "kind": "city",
+      "index": 166.5,
+      "previousIndex": 166,
+      "yearAgoIndex": 160.9,
+      "momPct": 0.3,
+      "yoyPct": 3.5,
+      "caution": false
+    },
+    {
+      "geo": "Edmonton, Alberta",
+      "kind": "city",
+      "index": 177.1,
+      "previousIndex": 176.6,
+      "yearAgoIndex": 171.2,
+      "momPct": 0.3,
+      "yoyPct": 3.4,
+      "caution": false
+    },
+    {
+      "geo": "Montréal, Quebec",
+      "kind": "city",
+      "index": 171.6,
+      "previousIndex": 170.6,
+      "yearAgoIndex": 166,
+      "momPct": 0.6,
+      "yoyPct": 3.4,
+      "caution": false
+    },
+    {
+      "geo": "Quebec",
+      "kind": "province",
+      "index": 168.4,
+      "previousIndex": 167.7,
+      "yearAgoIndex": 162.9,
+      "momPct": 0.4,
+      "yoyPct": 3.4,
+      "caution": false
+    },
+    {
+      "geo": "Alberta",
+      "kind": "province",
+      "index": 179,
+      "previousIndex": 178.6,
+      "yearAgoIndex": 173.2,
+      "momPct": 0.2,
+      "yoyPct": 3.3,
+      "caution": false
+    },
+    {
+      "geo": "Ottawa-Gatineau, Ontario part, Ontario/Quebec",
+      "kind": "province",
+      "index": 172.5,
+      "previousIndex": 172,
+      "yearAgoIndex": 167,
+      "momPct": 0.3,
+      "yoyPct": 3.3,
+      "caution": false
+    },
+    {
+      "geo": "Iqaluit, Nunavut",
+      "kind": "city",
+      "index": 149.7,
+      "previousIndex": 149.6,
+      "yearAgoIndex": 145.1,
+      "momPct": 0.1,
+      "yoyPct": 3.2,
+      "caution": false
+    },
+    {
+      "geo": "Thunder Bay, Ontario",
+      "kind": "city",
+      "index": 159.7,
+      "previousIndex": 158.5,
+      "yearAgoIndex": 154.7,
+      "momPct": 0.8,
+      "yoyPct": 3.2,
+      "caution": false
+    },
+    {
+      "geo": "Calgary, Alberta",
+      "kind": "city",
+      "index": 182.1,
+      "previousIndex": 181.6,
+      "yearAgoIndex": 176.6,
+      "momPct": 0.3,
+      "yoyPct": 3.1,
+      "caution": false
+    },
+    {
+      "geo": "Victoria, British Columbia",
+      "kind": "city",
+      "index": 161,
+      "previousIndex": 160.9,
+      "yearAgoIndex": 156.8,
+      "momPct": 0.1,
+      "yoyPct": 2.7,
+      "caution": false
+    },
+    {
+      "geo": "British Columbia",
+      "kind": "province",
+      "index": 163.4,
+      "previousIndex": 163.5,
+      "yearAgoIndex": 159.4,
+      "momPct": -0.1,
+      "yoyPct": 2.5,
+      "caution": false
+    },
+    {
+      "geo": "Ontario",
+      "kind": "province",
+      "index": 170.6,
+      "previousIndex": 170.3,
+      "yearAgoIndex": 166.4,
+      "momPct": 0.2,
+      "yoyPct": 2.5,
+      "caution": false
+    },
+    {
+      "geo": "Vancouver, British Columbia",
+      "kind": "city",
+      "index": 166.4,
+      "previousIndex": 166.8,
+      "yearAgoIndex": 162.3,
+      "momPct": -0.2,
+      "yoyPct": 2.5,
+      "caution": false
+    },
+    {
+      "geo": "Toronto, Ontario",
+      "kind": "city",
+      "index": 171.9,
+      "previousIndex": 171.6,
+      "yearAgoIndex": 168.4,
+      "momPct": 0.2,
+      "yoyPct": 2.1,
+      "caution": false
+    }
+  ]
+}
