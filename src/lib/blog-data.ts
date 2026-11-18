@@ -25,6 +25,60 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Budget Watchdog: Ottawa Spent 96% of Its Windfall, and Interest Is Now the Fastest-Growing Bill",
+ slug: "canadian-news-roundup-2026-11-18",
+ date: "November 18, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-18.png",
+ chartType: 'bar',
+ chartTitle: "Federal public debt charges per Canadian, Budget 2026 projection ($ per person, Parliamentary Budget Officer)",
+ chartData: [
+ { name: "2026-27", value: 1440 },
+ { name: "2030-31", value: 2009 },
+ ],
+ excerpt: "Parliamentary Budget Officer Annette Ryan says the Carney government's Nov. 5 budget used 96 per cent of $158.3 billion in new fiscal room on new measures instead of cutting the deficit. Ottawa plans $764.7 billion in borrowing over five years, and federal interest costs per Canadian rise 40 per cent by 2030-31.",
+ content: `
+<p><strong>TL;DR:</strong> Canada's budget watchdog says Ottawa got a $158.3-billion windfall in new fiscal room and spent 96 per cent of it. Without the new measures, this year's deficit would have dropped to $43.8 billion. The budget projects $62.3 billion instead. Meanwhile, federal borrowing hits $764.7 billion over five years, and interest on the debt is now the fastest-growing thing Ottawa pays for: about $1,440 per Canadian this year, rising to $2,009 by 2030-31.</p>
+
+<h2 id="pbo-budget-2026-fiscal-room">"Spends more, invests more and borrows more"</h2>
+<p>Parliamentary Budget Officer Annette Ryan released four reports on Tuesday, Nov. 17, assessing Budget 2026, which Finance Minister François-Philippe Champagne tabled on Nov. 5. It is the second budget since Mark Carney became prime minister. Ryan then took questions at the House of Commons finance committee, <a href="https://www.theglobeandmail.com/politics/article-parliamentary-budget-officer-budget-2026-report/" target="_blank" rel="noopener">the Globe and Mail reports</a>.</p>
+<p>Her one-line verdict: "The government promised to spend less to invest more. This budget spends more, invests more and borrows more."</p>
+<p>The numbers behind it, from <a href="https://www.pbo-dpb.ca/en/publications/NT-2627-018-S--pbo-assessment-budget-2026-economic-fiscal-track--evaluation-budget-2026-bdpb-profil-evolution-economique-financiere" target="_blank" rel="noopener">the PBO's economic and fiscal track assessment</a>:</p>
+<ul>
+<li>Compared with the spring economic update, the budget has <strong>$158.3 billion</strong> in new fiscal room over five years, mostly from higher revenues as energy prices lift nominal GDP growth to 5.6 per cent this year. Real growth is just 1.0 per cent.</li>
+<li>New tax and spending measures total <strong>$151.5 billion</strong>, absorbing <strong>96 per cent</strong> of that room. Only $6.8 billion went to lowering the deficit.</li>
+<li>Without new measures, the 2026-27 deficit would have fallen to <strong>$43.8 billion</strong>. The budget projects <strong>$62.3 billion</strong>, barely below the spring update's $65.3 billion.</li>
+<li>Since the 2024 Fall Economic Statement, new measures total $324.8 billion, nearly twice the $176.7 billion in fiscal room created.</li>
+</ul>
+
+<h2>The interest bill</h2>
+<p>Ryan's sharpest warning is about borrowing, not the deficit. Ottawa's financial requirement over the next five years is <strong>$764.7 billion</strong>, 2.6 times the $288.7 billion in total deficits. The gap is mostly loans and advances to Crown corporations, including Canada Mortgage Bond purchases, plus capital spending that is paid up front but expensed over time. Those loans don't count as deficit spending, but they still have to be borrowed.</p>
+<p>"This budget forecasts three-quarters of a trillion dollars in new borrowing over five years. That's a significant increase to taxpayers' debt financing load, just as interest rates are starting to climb," Ryan said.</p>
+<p>Public debt charges are the fastest-growing federal expense, rising more than 9 per cent a year to 2030-31, the Globe reports. The budget projects them at <strong>$85.5 billion</strong> in 2030-31, or 13.6 per cent of federal revenues, up from $60.2 billion this year. Per person, the PBO says, debt charges rise <strong>40 per cent</strong>, from $1,440 to $2,009, while federal debt per person rises 15 per cent, from $32,693 to $37,437. Interest is growing faster than the debt itself.</p>
+<p>And that is the base case. The PBO estimates a sustained one-percentage-point rise in interest rates would add $5.1 billion to debt charges in the first year and $15.8 billion by the fourth.</p>
+
+<h2>Ottawa's defence: it's investment</h2>
+<p>The government says the money is going to growth. Of the $151.5 billion in new measures, the PBO classifies $89.5 billion as capital investment, led by the $36.1-billion Productivity Mega Deduction, and $62.0 billion as day-to-day operating spending. Finance spokesperson John Fragos told The Canadian Press that borrowing beyond the government's means is focused on future growth, <a href="https://thehub.ca/2026/11/18/carney-governments-three-spending-plans-total-331-6-billion-in-new-measures-budget-watchdog-finds/" target="_blank" rel="noopener">The Hub reports</a>.</p>
+<p>The PBO also says current federal policy is sustainable over the long term, with debt-to-GDP declining. But that test leaves out Canada's pledge to spend 5 per cent of GDP on defence by 2035. If that is met, deficits and debt would be higher than projected. The Hub, citing the PBO, says the deficit anchor has only about $2 billion of room in 2027-28 and is missed in the budget's own downside scenario.</p>
+<p>In Question Period, Conservative Leader Pierre Poilievre asked: "How could they spend so much to achieve so little?" Champagne replied: "Canadians know that confident countries invest in themselves."</p>
+
+<h2>Why it matters</h2>
+<p>Every dollar of interest buys nothing: no housing, no health care, no defence. Ottawa had a real chance to shrink the deficit this year and chose new measures instead. That may pay off if the Productivity Mega Deduction and capital spending lift growth. But the bill for borrowing $764.7 billion arrives first, it is growing faster than any other federal expense, and it gets bigger if interest rates keep rising.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.pbo-dpb.ca/en/publications/NT-2627-018-S--pbo-assessment-budget-2026-economic-fiscal-track--evaluation-budget-2026-bdpb-profil-evolution-economique-financiere" target="_blank" rel="noopener">Parliamentary Budget Officer: PBO Assessment of Budget 2026: Economic and Fiscal Track (Nov. 17, 2026)</a></li>
+<li><a href="https://www.theglobeandmail.com/politics/article-parliamentary-budget-officer-budget-2026-report/" target="_blank" rel="noopener">The Globe and Mail: Public debt charges are Ottawa's fastest-growing expense, PBO says</a></li>
+<li><a href="https://nationalpost.com/news/parliamentary-budget-officer-says-carneys-fiscal-cupboard-is-almost-bare/" target="_blank" rel="noopener">National Post: Parliamentary budget officer says Carney's fiscal cupboard is almost bare</a></li>
+<li><a href="https://thehub.ca/2026/11/18/carney-governments-three-spending-plans-total-331-6-billion-in-new-measures-budget-watchdog-finds/" target="_blank" rel="noopener">The Hub / The Canadian Press: Carney government's three spending plans total $331.6 billion in new measures</a></li>
+<li><a href="https://www.ipolitics.ca/2026/11/17/ottawas-spending-up-331-6-billion-under-carney-budget-watchdog-says/" target="_blank" rel="noopener">iPolitics / The Canadian Press: Ottawa's spending up $331.6 billion under Carney, budget watchdog says</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "Carney and Xi Cut Tariffs on $400 Million in Pork and Seafood, but There's No Auto Plant Deal",
  slug: "canadian-news-roundup-2026-11-17",
  date: "November 17, 2026",
