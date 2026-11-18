@@ -44,6 +44,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="pbo-budget-2026-fiscal-room">"Spends more, invests more and borrows more"</h2>
 <p>Parliamentary Budget Officer Annette Ryan released four reports on Tuesday, Nov. 17, assessing Budget 2026, which Finance Minister François-Philippe Champagne tabled on Nov. 5. It is the second budget since Mark Carney became prime minister. Ryan then took questions at the House of Commons finance committee, <a href="https://www.theglobeandmail.com/politics/article-parliamentary-budget-officer-budget-2026-report/" target="_blank" rel="noopener">the Globe and Mail reports</a>.</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/b_phYvHIx7c" title="Ottawa Spent 96% of Its Windfall" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>Her one-line verdict: "The government promised to spend less to invest more. This budget spends more, invests more and borrows more."</p>
 <p>The numbers behind it, from <a href="https://www.pbo-dpb.ca/en/publications/NT-2627-018-S--pbo-assessment-budget-2026-economic-fiscal-track--evaluation-budget-2026-bdpb-profil-evolution-economique-financiere" target="_blank" rel="noopener">the PBO's economic and fiscal track assessment</a>:</p>
 <ul>
