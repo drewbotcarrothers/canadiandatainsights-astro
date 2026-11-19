@@ -25,6 +25,57 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Military Pauses Most Cadet Activities Until April to Save Money, as Ottawa Pours Billions Into Defence",
+ slug: "canadian-news-roundup-2026-11-19",
+ date: "November 19, 2026",
+ category: "News",
+ readTime: "4 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-19.png",
+ excerpt: "Leaked emails show the Canadian Armed Forces has paused most cadet weekend training, competitions and regional activities until March 31, 2027, citing the fiscal environment. Weekly parade nights continue. It comes as National Defence must find $459 million in operating savings this year, even while Ottawa promises historic defence spending.",
+ content: `
+<p><strong>TL;DR:</strong> The Canadian Armed Forces has paused most cadet activities until the end of March: weekend training, competitions and regional events are off, and only weekly parade nights continue. The program had more than 61,000 young Canadians aged 12 to 18 last year. The reason is a $459-million operating cut National Defence must find this year, even as Ottawa pours tens of billions of new dollars into the military.</p>
+
+<h2 id="cadet-program-cuts-defence-restraint">"All cadet activities are paused"</h2>
+<p>Internal emails first reported by the <a href="https://ottawacitizen.com/public-service/defence-watch/canadian-military-pauses-cadet-training-funding-cuts" target="_blank" rel="noopener">Ottawa Citizen</a>, then obtained by <a href="https://www.cbc.ca/news/politics/defence-budget-cadets-cuts-training-9.7426967" target="_blank" rel="noopener">CBC News</a> and <a href="https://www.theglobeandmail.com/canada/article-military-suspends-most-cadet-activities-as-officials-move-to-cut/" target="_blank" rel="noopener">The Canadian Press</a>, spell it out.</p>
+<p>"Due to the current fiscal environment, all cadet activities are paused for the remainder of the current fiscal year, ending 31 March 2027, with the exception of weekly parade nights, which may continue at this time," reads one email quoting Lt.-Col. Raphael MacKenzie, who commands Ontario's Regional Cadet Support Unit (Central).</p>
+<ul>
+<li>In <strong>Ontario</strong>, the restrictions took effect immediately.</li>
+<li>In <strong>British Columbia</strong>, they take effect <strong>Nov. 21</strong>. Band, guard and marksmanship are among the activities paused in the Pacific region, <a href="https://cheknews.ca/ottawa-is-reviewing-cadet-and-junior-canadian-programs-including-those-on-vancouver-island-1362465/" target="_blank" rel="noopener">CHEK News reports</a>.</li>
+<li>The Ottawa Citizen says all regions are receiving similar directives from the office of the vice-chief of the defence staff.</li>
+</ul>
+<p>The B.C. email, dated Nov. 16, did not sugarcoat it: "These are not measures that would be taken if the resources were available to sustain the program as planned."</p>
+
+<h2>Who this hits</h2>
+<p>The cadet program had more than 61,000 participants in the last fiscal year, according to National Defence's 2025-26 departmental results report. It serves youth aged 12 to 18 in sea, army and air cadet units across five regions: Atlantic, Eastern, Central, Northwest and Pacific. Cadets are not members of the military. The program is funded by the Canadian Forces and National Defence, with support from civilian organizations, and it costs families nothing. Astronauts Chris Hadfield, Marc Garneau and Jeremy Hansen all came through it.</p>
+<p>Weekend exercises and competitions are what keep many teenagers in. "I don't know if the kids will necessarily be interested in doing all the hard work without the reward," former Cadet Instructor Cadre officer E. Patrick Shea told The Canadian Press. He warned the cuts could widen the gap between units in wealthier and poorer communities if fundraising lets some keep their activities: "It shouldn't matter whether you come from the poorest community in the country or the richest."</p>
+
+<h2>Billions for defence, cuts for cadets</h2>
+<p>National Defence says the Cadets and Junior Canadian Rangers budget actually rose this year, to about $265 million, including an extra $27 million announced earlier in 2026. But participation is up too, and the department says it is "reducing costs that do not directly support core activities and program delivery."</p>
+<p>The bigger squeeze is department-wide. The Carney government has given National Defence tens of billions in new funding, aimed at priorities like combat equipment. At the same time, the department is still bound by operations and maintenance cuts announced by the Trudeau government in 2023 and enacted in the 2024 budget. According to the latest federal budget, DND must find <strong>$459 million</strong> in operating savings this fiscal year and <strong>another $459 million</strong> next year, CBC reports.</p>
+<p>The cadets are not the only sign. Last week a reserve unit in southwestern Ontario limited paid participation in Remembrance Day events because of the restraint, CBC reported, and there are unconfirmed reports of full-time reservists having three-year contracts cancelled with under 30 days' notice. The budget's departmental plans had said: "No job losses are anticipated as a result of these reductions."</p>
+<p>Meanwhile, the Parliamentary Budget Officer said this week the government could spend as much as $163.6 billion on the military by 2035.</p>
+
+<h2>The fight</h2>
+<p>"Mark Carney and the Liberals can't be talking out of both sides of their mouths, saying that they're investing in the armed forces and then cutting operations," Conservative defence critic James Bezan told CBC. Nanaimo-Ladysmith MP Tamara Kronis put it more bluntly to CHEK News: "If there isn't enough money for this, what on earth is this government spending its money on?"</p>
+<p>National Defence says it is "too early to determine the full extent of any changes or their impacts," and that it must "align our spending with available resources while making every effort to protect the activities and experiences that matter most to the young people who participate."</p>
+
+<h2>Why it matters</h2>
+<p>This is a small line item in a huge defence budget, and that is the point. Ottawa is promising historic military spending, yet a fixed operating cut is landing on teenagers' weekend exercises, band practice and competitions for five months. If the government wants a bigger military, the cadet program is one of its oldest recruiting pipelines. Watch the B.C. town halls and whether Defence Minister David McGuinty's office reverses or funds the pause.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/politics/defence-budget-cadets-cuts-training-9.7426967" target="_blank" rel="noopener">CBC News: Cadets being told to stand down as Canada adds billions to defence</a></li>
+<li><a href="https://www.theglobeandmail.com/canada/article-military-suspends-most-cadet-activities-as-officials-move-to-cut/" target="_blank" rel="noopener">The Globe and Mail / The Canadian Press: Military suspends most cadet activities as officials move to cut spending</a></li>
+<li><a href="https://ottawacitizen.com/public-service/defence-watch/canadian-military-pauses-cadet-training-funding-cuts" target="_blank" rel="noopener">Ottawa Citizen: Military pauses some cadet training due to funding cuts</a></li>
+<li><a href="https://cheknews.ca/ottawa-is-reviewing-cadet-and-junior-canadian-programs-including-those-on-vancouver-island-1362465/" target="_blank" rel="noopener">CHEK News: Ottawa is reviewing Cadet and Junior Canadian programs</a></li>
+<li><a href="https://www.conservative.ca/liberal-defence-cuts-hurt-canadian-youth/" target="_blank" rel="noopener">Conservative Party of Canada: statement on cuts to Cadets and Junior Canadian Rangers</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+
+ {
  title: "Budget Watchdog: Ottawa Spent 96% of Its Windfall, and Interest Is Now the Fastest-Growing Bill",
  slug: "canadian-news-roundup-2026-11-18",
  date: "November 18, 2026",
