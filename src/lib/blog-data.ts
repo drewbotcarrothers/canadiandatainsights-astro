@@ -38,6 +38,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="cadet-program-cuts-defence-restraint">"All cadet activities are paused"</h2>
 <p>Internal emails first reported by the <a href="https://ottawacitizen.com/public-service/defence-watch/canadian-military-pauses-cadet-training-funding-cuts" target="_blank" rel="noopener">Ottawa Citizen</a>, then obtained by <a href="https://www.cbc.ca/news/politics/defence-budget-cadets-cuts-training-9.7426967" target="_blank" rel="noopener">CBC News</a> and <a href="https://www.theglobeandmail.com/canada/article-military-suspends-most-cadet-activities-as-officials-move-to-cut/" target="_blank" rel="noopener">The Canadian Press</a>, spell it out.</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/vArECy7jWQA" title="Canada&#39;s Military Pauses Cadets to Save Money" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>"Due to the current fiscal environment, all cadet activities are paused for the remainder of the current fiscal year, ending 31 March 2027, with the exception of weekly parade nights, which may continue at this time," reads one email quoting Lt.-Col. Raphael MacKenzie, who commands Ontario's Regional Cadet Support Unit (Central).</p>
 <ul>
 <li>In <strong>Ontario</strong>, the restrictions took effect immediately.</li>
