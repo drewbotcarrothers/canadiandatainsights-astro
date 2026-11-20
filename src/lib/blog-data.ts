@@ -25,6 +25,60 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Stellantis Showdown: Joly Faces Stellantis CEO Today in Last Bid to Save the Brampton Plant",
+ slug: "canadian-news-roundup-2026-11-20",
+ date: "November 20, 2026",
+ category: "News",
+ readTime: "4 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-20.png",
+ excerpt: "Industry Minister Melanie Joly, Ontario and Unifor sit down with Stellantis global CEO Antonio Filosa in Toronto today in what could be the last chance to stop the sale of the idled Brampton Assembly Plant to Roshel. About 2,200 laid-off workers, hundreds of millions in taxpayer subsidies and a 30-day default notice are on the line. We will update this post with the outcome.",
+ content: `
+<p><strong>TL;DR:</strong> Today in Toronto, Industry Minister Melanie Joly, Ontario officials and the Unifor union meet Stellantis global CEO Antonio Filosa to try to stop the sale of the idled Brampton Assembly Plant to armoured-vehicle maker Roshel. About 2,200 workers have been on layoff pay since 2023. Ottawa says Stellantis owes "hundreds of millions" in subsidies; Stellantis has offered $24 million. <em>This is a preview. We will update it with the outcome, and our video goes up tonight.</em></p>
+
+<h2 id="stellantis-brampton-showdown">The meeting that decides Brampton</h2>
+<p>Stellantis says Filosa and Stellantis Canada president Trevor Longley will attend Friday's "working session" with the federal and Ontario governments and Unifor, and that it "remains committed to engaging constructively" about the sale (<a href="https://media.stellantisnorthamerica.com/newsrelease.do?id=28211&amp;mid=1" target="_blank" rel="noopener">Stellantis statement</a>). It is the second meeting in eight days. The first, with the head of Stellantis Canada, failed to change the company's mind (<a href="https://www.theglobeandmail.com/business/article-joly-stellantis-ceo-to-meet-friday-in-attempt-to-save-brampton-plant/" target="_blank" rel="noopener">The Globe and Mail</a>). Going in, <a href="https://www.ctvnews.ca/politics/article/hopes-dim-ahead-of-high-stakes-meeting-with-stellantis-to-avert-brampton-plant-sale/" target="_blank" rel="noopener">CTV News</a> reports that hopes are dim.</p>
+
+<h2>What's at stake</h2>
+<ul>
+<li><strong>Jobs:</strong> The plant employed about 3,000 people when it closed for retooling in 2023. About 2,200 are still on layoff benefits, collecting as much as 70 per cent of wages, and the job pays about $45 an hour (Globe and Mail).</li>
+<li><strong>Taxpayer money:</strong> In 2022 Ottawa said it would put up to $529 million into Stellantis's Brampton and Windsor plants. The company has received at least $220 million for those facilities. Stellantis says it will repay $24 million; Joly says it "is on the hook for hundreds of millions of dollars" (<a href="https://www.cbc.ca/news/politics/resolution-process-terminated-government-stellantis-brampton-plant-9.7419553" target="_blank" rel="noopener">CBC News</a>).</li>
+<li><strong>The clock:</strong> On Nov. 12 Joly told Stellantis it is in default of the 2022 agreement and gave it 30 days to take corrective action, or Ottawa could seek to end the deal and recoup the subsidies. "Patience has its limits. To be frank, I'm fed up," she said (CBC News).</li>
+<li><strong>The Jeep:</strong> Brampton was supposed to build the Jeep Compass. After U.S. tariffs, Stellantis moved it to Belvidere, Ill., a plant that is still idle and scheduled to reopen in 2028 to build the Jeep Cherokee (<a href="https://www.theglobeandmail.com/business/article-stellantis-workers-in-limbo-as-future-of-car-plant-is-determined/" target="_blank" rel="noopener">Globe and Mail</a>).</li>
+</ul>
+
+<h2>The offer on the table</h2>
+<p>Joly says Ottawa will offer "an aggressive package" to keep the plant building cars, but only if Stellantis drops the sale. "We can't give money to a company that is actually going against its contractual obligations," she told CTV's Question Period (<a href="https://www.cp24.com/local/toronto/2026/11/16/simple-as-that-doug-ford-says-stellantis-must-hire-back-brampton-workers/" target="_blank" rel="noopener">CP24</a>). Ottawa and Ontario announced $2.5 billion in auto-sector aid on Oct. 21.</p>
+<p>Queen's Park is more cautious. "We've given Stellantis absolutely nothing," Premier Doug Ford said, adding the province would talk only if Stellantis commits to employ 3,000 to 4,000 people. He would not confirm any provincial money (<a href="https://globalnews.ca/news/12153708/ford-holds-off-on-new-cash-for-stellantis-plant-contradicting-minister/" target="_blank" rel="noopener">Global News</a>).</p>
+
+<h2>The fight</h2>
+<p>Prime Minister Mark Carney called the sale "a betrayal of the workers, as it is a betrayal of the obligations to Canada and by extension to all Canadians." But he also admitted he had been told of "some aspects" of the deal before it was announced, and a source told CBC the government had been engaged on it since August (<a href="https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>The contract itself may not be the hammer Ottawa wants. A 2023 provision says closing Brampton before 2035 is a violation unless Stellantis can show substantial evidence it took all reasonable efforts to find other work for the plant (<a href="https://www.cbc.ca/news/canada/windsor/stellantis-brampton-carney-federal-government-funding-deals-9.7417238" target="_blank" rel="noopener">CBC News</a>). Roshel says it will prioritize hiring laid-off workers, but it is not bound by Stellantis's promises to them (CP24).</p>
+<p>For background on the sale itself and what Ontario's auto jobs look like, see our <a href="/blog/canadian-news-roundup-2026-11-10/">Nov. 10 deep-dive on the Roshel deal</a>.</p>
+
+<h2>Why it matters</h2>
+<p>This is the clearest test yet of whether Ottawa can make an automaker keep its word under Trump's tariffs. If the talks fail, the fight moves toward court, hundreds of millions in public money is in dispute, and a 40-year car plant stops building cars. If they succeed, taxpayers will likely be asked to pay again. Either way, 2,200 families are waiting on today's answer.</p>
+
+<h2>Update: the outcome</h2>
+<p><em>Pending. We will add what came out of today's meeting here, with sources, once it is reported.</em></p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.ctvnews.ca/politics/article/hopes-dim-ahead-of-high-stakes-meeting-with-stellantis-to-avert-brampton-plant-sale/" target="_blank" rel="noopener">CTV News: Hopes dim ahead of high-stakes meeting with Stellantis to avert Brampton plant sale</a></li>
+<li><a href="https://www.theglobeandmail.com/business/article-stellantis-workers-in-limbo-as-future-of-car-plant-is-determined/" target="_blank" rel="noopener">The Globe and Mail: Stellantis workers left in limbo as car plant's future is determined</a></li>
+<li><a href="https://www.theglobeandmail.com/business/article-joly-stellantis-ceo-to-meet-friday-in-attempt-to-save-brampton-plant/" target="_blank" rel="noopener">The Globe and Mail: Joly, Stellantis CEO to meet Friday in attempt to save Brampton plant</a></li>
+<li><a href="https://www.cbc.ca/news/politics/resolution-process-terminated-government-stellantis-brampton-plant-9.7419553" target="_blank" rel="noopener">CBC News: Feds say Stellantis owes 'hundreds of millions' in subsidies, company offers $24M</a></li>
+<li><a href="https://www.cbc.ca/news/politics/stellantis-carney-deal-plant-9.7418797" target="_blank" rel="noopener">CBC News: Carney aware of 'some aspects' of Stellantis auto plant sale</a></li>
+<li><a href="https://www.cbc.ca/news/canada/windsor/stellantis-brampton-carney-federal-government-funding-deals-9.7417238" target="_blank" rel="noopener">CBC News: Did Stellantis violate its deals with the feds?</a></li>
+<li><a href="https://www.cp24.com/local/toronto/2026/11/16/simple-as-that-doug-ford-says-stellantis-must-hire-back-brampton-workers/" target="_blank" rel="noopener">CP24: Doug Ford says Stellantis must hire back Brampton workers</a></li>
+<li><a href="https://globalnews.ca/news/12153708/ford-holds-off-on-new-cash-for-stellantis-plant-contradicting-minister/" target="_blank" rel="noopener">Global News: Ford holds off on new cash for Stellantis plant</a></li>
+<li><a href="https://media.stellantisnorthamerica.com/newsrelease.do?id=28211&amp;mid=1" target="_blank" rel="noopener">Stellantis: statement on the Nov. 20 discussion</a></li>
+</ul>
+<p><em>For education only. Verify primary sources.</em></p>
+`,
+ },
+
+ {
  title: "Military Pauses Most Cadet Activities Until April to Save Money, as Ottawa Pours Billions Into Defence",
  slug: "canadian-news-roundup-2026-11-19",
  date: "November 19, 2026",
