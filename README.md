@@ -142,3 +142,26 @@ Client helper: `src/lib/analytics.ts` (`trackEvent`). Custom events fire only wh
 | `npm run ingest:inflation` | Refresh `/inflation/` from Statistics Canada. See `scripts/inflation/README.md` |
 | `npm run ingest:release` | Refresh the CPI, jobs, and housing release pages, then the inflation section |
 | `npm run check:inflation` | Check inflation calculator rounding against the stored indexes |
+| `npm run indexnow` | Notify IndexNow (Bing and other engines) of new or updated URLs. See below |
+
+## IndexNow
+
+After a deploy, `scripts/indexnow.mjs` posts `{ host, key, keyLocation, urlList }` to `https://api.indexnow.org/indexnow`. Bing, Yandex, Seznam, Naver, and other IndexNow engines share that submission.
+
+Ownership is the key file `public/5483b424e775519ba341576afe2b02dc.txt`. The file contains only the key. `npm run build` copies it to the site root, and IndexNow fetches `https://canadiandatainsights.com/5483b424e775519ba341576afe2b02dc.txt` before accepting URLs. Submit only after that URL returns the key (HTTP 200). A 403 usually means the key file is not live yet.
+
+```bash
+# Specific pages (absolute URLs, or paths such as /inflation/)
+npm run indexnow -- https://canadiandatainsights.com/inflation/ https://canadiandatainsights.com/inflation/food/
+
+# Sitemap URLs whose <lastmod> is on or after a date
+npm run indexnow -- --since 2026-11-20
+
+# Every URL in dist/sitemap.xml, or the live sitemap if dist/ is missing
+npm run indexnow
+
+# Print the payload without sending
+npm run indexnow -- --dry-run
+```
+
+HTTP 200 or 202 means the batch was accepted. IndexNow allows up to 10,000 URLs per request; longer lists are sent in batches.
