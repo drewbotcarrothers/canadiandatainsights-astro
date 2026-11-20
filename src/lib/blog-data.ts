@@ -60,7 +60,14 @@ const existingBlogPosts: BlogPost[] = [
 <p>This is the clearest test yet of whether Ottawa can make an automaker keep its word under Trump's tariffs. If the talks fail, the fight moves toward court, hundreds of millions in public money is in dispute, and a 40-year car plant stops building cars. If they succeed, taxpayers will likely be asked to pay again. Either way, 2,200 families are waiting on today's answer.</p>
 
 <h2>Update: the outcome</h2>
-<p><em>Pending. We will add what came out of today's meeting here, with sources, once it is reported.</em></p>
+<p><em>Pending: still awaiting the result as of 2:15 p.m. ET. Here is what we know going in.</em></p>
+<ul>
+<li><strong>Joly's ultimatum:</strong> Hours before the meeting, Joly put it bluntly: "They need to protect the workers. If not, we'll get our money back." And: "If they go ahead and sell the plant, well then they will face legal recourses from the Government of Canada of hundreds of millions of dollars. And if they decide actually to protect their workers and not sell the plant, then we can work together" (<a href="https://toronto.citynews.ca/2026/11/20/stellantis-ontario-joly-unifor-latest/" target="_blank" rel="noopener">The Canadian Press via CityNews</a>).</li>
+<li><strong>Who is in the room:</strong> Stellantis global CEO Antonio Filosa and Stellantis Canada CEO Trevor Longley, Premier Doug Ford, Economic Development Minister Vic Fedeli and Unifor national president Lana Payne. The meeting is behind closed doors, Roshel was not invited, and Joly's office says she will not speak to media afterward (The Canadian Press). Filosa is joining virtually, money.ca reports.</li>
+<li><strong>The money gap:</strong> Stellantis still says it will repay only $24 million. Joly says the Brampton and Windsor funding contracts are linked, leaving the company "exposed for hundreds of millions of dollars" (The Canadian Press).</li>
+<li><strong>The odds:</strong> Four sources told CTV News that Stellantis went into the meeting on the premise that the Roshel sale will proceed. The company says there has been "no change" (<a href="https://money.ca/news/economy/stellantis-brampton-plant-sale-ottawa-public-funds" target="_blank" rel="noopener">money.ca</a>). The sale is expected to close before the end of the year, and the 30-day default clock runs out around Dec. 12.</li>
+</ul>
+<p><em>We will replace this section with the outcome, with sources, once it is reported.</em></p>
 
 <h2>Sources</h2>
 <ul>
@@ -73,6 +80,8 @@ const existingBlogPosts: BlogPost[] = [
 <li><a href="https://www.cp24.com/local/toronto/2026/11/16/simple-as-that-doug-ford-says-stellantis-must-hire-back-brampton-workers/" target="_blank" rel="noopener">CP24: Doug Ford says Stellantis must hire back Brampton workers</a></li>
 <li><a href="https://globalnews.ca/news/12153708/ford-holds-off-on-new-cash-for-stellantis-plant-contradicting-minister/" target="_blank" rel="noopener">Global News: Ford holds off on new cash for Stellantis plant</a></li>
 <li><a href="https://media.stellantisnorthamerica.com/newsrelease.do?id=28211&amp;mid=1" target="_blank" rel="noopener">Stellantis: statement on the Nov. 20 discussion</a></li>
+<li><a href="https://toronto.citynews.ca/2026/11/20/stellantis-ontario-joly-unifor-latest/" target="_blank" rel="noopener">The Canadian Press (CityNews): Joly, Stellantis officials set for latest showdown on Friday</a></li>
+<li><a href="https://money.ca/news/economy/stellantis-brampton-plant-sale-ottawa-public-funds" target="_blank" rel="noopener">money.ca: Ottawa's last push to save Stellantis plant</a></li>
 </ul>
 <p><em>For education only. Verify primary sources.</em></p>
 `,
