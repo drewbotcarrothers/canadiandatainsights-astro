@@ -1,0 +1,182 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ChangeBars from '../../components/inflation/ChangeBars.astro';
+import LineChart from '../../components/inflation/LineChart.astro';
+import PageHeader from '../../components/inflation/PageHeader.astro';
+import { asOfLine } from '../../lib/release';
+import { inflationPageJsonLd } from '../../lib/seo';
+import {
+  alignedAnnual,
+  alignedYoy,
+  chartColors,
+  component,
+  componentsIn,
+  detailContribution,
+  extremes,
+  formatPp,
+  formatWeight,
+  inflation,
+  inflationCoverage,
+  inflationCsv,
+  inflationTables,
+  joinNames,
+  monthLabel,
+  moved,
+} from '../../lib/inflation';
+import { formatIndex, formatSignedPercentPoints } from '../../lib/utils';
+
+const month = monthLabel();
+const shelter = component('shelter');
+const rent = component('rent');
+const mortgage = component('mortgage');
+const owned = component('owned');
+const details = componentsIn('shelter').filter((row) => row.yoyPct != null);
+const ranked = [...details].sort((a, b) => (b.yoyPct ?? 0) - (a.yoyPct ?? 0));
+const { high, low } = extremes(details, (row) => row.yoyPct);
+const heaviest = [...details].sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0))[0];
+const description = `In the 12 months to ${month}, shelter was ${moved(shelter.yoyPct)}, compared with all-items ${moved(inflation.headline.yoyPct)}. Rent was ${moved(rent.yoyPct)} and mortgage interest cost was ${moved(mortgage.yoyPct)}.`;
+const chart = alignedYoy([
+  { name: 'Shelter', color: chartColors.navy, history: shelter.history },
+  { name: 'Rent', color: chartColors.green, history: rent.history },
+  { name: 'Mortgage interest cost', color: chartColors.red, history: mortgage.history },
+]);
+const annual = alignedAnnual(
+  [
+    { key: 'shelterYoy', name: 'Shelter', color: chartColors.navy },
+    { key: 'rentYoy', name: 'Rent', color: chartColors.green },
+  ],
+  1976
+);
+const provinceShelter = extremes(inflation.provinces, (row) => row.shelter?.yoyPct);
+const jsonLd = inflationPageJsonLd({
+  name: `Shelter and rent inflation, ${month}`,
+  description,
+  path: '/inflation/shelter/',
+  csvPath: inflationCsv.components,
+  temporalCoverage: inflationCoverage(),
+  tables: inflationTables(['18-10-0004-01', '18-10-0005-01', '18-10-0007-01']),
+});
+---
+
+<Layout title={`Shelter and rent inflation, ${month}`} description={description} canonicalPath="/inflation/shelter/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <PageHeader
+        kicker={`Table 18-10-0004-01 · ${month}`}
+        title="Shelter and"
+        accent="rent"
+        asOf={asOfLine(inflation.referenceMonth, inflation.releaseDate)}
+      >
+        <p slot="lede">
+          {description} Shelter is {formatWeight(shelter.weight)} of the {inflation.weightYear} basket.
+          {heaviest?.weight != null ? ` ${heaviest.name} is the largest shelter piece in that basket, at ${formatWeight(heaviest.weight)}, and it was ${moved(heaviest.yoyPct)}.` : ''}
+          {high[0]?.yoyPct != null ? ` The fastest shelter series in this list was ${joinNames(high.map((row) => row.name))}, ${moved(high[0].yoyPct)}${high[0].weight != null ? `, and it is ${formatWeight(high[0].weight)} of the whole basket` : ''}.` : ''}
+          {low[0] && low[0] !== high[0] && low[0].yoyPct != null ? ` The slowest was ${joinNames(low.map((row) => row.name))}, ${moved(low[0].yoyPct)}.` : ''}
+        </p>
+      </PageHeader>
+
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Shelter</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(shelter.yoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatWeight(shelter.weight)} of the basket</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Rent</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(rent.yoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Index {formatIndex(rent.index)}</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Mortgage interest</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(mortgage.yoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatWeight(mortgage.weight)} of the basket</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Owned accommodation</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(owned.yoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatWeight(owned.weight)} of the basket</dd>
+        </div>
+      </dl>
+
+      <p class="mt-6 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        The rent index measures the change in rents in the CPI basket. It is not the dollar rent of a typical apartment, and it is not the 2021 census shelter-cost median.
+        Census shelter costs are a separate statistic on the <a href="/cost-of-living/" class="font-medium text-primary underline-offset-2 hover:underline">cost-of-living page</a> and on location profiles.
+        {provinceShelter.high[0]?.shelter && provinceShelter.low[0]?.shelter
+          ? ` Among provinces, shelter's 12-month change was highest in ${joinNames(provinceShelter.high.map((row) => row.geo))} at ${formatSignedPercentPoints(provinceShelter.high[0].shelter.yoyPct)} and lowest in ${joinNames(provinceShelter.low.map((row) => row.geo))} at ${formatSignedPercentPoints(provinceShelter.low[0].shelter.yoyPct)}.`
+          : ''}
+      </p>
+
+      <div class="mt-10 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={chart}
+          title="Shelter, rent, and mortgage interest"
+          unit="percent"
+          mode="percent"
+          includeZero
+          source="12-month changes calculated from table 18-10-0004-01."
+        />
+      </div>
+
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border/40 bg-surface">
+        <table class="min-w-full text-left font-sans text-sm">
+          <caption class="sr-only">Shelter CPI detail, {month}</caption>
+          <thead class="border-b border-border/40 bg-surface-soft text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+            <tr>
+              <th scope="col" class="px-3 py-3 sm:px-4">Series</th>
+              <th scope="col" class="px-3 py-3 text-right sm:px-4">12-month</th>
+              <th scope="col" class="hidden px-4 py-3 text-right sm:table-cell">1-month</th>
+              <th scope="col" class="px-3 py-3 text-right sm:px-4">Basket weight</th>
+              <th scope="col" class="hidden px-4 py-3 text-right lg:table-cell">Approx. contribution</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              ranked.map((row) => (
+                <tr class="border-b border-border/20 last:border-0">
+                  <th scope="row" class="px-3 py-3 font-heading font-bold text-primary sm:px-4">{row.name}</th>
+                  <td class="px-3 py-3 text-right tabular-nums sm:px-4">{formatSignedPercentPoints(row.yoyPct)}</td>
+                  <td class="hidden px-4 py-3 text-right tabular-nums sm:table-cell">{formatSignedPercentPoints(row.momPct)}</td>
+                  <td class="px-3 py-3 text-right tabular-nums sm:px-4">{formatWeight(row.weight)}</td>
+                  <td class="hidden px-4 py-3 text-right tabular-nums lg:table-cell">{formatPp(detailContribution(row))}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        The approximate contribution uses the same formula as the components page: {inflation.weightYear} basket weight times the 12-month change, divided by 100.
+        Shelter parts overlap one another — rent sits inside rented accommodation, and fuel oil sits inside water, fuel and electricity — so the contributions are not a sum.
+      </p>
+
+      <div class="mt-6 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <ChangeBars
+          title="Shelter series by 12-month change"
+          source="A very large change on a very small weight can look like the whole shelter story. Read it next to the basket weight."
+          rows={ranked.map((row) => ({
+            label: row.name,
+            value: row.yoyPct ?? 0,
+            note: formatWeight(row.weight),
+          }))}
+        />
+      </div>
+
+      <div class="mt-6 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={annual}
+          title={`Annual average shelter and rent inflation, ${annual[0].points[0].label} to ${annual[0].points[annual[0].points.length - 1].label}`}
+          unit="percent"
+          mode="percent"
+          includeZero
+          source="Percent change in the annual average index, table 18-10-0005-01."
+        />
+      </div>
+
+      <p class="mt-8 font-sans text-sm">
+        <a href="/inflation/places/" class="font-medium text-primary underline-offset-2 hover:underline">Shelter by province and city</a>
+        <span aria-hidden="true"> · </span>
+        <a href={inflationCsv.components} class="font-medium text-primary underline-offset-2 hover:underline">Download the component CSV</a>
+      </p>
+    </div>
+  </article>
+</Layout>

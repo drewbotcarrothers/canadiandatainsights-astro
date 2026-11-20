@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getAllLocations, generateSlug } from '../lib/locations';
 import { blogPosts } from '../lib/blog-data';
+import { inflationPages } from '../lib/inflation';
 
 const staticPages = [
   '/',
@@ -32,8 +33,9 @@ export const GET: APIRoute = async () => {
   }
 
   const blogPaths = blogPosts.map((post) => `/blog/${post.slug}/`);
+  const inflationPaths = inflationPages.map((page) => page.href);
 
-  const urls = [...staticPages, ...blogPaths, ...locationPaths]
+  const urls = [...staticPages, ...inflationPaths, ...blogPaths, ...locationPaths]
     .map(
       (path) => `  <url>
     <loc>${site}${path}</loc>

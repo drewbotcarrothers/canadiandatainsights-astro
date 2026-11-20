@@ -18,9 +18,10 @@ Refresh one dataset on the next release day:
 python3 scripts/release-pages/ingest.py --only cpi
 python3 scripts/release-pages/ingest.py --only jobs
 python3 scripts/release-pages/ingest.py --only housing
+python3 scripts/release-pages/ingest.py --only inflation
 ```
 
-`npm run ingest:release` runs all three. After a refresh, run `npm run build` and deploy.
+`npm run ingest:release` runs the three release pages and then the [inflation section](../inflation/README.md). `--only cpi` does not refresh `/inflation/`. After a CPI release, run the CPI command and then `python3 scripts/inflation/ingest.py` (or `npm run ingest:inflation`). The inflation ingest stops if its Canada all-items index does not match `src/data/release/cpi.json`. After a refresh, run `npm run build` and deploy.
 
 ## Tables
 

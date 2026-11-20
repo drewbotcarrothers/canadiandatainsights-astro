@@ -32,7 +32,7 @@ export const website = {
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    'Interactive Canadian insights from Statistics Canada — census profiles, housing, and consumer prices.',
+    'Interactive Canadian insights from Statistics Canada — census profiles, housing, consumer prices, and inflation.',
   publisher: { '@id': `${SITE_URL}/#organization` },
   inLanguage: 'en-CA',
 };
@@ -301,6 +301,61 @@ export function releaseDatasetJsonLd(opts: {
       { name: 'Data', path: '/data/' },
       { name: opts.name, path: opts.path },
     ]),
+  ];
+}
+
+export function inflationPageJsonLd(opts: {
+  name: string;
+  description: string;
+  path: string;
+  csvPath?: string;
+  temporalCoverage: string;
+  tables: { name: string; url: string }[];
+}): Record<string, unknown>[] {
+  const pageUrl = new URL(opts.path, SITE_URL).toString();
+  const crumbs = [
+    { name: 'Home', path: '/' },
+    { name: 'Inflation', path: '/inflation/' },
+  ];
+  if (opts.path !== '/inflation/') {
+    crumbs.push({ name: opts.name, path: opts.path });
+  }
+  const dataset: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: opts.name,
+    description: opts.description,
+    url: pageUrl,
+    creator: { '@id': `${SITE_URL}/#organization` },
+    license: STATCAN_OPEN_LICENCE_URL,
+    temporalCoverage: opts.temporalCoverage,
+    spatialCoverage: { '@type': 'Country', name: 'Canada' },
+    isBasedOn: opts.tables.map((table) => ({
+      '@type': 'CreativeWork',
+      name: table.name,
+      url: table.url,
+      creator: { '@type': 'Organization', name: 'Statistics Canada' },
+    })),
+  };
+  if (opts.csvPath) {
+    dataset.distribution = {
+      '@type': 'DataDownload',
+      encodingFormat: 'text/csv',
+      contentUrl: new URL(opts.csvPath, SITE_URL).toString(),
+    };
+  }
+  return [
+    dataset,
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: opts.name,
+      url: pageUrl,
+      description: opts.description,
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      inLanguage: 'en-CA',
+    },
+    breadcrumbJsonLd(crumbs),
   ];
 }
 

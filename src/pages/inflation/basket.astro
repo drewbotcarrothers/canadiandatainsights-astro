@@ -1,0 +1,69 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PersonalBasket from '../../components/inflation/PersonalBasket';
+import PageHeader from '../../components/inflation/PageHeader.astro';
+import { asOfLine } from '../../lib/release';
+import { inflationPageJsonLd } from '../../lib/seo';
+import {
+  componentsIn,
+  inflation,
+  inflationCoverage,
+  inflationCsv,
+  inflationTables,
+  monthLabel,
+  moved,
+} from '../../lib/inflation';
+
+const month = monthLabel();
+const items = componentsIn('major').map((row) => {
+  if (row.yoyPct == null || row.weight == null) {
+    throw new Error(`Major component ${row.id} is missing a rate or a basket weight`);
+  }
+  return { id: row.id, name: row.name, yoyPct: row.yoyPct, weight: row.weight };
+});
+const description = `Reweight the eight major CPI components with your own spending shares. The published 12-month changes are for ${month}. The starting shares are the ${inflation.weightYear} basket weights. The all-items CPI was ${moved(inflation.headline.yoyPct)} over the same 12 months.`;
+const jsonLd = inflationPageJsonLd({
+  name: 'Personal inflation calculator',
+  description,
+  path: '/inflation/basket/',
+  csvPath: inflationCsv.components,
+  temporalCoverage: inflationCoverage(),
+  tables: inflationTables(['18-10-0004-01', '18-10-0007-01']),
+});
+---
+
+<Layout title="Personal inflation calculator" description={description} canonicalPath="/inflation/basket/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <PageHeader
+        kicker={`${month} · basket ${inflation.weightYear}`}
+        title="Your"
+        accent="basket"
+        asOf={asOfLine(inflation.referenceMonth, inflation.releaseDate)}
+      >
+        <p slot="lede">
+          {description} The result is a weighted average of those eight rates. It will not equal the official all-items rate unless the shares and the CPI's own price calculation line up, which this average does not try to reproduce.
+        </p>
+      </PageHeader>
+
+      <div class="mt-10">
+        <PersonalBasket
+          client:load
+          items={items}
+          allItemsYoy={inflation.headline.yoyPct ?? 0}
+          weightYear={inflation.weightYear}
+          monthLabel={month}
+        />
+      </div>
+
+      <p class="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        The eight components are the CPI's top partition: food, shelter, household operations, clothing and footwear, transportation, health and personal care, recreation, education and reading, and alcoholic beverages, tobacco products and recreational cannabis.
+        Energy and gasoline are already inside those groups. Adding them again would double-count.
+        The component table, with the approximate contributions of the official weights, is on the <a href="/inflation/components/" class="font-medium text-primary underline-offset-2 hover:underline">components page</a>.
+      </p>
+      <p class="mt-4 font-sans text-sm">
+        <a href={inflationCsv.components} class="font-medium text-primary underline-offset-2 hover:underline">Download the component CSV</a>
+      </p>
+    </div>
+  </article>
+</Layout>

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { housingExtract, cpiExtract } from '../lib/geo-links';
 import foodFile from '../data/statcan/food-prices.json';
 import { cpiRelease, housingRelease, jobsRelease } from '../lib/release';
+import { inflation } from '../lib/inflation';
 import { formatRefMonth } from '../lib/utils';
 import { sourcesJsonLd } from '../lib/seo';
 
@@ -144,6 +145,34 @@ const jsonLd = sourcesJsonLd();
             and Yellowknife. A location page shows a price card only when one of these geographies
             matches that place.
           </p>
+        </div>
+
+        <div>
+          <h2 class="mb-4 font-heading text-2xl font-bold text-primary">Inflation section</h2>
+          <p class="mb-4">
+            The <a href="/inflation/" class="text-primary underline underline-offset-2 hover:text-tertiary">inflation section</a>{' '}
+            is refreshed from the Web Data Service. The reference month on this build is {inflation.referenceMonth}.
+            Calculated percent changes, approximate contributions, and real wages are labelled in the{' '}
+            <a href="/inflation/methodology/" class="text-primary underline underline-offset-2 hover:text-tertiary">methodology</a>.
+            CPI-trim, CPI-median, and CPI-common are copied as published 12-month rates.
+          </p>
+          <ul class="mb-4 list-disc space-y-2 pl-5">
+            {
+              inflation.tables.map((table) => (
+                <li>
+                  <a
+                    href={table.url}
+                    class="text-primary underline underline-offset-2 hover:text-tertiary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Table {table.id}
+                  </a>
+                  . {table.title}.
+                </li>
+              ))
+            }
+          </ul>
         </div>
 
         <div>

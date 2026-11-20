@@ -19,6 +19,7 @@ Usage:
   python3 scripts/release-pages/ingest.py --only cpi
   python3 scripts/release-pages/ingest.py --only jobs
   python3 scripts/release-pages/ingest.py --only housing
+  python3 scripts/release-pages/ingest.py --only inflation
 """
 
 from __future__ import annotations
@@ -793,18 +794,36 @@ def ingest_housing() -> None:
     )
 
 
+def ingest_inflation() -> None:
+    import importlib.util
+
+    path = ROOT / "scripts" / "inflation" / "ingest.py"
+    spec = importlib.util.spec_from_file_location("cdi_inflation_ingest", path)
+    if spec is None or spec.loader is None:
+        raise SystemExit(f"Cannot load {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    module.run()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--only", choices=("cpi", "jobs", "housing"), help="Refresh one dataset")
+    parser.add_argument(
+        "--only",
+        choices=("cpi", "jobs", "housing", "inflation"),
+        help="Refresh one dataset",
+    )
     args = parser.parse_args()
     self_check()
-    selected = {args.only} if args.only else {"cpi", "jobs", "housing"}
+    selected = {args.only} if args.only else {"cpi", "jobs", "housing", "inflation"}
     if "cpi" in selected:
         ingest_cpi()
     if "jobs" in selected:
         ingest_jobs()
     if "housing" in selected:
         ingest_housing()
+    if "inflation" in selected:
+        ingest_inflation()
 
 
 if __name__ == "__main__":

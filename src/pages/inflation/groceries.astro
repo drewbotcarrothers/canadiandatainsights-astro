@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ChangeBars from '../../components/inflation/ChangeBars.astro';
+import PageHeader from '../../components/inflation/PageHeader.astro';
+import { inflationPageJsonLd } from '../../lib/seo';
+import {
+  extremes,
+  formatDollars,
+  inflation,
+  inflationCoverage,
+  inflationCsv,
+  inflationTables,
+  joinNames,
+  monthLabel,
+  moved,
+} from '../../lib/inflation';
+import { formatSignedPercentPoints } from '../../lib/utils';
+
+const month = monthLabel(inflation.groceryMonth);
+const rows = [...inflation.groceries].sort((a, b) => (b.yoyPct ?? -999) - (a.yoyPct ?? -999));
+const { high, low } = extremes(rows, (row) => row.yoyPct);
+const description =
+  high[0]?.yoyPct != null && low[0]?.yoyPct != null
+    ? `In ${month}, ${high[0].name} averaged ${formatDollars(high[0].price)} in Canada, ${moved(high[0].yoyPct)} from a year earlier. That was the largest 12-month change in this grocery list. The smallest was ${joinNames(low.map((row) => row.name))}, ${moved(low[0].yoyPct)}.`
+    : `Average retail prices in Canada for ${month}.`;
+const jsonLd = inflationPageJsonLd({
+  name: `Grocery prices, ${month}`,
+  description,
+  path: '/inflation/groceries/',
+  csvPath: inflationCsv.groceries,
+  temporalCoverage: inflationCoverage(),
+  tables: inflationTables(['18-10-0245-01']),
+});
+---
+
+<Layout title={`Grocery prices, ${month}`} description={description} canonicalPath="/inflation/groceries/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <PageHeader kicker="Table 18-10-0245-01 · Canada" title="Grocery" accent="prices">
+        <p slot="lede">
+          {description}
+          {inflation.groceryMonth !== inflation.referenceMonth
+            ? ` These prices are for ${month}. The CPI reference month is ${monthLabel()}, one month later. The food index and these dollar prices are different statistics.`
+            : ''}
+          {' '}Provincial prices for a shorter product list are on the <a href="/cost-of-living/" class="font-medium text-primary underline-offset-2 hover:underline">cost-of-living page</a>.
+        </p>
+      </PageHeader>
+
+      <div class="mt-10 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <ChangeBars
+          title={`12-month change in average retail prices, ${month}`}
+          source="Calculated from the published Canada price in table 18-10-0245-01 and the price 12 months earlier. A blank comparison means the year-ago price was not published."
+          rows={rows.filter((row) => row.yoyPct != null).map((row) => ({
+            label: row.name,
+            value: row.yoyPct ?? 0,
+            note: `${formatDollars(row.price)} now${row.yearAgoPrice != null ? `, ${formatDollars(row.yearAgoPrice)} a year earlier` : ''}`,
+          }))}
+        />
+      </div>
+
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border/40 bg-surface">
+        <table class="min-w-full text-left font-sans text-sm">
+          <caption class="sr-only">Average retail prices, Canada, {month}</caption>
+          <thead class="border-b border-border/40 bg-surface-soft text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+            <tr>
+              <th scope="col" class="px-3 py-3 sm:px-4">Product</th>
+              <th scope="col" class="px-3 py-3 text-right sm:px-4">{month}</th>
+              <th scope="col" class="hidden px-4 py-3 text-right sm:table-cell">Year earlier</th>
+              <th scope="col" class="px-3 py-3 text-right sm:px-4">12-month</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              rows.map((row) => (
+                <tr class="border-b border-border/20 last:border-0">
+                  <th scope="row" class="px-3 py-3 font-heading font-bold text-primary sm:px-4">{row.name}</th>
+                  <td class="px-3 py-3 text-right tabular-nums sm:px-4">{formatDollars(row.price)}</td>
+                  <td class="hidden px-4 py-3 text-right tabular-nums sm:table-cell">{formatDollars(row.yearAgoPrice)}</td>
+                  <td class="px-3 py-3 text-right tabular-nums sm:px-4">{formatSignedPercentPoints(row.yoyPct)}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Each price is the monthly average retail price Statistics Canada publishes for that product specification. It is not a receipt from one store, and it is not adjusted for package-size changes beyond the specification in the product name.
+        The food CPI, which combines many products into one index, is on the <a href="/inflation/food/" class="font-medium text-primary underline-offset-2 hover:underline">food inflation page</a>.
+      </p>
+      <p class="mt-4 font-sans text-sm">
+        <a href={inflationCsv.groceries} class="font-medium text-primary underline-offset-2 hover:underline">Download the grocery CSV</a>
+      </p>
+    </div>
+  </article>
+</Layout>

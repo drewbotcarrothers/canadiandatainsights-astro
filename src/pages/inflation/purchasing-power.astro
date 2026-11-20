@@ -1,0 +1,68 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PurchasingPower from '../../components/inflation/PurchasingPower';
+import PageHeader from '../../components/inflation/PageHeader.astro';
+import { inflationPageJsonLd } from '../../lib/seo';
+import {
+  inflation,
+  inflationCoverage,
+  inflationCsv,
+  inflationTables,
+  monthLabel,
+} from '../../lib/inflation';
+import { formatIndex } from '../../lib/utils';
+
+const month = monthLabel();
+const years = inflation.annual
+  .filter((row) => row.allItems != null)
+  .map((row) => ({ year: row.year, index: row.allItems as number }));
+const latestAnnual = inflation.annual[inflation.annual.length - 1];
+const defaultYear = latestAnnual.year - 10;
+const description = `Scale a dollar amount from an earlier year into ${month} dollars using the all-items Consumer Price Index. Today uses the ${month} index of ${formatIndex(inflation.headline.index)} (2002=100). Earlier years use the published annual average.`;
+const jsonLd = inflationPageJsonLd({
+  name: 'Purchasing power calculator',
+  description,
+  path: '/inflation/purchasing-power/',
+  csvPath: inflationCsv.annual,
+  temporalCoverage: inflationCoverage(),
+  tables: inflationTables(['18-10-0004-01', '18-10-0005-01']),
+});
+---
+
+<Layout title="Purchasing power calculator" description={description} canonicalPath="/inflation/purchasing-power/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <PageHeader kicker={`All-items CPI · ${month}`} title="Purchasing" accent="power">
+        <p slot="lede">
+          {description} The latest full year in the annual table is {latestAnnual.year}, when the annual average index was {formatIndex(latestAnnual.allItems)}.
+          The calculator does not offer {month.split(' ').pop()} as a source year, because that annual average is not published yet.
+        </p>
+      </PageHeader>
+
+      <div class="mt-10 max-w-3xl">
+        <PurchasingPower
+          client:load
+          years={years}
+          todayIndex={inflation.headline.index}
+          todayLabel={month}
+          defaultYear={defaultYear}
+        />
+      </div>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">How the scaling works</h2>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Amount in {month} dollars = amount in the earlier year × {formatIndex(inflation.headline.index)} ÷ that year's annual average index.
+        Both indexes are 2002=100, from tables 18-10-0004-01 and 18-10-0005-01. The result is rounded half away from zero to the cent.
+        This is a price-index scaling. It is not a forecast, and it does not say what a particular household bought.
+      </p>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        The {latestAnnual.year} annual index was {formatIndex(latestAnnual.allItems)}. Scaling from that year uses {formatIndex(inflation.headline.index)} as the latest monthly index and {formatIndex(latestAnnual.allItems)} as the earlier index. The calculator does that division in the browser from those published indexes.
+      </p>
+      <p class="mt-4 font-sans text-sm">
+        <a href={inflationCsv.annual} class="font-medium text-primary underline-offset-2 hover:underline">Download the annual index CSV</a>
+        <span aria-hidden="true"> · </span>
+        <a href="/inflation/basket/" class="font-medium text-primary underline-offset-2 hover:underline">Weight a basket of your own</a>
+      </p>
+    </div>
+  </article>
+</Layout>

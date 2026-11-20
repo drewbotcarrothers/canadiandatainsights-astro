@@ -1,0 +1,139 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ChangeBars from '../../components/inflation/ChangeBars.astro';
+import LineChart from '../../components/inflation/LineChart.astro';
+import PageHeader from '../../components/inflation/PageHeader.astro';
+import { asOfLine } from '../../lib/release';
+import { inflationPageJsonLd } from '../../lib/seo';
+import {
+  alignedAnnual,
+  alignedYoy,
+  chartColors,
+  component,
+  componentsIn,
+  extremes,
+  formatWeight,
+  inflation,
+  inflationCoverage,
+  inflationCsv,
+  inflationTables,
+  joinNames,
+  monthLabel,
+  moved,
+} from '../../lib/inflation';
+import { formatSignedPercentPoints } from '../../lib/utils';
+
+const month = monthLabel();
+const food = component('food');
+const stores = component('foodStores');
+const restaurants = component('foodRestaurants');
+const details = componentsIn('food').filter((row) => row.id !== 'foodStores' && row.id !== 'foodRestaurants' && row.yoyPct != null);
+const ranked = [...details].sort((a, b) => (b.yoyPct ?? 0) - (a.yoyPct ?? 0));
+const { high, low } = extremes(details, (row) => row.yoyPct);
+const description = `In the 12 months to ${month}, the food index was ${moved(food.yoyPct)}, compared with all-items ${moved(inflation.headline.yoyPct)}. Food purchased from stores was ${moved(stores.yoyPct)} and food from restaurants was ${moved(restaurants.yoyPct)}.`;
+const chart = alignedYoy([
+  { name: 'Food', color: chartColors.navy, history: food.history },
+  { name: 'Purchased from stores', color: chartColors.green, history: stores.history },
+  { name: 'Purchased from restaurants', color: chartColors.red, history: restaurants.history },
+]);
+const annual = alignedAnnual(
+  [
+    { key: 'foodYoy', name: 'Food', color: chartColors.navy },
+    { key: 'allItemsYoy', name: 'All-items', color: chartColors.brown },
+  ],
+  1976
+);
+const jsonLd = inflationPageJsonLd({
+  name: `Food inflation, ${month}`,
+  description,
+  path: '/inflation/food/',
+  csvPath: inflationCsv.components,
+  temporalCoverage: inflationCoverage(),
+  tables: inflationTables(['18-10-0004-01', '18-10-0005-01', '18-10-0007-01']),
+});
+---
+
+<Layout title={`Food inflation, ${month}`} description={description} canonicalPath="/inflation/food/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <PageHeader
+        kicker={`Table 18-10-0004-01 · ${month}`}
+        title="Food"
+        accent="inflation"
+        asOf={asOfLine(inflation.referenceMonth, inflation.releaseDate)}
+      >
+        <p slot="lede">
+          {description} Food is {formatWeight(food.weight)} of the {inflation.weightYear} basket.
+          {high[0]?.yoyPct != null && low[0]?.yoyPct != null
+            ? ` Inside food, ${joinNames(high.map((row) => row.name))} was the fastest group in this list, ${moved(high[0].yoyPct)}, and ${joinNames(low.map((row) => row.name))} was the slowest, ${moved(low[0].yoyPct)}.`
+            : ''}
+        </p>
+      </PageHeader>
+
+      <dl class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Food</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(food.yoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatWeight(food.weight)} of the basket</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">From stores</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(stores.yoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatWeight(stores.weight)} of the basket</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">From restaurants</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(restaurants.yoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatWeight(restaurants.weight)} of the basket</dd>
+        </div>
+      </dl>
+
+      <div class="mt-10 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={chart}
+          title="Food inflation, 12-month change"
+          unit="percent"
+          mode="percent"
+          includeZero
+          source="Calculated from table 18-10-0004-01. Store food and restaurant food are the two parts of the food index."
+        />
+      </div>
+
+      <div class="mt-6 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <ChangeBars
+          title="Food groups, 12-month change"
+          source={`Weights are the ${inflation.weightYear} link-month basket, table 18-10-0007-01. They are shares of the whole CPI, not shares of food alone.`}
+          rows={ranked.map((row) => ({
+            label: row.name,
+            value: row.yoyPct ?? 0,
+            note: `${formatWeight(row.weight)} of the all-items basket`,
+          }))}
+        />
+      </div>
+
+      <div class="mt-6 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={annual}
+          title={`Annual average food inflation, ${annual[0].points[0].label} to ${annual[0].points[annual[0].points.length - 1].label}`}
+          unit="percent"
+          mode="percent"
+          includeZero
+          source="Percent change in the annual average index, table 18-10-0005-01."
+        />
+      </div>
+
+      <p class="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Dollar prices for individual products, such as milk or ground beef, are a different table. They are on the{' '}
+        <a href="/inflation/groceries/" class="font-medium text-primary underline-offset-2 hover:underline">grocery tracker</a>
+        {' '}for {monthLabel(inflation.groceryMonth)}, and by province on the{' '}
+        <a href="/cost-of-living/" class="font-medium text-primary underline-offset-2 hover:underline">cost-of-living page</a>.
+        A single product can move by much more than the food index, which averages many products.
+      </p>
+      <p class="mt-4 font-sans text-sm">
+        <a href={inflationCsv.components} class="font-medium text-primary underline-offset-2 hover:underline">Download the component CSV</a>
+        <span aria-hidden="true"> · </span>
+        <a href={inflationCsv.annual} class="font-medium text-primary underline-offset-2 hover:underline">Annual CSV</a>
+      </p>
+    </div>
+  </article>
+</Layout>

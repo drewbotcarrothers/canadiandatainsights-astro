@@ -1,0 +1,201 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LineChart from '../../components/inflation/LineChart.astro';
+import PageHeader from '../../components/inflation/PageHeader.astro';
+import { asOfLine } from '../../lib/release';
+import { inflationPageJsonLd } from '../../lib/seo';
+import {
+  alignedYoy,
+  annualSeries,
+  chartColors,
+  coreMeasure,
+  formatDollars,
+  formatWeight,
+  inflation,
+  inflationCoverage,
+  inflationCsv,
+  inflationTables,
+  monthLabel,
+  overviewDescription,
+  overviewPoints,
+} from '../../lib/inflation';
+import { formatIndex, formatSignedPercentPoints } from '../../lib/utils';
+
+const description = overviewDescription();
+const points = overviewPoints();
+const month = monthLabel();
+const file = inflation;
+const trim = coreMeasure('trim');
+const median = coreMeasure('median');
+const common = coreMeasure('common');
+const decade = alignedYoy([
+  { name: 'All-items', color: chartColors.navy, history: file.headline.history },
+]);
+const coreChart = alignedYoy([
+  { name: 'All-items', color: chartColors.navy, history: file.headline.history },
+  {
+    name: 'CPI-trim',
+    color: chartColors.red,
+    history: trim.history.map((point) => ({ month: point.month, yoyPct: point.value })),
+  },
+  {
+    name: 'CPI-median',
+    color: chartColors.green,
+    history: median.history.map((point) => ({ month: point.month, yoyPct: point.value })),
+  },
+]);
+const longRun = annualSeries('allItemsYoy', 1915, 'Annual average inflation', chartColors.navy);
+const since2000 = annualSeries('allItemsYoy', 2000, 'Annual average inflation', chartColors.navy);
+const cards = [
+  { href: '/inflation/components/', title: 'Components', text: 'The eight major parts of the basket, and what is adding to the 12-month change.' },
+  { href: '/inflation/places/', title: 'Provinces and cities', text: 'All-items, food, shelter, and energy compared across the CPI geographies.' },
+  { href: '/inflation/food/', title: 'Food', text: 'Store food, restaurant food, and the grocery groups inside the food index.' },
+  { href: '/inflation/shelter/', title: 'Shelter and rent', text: 'Rent, mortgage interest, replacement cost, and household energy.' },
+  { href: '/inflation/wages/', title: 'Wages', text: 'Average and median hourly wages set against the same 12-month price change.' },
+  { href: '/inflation/groceries/', title: 'Grocery prices', text: 'Average retail prices for a fixed list of products, in dollars.' },
+  { href: '/inflation/purchasing-power/', title: 'Purchasing power', text: 'What a dollar amount from an earlier year buys in the latest month.' },
+  { href: '/inflation/basket/', title: 'Your basket', text: 'Reweight the eight major components with your own spending shares.' },
+];
+const jsonLd = inflationPageJsonLd({
+  name: `Canadian inflation, ${month}`,
+  description,
+  path: '/inflation/',
+  csvPath: inflationCsv.components,
+  temporalCoverage: inflationCoverage(),
+  tables: inflationTables(['18-10-0004-01', '18-10-0005-01', '18-10-0006-01', '18-10-0256-01']),
+});
+---
+
+<Layout title={`Canadian inflation, ${month}`} description={description} canonicalPath="/inflation/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <PageHeader
+        kicker={`Statistics Canada · ${month}`}
+        title="Canadian"
+        accent="inflation"
+        asOf={asOfLine(file.referenceMonth, file.releaseDate)}
+      >
+        <p slot="lede">{description}</p>
+      </PageHeader>
+
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">All-items index</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatIndex(file.headline.index)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">2002=100</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">12-month change</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(file.headline.yoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">From {monthLabel(file.yearAgoMonth)}</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">1-month change</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(file.headline.momPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Not seasonally adjusted</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Seasonally adjusted</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(file.headline.saMomPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">1-month, calculated here</dd>
+        </div>
+      </dl>
+
+      <dl class="mt-4 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">CPI-trim</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(trim.value)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Published 12-month rate</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">CPI-median</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(median.value)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Published 12-month rate</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">CPI-common</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(common.value)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Published 12-month rate</dd>
+        </div>
+      </dl>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">What the latest figures say</h2>
+      <ul class="mt-4 max-w-3xl list-disc space-y-3 pl-5 font-sans text-sm leading-relaxed text-on-surface-variant sm:text-base">
+        {points.map((point) => <li>{point}</li>)}
+      </ul>
+
+      <div class="mt-10 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={decade}
+          title="Canada all-items inflation, 12-month change"
+          unit="percent"
+          mode="percent"
+          includeZero
+          source={`Source: Statistics Canada, table 18-10-0004-01. The 12-month change is calculated on this site from the published index. CSV: the history rows in the component download.`}
+        />
+      </div>
+
+      <div class="mt-6 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={coreChart}
+          title="All-items, CPI-trim, and CPI-median"
+          unit="percent"
+          mode="percent"
+          includeZero
+          source="All-items is calculated from table 18-10-0004-01. CPI-trim and CPI-median are the published year-over-year rates in table 18-10-0256-01."
+        />
+      </div>
+
+      <div class="mt-6 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={[longRun]}
+          title="Annual average inflation, 1915 to the latest full year"
+          unit="percent"
+          mode="percent"
+          includeZero
+          source="Source: Statistics Canada, table 18-10-0005-01. Each point is the percent change in the annual average all-items index from the year before."
+        />
+      </div>
+
+      <div class="mt-6 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={[since2000]}
+          title="Annual average inflation since 2000"
+          unit="percent"
+          mode="percent"
+          includeZero
+          source="The same annual series, starting in 2000, so the recent years are easier to read."
+        />
+      </div>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">In this section</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          cards.map((card) => (
+            <a href={card.href} class="rounded-xl border border-border/40 bg-surface p-5 no-underline shadow-sm hover:border-primary/40">
+              <h3 class="font-heading text-lg font-bold text-primary">{card.title}</h3>
+              <p class="mt-2 font-sans text-sm leading-relaxed text-on-surface-variant">{card.text}</p>
+            </a>
+          ))
+        }
+      </div>
+
+      <p class="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        The release-day all-items page, with every geography, a 24-month chart, and embed code, is the{' '}
+        <a href="/data/cpi/" class="font-medium text-primary underline-offset-2 hover:underline">CPI data page</a>.
+        Provincial grocery prices in dollars are on the{' '}
+        <a href="/cost-of-living/" class="font-medium text-primary underline-offset-2 hover:underline">cost-of-living page</a>.
+        The {file.weightYear} basket puts food at {formatWeight(file.components.find((row) => row.id === 'food')?.weight)} and
+        shelter at {formatWeight(file.components.find((row) => row.id === 'shelter')?.weight)}.
+        Average hourly wages in {monthLabel(file.wages.referenceMonth)} were {formatDollars(file.wages.hourly.value)}.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4 font-sans text-sm font-medium">
+        <a href={inflationCsv.components} download class="inline-flex min-h-[44px] items-center rounded-md bg-tertiary px-5 py-2.5 text-white no-underline hover:bg-tertiary/90">Download component CSV</a>
+        <a href={inflationCsv.annual} class="inline-flex min-h-[44px] items-center text-primary underline-offset-2 hover:underline">Annual CSV</a>
+        <a href={inflationCsv.core} class="inline-flex min-h-[44px] items-center text-primary underline-offset-2 hover:underline">Core measures CSV</a>
+        <a href="/inflation/methodology/" class="inline-flex min-h-[44px] items-center text-primary underline-offset-2 hover:underline">Methodology and table IDs</a>
+      </div>
+    </div>
+  </article>
+</Layout>

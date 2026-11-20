@@ -1,0 +1,170 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LineChart from '../../components/inflation/LineChart.astro';
+import PageHeader from '../../components/inflation/PageHeader.astro';
+import { formatReleaseDate } from '../../lib/release';
+import { inflationPageJsonLd } from '../../lib/seo';
+import {
+  axisLabel,
+  chartColors,
+  extremes,
+  formatDollars,
+  inflation,
+  inflationCoverage,
+  inflationCsv,
+  inflationTables,
+  joinNames,
+  monthLabel,
+  moved,
+  type ChartSeries,
+} from '../../lib/inflation';
+import { formatSignedPercentPoints } from '../../lib/utils';
+
+const file = inflation;
+const month = monthLabel(file.wages.referenceMonth);
+const priceMonth = monthLabel();
+const hourly = file.wages.hourly;
+const weekly = file.wages.weekly;
+const median = file.wages.medianHourly;
+const sameMonth = file.wages.referenceMonth === file.referenceMonth;
+const description =
+  hourly.yoyPct != null && hourly.realYoyPct != null && file.wages.cpiYoyPct != null
+    ? `In ${month}, the average hourly wage was ${formatDollars(hourly.value)}, ${moved(hourly.yoyPct)} from a year earlier. Consumer prices were ${moved(file.wages.cpiYoyPct)} over those 12 months, so real average hourly wages were ${moved(hourly.realYoyPct)}.`
+    : `Wages and inflation in ${month}.`;
+const months = file.headline.history.filter((point) => point.yoyPct != null).map((point) => point.month);
+const hourlyByMonth = new Map(hourly.history.map((point) => [point.month, point]));
+const wageChart: ChartSeries[] = [
+  {
+    name: 'All-items CPI',
+    color: chartColors.navy,
+    points: months.map((item) => ({
+      label: axisLabel(item),
+      value: file.headline.history.find((point) => point.month === item)?.yoyPct ?? null,
+    })),
+  },
+  {
+    name: 'Average hourly wage',
+    color: chartColors.red,
+    points: months.map((item) => ({ label: axisLabel(item), value: hourlyByMonth.get(item)?.yoyPct ?? null })),
+  },
+  {
+    name: 'Real average hourly wage',
+    color: chartColors.green,
+    points: months.map((item) => ({ label: axisLabel(item), value: hourlyByMonth.get(item)?.realYoyPct ?? null })),
+  },
+];
+const provinceRank = extremes(file.wages.provinces, (row) => row.yoyPct);
+const provinces = [...file.wages.provinces].sort((a, b) => (b.yoyPct ?? -999) - (a.yoyPct ?? -999));
+const jsonLd = inflationPageJsonLd({
+  name: `Inflation and wages, ${month}`,
+  description,
+  path: '/inflation/wages/',
+  csvPath: inflationCsv.wages,
+  temporalCoverage: inflationCoverage(),
+  tables: inflationTables(['14-10-0063-01', '18-10-0004-01']),
+});
+---
+
+<Layout title={`Inflation and wages, ${month}`} description={description} canonicalPath="/inflation/wages/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <PageHeader
+        kicker="Table 14-10-0063-01 · employees 15 and over"
+        title="Inflation and"
+        accent="wages"
+        asOf={`Wages as of ${month}, released ${formatReleaseDate(file.wages.releaseDate)}. CPI reference month ${priceMonth}.`}
+      >
+        <p slot="lede">
+          {description} The wage figure is the average hourly wage for employees aged 15 and over, both full- and part-time, all industries, not seasonally adjusted.
+          {sameMonth
+            ? ` The CPI comparison uses ${priceMonth}, the same month.`
+            : ` The wage month is ${month}. The CPI reference month is ${priceMonth}. The real-wage change uses the CPI in the wage month.`}
+          {median.yoyPct != null && median.realYoyPct != null
+            ? ` The median hourly wage was ${formatDollars(median.value)}, ${moved(median.yoyPct)}, and the calculated real median was ${moved(median.realYoyPct)}.`
+            : ''}
+        </p>
+      </PageHeader>
+
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Average hourly</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatDollars(hourly.value)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatSignedPercentPoints(hourly.yoyPct)} in 12 months</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Median hourly</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatDollars(median.value)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatSignedPercentPoints(median.yoyPct)} in 12 months</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Average weekly</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatDollars(weekly.value)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">{formatSignedPercentPoints(weekly.yoyPct)} in 12 months</dd>
+        </div>
+        <div class="rounded-xl border border-border/40 bg-surface p-5">
+          <dt class="font-sans text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Real average hourly</dt>
+          <dd class="mt-1 font-heading text-3xl font-bold text-primary">{formatSignedPercentPoints(hourly.realYoyPct)}</dd>
+          <dd class="mt-1 font-sans text-xs text-on-surface-variant">Wage change relative to CPI</dd>
+        </div>
+      </dl>
+
+      <div class="mt-10 rounded-xl border border-border/40 bg-surface p-5 sm:p-6">
+        <LineChart
+          series={wageChart}
+          title="Wage growth and inflation, 12-month change"
+          unit="percent"
+          mode="percent"
+          includeZero
+          source="Wages from table 14-10-0063-01. CPI from table 18-10-0004-01. Real wages divide the wage ratio by the all-items CPI ratio. That calculation is done on this site."
+        />
+      </div>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">Provinces</h2>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Average hourly wages, same population cut, ranked by the 12-month change.
+        {provinceRank.high[0]?.yoyPct != null && provinceRank.low[0]?.yoyPct != null
+          ? ` The largest increase was ${formatSignedPercentPoints(provinceRank.high[0].yoyPct)} in ${joinNames(provinceRank.high.map((row) => row.geo))}. The smallest was ${formatSignedPercentPoints(provinceRank.low[0].yoyPct)} in ${joinNames(provinceRank.low.map((row) => row.geo))}.`
+          : ''}
+        {' '}These provincial rows are not adjusted for the provincial CPI. The national real-wage figure is the Canada comparison above.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border/40 bg-surface">
+        <table class="min-w-full text-left font-sans text-sm">
+          <caption class="sr-only">Average hourly wages by province, {month}</caption>
+          <thead class="border-b border-border/40 bg-surface-soft text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+            <tr>
+              <th scope="col" class="px-3 py-3 sm:px-4">Province</th>
+              <th scope="col" class="px-3 py-3 text-right sm:px-4">Hourly wage</th>
+              <th scope="col" class="px-3 py-3 text-right sm:px-4">12-month</th>
+              <th scope="col" class="hidden px-4 py-3 text-right md:table-cell">Year earlier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-border/20 bg-primary/5">
+              <th scope="row" class="px-3 py-3 font-heading font-bold text-primary sm:px-4">Canada</th>
+              <td class="px-3 py-3 text-right tabular-nums sm:px-4">{formatDollars(hourly.value)}</td>
+              <td class="px-3 py-3 text-right tabular-nums sm:px-4">{formatSignedPercentPoints(hourly.yoyPct)}</td>
+              <td class="hidden px-4 py-3 text-right tabular-nums md:table-cell">{formatDollars(hourly.yearAgo)}</td>
+            </tr>
+            {
+              provinces.map((row) => (
+                <tr class="border-b border-border/20 last:border-0">
+                  <th scope="row" class="px-3 py-3 font-heading font-bold text-primary sm:px-4">{row.geo}</th>
+                  <td class="px-3 py-3 text-right tabular-nums sm:px-4">{formatDollars(row.value)}</td>
+                  <td class="px-3 py-3 text-right tabular-nums sm:px-4">{formatSignedPercentPoints(row.yoyPct)}</td>
+                  <td class="hidden px-4 py-3 text-right tabular-nums md:table-cell">{formatDollars(row.yearAgo)}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        This is the Labour Force Survey wage table, not the Survey of Employment, Payrolls and Hours. It is not adjusted for the mix of jobs, hours, or industries. A rise in the average wage can be people moving between jobs as well as raises in the same job.
+        The jobs release page, which is employment and unemployment rather than wages, is <a href="/data/jobs/" class="font-medium text-primary underline-offset-2 hover:underline">the Labour Force Survey page</a>.
+      </p>
+      <p class="mt-4 font-sans text-sm">
+        <a href={inflationCsv.wages} class="font-medium text-primary underline-offset-2 hover:underline">Download the wages CSV</a>
+      </p>
+    </div>
+  </article>
+</Layout>

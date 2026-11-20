@@ -216,7 +216,7 @@ export const day7Posts: BlogPost[] = [
  <h2 id="mortgage">Owners with a mortgage, and where to open the table</h2>
  <p>In Canada, <strong>5,881,675</strong> owner households had a mortgage. Their median shelter cost was <strong>$1,840</strong>. Owners without a mortgage were <strong>3,926,045</strong>, and their median was <strong>$584</strong>. Those two counts add up to the 9,807,720 owner households. The mortgage split and those medians are from table 98-10-0253-01. The 30% counts are from table 98-10-0252-01.</p>
 
- <p>These 2021 shelter costs are a different statistic from the Consumer Price Index. The September 2026 index is table 18-10-0004-01, on the <a href="/cost-of-living/">cost-of-living page</a> and in <a href="/blog/cpi-september-2026/">September 2026 consumer prices</a>. This post does not compare a 2021 median shelter cost with that index.</p>
+ <p>These 2021 shelter costs are a different statistic from the Consumer Price Index. The September 2026 index is table 18-10-0004-01, on the <a href="/cost-of-living/">cost-of-living page</a> and in <a href="/blog/cpi-september-2026/">September 2026 consumer prices</a>. The current shelter and rent indexes are in the <a href="/inflation/shelter/">inflation section</a>. This post does not compare a 2021 median shelter cost with that index.</p>
 
  <p>Open a linked place for the full housing block, including shelter-cost bands. The geography named in the link is the geography on the page.</p>
 
@@ -250,6 +250,8 @@ export const day7Posts: BlogPost[] = [
  <p>In September 2026, <a href="/location/canada/#consumer-prices">Canada</a>’s all-items Consumer Price Index was <strong>170.0</strong> (2002=100), up <strong>3.1%</strong> from <strong>164.9</strong> in September 2025. The 12-month change is calculated on this site from those two published index levels. It is not a separate Statistics Canada percent-change series. The food index was <strong>201.8</strong>, up <strong>2.2%</strong> from <strong>197.5</strong>.</p>
 
  <p>The source is table <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401" target="_blank" rel="noopener">18-10-0004-01</a>, Consumer Price Index, monthly, not seasonally adjusted. The reference month is September 2026. The comparison month is September 2025. This extract has <strong>30</strong> geographies: Canada, the ten provinces, and 19 city or territorial price series. Yukon, the Northwest Territories, and Nunavut are not published here as territorial all-items indexes. Whitehorse, Yellowknife, and Iqaluit are. The figures were copied from the table on November 1, 2026. The full grid is on the <a href="/cost-of-living/">cost-of-living page</a>.</p>
+
+ <p>Those figures are the September 2026 extract. The current reference month, Bank of Canada core measures, component breakdown, and calculators are in the <a href="/inflation/">inflation section</a>, refreshed from the same Consumer Price Index table.</p>
 
  <h2 id="how-to-read-the-index">What the index measures</h2>
  <p>The index measures price change, with 2002 equal to 100. A higher index is not a higher dollar cost of living, and it is not the 12-month change. In this extract the highest all-items index is <a href="/cost-of-living/#calgary-alberta">Calgary, Alberta</a>, at <strong>181.6</strong>. The lowest is <a href="/cost-of-living/#iqaluit-nunavut">Iqaluit, Nunavut</a>, at <strong>149.6</strong>. Calgary’s 12-month change is <strong>3.4%</strong> (181.6 from 175.7). Iqaluit’s is <strong>3.0%</strong> (149.6 from 145.2).</p>

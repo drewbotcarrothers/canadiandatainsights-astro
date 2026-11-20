@@ -1,0 +1,29 @@
+---
+import { inflationPages } from '../../lib/inflation';
+
+const pathname = Astro.url.pathname;
+
+function isActive(href: string) {
+  if (href === '/inflation/') return pathname === '/inflation/';
+  return pathname === href;
+}
+---
+
+<nav class="flex flex-wrap gap-2" aria-label="Inflation section">
+  {
+    inflationPages.map((page) => (
+      <a
+        href={page.href}
+        class:list={[
+          'inline-flex min-h-[44px] items-center rounded-md px-3 py-2 text-sm font-medium no-underline',
+          isActive(page.href)
+            ? 'bg-primary text-white'
+            : 'border border-border bg-surface text-on-surface-variant hover:text-primary',
+        ]}
+        aria-current={isActive(page.href) ? 'page' : undefined}
+      >
+        {page.label}
+      </a>
+    ))
+  }
+</nav>

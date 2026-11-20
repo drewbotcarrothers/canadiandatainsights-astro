@@ -139,3 +139,6 @@ Client helper: `src/lib/analytics.ts` (`trackEvent`). Custom events fire only wh
 | `npm run dev` | Local dev server |
 | `npm run build` | Production static build → `dist/` |
 | `npm run preview` | Preview the production build |
+| `npm run ingest:inflation` | Refresh `/inflation/` from Statistics Canada. See `scripts/inflation/README.md` |
+| `npm run ingest:release` | Refresh the CPI, jobs, and housing release pages, then the inflation section |
+| `npm run check:inflation` | Check inflation calculator rounding against the stored indexes |

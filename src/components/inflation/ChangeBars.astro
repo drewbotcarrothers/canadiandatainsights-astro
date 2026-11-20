@@ -1,0 +1,47 @@
+---
+import { formatSignedPercentPoints } from '../../lib/utils';
+
+interface Row {
+  label: string;
+  value: number;
+  note?: string;
+}
+
+interface Props {
+  rows: Row[];
+  title: string;
+  source: string;
+}
+
+const { rows, title, source } = Astro.props;
+if (rows.length === 0) throw new Error(`Bar chart “${title}” is empty`);
+const max = Math.max(...rows.map((row) => Math.abs(row.value)), 0.1);
+---
+
+<figure>
+  <figcaption class="font-heading text-base font-bold text-primary">{title}</figcaption>
+  <ul class="mt-4 space-y-3">
+    {
+      rows.map((row) => {
+        const width = Math.max(2, (Math.abs(row.value) / max) * 100);
+        const negative = row.value < 0;
+        return (
+          <li>
+            <div class="flex items-baseline justify-between gap-3 font-sans text-sm">
+              <span class="text-on-surface">{row.label}</span>
+              <span class="shrink-0 font-semibold tabular-nums text-primary">{formatSignedPercentPoints(row.value)}</span>
+            </div>
+            <div class="mt-1 h-2.5 rounded-full bg-surface-soft" aria-hidden="true">
+              <div
+                class:list={['h-2.5 rounded-full', negative ? 'bg-tertiary' : 'bg-primary']}
+                style={`width:${width}%`}
+              />
+            </div>
+            {row.note ? <p class="mt-1 font-sans text-xs text-on-surface-variant">{row.note}</p> : null}
+          </li>
+        );
+      })
+    }
+  </ul>
+  <p class="mt-3 font-sans text-xs text-on-surface-variant">{source}</p>
+</figure>

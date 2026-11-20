@@ -4,7 +4,7 @@
 
 ## About
 
-Canadian Data Insights (CDI) turns official Statistics Canada data into accessible web pages. Census profiles cover population, growth, households, income, employment, education, commute, occupation, industry, languages, and dwellings. Shares on the work-profile sections are calculated from published counts. Housing tenure and shelter costs are shown only for geographies published in census tables 98-10-0252-01 and 98-10-0253-01 (reference period 2021). Consumer prices use the Consumer Price Index (table 18-10-0004-01) and selected average retail prices (table 18-10-0245-01). We do not invent figures for a municipality that is not in the source table.
+Canadian Data Insights (CDI) turns official Statistics Canada data into accessible web pages. Census profiles cover population, growth, households, income, employment, education, commute, occupation, industry, languages, and dwellings. Shares on the work-profile sections are calculated from published counts. Housing tenure and shelter costs are shown only for geographies published in census tables 98-10-0252-01 and 98-10-0253-01 (reference period 2021). Consumer prices use the Consumer Price Index (table 18-10-0004-01) and selected average retail prices (table 18-10-0245-01). The inflation section also uses tables 18-10-0005-01, 18-10-0006-01, 18-10-0007-01, 18-10-0256-01, and 14-10-0063-01. We do not invent figures for a municipality that is not in the source table.
 
 - Site: https://canadiandatainsights.com/
 - Contact: hello@canadiandatainsights.com
@@ -18,6 +18,16 @@ Canadian Data Insights (CDI) turns official Statistics Canada data into accessib
 - Home / Interactive Atlas: https://canadiandatainsights.com/
 - Location Comparison: https://canadiandatainsights.com/compare/
 - Cost of living: https://canadiandatainsights.com/cost-of-living/
+- Canadian inflation: https://canadiandatainsights.com/inflation/
+  - Components: https://canadiandatainsights.com/inflation/components/
+  - Provinces and cities: https://canadiandatainsights.com/inflation/places/
+  - Food: https://canadiandatainsights.com/inflation/food/
+  - Shelter and rent: https://canadiandatainsights.com/inflation/shelter/
+  - Wages: https://canadiandatainsights.com/inflation/wages/
+  - Grocery prices: https://canadiandatainsights.com/inflation/groceries/
+  - Purchasing power: https://canadiandatainsights.com/inflation/purchasing-power/
+  - Personal basket: https://canadiandatainsights.com/inflation/basket/
+  - Methodology: https://canadiandatainsights.com/inflation/methodology/
 - Release-day data: https://canadiandatainsights.com/data/
   - Consumer Price Index (table 18-10-0004-01): https://canadiandatainsights.com/data/cpi/
   - Labour Force Survey (tables 14-10-0287-01 and 14-10-0459-01): https://canadiandatainsights.com/data/jobs/
@@ -52,8 +62,8 @@ Suggested attribution when citing census figures shown on this site:
 
 > Adapted from Statistics Canada, Census of Population, 2021. This does not constitute an endorsement by Statistics Canada of this product.
 
-For housing, name tables 98-10-0252-01 and 98-10-0253-01 and the 2021 reference period. For consumer prices, name table 18-10-0004-01 or 18-10-0245-01 and the reference month on the page. Also link the Open Government Licence - Canada and, when practical, the CDI page URL you used.
+For housing, name tables 98-10-0252-01 and 98-10-0253-01 and the 2021 reference period. For consumer prices, name table 18-10-0004-01 or 18-10-0245-01 and the reference month on the page. For the inflation section, name the table on that page (18-10-0004-01, 18-10-0005-01, 18-10-0006-01, 18-10-0007-01, 18-10-0256-01, 18-10-0245-01, or 14-10-0063-01). Also link the Open Government Licence - Canada and, when practical, the CDI page URL you used.
 
 ## For AI crawlers
 
-AI crawlers and citation tools are welcome. Prefer citing the specific location, cost-of-living, or blog URL, the Statistics Canada table, and the Open Government Licence. Do not invent metrics not present on the page. See `/sources/` for methodology and `/llms.txt` (this file) for orientation.
+AI crawlers and citation tools are welcome. Prefer citing the specific location, inflation, cost-of-living, or blog URL, the Statistics Canada table, and the Open Government Licence. Do not invent metrics not present on the page. See `/inflation/methodology/` and `/sources/` for methodology and `/llms.txt` (this file) for orientation.

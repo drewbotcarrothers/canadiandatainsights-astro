@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/inflation/PageHeader.astro';
+import { inflationPageJsonLd } from '../../lib/seo';
+import {
+  formatWeight,
+  inflation,
+  inflationCoverage,
+  inflationCsv,
+  monthLabel,
+} from '../../lib/inflation';
+import { formatIndex, formatSignedPercentPoints } from '../../lib/utils';
+
+const month = monthLabel();
+const file = inflation;
+const description = `Sources and calculations for the Canadian inflation section: Statistics Canada tables ${file.tables.map((table) => table.id).join(', ')}. Figures are copied from the Web Data Service. Percent changes and real wages are calculated on this site from the published levels.`;
+const headline = file.headline;
+const jsonLd = inflationPageJsonLd({
+  name: 'Inflation methodology and sources',
+  description,
+  path: '/inflation/methodology/',
+  csvPath: inflationCsv.components,
+  temporalCoverage: inflationCoverage(),
+  tables: file.tables.map((table) => ({ name: `${table.id}. ${table.title}`, url: table.url })),
+});
+const downloads = [
+  { href: inflationCsv.components, label: 'Components, weights, and index history' },
+  { href: inflationCsv.annual, label: 'Annual average indexes' },
+  { href: inflationCsv.places, label: 'Provinces, territorial capitals, and cities' },
+  { href: inflationCsv.core, label: 'CPI-trim, CPI-median, and CPI-common' },
+  { href: inflationCsv.groceries, label: 'Grocery prices' },
+  { href: inflationCsv.wages, label: 'Wages and real wages' },
+];
+---
+
+<Layout title="Inflation methodology and sources" description={description} canonicalPath="/inflation/methodology/" jsonLd={jsonLd}>
+  <article class="bg-background py-12 sm:py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <PageHeader kicker={`Retrieved ${file.retrieved}`} title="Methodology and" accent="sources">
+        <p slot="lede">
+          {description} The extract was retrieved on {file.retrieved}. The CPI reference month is {month}, released {file.releaseDate}. This page is the list to check after a refresh: the sentences elsewhere in the section are written from these fields.
+        </p>
+      </PageHeader>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">Tables</h2>
+      <ul class="mt-4 max-w-3xl list-disc space-y-4 pl-5 font-sans text-sm leading-relaxed text-on-surface">
+        {
+          file.tables.map((table) => (
+            <li>
+              <a href={table.url} class="font-medium text-primary underline-offset-2 hover:underline" target="_blank" rel="noopener noreferrer">
+                Table {table.id}
+              </a>
+              . {table.title}. {table.usedFor}
+            </li>
+          ))
+        }
+      </ul>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">What is copied, and what is calculated</h2>
+      <ul class="mt-4 max-w-3xl list-disc space-y-3 pl-5 font-sans text-sm leading-relaxed text-on-surface-variant">
+        {file.adapted.map((line) => <li>{line}</li>)}
+      </ul>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">The latest all-items change, worked out</h2>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        The {month} all-items index is {formatIndex(headline.index)}. The {monthLabel(file.yearAgoMonth)} index is {formatIndex(headline.yearAgoIndex)}.
+        The 1-month comparison uses {formatIndex(headline.previousIndex)} in {monthLabel(file.previousMonth)}.
+        The stored 12-month change is {formatSignedPercentPoints(headline.yoyPct)}, from ({formatIndex(headline.index)} − {formatIndex(headline.yearAgoIndex)}) ÷ {formatIndex(headline.yearAgoIndex)} × 100, rounded half away from zero to one decimal. The same rule is used for the other calculated percent changes.
+      </p>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        CPI-trim, CPI-median, and CPI-common are already 12-month percent changes in table 18-10-0256-01. This site does not rebuild them from the index.
+        The seasonally adjusted 1-month change starts from the seasonally adjusted index in table 18-10-0006-01, which was {formatIndex(headline.saIndex)} in {month}, and applies the same percent-change formula.
+      </p>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Basket weights are the {file.weightYear} link-month weights, distributed to the selected geography, from table 18-10-0007-01. All-items is {formatWeight(100)}.
+        The approximate contribution of a major component is that weight, times the component's calculated 12-month change, divided by 100. Shelter details on the shelter page use the same formula and are not added up, because the series overlap.
+      </p>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Real wage change = (latest wage ÷ wage a year earlier) ÷ (latest all-items index ÷ all-items index a year earlier) − 1. The purchasing-power calculator multiplies a dollar amount by the latest monthly all-items index and divides by the chosen year's annual average. The personal calculator is the share-weighted average of the eight major 12-month changes.
+      </p>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">What this section does not do</h2>
+      <ul class="mt-4 max-w-3xl list-disc space-y-3 pl-5 font-sans text-sm leading-relaxed text-on-surface-variant">
+        <li>It does not fill a suppressed or missing cell.</li>
+        <li>It does not treat a CPI city as the municipality alone. Ottawa-Gatineau in this section is the Ontario-part price series.</li>
+        <li>It does not publish a territorial all-items index for Yukon, the Northwest Territories, or Nunavut. The territorial rows are Whitehorse, Yellowknife, and Iqaluit.</li>
+        <li>It does not claim the approximate contributions are the ones in Statistics Canada's release analysis.</li>
+        <li>It does not mix the 2021 census shelter-cost medians into the rent index.</li>
+        <li>The release-day all-items page remains <a href="/data/cpi/" class="font-medium text-primary underline-offset-2 hover:underline">/data/cpi/</a>. This section links to it instead of replacing it.</li>
+      </ul>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">Downloads</h2>
+      <ul class="mt-4 space-y-2 font-sans text-sm">
+        {
+          downloads.map((item) => (
+            <li>
+              <a href={item.href} class="font-medium text-primary underline-offset-2 hover:underline">{item.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-4 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        Each CSV opens and closes with the Statistics Canada Open Licence attribution. Licence: <a href={file.licence} class="font-medium text-primary underline-offset-2 hover:underline">{file.licence}</a>.
+      </p>
+
+      <h2 class="mt-12 font-heading text-2xl font-bold text-primary">Refresh</h2>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        On a CPI release day, refresh the release page first, then this section. The inflation ingest stops if the Canada all-items index does not match <code>src/data/release/cpi.json</code>.
+      </p>
+      <pre class="mt-4 overflow-x-auto rounded-xl border border-border/40 bg-surface p-4 font-mono text-sm text-on-surface"><code>python3 scripts/release-pages/ingest.py --only cpi
+python3 scripts/inflation/ingest.py
+npm run build</code></pre>
+      <p class="mt-3 max-w-3xl font-sans text-sm leading-relaxed text-on-surface-variant">
+        <code>npm run ingest:inflation</code> is the second command. <code>npm run ingest:release</code> refreshes the CPI, jobs, and housing release pages and then this section.
+        The commands are also in <code>scripts/inflation/README.md</code>.
+      </p>
+    </div>
+  </article>
+</Layout>

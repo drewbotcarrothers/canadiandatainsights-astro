@@ -4,6 +4,7 @@ const pathname = Astro.url.pathname;
 const links = [
   { href: '/', label: 'Dashboard' },
   { href: '/compare/', label: 'Comparisons' },
+  { href: '/inflation/', label: 'Inflation' },
   { href: '/cost-of-living/', label: 'Cost of living' },
   { href: '/data/', label: 'Data' },
   { href: '/blog/', label: 'Blog' },
@@ -45,7 +46,7 @@ function isActive(href: string) {
         <a
           href={link.href}
           class:list={[
-            'rounded-md px-2.5 py-2 text-sm font-medium no-underline transition-colors',
+            'rounded-md px-2 py-2 text-sm font-medium no-underline transition-colors',
             isActive(link.href)
               ? 'bg-primary/10 text-primary'
               : 'text-on-surface-variant hover:bg-surface-soft hover:text-primary',

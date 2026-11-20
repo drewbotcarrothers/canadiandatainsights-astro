@@ -1,0 +1,193 @@
+---
+import type { ChartSeries } from '../../lib/inflation';
+import { formatIndex, formatSignedPercentPoints } from '../../lib/utils';
+
+interface Props {
+  series: ChartSeries[];
+  title: string;
+  unit: string;
+  mode: 'index' | 'percent' | 'dollars';
+  includeZero?: boolean;
+  source: string;
+}
+
+const { series, title, unit, mode, includeZero = false, source } = Astro.props;
+if (series.length === 0 || series[0].points.length < 2) {
+  throw new Error(`Chart “${title}” needs at least two points`);
+}
+const count = series[0].points.length;
+if (series.some((item) => item.points.length !== count)) {
+  throw new Error(`Chart “${title}” series are not aligned`);
+}
+if (series.some((item, index) => item.points.some((point, pointIndex) => point.label !== series[0].points[pointIndex].label))) {
+  throw new Error(`Chart “${title}” labels do not match`);
+}
+
+const width = 720;
+const height = 340;
+const pad = { l: 64, r: 16, t: 16, b: 44 };
+const innerW = width - pad.l - pad.r;
+const innerH = height - pad.t - pad.b;
+const values = series.flatMap((item) => item.points.map((point) => point.value)).filter((value): value is number => value != null);
+if (values.length < 2) throw new Error(`Chart “${title}” has fewer than two numbers`);
+let yMin = Math.min(...values);
+let yMax = Math.max(...values);
+if (includeZero) {
+  yMin = Math.min(0, yMin);
+  yMax = Math.max(0, yMax);
+}
+const span = yMax - yMin || Math.abs(yMax) * 0.05 || 1;
+if (includeZero) {
+  if (yMin < 0) yMin -= span * 0.08;
+  yMax += span * 0.1;
+} else {
+  yMin -= span * 0.14;
+  yMax += span * 0.16;
+}
+
+function xAt(index: number): number {
+  return pad.l + (index / (count - 1)) * innerW;
+}
+
+function yAt(value: number): number {
+  return pad.t + ((yMax - value) / (yMax - yMin)) * innerH;
+}
+
+function formatTick(value: number): string {
+  if (mode === 'percent') return formatSignedPercentPoints(value);
+  if (mode === 'dollars') {
+    return new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(value);
+  }
+  return formatIndex(value);
+}
+
+function paths(points: { value: number | null }[]): string[] {
+  const built: string[] = [];
+  let segment: string[] = [];
+  points.forEach((point, index) => {
+    if (point.value == null) {
+      if (segment.length > 1) built.push(segment.join(' '));
+      segment = [];
+      return;
+    }
+    const command = segment.length === 0 ? 'M' : 'L';
+    segment.push(`${command} ${xAt(index).toFixed(1)} ${yAt(point.value).toFixed(1)}`);
+  });
+  if (segment.length > 1) built.push(segment.join(' '));
+  return built;
+}
+
+const yTicks = [0, 1, 2, 3].map((step) => yMin + ((yMax - yMin) * step) / 3);
+const labelSlots = [0, Math.round((count - 1) / 4), Math.round((count - 1) / 2), Math.round(((count - 1) * 3) / 4), count - 1];
+const uniqueSlots = [...new Set(labelSlots)];
+const latest = series[0].points[count - 1];
+const latestValue = series
+  .map((item) => {
+    const point = [...item.points].reverse().find((candidate) => candidate.value != null);
+    return point ? `${item.name} ${mode === 'percent' ? formatSignedPercentPoints(point.value) : mode === 'index' ? formatIndex(point.value) : formatTick(point.value ?? 0)}` : null;
+  })
+  .filter(Boolean)
+  .join('; ');
+const axisNote = includeZero ? 'The vertical axis includes zero.' : 'The vertical axis does not start at zero.';
+---
+
+<figure class="w-full">
+  <figcaption class="mb-3">
+    <p class="font-heading text-base font-bold text-primary">{title}</p>
+    <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+      {
+        series.map((item) => (
+          <li class="inline-flex items-center gap-2 font-sans text-xs font-medium text-on-surface">
+            <span class="inline-block h-2 w-4 rounded-sm" style={`background:${item.color}`} aria-hidden="true" />
+            {item.name}
+          </li>
+        ))
+      }
+    </ul>
+  </figcaption>
+  <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`${title}. Latest: ${latestValue}. ${axisNote}`} class="h-auto w-full">
+    <title>{title}</title>
+    <desc>{latestValue}. {count} points from {series[0].points[0].label} to {latest.label}. {axisNote}</desc>
+    {
+      yTicks.map((tick) => (
+        <g>
+          <line x1={pad.l} x2={width - pad.r} y1={yAt(tick)} y2={yAt(tick)} stroke="#c4c6cf" stroke-width="1" />
+          <text x={pad.l - 8} y={yAt(tick) + 4} text-anchor="end" fill="#43474e" font-size="12" font-family="Inter, sans-serif">
+            {formatTick(tick)}
+          </text>
+        </g>
+      ))
+    }
+    {
+      includeZero && yMin < 0 && yMax > 0 ? (
+        <line x1={pad.l} x2={width - pad.r} y1={yAt(0)} y2={yAt(0)} stroke="#43474e" stroke-width="1" />
+      ) : null
+    }
+    {
+      series.map((item) =>
+        paths(item.points).map((path) => (
+          <path d={path} fill="none" stroke={item.color} stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+        ))
+      )
+    }
+    {
+      series.map((item) => {
+        let lastIndex = -1;
+        for (let index = item.points.length - 1; index >= 0; index -= 1) {
+          if (item.points[index].value != null) {
+            lastIndex = index;
+            break;
+          }
+        }
+        if (lastIndex < 0 || item.points[lastIndex].value == null) return null;
+        return <circle cx={xAt(lastIndex)} cy={yAt(item.points[lastIndex].value)} r="4.5" fill={item.color} />;
+      })
+    }
+    {
+      uniqueSlots.map((index) => (
+        <text
+          x={xAt(index)}
+          y={height - 14}
+          text-anchor={index === 0 ? 'start' : index === count - 1 ? 'end' : 'middle'}
+          fill="#43474e"
+          font-size="12"
+          font-family="Inter, sans-serif"
+        >
+          {series[0].points[index].label}
+        </text>
+      ))
+    }
+  </svg>
+  <p class="mt-2 font-sans text-xs text-on-surface-variant">{axisNote} {source}</p>
+  <table class="sr-only">
+    <caption>{title}</caption>
+    <thead>
+      <tr>
+        <th scope="col">Period</th>
+        {series.map((item) => <th scope="col">{item.name} ({unit})</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {
+        series[0].points.map((point, index) => (
+          <tr>
+            <th scope="row">{point.label}</th>
+            {
+              series.map((item) => (
+                <td>
+                  {item.points[index].value == null
+                    ? '—'
+                    : mode === 'percent'
+                      ? formatSignedPercentPoints(item.points[index].value)
+                      : mode === 'index'
+                        ? formatIndex(item.points[index].value)
+                        : formatTick(item.points[index].value ?? 0)}
+                </td>
+              ))
+            }
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</figure>

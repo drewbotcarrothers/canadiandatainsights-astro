@@ -9,7 +9,8 @@ import {
   displayName,
 } from '../lib/locations';
 import { CITY_COORDINATES } from '../lib/city-coordinates';
-import { formatNumber, formatCurrency } from '../lib/utils';
+import { formatNumber, formatCurrency, formatSignedPercentPoints } from '../lib/utils';
+import { coreMeasure, inflation, monthLabel } from '../lib/inflation';
 import type { MapCity } from '../components/home/CanadaMap';
 
 const TOP_15 = new Set([
@@ -83,12 +84,12 @@ const kpis = [
 
 <Layout
   title="Canadian Data Insights | Interactive Statistics Canada census insights"
-  description="Interactive Statistics Canada census insights — population, growth, income, and demographics for Canadian communities."
+  description="Interactive Statistics Canada census insights — population, growth, income, and demographics — plus a Consumer Price Index inflation section."
   canonicalPath="/"
 >
   <div class="border-b border-primary/10 bg-primary/5 px-4 py-2 text-center">
     <p class="text-xs text-on-surface-variant sm:text-sm">
-      Location profiles, the <a href="/compare/" class="font-medium text-primary underline-offset-2 hover:underline">comparison tool</a>, <a href="/cost-of-living/" class="font-medium text-primary underline-offset-2 hover:underline">consumer prices</a>, and <a href="/data/" class="font-medium text-primary underline-offset-2 hover:underline">release-day data</a> are live.
+      Location profiles, the <a href="/compare/" class="font-medium text-primary underline-offset-2 hover:underline">comparison tool</a>, <a href="/inflation/" class="font-medium text-primary underline-offset-2 hover:underline">inflation</a>, <a href="/cost-of-living/" class="font-medium text-primary underline-offset-2 hover:underline">consumer prices</a>, and <a href="/data/" class="font-medium text-primary underline-offset-2 hover:underline">release-day data</a> are live.
     </p>
   </div>
 
@@ -112,6 +113,12 @@ const kpis = [
           class="inline-flex min-h-[44px] items-center rounded-md border border-primary/30 bg-surface px-5 py-2.5 text-sm font-semibold text-primary no-underline transition-colors hover:bg-primary/5"
         >
           Explore cities
+        </a>
+        <a
+          href="/inflation/"
+          class="inline-flex min-h-[44px] items-center rounded-md border border-primary/30 bg-surface px-5 py-2.5 text-sm font-semibold text-primary no-underline transition-colors hover:bg-primary/5"
+        >
+          Inflation
         </a>
         <a
           href="/cost-of-living/"
@@ -153,6 +160,19 @@ const kpis = [
         ))
       }
     </div>
+
+    <a href="/inflation/" class="mt-6 block rounded-xl border border-border/50 bg-surface p-6 no-underline shadow-sm hover:border-primary/40">
+      <p class="font-sans text-xs font-medium uppercase tracking-widest text-on-surface-variant">
+        Inflation · {monthLabel(inflation.referenceMonth)}
+      </p>
+      <p class="mt-2 font-heading text-2xl font-bold text-primary">
+        All-items CPI {formatSignedPercentPoints(inflation.headline.yoyPct)} in 12 months
+      </p>
+      <p class="mt-2 font-sans text-sm text-on-surface-variant">
+        CPI-trim {formatSignedPercentPoints(coreMeasure('trim').value)}, CPI-median {formatSignedPercentPoints(coreMeasure('median').value)}.
+        Open the inflation section for components, provinces, wages, and calculators.
+      </p>
+    </a>
   </section>
 
   <!-- Interactive Atlas -->
