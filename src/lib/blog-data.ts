@@ -25,6 +25,85 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "TSX Falls Into a Correction: What the AI Sell-Off Means for Your RRSP and TFSA",
+ slug: "canadian-news-roundup-2026-11-21",
+ date: "November 21, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-21.png",
+ excerpt: "Canada's main stock index fell 2.47% on Friday to 33,189.85, its seventh straight loss, and is now more than 10% below its August record: a correction. A tech rout after Anthropic's IPO fell flat dragged down Wall Street, gold and Canadian tech stocks. Here's the full scoreboard, why Canadian savers got hit, and the TFSA rule that makes panic-selling costly.",
+ content: `
+<p><strong>TL;DR:</strong> The S&amp;P/TSX composite index fell 838.88 points, or 2.47%, on Friday, Nov. 20, closing at 33,189.85. It was the index's seventh straight loss, and it is now more than 10% below its record high from late August. That's a technical correction. The Globe and Mail reports the TSX fell 8.1% over five days, its worst week since March 2020. The trigger: a tech and AI sell-off on Wall Street that also pushed the S&amp;P 500 and Dow into corrections and wiped out the Nasdaq's 2026 gain.</p>
+
+<h2 id="tsx-correction-ai-selloff">What happened on Friday</h2>
+<p>A sharp, tech-driven sell-off hit North American stocks on Friday. In Toronto, the S&amp;P/TSX composite closed down 2.47% at 33,189.85 (<a href="https://www.bnnbloomberg.ca/markets/2026/11/20/sptsx-composite-down-more-than-350-points-as-tech-and-base-metal-stocks-sink/" target="_blank" rel="noopener">The Canadian Press</a>). It's down 8.8% since Nov. 11 and has lost more than 10% since its record high in late August. A correction means a fall of 10% or more from the most recent peak (<a href="https://www.cbc.ca/news/business/anthropic-ipo-markets-today-9.7429534" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>It was the TSX's seventh drop in a row, its longest daily losing streak since October 2023, and it closed at its lowest level since April 6 (<a href="https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-us-futures-fall-after-sp-500-drops-for-six-straight-sessions-asia-set/" target="_blank" rel="noopener">The Globe and Mail/Reuters</a>). The Globe puts the five-day drop at 8.1%, the steepest weekly decline since March 2020. (CBC describes it as the steepest weekly drop since April 2025.)</p>
+
+<h2>The scoreboard</h2>
+<p>Here's the whole damage report in one place, compiled by Canadian Data Insights from Globe and Mail/Reuters, Canadian Press and CBC figures.</p>
+<table>
+<thead><tr><th>Market</th><th>Friday, Nov. 20</th><th>Close</th><th>Where it stands</th></tr></thead>
+<tbody>
+<tr><td>S&amp;P/TSX composite</td><td>-2.47%</td><td>33,189.85</td><td>Correction; 7 straight losses; -8.1% on the week</td></tr>
+<tr><td>S&amp;P 500</td><td>-3.70%</td><td>6,910.42</td><td>Correction; 7 straight losses (longest since Feb. 2020)</td></tr>
+<tr><td>Dow Jones</td><td>-1.93%</td><td>48,147.33</td><td>Correction</td></tr>
+<tr><td>Nasdaq composite</td><td>-5.28%</td><td>22,617.73</td><td>2026 gain erased; biggest weekly drop since March 2020</td></tr>
+</tbody>
+</table>
+<p>Inside the TSX, the pain was concentrated:</p>
+<table>
+<thead><tr><th>TSX sector / stock</th><th>Friday move</th></tr></thead>
+<tbody>
+<tr><td>Information technology</td><td>-6.1%</td></tr>
+<tr><td>Celestica</td><td>-16.4%</td></tr>
+<tr><td>Materials (incl. metal miners)</td><td>-5%</td></tr>
+<tr><td>Financials</td><td>-2.5%</td></tr>
+<tr><td>BCE, Telus, Quebecor</td><td>Among the biggest gainers (telecom consolidation news)</td></tr>
+</tbody>
+</table>
+<p>Gold slid to a 14-month low (Globe/Reuters). The December gold contract fell US$170.10 to US$3,515.40 an ounce, and the loonie closed at 69.81 cents US (Canadian Press).</p>
+
+<h2>Why AI dragged Canada down</h2>
+<p>The spark came from New York. Anthropic, the company behind the Claude chatbot, debuted on the Nasdaq on Thursday and closed 17.1% above its US$83 offer price. On Friday it gave back much of that, falling about 9% (Globe/Reuters; CBC says 8.5%). Nvidia fell 13.8% after a Reuters report that U.S. regulators are probing its accounting practices (CBC). Wall Street's "fear gauge," the CBOE volatility index, closed at its highest level since the April 2025 "Liberation Day" tariffs.</p>
+<p>"The AI trade has been wobbly for several weeks, but today has been particularly bloody. Investors are reassessing their positions after a long period of buying first and asking questions later," said Ali Jaffery, chief economist at KPMG Canada (Globe).</p>
+<p>Canada got hit twice. Canadian tech fell with U.S. tech, and gold, a big part of the TSX's materials sector, did not act as a safe haven. "Gold is not acting like the hedge it should in this environment," said Sadiq Adatia of BMO Global Asset Management (Globe). Markets are also pricing a near-certain U.S. Federal Reserve rate hike in December (CME FedWatch via the Globe), which weighs on stocks and gold.</p>
+
+<h2>What it means for your RRSP and TFSA</h2>
+<p>If you own a TSX or U.S. index fund, your balance is lower than it was in late summer. On paper, a 10% correction takes about $5,000 off a $50,000 portfolio. That loss is locked in only if you sell. "Sentiment is always the more powerful force in the immediate space, whereas fundamentals tend to win out over time," said Bill Northey of US Bank Wealth Management (Globe).</p>
+<p>One rule Canadians often miss: <strong>a loss inside a TFSA never comes back as contribution room.</strong> The Canada Revenue Agency calculates room as the year's dollar limit ($7,000 in 2026) plus unused room plus last year's withdrawals, minus this year's contributions (<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/calculate-room.html" target="_blank" rel="noopener">CRA</a>). Market losses aren't part of that formula.</p>
+<table>
+<thead><tr><th>If you...</th><th>Effect on TFSA room (CRA rules)</th></tr></thead>
+<tbody>
+<tr><td>Hold through the drop</td><td>No change. The loss is on paper.</td></tr>
+<tr><td>Sell and withdraw after the drop</td><td>Only the amount you take out comes back, on Jan. 1 next year. Room tied to the drop is gone.</td></tr>
+<tr><td>Withdraw and re-contribute this year</td><td>Only if you have unused room. Otherwise it's an over-contribution, taxed at 1% a month (<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/withdraw.html" target="_blank" rel="noopener">CRA</a>).</td></tr>
+</tbody>
+</table>
+
+<h2>What to watch next</h2>
+<ul>
+<li><strong>U.S. inflation and rates:</strong> next week's U.S. PCE inflation figures will guide the Fed's December decision (Globe).</li>
+<li><strong>Nvidia:</strong> the reported regulatory probe into its accounting (CBC).</li>
+<li><strong>Gold:</strong> at a 14-month low, a key swing factor for the TSX's materials sector.</li>
+<li><strong>Bonds:</strong> investors bought bonds on Friday; the U.S. 10-year yield fell 14 basis points to 4.912%, with similar drops in Canadian yields (Globe).</li>
+</ul>
+
+<h2>Why it matters</h2>
+<p>Canada's retirement savings are tied to these indexes, through RRSPs, TFSAs, workplace pensions and the funds behind them. A correction doesn't mean a crash, and nobody knows Monday's move. But the drop shows how far AI optimism had carried prices, and how quickly it can reverse. The cost of a correction is real on paper. Panic-selling inside a TFSA makes part of it permanent.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-us-futures-fall-after-sp-500-drops-for-six-straight-sessions-asia-set/" target="_blank" rel="noopener">The Globe and Mail (Reuters): Stocks close sharply lower as tech rout deepens, with S&amp;P 500, Dow and TSX sliding into technical corrections</a></li>
+<li><a href="https://www.cbc.ca/news/business/anthropic-ipo-markets-today-9.7429534" target="_blank" rel="noopener">CBC News: Nasdaq wipes out 2026 gains, TSX, Dow and S&amp;P 500 fall into correction territory</a></li>
+<li><a href="https://www.bnnbloomberg.ca/markets/2026/11/20/sptsx-composite-down-more-than-350-points-as-tech-and-base-metal-stocks-sink/" target="_blank" rel="noopener">The Canadian Press via BNN Bloomberg: S&amp;P/TSX composite falls nearly 2.5% Friday</a></li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/calculate-room.html" target="_blank" rel="noopener">Canada Revenue Agency: Calculate your TFSA contribution room</a></li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/withdraw.html" target="_blank" rel="noopener">Canada Revenue Agency: Withdrawing from a TFSA</a></li>
+</ul>
+<p><em>For education only. Not investment advice. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "Stellantis Showdown: Joly Faces Stellantis CEO Today in Last Bid to Save the Brampton Plant",
  slug: "canadian-news-roundup-2026-11-20",
  date: "November 20, 2026",
