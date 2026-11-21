@@ -4,7 +4,7 @@ Goal: turn every YouTube video/Short into engaged sessions on [canadiandatainsig
 
 Channel: https://www.youtube.com/channel/UCkKDB5U853YVBnfAPIlPHTw  
 Site: https://canadiandatainsights.com/  
-Contact: hello@canadiandatainsights.com
+Contact: contact@canadiandatainsights.com
 
 ---
 

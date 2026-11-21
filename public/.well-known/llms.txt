@@ -7,7 +7,7 @@
 Canadian Data Insights (CDI) turns official Statistics Canada data into accessible web pages. Census profiles cover population, growth, households, income, employment, education, commute, occupation, industry, languages, and dwellings. Shares on the work-profile sections are calculated from published counts. Housing tenure and shelter costs are shown only for geographies published in census tables 98-10-0252-01 and 98-10-0253-01 (reference period 2021). Consumer prices use the Consumer Price Index (table 18-10-0004-01) and selected average retail prices (table 18-10-0245-01). The inflation section also uses tables 18-10-0005-01, 18-10-0006-01, 18-10-0007-01, 18-10-0256-01, and 14-10-0063-01. We do not invent figures for a municipality that is not in the source table.
 
 - Site: https://canadiandatainsights.com/
-- Contact: hello@canadiandatainsights.com
+- Contact: contact@canadiandatainsights.com
 - YouTube: https://www.youtube.com/channel/UCkKDB5U853YVBnfAPIlPHTw
 - Primary data: Statistics Canada, Census of Population, 2021; Consumer Price Index; monthly average retail prices
 - Licence: Open Government Licence - Canada

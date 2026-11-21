@@ -2,7 +2,7 @@
 
 export const SITE_URL = 'https://canadiandatainsights.com';
 export const SITE_NAME = 'Canadian Data Insights';
-export const CONTACT_EMAIL = 'hello@canadiandatainsights.com';
+export const CONTACT_EMAIL = 'contact@canadiandatainsights.com';
 export const OGL_LICENSE_URL =
   'https://open.canada.ca/en/open-government-licence-canada';
 export const STATCAN_OPEN_LICENCE_URL =
