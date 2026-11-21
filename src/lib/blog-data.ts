@@ -38,6 +38,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="tsx-correction-ai-selloff">What happened on Friday</h2>
 <p>A sharp, tech-driven sell-off hit North American stocks on Friday. In Toronto, the S&amp;P/TSX composite closed down 2.47% at 33,189.85 (<a href="https://www.bnnbloomberg.ca/markets/2026/11/20/sptsx-composite-down-more-than-350-points-as-tech-and-base-metal-stocks-sink/" target="_blank" rel="noopener">The Canadian Press</a>). It's down 8.8% since Nov. 11 and has lost more than 10% since its record high in late August. A correction means a fall of 10% or more from the most recent peak (<a href="https://www.cbc.ca/news/business/anthropic-ipo-markets-today-9.7429534" target="_blank" rel="noopener">CBC News</a>).</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/RXETqtF3N0o" title="TSX Correction: What It Means for Your TFSA" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>It was the TSX's seventh drop in a row, its longest daily losing streak since October 2023, and it closed at its lowest level since April 6 (<a href="https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-us-futures-fall-after-sp-500-drops-for-six-straight-sessions-asia-set/" target="_blank" rel="noopener">The Globe and Mail/Reuters</a>). The Globe puts the five-day drop at 8.1%, the steepest weekly decline since March 2020. (CBC describes it as the steepest weekly drop since April 2025.)</p>
 
 <h2>The scoreboard</h2>
