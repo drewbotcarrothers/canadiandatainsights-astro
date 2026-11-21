@@ -38,6 +38,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="stellantis-brampton-showdown">The meeting that decides Brampton</h2>
 <p>Stellantis says Filosa and Stellantis Canada president Trevor Longley will attend Friday's "working session" with the federal and Ontario governments and Unifor, and that it "remains committed to engaging constructively" about the sale (<a href="https://media.stellantisnorthamerica.com/newsrelease.do?id=28211&amp;mid=1" target="_blank" rel="noopener">Stellantis statement</a>). It is the second meeting in eight days. The first, with the head of Stellantis Canada, failed to change the company's mind (<a href="https://www.theglobeandmail.com/business/article-joly-stellantis-ceo-to-meet-friday-in-attempt-to-save-brampton-plant/" target="_blank" rel="noopener">The Globe and Mail</a>). Going in, <a href="https://www.ctvnews.ca/politics/article/hopes-dim-ahead-of-high-stakes-meeting-with-stellantis-to-avert-brampton-plant-sale/" target="_blank" rel="noopener">CTV News</a> reports that hopes are dim.</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/MAQxfQYTVl0" title="Keep Brampton or Get Sued: Joly&#39;s Ultimatum" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 <h2>What's at stake</h2>
 <ul>
