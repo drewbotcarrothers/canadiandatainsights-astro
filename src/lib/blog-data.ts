@@ -25,6 +25,75 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Hegseth's Secret Memo on Canada: What the Pentagon Restricted, and What It Didn't",
+ slug: "canadian-news-roundup-2026-11-22",
+ date: "November 22, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-22.png",
+ excerpt: "U.S. Defence Secretary Pete Hegseth signed a classified memo restricting military ties with Canada, and Ottawa says it learned about it from the Washington Post. A U.S. senator says it limits top-brass meetings and think-tank events, not NORAD or NATO. Here's what changed, what didn't, and why it matters for Canada.",
+ content: `
+<p><strong>TL;DR:</strong> The Washington Post reported late Friday, Nov. 20, that U.S. Defence Secretary Pete Hegseth circulated a classified memo last week putting new restrictions on military co-operation with Canada. Canada's top military leaders say they learned about it from the newspaper. On Saturday in Halifax, U.S. Sen. Mike Rounds confirmed the memo: it limits meetings between generals and admirals, and U.S. officials now need permission to attend Canadian think-tank or social events. The Pentagon says NORAD, NATO and intelligence sharing are not affected. The message, Rounds said, is pressure on defence spending.</p>
+
+<h2 id="hegseth-memo-canada-defence-ties">What happened</h2>
+<p>The Washington Post, citing U.S. officials, reported that Hegseth issued the guidance in a classified memo circulated last week. One official told the Post the restrictions would be seen as a "slap in the face" to Canadians. The Post said it had not reviewed the memo (<a href="https://www.washingtonpost.com/national-security/2026/11/20/secret-hegseth-memo-restricts-us-canada-defense-relationship/" target="_blank" rel="noopener">The Washington Post</a>).</p>
+<p>Ottawa was caught off guard. Three military sources told The Globe and Mail that senior leaders of the Canadian Armed Forces were not aware of the memo and learned of it from the Post story. The government and military received no communication from Washington, formal or informal (<a href="https://www.theglobeandmail.com/world/us-politics/article-no-change-to-canada-us-defence-co-operation-military-sources-say-amid/" target="_blank" rel="noopener">The Globe and Mail</a>).</p>
+<p>"It's the first time we heard of this — just yesterday," Defence Minister David McGuinty said at the Halifax International Security Forum. "It's clear there's some sort of document we haven't seen. I'm not aware of the contents of it." (<a href="https://www.cbc.ca/news/politics/canada-us-pentagon-restrictions-hegseth-9.7431302" target="_blank" rel="noopener">CBC News</a>)</p>
+
+<h2>What the memo restricts, and what it doesn't</h2>
+<p>Hours later, Republican Sen. Mike Rounds, who sits on the Senate armed services committee, confirmed the memo to reporters in Halifax and described its scope (<a href="https://lethbridgeherald.com/news/national-news/2026/11/21/u-s-senator-says-hegseth-memo-does-not-change-military-co-operation-with-canada/" target="_blank" rel="noopener">The Canadian Press</a>).</p>
+<table>
+<thead><tr><th>Restricted (per Sen. Rounds)</th><th>Not affected (per Pentagon and Rounds)</th><th>Still unclear</th></tr></thead>
+<tbody>
+<tr><td>General and flag officer meetings, limited to those that "advance [Department of War] objectives"</td><td>NORAD, the binational air and missile defence command</td><td>Bilateral military exercises</td></tr>
+<tr><td>U.S. officials must request permission for Canadian think-tank events</td><td>NATO co-operation</td><td>Training and exchange programs</td></tr>
+<tr><td>U.S. officials must request permission for social engagements</td><td>Defence intelligence sharing and Five Eyes</td><td>Joint defence planning</td></tr>
+<tr><td></td><td>U.S. defence personnel already in Canada</td><td></td></tr>
+</tbody>
+</table>
+<p>"And it is OK to attend any 9/11 events," Rounds added. He said the measures were drafted months ago but only signed recently, and that it was unfortunate they leaked. The intent, he said, was pressure: "Look, we really want you to bring up your defence spending." (CBC, CP)</p>
+<p>The Pentagon's chief spokesperson, Sean Parnell, said: "This guidance does not impact defence intelligence co-operation, our binational NORAD command or our co-operation through NATO." He said the department is "taking steps to ensure its engagements with Canada advance tangible U.S. defence objectives." CBC notes that left open questions about exercises, training exchanges and defence planning.</p>
+
+<h2>The backlash, including from Americans</h2>
+<ul>
+<li><strong>Sen. Chris Coons (Democrat):</strong> "This is a completely unnecessary insertion of a negative tone." He warned that Iran, North Korea, China and Russia are working more closely together (CBC).</li>
+<li><strong>Sen. Tim Kaine (Democrat):</strong> "The tone is bad and it's unnecessary." He said the new Congress, after Democrats won both chambers in this month's midterms, will "change the tone dramatically" (CP).</li>
+<li><strong>McGuinty:</strong> "business as usual." He said Canada and the U.S. still work "hand-in-glove," from drug interdiction in the Caribbean to integrated air and missile defence (CBC).</li>
+</ul>
+
+<h2>Not the first snub</h2>
+<p>The memo fits a pattern. In May, the Trump administration suspended U.S. participation in the Permanent Joint Board on Defence, a Canada-U.S. advisory body founded in 1940. Pentagon policy chief Elbridge Colby linked that move to Prime Minister Mark Carney's January speech in Davos. U.S. officials have also criticized Canada's review of its commitment to buy 88 F-35 fighter jets (Globe). In September, the New York Times reported that FBI Director Kash Patel ordered a temporary halt to intelligence sharing with the RCMP; RCMP sources told the Globe they found no evidence sharing had stopped.</p>
+
+<h2>Why it matters for Canada</h2>
+<p>Practically, little changes today. NORAD still watches Canadian skies, and intelligence still flows. But the memo lands at a sensitive moment:</p>
+<ul>
+<li><strong>Trade talks:</strong> Ottawa and Washington are negotiating again. On Friday, President Donald Trump said his administration is "working on making a deal" (Globe).</li>
+<li><strong>Defence dollars:</strong> Canada has hit NATO's 2% of GDP target and committed to 5% by 2035 (Globe, CBC). Carney has said it is not good for more than 70 cents of every defence equipment dollar to go to the United States (CBC).</li>
+<li><strong>Buying elsewhere:</strong> McGuinty said in Halifax that Canada wants to "procure less from the United States" and build more at home in 10 core areas. Canada will also put an initial $100 million into the NATO Innovation Fund (<a href="https://breakingdefense.com/2026/11/canada-hasnt-seen-changes-to-defense-relationship-with-us-says-mcguinty/" target="_blank" rel="noopener">Breaking Defense</a>).</li>
+</ul>
+<p>The takeaway: Washington is using access as leverage. A memo that limits handshakes and dinners costs the U.S. little. But each snub gives Ottawa another reason to buy Canadian or European, and that shift is where the real money moves.</p>
+
+<h2>What to watch</h2>
+<ul>
+<li>Whether Ottawa gets a copy or a briefing on the memo's contents. McGuinty said he has not yet contacted Hegseth (CBC).</li>
+<li>Any change to joint exercises, training exchanges or officer postings.</li>
+<li>The F-35 review decision and the next round of Canada-U.S. trade talks.</li>
+<li>The new U.S. Congress in January.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/politics/canada-us-pentagon-restrictions-hegseth-9.7431302" target="_blank" rel="noopener">CBC News: Hegseth reportedly moves to restrict defence ties with Canada, but Ottawa sees no change</a></li>
+<li><a href="https://www.theglobeandmail.com/world/us-politics/article-no-change-to-canada-us-defence-co-operation-military-sources-say-amid/" target="_blank" rel="noopener">The Globe and Mail: Ottawa unaware of reported Hegseth memo on restrictions to defence co-operation with Canada</a></li>
+<li><a href="https://lethbridgeherald.com/news/national-news/2026/11/21/u-s-senator-says-hegseth-memo-does-not-change-military-co-operation-with-canada/" target="_blank" rel="noopener">The Canadian Press: U.S. senator says Hegseth memo does not change military co-operation with Canada</a></li>
+<li><a href="https://breakingdefense.com/2026/11/canada-hasnt-seen-changes-to-defense-relationship-with-us-says-mcguinty/" target="_blank" rel="noopener">Breaking Defense: Despite Hegseth memo, Canada hasn't seen changes to defense relationship with US</a></li>
+<li><a href="https://www.washingtonpost.com/national-security/2026/11/20/secret-hegseth-memo-restricts-us-canada-defense-relationship/" target="_blank" rel="noopener">The Washington Post: In secret memo, Hegseth restricts U.S.-Canada defense relationship</a></li>
+</ul>
+<p><em>For information only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "TSX Falls Into a Correction: What the AI Sell-Off Means for Your RRSP and TFSA",
  slug: "canadian-news-roundup-2026-11-21",
  date: "November 21, 2026",
