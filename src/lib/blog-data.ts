@@ -38,6 +38,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="greer-canada-trade-deal-close">What happened</h2>
 <p>Greer spoke to Fox News on Sunday morning. "We've made a lot of progress. I think we're fairly close on finding a landing zone," he said (<a href="https://globalnews.ca/news/12161554/jamieson-greer-trade-deal-canada-positive/" target="_blank" rel="noopener">Global News</a>).</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/BNFUbUSzTnA" title="Is a Canada-U.S. Trade Deal Finally Close?" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>He also tried to calm the mood. "The vast majority of goods going back and forth between Canada and the United States still are duty-free, still supporting a lot of jobs on both sides of the border," Greer said. "So it's a more positive story, I think, than people realize." (<a href="https://www.cbc.ca/news/world/u-s-trade-chief-canada-trade-talks-9.7432158" target="_blank" rel="noopener">The Canadian Press via CBC</a>)</p>
 
 <h2>The catch: China</h2>
