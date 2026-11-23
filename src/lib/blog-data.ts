@@ -25,6 +25,80 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "U.S. Says a Canada Trade Deal Is 'Fairly Close.' The Auto Tariff Decides It",
+ slug: "canadian-news-roundup-2026-11-23",
+ date: "November 23, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-23.png",
+ excerpt: "Trump's trade chief Jamieson Greer says Washington and Ottawa are 'fairly close' to a deal, while slamming Canada's China moves. The sticking point is still the 25% U.S. tariff on Canadian cars, which Trump has threatened to double to 50% on Jan. 1. Here's what's on the table and what it means for Canadians.",
+ content: `
+<p><strong>TL;DR:</strong> U.S. Trade Representative Jamieson Greer said on Sunday, Nov. 22, that the U.S. and Canada are "fairly close on finding a landing zone" for a trade deal. It's the most upbeat signal from Washington since talks collapsed in August. But Greer also attacked Canada's new trade opening with China. And Canada's chief negotiator has told advisers that "multiple trade issues" remain, led by the 25% U.S. tariff on Canadian cars. If there's no deal, Trump has said that tariff doubles to 50% on Jan. 1, 2027, 39 days from today.</p>
+
+<h2 id="greer-canada-trade-deal-close">What happened</h2>
+<p>Greer spoke to Fox News on Sunday morning. "We've made a lot of progress. I think we're fairly close on finding a landing zone," he said (<a href="https://globalnews.ca/news/12161554/jamieson-greer-trade-deal-canada-positive/" target="_blank" rel="noopener">Global News</a>).</p>
+<p>He also tried to calm the mood. "The vast majority of goods going back and forth between Canada and the United States still are duty-free, still supporting a lot of jobs on both sides of the border," Greer said. "So it's a more positive story, I think, than people realize." (<a href="https://www.cbc.ca/news/world/u-s-trade-chief-canada-trade-talks-9.7432158" target="_blank" rel="noopener">The Canadian Press via CBC</a>)</p>
+
+<h2>The catch: China</h2>
+<p>Greer took aim at Canada's "rapprochement on trade with China." He cited Ottawa's decision to let up to 49,000 Chinese electric vehicles a year into Canada at a lower tariff, and to expand tariff relief for some Chinese steel and aluminum. Carney announced the EV quota in January, at a 6.1% tariff, down from 100% (<a href="https://vancouversun.com/news/world/united-states/the-us-and-canada-fairly-close-to-reaching-tariff-relief-deal-greer/wcm/e87e98c5-2e33-4f54-9d6a-cbfe7b1ded1d" target="_blank" rel="noopener">Vancouver Sun</a>).</p>
+<p>"Our view is this: this goes a little bit backwards," Greer said. He called the gap "a philosophical difference": Canada leans toward open trade, while Washington wants to "manage North American trade in auto, steel and aluminum."</p>
+<p>The White House's harder voices are louder. Trade adviser Peter Navarro blasted Carney's China outreach last week: "They are like a high school team taking on the New York Knicks. That doesn't end well for Canada." Carney's answer: "We'd like to do a deal. If the U.S. doesn't want to do a deal, we're busy." (<a href="https://www.cbc.ca/news/politics/canada-seeking-interim-trade-arrangment-9.7428540" target="_blank" rel="noopener">CBC News</a>)</p>
+
+<h2>The real fight: autos</h2>
+<p>Canada's chief trade negotiator, Janice Charette, told a federal advisory committee that "multiple trade issues" are still blocking a deal. The biggest is the 25% U.S. tariff on Canadian automobiles, according to sources in the meeting (<a href="https://globalnews.ca/news/12161554/jamieson-greer-trade-deal-canada-positive/" target="_blank" rel="noopener">Global News</a>).</p>
+<p>Autos are also what blew up the last round. Here's how the numbers stack up:</p>
+<table>
+<thead><tr><th>U.S. tariff on Canadian cars and light trucks</th><th>Rate</th></tr></thead>
+<tbody>
+<tr><td>August draft deal (collapsed)</td><td>15%</td></tr>
+<tr><td>Today</td><td>25%</td></tr>
+<tr><td>Threatened from Jan. 1, 2027 (no deal)</td><td>50%</td></tr>
+</tbody>
+</table>
+<p>The August draft would also have cut U.S. tariffs on Canadian steel and aluminum from 50% to 25% (<a href="https://www.reuters.com/business/autos-transportation/trump-says-he-will-raise-tariffs-all-cars-trucks-50-amid-canada-trade-spat-2026-08-24/" target="_blank" rel="noopener">Reuters</a>). It fell apart partly because the U.S. refused to extend relief to medium- and heavy-duty trucks, which Carney said would have hit the GM and Ford plants in Ontario (<a href="https://www.theglobeandmail.com/politics/article-us-canada-carney-trump-trade-talks-november-3/" target="_blank" rel="noopener">The Globe and Mail</a>).</p>
+<p>Days later, Trump said tariffs on all Canadian cars, trucks, auto parts and steel would rise to 50% on Jan. 1, 2027 (<a href="https://www.cnbc.com/2026/08/24/trump-canada-auto-tariffs-trade-war.html" target="_blank" rel="noopener">CNBC</a>). Toyota and Honda build more than 75% of Canada's 1.2 million vehicles a year (2025) (<a href="https://www.reuters.com/business/autos-transportation/automakers-thought-canada-was-getting-trade-deal-then-tariffs-doubled-2026-08-26/" target="_blank" rel="noopener">Reuters</a>). A Honda executive called a 50% tariff "catastrophic for the entire industry" (<a href="https://www.cnbc.com/2026/10/27/honda-warns-50percent-canada-auto-tariffs-would-be-catastrophic.html" target="_blank" rel="noopener">CNBC</a>).</p>
+
+<h2>What Ottawa is actually chasing</h2>
+<ul>
+<li><strong>An interim deal, not a final one.</strong> Trade Minister Dominic LeBlanc said Canada wants an interim arrangement with Washington by year-end. It would likely lower, not erase, the Section 232 tariffs on steel, aluminum, autos and lumber. "There is an element of those tariffs that are going to remain," he said (<a href="https://www.cbc.ca/news/politics/canada-seeking-interim-trade-arrangment-9.7428540" target="_blank" rel="noopener">CBC News</a>).</li>
+<li><strong>Kill the Section 338 tariffs.</strong> LeBlanc wants the 338 tariffs Trump imposed in September removed entirely.</li>
+<li><strong>Unlock CUSMA.</strong> An interim deal could kick-start the formal review of the Canada-U.S.-Mexico Agreement.</li>
+<li><strong>No hard deadline.</strong> "If it takes until January or February to get that deal, we'll do that work," LeBlanc said.</li>
+</ul>
+<p>Some U.S. pressure has already eased. On Nov. 3, Carney said Washington was "asking less and offering more, but we're not quite there," and that U.S. demands on French-language streaming rules and limits on Canada's other trade deals were "off the table" (<a href="https://www.cbc.ca/news/politics/carney-trump-trade-deal-progress-9.7407273" target="_blank" rel="noopener">CBC News</a>).</p>
+
+<h2>Why it matters for Canadians</h2>
+<p>Autos are the most exposed piece of Canada's economy, and they are concentrated in Ontario. A deal that lowers the 25% tariff would ease pressure on assembly plants, parts makers and the jobs around them. No deal by Jan. 1 means the threatened 50% rate. Steel, aluminum and lumber workers are also waiting on the same package.</p>
+<p>Washington's politics are shifting too. Republicans lost both chambers in this month's midterms. Democratic Sen. Chris Coons told CBC: "Frankly, if you can get an interim deal, I'd take it," and let the new Democratic majority "legislate an even better deal" (<a href="https://www.cbc.ca/news/politics/us-canada-interim-deal-tariffs-senator-long-term-9.7430913" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>The takeaway: "fairly close" is not signed. Watch the auto tariff. If it doesn't come down, the deal isn't real, and Jan. 1 is the date that matters.</p>
+
+<h2>What to watch</h2>
+<ul>
+<li>Whether an interim deal lands before Jan. 1, 2027, and what auto tariff rate it sets.</li>
+<li>Whether Washington demands changes to Canada's Chinese EV quota or steel and aluminum relief.</li>
+<li>The fate of the Section 338 tariffs.</li>
+<li>The new U.S. Congress in January.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://globalnews.ca/news/12161554/jamieson-greer-trade-deal-canada-positive/" target="_blank" rel="noopener">Global News: 'We are close,' to deal with Canada, Trump's trade representative says</a></li>
+<li><a href="https://www.cbc.ca/news/world/u-s-trade-chief-canada-trade-talks-9.7432158" target="_blank" rel="noopener">CBC News / The Canadian Press: U.S. trade chief sees progress in trade talks but faults Canada for Beijing-friendly moves</a></li>
+<li><a href="https://vancouversun.com/news/world/united-states/the-us-and-canada-fairly-close-to-reaching-tariff-relief-deal-greer/wcm/e87e98c5-2e33-4f54-9d6a-cbfe7b1ded1d" target="_blank" rel="noopener">Vancouver Sun: The U.S. and Canada 'fairly close' to reaching tariff-relief deal, trade chief says</a></li>
+<li><a href="https://www.cbc.ca/news/politics/canada-seeking-interim-trade-arrangment-9.7428540" target="_blank" rel="noopener">CBC News: Canada seeking interim arrangement with U.S. that could provide tariff relief</a></li>
+<li><a href="https://www.cbc.ca/news/politics/us-canada-interim-deal-tariffs-senator-long-term-9.7430913" target="_blank" rel="noopener">CBC News: U.S. senator says Canada should make interim tariff agreement</a></li>
+<li><a href="https://www.cbc.ca/news/politics/carney-trump-trade-deal-progress-9.7407273" target="_blank" rel="noopener">CBC News: Carney says U.S. 'asking less and offering more'</a></li>
+<li><a href="https://www.theglobeandmail.com/politics/article-us-canada-carney-trump-trade-talks-november-3/" target="_blank" rel="noopener">The Globe and Mail: Carney credits U.S. with 'asking less' and 'offering more'</a></li>
+<li><a href="https://www.reuters.com/business/autos-transportation/trump-says-he-will-raise-tariffs-all-cars-trucks-50-amid-canada-trade-spat-2026-08-24/" target="_blank" rel="noopener">Reuters: Trump threatens 50% tariffs on all cars and trucks from Canada</a></li>
+<li><a href="https://www.reuters.com/business/autos-transportation/automakers-thought-canada-was-getting-trade-deal-then-tariffs-doubled-2026-08-26/" target="_blank" rel="noopener">Reuters: Automakers thought Canada was getting a trade deal. Then tariffs doubled.</a></li>
+<li><a href="https://www.cnbc.com/2026/08/24/trump-canada-auto-tariffs-trade-war.html" target="_blank" rel="noopener">CNBC: Trump says Canada auto tariffs to hit 50%</a></li>
+<li><a href="https://www.cnbc.com/2026/10/27/honda-warns-50percent-canada-auto-tariffs-would-be-catastrophic.html" target="_blank" rel="noopener">CNBC: Honda warns 50% Canada auto tariffs would be catastrophic</a></li>
+</ul>
+<p><em>For information only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "Hegseth's Secret Memo on Canada: What the Pentagon Restricted, and What It Didn't",
  slug: "canadian-news-roundup-2026-11-22",
  date: "November 22, 2026",
