@@ -25,6 +25,74 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Macklem Speaks Today. Mortgage Delinquencies Just Hit a 13-Year High",
+ slug: "canadian-news-roundup-2026-11-24",
+ date: "November 24, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-24.png",
+ excerpt: "Bank of Canada Governor Tiff Macklem gives his first speech since announcing he will leave in June 2027. Headline inflation is still 3.1%, core inflation is at or below the 2% target, and Equifax says 90-day mortgage delinquencies just reached a 13-year high. This is a preview; we will update it after he speaks.",
+ content: `
+<p><strong>TL;DR:</strong> Governor Tiff Macklem speaks at 12:40 ET today in Toronto, his first speech since saying he will not seek a second term. Headline inflation is still 3.1%, but the Bank's preferred core measures are at or below 2%. The same morning, Equifax said Canada's 90-day mortgage delinquency rate hit 0.32%, a 13-year high, up 31.1% from a year earlier and driven by Ontario and B.C. The next rate decision is Dec. 9. <em>This is a preview. We will update it after the Governor's text is posted at 12:25 ET and after his press conference around 2:00 p.m. Our video goes up tonight.</em></p>
+
+<h2 id="macklem-speech-mortgage-stress">What happens today</h2>
+<p>Macklem speaks before the Economic Club of Canada at the Westin Harbour Castle at 12:40 ET. The announced topic is "Canada's monetary policy framework: A trusted anchor in uncertain waters." The Bank will post the speech text at 12:25 ET, when the embargo lifts, and the Governor is scheduled to take questions at a press conference around 2:00 p.m. (<a href="https://www.bankofcanada.ca/2026/11/speech-tiff-macklem-governor-bank-canada-2026-11-24/" target="_blank" rel="noopener">Bank of Canada</a>).</p>
+<p>It is his first scheduled speech since Nov. 16, when the Bank's board announced he will not seek a second term. His seven-year term ends on June 2, 2027. A search for the next governor is already under way, with the appointment expected by spring and the new term starting June 3, 2027. Macklem said then: "I remain fully committed to fulfilling my responsibilities and delivering for Canadians through the remainder of my term." (<a href="https://www.bankofcanada.ca/2026/11/bank-of-canada-governor-tiff-macklem-to-step-down-in-june-2027/" target="_blank" rel="noopener">Bank of Canada, Nov. 16</a>)</p>
+
+<h2>The rate Macklem is defending</h2>
+<p>On Oct. 28, the Bank raised its policy rate by a quarter point to 2.5% — the first increase since July 2023, after seven straight holds at 2.25%. Governing Council's line to watch today is this one: "There could be a need to increase the policy rate further, but given uncertainties, Governing Council agreed to proceed carefully." The next decision is Dec. 9, the last one of 2026 (<a href="https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/" target="_blank" rel="noopener">Bank of Canada, Oct. 28</a>).</p>
+<p>In that same decision, the Bank said CPI inflation had been around 3% since April and was expected to rise to about 3.5% by year-end, average 3% in 2027, then ease to 2% by the middle of 2028. It also said the economy had more momentum than it expected in July: GDP grew 3.3% in the second quarter, early signs pointed to about 2% in the third, and unemployment had been around 6.5% for several months.</p>
+
+<h2>The data overlay: a 3.1% headline, a 2% core, and a 13-year mortgage high</h2>
+<p>October's official inflation numbers, released Nov. 16, show why the picture is split. Headline inflation was 3.1%, the same as September. Strip out energy and it was 2.0%. The Bank's preferred core measures were even calmer: CPI-trim at 1.8% and CPI-median at 2.0%. Gasoline, though, was still up 30.9% from a year earlier (<a href="https://www150.statcan.gc.ca/n1/daily-quotidien/261116/dq261116a-eng.htm" target="_blank" rel="noopener">Statistics Canada</a>; <a href="https://canadiandatainsights.com/inflation/" target="_blank" rel="noopener">Canadian Data Insights inflation page</a>).</p>
+<table>
+<thead><tr><th>Measure (October 2026, year over year)</th><th>Rate</th></tr></thead>
+<tbody>
+<tr><td>All-items CPI</td><td>3.1%</td></tr>
+<tr><td>CPI excluding energy</td><td>2.0%</td></tr>
+<tr><td>CPI excluding gasoline</td><td>2.2%</td></tr>
+<tr><td>CPI-trim</td><td>1.8%</td></tr>
+<tr><td>CPI-median</td><td>2.0%</td></tr>
+<tr><td>CPI-common</td><td>2.5%</td></tr>
+<tr><td>Gasoline</td><td>30.9%</td></tr>
+<tr><td>Policy rate (since Oct. 28)</td><td>2.50%</td></tr>
+</tbody>
+</table>
+<p>This morning, Equifax Canada added the household side of that rate hike. Its third-quarter credit report says the national 90-plus day mortgage delinquency rate — payments missed three months in a row — reached 0.32%. That is up 31.1% from a year earlier, the highest since Equifax started tracking the measure in 2013, and the 16th quarterly increase in a row. Ontario and British Columbia accounted for 91% of the annual growth in severely delinquent mortgage accounts. Equifax also said the dollar value of those delinquent mortgages is rising much faster than the number of accounts, a sign that larger mortgages are the ones falling behind (<a href="https://www.equifax.ca/about-equifax/newsroom/-/intlpress/rising-interest-rates-could-put-nearly-1-in-4-mortgage-holders-at-risk-of-added-financial-stress-as-mortgage-delinquencies-reach-13-year-high" target="_blank" rel="noopener">Equifax Canada</a>; <a href="https://globalnews.ca/news/12163932/mortgage-delinquencies-ontario-bc-equifax/" target="_blank" rel="noopener">The Canadian Press via Global News</a>).</p>
+<p>Canada has 9.1 million mortgage holders. About 1.4 million of them have a variable-rate mortgage, and another 1.3 million carry a home-equity line of credit above $50,000. Equifax estimates that every quarter-point hike adds roughly $860 million a year in interest on variable-rate mortgages and $419 million on HELOCs. Those are the households that feel a Dec. 9 decision first.</p>
+<p>The share of mortgages in severe arrears is still below 1%. Rebecca Oakes, Equifax Canada's vice-president of advanced analytics, said that if rates stay relatively flat, she would expect the pressure to ease by the middle of next year. Further hikes, she said, would "put additional pressure." Non-mortgage delinquency among people who already have a mortgage was up 9.8% year over year, while people without a mortgage improved by 3.4%. Total consumer debt reached $2.74 trillion in the quarter, up 4.68% from a year earlier.</p>
+
+<h2>Why it matters for Canadians</h2>
+<p>Macklem is not announcing a rate decision today. He is talking about the framework that is supposed to keep inflation at 2% — in a year when the headline rate has been stuck near 3% because of energy, core inflation is already back around the target, and mortgage stress in Ontario and B.C. is the worst Equifax has recorded. If he repeats that another hike may be needed, variable-rate borrowers will hear it immediately. If he softens that line, it will be the first real signal before Dec. 9.</p>
+<p>The takeaway going into the speech: the inflation number on the news isn't the same as the inflation number the Bank uses to set the rate, and the households already behind on their mortgages are concentrated in the two most expensive housing markets in the country.</p>
+
+<h2>What to watch this afternoon</h2>
+<ul>
+<li>Whether Macklem repeats, softens or drops the Oct. 28 line that "there could be a need to increase the policy rate further."</li>
+<li>How he treats the gap between 3.1% headline inflation and core measures at or below 2%.</li>
+<li>Whether he still sees energy costs passing through into a broader set of prices.</li>
+<li>What he says about trade, tariffs and growth ahead of Dec. 9.</li>
+<li>Any comment on leaving in June 2027, and whether that changes how markets read the framework speech.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.bankofcanada.ca/2026/11/speech-tiff-macklem-governor-bank-canada-2026-11-24/" target="_blank" rel="noopener">Bank of Canada: Speech by Tiff Macklem, Nov. 24, 2026</a></li>
+<li><a href="https://www.bankofcanada.ca/2026/11/bank-of-canada-governor-tiff-macklem-to-step-down-in-june-2027/" target="_blank" rel="noopener">Bank of Canada: Governor Tiff Macklem to step down in June 2027</a></li>
+<li><a href="https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/" target="_blank" rel="noopener">Bank of Canada: Oct. 28, 2026 rate decision</a></li>
+<li><a href="https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/" target="_blank" rel="noopener">Bank of Canada: policy interest rate</a></li>
+<li><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/261116/dq261116a-eng.htm" target="_blank" rel="noopener">Statistics Canada: Consumer Price Index, October 2026</a></li>
+<li><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/261116/t004a-eng.htm" target="_blank" rel="noopener">Statistics Canada: CPI-trim, CPI-median and CPI-common, October 2026</a></li>
+<li><a href="https://canadiandatainsights.com/inflation/" target="_blank" rel="noopener">Canadian Data Insights: Canadian inflation, October 2026</a></li>
+<li><a href="https://www.equifax.ca/about-equifax/newsroom/-/intlpress/rising-interest-rates-could-put-nearly-1-in-4-mortgage-holders-at-risk-of-added-financial-stress-as-mortgage-delinquencies-reach-13-year-high" target="_blank" rel="noopener">Equifax Canada: Q3 2026 Market Pulse, Nov. 24</a></li>
+<li><a href="https://globalnews.ca/news/12163932/mortgage-delinquencies-ontario-bc-equifax/" target="_blank" rel="noopener">Global News / The Canadian Press: Mortgage delinquency rate up 31% in Q3</a></li>
+<li><a href="https://www.cbc.ca/news/business/tiff-macklem-step-down-9.7423501" target="_blank" rel="noopener">CBC News: Bank of Canada governor Tiff Macklem to step down in 2027</a></li>
+</ul>
+<p><em>For information only. Verify primary sources. This post will be updated after the speech.</em></p>
+`,
+ },
+ {
  title: "U.S. Says a Canada Trade Deal Is 'Fairly Close.' The Auto Tariff Decides It",
  slug: "canadian-news-roundup-2026-11-23",
  date: "November 23, 2026",
