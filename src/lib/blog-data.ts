@@ -25,6 +25,70 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "The Pentagon Says Canada's Military Isn't Ready. Ottawa's Own Report Agrees",
+ slug: "canadian-news-roundup-2026-11-25",
+ date: "November 25, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-25.png",
+ excerpt: "The Pentagon now says it is ready to 'up the ante' on Canada. Defence Minister David McGuinty says Canada doesn't report to the United States. But the U.S. readiness numbers sit right next to National Defence's own: 42.3% of key aircraft fleets serviceable against an 85% target.",
+ content: `
+<p><strong>TL;DR:</strong> A senior Pentagon official said Tuesday the U.S. is "postured to up the ante" and may take "more significant mitigation measures" if Canada doesn't turn its defence pledges into North American defence. Defence Minister David McGuinty fired back: "We don't report to the United States." The awkward part for Ottawa: the Pentagon's readiness numbers are close to National Defence's own. In 2024-25, only 42.3% of the military's key aerospace fleets were serviceable, against an 85% target, and every readiness target was missed and pushed back to 2032.</p>
+
+<h2 id="pentagon-readiness-canada-own-numbers">What happened</h2>
+<p>On Tuesday, a senior U.S. Department of War official gave Canadian journalists a background briefing, approved for release. "We're postured to up the ante when we need to," the official said. "If Canada cannot credibly turn its defence spending pledges into investments important for North American defence, we'll have no choice but to start looking at more significant mitigation measures." The official didn't say what those measures would be (<a href="https://www.cbc.ca/news/politics/defence-canada-us-pentagon-spending-9.7434887" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>The official also said "the gap between rhetoric and reality in Ottawa is the widest in all of NATO" and held up Germany as the model. The U.S. calls this a graduated approach. It started with the suspension of the Permanent Joint Board on Defense: "That sent a message but has not solved the problem."</p>
+<p>It is the third shot in a week. First came a Washington Post report on a classified memo from U.S. Secretary of War Pete Hegseth restricting some contacts with Canadian counterparts. Then, on Monday, the Pentagon posted a "fact sheet" saying "Canada's defense shortfalls speak for themselves" and "Canada must get serious and focused" (<a href="https://www.cbc.ca/news/politics/pentagon-criticizes-canadian-military-readiness-9.7433335" target="_blank" rel="noopener">CBC News</a>; <a href="https://www.axios.com/2026/11/22/pentagon-canada-defense-restrictions-fact-sheet" target="_blank" rel="noopener">Axios</a>).</p>
+
+<h2>Ottawa's answer</h2>
+<p>"Canada's a sovereign nation. I'll be very direct: We don't report to the United States," McGuinty said going into cabinet on Tuesday. He said Canada has a path to defence spending equal to 4% of GDP by 2030 and that "we are on track." He said co-operation with the U.S., directly and through NATO and NORAD, has not changed, and that he can't "divine" the thinking behind the fact sheet (<a href="https://globalnews.ca/news/12164586/mcguinty-pentagon-canada-defence-spending-criticisms/" target="_blank" rel="noopener">Global News / The Canadian Press</a>).</p>
+
+<h2>The data: the Pentagon's numbers vs. Ottawa's own</h2>
+<p>The fact sheet says only 41.9% of the Royal Canadian Air Force fleet was serviceable in 2025-26, 53.9% of the navy's fleet, and that the army's operational readiness rate was 48%. It says just one of Canada's four Victoria-class submarines is seaworthy at any given time (<a href="https://www.axios.com/2026/11/22/pentagon-canada-defense-restrictions-fact-sheet" target="_blank" rel="noopener">Axios</a>).</p>
+<p>Those numbers aren't far from what National Defence reported itself. Its <a href="https://www.canada.ca/en/department-national-defence/corporate/reports-publications/departmental-results-report/2024-25-index.html" target="_blank" rel="noopener">2024-25 Departmental Results Report</a> says:</p>
+<table>
+<thead><tr><th>Indicator (DND, 2024-25)</th><th>Result</th><th>Target</th></tr></thead>
+<tbody>
+<tr><td>Aerospace key fleets serviceable</td><td>42.3%</td><td>85% (revised to 70%)</td></tr>
+<tr><td>Land key fleets serviceable</td><td>51%</td><td>70%</td></tr>
+<tr><td>Maritime key fleets serviceable</td><td>59.6%</td><td>60%</td></tr>
+<tr><td>Force elements ready for operations</td><td>61.3%</td><td>90%</td></tr>
+<tr><td>Planned readiness for core concurrent missions</td><td>30%</td><td>90%</td></tr>
+</tbody>
+</table>
+<p>Every target was missed, and the target dates were moved to March 2032. The aerospace number has gone sideways for three years: 43.88% in 2022-23, 48.9% in 2023-24, 42.3% in 2024-25. DND blames personnel shortages, supply chain problems, aging platforms, underfunding and obsolescence. It also notes that 100% serviceability across key fleets at once is "neither expected nor operationally feasible."</p>
+<p>One caution: these are equipment serviceability measures, not the share of troops ready to fight. The Pentagon's and DND's figures cover different years, but they tell the same story.</p>
+
+<h2>The money gap</h2>
+<p>NATO reported in March that Canada had finally hit 2% of GDP on defence. Carney's government added more than $80 billion over five years. But allies agreed at The Hague last year to 5% of GDP by 2035: 3.5% for core defence plus 1.5% for security-related spending. Canada's Nov. 5 budget has core defence spending at 2.2% this fiscal year, then 2.6% for four years. The Pentagon says Ottawa is "deferring the largest increases needed to actualize NATO targets until after the 2029 federal election" (<a href="https://www.theglobeandmail.com/world/us-politics/article-pentagon-missive-canadian-defence-spending-target/" target="_blank" rel="noopener">The Globe and Mail</a>; <a href="https://www.cbc.ca/news/politics/pentagon-criticizes-canadian-military-readiness-9.7433335" target="_blank" rel="noopener">CBC News</a>).</p>
+
+<h2>Is this really about readiness?</h2>
+<p>Not entirely, say some experts. The fact sheet also takes aim at Ottawa's review of its plan to buy 88 U.S.-made F-35s. Former NATO ambassador Kerry Buck told CBC: "Maybe the U.S. complaints are about what our focus is and the fact that we're diversifying away from an overreliance on the U.S. military, including buying American." Carleton University's Steve Saideman was blunter: "This is about [U.S. Secretary of War] Pete Hegseth" (<a href="https://www.cbc.ca/news/politics/defence-canada-us-pentagon-spending-9.7434887" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>The takeaway: Ottawa is right that it doesn't report to Washington. But on readiness, the Pentagon is quoting numbers Canada published itself. The real test is whether those numbers move before 2032.</p>
+
+<h2>What to watch</h2>
+<ul>
+<li>What "more significant mitigation measures" turn out to be, and whether they touch NORAD.</li>
+<li>The F-35 review decision and the Saab early-warning aircraft talks.</li>
+<li>Whether Ottawa sets out a funded path to 3.5% core spending by 2035.</li>
+<li>National Defence's next results report, and whether fleet serviceability improves.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/politics/defence-canada-us-pentagon-spending-9.7434887" target="_blank" rel="noopener">CBC News: Pentagon prepared to 'up the ante' in defence dispute with Canada</a></li>
+<li><a href="https://www.cbc.ca/news/politics/pentagon-criticizes-canadian-military-readiness-9.7433335" target="_blank" rel="noopener">CBC News: Pentagon takes fresh aim at Canada's military readiness, defence spending priorities</a></li>
+<li><a href="https://globalnews.ca/news/12164586/mcguinty-pentagon-canada-defence-spending-criticisms/" target="_blank" rel="noopener">Global News / The Canadian Press: Can't explain thinking behind Pentagon's Canada 'fact sheet,' McGuinty says</a></li>
+<li><a href="https://www.theglobeandmail.com/world/us-politics/article-pentagon-missive-canadian-defence-spending-target/" target="_blank" rel="noopener">The Globe and Mail: Pentagon claims Ottawa has no plan to meet defence spending target</a></li>
+<li><a href="https://www.axios.com/2026/11/22/pentagon-canada-defense-restrictions-fact-sheet" target="_blank" rel="noopener">Axios: The Pentagon's case for Canada to "get serious" on defense</a></li>
+<li><a href="https://toronto.citynews.ca/2026/11/23/pentagon-criticizes-canada-in-fact-sheet-after-hegseth-memo/" target="_blank" rel="noopener">CityNews / The Canadian Press: Pentagon criticizes Canada in 'fact sheet' after Hegseth memo</a></li>
+<li><a href="https://www.canada.ca/en/department-national-defence/corporate/reports-publications/departmental-results-report/2024-25-index.html" target="_blank" rel="noopener">National Defence: 2024-25 Departmental Results Report</a></li>
+</ul>
+<p><em>For information only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "Macklem Admits the Bank Was Too Slow. Mortgage Delinquencies Hit a 13-Year High",
  slug: "canadian-news-roundup-2026-11-24",
  date: "November 24, 2026",
