@@ -38,6 +38,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="montreal-tax-hike-kraft-dinner">What happened</h2>
 <p>On Tuesday, the City of Montreal tabled an $8-billion budget for 2027. Average property taxes rise 9.8% for residential buildings and 6.2% for non-residential buildings, combining city and borough decisions (<a href="https://montreal.ca/actualites/montreal-presente-son-budget-2027-et-son-pdi-2027-2036-122196" target="_blank" rel="noopener">Ville de Montréal</a>).</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/Lyx-6PcKhgc" title="Why Montreal&#39;s Tax Hike Is Triple Inflation" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>Most of the jump comes from a new infrastructure maintenance tax. It accounts for 5.1 percentage points of the 9.8%, or about $269 of the $515 average increase, and will raise $139 million in 2027. The city says paying for road and pipe maintenance in cash instead of borrowing will save $1 billion in interest over 10 years. It says one in three Montreal roads is in bad or very bad condition (<a href="https://www.cbc.ca/news/canada/montreal/montreal-municipal-budget-tabling-2027-9.7432894" target="_blank" rel="noopener">CBC News</a>).</p>
 <p>"I take full responsibility for this difficult decision," Martinez Ferrada said. She called the increase "unprecedented." Opposition leader Ericka Alneus of Projet Montréal said the inflation promise "has been broken not once, not twice but three times. Ten per cent is major."</p>
 
