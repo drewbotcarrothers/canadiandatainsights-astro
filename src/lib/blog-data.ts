@@ -25,6 +25,77 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Montreal's 9.8% Tax Hike Is Triple Inflation. What It Really Costs Owners and Renters",
+ slug: "canadian-news-roundup-2026-11-26",
+ date: "November 26, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-26.png",
+ excerpt: "Montreal's 2027 budget raises average residential property taxes 9.8%, about $515 per home and nearly double the city's previous 22-year high. The mayor broke her inflation promise, then apologized for a Kraft Dinner remark. Here is the three-year path, and what Quebec's rent formula actually passes on to renters.",
+ content: `
+<p><strong>TL;DR:</strong> Montreal's 2027 budget raises average residential property taxes by 9.8%, about $515 a year for the average home. That is roughly three times Canada's 3.1% inflation rate and nearly double the 5.3% hike of 2010, which had been the city's highest in 22 years. Mayor Soraya Martinez Ferrada promised to keep increases in line with inflation; she now says she takes "full responsibility." Then a "Kraft Dinner" remark turned the budget into a national affordability fight. For renters, the math is smaller than the headline: under Quebec's new rent formula, only the part of the tax hike above inflation is passed on.</p>
+
+<h2 id="montreal-tax-hike-kraft-dinner">What happened</h2>
+<p>On Tuesday, the City of Montreal tabled an $8-billion budget for 2027. Average property taxes rise 9.8% for residential buildings and 6.2% for non-residential buildings, combining city and borough decisions (<a href="https://montreal.ca/actualites/montreal-presente-son-budget-2027-et-son-pdi-2027-2036-122196" target="_blank" rel="noopener">Ville de Montréal</a>).</p>
+<p>Most of the jump comes from a new infrastructure maintenance tax. It accounts for 5.1 percentage points of the 9.8%, or about $269 of the $515 average increase, and will raise $139 million in 2027. The city says paying for road and pipe maintenance in cash instead of borrowing will save $1 billion in interest over 10 years. It says one in three Montreal roads is in bad or very bad condition (<a href="https://www.cbc.ca/news/canada/montreal/montreal-municipal-budget-tabling-2027-9.7432894" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>"I take full responsibility for this difficult decision," Martinez Ferrada said. She called the increase "unprecedented." Opposition leader Ericka Alneus of Projet Montréal said the inflation promise "has been broken not once, not twice but three times. Ten per cent is major."</p>
+
+<h2>The Kraft Dinner moment</h2>
+<p>In an interview with Quatre95, the mayor compared the city's budget to a household's: "Let's be honest, maybe sometimes we'll eat a little more Kraft Dinner because we can't afford filet mignon." The backlash was fast. On Wednesday she called the comment "pretty tactless" and said the real choice is between new parks and filling potholes: "I'm going to choose filling potholes" (<a href="https://montrealgazette.com/news/local-politics/mayor-walks-back-kraft-dinner-comment-tax-hike/" target="_blank" rel="noopener">Montreal Gazette</a>; <a href="https://www.cbc.ca/news/canada/montreal/budget-martinez-ferrada-kraft-dinner-9.7435878" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>Food bank groups told Global News the analogy misses what many Montrealers already face. The NDG Depot says more people with jobs are asking for help (<a href="https://globalnews.ca/news/12166634/montreal-mayor-apologizes-kraft-dinner-tax-hike-backlash/" target="_blank" rel="noopener">Global News</a>).</p>
+
+<h2>The data: three budgets, one promise</h2>
+<table>
+<thead><tr><th>Montreal budget</th><th>Average residential tax increase</th><th>Average home, per year</th></tr></thead>
+<tbody>
+<tr><td>2025 (Projet Montréal)</td><td>2.2%</td><td>n/a</td></tr>
+<tr><td>2026 (Martinez Ferrada, 1st)</td><td>3.8%</td><td>about $188</td></tr>
+<tr><td>2027 (Martinez Ferrada, 2nd)</td><td><strong>9.8%</strong></td><td><strong>about $515</strong></td></tr>
+<tr><td>Previous high (2010)</td><td>5.3%</td><td>n/a</td></tr>
+</tbody>
+</table>
+<p>Sources: <a href="https://www.ctvnews.ca/montreal/article/montreal-budget-municipal-taxes-are-going-up-by-38/" target="_blank" rel="noopener">CTV News</a> and <a href="https://www.ledevoir.com/economie/947379/montreal-hausse-taxes-residentielles-3-8-2026" target="_blank" rel="noopener">Le Devoir</a> (2025-26), CBC News (2027, 2010). Canada's consumer price index rose 3.1% in the year to October 2026 (Statistics Canada).</p>
+<p>So in two budgets, the yearly increase on the average home has gone from about $188 to about $515. It isn't even across the island: Montréal-Nord homeowners face an average 11.5%, while Côte-des-Neiges–Notre-Dame-de-Grâce (8.2%) and Ville-Marie (8.7%) are lowest (CBC News).</p>
+<p>For scale: the median household in the City of Montreal had $56,000 after tax in the 2021 Census, so $515 is a bit under 1% of that (<a href="/location/montr-al/">Montreal on Canadian Data Insights</a>).</p>
+
+<h2>What renters will actually pay</h2>
+<p>About 63.6% of households in the City of Montreal rent (2021 Census, via <a href="https://censusmapper.ca/maps/3493" target="_blank" rel="noopener">CensusMapper</a>). Alneus warned landlords will pass the hike on. Quebec's new rent formula, in force since January 2026, limits how much:</p>
+<ul>
+<li>The base increase is capped at a moving average of inflation.</li>
+<li>Only the part of a property tax hike <em>above</em> inflation is added, and it's split among the units.</li>
+</ul>
+<p>Radio-Canada ran the numbers for a $2,000-a-month unit in a $1-million duplex with a $6,700 tax bill. The rent would rise about $77 a month: $62 from the 3.1% inflation base, and only about $15 from the tax hike itself (<a href="https://ici.radio-canada.ca/article/info/2302724/augmentation-logement-tal-calcul-inflation" target="_blank" rel="noopener">Radio-Canada</a>). Insurance increases and major renovations can push it higher. The city is putting $4.5 million into a rent bank and $2.5 million into tenant-rights groups (Montreal Gazette; CBC News).</p>
+
+<h2>Not just Montreal</h2>
+<p>Aging roads and pipes are hitting other city budgets too. Calgary's draft 2027-2030 budget proposes a 15% municipal property tax increase next year, and council is looking for cuts (<a href="https://www.cbc.ca/news/canada/calgary/calgary-four-year-budget-9.7416298" target="_blank" rel="noopener">CBC News</a>).</p>
+
+<h2>What to watch</h2>
+<ul>
+<li>The council vote to adopt the budget next month, and whether the rate is trimmed.</li>
+<li>Projet Montréal's push for 12 interest-free tax instalments instead of two.</li>
+<li>Rent-increase notices in early 2027, which will show how much landlords pass on.</li>
+<li>Whether other Quebec cities follow with infrastructure taxes.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/canada/montreal/montreal-municipal-budget-tabling-2027-9.7432894" target="_blank" rel="noopener">CBC News: Montreal's 'unprecedented' tax hike key to tackling 'infrastructure crisis,' mayor says</a></li>
+<li><a href="https://www.cbc.ca/news/canada/montreal/budget-martinez-ferrada-kraft-dinner-9.7435878" target="_blank" rel="noopener">CBC News: Montreal mayor walks back 'clumsy' Kraft Dinner comment after major tax hike</a></li>
+<li><a href="https://montrealgazette.com/news/montreal-2027-budget-property-tax-hike/" target="_blank" rel="noopener">Montreal Gazette: Property tax hike will cost homeowners around $515 annually</a></li>
+<li><a href="https://montrealgazette.com/news/local-politics/mayor-walks-back-kraft-dinner-comment-tax-hike/" target="_blank" rel="noopener">Montreal Gazette: Mayor walks back 'we'll eat a little more Kraft Dinner' comment</a></li>
+<li><a href="https://globalnews.ca/news/12166634/montreal-mayor-apologizes-kraft-dinner-tax-hike-backlash/" target="_blank" rel="noopener">Global News: Montreal mayor apologizes for Kraft Dinner comment amid tax hike backlash</a></li>
+<li><a href="https://montreal.ca/actualites/montreal-presente-son-budget-2027-et-son-pdi-2027-2036-122196" target="_blank" rel="noopener">Ville de Montréal: Budget 2027 et PDI 2027-2036 (French)</a></li>
+<li><a href="https://ici.radio-canada.ca/article/info/2302724/augmentation-logement-tal-calcul-inflation" target="_blank" rel="noopener">Radio-Canada: How big property tax hikes will change your next rent (French)</a></li>
+<li><a href="https://www.ctvnews.ca/montreal/article/montreal-budget-municipal-taxes-are-going-up-by-38/" target="_blank" rel="noopener">CTV News: Montreal budget 2026, taxes up 3.8%</a></li>
+<li><a href="https://www.ledevoir.com/economie/947379/montreal-hausse-taxes-residentielles-3-8-2026" target="_blank" rel="noopener">Le Devoir: Montréal hausse les taxes résidentielles de 3,8% en 2026 (French)</a></li>
+<li><a href="https://www.cbc.ca/news/canada/calgary/calgary-four-year-budget-9.7416298" target="_blank" rel="noopener">CBC News: Calgary council targeting lower tax hike after city presents 15% figure</a></li>
+<li><a href="https://censusmapper.ca/maps/3493" target="_blank" rel="noopener">CensusMapper: Renter households (2021 Census)</a></li>
+</ul>
+<p><em>For information only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "The Pentagon Says Canada's Military Isn't Ready. Ottawa's Own Report Agrees",
  slug: "canadian-news-roundup-2026-11-25",
  date: "November 25, 2026",
