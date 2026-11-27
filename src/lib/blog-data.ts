@@ -25,19 +25,31 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
- title: "Supreme Court Rules on Bill 21 Today. Quebec's Catholic Share Fell 21 Points in a Decade",
+ title: "Supreme Court Upholds Bill 21. Quebec's Catholic Share Fell 21 Points in a Decade",
  slug: "canadian-news-roundup-2026-11-27",
  date: "November 27, 2026",
  category: "News",
  readTime: "5 min read",
  author: "Andrew",
  heroImage: "/images/blog/canadian-news-roundup-2026-11-27.png",
- excerpt: "The Supreme Court of Canada rules on Quebec's Bill 21 at 9:45 a.m. ET today. The decision could also set limits on the notwithstanding clause for every government. Here is what is at stake, and what the 2021 Census shows about who lives with the law. This is a preview; we will update it after the ruling.",
+ excerpt: "The Supreme Court of Canada has largely upheld Quebec's Bill 21, ruling that the province validly used the notwithstanding clause. The one exception: members of the National Assembly. Here is what the court decided, and what the 2021 Census shows about who lives with the law.",
  content: `
-<p><strong>TL;DR:</strong> At 9:45 a.m. ET today, the Supreme Court of Canada releases its judgment on Bill 21, Quebec's 2019 law banning religious symbols for some public-sector workers. The court could uphold the law, strike parts of it, or set limits on the notwithstanding clause that shields it. The census adds context the legal debate often skips: Quebec's Catholic share fell from 74.7% to 53.8% in a decade, and about 87% of the province's Muslims live in Greater Montreal. <em>This is a preview. We will update it after the ruling.</em></p>
+<p><strong>TL;DR:</strong> The Supreme Court of Canada has largely upheld Bill 21, Quebec's 2019 law banning religious symbols for some public-sector workers. It ruled Quebec validly used the notwithstanding clause and dismissed all the appeals. The one part struck: the law cannot stop elected members of the National Assembly who wear religious face coverings from taking part in the legislature. The census adds context the legal debate often skips: Quebec's Catholic share fell from 74.7% to 53.8% in a decade, and about 87% of the province's Muslims live in Greater Montreal. <em>Updated Nov. 27 after the 9:45 a.m. ET ruling.</em></p>
 
-<h2 id="bill-21-supreme-court-ruling">What happens today</h2>
-<p>Journalists and lawyers sworn to confidentiality get a 90-minute look at the judgment first. CBC says it is the biggest lockup in the court's history. The ruling goes public at 9:45 a.m. ET (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>).</p>
+<h2 id="bill-21-supreme-court-ruling">The ruling: Bill 21 stands</h2>
+<p>The Supreme Court released its judgment at 9:45 a.m. ET on Nov. 27. It largely upheld Bill 21 and dismissed all the appeals (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>; <a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette</a>).</p>
+<p>"Bill 21 is rooted in Quebec's legitimate and historical commitment to ensuring the laicity of the state in a free and democratic society," Chief Justice Richard Wagner wrote (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>What the court decided:</p>
+<ul>
+<li><strong>The notwithstanding clause holds.</strong> Quebec validly invoked it in advance, so the religious-symbols ban stands. The court set no new conditions on how provinces use it (<a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette</a>; <a href="https://www.journaldequebec.com/2026/11/27/clause-derogatoire-jugee-essentielle--la-loi-21-sur-la-laicite-de-letat-est-valide-tranche-la-cour-supreme" target="_blank" rel="noopener">Le Journal de Québec</a>).</li>
+<li><strong>One exception: elected members.</strong> The law infringes democratic rights under section 3 of the Charter. It cannot stop members of the National Assembly who wear face coverings for religious reasons from taking part in the legislature (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>; <a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette</a>).</li>
+<li><strong>Gender equality and minority-language arguments rejected.</strong> The court rejected arguments under the guarantee of equality between men and women and under English-speaking Quebecers' education rights. English school boards are not exempted (<a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette</a>; <a href="https://www.journaldequebec.com/2026/11/27/clause-derogatoire-jugee-essentielle--la-loi-21-sur-la-laicite-de-letat-est-valide-tranche-la-cour-supreme" target="_blank" rel="noopener">Le Journal de Québec</a>).</li>
+<li><strong>Courts can still declare a breach.</strong> Judges may declare that a law shielded by the clause would violate the Charter, without striking it down. The court declined to make that declaration about Bill 21 (<a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette</a>; <a href="https://www.theglobeandmail.com/canada/article-bill-21-supreme-court-ruling-reaction-quebec-secularism-live-updates/" target="_blank" rel="noopener">Globe and Mail</a>).</li>
+</ul>
+<p>The seven judges split on several questions. The Globe and Mail reports six of seven upheld the law on the notwithstanding clause, and the power to issue judicial declarations passed 4-3, with the Chief Justice dissenting on that point (<a href="https://www.theglobeandmail.com/canada/article-bill-21-supreme-court-ruling-reaction-quebec-secularism-live-updates/" target="_blank" rel="noopener">Globe and Mail</a>). The judgment runs about 520 pages (<a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette</a>).</p>
+
+<h2>How the ruling was released</h2>
+<p>Journalists and lawyers sworn to confidentiality got a 90-minute look at the judgment first. CBC says it was the biggest lockup in the court's history. The ruling went public at 9:45 a.m. ET (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>).</p>
 <p>The court heard six appeals over four days in March, one of the longest hearings in its history. A record 51 interveners took part, among 61 parties (<a href="https://www.theglobeandmail.com/canada/article-morning-update-the-stakes-in-bill-21/" target="_blank" rel="noopener">Globe and Mail</a>; <a href="https://globalnews.ca/news/12168107/supreme-court-quebec-bill-21-charter-ruling/" target="_blank" rel="noopener">Global News</a>).</p>
 
 <h2>What Bill 21 does</h2>
@@ -52,7 +64,7 @@ const existingBlogPosts: BlogPost[] = [
 <h2>Why it matters outside Quebec</h2>
 <p>Quebec shielded Bill 21 in advance with the Charter's notwithstanding clause, section 33. It lets a legislature override some Charter rights, including freedom of religion and equality rights, for five years at a time. The law also uses the Quebec Charter's version of the clause (CBC News).</p>
 <p>Since 2019, Quebec, Ontario, Saskatchewan and Alberta have all used the clause to protect contested laws. Ottawa intervened in this case and asked the court to put limits on how provinces can use it (Global News).</p>
-<p>The court has been asked, among other things (CBC News):</p>
+<p>The court was asked, among other things (CBC News):</p>
 <ul>
 <li>Is Bill 21 constitutionally valid?</li>
 <li>Was the notwithstanding clause used properly, and does it have limits?</li>
@@ -87,16 +99,18 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2>What to watch</h2>
 <ul>
-<li>Whether the court upholds Bill 21, strikes any part of it, or sets limits on the notwithstanding clause.</li>
-<li>Whether the court says judges can still declare a shielded law in breach of the Charter.</li>
+<li>Whether challengers now ask lower courts for a declaration that Bill 21 breaches the Charter.</li>
 <li>Reaction from Quebec, Ottawa and the provinces that have used the clause since 2019.</li>
 <li>Bill 21's five-year notwithstanding clause renewal cycle, and Quebec's promise to extend the ban.</li>
 </ul>
-<p><em>Update coming after the 9:45 a.m. ET ruling.</em></p>
 
 <h2>Sources</h2>
 <ul>
-<li><a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News: Supreme Court to render its decision on Quebec's secularism law today</a></li>
+<li><a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News: Supreme Court of Canada rules Quebec's secularism law is constitutionally valid</a></li>
+<li><a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette: Bill 21: Supreme Court upholds Quebec secularism law after 7-year legal battle</a></li>
+<li><a href="https://www.theglobeandmail.com/canada/article-bill-21-supreme-court-ruling-reaction-quebec-secularism-live-updates/" target="_blank" rel="noopener">The Globe and Mail: Bill 21 live updates</a></li>
+<li><a href="https://www.journaldequebec.com/2026/11/27/clause-derogatoire-jugee-essentielle--la-loi-21-sur-la-laicite-de-letat-est-valide-tranche-la-cour-supreme" target="_blank" rel="noopener">Le Journal de Québec: La Loi sur la laïcité est valide, tranche la Cour suprême</a></li>
+<li><a href="https://www.scc-csc.ca/judgments-jugements/cb/2026/41231-p/" target="_blank" rel="noopener">Supreme Court of Canada: English Montreal School Board v. Quebec (Attorney General), case pre-brief</a></li>
 <li><a href="https://globalnews.ca/news/12168107/supreme-court-quebec-bill-21-charter-ruling/" target="_blank" rel="noopener">Global News / The Canadian Press: Supreme Court set to rule on Quebec secularism law in landmark Charter case</a></li>
 <li><a href="https://www.theglobeandmail.com/canada/article-morning-update-the-stakes-in-bill-21/" target="_blank" rel="noopener">The Globe and Mail: Morning Update, The stakes in Bill 21</a></li>
 <li><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810034201" target="_blank" rel="noopener">Statistics Canada: Table 98-10-0342-01, Religion by visible minority and generation status (2021 Census)</a></li>
