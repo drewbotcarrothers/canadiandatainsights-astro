@@ -38,6 +38,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="bill-21-supreme-court-ruling">The ruling: Bill 21 stands</h2>
 <p>The Supreme Court released its judgment at 9:45 a.m. ET on Nov. 27. It largely upheld Bill 21 and dismissed all the appeals (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>; <a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette</a>).</p>
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/9_uuGagbSwo" title="Why Bill 21 Survived the Supreme Court" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>"Bill 21 is rooted in Quebec's legitimate and historical commitment to ensuring the laicity of the state in a free and democratic society," Chief Justice Richard Wagner wrote (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>).</p>
 <p>What the court decided:</p>
 <ul>
