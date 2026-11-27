@@ -25,6 +25,87 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Supreme Court Rules on Bill 21 Today. Quebec's Catholic Share Fell 21 Points in a Decade",
+ slug: "canadian-news-roundup-2026-11-27",
+ date: "November 27, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-27.png",
+ excerpt: "The Supreme Court of Canada rules on Quebec's Bill 21 at 9:45 a.m. ET today. The decision could also set limits on the notwithstanding clause for every government. Here is what is at stake, and what the 2021 Census shows about who lives with the law. This is a preview; we will update it after the ruling.",
+ content: `
+<p><strong>TL;DR:</strong> At 9:45 a.m. ET today, the Supreme Court of Canada releases its judgment on Bill 21, Quebec's 2019 law banning religious symbols for some public-sector workers. The court could uphold the law, strike parts of it, or set limits on the notwithstanding clause that shields it. The census adds context the legal debate often skips: Quebec's Catholic share fell from 74.7% to 53.8% in a decade, and about 87% of the province's Muslims live in Greater Montreal. <em>This is a preview. We will update it after the ruling.</em></p>
+
+<h2 id="bill-21-supreme-court-ruling">What happens today</h2>
+<p>Journalists and lawyers sworn to confidentiality get a 90-minute look at the judgment first. CBC says it is the biggest lockup in the court's history. The ruling goes public at 9:45 a.m. ET (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>).</p>
+<p>The court heard six appeals over four days in March, one of the longest hearings in its history. A record 51 interveners took part, among 61 parties (<a href="https://www.theglobeandmail.com/canada/article-morning-update-the-stakes-in-bill-21/" target="_blank" rel="noopener">Globe and Mail</a>; <a href="https://globalnews.ca/news/12168107/supreme-court-quebec-bill-21-charter-ruling/" target="_blank" rel="noopener">Global News</a>).</p>
+
+<h2>What Bill 21 does</h2>
+<ul>
+<li>It bars some public-sector workers in positions of authority from wearing religious symbols on the job. That includes public school teachers and principals, police officers and government lawyers.</li>
+<li>Covered symbols include hijabs, kippahs, turbans, crucifixes and kirpans.</li>
+<li>Workers hired before the bill was tabled are exempt, as long as they stay in the same job.</li>
+<li>People giving and receiving some government services must have their faces uncovered.</li>
+</ul>
+<p>Quebec later extended the ban to everyone who works with children in public daycares and schools, including volunteers. Premier Paul St-Pierre Plamondon has vowed to defend the province's secularism laws and to extend the ban to schoolchildren (Global News).</p>
+
+<h2>Why it matters outside Quebec</h2>
+<p>Quebec shielded Bill 21 in advance with the Charter's notwithstanding clause, section 33. It lets a legislature override some Charter rights, including freedom of religion and equality rights, for five years at a time. The law also uses the Quebec Charter's version of the clause (CBC News).</p>
+<p>Since 2019, Quebec, Ontario, Saskatchewan and Alberta have all used the clause to protect contested laws. Ottawa intervened in this case and asked the court to put limits on how provinces can use it (Global News).</p>
+<p>The court has been asked, among other things (CBC News):</p>
+<ul>
+<li>Is Bill 21 constitutionally valid?</li>
+<li>Was the notwithstanding clause used properly, and does it have limits?</li>
+<li>Can a court still declare that a shielded law violates Charter rights?</li>
+<li>Does the law breach English-language education rights or equal rights for men and women?</li>
+</ul>
+<p>Lower courts mostly upheld the law. In 2021, Quebec Superior Court ruled it could not apply to members of the legislature and that it breached minority-language education rights. In 2024, the Quebec Court of Appeal kept most of that ruling but reversed the education-rights finding (CBC News).</p>
+
+<h2>The data: a law about faith, in a province losing its religion</h2>
+<p>Bill 21 is a law about religious symbols. The 2021 Census shows how fast Quebec's own relationship with religion has changed.</p>
+<table>
+<thead><tr><th>Religious affiliation, Quebec</th><th>Share of population</th><th>People (2021)</th></tr></thead>
+<tbody>
+<tr><td>Catholic, 2011</td><td>74.7%</td><td>n/a</td></tr>
+<tr><td>Catholic, 2021</td><td><strong>53.8%</strong></td><td>4,472,555</td></tr>
+<tr><td>No religion or secular perspectives, 2021</td><td>27.3%</td><td>2,267,715</td></tr>
+<tr><td>Muslim, 2021</td><td>5.1%</td><td>421,710</td></tr>
+<tr><td>Jewish, 2021</td><td>1.0%</td><td>84,535</td></tr>
+<tr><td>Hindu, 2021</td><td>0.6%</td><td>47,390</td></tr>
+<tr><td>Sikh, 2021</td><td>0.3%</td><td>23,345</td></tr>
+</tbody>
+</table>
+<p>Sources: Statistics Canada, <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810034201" target="_blank" rel="noopener">table 98-10-0342-01</a> (2021 Census, population in private households) and <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/221026/dq221026b-eng.htm" target="_blank" rel="noopener">The Daily, Oct. 26, 2022</a> (2011 comparison).</p>
+<p>Three things stand out:</p>
+<ul>
+<li><strong>The Catholic majority is shrinking fast.</strong> Quebec is still the only province where more than half the population reports being Catholic, but that share fell about 21 points in 10 years.</li>
+<li><strong>Fewer Quebecers report no religion than Canadians overall.</strong> It is 27.3% in Quebec, compared with 34.6% nationally.</li>
+<li><strong>The minority faiths are concentrated in one region.</strong> Greater Montreal (the census metropolitan area) is home to 365,675 Muslims, 86.7% of Quebec's total, and 82,080 Jewish residents, 97.1% of the province's. Muslims make up 8.7% of Greater Montreal, versus 5.1% of Quebec and 4.9% of Canada.</li>
+</ul>
+<p>A caution: the census measures religious affiliation, not whether anyone wears a religious symbol. These numbers do not count how many workers the law affects.</p>
+<p>The jobs at the centre of the case are big employers. In 2021, 340,885 people in Quebec worked in educational services, 7.7% of the province's workforce (<a href="/location/quebec/">Quebec on Canadian Data Insights</a>).</p>
+
+<h2>What to watch</h2>
+<ul>
+<li>Whether the court upholds Bill 21, strikes any part of it, or sets limits on the notwithstanding clause.</li>
+<li>Whether the court says judges can still declare a shielded law in breach of the Charter.</li>
+<li>Reaction from Quebec, Ottawa and the provinces that have used the clause since 2019.</li>
+<li>Bill 21's five-year notwithstanding clause renewal cycle, and Quebec's promise to extend the ban.</li>
+</ul>
+<p><em>Update coming after the 9:45 a.m. ET ruling.</em></p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News: Supreme Court to render its decision on Quebec's secularism law today</a></li>
+<li><a href="https://globalnews.ca/news/12168107/supreme-court-quebec-bill-21-charter-ruling/" target="_blank" rel="noopener">Global News / The Canadian Press: Supreme Court set to rule on Quebec secularism law in landmark Charter case</a></li>
+<li><a href="https://www.theglobeandmail.com/canada/article-morning-update-the-stakes-in-bill-21/" target="_blank" rel="noopener">The Globe and Mail: Morning Update, The stakes in Bill 21</a></li>
+<li><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810034201" target="_blank" rel="noopener">Statistics Canada: Table 98-10-0342-01, Religion by visible minority and generation status (2021 Census)</a></li>
+<li><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/221026/dq221026b-eng.htm" target="_blank" rel="noopener">Statistics Canada, The Daily: The Canadian census, a rich portrait of the country's religious and ethnocultural diversity</a></li>
+</ul>
+<p><em>For information only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "Montreal's 9.8% Tax Hike Is Triple Inflation. What It Really Costs Owners and Renters",
  slug: "canadian-news-roundup-2026-11-26",
  date: "November 26, 2026",
