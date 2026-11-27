@@ -29,12 +29,12 @@ const existingBlogPosts: BlogPost[] = [
  slug: "canadian-news-roundup-2026-11-27",
  date: "November 27, 2026",
  category: "News",
- readTime: "5 min read",
+ readTime: "8 min read",
  author: "Andrew",
  heroImage: "/images/blog/canadian-news-roundup-2026-11-27.png",
- excerpt: "The Supreme Court of Canada has largely upheld Quebec's Bill 21, ruling that the province validly used the notwithstanding clause. The one exception: members of the National Assembly. Here is what the court decided, and what the 2021 Census shows about who lives with the law.",
+ excerpt: "The Supreme Court of Canada has largely upheld Quebec's Bill 21, ruling that the province validly used the notwithstanding clause. The one exception: members of the National Assembly. Later Friday, the CRTC found that some device and SIM fees at Bell, Rogers and Telus violate the ban on charges for activating or changing plans, and ordered those fees stopped by Dec. 27.",
  content: `
-<p><strong>TL;DR:</strong> The Supreme Court of Canada has largely upheld Bill 21, Quebec's 2019 law banning religious symbols for some public-sector workers. It ruled Quebec validly used the notwithstanding clause and dismissed all the appeals. The one part struck: the law cannot stop elected members of the National Assembly who wear religious face coverings from taking part in the legislature. The census adds context the legal debate often skips: Quebec's Catholic share fell from 74.7% to 53.8% in a decade, and about 87% of the province's Muslims live in Greater Montreal. <em>Updated Nov. 27 after the 9:45 a.m. ET ruling.</em></p>
+<p><strong>TL;DR:</strong> The Supreme Court of Canada has largely upheld Bill 21, Quebec's 2019 law banning religious symbols for some public-sector workers. It ruled Quebec validly used the notwithstanding clause and dismissed all the appeals. The one part struck: the law cannot stop elected members of the National Assembly who wear religious face coverings from taking part in the legislature. The census adds context the legal debate often skips: Quebec's Catholic share fell from 74.7% to 53.8% in a decade, and about 87% of the province's Muslims live in Greater Montreal. Later Friday, the CRTC found that some device and SIM fees charged by Bell, Rogers and Telus violate the June 2026 ban on fees for activating or changing plans, and ordered those fees stopped by Dec. 27. See <a href="#crtc-telecom-fees-ruling">the CRTC ruling</a>. <em>Updated Nov. 27 after the 9:45 a.m. ET ruling, and again after the CRTC decision.</em></p>
 
 <h2 id="bill-21-supreme-court-ruling">The ruling: Bill 21 stands</h2>
 <p>The Supreme Court released its judgment at 9:45 a.m. ET on Nov. 27. It largely upheld Bill 21 and dismissed all the appeals (<a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News</a>; <a href="https://montrealgazette.com/news/bill-21-supreme-court-live-reaction/" target="_blank" rel="noopener">Montreal Gazette</a>).</p>
@@ -114,6 +114,58 @@ const existingBlogPosts: BlogPost[] = [
 <li>Bill 21's five-year notwithstanding clause renewal cycle, and Quebec's promise to extend the ban.</li>
 </ul>
 
+
+<h2 id="crtc-telecom-fees-ruling">The CRTC's telecom-fees ruling</h2>
+<p>On Nov. 27, the Canadian Radio-television and Telecommunications Commission found that three fees charged by Bell Canada, Rogers and Telus are prohibited under the ban on charges for activating or changing cellphone or Internet plans. The ban, in Telecom Regulatory Policy CRTC 2026-43 and section 27.04 of the <em>Telecommunications Act</em>, took effect on June 12, 2026. The Commission has directed the three companies to stop charging the prohibited fees by Dec. 27, 2026 (<a href="https://crtc.gc.ca/eng/archive/2026/2026-307.htm" target="_blank" rel="noopener">Telecom Decision CRTC 2026-307</a>).</p>
+
+<h3>What the Commission found</h3>
+<p>The Commission launched a show-cause proceeding on June 30, 2026, after becoming aware that the three companies had introduced or were charging fees that might conflict with the ban. It received 72 interventions from individuals, service providers, accessibility groups and public interest groups.</p>
+<p>It found these fees are prohibited:</p>
+<ul>
+<li><strong>Bell Canada's device handling charge:</strong> a $40 fee for all customers who buy a mobile device along with a wireless plan. The fee applies in store and online, and is not optional.</li>
+<li><strong>Rogers' device setup charge:</strong> a $40 fee for all customers who buy a device along with a wireless plan through assisted retail and customer care channels. The Commission found the fee is charged regardless of whether the customer requested or received additional setup services.</li>
+<li><strong>Telus's SIM and eSIM provisioning fee:</strong> a $15 fee for the purchase of all SIM cards and the provisioning of all eSIMs. The Commission found a SIM or eSIM is required to use the wireless service, so the fee is not an optional product charge.</li>
+</ul>
+<p>It also found these fees are not prohibited:</p>
+<ul>
+<li>Rogers' hardware shipping fee, which customers can avoid by choosing free in-store pickup. The Commission encouraged Rogers to consider whether shipping is truly optional for customers who cannot reasonably pick up in store, including people with accessibility needs and those in rural or remote areas.</li>
+<li>SIM replacement fees charged by Rogers and Telus when a card is lost or damaged, because those fees are not tied to activating or changing a plan.</li>
+<li>Fees Rogers charges for truly optional services that a customer explicitly chooses to purchase.</li>
+</ul>
+<p>The Commission is not issuing administrative monetary penalties on the fees in this decision. It said it is providing guidance on how the June rules apply, will keep monitoring fees, and is prepared to take further enforcement action if prohibited fees continue.</p>
+
+<h3>What the companies say</h3>
+<p>Rogers told CBC News it disagrees with the Commission's position on device set-up charges. "These charges help recover real costs, and we're pleased the CRTC's decision on the shipping charge and SIM replacement fee clearly reflect this," a spokesperson said. In a statement to Global News, spokesperson Zac Carreiro added that the setup charge "recovers costs associated with helping customers set-up their device as the CRTC noted," and that Rogers is considering next steps (<a href="https://www.cbc.ca/news/business/bell-rogers-telus-fees-9.7438448" target="_blank" rel="noopener">CBC News</a>; <a href="https://globalnews.ca/news/12169315/crtc-says-bell-telus-rogers-violated-ban-on-junk-fees/" target="_blank" rel="noopener">Global News</a>).</p>
+<p>A Telus spokesperson told CBC News and Global News the company is reviewing the decision and considering next steps. "Every SIM card and eSIM comes with real costs associated with providing it to customers, and we believe those costs should be reflected in the price of the product, rather than requiring carriers to provide it free of charge," Telus's Martin Nguyen said (CBC News; Global News).</p>
+<p>Bell told CBC News it is reviewing the regulator's decisions. In a statement to Global News about a related ruling on locked phones, spokesperson Ellen Murphy said Bell is reviewing both decisions.</p>
+
+<h3>The data: what Canadians already spend on cell service</h3>
+<p>The ruling is about one-time fees at the point of activating or changing a plan. Statistics Canada already tracks what households spend on cell service, and how plan prices have moved.</p>
+<table>
+<thead><tr><th>Measure</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Average household spending on cell phone and pager services, 2023</td><td><strong>$1,494</strong> a year</td></tr>
+<tr><td>Same category, 2021</td><td>$1,308 a year</td></tr>
+<tr><td>Average household spending on Internet access, 2023</td><td>$1,040 a year</td></tr>
+<tr><td>All communications spending, 2023</td><td>$3,425 a year</td></tr>
+<tr><td>CPI cellular services index, October 2026 (2017=100)</td><td>48.4</td></tr>
+<tr><td>October 2025</td><td>51.6</td></tr>
+<tr><td>12-month change, October 2026</td><td><strong>-6.2%</strong></td></tr>
+<tr><td>Month-over-month, October 2026</td><td>+0.6%</td></tr>
+<tr><td>Index in June 2026, when the fee ban took effect</td><td>45.5</td></tr>
+</tbody>
+</table>
+<p>Sources: Statistics Canada, <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110022201" target="_blank" rel="noopener">table 11-10-0222-01</a> (Survey of Household Spending, average expenditure per household, Canada) and <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401" target="_blank" rel="noopener">table 18-10-0004-01</a> (Consumer Price Index, monthly, not seasonally adjusted, "Cellular services (2017=100)"). The 12-month and monthly rates are from <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/261116/dq261116a-eng.htm" target="_blank" rel="noopener">The Daily, Nov. 16, 2026</a>.</p>
+<p>Two points stand out:</p>
+<ul>
+<li><strong>The year-over-year drop in cell prices is mostly a base-year effect.</strong> Statistics Canada notes that several wireless providers raised plan prices in October 2025, with the index up 8.2% that month. That increase has now left the 12-month comparison, which is why October 2026 shows a 6.2% decline even though the index itself rose 0.6% on the month.</li>
+<li><strong>Since the June fee ban, the index has risen, not fallen.</strong> It went from 45.5 in June 2026 to 48.4 in October. A $40 device handling or setup fee is equal to about 2.7% of the $1,494 the average household spent on cell phone and pager services in 2023. A $15 SIM fee is about 1.0% of that annual total.</li>
+</ul>
+<p>The CPI measures advertised plan prices. It does not isolate these one-time device or SIM fees, so the index is context for household cell costs, not a direct measure of the charges the Commission reviewed.</p>
+
+<h3>A related ruling on locked phones</h3>
+<p>The same day, in a separate decision, the Commission found that Bell Canada failed to comply with the Wireless Code by providing cellphones locked for 60 days after purchase (<a href="https://crtc.gc.ca/eng/archive/2026/2026-308.htm" target="_blank" rel="noopener">Telecom Decision CRTC 2026-308</a>). It is of the preliminary view that an administrative monetary penalty of up to $10 million may be appropriate. That is not a fine already imposed: interested parties can comment by Jan. 15, 2027, and Bell can reply by Jan. 22. The fees decision, 2026-307, did not issue penalties. Bell has said it is reviewing both rulings and that it introduced the lock to address device-related crime (<a href="https://globalnews.ca/news/12169315/crtc-says-bell-telus-rogers-violated-ban-on-junk-fees/" target="_blank" rel="noopener">Global News</a>).</p>
+
 <h2>Sources</h2>
 <ul>
 <li><a href="https://www.cbc.ca/news/politics/supreme-court-decison-bill-21-9.7437512" target="_blank" rel="noopener">CBC News: Supreme Court of Canada rules Quebec's secularism law is constitutionally valid</a></li>
@@ -126,6 +178,15 @@ const existingBlogPosts: BlogPost[] = [
 <li><a href="https://www.theglobeandmail.com/canada/article-morning-update-the-stakes-in-bill-21/" target="_blank" rel="noopener">The Globe and Mail: Morning Update, The stakes in Bill 21</a></li>
 <li><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810034201" target="_blank" rel="noopener">Statistics Canada: Table 98-10-0342-01, Religion by visible minority and generation status (2021 Census)</a></li>
 <li><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/221026/dq221026b-eng.htm" target="_blank" rel="noopener">Statistics Canada, The Daily: The Canadian census, a rich portrait of the country's religious and ethnocultural diversity</a></li>
+<li><a href="https://crtc.gc.ca/eng/archive/2026/2026-307.htm" target="_blank" rel="noopener">Telecom Decision CRTC 2026-307: Compliance with the prohibition of fees that are a barrier to switching cellphone and Internet plans</a></li>
+<li><a href="https://crtc.gc.ca/eng/archive/2026/2026-308.htm" target="_blank" rel="noopener">Telecom Decision CRTC 2026-308: Bell Canada – Failure to provide unlocked mobile devices and further process</a></li>
+<li><a href="https://www.canada.ca/en/radio-television-telecommunications/news/2026/11/crtc-takes-action-to-eliminate-extra-cellphone-fees.html" target="_blank" rel="noopener">CRTC news release: CRTC takes action to eliminate extra cellphone fees</a></li>
+<li><a href="https://www.cbc.ca/news/business/bell-rogers-telus-fees-9.7438448" target="_blank" rel="noopener">CBC News: CRTC orders Bell, Rogers, Telus to stop charging prohibited wireless fees by Dec. 27</a></li>
+<li><a href="https://globalnews.ca/news/12169315/crtc-says-bell-telus-rogers-violated-ban-on-junk-fees/" target="_blank" rel="noopener">Global News / The Canadian Press: CRTC says Bell, Telus, Rogers violated ban on junk fees</a></li>
+<li><a href="https://mobilesyrup.com/2026/11/27/crtc-bell-rogers-telus-junk-fee-rules/" target="_blank" rel="noopener">MobileSyrup: CRTC says Bell, Rogers, Telus violated junk fee rules</a></li>
+<li><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401" target="_blank" rel="noopener">Statistics Canada: Table 18-10-0004-01, Consumer Price Index, monthly, not seasonally adjusted</a></li>
+<li><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/261116/dq261116a-eng.htm" target="_blank" rel="noopener">Statistics Canada, The Daily: Consumer Price Index, October 2026</a></li>
+<li><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110022201" target="_blank" rel="noopener">Statistics Canada: Table 11-10-0222-01, Household spending, Canada, regions and provinces</a></li>
 </ul>
 <p><em>For information only. Verify primary sources.</em></p>
 `,
