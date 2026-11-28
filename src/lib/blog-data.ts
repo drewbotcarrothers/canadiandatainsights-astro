@@ -25,6 +25,92 @@ export interface BlogPost {
 
 const existingBlogPosts: BlogPost[] = [
  {
+ title: "Ottawa Will Miss Its Temporary Resident Target. Hitting 5% Means 690,000 Fewer People",
+ slug: "canadian-news-roundup-2026-11-28",
+ date: "November 28, 2026",
+ category: "News",
+ readTime: "5 min read",
+ author: "Andrew",
+ heroImage: "/images/blog/canadian-news-roundup-2026-11-28.png",
+ chartType: 'bar',
+ chartTitle: "Non-permanent residents as a share of population, July 1, 2026 (%, Statistics Canada)",
+ chartData: [
+ { name: "B.C.", value: 8.2 },
+ { name: "Ont.", value: 7.7 },
+ { name: "P.E.I.", value: 6.0 },
+ { name: "Que.", value: 5.9 },
+ { name: "Alta.", value: 5.5 },
+ { name: "Man.", value: 5.3 },
+ { name: "N.S.", value: 5.0 },
+ { name: "N.B.", value: 4.6 },
+ { name: "Sask.", value: 3.8 },
+ { name: "N.L.", value: 3.0 },
+ ],
+ excerpt: "Immigration Minister Lena Metlege Diab says temporary residents will be about 5.5 per cent or less of Canada's population by the end of 2027, above Ottawa's 5 per cent target. Statistics Canada's own numbers show how big the gap is: hitting 5 per cent would take about 690,000 fewer temporary residents than on July 1, roughly three times the pace of last year's record drop.",
+ content: `
+<p><strong>TL;DR:</strong> Ottawa promised in 2024 to cut temporary residents to 5% of the population. This week, Immigration Minister Lena Metlege Diab said the share will be about 5.5% or less by the end of 2027. Statistics Canada's latest count puts it at 6.7%. At today's population, reaching 5% means about 690,000 fewer temporary residents. Last year's drop, the biggest on record, was 154,614.</p>
+
+<h2 id="temporary-residents-miss-5-percent-target">What happened</h2>
+<p>At the House of Commons immigration committee on Thursday, Nov. 26, Conservative MP Brad Redekopp asked for a current estimate of the temporary resident population. Diab said the government projects temporary residents will be "5.5 per cent or less" of the total population by the end of 2027 (<a href="https://www.cbc.ca/news/politics/temporary-immigration-targets-9.7437870" target="_blank" rel="noopener">CBC News / The Canadian Press</a>).</p>
+<p>That is above the target. In March 2024, Ottawa said it would bring the share down to 5% (<a href="https://www.theglobeandmail.com/business/article-ottawa-temporary-residents-target-diab-november-27/" target="_blank" rel="noopener">Globe and Mail</a>).</p>
+<p>Diab said she did not have an updated figure. She pointed to Statistics Canada's last estimate: 6.7% as of July 1. After the committee, she told reporters that "officials are working to get to that five per cent," but would not commit to a timeline. "We'll hear more as the time goes," she said (<a href="https://www.cbc.ca/news/politics/temporary-immigration-targets-9.7437870" target="_blank" rel="noopener">CBC News / The Canadian Press</a>).</p>
+
+<h2>Why it matters</h2>
+<ul>
+<li><strong>Housing and rents.</strong> Temporary residents are students, workers and asylum claimants who mostly rent. How fast their numbers fall shapes rental demand, especially in Ontario and B.C.</li>
+<li><strong>Jobs and business.</strong> Business groups, including the Canadian Chamber of Commerce and the Canadian Federation of Independent Business, have lobbied for more room to hire through the Temporary Foreign Worker Program (<a href="https://www.theglobeandmail.com/business/article-ottawa-temporary-residents-target-diab-november-27/" target="_blank" rel="noopener">Globe and Mail</a>).</li>
+<li><strong>The political fight.</strong> The Conservatives are attacking a one-time measure to let 200,000 temporary residents already in Canada become permanent residents next year. That is on top of the 380,000 permanent residents the government projects to admit in 2027 (<a href="https://www.theglobeandmail.com/business/article-ottawa-temporary-residents-target-diab-november-27/" target="_blank" rel="noopener">Globe and Mail</a>).</li>
+</ul>
+
+<h2>The contradiction: fewer arrivals, slow decline</h2>
+<p>New arrivals have dropped sharply. IRCC set a target of 370,000 temporary-resident arrivals for 2026. By the end of August, only 195,000 had arrived. "That's a pretty significant variance," Deputy Minister Ted Gallivan told MPs (<a href="https://www.theglobeandmail.com/business/article-ottawa-temporary-residents-target-diab-november-27/" target="_blank" rel="noopener">Globe and Mail</a>).</p>
+<p>Yet the total is falling slowly. Delays in processing permanent-resident applications mean many people stay temporary residents longer, the Globe reports. Ottawa says it will hit 5% by clearing backlogs, so more temporary residents become permanent, while limiting new arrivals.</p>
+<p>The plan still brings in new temporary residents: 370,000 a year from 2027 through 2029, split between 220,000 workers and 150,000 students (<a href="https://www.cbc.ca/news/politics/temporary-immigration-targets-9.7437870" target="_blank" rel="noopener">CBC News / The Canadian Press</a>).</p>
+
+<h2>The data: what 5% actually takes</h2>
+<p>Statistics Canada counted 2,779,774 non-permanent residents on July 1, 2026. That is 6.7% of a population of 41,798,407 (<a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710012101" target="_blank" rel="noopener">table 17-10-0121-01</a>; <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901" target="_blank" rel="noopener">table 17-10-0009-01</a>).</p>
+<ul>
+<li><strong>5% of today's population</strong> is about 2.09 million people. That is roughly <strong>690,000 fewer</strong> temporary residents than on July 1.</li>
+<li><strong>5.5%</strong>, the minister's new estimate, is about 2.30 million. That is roughly <strong>481,000 fewer</strong>.</li>
+<li><strong>Last year's drop</strong> (July 2025 to July 2026) was <strong>154,614</strong>. Statistics Canada says it was the largest annual decrease since comparable records began in 1971/1972 (<a href="https://www150.statcan.gc.ca/n1/daily-quotidien/260923/dq260923a-eng.htm" target="_blank" rel="noopener">The Daily, Sept. 23</a>).</li>
+</ul>
+<p>From July 1, 2026 to the end of 2027 is 18 months. Hitting 5% in that window would take a decline of about 460,000 a year, roughly three times last year's record pace. Even 5.5% would need about 320,000 a year, about double. (Our math holds the population at its July 1 level. If the population grows, the 5% count rises a little.)</p>
+
+<h3>Permits are falling. Asylum claims are not, mostly.</h3>
+<ul>
+<li>Study-permit-only holders fell to 399,133 on July 1, 2026, down 38% from 648,667 two years earlier.</li>
+<li>All permit holders and their families fell by 187,438 in the year to July 1.</li>
+<li>Asylum claimants, protected persons and related groups rose by 32,824 over the same year, to 530,090. They are now about 19% of all temporary residents, up from 168,239 in July 2021.</li>
+<li>The second quarter of 2026 was the first quarter since early 2022 to record a drop in that group (-7,015), Statistics Canada says.</li>
+</ul>
+<p>Source: <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710012101" target="_blank" rel="noopener">Statistics Canada table 17-10-0121-01</a>.</p>
+
+<h3>Where temporary residents live</h3>
+<p>The national target hides big provincial gaps. On July 1, 2026, temporary residents were 8.2% of B.C.'s population and 7.7% of Ontario's. They were 3.8% in Saskatchewan and 3.0% in Newfoundland and Labrador. Ontario and B.C. together hold about 62% of all temporary residents in Canada (Statistics Canada tables 17-10-0121-01 and 17-10-0009-01; CDI calculation).</p>
+
+<h3>A note on the numbers</h3>
+<p>In September, Statistics Canada revised its temporary-resident estimates back to July 2021, adding late permit-extension records and new adjustments. The revised peak is 2,984,285 people, or 7.2%, on Oct. 1, 2024 (<a href="https://www150.statcan.gc.ca/n1/daily-quotidien/260923/dq260923a-eng.htm" target="_blank" rel="noopener">The Daily</a>). Some reports still cite the earlier peak of about 7.4% and more than three million. Statistics Canada also cautions that its estimates are not directly comparable with IRCC's temporary-resident counts.</p>
+
+<h2>What to watch</h2>
+<ul>
+<li>Statistics Canada's next quarterly estimate, for Oct. 1, 2026.</li>
+<li>Whether Ottawa sets a firm date for the 5% target, or changes it.</li>
+<li>Details of the one-time pathway for 200,000 temporary residents, and how fast IRCC clears permanent-resident backlogs.</li>
+<li>Rents in Ontario and B.C., where temporary residents are most concentrated.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cbc.ca/news/politics/temporary-immigration-targets-9.7437870" target="_blank" rel="noopener">CBC News / The Canadian Press: Non-permanent population expected to exceed 2027 target, minister says</a></li>
+<li><a href="https://www.theglobeandmail.com/business/article-ottawa-temporary-residents-target-diab-november-27/" target="_blank" rel="noopener">The Globe and Mail: Number of temporary residents in Canada set to exceed federal target by end of 2027</a></li>
+<li><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710012101" target="_blank" rel="noopener">Statistics Canada: Table 17-10-0121-01, Estimates of the number of non-permanent residents by type, quarterly</a></li>
+<li><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901" target="_blank" rel="noopener">Statistics Canada: Table 17-10-0009-01, Population estimates, quarterly</a></li>
+<li><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/260923/dq260923a-eng.htm" target="_blank" rel="noopener">Statistics Canada, The Daily (Sept. 23, 2026): Canada's population estimates: Age and gender, 2026</a></li>
+</ul>
+<p><em>For information only. Verify primary sources.</em></p>
+`,
+ },
+ {
  title: "Supreme Court Upholds Bill 21. Quebec's Catholic Share Fell 21 Points in a Decade",
  slug: "canadian-news-roundup-2026-11-27",
  date: "November 27, 2026",
