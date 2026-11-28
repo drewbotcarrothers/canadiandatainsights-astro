@@ -117,7 +117,9 @@ const existingBlogPosts: BlogPost[] = [
 
 <h2 id="crtc-telecom-fees-ruling">The CRTC's telecom-fees ruling</h2>
 <p>On Nov. 27, the Canadian Radio-television and Telecommunications Commission found that three fees charged by Bell Canada, Rogers and Telus are prohibited under the ban on charges for activating or changing cellphone or Internet plans. The ban, in Telecom Regulatory Policy CRTC 2026-43 and section 27.04 of the <em>Telecommunications Act</em>, took effect on June 12, 2026. The Commission has directed the three companies to stop charging the prohibited fees by Dec. 27, 2026 (<a href="https://crtc.gc.ca/eng/archive/2026/2026-307.htm" target="_blank" rel="noopener">Telecom Decision CRTC 2026-307</a>).</p>
-
+<div class="video-embed" style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:1.5rem 0;border-radius:12px;overflow:hidden;background:#eef0f5;">
+  <iframe src="https://www.youtube-nocookie.com/embed/DBh5qfy_89M" title="Did Cell Prices Fall After the CRTC Ban?" style="position:absolute;inset:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <h3>What the Commission found</h3>
 <p>The Commission launched a show-cause proceeding on June 30, 2026, after becoming aware that the three companies had introduced or were charging fees that might conflict with the ban. It received 72 interventions from individuals, service providers, accessibility groups and public interest groups.</p>
 <p>It found these fees are prohibited:</p>
